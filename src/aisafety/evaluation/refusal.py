@@ -33,7 +33,9 @@ _PARTIAL_MARKER = re.compile(
     re.I,
 )
 _ALTERNATIVE_HELP = re.compile(
-    r"\b(?:i\s+can\s+(?:help|offer|suggest)|let\s+me\s+(?:suggest|offer|help\s+you\s+with)|here'?s\s+an\s+alternative|if\s+you'?d\s+like,\s+i\s+can)\b",
+    r"\b(?:i\s+can\s+(?:help|offer|suggest)|let\s+me\s+(?:suggest|offer|help\s+you\s+with)"
+    r"|i'?d\s+be\s+happy\s+to\s+(?:help|discuss|suggest|offer)"
+    r"|here'?s\s+an\s+alternative|if\s+you'?d\s+like,?\s*i\s+can)\b",
     re.I,
 )
 
