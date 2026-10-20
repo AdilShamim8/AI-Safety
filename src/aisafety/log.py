@@ -14,7 +14,7 @@ import sys
 from datetime import datetime, timezone
 from typing import Any
 
- getLogger = logging.getLogger("aisafety")
+getLogger = logging.getLogger("aisafety")
 
 _EVENT_KEYS = ("event", "component", "severity", "detail")
 
