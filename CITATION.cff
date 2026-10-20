@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If this repository supports your research or engineering work, please cite it."
+authors:
+  - family-names: "Shamim"
+    given-names: "Adil"
+    orcid: "https://github.com/AdilShamim8"
+title: "AI Safety: a practical toolkit and knowledge base for safe LLM deployment"
+version: 0.1.0
+date-released: "2026-10-20"
+license: MIT
+repository-code: "https://github.com/AdilShamim8/AI-Safety"
+abstract: >-
+  A combined documentation library, Python toolkit, and benchmark-harness
+  collection for AI safety. Covers alignment techniques (RLHF, DPO,
+  Constitutional AI), interpretability, LLM risk taxonomies (prompt injection,
+  jailbreaks, hallucination, bias, privacy), governance frameworks (NIST AI
+  RMF, EU AI Act, OWASP LLM Top 10), and red-teaming methodology. All
+  benchmark harnesses target real public datasets: TruthfulQA, GSM8K, MMLU,
+  BBQ, BOLD, ToxiGen, RealToxicityPrompts, AdvBench, XSTest, HH-RLHF,
+  BeaverTails, and JailbreakBench.
+keywords:
+  - ai-safety
+  - llm-alignment
+  - guardrails
+  - prompt-injection
+  - red-teaming
+  - responsible-ai
+type: software
