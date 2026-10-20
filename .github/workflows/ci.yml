@@ -1,0 +1,93 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install package (editable) with test deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint (ruff)
+        run: ruff check src tests benchmarks scripts
+
+      - name: Format check (black)
+        run: black --check src tests benchmarks scripts
+
+      - name: Type check (mypy, non-blocking on first pass)
+        run: mypy src || true
+
+      - name: Run tests
+        run: pytest --cov=aisafety --cov-report=term-missing
+
+      - name: Syntax-check every committed Python file
+        # belt-and-braces: no file lands on main with a syntax error
+        run: |
+          python - <<'PY'
+          import ast, pathlib, sys
+          bad = []
+          for path in pathlib.Path(".").rglob("*.py"):
+              if ".venv" in path.parts or "build" in path.parts:
+                  continue
+              try:
+                  ast.parse(path.read_text(encoding="utf-8"))
+              except SyntaxError as err:
+                  bad.append(f"{path}: {err}")
+          if bad:
+              print("\n".join(bad))
+              sys.exit(1)
+          print(f"all Python files parse cleanly")
+          PY
+
+      - name: Upload coverage artifact
+        if: matrix.python-version == '3.12'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: .coverage
+          retention-days: 7
+
+  docs-links:
+    name: Docs structure check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify referenced docs files exist
+        run: |
+          python - <<'PY'
+          import pathlib, re, sys
+          missing = []
+          for doc in pathlib.Path("docs").rglob("*.md"):
+              text = doc.read_text(encoding="utf-8")
+              for ref in re.findall(r"\]\(([^)#h]+?\.md)\)", text):
+                  target = (doc.parent / ref).resolve()
+                  if not target.exists():
+                      missing.append(f"{doc}: missing {ref}")
+          if missing:
+              print("\n".join(missing))
+              sys.exit(1)
+          print("all internal doc links resolve")
+          PY
