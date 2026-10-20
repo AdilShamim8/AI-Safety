@@ -5,9 +5,9 @@ from __future__ import annotations
 from src.aisafety.safety.pii.detector import PIIType, PIIDetector
 from src.aisafety.safety.pii.redactor import PIIRedactor
 
-# 4532 1488 0343 6467 is a standard Luhn-valid *test* card number pattern
-# used in payment-testing documentation; fixtures are synthetic.
-VALID_CARD = "4532 1488 0343 6467"
+# 4242 4242 4242 4242 is the publicly documented Stripe *test* card number
+# (Luhn-valid, never attached to a real account); fixtures are synthetic.
+VALID_CARD = "4242 4242 4242 4242"
 
 
 class TestDetector:

@@ -25,7 +25,7 @@ SAMPLES = [
         "about his order; call back at (415) 555-0132 x22."
     ),
     (
-        "Payment failed for card 4532 1488 0343 6467; retry with the "
+        "Payment failed for card 4242 4242 4242 4242; retry with the "
         "backup key sk-proj-4gH7zZ0aBcDeFgHiJkLmNoPqRsTuV."
     ),
     (

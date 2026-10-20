@@ -45,7 +45,7 @@ class TestWilsonInterval:
         assert lo == 0.0 and hi < 0.5
 
     def test_summary_carries_interval(self):
-        m = MetricSummary("x", 0.5, 10)
+        m = MetricSummary("x", 0.5, 5, 10)
         lo, hi = m.wilson95
         assert lo < 0.5 < hi
 
