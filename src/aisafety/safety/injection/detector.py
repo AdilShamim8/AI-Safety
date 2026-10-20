@@ -30,7 +30,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Pattern
 
-from ..config import InjectionDetectionConfig
+from ...config import InjectionDetectionConfig
 
 
 class InjectionCategory(str, Enum):

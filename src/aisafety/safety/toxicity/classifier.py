@@ -22,8 +22,8 @@ import re
 from dataclasses import dataclass, field
 from typing import Any
 
-from ..config import ToxicityConfig
-from ..utils.text import clamp01
+from ...config import ToxicityConfig
+from ...utils.text import clamp01
 
 
 @dataclass(frozen=True)
