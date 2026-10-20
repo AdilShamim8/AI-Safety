@@ -1,0 +1,14 @@
+# Core runtime dependencies for the aisafety package.
+# Heavy ML dependencies (torch, transformers) are intentionally optional:
+# the core safety filters run on the standard library alone so they can be
+# deployed in constrained environments (edge, CI, serverless).
+
+datasets>=2.19.0        # Hugging Face datasets: loading TruthfulQA, GSM8K, MMLU, etc.
+requests>=2.31.0        # HTTP client for optional remote APIs (Perspective, Moderation)
+tqdm>=4.66.0            # progress bars for dataset download / eval loops
+pydantic>=2.7.0         # config and result schemas
+
+# Optional extras (install with pip install ".[nlp]"):
+# transformers>=4.44.0
+# torch>=2.3.0
+# scikit-learn>=1.5.0
