@@ -19,7 +19,7 @@ chapters:
     title: "Risk models and research epistemics"
     path: "chapters/01-risk-models-and-research-epistemics/"
     phase: C
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Define hazard, capability, propensity, exposure, severity, and causal pathways operationally"
       - "Apply evidence hierarchies and uncertainty tracking to safety claims"
@@ -27,8 +27,8 @@ chapters:
     prerequisites: []
     project_ids: []
     assessments: ["threat-hypothesis artifact"]
-    source_ids: []
-    verified_on: null
+    source_ids: ["SRC-PAPER-001", "SRC-PAPER-002", "SRC-REPORT-001", "SRC-ARTICLE-001"]
+    verified_on: 2026-10-21
   - id: "02"
     title: "Evaluation science and experimental design"
     path: "chapters/02-evaluation-science-and-experimental-design/"

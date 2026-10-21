@@ -69,3 +69,48 @@ claims:
     assumptions: "the two inspected lists are representative of the genre; other indexes may annotate entries"
     counterevidence: "some indexes (not yet inspected) do annotate difficulty; this claim motivates a design choice, not a universal statement"
     date: 2026-10-21
+
+  - id: CLM-0006
+    claim: >-
+      The International AI Safety Report 2026 is the second edition of the
+      report, was published on 2026-02-03, is downloadable in English and
+      five other official UN languages, and is licensed under the Open
+      Government Licence v3.0.
+    source: SRC-REPORT-001
+    section_or_page: "publication landing page"
+    evidence_strength: "direct page inspection of stated edition, date, languages, and license"
+    assumptions: "the landing page accurately reflects the published edition"
+    counterevidence: "none at page level; full text not yet read, so content-level claims are not yet made"
+    date: 2026-10-21
+
+  - id: CLM-0007
+    claim: >-
+      Concrete Problems in AI Safety (Amodei et al., 2016, arXiv:1606.06565,
+      v2) defines AI accidents as unintended and harmful behavior emerging
+      from poor design of real-world ML systems, and organizes five practical
+      research problems - avoiding side effects, avoiding reward hacking,
+      scalable supervision, safe exploration, and distributional shift - by
+      whether they originate from a wrong objective function, an
+      expensive-to-evaluate objective, or undesirable behavior during
+      learning.
+    source: SRC-PAPER-001
+    section_or_page: "abstract (verified verbatim from the arXiv abstract page)"
+    evidence_strength: "direct abstract read"
+    assumptions: "the abstract accurately represents the paper's taxonomy"
+    counterevidence: "none from the abstract itself; section-level nuance requires full-text reading, which is assigned as chapter reading and not yet performed by the course author"
+    date: 2026-10-21
+
+  - id: CLM-0008
+    claim: >-
+      Risks from Learned Optimization (Hubinger et al., arXiv:1906.01820,
+      v3) introduces the term mesa-optimization for a learned model that is
+      itself an optimizer, and poses two questions: under what circumstances
+      learned models will be optimizers (including when they should not
+      be), and, when a learned model is an optimizer, what its objective
+      will be and how it can differ from the training loss.
+    source: SRC-PAPER-002
+    section_or_page: "abstract (verified verbatim from the arXiv abstract page)"
+    evidence_strength: "direct abstract read"
+    assumptions: "the abstract accurately represents the paper's core definitions"
+    counterevidence: "none from the abstract itself; the paper's internal distinctions (e.g., inner vs outer alignment) await full-text reading before chapter 07 relies on them"
+    date: 2026-10-21

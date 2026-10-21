@@ -128,3 +128,76 @@ sources:
       signatures). Entries were not individually verified through this list.
       No commit SHA captured at access time.
     license: "CC0-1.0 (stated in repository README)"
+
+  - id: SRC-PAPER-001
+    title: "Concrete Problems in AI Safety"
+    authors_or_organization: "Dario Amodei, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman, Dan Mané"
+    url: "https://arxiv.org/abs/1606.06565"
+    source_type: paper
+    publication_date: 2016-06-21
+    version: "v2 (25 Jul 2016)"
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: synthesis
+    peer_review_status: "unknown (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/01 (risk-model taxonomy and framing)"
+      - "chapters/03 (five-problem taxonomy: side effects, reward hacking, scalable supervision, safe exploration, distributional shift)"
+    limitations: >-
+      Abstract read by the course author on 2026-10-21; full text (29 pages)
+      assigned as chapter reading. The five-problem taxonomy as recorded here
+      is taken verbatim from the abstract; section-level claims await
+      full-text reading. License terms are stated in the PDF, not on the
+      abstract page, and have not yet been verified.
+    license: "unknown (not shown on abstract page)"
+
+  - id: SRC-PAPER-002
+    title: "Risks from Learned Optimization in Advanced Machine Learning Systems"
+    authors_or_organization: "Evan Hubinger, Chris van Merwijk, Vladimir Mikulik, Joar Skalse, Scott Garrabrant"
+    url: "https://arxiv.org/abs/1906.01820"
+    source_type: paper
+    publication_date: 2019-06-05
+    version: "v3 (1 Dec 2021)"
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: theoretical
+    peer_review_status: "unknown (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/01 (hypothesis vs evidence discipline)"
+      - "chapters/03 (specification vs learned objectives)"
+      - "chapters/07 (mesa-optimization hypothesis)"
+    limitations: >-
+      Abstract read by the course author on 2026-10-21; full text assigned
+      as chapter reading. Mesa-optimization definitions recorded here are
+      from the abstract; the paper's careful distinctions (inner/outer
+      alignment, mesa vs base objectives) require full-text reading before
+      chapter 07 leans on them. License terms not shown on abstract page.
+    license: "unknown (not shown on abstract page)"
+
+  - id: SRC-REPORT-001
+    title: "International AI Safety Report 2026"
+    authors_or_organization: "International AI Safety Report Secretariat (UK Department for Science, Innovation and Technology)"
+    url: "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    source_type: official-report
+    publication_date: 2026-02-03
+    version: "second edition"
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: >-
+      unknown at landing-page level; a large expert-network synthesis, not a
+      journal peer review — treated as authoritative synthesis of current
+      evidence, never as primary evidence itself
+    supports:
+      - "chapters/01 (current-field calibration)"
+      - "chapters/20 and 21 (planned)"
+      - "chapters/23 (planned)"
+      - "research/frontier-snapshot (planned)"
+    limitations: >-
+      Landing page inspected on 2026-10-21: second edition, published
+      2026-02-03, downloadable in English and five other official UN
+      languages. Full text not yet read; chapter and section citations
+      await full-text access. Synthesis of expert networks — useful for
+      calibrating what the field currently believes, not a substitute for
+      the primary studies it summarizes.
+    license: "Open Government Licence v3.0 (stated on landing page)"
