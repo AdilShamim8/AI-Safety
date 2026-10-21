@@ -389,3 +389,44 @@ claims:
     counterevidence: >-
       the authors hedge with 'may'; the effect size of heuristic labels is not quantified in the abstract
     date: 2026-10-21
+
+  - id: CLM-0030
+    claim: >-
+      When finetuning GPT-4 with a GPT-2-level supervisor and an auxiliary confidence loss, the authors report recovering close to GPT-3.5-level performance on NLP tasks — naive finetuning on weak labels already elicits more than the weak supervisor has.
+    source: SRC-PAPER-013
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; authors' own evaluation"
+    assumptions: "the abstract accurately reports the weak-to-strong experiments; 'close to GPT-3.5' is the authors' characterization on their NLP task suite"
+    counterevidence: >-
+      the same abstract states they are still far from recovering full strong-model capabilities with naive finetuning — the gap-closing is partial, task-suite-specific, and uses an auxiliary loss the naive baseline lacks
+    date: 2026-10-21
+  - id: CLM-0031
+    claim: >-
+      Bowman et al. center their experimental design on breakthrough tasks — tasks where human specialists succeed but unaided humans and current general AI systems fail — and find that human participants interacting with an unreliable LLM dialog assistant (a trivial baseline oversight strategy) substantially outperform both the model alone and their own unaided performance.
+    source: SRC-PAPER-014
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch"
+    assumptions: "the abstract accurately reports the participant study design and outcome"
+    counterevidence: >-
+      the paper's own framing calls the assistant condition a trivial baseline; the course adds that the unaided floor may be depressed by the time-limited format — neither caveat is a replication
+    date: 2026-10-21
+  - id: CLM-0032
+    claim: >-
+      In the debate paper's MNIST experiment, competing agents that take turns revealing pixels boost a sparse-pixel classifier's accuracy from 59.4% to 88.9% given 6 visible pixels and from 48.2% to 85.2% given 4 pixels.
+    source: SRC-PAPER-015
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; exact numbers quoted from the fetched abstract"
+    assumptions: "the abstract accurately reports the experiment"
+    counterevidence: >-
+      the judge is a classifier, not a human persuadable by arguments; the gains are existence proofs of debate-style information gain in a toy perceptual domain, not evidence about language-domain debate
+    date: 2026-10-21
+  - id: CLM-0033
+    claim: >-
+      The weak-to-strong abstract states that techniques like RLHF may scale poorly to superhuman models without dedicated work — humans will eventually only weakly supervise systems more capable than they are.
+    source: SRC-PAPER-013
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch"
+    assumptions: "the abstract faithfully states the paper's motivation"
+    counterevidence: >-
+      a motivation statement, not a demonstrated result; the demonstrated experiments are sub-human-gap analogues
+    date: 2026-10-21

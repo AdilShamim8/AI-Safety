@@ -28,14 +28,15 @@ as the work it describes. On session start, read this file, then
 | **Chapter 02 complete** — ten-element structure: failure pathway (validity-leak chain), five-gate core (construct validity with three card-grounded worked examples; five provenance questions; dependence-aware splits; contamination & adaptive overfitting; Wilson/power/effect sizes with four verified-number worked intervals), guard-layer end-to-end worked example with threshold-straddling honest conclusions, approach comparison table, four failure modes of the method itself, readings split into verified vs assigned-pending, 5 exercises + full solutions with rubrics + arithmetic; GLOSSARY +12 terms; chapters index updated | this commit | validator + tests green locally |
 | **Chapter 03 complete** — ten-element structure: three-way failure taxonomy (proxy/capability/learned-goal) with formal grounding (Skalse et al. hackability conditions; Pan et al. capability thresholds; Shah et al. goal misgeneralization; mesa-optimization re-anchored to SRC-PAPER-002), Goodhart gap G and proxy validity region V(R-hat) defined with notation, truthfulness-judge worked example swept over BoN pressure with real AdvBench/TruthfulQA card numbers and preregistered gates G1/G2 (Wilson intervals recomputed in solutions), approach comparison (5 rows), where-the-methods-fail section, 2 demanding exercises + full solutions with rubrics (509-line solutions file with programmatic arithmetic); GLOSSARY +10 terms; readings = 4 verified sources (1 re-verified) | this commit | validator + tests green | |
 | **Chapter 04 complete** — ten-element structure: failure pathway (proxy chain labels -> reward model -> policy), core explanation of the full post-training stack (SFT, reward modeling with BT surrogate and its four silent assumptions, PPO-style RLHF under KL budget, DPO with the complete closed-form derivation carried end-to-end, RLAIF/Constitutional AI two-phase), DPO gradient derived and numerically verified in solutions (BT pair-loss calibration 0.371/0.184; toy-policy optimum at beta=0.5 with exact arithmetic), label-quality audit grounded in the HH-RLHF and BeaverTails cards, approach comparison table, where-the-methods-fail section, 4 exercises + 220-line solutions with rubrics; GLOSSARY +10 terms; readings = 4 newly verified sources | this commit | validator + tests green | |
+| **Chapter 05 complete** — ten-element structure: failure pathway (the oversight gap and its unaudited remainder), core explanation (weak-to-strong supervision with PGR framing and its small-gap caveat; breakthrough-task experimental design; debate with the PSPACE claim and its optimal-play assumption; decomposition and process-vs-outcome supervision; correlated-error arithmetic carried with exact binomial committee computations), oversight-committee worked example over a paired refusal suite with Wilson intervals and correlation sweep (recomputed in solutions), approach comparison table with cost/coverage/error structure, where-the-methods-fail section, exercises + 365-line solutions with rubrics; GLOSSARY +10 terms; readings = 3 newly verified sources (W2S, Bowman, Debate) + Concrete Problems re-anchored | this commit | validator + tests green | |
 
 ## Current phase
 
-Phase C in progress: chapters 03-04 complete (4/24); chapter 05 written and verified, landing next; P01 code green in its worktree.
+Phase C complete: chapters 03-05 done (5/24) with the methodology spine finished; P01 lands next, then Phase D chapters.
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 4 / 24
+- Chapters complete: 5 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 0 / 10
 - Paper notes complete: 0 / 20 required minimum
@@ -52,4 +53,4 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: chapter 05 (scalable oversight) — README and solutions written, sources verified (Weak-to-Strong, Bowman et al., Debate); merge its fragment and commit, then the P01 evaluation-harness project pair from worktrees/p01.
+Next exact action: land the P01 evaluation-harness project from worktrees/p01 as a two-commit pair (spec, then implementation with its 71 tests, validated fixture set, and genuine example report), then chapter 06 (honesty, uncertainty, selective prediction).

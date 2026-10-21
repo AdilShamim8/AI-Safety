@@ -13,7 +13,8 @@ catalog with prerequisites and artifacts is
 | 02 | Evaluation science and experimental design | [02-evaluation-science-and-experimental-design](02-evaluation-science-and-experimental-design/) — **complete** |
 | 03 | Specification, reward hacking, and goal misgeneralization | [03-specification-reward-hacking-and-goal-misgeneralization](03-specification-reward-hacking-and-goal-misgeneralization/) — **complete** |
 | 04 | Preference learning and post-training | [04-preference-learning-and-post-training](04-preference-learning-and-post-training/) — **complete** |
-| 5–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases D–H)* |
+| 05 | Scalable oversight | [05-scalable-oversight](05-scalable-oversight/) — **complete** |
+| 6–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases D–H)* |
 
 Chapters appear here as they are completed — this index never links to a
 chapter that does not exist yet.

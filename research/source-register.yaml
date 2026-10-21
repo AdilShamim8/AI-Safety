@@ -708,3 +708,52 @@ sources:
     limitations: >-
       Abstract read only. 2019-era models, tasks, and label scales; the heuristic-labels sentence is quoted as a short fragment from the abstract with pointer, per the quotation rules. The original candidate ID suggested in planning (1909.02053) was corrected to 1909.08593 by verification (title and author list matched on the fetched page).
     license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+
+  - id: SRC-PAPER-013
+    title: "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision"
+    authors_or_organization: "Collin Burns, Pavel Izmailov, Jan Hendrik Kirchner, Bowen Baker, Leo Gao, Leopold Aschenbrenner, Yining Chen, Adrien Ecoffet, Manas Joglekar, Jan Leike, Ilya Sutskever, Jeff Wu"
+    url: "https://arxiv.org/abs/2312.09390"
+    source_type: paper
+    publication_date: 2023-12-14
+    version: v1
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/05-scalable-oversight/README.md (section 3: weak-to-strong generalization phenomenon; GPT-2-supervised GPT-4 recovering near-GPT-3.5 performance with the auxiliary confidence loss)"
+    limitations: >-
+      Abstract read only. The strong-weak gap in the experiments is small relative to the human-superhuman gap the setup stands in for — the chapter's central skeptical caveat, stated by the course, not conceded in the abstract. Task-suite details, PGR metric details, and ablations live in the unread full text.
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+  - id: SRC-PAPER-014
+    title: "Measuring Progress on Scalable Oversight for Large Language Models"
+    authors_or_organization: "Samuel R. Bowman, Jeeyoon Hyun, Ethan Perez, Edwin Chen, Craig Pettit, Scott Heiner, Karmile Lukosiute, Amanda Askell, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, Christopher Olah, Daniela Amodei, Dario Amodei, Dawn Drain, Dustin Li, Eli Tran-Johnson, Jackson Kernion, Jamie Kerr, Jared Mueller, Jeffrey Ladish, Joshua Landau, Kamal Ndousse, Liane Lovitt, Nelson Elhage, Nicholas Schiefer, Nicholas Joseph, Noemi Mercado, Nova DasSarma, Robin Larson, Sam McCandlish, Sandipan Kundu, Scott Johnston, Shauna Kravec, Sheer El Showk, Stanislav Fort, Timothy Telleen-Lawton, Tom Brown, Tom Henighan, Tristan Hume, Yuntao Bai, Zac Hatfield-Dodds, Ben Mann, Jared Kaplan"
+    url: "https://arxiv.org/abs/2211.03540"
+    source_type: paper
+    publication_date: 2022-11-04
+    version: v1
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "unknown at fetched version (venue not recorded this round; not claimed)"
+    supports:
+      - "chapters/05-scalable-oversight/README.md (section 3: breakthrough-task experimental design — tasks where human specialists succeed but unaided humans and current general AI systems fail; the dialog-assistant interaction result)"
+    limitations: >-
+      Abstract read only. The assistant condition is a self-described trivial baseline and the unaided-human floor may be depressed by the time-limited format (course caveat matching the paper's own hedging). Quantitative per-task results are in the unread full text; the chapter uses the design and the directional result, not specific numbers.
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+  - id: SRC-PAPER-015
+    title: "AI Safety via Debate"
+    authors_or_organization: "Geoffrey Irving, Paul Christiano, Dario Amodei"
+    url: "https://arxiv.org/abs/1805.00899"
+    source_type: paper
+    publication_date: 2018-05-02
+    version: v1
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: primary
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/05-scalable-oversight/README.md (section 3: debate as an adversarial game judged by humans; the optimal-play PSPACE claim; the MNIST sparse-pixel judge experiment numbers)"
+    limitations: >-
+      Abstract read only. The PSPACE claim assumes optimal play and a polynomial-time judge model; the MNIST judge is a sparse-pixel classifier, not a persuadable human — both caveats carried in the chapter. The 2018 proposal predates LLM debates; no claim is made about current-model debate performance.
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"

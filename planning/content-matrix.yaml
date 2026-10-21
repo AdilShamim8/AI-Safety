@@ -75,7 +75,7 @@ chapters:
     title: "Scalable oversight"
     path: "chapters/05-scalable-oversight/"
     phase: D
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Explain weak-to-strong supervision, debate, decomposition, process vs outcome supervision"
       - "Identify oversight failures, evaluator capability limits, correlated errors"
@@ -83,8 +83,8 @@ chapters:
     prerequisites: ["02"]
     project_ids: ["P05"]
     assessments: ["bounded-comparison design"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-013, SRC-PAPER-014, SRC-PAPER-015, SRC-PAPER-001, SRC-DATASET-001, SRC-DATASET-006]
+    verified_on: 2026-10-21
   - id: "06"
     title: "Honesty, uncertainty, and selective prediction"
     path: "chapters/06-honesty-uncertainty-and-selective-prediction/"
