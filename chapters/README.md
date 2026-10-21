@@ -10,7 +10,7 @@ catalog with prerequisites and artifacts is
 | ID | Chapter | Directory |
 |---|---|---|
 | 01 | Risk models and research epistemics | [01-risk-models-and-research-epistemics](01-risk-models-and-research-epistemics/) — **complete** |
-| 02 | Evaluation science and experimental design | *planned (Phase C)* |
+| 02 | Evaluation science and experimental design | [02-evaluation-science-and-experimental-design](02-evaluation-science-and-experimental-design/) — **complete** |
 | 03 | Specification, reward hacking, and goal misgeneralization | *planned (Phase C)* |
 | 04–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases D–H)* |
 

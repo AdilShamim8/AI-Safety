@@ -24,19 +24,20 @@ as the work it describes. On session start, read this file, then
 | Phase B (part 3): eight content templates (chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review) | `08c24bc` (pushed) | `templates/*` |
 | Phase B (part 4): engineering baseline — pyproject + uv.lock (19 pkgs), .python-version, in-repo validator + 7 tests, CI (actions pinned to verified SHAs), issue/PR templates | `66b8574` (pushed; **CI green**: all 8 steps success on run 39557258289) | checks verified via API |
 | Phase C (part 1): **chapter 01 complete** — README (ten-element structure: risk decomposition with six primitives, evidence kinds, uncertainty taxonomy, invoice-assistant worked example, approach comparison, failure conditions, verified readings), exercises, full worked solutions + assessor rubrics, GLOSSARY seed (18 entries), chapters index; registers +3 sources (SRC-PAPER-001/002, SRC-REPORT-001) and +3 claims (CLM-0006/0007/0008) | `0f9b0a0` (pushed; CI green) | validator + tests green locally |
-| **Dataset catalog (owner-directed depth upgrade)**: `datasets/` — 13 verified real-world safety datasets (TruthfulQA, BOLD, RealToxicityPrompts, ToxiGen, BBQ, XSTest, BeaverTails, HH-RLHF, AdvBench, JailbreakBench, HarmBench, WildChat, SafetyBench) with deep cards; per-fact reference tables (every composition number traced to the URL it was collected from, with access level and date); machine-readable catalog.yaml; curriculum-integration map; usage/licensing policy (BeaverTails NC flag; no content redistribution); pending-verification queue; registers +18 sources (SRC-DATASET-001..015, SRC-PAPER-003/004/005, SRC-DATASET-009b) and +13 claims (CLM-0009..0021) | this commit | validator + tests green locally |
+| **Dataset catalog (owner-directed depth upgrade)**: `datasets/` — 13 verified real-world safety datasets (TruthfulQA, BOLD, RealToxicityPrompts, ToxiGen, BBQ, XSTest, BeaverTails, HH-RLHF, AdvBench, JailbreakBench, HarmBench, WildChat, SafetyBench) with deep cards; per-fact reference tables (every composition number traced to the URL it was collected from, with access level and date); machine-readable catalog.yaml; curriculum-integration map; usage/licensing policy (BeaverTails NC flag; no content redistribution); pending-verification queue; registers +18 sources (SRC-DATASET-001..015, SRC-PAPER-003/004/005, SRC-DATASET-009b) and +13 claims (CLM-0009..0021) | `ae06ad9` (pushed; CI green run 39574015674) | validator + tests green; remote head verified |
+| **Chapter 02 complete** — ten-element structure: failure pathway (validity-leak chain), five-gate core (construct validity with three card-grounded worked examples; five provenance questions; dependence-aware splits; contamination & adaptive overfitting; Wilson/power/effect sizes with four verified-number worked intervals), guard-layer end-to-end worked example with threshold-straddling honest conclusions, approach comparison table, four failure modes of the method itself, readings split into verified vs assigned-pending, 5 exercises + full solutions with rubrics + arithmetic; GLOSSARY +12 terms; chapters index updated | this commit | validator + tests green locally |
 
 ## Current phase
 
 **Phase C in progress.** Chapter 01 is complete; the **real-world dataset
 catalog** is complete (13 datasets, verified 2026-10-21 at page-inspect /
-abstract-read levels with per-fact references). Chapter 02 is next and now
-has verified dataset material to draw on (construct-validity worked examples
-from the catalog's composition numbers).
+abstract-read levels with per-fact references); **chapter 02 is complete**
+(construct/provenance/splits/contamination/power/preregistration, all
+worked examples grounded in verified catalog numbers).
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 1 / 24 (Ch. 01 complete; 02–24 planned; see content matrix)
+- Chapters complete: 2 / 24 (Ch. 01, Ch. 02 complete; 03–24 planned; see content matrix)
 - Dataset cards complete: 13 / 13 in the current catalog scope (queue of
   ~10 further datasets recorded at metadata-only level, deliberately
   unverified and uncited)
@@ -56,28 +57,21 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Phase C continues with chapter 02 (one coherent commit per unit):
+Phase C continues (one coherent commit per unit):
 
-1. Verify chapter 02's readings (construct validity / contamination /
-   adaptive overfitting / reproducibility primaries - search, then register
-   at achieved access levels; WILDS arXiv:2012.07421 is the brief's seed
-   for distribution-shift evaluation material used again in Ch. 17).
-2. Write `chapters/02-evaluation-science-and-experimental-design/`
-   (README + exercises + solutions + rubric) - deep on: construct validity,
-   dataset provenance, grouped splits, contamination, adaptive overfitting,
-   statistical power, cluster-aware intervals (Wilson), effect sizes,
-   repeated trials, preregistration. **Draw worked examples from the
-   verified dataset catalog** (datasets/README.md): BOLD's imbalanced
-   sub-groups for power; XSTest's 250-item denominators for Wilson
-   intervals; AdvBench's 520-vs-500 provenance discrepancy for verification
-   hygiene; BeaverTails' NC license for licensing discipline; WildChat's
-   license-change history for provenance archaeology. Artifact:
-   preregistered evaluation plan (a learner's Exercise 1.2 output is its
-   draft).
-3. Then P01 (evaluation harness - first code project; the
-   src/ai_safety_course package lands there) -> chapter 03 -> P02, same
-   discipline.
+1. **P01 — evaluation harness** (first code project; `src/ai_safety_course`
+   lands here): config-driven runner, local adapters, versioned cases,
+   transparent metrics (Wilson intervals per Ch. 02), resumability, reports,
+   scorer validation against hand-verified examples. Uses TruthfulQA/XSTest
+   metadata (no content redistribution) per the dataset catalog's policy.
+2. Then chapter 03 (specification, reward hacking, goal misgeneralization)
+   -> P02, same discipline.
+3. Verification-round 2 (when web access is available): the catalog's
+   pending queue (OR-Bench, WildJailbreak, WMDP, HaluEval, SimpleQA,
+   ToxiGen/BBQ/HarmBench/SafetyBench licenses, CrowS-Pairs, Winogender,
+   MMLU, GSM8K) and chapter 02's assigned readings (WILDS 2012.07421,
+   TruthfulQA 2109.07958 full-text).
 4. Owner-directed priority note (2026-10-21): the course must read as a
-   premium ($10k-course-grade) curriculum - every chapter must go deep,
-   cite its sources, and tie into real datasets; the catalog is the first
-   layer of that standard, and chapter 02 must meet it too.
+   premium ($10k-course-grade) curriculum — every chapter must go deep,
+   cite its sources, and tie into real datasets; chapters 01–02 now meet
+   that standard and every later chapter must match it.

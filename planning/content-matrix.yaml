@@ -33,7 +33,7 @@ chapters:
     title: "Evaluation science and experimental design"
     path: "chapters/02-evaluation-science-and-experimental-design/"
     phase: C
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Explain construct validity, dataset provenance, grouped splits, contamination, adaptive overfitting"
       - "Design evaluations with statistical power, cluster-aware intervals, effect sizes, repeated trials"
@@ -41,8 +41,8 @@ chapters:
     prerequisites: ["01"]
     project_ids: ["P01"]
     assessments: ["preregistered-evaluation-plan artifact"]
-    source_ids: []
-    verified_on: null
+    source_ids: ["SRC-PAPER-003", "SRC-PAPER-004", "SRC-PAPER-005", "SRC-REPORT-001", "SRC-ARTICLE-001", "SRC-DATASET-001", "SRC-DATASET-002", "SRC-DATASET-003", "SRC-DATASET-004", "SRC-DATASET-005", "SRC-DATASET-006", "SRC-DATASET-007", "SRC-DATASET-009", "SRC-DATASET-010", "SRC-DATASET-012"]
+    verified_on: 2026-10-21
   - id: "03"
     title: "Specification, reward hacking, and goal misgeneralization"
     path: "chapters/03-specification-reward-hacking-and-goal-misgeneralization/"
