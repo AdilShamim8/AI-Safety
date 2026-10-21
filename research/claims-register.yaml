@@ -625,3 +625,54 @@ claims:
     counterevidence: >-
       stars and activity are health indicators, not correctness indicators; P06 must pin a version and record it in its provenance block
     date: 2026-10-21
+
+  - id: CLM-0051
+    claim: >-
+      Bricken et al. (Towards Monosemanticity) decompose a one-layer transformer's 512-neuron MLP layer into 4,096+ sparse-autoencoder features that separately encode human-interpretable concepts (Arabic script, DNA sequences, base64, Hebrew), motivated by superposition — models representing more features than they have neurons — as the cause of polysemanticity; they document feature splitting (concepts resolving into more specific features as the dictionary grows), dead-feature and feature-density statistics in their global analysis, and state verbatim that for their autoencoder modifications they "do not provide rigorous ablation experiments and instead provide intuition and anecdotal evidence for why each is justified."
+    source: SRC-PAPER-030
+    section_or_page: "transformer-circuits.pub/2023/monosemantic-features, sections Problem Setup, Sparse Autoencoder Setup, Global Analysis, Phenomenology/Feature Splitting, and the modifications discussion (fetched 2026-10-21)"
+    evidence_strength: "full-text-read (web rendering, single fetch); key sentences spot-verified programmatically"
+    assumptions: "the web rendering matches the intended article; one-layer-model findings extrapolate qualitatively to production models"
+    counterevidence: >-
+      the authors' own self-assessment (intuition and anecdote, not rigorous ablations); evaluation is self-administered rubrics plus automated interpretability
+    date: 2026-10-21
+  - id: CLM-0052
+    claim: >-
+      Cunningham et al. independently report that sparse autoencoders find highly interpretable, causally relevant features in language models, motivating them by superposition as the hypothesized cause of polysemanticity, and demonstrate automated-interpretability evaluation and causal-counterfactual feature pinpointing — the independent-group confirmation and the necessity-test style chapter 10 mirrors.
+    source: SRC-PAPER-031
+    section_or_page: "arXiv 2309.08600 v3 abstract (fetched 2026-10-21)"
+    evidence_strength: "abstract-read; central claims quoted from abstract, body not read this build"
+    assumptions: "the abstract faithfully represents the body; small-model findings transfer qualitatively"
+    counterevidence: >-
+      independent replication at GPT-2-small scale of interpretability claims is weaker evidence than reproduction on frontier-scale dictionaries; automated interpretability itself has unvalidated reliability
+    date: 2026-10-21
+  - id: CLM-0053
+    claim: >-
+      Templeton et al. (Scaling Monosemanticity) train SAEs of 1,048,576 (~1M), 4,194,304 (~4M), and 33,554,432 (~34M) features on Claude 3 Sonnet, recover safety-relevant features (including categories for deception, sycophancy, and bias), document feature splitting at scale (a San Francisco feature in the 1M SAE splits into two in the 4M and eleven in the 34M), and report a feature-completeness gap — features corresponding to only about 60% of London boroughs in the 34M SAE despite the model demonstrably knowing them — suggesting many more features remain unextracted.
+    source: SRC-PAPER-032
+    section_or_page: "transformer-circuits.pub/2024/scaling-monosemanticity/, sections Feature Survey / Feature Neighborhoods (splitting), Feature Completeness (London boroughs), Safety-Relevant Features (fetched 2026-10-21)"
+    evidence_strength: "full-text-read (web rendering, single fetch); the 1-2-11 splitting sentence, the ~60% London sentence, and the 34M size spot-verified programmatically"
+    assumptions: "the web rendering matches the intended article; the manufacturer's self-evaluation of feature semantics is accurate"
+    counterevidence: >-
+      self-evaluation on a frontier model by its own manufacturer (the chapter carries this verbatim); completeness at ~60% of a well-defined concept set means dictionary coverage claims are upper bounds at best
+    date: 2026-10-21
+  - id: CLM-0054
+    claim: >-
+      Huang et al. introduce RAVEL, a benchmark that turns "did this interpretability method disentangle the attributes?" into a controlled quantitative comparison across methods, by constructing minimal pairs that differ in exactly one attribute value — the confound logic chapter 10's exercises borrow: a representation keyed to attribute A may be tracking correlated attribute B until a controlled swap separates them.
+    source: SRC-PAPER-033
+    section_or_page: "arXiv 2402.17700 v2 abstract (fetched 2026-10-21)"
+    evidence_strength: "abstract-read; methodology described from abstract, body not read this build"
+    assumptions: "the abstract faithfully represents the benchmark design; synthetic entanglement cases exercise the same failure mode as organic feature dictionaries"
+    counterevidence: >-
+      disentanglement on constructed minimal pairs is a necessary condition for, not proof of, having found the model's true feature decomposition
+    date: 2026-10-21
+  - id: CLM-0055
+    claim: >-
+      Jacovi and Goldberg distinguish faithfulness (the interpretation accurately reflecting the model's actual reasoning process) from plausibility (the interpretation being convincing to a human) and from readability, and argue that human judgment measures plausibility — so an evaluation that convinces a reader (a dashboard, top-activating examples) is plausibility evidence by definition and cannot establish faithfulness, which requires the intervention/counterfactual tests.
+    source: SRC-PAPER-034
+    section_or_page: "arXiv 2004.03685 v3 abstract and the paper's core distinction (abstract fetched and verified 2026-10-21)"
+    evidence_strength: "abstract-read with the central distinction confirmed from abstract text directly; body not re-read this build"
+    assumptions: "the abstract's statement of the distinction faithfully represents the six-page position paper"
+    counterevidence: >-
+      a position paper: proposes the vocabulary and evaluation guidelines rather than measuring any specific system; the faithfulness/plausibility split is widely adopted but the operationalization details are contested
+    date: 2026-10-21

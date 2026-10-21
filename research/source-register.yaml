@@ -1004,3 +1004,85 @@ sources:
     limitations: >-
       Repository page inspected via GitHub API 2026-10-21 (3987 stars, MIT license, actively pushed); no code executed this build. Version pinning and API stability are P06's concern, recorded there.
     license: "MIT (per GitHub API license field)"
+
+  - id: SRC-PAPER-030
+    title: "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning"
+    authors_or_organization: "Trenton Bricken, Adly Templeton, Joshua Batson, et al. (Anthropic, Transformer Circuits Thread)"
+    url: "https://transformer-circuits.pub/2023/monosemantic-features"
+    source_type: paper
+    publication_date: 2023-10-04
+    version: published web article (Transformer Circuits Thread)
+    accessed_on: 2026-10-21
+    access_level: full-text-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed (research-thread web publication by an industrial research team)"
+    supports:
+      - "chapters/10-.../README.md (section 3.1-3.4: superposition and polysemanticity as motivation; the sparse-autoencoder / dictionary-learning setup trained on one-layer-model MLP activations; global analysis metrics including dead-feature counts and the feature-density bimodality; phenomenology: feature splitting into more specific features as dictionaries grow)"
+      - "chapters/10-.../README.md (readings: the authors' own statement that they 'do not provide rigorous ablation experiments and instead provide intuition and anecdotal evidence for why each [modification] is justified' — quoted verbatim from the article's autoencoder-modifications discussion)"
+    limitations: >-
+      Full text fetched 2026-10-21 at the canonical URL (20.6MB page; terminology spot-verified programmatically: 'Problem Setup', 'Sparse Autoencoder Setup', Arabic/DNA/base64/Hebrew feature investigations, 'Feature Splitting' section, dead features, and the intuition-and-anecdote sentence). One-layer toy model only; evaluation is self-administered rubrics plus automated interpretability, as the authors themselves state. NOTE: the URL path is /2023/monosemantic-features (a /2023/monosemanticity path exists in the wild and returns HTTP 403 to automated fetch — the canonical path was located via web search and confirmed 200).
+    license: "unknown (web publication; no separate article license observed on the page)"
+  - id: SRC-PAPER-031
+    title: "Sparse Autoencoders Find Highly Interpretable Features in Language Models"
+    authors_or_organization: "Hoagy Cunningham, Aidan Ewart, Logan Riggs, Robert Huben, Lee Sharkey"
+    url: "https://arxiv.org/abs/2309.08600"
+    source_type: paper
+    publication_date: 2023-09-15
+    version: v3 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue in the API record)"
+    supports:
+      - "chapters/10-.../README.md (section 3.5 and readings: the independent-group confirmation that SAEs recover interpretable features, motivated by superposition as the hypothesized cause of polysemanticity; the automated-interpretability evaluation stance; the causal-counterfactual pinpointing style the chapter's necessity test mirrors)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21 (title, authors, v3, 2023-09-15); body not read this build. Small models; the abstract's causal claims are quoted at abstract level only.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-032
+    title: "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet"
+    authors_or_organization: "Adly Templeton, Tom Conmy, et al. (Anthropic, Transformer Circuits Thread)"
+    url: "https://transformer-circuits.pub/2024/scaling-monosemanticity/"
+    source_type: paper
+    publication_date: 2024-05-21
+    version: published web article (Transformer Circuits Thread)
+    accessed_on: 2026-10-21
+    access_level: full-text-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed (research-thread web publication by an industrial research team)"
+    supports:
+      - "chapters/10-.../README.md (sections 3.1, 3.4, 6 and readings: SAEs trained at 1M / 4M / 34M (33,554,432) features on Claude 3 Sonnet; safety-relevant feature categories (deception, sycophancy, bias); feature splitting at scale — a San Francisco feature in the 1M SAE splits into two in the 4M and eleven in the 34M, quoted verbatim; the feature-completeness gap: features found for only about 60% of London boroughs in the 34M SAE, suggesting many more features remain unextracted)"
+    limitations: >-
+      Full text fetched 2026-10-21 (16.3MB page; spot-verified programmatically: the 1M/4M/34M sizes, the San Francisco 1-to-2-to-11 splitting sentence, the London-boroughs ~60% completeness sentence, the Safety-Relevant Features section list). Self-evaluation of a frontier model by its own manufacturer — the chapter carries this caveat verbatim; feature activations shown via representative examples, not exhaustive audits.
+    license: "unknown (web publication; no separate article license observed on the page)"
+  - id: SRC-PAPER-033
+    title: "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations"
+    authors_or_organization: "Jing Huang, Zhengxuan Wu, Christopher Potts, Mor Geva, Atticus Geiger"
+    url: "https://arxiv.org/abs/2402.17700"
+    source_type: paper
+    publication_date: 2024-02-27
+    version: v2 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "commonly listed as ACL 2024; the fetched arXiv v2 API record lists no venue — venue recorded as commonly-cited, not independently verified this build"
+    supports:
+      - "chapters/10-.../README.md (exercises and section 6: the disentanglement-evaluation framing — turning 'did the method disentangle the attributes?' into a controlled quantitative comparison across interpretability methods; the confound logic the exercises borrow: a feature keyed to one attribute may be tracking a correlated one until a controlled swap separates them)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21; body not read this build. A synthetic dataset of attribute-entanglement cases; generalization to organically-trained feature dictionaries is argued, not demonstrated.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-034
+    title: "Towards Faithfully Interpretable NLP Systems: How should we define and evaluate faithfulness?"
+    authors_or_organization: "Alon Jacovi, Yoav Goldberg"
+    url: "https://arxiv.org/abs/2004.03685"
+    source_type: paper
+    publication_date: 2020-04-07
+    version: v3 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: full-text-read
+    evidence_class: theoretical
+    peer_review_status: "published at ACL 2020 per common citation; the fetched arXiv v3 API record lists no venue — venue recorded as commonly-cited, not independently verified this build"
+    supports:
+      - "chapters/10-.../README.md (sections 3.6 and 6: the faithfulness/plausibility/readability vocabulary — faithfulness as accuracy in reflecting the model's actual reasoning process, plausibility as convincingness to a human; the guideline that human judgment measures plausibility, making dashboards plausibility evidence by definition)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21; the full text of this 6-page opinion piece is short and widely mirrored — recorded at abstract-read verification level for this build, with the faithfulness-vs-plausibility distinction confirmed from the abstract text directly. An opinion/position paper, not an empirical result.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"

@@ -145,7 +145,7 @@ chapters:
     title: "Sparse features, circuits, and interpretability evaluation"
     path: "chapters/10-sparse-features-circuits-and-interpretability-evaluation/"
     phase: E
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Explain superposition, SAE reconstruction vs usefulness, feature splitting/absorption"
       - "Evaluate faithfulness and completeness of circuit claims"
@@ -153,8 +153,8 @@ chapters:
     prerequisites: ["09"]
     project_ids: []
     assessments: ["SAE-critique analysis"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-030, SRC-PAPER-031, SRC-PAPER-032, SRC-PAPER-033, SRC-PAPER-034, SRC-DATASET-001, SRC-DATASET-013]
+    verified_on: 2026-10-21
   - id: "11"
     title: "Behavioral steering and representation interventions"
     path: "chapters/11-behavioral-steering-and-representation-interventions/"
