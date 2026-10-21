@@ -1,0 +1,51 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# --- Tooling caches ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+.cache/
+
+# --- Data policy: fixtures and manifests are committed; raw/external data is NOT ---
+data/raw/
+data/external/
+data/processed/
+data/cache/
+
+# --- Model artifacts: never commit weights ---
+*.ckpt
+*.pt
+*.safetensors
+*.gguf
+*.bin
+models/
+
+# --- Experiment outputs: raw run output stays local; curated reports are committed ---
+runs/
+results/raw/
+*.log
+
+# --- Secrets: never commit ---
+.env
+.env.*
+secrets/
+*.pem
+*.key
+*.token
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

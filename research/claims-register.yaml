@@ -1,0 +1,71 @@
+# Claims register — claim-level evidence tracking.
+#
+# Each entry: id, claim, source (source-register ID), section_or_page,
+# evidence_strength, assumptions, counterevidence, date.
+#
+# Purpose: keep every substantive claim in this repository falsifiable and
+# traceable. Conjecture stays out of authoritative prose unless labeled.
+
+claims:
+  - id: CLM-0001
+    claim: >-
+      The reference article "AI Safety: From First Principles to Practice" was
+      accessible in full (introduction, sections 1-11, and both closing resource
+      lists) without a paywall during an automated fetch on 2026-10-21.
+    source: SRC-ARTICLE-001
+    section_or_page: "full article (automated fetch)"
+    evidence_strength: "direct observation, single fetch session"
+    assumptions: "paywall status is session- and region-dependent; 'accessible' means the fetched HTML contained the listed sections"
+    counterevidence: >-
+      The project brief prepared on 2026-10-20 recorded full-text access to the
+      same URL as blocked during preparation. Both observations are recorded; the
+      discrepancy is unexplained and does not affect any technical claim.
+    date: 2026-10-21
+
+  - id: CLM-0002
+    claim: >-
+      ARENA's public curriculum page lists five chapters (0 Fundamentals,
+      1 Transformer Interpretability, 2 Reinforcement Learning, 3 LLM Evaluations,
+      4 Alignment Science) plus capstone projects, with PyTorch and Gym named as
+      chapter-specific tools.
+    source: SRC-CURR-001
+    section_or_page: "curriculum landing page"
+    evidence_strength: "direct page inspection, chapter titles visible"
+    assumptions: "the landing page reflects the current curriculum structure"
+    counterevidence: "unit-level structure and exercise banks were not inspected; internal organization may differ from the chapter listing"
+    date: 2026-10-21
+
+  - id: CLM-0003
+    claim: >-
+      BlueDot's Technical AI Safety course is free of charge, requires an
+      application, runs in intensive (6-day) and part-time (6-week) formats, and
+      states coverage of alignment/RLHF, mechanistic interpretability,
+      evaluations and red-teaming, AI control, and scalable oversight.
+    source: SRC-CURR-002
+    section_or_page: "course landing page"
+    evidence_strength: "direct page inspection of stated terms and coverage"
+    assumptions: "the landing page reflects current course terms"
+    counterevidence: "application deadlines shown on the page change over time; none recorded here"
+    date: 2026-10-21
+
+  - id: CLM-0004
+    claim: "The awesome-ai-safety repository states CC0-1.0 as its license."
+    source: SRC-LIST-002
+    section_or_page: "repository README license section"
+    evidence_strength: "direct page inspection of stated license"
+    assumptions: "the stated license matches the repository's actual licensing intent"
+    counterevidence: "license statements in READMEs are not always synchronized with LICENSE files; file-level check not yet performed"
+    date: 2026-10-21
+
+  - id: CLM-0005
+    claim: >-
+      Both inspected awesome-lists organize resources by topic category without
+      per-entry difficulty or prerequisite metadata, whereas this repository's
+      AWESOME.md plan annotates entries by supporting chapter, route, difficulty,
+      and access conditions.
+    source: SRC-LIST-001
+    section_or_page: "README category listings (corroborated by SRC-LIST-002)"
+    evidence_strength: "comparative page inspection of two indexes"
+    assumptions: "the two inspected lists are representative of the genre; other indexes may annotate entries"
+    counterevidence: "some indexes (not yet inspected) do annotate difficulty; this claim motivates a design choice, not a universal statement"
+    date: 2026-10-21

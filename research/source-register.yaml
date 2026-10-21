@@ -1,0 +1,130 @@
+# Source register — verified entries only.
+#
+# Schema (per project brief): id, title, authors_or_organization, url, source_type,
+# publication_date (verified or null), version, accessed_on (actual access date),
+# access_level, evidence_class, peer_review_status, supports, limitations, license.
+#
+# Rules:
+# - Add an entry only after an actual fetch/inspection on the recorded date.
+# - access_level: full-text-read | abstract-read | page-inspected | metadata-only | unavailable
+# - publication_date is a VERIFIED date or null. Never infer it from a URL or a memory.
+# - A source URL returning 200 does not validate a scientific claim (see research-method.md).
+
+sources:
+  - id: SRC-ARTICLE-001
+    title: "AI Safety: From First Principles to Practice"
+    authors_or_organization: "Adil Shamim"
+    url: "https://adilshamim8.medium.com/ai-safety-from-first-principles-to-practice-73ccd3ea73a0"
+    source_type: commentary
+    publication_date: 2026-10-20
+    version: null
+    accessed_on: 2026-10-21
+    access_level: full-text-read
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed (single-author article)"
+    supports:
+      - "research/reference-article-map.md (theme-to-module table)"
+      - "course framing and module ordering"
+    limitations: >-
+      Publication date derived from the platform's relative timestamp at fetch time
+      ("23 hours ago" on 2026-10-21), so day-level precision only. Conclusion section
+      not retrieved in the fetch session. Owner-authored inspiration source; treated
+      as framing, never as independent validation of technical claims. Medium
+      platform terms apply to the original text; no lengthy passages reproduced.
+    license: "unknown (Medium platform terms; no open license observed)"
+
+  - id: SRC-CURR-001
+    title: "ARENA curriculum"
+    authors_or_organization: "ARENA (arena.education)"
+    url: "https://www.arena.education/curriculum"
+    source_type: course
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: unknown
+    supports:
+      - "research/research-method.md (curriculum comparison)"
+      - "planning/content-matrix.yaml (coverage cross-check)"
+    limitations: >-
+      Landing page inspected only. Observed chapter listing: Chapter 0 Fundamentals,
+      Chapter 1 Transformer Interpretability, Chapter 2 Reinforcement Learning,
+      Chapter 3 LLM Evaluations, Chapter 4 Alignment Science, plus capstone projects.
+      Unit-level content, exercise banks, and assessment structure were not inspected.
+      Reuse governed by ARENA partnership guidelines (attribution, distinct branding,
+      permission for group use); used here strictly as an organizational reference —
+      no material copied. No commit SHA captured at access time.
+    license: "unknown (partnership guidelines; not an open-content license)"
+
+  - id: SRC-CURR-002
+    title: "BlueDot Technical AI Safety course"
+    authors_or_organization: "BlueDot Impact"
+    url: "https://bluedot.org/courses/technical-ai-safety"
+    source_type: course
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: unknown
+    supports:
+      - "research/research-method.md (curriculum comparison)"
+      - "planning/content-matrix.yaml (coverage cross-check)"
+    limitations: >-
+      Landing page inspected only. Page states coverage of alignment and RLHF,
+      mechanistic interpretability, evaluations and red-teaming, AI control, and
+      scalable oversight; intensive (6 days) and part-time (6 weeks) formats;
+      prerequisites at the level of LLM training basics; free of charge with an
+      application process. Course materials themselves were not inspected; no
+      content-reuse terms displayed on the inspected page.
+    license: unknown
+
+  - id: SRC-LIST-001
+    title: "awesome-ai-security"
+    authors_or_organization: "Bernd Mueller and contributors"
+    url: "https://github.com/muellerberndt/awesome-ai-security"
+    source_type: commentary
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: unknown
+    supports:
+      - "research/research-method.md (index comparison)"
+      - "AWESOME.md design (category coverage check)"
+    limitations: >-
+      README inspected only. Roughly 124 entries organized by topic category
+      (ML foundations, prompt injection, adversarial attacks, poisoning and
+      backdoors, privacy and extraction, tools, AI pentesting, benchmarks and
+      standards, books, communities). No per-entry difficulty or prerequisite
+      metadata observed. No license file referenced on the inspected page;
+      entries were not individually verified through this list. No commit SHA
+      captured at access time.
+    license: unknown
+
+  - id: SRC-LIST-002
+    title: "awesome-ai-safety"
+    authors_or_organization: "AbdelStark and contributors"
+    url: "https://github.com/AbdelStark/awesome-ai-safety"
+    source_type: commentary
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: unknown
+    supports:
+      - "research/research-method.md (index comparison)"
+      - "AWESOME.md design (annotation model: required/optional, access conditions)"
+    limitations: >-
+      README inspected only. Hundreds of entries organized by categories
+      (evaluation and red teaming, alignment and control, interpretability,
+      runtime safeguards and security, benchmarks and datasets, formal verification,
+      governance and assurance, research papers, research groups, learning
+      resources), with some entries marked Historical or Restricted. Notable
+      epistemic disclaimers present (benchmark scores vs. formal certificates vs.
+      signatures). Entries were not individually verified through this list.
+      No commit SHA captured at access time.
+    license: "CC0-1.0 (stated in repository README)"
