@@ -348,3 +348,44 @@ claims:
     counterevidence: >-
       The catastrophic-risk scenarios are explicitly hypothetical extrapolations by the authors, not demonstrated results; the course must label them as such wherever they are mentioned.
     date: 2026-10-21
+
+  - id: CLM-0026
+    claim: >-
+      InstructGPT outputs from a 1.3B-parameter model fine-tuned with human feedback (labeler demonstrations plus rankings of model outputs, then RL) were preferred to outputs from the 175B GPT-3 model in human evaluations on the authors' prompt distribution, despite ~100x fewer parameters.
+    source: SRC-PAPER-009
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; authors' own evaluation"
+    assumptions: "the abstract accurately reports the paper's human-preference evaluations; 'preferred' is on the authors' prompt distribution with their labelers"
+    counterevidence: >-
+      the same abstract reports minimal public-NLP-dataset regressions — distribution-specific preference, not a universal superiority claim; no independent replication cited
+    date: 2026-10-21
+  - id: CLM-0027
+    claim: >-
+      DPO introduces a parameterization of the reward model in RLHF under which the corresponding optimal policy is available in closed form, yielding a stable classification-loss algorithm that eliminates reward model fitting and sampling during fine-tuning; the paper's title is the sentence 'Your Language Model is Secretly a Reward Model', and its abstract characterizes standard RLHF as 'complex and often unstable'.
+    source: SRC-PAPER-010
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; quoted fragments are short and pointed"
+    assumptions: "the closed-form derivation in the full text matches the abstract's program; the course re-derived the steps itself and verified them numerically"
+    counterevidence: >-
+      the abstract's own experiments are the authors' tasks (sentiment control, summarization, single-turn dialogue); instability claims about PPO-RLHF are the authors' characterization on their setups
+    date: 2026-10-21
+  - id: CLM-0028
+    claim: >-
+      Constitutional AI trains a harmless-but-non-evasive assistant in two phases: a supervised phase (sample from an initial model, generate self-critiques and revisions, finetune on the revised responses) and a reinforcement learning phase (sample from the finetuned model, use a model to judge which of two samples is better, train with RL from AI Feedback using that preference model as reward).
+    source: SRC-PAPER-011
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch"
+    assumptions: "the abstract accurately describes the method structure"
+    counterevidence: >-
+      internal self-evaluation by the authors' organization; judge-human agreement numbers are in the unread full text and are not cited
+    date: 2026-10-21
+  - id: CLM-0029
+    claim: >-
+      Ziegler et al.'s abstract states that their summarization models trained on 60,000 comparisons 'may be exploiting the fact that labelers rely on simple heuristics' — a published, in-abstract admission that preference labels can be heuristic-driven rather than value-expressive.
+    source: SRC-PAPER-012
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; short quoted fragment with pointer"
+    assumptions: "the quoted fragment is faithful to the fetched abstract text"
+    counterevidence: >-
+      the authors hedge with 'may'; the effect size of heuristic labels is not quantified in the abstract
+    date: 2026-10-21

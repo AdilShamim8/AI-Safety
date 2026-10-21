@@ -61,7 +61,7 @@ chapters:
     title: "Preference learning and post-training"
     path: "chapters/04-preference-learning-and-post-training/"
     phase: D
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Explain reward modeling, KL regularization, SFT, PPO-style RLHF, DPO, RLAIF, Constitutional AI and what their objectives do and do not imply"
       - "Derive at least one post-training objective"
@@ -69,8 +69,8 @@ chapters:
     prerequisites: ["03"]
     project_ids: ["P04"]
     assessments: ["objective derivation", "label-quality audit"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-009, SRC-PAPER-010, SRC-PAPER-011, SRC-PAPER-012, SRC-DATASET-007, SRC-DATASET-008]
+    verified_on: 2026-10-21
   - id: "05"
     title: "Scalable oversight"
     path: "chapters/05-scalable-oversight/"

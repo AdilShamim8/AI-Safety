@@ -27,14 +27,15 @@ as the work it describes. On session start, read this file, then
 | **Dataset catalog (owner-directed depth upgrade)**: `datasets/` — 13 verified real-world safety datasets (TruthfulQA, BOLD, RealToxicityPrompts, ToxiGen, BBQ, XSTest, BeaverTails, HH-RLHF, AdvBench, JailbreakBench, HarmBench, WildChat, SafetyBench) with deep cards; per-fact reference tables (every composition number traced to the URL it was collected from, with access level and date); machine-readable catalog.yaml; curriculum-integration map; usage/licensing policy (BeaverTails NC flag; no content redistribution); pending-verification queue; registers +18 sources (SRC-DATASET-001..015, SRC-PAPER-003/004/005, SRC-DATASET-009b) and +13 claims (CLM-0009..0021) | `ae06ad9` (pushed; CI green run 39574015674) | validator + tests green; remote head verified |
 | **Chapter 02 complete** — ten-element structure: failure pathway (validity-leak chain), five-gate core (construct validity with three card-grounded worked examples; five provenance questions; dependence-aware splits; contamination & adaptive overfitting; Wilson/power/effect sizes with four verified-number worked intervals), guard-layer end-to-end worked example with threshold-straddling honest conclusions, approach comparison table, four failure modes of the method itself, readings split into verified vs assigned-pending, 5 exercises + full solutions with rubrics + arithmetic; GLOSSARY +12 terms; chapters index updated | this commit | validator + tests green locally |
 | **Chapter 03 complete** — ten-element structure: three-way failure taxonomy (proxy/capability/learned-goal) with formal grounding (Skalse et al. hackability conditions; Pan et al. capability thresholds; Shah et al. goal misgeneralization; mesa-optimization re-anchored to SRC-PAPER-002), Goodhart gap G and proxy validity region V(R-hat) defined with notation, truthfulness-judge worked example swept over BoN pressure with real AdvBench/TruthfulQA card numbers and preregistered gates G1/G2 (Wilson intervals recomputed in solutions), approach comparison (5 rows), where-the-methods-fail section, 2 demanding exercises + full solutions with rubrics (509-line solutions file with programmatic arithmetic); GLOSSARY +10 terms; readings = 4 verified sources (1 re-verified) | this commit | validator + tests green | |
+| **Chapter 04 complete** — ten-element structure: failure pathway (proxy chain labels -> reward model -> policy), core explanation of the full post-training stack (SFT, reward modeling with BT surrogate and its four silent assumptions, PPO-style RLHF under KL budget, DPO with the complete closed-form derivation carried end-to-end, RLAIF/Constitutional AI two-phase), DPO gradient derived and numerically verified in solutions (BT pair-loss calibration 0.371/0.184; toy-policy optimum at beta=0.5 with exact arithmetic), label-quality audit grounded in the HH-RLHF and BeaverTails cards, approach comparison table, where-the-methods-fail section, 4 exercises + 220-line solutions with rubrics; GLOSSARY +10 terms; readings = 4 newly verified sources | this commit | validator + tests green | |
 
 ## Current phase
 
-Phase C in progress: chapter 03 complete (3/24); chapters 04–05 written and verified, landing next; P01 code green in its worktree.
+Phase C in progress: chapters 03-04 complete (4/24); chapter 05 written and verified, landing next; P01 code green in its worktree.
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 3 / 24
+- Chapters complete: 4 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 0 / 10
 - Paper notes complete: 0 / 20 required minimum
@@ -51,4 +52,4 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: chapter 04 (preference learning and post-training) — its README and solutions are written and its sources verified (InstructGPT, DPO, Constitutional AI, Ziegler); merge its fragment and commit, then chapter 05, then the P01 evaluation-harness project pair (spec + implementation) from worktrees/p01.
+Next exact action: chapter 05 (scalable oversight) — README and solutions written, sources verified (Weak-to-Strong, Bowman et al., Debate); merge its fragment and commit, then the P01 evaluation-harness project pair from worktrees/p01.
