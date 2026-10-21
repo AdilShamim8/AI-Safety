@@ -36,6 +36,23 @@ brief dated 2026-10-20 (research baseline 2026-10-20; build execution began
 - `AGENTS.md`: binding operating contract for agent sessions (auth via
   environment secret, one coherent commit at a time, honesty rules, untrusted
   data handling, resume protocol).
+- Eight content templates (`templates/`): chapter, paper-note,
+  experiment-report, threat-model, dataset-card, safety-case,
+  research-proposal, incident-review — each with embedded quality rules
+  (mandatory failure-mode sections, denominators, no hand-typed tables,
+  strict incident taxonomy).
+- Learner entry layer: `START_HERE.md`, `ROADMAP.md` (three schedules with
+  honest arithmetic), `SYLLABUS.md` (24-unit catalog),
+  `prerequisites/diagnostic.md` (five tasks with worked answers and skip
+  guidance), `prerequisites/targeted-refreshers.md` (R1–R6),
+  `roadmaps/` (three specialization pages + study schedules with
+  adaptation rules).
+- Engineering baseline: `pyproject.toml` + committed `uv.lock` (uv workflow,
+  Python 3.12 floor, exact dev-tool pins verified against PyPI 2026-10-21),
+  `.python-version`, in-repository pre-commit validator
+  `scripts/validate_repo.py` with 7 regression tests, real CI workflow
+  (actions pinned to verified commit SHAs), bug-report and content-error
+  issue templates, pull-request template with the honesty checklist.
 
 ### Removed (2026-10-21)
 

@@ -1,0 +1,58 @@
+[project]
+name = "ai-safety-course"
+version = "0.1.0"
+description = "AI Safety: an open-source research curriculum and working project repository (course tooling and shared utilities)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+authors = [{ name = "Adil Shamim" }]
+keywords = [
+    "ai-safety",
+    "ai-alignment",
+    "ai-security",
+    "ai-evaluations",
+    "interpretability",
+    "curriculum",
+]
+# The base project carries only the core-tier dependencies (test runner +
+# YAML for the registers): the course core is stdlib-first. Compute tiers
+# beyond this are dependency groups (ADR-0002).
+dependencies = [
+    "pytest>=9.1",
+    "PyYAML>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+    # Exact pins for deterministic checks (ADR-0002); versions verified
+    # against PyPI on 2026-10-21. Updates happen as reviewed dependency
+    # commits, not by floating ranges.
+    "ruff==0.17.1",
+    "black==26.10.1",
+    "mypy==2.4.0",
+]
+# Planned groups, added when the projects that need them land (ADR-0002):
+#   ml     - torch, transformers, datasets (P03/P04/P06; model paths of P01/P08)
+#   interp - TransformerLens stack (P06)
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_unused_ignores = true

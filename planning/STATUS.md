@@ -18,13 +18,19 @@ as the work it describes. On session start, read this file, then
 |---|---|---|
 | Fresh start: repository reset to owner's initial commit `7fe58ec` (all prior agent work removed per owner instruction, 2026-10-21) | `7fe58ec` (remote verified) | remote tree = `README.md` only; issues/labels/Actions artifacts cleaned |
 | Phase A (part 1): research provenance — research method, article map (full-text fetch 2026-10-21), source register (5 entries), claims register (5 claims), AGENTS.md, .gitignore | `4ebb954` (pushed, remote head verified) | `research/*`; validator passed |
-| Phase A (part 2): planning package — BUILD_PLAN, STATUS, content-matrix skeleton, dependency map, ADR-0001/0002 | this commit | `planning/*` |
+| Phase A (part 2): planning package — BUILD_PLAN, STATUS, content-matrix skeleton, dependency map, ADR-0001/0002 | `38011a4` (pushed) | `planning/*` |
+| Phase B (part 1): governance and licensing baseline — MIT, CC BY 4.0, notices, citation, contributing, conduct, security (verified: private-vuln-reporting disabled), responsible research, changelog | `6f0ab31` (pushed) | 9 root governance files |
+| Phase B (part 2): learner entry layer — README/START_HERE/ROADMAP/SYLLABUS, diagnostic with worked answers, refreshers, 3 route pages, study schedules | `c123179` (pushed) | validator passed (13 dead links caught and fixed by completing the unit) |
+| Phase B (part 3): eight content templates (chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review) | `08c24bc` (pushed) | `templates/*` |
+| Phase B (part 4): engineering baseline — pyproject + uv.lock (19 pkgs), .python-version, in-repo validator + 7 tests, CI (actions pinned to verified SHAs), issue/PR templates | this commit | `uv run pytest` 7/7; ruff + black clean; validator OK |
 
 ## Current phase
 
-**Phase A → B transition.** Phase A exit gate is met with this commit: target,
-provenance, licensing, and build plan are explicit; the reference-article map
-makes no unsupported claims (access record and non-validation note included).
+**Phase B complete.** Exit gate met: a learner can understand scope
+(README/START_HERE), select a route and schedule (ROADMAP + route pages),
+and see truthful completion status (STATUS + content matrix); all published
+links resolve (validator-enforced); a real CI workflow runs the same checks
+that gate commits locally.
 
 ## Curriculum completion counters (truthful)
 
@@ -45,18 +51,15 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-1. Phase B commit 1 — governance and licensing baseline: `LICENSE` (MIT),
-   `LICENSE-DOCS` (CC BY 4.0), `THIRD_PARTY_NOTICES.md`, `CITATION.cff`,
-   `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`,
-   `RESPONSIBLE_RESEARCH.md`, `CHANGELOG.md` (real content, no stubs).
-2. Phase B commit 2 — entry layer: `README.md` (accurate current status),
-   `START_HERE.md`, `ROADMAP.md` (common spine + 3 specializations + 3
-   schedules with honest hours), `SYLLABUS.md`, `prerequisites/diagnostic.md`
-   (5 diagnostic tasks + worked answers), `prerequisites/targeted-refreshers.md`,
-   `roadmaps/*.md`, `templates/*`.
-3. Phase B commit 3 — engineering baseline: `pyproject.toml`, `uv.lock`,
-   minimal real CI (markdown links + YAML schema + python import smoke),
-   `scripts/` check tooling ported into the repository.
-4. Then Phase C: chapter 01 → chapter 02 → chapter 03 → P01 → P02, one
-   coherent commit each, readings verified in the source register as they
-   are assigned.
+Phase C begins with chapter 01 (one coherent commit per unit):
+
+1. Verify chapter 01's core readings at the stated access level (add
+   source-register entries first): Concrete Problems in AI Safety
+   (arXiv:1606.06565), Risks from Learned Optimization (arXiv:1906.01820),
+   plus the International AI Safety Report 2026 landing page for edition
+   metadata.
+2. Write `chapters/01-risk-models-and-research-epistemics/`: README.md
+   (ten-element structure), exercises.md, solutions.md; add initial
+   GLOSSARY.md entries for the chapter's terms; update content matrix
+   (01 → drafting → complete) in the same commit.
+3. Then chapter 02 → P01 → chapter 03 → P02, same discipline.

@@ -24,10 +24,10 @@ The repository uses uv with a committed lockfile (ADR-0002):
 
 ```bash
 # install uv: https://docs.astral.sh/uv/
-uv sync                      # core tier (pytest, PyYAML)
-uv sync --extra ml           # + torch/transformers/datasets (local-model projects)
-uv run pytest                # run the test suite
-python scripts/validate_repo.py .   # YAML schema + local-link + size checks
+uv sync --frozen           # core + dev tiers, exactly as locked
+uv sync --group ml         # + model-project tier (group lands with P03/P04/P06)
+uv run pytest              # run the test suite
+uv run python scripts/validate_repo.py .   # YAML schema + local-link + size checks
 ```
 
 Python 3.12 is the floor. Model-dependent extras are optional; every project
