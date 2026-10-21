@@ -22,7 +22,7 @@ jobs:
         run: uv run python scripts/validate_repo.py .
       - name: Tests
         run: uv run pytest
-      - name: Lint (scripts, tests)
-        run: uv run ruff check scripts tests
-      - name: Format check (scripts, tests)
-        run: uv run black --check scripts tests
+      - name: Lint (src, scripts, tests)
+        run: uv run ruff check src scripts tests
+      - name: Format check (src, scripts, tests)
+        run: uv run black --check src scripts tests
