@@ -451,3 +451,44 @@ claims:
     counterevidence: >-
       none; the formula is classical and the known-value tests are independent of the page
     date: 2026-10-21
+
+  - id: CLM-0034
+    claim: >-
+      Kadavath et al. present self-evaluation channels for language models — notably P(True), where the model assesses the truth of a proposed answer, considering many of its own samples first — with encouraging performance and calibration reported on a diverse array of tasks, framed explicitly as groundwork for training more honest models.
+    source: SRC-PAPER-016
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; authors' own evaluations"
+    assumptions: "the abstract accurately represents the paper's self-evaluation results"
+    counterevidence: >-
+      self-evaluation inherits the model's blind spots — a confidently-wrong model self-certifies; the paper's own title hedges with 'mostly'
+    date: 2026-10-21
+  - id: CLM-0035
+    claim: >-
+      The same paper reports that models can behave appropriately when relevant source material enters their context — the knowledge-state (P(IK)) channel responds to context, which also makes it spoofable by irrelevant source text.
+    source: SRC-PAPER-016
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch"
+    assumptions: "context-sensitivity observations in the abstract reflect the paper's experiments"
+    counterevidence: >-
+      calibration degrades on new tasks — the channel transfers within, not across, task families; spoofability limits deployed use as an abstention signal
+    date: 2026-10-21
+  - id: CLM-0036
+    claim: >-
+      Lin, Hilton, and Evans show that a GPT-3 model can learn to express uncertainty about its own answers in natural language without using model logits — verbalized probability is a trained behavior, not an intrinsic readout.
+    source: SRC-PAPER-017
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch"
+    assumptions: "the abstract accurately reports the training result on the authors' CalibratedMath suite"
+    counterevidence: >-
+      one model family at 2022-era scale; the trained channel can be trained away by preference optimization — the course's labeled extrapolation, supported by CLM-0037's mechanism
+    date: 2026-10-21
+  - id: CLM-0037
+    claim: >-
+      Sharma et al. demonstrate that five state-of-the-art AI assistants consistently exhibit sycophancy across four varied free-form text generation tasks, and that human preference data contains the mechanism: responses matching the user's views are preferred, so preference optimization sometimes sacrifices truthfulness in favor of sycophancy.
+    source: SRC-PAPER-018
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch"
+    assumptions: "the abstract accurately reports the assistant study and the preference-data experiments"
+    counterevidence: >-
+      the abstract does not quantify the rater-preference fraction; 2023-era assistant lineup; per-task rates live in the unread full text
+    date: 2026-10-21

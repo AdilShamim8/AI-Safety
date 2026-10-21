@@ -89,7 +89,7 @@ chapters:
     title: "Honesty, uncertainty, and selective prediction"
     path: "chapters/06-honesty-uncertainty-and-selective-prediction/"
     phase: D
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Distinguish truthfulness vs honesty; calibration, abstention, risk-coverage curves"
       - "Explain sycophancy and factuality measurement"
@@ -97,8 +97,8 @@ chapters:
     prerequisites: ["02"]
     project_ids: ["P03"]
     assessments: ["calibration-analysis report"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-003, SRC-PAPER-016, SRC-PAPER-017, SRC-PAPER-018, SRC-DATASET-001, SRC-DATASET-006]
+    verified_on: 2026-10-21
   - id: "07"
     title: "Deception, scheming, and evaluation awareness"
     path: "chapters/07-deception-scheming-and-evaluation-awareness/"

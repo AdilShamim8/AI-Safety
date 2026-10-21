@@ -14,7 +14,8 @@ catalog with prerequisites and artifacts is
 | 03 | Specification, reward hacking, and goal misgeneralization | [03-specification-reward-hacking-and-goal-misgeneralization](03-specification-reward-hacking-and-goal-misgeneralization/) — **complete** |
 | 04 | Preference learning and post-training | [04-preference-learning-and-post-training](04-preference-learning-and-post-training/) — **complete** |
 | 05 | Scalable oversight | [05-scalable-oversight](05-scalable-oversight/) — **complete** |
-| 6–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases D–H)* |
+| 06 | Honesty, uncertainty, and selective prediction | [06-honesty-uncertainty-and-selective-prediction](06-honesty-uncertainty-and-selective-prediction/) — **complete** |
+| 7–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases D–H)* |
 
 Chapters appear here as they are completed — this index never links to a
 chapter that does not exist yet.
