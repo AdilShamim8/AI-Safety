@@ -1,0 +1,37 @@
+# CITATION.cff — citation metadata for the AI Safety repository.
+#
+# Notes on honesty: no DOI is asserted (the repository is not a published
+# release with a registered DOI); no institutional affiliation is invented;
+# the author identity is the repository owner's GitHub account identity.
+# Adjust `version` and `date-released` when cutting a real release.
+
+cff-version: 1.2.0
+message: >-
+  If this curriculum or its code supports your work, please cite the
+  repository. See research/research-method.md for how its sources are
+  verified, and cite the primary sources it points to for technical claims.
+type: software
+repository-code: "https://github.com/AdilShamim8/AI-Safety"
+title: AI Safety
+abstract: >-
+  An open-source research curriculum and working project repository covering
+  AI safety, alignment, AI security, and evaluations: a dependency-aware
+  roadmap, 24 advanced chapter units, 10 runnable projects with honest
+  execution status, paper notes with uncertainty tracking, and an annotated
+  resource index.
+authors:
+  - family-names: Shamim
+    given-names: Adil
+    website: "https://github.com/AdilShamim8"
+keywords:
+  - ai-safety
+  - ai-alignment
+  - ai-security
+  - ai-evaluations
+  - interpretability
+  - red-teaming
+  - curriculum
+license: MIT
+license-experimental:
+  - name: CC-BY-4.0
+    url: "https://creativecommons.org/licenses/by/4.0/"
