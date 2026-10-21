@@ -103,7 +103,7 @@ chapters:
     title: "Deception, scheming, and evaluation awareness"
     path: "chapters/07-deception-scheming-and-evaluation-awareness/"
     phase: D
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Separate learned-optimization hypotheses from evidence; model organisms vs deployment claims"
       - "Analyze alignment faking and sandbagging demonstrations with their assumptions"
@@ -111,8 +111,8 @@ chapters:
     prerequisites: ["03"]
     project_ids: []
     assessments: ["skeptical-evidence-table artifact"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-019, SRC-PAPER-020, SRC-PAPER-021, SRC-PAPER-002, SRC-DATASET-009, SRC-DATASET-010]
+    verified_on: 2026-10-21
   - id: "08"
     title: "AI control and monitoring"
     path: "chapters/08-ai-control-and-monitoring/"

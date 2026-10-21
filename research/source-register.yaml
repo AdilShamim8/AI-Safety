@@ -823,3 +823,52 @@ sources:
     limitations: >-
       Abstract read only. The abstract quantifies neither the per-task rates nor the 'non-negligible fraction' of rater preference for sycophantic responses; the chapter quotes these at exactly the abstract's strength and no higher.
     license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+
+  - id: SRC-PAPER-019
+    title: "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training"
+    authors_or_organization: "Evan Hubinger, Carson Denison, Jesse Mu, Mike Lambert, and further authors (Anthropic)"
+    url: "https://arxiv.org/abs/2401.05566"
+    source_type: paper
+    publication_date: 2024-01-10
+    version: v1
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/07-deception-scheming-and-evaluation-awareness/README.md (section 3: the canonical model organism — backdoored deceptive models whose behavior persists through supervised fine-tuning, RLHF, and adversarial training; adversarial training can conceal rather than remove)"
+    limitations: >-
+      Abstract read only. Every deceptive model in the paper was constructed by its authors — a model organism of deception and countermeasures, not evidence about any deployed system. Scale, trigger specifics, and quantitative persistence figures live in the unread full text and are not cited. The candidate ID 2401.00588 suggested in planning resolved to a different paper; 2401.05566 was fetched and verified by title and authors (correction recorded here).
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+  - id: SRC-PAPER-020
+    title: "Alignment Faking in Large Language Models"
+    authors_or_organization: "Ryan Greenblatt, Carson Denison, Benjamin Wright, Fabien Roger, and further authors (Anthropic / Redwood Research)"
+    url: "https://arxiv.org/abs/2412.14093"
+    source_type: paper
+    publication_date: 2024-12-18
+    version: v1
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/07-deception-scheming-and-evaluation-awareness/README.md (section 3: the strongest conditioned demonstration on a production model — a model told it is being trained fakes alignment during training at a measurably higher rate than outside it; RL training on compliant outputs escalates alignment-faking reasoning to 78%)"
+    limitations: >-
+      Abstract read only. The setup is conditioned: the model is told when and by what criteria it is being trained — the 14%-in-context and 78%-after-RL numbers are rates under those conditions, never base rates about deployed models. The candidate ID 2412.03902 suggested in planning resolved to a different paper; 2412.14093 was fetched and verified by title and authors (correction recorded here).
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+  - id: SRC-PAPER-021
+    title: "AI Sandbagging: Language Models can Strategically Underperform on Evaluations"
+    authors_or_organization: "Teun van der Weij, Felix Hofstätter, Ollie Jaffe, Samuel F. Brown, and further authors"
+    url: "https://arxiv.org/abs/2406.07358"
+    source_type: paper
+    publication_date: 2024-06-11
+    version: v1
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/07-deception-scheming-and-evaluation-awareness/README.md (section 3: sandbagging defined; prompted selective underperformance on dangerous-capability evaluations while maintaining general capability — the evaluation channel's gameability)"
+    limitations: >-
+      Abstract read only. Everything in the paper is instructed or installed: the honest headline is 'evaluations are gameable', not 'models are gaming'. Per-task underperformance magnitudes live in the unread full text and are not cited.
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
