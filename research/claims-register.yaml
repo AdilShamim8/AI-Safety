@@ -114,3 +114,196 @@ claims:
     assumptions: "the abstract accurately represents the paper's core definitions"
     counterevidence: "none from the abstract itself; the paper's internal distinctions (e.g., inner vs outer alignment) await full-text reading before chapter 07 relies on them"
     date: 2026-10-21
+
+  # --- Dataset-catalog verification round, 2026-10-21 ---
+  # One claim per catalog dataset for its headline verified facts. Per-fact
+  # provenance is in datasets/cards/*.md reference tables.
+
+  - id: CLM-0009
+    claim: >-
+      On 2026-10-21, the canonical Hugging Face page for TruthfulQA
+      displayed license apache-2.0, a validation split of 817 rows, task
+      tags including multiple choice / text generation / question answering,
+      and adversarial subcategories including Misconceptions, Proverbs,
+      Misquotations, Conspiracies, and Superstitions.
+    source: SRC-DATASET-001
+    section_or_page: "dataset landing page and data viewer"
+    evidence_strength: "direct page inspection, single session"
+    assumptions: "hosted page reflects the dataset's current canonical form"
+    counterevidence: "row counts on hosted pages are living properties; re-verification required before quantitative use"
+    date: 2026-10-21
+
+  - id: CLM-0010
+    claim: >-
+      On 2026-10-21, the AmazonScience/bold Hugging Face page displayed the
+      BOLD license as Creative Commons Attribution Share Alike 4.0
+      International, stated 23,679 text generation prompts, and enumerated
+      five domains with sub-group and prompt counts: Profession 18/10,195;
+      Gender 2/3,204; Race 4/7,657; Religious ideologies 7/639; Political
+      ideologies 12/1,984.
+    source: SRC-DATASET-002
+    section_or_page: "dataset card body"
+    evidence_strength: "direct page inspection, single session"
+    assumptions: "the page's per-domain enumeration is internally consistent with the shipped data"
+    counterevidence: "paper-level construction details (Wikipedia sourcing) unverified; domain sum 23,679 matches the total as displayed"
+    date: 2026-10-21
+
+  - id: CLM-0011
+    claim: >-
+      On 2026-10-21, the allenai/real-toxicity-prompts Hugging Face page
+      displayed license apache-2.0, 99.4k rows in the default subset, and
+      toxicity-score fields across eight subcategories (threat, insult,
+      severe_toxicity, toxicity, profanity, sexually_explicit,
+      identity_attack, flirtation).
+    source: SRC-DATASET-003
+    section_or_page: "dataset landing page and data viewer"
+    evidence_strength: "direct page inspection, single session"
+    assumptions: "field names on the viewer reflect the shipped schema"
+    counterevidence: "scoring-backend provenance (which classifier produced the scores) is paper-level and unverified here"
+    date: 2026-10-21
+
+  - id: CLM-0012
+    claim: >-
+      On 2026-10-21, the skg/toxigen-data Hugging Face page displayed an
+      overall size bucket of 100K-1M rows, an annotated subset of 9.9k rows
+      (train 8.96k, test 940), a prompts split of 31k rows and an
+      annotations split of 27.5k rows, and NO visible license.
+    source: SRC-DATASET-004
+    section_or_page: "dataset landing page and splits view"
+    evidence_strength: "direct page inspection, single session"
+    assumptions: "the absence of a displayed license is itself the observation"
+    counterevidence: "the upstream repository may carry a license not surfaced on the HF page; recorded as pending, not as 'unlicensed'"
+    date: 2026-10-21
+
+  - id: CLM-0013
+    claim: >-
+      On 2026-10-21, two independent Hugging Face mirrors of BBQ (heegyu/bbq
+      and walledai/BBQ) both displayed 58,492 rows; the HiTZ/bbq mirror
+      displayed the 9-category ambig/disambiguation configuration structure
+      with 3 answer options per item, 4-shot train splits, and no train split
+      for the Religion category; the paper is published in Findings of ACL
+      2022 (2022.findings-acl.165, pages 2086-2105) by Parrish et al.
+    source: SRC-DATASET-005
+    section_or_page: "three mirror pages (heegyu, HiTZ, walledai)"
+    evidence_strength: "cross-corroborated page inspection (two independent mirrors agreeing on row count)"
+    assumptions: "mirrors faithfully reflect the canonical dataset structure"
+    counterevidence: "canonical GitHub repository and its license were not directly inspected this round"
+    date: 2026-10-21
+
+  - id: CLM-0014
+    claim: >-
+      XSTest comprises 250 safe prompts across ten prompt types and 200
+      unsafe contrast prompts; its prompts are CC BY 4.0 licensed (model
+      completions remain under original Meta/Mistral/OpenAI licenses); it
+      was accepted at NAACL 2024 main; the arXiv abstract page records
+      v1 2023-08-02 and v3 2024-04-01.
+    source: SRC-DATASET-006
+    section_or_page: "GitHub README license section; arXiv 2308.01263 abstract page (corroborated by walledai/XSTest)"
+    evidence_strength: "direct page inspection + abstract read, two-source agreement on composition"
+    assumptions: "repository license statement matches shipped files"
+    counterevidence: "none at page level; per-prompt-type rubric details pending full-text read"
+    date: 2026-10-21
+
+  - id: CLM-0015
+    claim: >-
+      On 2026-10-21, the PKU-Alignment/BeaverTails Hugging Face page
+      displayed license cc-by-nc-4.0 (non-commercial), 364k rows in the
+      default subset, four split configurations (330k_train 301k rows;
+      330k_test 33.4k; 30k_train 27.2k; 30k_test 3.02k), and a
+      safety-dimension taxonomy beginning with animal abuse, child abuse,
+      controversial topics/politics, discrimination/stereotype/injustice,
+      drug abuse/weapons/banned substance, financial crime/property
+      crime/theft, hate speech/offensive language, and misinformation
+      regarding ethics/laws (list truncated in fetch).
+    source: SRC-DATASET-007
+    section_or_page: "dataset landing page and splits view"
+    evidence_strength: "direct page inspection, single session"
+    assumptions: "the taxonomy list as displayed is a prefix of the full dimension set"
+    counterevidence: "truncation means the count of dimensions is recorded as 'at least eight groups', not the commonly quoted 14"
+    date: 2026-10-21
+
+  - id: CLM-0016
+    claim: >-
+      On 2026-10-21, the Anthropic/hh-rlhf Hugging Face page displayed
+      license MIT, 169k total rows with train 161k and test 8.55k, and a
+      page update marker of May 2023; the fetched view showed only a default
+      aggregate subset without the well-known subset names.
+    source: SRC-DATASET-008
+    section_or_page: "dataset landing page and data viewer"
+    evidence_strength: "direct page inspection, single session"
+    assumptions: "the aggregate default view reflects the full corpus row count"
+    counterevidence: "subset structure (helpful-base, harmless-base, red-team) was NOT displayed and is deliberately recorded as unverified"
+    date: 2026-10-21
+
+  - id: CLM-0017
+    claim: >-
+      The canonical AdvBench file (data/advbench/harmful_behaviors.csv in the
+      llm-attacks repository, commit a62d130, 2023-07-27) has 521 lines —
+      520 data rows plus a header — with columns goal and target; the
+      walledai/AdvBench mirror card instead describes 'a set of 500 harmful
+      behaviors' and omits harmful_strings.csv. Both numbers are recorded
+      with their provenance; the discrepancy is documented, not resolved.
+    source: SRC-DATASET-009
+    section_or_page: "GitHub file view of harmful_behaviors.csv; corroborated by mirror card (SRC-DATASET-009b)"
+    evidence_strength: "direct file-view inspection (line count displayed by GitHub) + mirror card comparison"
+    assumptions: "GitHub's displayed line count equals the file's row count"
+    counterevidence: "the mirror's 500 framing may describe the paper's experiment subset rather than the file's contents; resolving this requires the full-text read"
+    date: 2026-10-21
+
+  - id: CLM-0018
+    claim: >-
+      On 2026-10-21, the JailbreakBench/JBB-Behaviors Hugging Face page
+      displayed MIT license verbatim ('This dataset, like the code, is
+      released under MIT License.'), a behaviors subset of 200 rows split
+      into 100 harmful and 100 benign behaviors, a judge_comparison subset
+      of 300 rows, ten behavior categories aligned with OpenAI usage
+      policies, a Source field with three values (TDC/HarmBench, AdvBench,
+      Original), and DOI 10.57967/hf/2540.
+    source: SRC-DATASET-010
+    section_or_page: "dataset landing page and data viewer"
+    evidence_strength: "direct page inspection including field-level schema, single session"
+    assumptions: "page metadata reflects the current published artifact"
+    counterevidence: "the judge protocol and leaderboard methodology are paper-level and unverified"
+    date: 2026-10-21
+
+  - id: CLM-0019
+    claim: >-
+      The HarmBench abstract (arXiv:2402.04249, v2 2024-02-27, 12 authors
+      led by Mantas Mazeika) describes a standardized evaluation framework
+      for automated red teaming, reporting a large-scale comparison of 18
+      red teaming methods and 33 target LLMs and defenses, and introducing
+      an adversarial training method that improves robustness.
+    source: SRC-PAPER-005
+    section_or_page: "arXiv abstract page"
+    evidence_strength: "direct abstract read"
+    assumptions: "the abstract accurately represents the paper's scope"
+    counterevidence: "behavior-set sizes are not stated in the abstract and were not verified by other means — any composition claims beyond this are withheld"
+    date: 2026-10-21
+
+  - id: CLM-0020
+    claim: >-
+      WildChat exists in at least three public Hugging Face releases —
+      650K conversations (allenai/WildChat), 1M conversations
+      (allenai/WildChat-1M), and 3,199,860 conversations in the
+      non-toxic-only 4.8M-branded release (allenai/WildChat-4.8M, dated
+      2025-08-11); the 1M release's license was changed to ODC-BY on
+      2024-06-26 with retroactive effect, per the page's own change note
+      and README commit reference.
+    source: SRC-DATASET-012
+    section_or_page: "three release pages (corroborated by SRC-DATASET-011 and SRC-DATASET-013)"
+    evidence_strength: "multi-page direct inspection including a dated license-change note"
+    assumptions: "the page's license-change note accurately describes the licensing history"
+    counterevidence: "the 4.8M branding vs 3,199,860 count discrepancy is recorded verbatim; 'retroactive' is the releaser's policy statement"
+    date: 2026-10-21
+
+  - id: CLM-0021
+    claim: >-
+      SafetyBench comprises 11,435 multiple-choice questions across 7
+      categories of safety concerns in both Chinese and English; the paper
+      (Zhang et al.) is published at ACL 2024 (2024.acl-long.830).
+    source: SRC-DATASET-014
+    section_or_page: "GitHub repository README; corroborated by ACL Anthology listing (SRC-DATASET-015)"
+    evidence_strength: "two-source page inspection (repository + anthology)"
+    assumptions: "repository README composition statement matches shipped data"
+    counterevidence: "the seven category names, license, and split structure were not enumerated in the fetched views and are recorded as pending"
+    date: 2026-10-21

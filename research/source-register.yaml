@@ -201,3 +201,393 @@ sources:
       calibrating what the field currently believes, not a substitute for
       the primary studies it summarizes.
     license: "Open Government Licence v3.0 (stated on landing page)"
+
+  # --- Dataset-catalog verification round, 2026-10-21 ---
+  # One entry per canonical page inspected for the datasets/ catalog. Per-fact
+  # provenance tables live in the dataset cards (datasets/cards/*.md); these
+  # entries are the page-level source records.
+
+  - id: SRC-DATASET-001
+    title: "TruthfulQA Hugging Face dataset page"
+    authors_or_organization: "truthfulqa (Hugging Face organization)"
+    url: "https://huggingface.co/datasets/truthfulqa/truthful_qa"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata, not a scientific claim source)"
+    supports:
+      - "datasets/cards/01-truthfulqa.md (license, 817-row validation split, task tags, adversarial subcategory names)"
+      - "datasets/catalog.yaml DS-001"
+    limitations: >-
+      Row counts on hosted dataset pages are living properties; the 817-row
+      observation is dated 2026-10-21. Paper-level facts (authorship,
+      38-category taxonomy, MC1/MC2 metrics) were NOT verified through this
+      page and are not claimed.
+    license: "apache-2.0 (license tag displayed on the page)"
+
+  - id: SRC-DATASET-002
+    title: "BOLD Hugging Face dataset page (AmazonScience hosting)"
+    authors_or_organization: "AmazonScience (Hugging Face organization); paper authors distinct (unverified this round)"
+    url: "https://huggingface.co/datasets/AmazonScience/bold"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/02-bold.md (license sentence, 23,679 prompts, five-domain sub-group and prompt counts)"
+      - "datasets/catalog.yaml DS-002"
+    limitations: >-
+      Hosting organization is not necessarily author organization; paper
+      authorship (commonly attributed to Salesforce researchers) was not
+      re-verified this round and is flagged in the card. Wikipedia-sourcing
+      method and metric definitions are paper-level, unverified here.
+    license: "CC BY-SA 4.0 (license sentence displayed on the page)"
+
+  - id: SRC-DATASET-003
+    title: "RealToxicityPrompts Hugging Face dataset page"
+    authors_or_organization: "allenai (Hugging Face organization)"
+    url: "https://huggingface.co/datasets/allenai/real-toxicity-prompts"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/03-real-toxicity-prompts.md (license, 99.4k default-subset rows, eight toxicity subcategory fields)"
+      - "datasets/catalog.yaml DS-003"
+    limitations: >-
+      Scoring backend (Perspective API), corpus composition, and original
+      split design are paper-level knowledge not verified through this page.
+      Row count is a dated observation.
+    license: "apache-2.0 (license tag displayed on the page)"
+
+  - id: SRC-DATASET-004
+    title: "ToxiGen Hugging Face dataset page (skg hosting)"
+    authors_or_organization: "skg (Hugging Face organization); research project attribution unverified this round"
+    url: "https://huggingface.co/datasets/skg/toxigen-data"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/04-toxigen.md (size bucket, annotated-subset row counts, prompts/annotations split counts, task)"
+      - "datasets/catalog.yaml DS-004"
+    limitations: >-
+      No license was displayed on the inspected page; the license field
+      records this absence rather than guessing. The commonly quoted 274k
+      statement count was not verifiable at page level. Annotator protocol
+      unverified.
+    license: "unknown (not shown on inspected page)"
+
+  - id: SRC-DATASET-005
+    title: "BBQ Hugging Face mirror pages (heegyu/bbq primary; HiTZ/bbq and walledai/BBQ corroborating)"
+    authors_or_organization: "heegyu, HiTZ, Walled AI (mirror hosts); dataset authors: Parrish et al. (NYU MLL)"
+    url: "https://huggingface.co/datasets/heegyu/bbq"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (mirror-page metadata); underlying paper: Findings of ACL 2022"
+    supports:
+      - "datasets/cards/05-bbq.md (58,492 rows observed on two independent mirrors; author list; ambig/disambig structure; 9 categories; Religion no-train note; ACL citation block)"
+      - "datasets/catalog.yaml DS-005"
+    limitations: >-
+      Mirrors, not the canonical GitHub repository (nyu-mll/BBQ was
+      referenced but not itself fetched this round). Canonical license not
+      captured: the HiTZ mirror displayed a placeholder where license text
+      would be. arXiv identifier recorded at metadata-only level.
+    license: "unknown (mirror pages showed no canonical license text)"
+
+  - id: SRC-DATASET-006
+    title: "XSTest GitHub repository (paul-rottger/xstest)"
+    authors_or_organization: "Paul Röttger and coauthors"
+    url: "https://github.com/paul-rottger/xstest"
+    source_type: dataset-repository
+    publication_date: null
+    version: "repository state observed 2026-10-21 (149 stars; CC-BY-4.0 badge)"
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (repository metadata); underlying paper: NAACL 2024 main"
+    supports:
+      - "datasets/cards/06-xstest.md (license section verbatim; authors; NAACL 2024 acceptance; anthology link)"
+      - "datasets/catalog.yaml DS-006"
+    limitations: >-
+      Repository README inspected; prompt files themselves not downloaded.
+      Canonical Hugging Face hosting referenced but not fetched (mirror
+      walledai/XSTest inspected instead, supplying the 250/200 composition
+      and prompt-file name).
+    license: "CC BY 4.0 for prompts; model completions under original Meta/Mistral/OpenAI licenses (stated in repo)"
+
+  - id: SRC-PAPER-003
+    title: "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models"
+    authors_or_organization: "Paul Röttger, Hannah Rose Kirk, Bertie Vidgen, Giuseppe Attanasio, Federico Bianchi, Dirk Hovy"
+    url: "https://arxiv.org/abs/2308.01263"
+    source_type: paper
+    publication_date: 2023-08-02
+    version: "v3 (1 Apr 2024)"
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: synthesis
+    peer_review_status: "accepted at NAACL 2024 main conference (stated on arXiv page and repository)"
+    supports:
+      - "datasets/cards/06-xstest.md (250 safe prompts across ten prompt types; 200 unsafe contrast prompts; design intent)"
+      - "chapters/02 and 15 (over-refusal measurement, planned)"
+    limitations: >-
+      Abstract read, full text not read this round; per-prompt-type rubric
+      details pending full-text reading.
+    license: "unknown (not shown on abstract page)"
+
+  - id: SRC-DATASET-007
+    title: "BeaverTails Hugging Face dataset page"
+    authors_or_organization: "PKU-Alignment"
+    url: "https://huggingface.co/datasets/PKU-Alignment/BeaverTails"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/07-beavertails.md (cc-by-nc-4.0 license; 364k default rows; four split configurations with counts; safety-dimension taxonomy as displayed)"
+      - "datasets/catalog.yaml DS-007"
+    limitations: >-
+      The dimension list as displayed was truncated in the fetch; recorded as
+      eight-plus groups rather than a complete enumeration. Annotator
+      protocol and preference-pair construction are paper-level, unverified.
+    license: "cc-by-nc-4.0 (license tag displayed on the page; NON-COMMERCIAL)"
+
+  - id: SRC-DATASET-008
+    title: "Anthropic HH-RLHF Hugging Face dataset page"
+    authors_or_organization: "Anthropic"
+    url: "https://huggingface.co/datasets/Anthropic/hh-rlhf"
+    source_type: dataset-page
+    publication_date: null
+    version: "page update marker observed: May 2023"
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/08-hh-rlhf.md (MIT license; 169k total rows; train 161k / test 8.55k)"
+      - "datasets/catalog.yaml DS-008"
+    limitations: >-
+      The fetched view presented only a default aggregate subset; the
+      well-known subset names (helpful-base, harmless-base, red-team) were
+      NOT displayed and are recorded as pending, not as fact. Worker
+      protocol unverified.
+    license: "mit (license tag displayed on the page)"
+
+  - id: SRC-DATASET-009
+    title: "llm-attacks repository (official GCG code; ships AdvBench)"
+    authors_or_organization: "Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr, J. Zico Kolter, Matt Fredrikson"
+    url: "https://github.com/llm-attacks/llm-attacks"
+    source_type: dataset-repository
+    publication_date: null
+    version: "data/advbench/harmful_behaviors.csv at commit a62d130 (Jul 27 2023); nanogcg release noted 2024-08-01"
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (repository metadata)"
+    supports:
+      - "datasets/cards/09-advbench.md (521-line CSV = 520 data rows + header, 80.2 KB; goal/target columns; sibling files; experiment scales)"
+      - "datasets/catalog.yaml DS-009"
+    limitations: >-
+      The repository's LICENSE file was observed to exist but its text was
+      not read this round; MIT status is stated by the walledai/AdvBench
+      mirror (SRC-DATASET-009b below) and by the project site, not by direct
+      file read. The canonical CSV's 520 rows vs. the mirror's '500 harmful
+      behaviors' framing is recorded as a documented discrepancy, not
+      resolved.
+    license: "LICENSE file present; content not read this round (MIT stated by mirror and project site)"
+
+  - id: SRC-DATASET-009b
+    title: "walledai/AdvBench Hugging Face mirror page"
+    authors_or_organization: "Walled AI"
+    url: "https://huggingface.co/datasets/walledai/AdvBench"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (mirror-page metadata)"
+    supports:
+      - "datasets/cards/09-advbench.md (mirror's '500 harmful behaviors' framing; mirror's MIT license statement; harmful_strings.csv omission note)"
+    limitations: >-
+      A mirror, not the canonical source; its size framing differs from the
+      canonical CSV's 520 rows. Cited only for what the mirror itself
+      states, never as canonical composition ground truth.
+    license: "MIT (stated on the mirror page for the mirror's copy)"
+
+  - id: SRC-PAPER-004
+    title: "Universal and Transferable Adversarial Attacks on Aligned Language Models"
+    authors_or_organization: "Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr, J. Zico Kolter, Matt Fredrikson"
+    url: "https://arxiv.org/abs/2307.15043"
+    source_type: paper
+    publication_date: 2023-07-27
+    version: "v2 (20 Dec 2023)"
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "unknown (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "datasets/cards/09-advbench.md (title, authors, submission history, abstract-level method and transfer findings)"
+      - "chapters/12 and 15 (adversarial suffix attacks, planned)"
+    limitations: >-
+      Abstract read, full text not read this round. Author affiliations were
+      verified via the project site llm-attacks.org (also inspected
+      2026-10-21: CMU, Center for AI Safety, Google DeepMind, Bosch Center
+      for AI; ethics/disclosure page documents pre-publication disclosure to
+      affected companies) rather than through the abstract page itself.
+    license: "unknown (not shown on abstract page)"
+
+  - id: SRC-DATASET-010
+    title: "JailbreakBench JBB-Behaviors Hugging Face dataset page"
+    authors_or_organization: "JailbreakBench project (multi-institution collaboration; paper pending read)"
+    url: "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/10-jailbreakbench.md (MIT license text; behaviors 200 rows = 100 harmful + 100 benign; judge_comparison 300 rows; 10 categories; Source field values; field schema; DOI 10.57967/hf/2540)"
+      - "datasets/catalog.yaml DS-010"
+    limitations: >-
+      Paper (arXiv:2404.01318) not yet read; leaderboard methodology and
+      judge protocol unverified. Category list observed from the page's own
+      description of OpenAI-usage-policy alignment.
+    license: "MIT ('This dataset, like the code, is released under MIT License.' — verbatim on page)"
+
+  - id: SRC-PAPER-005
+    title: "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal"
+    authors_or_organization: "Mantos Mazeika, Long Phan, Xuwang Yin, Andy Zou, Zifan Wang, Norman Mu, Elham Sakhaee, Nathaniel Li, Steven Basart, Bo Li, David Forsyth, Dan Hendrycks"
+    url: "https://arxiv.org/abs/2402.04249"
+    source_type: paper
+    publication_date: 2024-02-06
+    version: "v2 (27 Feb 2024)"
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "unknown (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "datasets/cards/11-harmbench.md (authors; abstract-verified 18 methods / 33 targets comparison; adversarial training contribution)"
+      - "chapters/15 and 20 (automated red teaming, planned)"
+    limitations: >-
+      Abstract read only. Behavior-set sizes NOT stated in the abstract and
+      not verified this round — deliberately left unclaimed. GitHub
+      repository (centerforaisafety/HarmBench) and the walledai/HarmBench
+      mirror were observed to exist at page level; the official HF dataset
+      ID was not confirmed.
+    license: "unknown (not shown on abstract page)"
+
+  - id: SRC-DATASET-011
+    title: "WildChat Hugging Face dataset page (650K release)"
+    authors_or_organization: "allenai"
+    url: "https://huggingface.co/datasets/allenai/WildChat"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/12-wildchat.md (650K conversations; collection-method sentence: free GPT-3.5 access offered to online users)"
+    limitations: >-
+      Collection window and demographics not visible at page level. Paper
+      venue recorded at metadata-only level.
+    license: "see per-release entries (SRC-DATASET-012, SRC-DATASET-013); this page's own license tag not separately captured"
+
+  - id: SRC-DATASET-012
+    title: "WildChat-1M Hugging Face dataset page (license-change evidence)"
+    authors_or_organization: "allenai"
+    url: "https://huggingface.co/datasets/allenai/WildChat-1M"
+    source_type: dataset-page
+    publication_date: null
+    version: "license change dated 2024-06-26, described as retroactive; README commit 7d6490e observed"
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/12-wildchat.md (1M conversations; ODC-BY license change 2024-06-26 retroactive)"
+    limitations: >-
+      License archaeology relies on the page's own change note and commit
+      reference; legal effect of 'retroactive' is a policy statement by the
+      releaser, recorded as observed.
+    license: "ODC-BY (stated on the page, effective 2024-06-26, retroactive)"
+
+  - id: SRC-DATASET-013
+    title: "WildChat-4.8M Hugging Face dataset page (filtered large release)"
+    authors_or_organization: "allenai"
+    url: "https://huggingface.co/datasets/allenai/WildChat-4.8M"
+    source_type: dataset-page
+    publication_date: 2025-08-11
+    version: "release dated Aug 11 2025 (page-displayed)"
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (hosting-page metadata)"
+    supports:
+      - "datasets/cards/12-wildchat.md (3,199,860 conversations; non-toxic-only filter; release date)"
+    limitations: >-
+      Release branding (4.8M) vs contained conversation count (3,199,860)
+      recorded verbatim without resolution. The nontoxic variant page
+      (allenai/WildChat-nontoxic), also inspected, references the Ai2 Impact
+      License. Toxic-filter classifier method unverified.
+    license: "Ai2 Impact License terms referenced by the nontoxic variant page; this release's own tag not separately captured"
+
+  - id: SRC-DATASET-014
+    title: "SafetyBench GitHub repository (thu-coai/safetybench)"
+    authors_or_organization: "thu-coai (Tsinghua University conversation AI group)"
+    url: "https://github.com/thu-coai/safetybench"
+    source_type: dataset-repository
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "n/a (repository metadata); underlying paper: ACL 2024 long"
+    supports:
+      - "datasets/cards/13-safetybench.md (11,435 multiple-choice questions; 7 safety categories; Chinese and English)"
+      - "datasets/catalog.yaml DS-013"
+    limitations: >-
+      The seven category names were not enumerated in the fetched view.
+      License file not read this round. Split structure uninspected.
+    license: "unknown (not captured this round)"
+
+  - id: SRC-DATASET-015
+    title: "SafetyBench ACL Anthology page (2024.acl-long.830)"
+    authors_or_organization: "Zhang et al. (ACL Anthology listing)"
+    url: "https://aclanthology.org/2024.acl-long.830"
+    source_type: paper
+    publication_date: 2024
+    version: null
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "peer reviewed (ACL 2024 main conference long paper, per Anthology listing)"
+    supports:
+      - "datasets/cards/13-safetybench.md (venue; authorship; abstract-level composition consistent with repository README)"
+    limitations: >-
+      Anthology landing page inspected; full text not read. Citation context
+      observed but not independently verified.
+    license: "unknown (anthology page terms apply to the listing)"

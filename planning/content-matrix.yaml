@@ -456,3 +456,10 @@ notes:
   comparison_notes_complete: 0
   incident_analyses: "small, carefully verified set; production incidents vs controlled demonstrations vs tabletop scenarios vs hypotheticals kept distinct"
   glossary: "notation, aliases, common confusions, source and chapter links; grows with chapters"
+  dataset_catalog: >-
+    datasets/ holds 13 verified real-world dataset cards (2026-10-21), each
+    with per-fact reference tables; chapters and projects cite catalog
+    entries rather than re-verifying upstream pages independently. A
+    pending-verification queue (~10 further datasets, metadata-only) is
+    recorded in datasets/README.md and must not be cited as fact until
+    inspected.

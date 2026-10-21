@@ -23,17 +23,23 @@ as the work it describes. On session start, read this file, then
 | Phase B (part 2): learner entry layer — README/START_HERE/ROADMAP/SYLLABUS, diagnostic with worked answers, refreshers, 3 route pages, study schedules | `c123179` (pushed) | validator passed (13 dead links caught and fixed by completing the unit) |
 | Phase B (part 3): eight content templates (chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review) | `08c24bc` (pushed) | `templates/*` |
 | Phase B (part 4): engineering baseline — pyproject + uv.lock (19 pkgs), .python-version, in-repo validator + 7 tests, CI (actions pinned to verified SHAs), issue/PR templates | `66b8574` (pushed; **CI green**: all 8 steps success on run 39557258289) | checks verified via API |
-| Phase C (part 1): **chapter 01 complete** — README (ten-element structure: risk decomposition with six primitives, evidence kinds, uncertainty taxonomy, invoice-assistant worked example, approach comparison, failure conditions, verified readings), exercises, full worked solutions + assessor rubrics, GLOSSARY seed (18 entries), chapters index; registers +3 sources (SRC-PAPER-001/002, SRC-REPORT-001) and +3 claims (CLM-0006/0007/0008) | this commit | validator + tests green locally |
+| Phase C (part 1): **chapter 01 complete** — README (ten-element structure: risk decomposition with six primitives, evidence kinds, uncertainty taxonomy, invoice-assistant worked example, approach comparison, failure conditions, verified readings), exercises, full worked solutions + assessor rubrics, GLOSSARY seed (18 entries), chapters index; registers +3 sources (SRC-PAPER-001/002, SRC-REPORT-001) and +3 claims (CLM-0006/0007/0008) | `0f9b0a0` (pushed; CI green) | validator + tests green locally |
+| **Dataset catalog (owner-directed depth upgrade)**: `datasets/` — 13 verified real-world safety datasets (TruthfulQA, BOLD, RealToxicityPrompts, ToxiGen, BBQ, XSTest, BeaverTails, HH-RLHF, AdvBench, JailbreakBench, HarmBench, WildChat, SafetyBench) with deep cards; per-fact reference tables (every composition number traced to the URL it was collected from, with access level and date); machine-readable catalog.yaml; curriculum-integration map; usage/licensing policy (BeaverTails NC flag; no content redistribution); pending-verification queue; registers +18 sources (SRC-DATASET-001..015, SRC-PAPER-003/004/005, SRC-DATASET-009b) and +13 claims (CLM-0009..0021) | this commit | validator + tests green locally |
 
 ## Current phase
 
-**Phase C in progress.** Chapter 01 is complete (ten-element structure met;
-readings verified at honest access levels: two arXiv abstracts read, IASR
-2026 landing page inspected, owner article full-text-read).
+**Phase C in progress.** Chapter 01 is complete; the **real-world dataset
+catalog** is complete (13 datasets, verified 2026-10-21 at page-inspect /
+abstract-read levels with per-fact references). Chapter 02 is next and now
+has verified dataset material to draw on (construct-validity worked examples
+from the catalog's composition numbers).
 
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 1 / 24 (Ch. 01 complete; 02–24 planned; see content matrix)
+- Dataset cards complete: 13 / 13 in the current catalog scope (queue of
+  ~10 further datasets recorded at metadata-only level, deliberately
+  unverified and uncited)
 - Projects complete: 0 / 10 (all `planned`)
 - Paper notes complete: 0 / 20 required minimum
 - Comparison notes: 0 / 5 planned
@@ -60,8 +66,18 @@ Phase C continues with chapter 02 (one coherent commit per unit):
    (README + exercises + solutions + rubric) - deep on: construct validity,
    dataset provenance, grouped splits, contamination, adaptive overfitting,
    statistical power, cluster-aware intervals (Wilson), effect sizes,
-   repeated trials, preregistration. Artifact: preregistered evaluation
-   plan (a learner's Exercise 1.2 output is its draft).
+   repeated trials, preregistration. **Draw worked examples from the
+   verified dataset catalog** (datasets/README.md): BOLD's imbalanced
+   sub-groups for power; XSTest's 250-item denominators for Wilson
+   intervals; AdvBench's 520-vs-500 provenance discrepancy for verification
+   hygiene; BeaverTails' NC license for licensing discipline; WildChat's
+   license-change history for provenance archaeology. Artifact:
+   preregistered evaluation plan (a learner's Exercise 1.2 output is its
+   draft).
 3. Then P01 (evaluation harness - first code project; the
    src/ai_safety_course package lands there) -> chapter 03 -> P02, same
    discipline.
+4. Owner-directed priority note (2026-10-21): the course must read as a
+   premium ($10k-course-grade) curriculum - every chapter must go deep,
+   cite its sources, and tie into real datasets; the catalog is the first
+   layer of that standard, and chapter 02 must meet it too.

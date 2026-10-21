@@ -1,0 +1,153 @@
+# Real-world dataset catalog — verified safety-evaluation datasets
+
+This catalog is the course's bridge between **methodology chapters** and **real
+evaluation practice**. Every dataset here is a real, publicly documented
+benchmark used by working safety teams and researchers. Every card records,
+fact by fact, **where each piece of information was collected** — the URL, the
+access level, and the date — so a learner can re-walk the verification chain
+themselves instead of trusting our summary.
+
+Why this catalog exists, in one paragraph: evaluation science (Ch.02) teaches
+that a benchmark number is only as good as the dataset's *construct validity*,
+*provenance*, and *labeling process*. Reading dataset cards critically — with
+the actual composition numbers in hand — is the fastest way to internalize
+that discipline. Each card below is written as a worked example of that
+critique, ending in the section no marketing brochure ever includes: what the
+dataset **cannot** support.
+
+## How to read this catalog (learner instructions)
+
+1. **Do not memorize sizes.** Memorize the *questions*: who wrote the items,
+   what population they sample, what the labels actually measure, and what
+   license constrains your use.
+2. **Follow the references.** Each card body cites facts as `[R1]`, `[R2]`,
+   … and the final section resolves every marker to a URL with what was
+   collected there and when. If you cannot rebuild a fact from its reference,
+   treat the fact as unverified — we do.
+3. **Use the curriculum map** below to pick the datasets tied to the chapter
+   you are studying, and to the project you are building (P01 harness, P03
+   calibration, P07 red-teaming, P09 shift).
+4. **Respect the licenses.** We deliberately do **not** redistribute any
+   dataset in this repository. Two datasets in this catalog are
+   **non-commercial** (see [usage policy](#usage-and-licensing-policy)); all
+   cards describe, they do not ship.
+
+## Verification methodology (what "verified" means here)
+
+Research baseline 2026-10-20; verification performed 2026-10-21 by direct
+inspection of canonical pages (Hugging Face dataset pages, GitHub repositories
+and file views, arXiv abstract pages, ACL Anthology pages). Access levels
+follow the repository-wide convention in
+[research/research-method.md](../research/research-method.md):
+
+- `page-inspected` — the live canonical page was fetched and read; numbers
+  quoted are what the page displayed on that date.
+- `abstract-read` — the arXiv abstract page was read in full.
+- `metadata-only` — secondary reporting of a canonical identifier; used only
+  for the [pending verification](#pending-verification-queue) queue, never for
+  card facts.
+
+What we intentionally do **not** claim: row counts are living properties of
+hosted datasets (mirrors drift, upstreams revise); a verified count is a dated
+observation, not an eternal truth. Where two hosted versions disagree (for
+example AdvBench's 520-row canonical CSV vs. a mirror card describing the
+paper's 500-behavior framing), the card records **both** numbers with both
+provenances rather than silently picking one.
+
+## The catalog (13 verified datasets)
+
+| # | Dataset | Risk area | Task shape | License (as observed) | Card |
+|---|---------|-----------|------------|-----------------------|------|
+| 01 | TruthfulQA | Truthfulness / imitative falsehoods | 817 open questions, QA | apache-2.0 (HF page) | [card](cards/01-truthfulqa.md) |
+| 02 | BOLD | Social bias in generation | 23,679 generation prompts | CC BY-SA 4.0 (HF page) | [card](cards/02-bold.md) |
+| 03 | RealToxicityPrompts | Toxicity in generation | ~99.4k scored prompt rows | apache-2.0 (HF page) | [card](cards/03-real-toxicity-prompts.md) |
+| 04 | ToxiGen | Implicit toxicity / benign-counterfactual | 274k-scale generations, 9.9k annotated | not shown on inspected page | [card](cards/04-toxigen.md) |
+| 05 | BBQ | Stereotype bias in QA | 58,492 multiple-choice items | not captured at page level | [card](cards/05-bbq.md) |
+| 06 | XSTest | Over-refusal | 250 safe + 200 unsafe prompts | CC BY 4.0 (prompts; repo) | [card](cards/06-xstest.md) |
+| 07 | BeaverTails | Safety annotation / preference | ~364k prompt–response rows | **CC BY-NC 4.0** (HF page) | [card](cards/07-beavertails.md) |
+| 08 | HH-RLHF | Preference data / red-teaming | ~169k preference-pair rows | MIT (HF page) | [card](cards/08-hh-rlhf.md) |
+| 09 | AdvBench | Adversarial suffix attacks | 520 harmful-behavior rows | repo LICENSE file present; MIT stated by mirror | [card](cards/09-advbench.md) |
+| 10 | JailbreakBench (JBB-Behaviors) | Standardized jailbreak eval | 100 harmful + 100 benign behaviors | MIT (HF page) | [card](cards/10-jailbreakbench.md) |
+| 11 | HarmBench | Automated red teaming | framework + behavior sets | license check pending | [card](cards/11-harmbench.md) |
+| 12 | WildChat | Real user–assistant traffic | 650K → 1M → 3.2M conversation releases | ODC-BY (1M release, 2024-06-26) | [card](cards/12-wildchat.md) |
+| 13 | SafetyBench | Multi-category safety MCQ | 11,435 questions, EN+ZH | license check pending | [card](cards/13-safetybench.md) |
+
+## Curriculum integration map
+
+Where each dataset is *used by the course* (unit → datasets → role):
+
+| Unit | Datasets used | Role in that unit |
+|------|---------------|-------------------|
+| Ch.02 Evaluation science | all 13 | construct-validity worked examples; contamination, denominator, and adaptive-overfitting discussions use the real composition numbers above |
+| Ch.04 Preference learning | BeaverTails, HH-RLHF | label-quality audit material: annotation dimensions, preference-pair structure |
+| Ch.06 Honesty & calibration | TruthfulQA | truthfulness construct; MC scoring; abstention behavior |
+| Ch.12 Adversarial ML | AdvBench | gradient-based suffix attack target set; ASR metric construction |
+| Ch.15 Red teaming | XSTest, AdvBench, JailbreakBench, HarmBench | benign controls, explicit denominators, adaptive evaluation discipline |
+| Ch.16 Privacy & provenance | WildChat | real-user-data ethics, de-identification limits, license archaeology (Ai2 Impact License → ODC-BY) |
+| Ch.21 Sociotechnical risk | BOLD, BBQ, ToxiGen | bias constructs: disparity, ambiguity, implicit vs explicit toxicity |
+| Ch.23 Governance | SafetyBench | multi-category MCQ coverage in two languages as a governance-mapped evaluation |
+| P01 Evaluation harness | TruthfulQA, XSTest | runner cases with transparent scoring; scorer-validation examples |
+| P03 Calibration & abstention | TruthfulQA | free-response scoring limitations; selective-prediction curves |
+| P07 Injection defense | JailbreakBench behaviors | held-out attack cases and benign-controls design (metadata only; no redistribution) |
+| P09 Shift & subgroups | BOLD, BBQ | subgroup tables; worst-group reasoning with real category structure |
+
+This map is also the honest statement of scope: no dataset is *executed* in
+this repository yet (project code lands in P01 onward); the catalog is the
+research layer that later projects cite.
+
+## Usage and licensing policy
+
+- **We never redistribute dataset content.** Cards carry metadata and
+  structure only. Harmful-content datasets (AdvBench, JBB-Behaviors,
+  HarmBench, BeaverTails) are described at the category level; no harmful
+  prompts are reproduced in this repository.
+- **BeaverTails is CC BY-NC 4.0** — non-commercial. Any course project that
+  uses it must remain evaluation/research use, and the project's own MIT
+  license must never imply relicensing of upstream data.
+- **License statements are dated observations.** "License (as observed)"
+  columns record what the named page displayed on the verification date.
+  Before any real use, re-check the canonical source; licenses do change
+  (WildChat's 2024-06-26 ODC-BY change, recorded in its card, is the
+  worked example of exactly this).
+- Dataset text and model outputs are **untrusted data** under
+  [AGENTS.md](../AGENTS.md): they are never treated as instructions.
+
+## Pending-verification queue
+
+Datasets we consider important but which were **not verified in this round**
+(2026-10-21 web-verification budget was finite; these are recorded at
+`metadata-only` level and must not be cited as facts until inspected):
+
+- OR-Bench (over-refusal; canonical identifier to be confirmed)
+- WildJailbreak (adversarial-vs-vanilla safety training set)
+- WMDP (hazardous-knowledge MCQ benchmark)
+- HaluEval (hallucination QA benchmark)
+- SimpleQA (short-form factuality)
+- ToxiGen license file (page did not display it)
+- BBQ canonical license (mirror pages carried placeholder text)
+- HarmBench and SafetyBench license files
+- CrowS-Pairs, Winogender (classic bias benchmarks)
+- MMLU, GSM8K (general-capability anchors for Ch.17 shift discussion)
+
+Adjacent datasets observed at page level during verification (recorded so the
+next round does not have to rediscover them): lmsys/toxic-chat (10K annotated
+Vicuna-demo prompts), walledai/JailbreakHub (15,140 jailbreak prompts
+collected Dec 2022–Dec 2023 from Reddit, Discord, websites, and open datasets),
+thu-coai/Agent-SafetyBench (agent-safety environments, Dec 2024),
+ucf-crcv/BBQ-V (14,144 image-question pairs, visual stereotypes).
+
+## Card index
+
+1. [TruthfulQA — truthfulness under imitative falsehoods](cards/01-truthfulqa.md)
+2. [BOLD — bias in open-ended generation](cards/02-bold.md)
+3. [RealToxicityPrompts — toxicity propensity of prompts](cards/03-real-toxicity-prompts.md)
+4. [ToxiGen — machine-generated implicit toxicity with benign counterfactuals](cards/04-toxigen.md)
+5. [BBQ — stereotype bias in question answering](cards/05-bbq.md)
+6. [XSTest — exaggerated safety / over-refusal](cards/06-xstest.md)
+7. [BeaverTails — safety-annotated prompt–response pairs (non-commercial)](cards/07-beavertails.md)
+8. [HH-RLHF — preference pairs from a production assistant](cards/08-hh-rlhf.md)
+9. [AdvBench — harmful-behavior targets for adversarial attacks](cards/09-advbench.md)
+10. [JailbreakBench — an open, standardized jailbreak benchmark](cards/10-jailbreakbench.md)
+11. [HarmBench — standardized automated red teaming](cards/11-harmbench.md)
+12. [WildChat — real user traffic at three scales](cards/12-wildchat.md)
+13. [SafetyBench — bilingual multi-category safety MCQ](cards/13-safetybench.md)
