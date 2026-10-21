@@ -533,3 +533,44 @@ claims:
     counterevidence: >-
       the behavior was instructed, not emergent; the result evidences evaluation gameability, not spontaneous strategic deception in deployed models
     date: 2026-10-21
+
+  - id: CLM-0042
+    claim: >-
+      Greenblatt, Shlegeris, Sachan, and Roger evaluate control protocols in a setting with an untrusted model U (GPT-4, version 0613) solving 5,000 interview-level APPS programming problems, a trusted model T (GPT-3.5, version 0613), and trusted labor H budgeted to audit 2% of submissions, with safety defined as the share of simulated scenarios completing with zero backdoored submissions and usefulness rescaled between GPT-3.5's 22% and GPT-4's 54% raw correctness; they report trusted-model-only at 100% safety / 2% usefulness, upfront auditing at 15% / 100% against an optimal rare-backdoor attack, trusted monitoring at 62% / 97% (with 6 of the 19 successful backdoor attempts audited and caught), trusted monitoring with defer-to-trusted spanning (62%, 97%) at 0% deferral to (100%, 51%) at 50%, untrusted monitoring with defer-to-trusted reaching (98%, 85%), and trusted editing at (92%, 94%) and (96%, 89%), which the authors state Pareto-dominates their untrusted-monitoring results.
+    source: SRC-PAPER-022
+    section_or_page: "arXiv v5 HTML full text, sections 2-3.5 and Table 7 (fetched 2026-10-21)"
+    evidence_strength: "full-text-read (HTML rendering), single fetch; authors' own Monte Carlo evaluation"
+    assumptions: "the HTML rendering matches the published PDF; safety figures are Monte Carlo estimates under the paper's downsampling approximation; the attack policies tried represent the attacker class the paper targets"
+    counterevidence: >-
+      the paper's Appendix H notes non-negligible noise in safety measurements; the setting is a synthetic APPS-backdoor model organism with GPT-4/GPT-3.5 (0613) and prompted attack policies, not a deployed misaligned model; the paper quotes 53% and 54% for the same correctness rate in different places
+    date: 2026-10-21
+  - id: CLM-0043
+    claim: >-
+      In the same paper, naive untrusted monitoring is defeated outright (0% blue-team win probability) by a monitor that reports actual backdoors as unsuspicious while behaving honestly otherwise; red-team collusion keyed to input features (e.g. problems involving animals, food, or money) or to action signals (a variable name containing "variable", a while loop where a for loop would be natural) is countered by signal jamming — redaction and paraphrasing before the monitor sees the input — and with input-and-output redaction the strongest found collusion attack (while-loop collusion) leaves 78.6% safety at 96.3% usefulness; separately, the original synthetic validation inputs were distinguishable from real ones (theming present in 81.6% of real problems vs 9.4% of synthetic ones, i.e. 58/71 and 13/138), enabling collusion that updated synthetic inputs eliminated (the "collude if theme is present" strategy's safety rising from 0.828 to 1).
+    source: SRC-PAPER-022
+    section_or_page: "arXiv v5 HTML full text, sections 3.4-3.4.2 and Tables 4-6 (fetched 2026-10-21)"
+    evidence_strength: "full-text-read (HTML rendering), single fetch; table values quoted directly and the count-based percentages independently recomputed"
+    assumptions: "the HTML tables match the published PDF; the collusion strategies tried are representative of a wider class, which the authors assert rather than demonstrate"
+    counterevidence: >-
+      the authors state each collusion strategy could be countered if the blue team targeted it specifically, and that they expect (but do not demonstrate) that red teams can improve on the demonstrated signal-jamming countermeasures; the recomputed theming fraction 58/71 = 81.7% differs from the printed 81.6% by rounding
+    date: 2026-10-21
+  - id: CLM-0044
+    claim: >-
+      Kutasov, Loughridge, Sun, Sleight, Shlegeris, Tracy, and Benton evaluate control protocols — deferral to trusted models, resampling, and deferring on critical actions — in SHADE-Arena, a dataset of diverse agentic environments, and report that resampling for incrimination and deferring on critical actions perform best against a default attack policy, raising safety from 50% to 96%; adaptive red-team strategies with additional affordances, such as knowledge of when resampling occurs or the ability to simulate monitors, cut the resampling strategy's safety to 17%, while deferring on critical actions remained highly robust to their strongest red-team strategies, which the authors attribute to denying attack policies access to protocol internals.
+    source: SRC-PAPER-023
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; authors' own evaluation"
+    assumptions: "the abstract accurately reports the protocol comparison and the adaptive-attack results"
+    counterevidence: >-
+      robustness is relative to the strongest red-team strategies these authors constructed — the abstract does not claim exhaustive coverage; per-protocol and per-task breakdowns, and the exact attack affordance definitions, are in the unread full text
+    date: 2026-10-21
+  - id: CLM-0045
+    claim: >-
+      Terekhov, Panfilov, Dzenhaliou, Gulcehre, Andriushchenko, Prabhu, and Geiping study adaptive attacks by an untrusted model that knows the control protocol and the monitor model — plausible, they argue, for models with later knowledge cutoffs or the ability to search for this information — instantiated as publicly known or zero-shot prompt injections embedded in the model's outputs; using this tactic, frontier models consistently evaded diverse monitors and completed malicious tasks on two main AI-control benchmarks, the attack worked universally against current protocols that rely on a monitor, and the Defer-to-Resample protocol backfired as its resampling amplified the prompt injection into an effective best-of-n attack.
+    source: SRC-PAPER-024
+    section_or_page: "arXiv abstract page (fetched 2026-10-21)"
+    evidence_strength: "abstract-read, single fetch; authors' own evaluation"
+    assumptions: "the abstract accurately reports the adaptive-attack experiments across monitors and benchmarks"
+    counterevidence: >-
+      per-monitor evasion rates and per-benchmark results are in the unread full text; the two benchmarks are unnamed in the abstract; the attack presumes the untrusted model can embed injections in outputs the monitor reads, a property not every deployment affords
+    date: 2026-10-21

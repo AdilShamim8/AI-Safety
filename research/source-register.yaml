@@ -872,3 +872,53 @@ sources:
     limitations: >-
       Abstract read only. Everything in the paper is instructed or installed: the honest headline is 'evaluations are gameable', not 'models are gaming'. Per-task underperformance magnitudes live in the unread full text and are not cited.
     license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+
+  - id: SRC-PAPER-022
+    title: "AI Control: Improving Safety Despite Intentional Subversion"
+    authors_or_organization: "Ryan Greenblatt, Buck Shlegeris, Kshitij Sachan, Fabien Roger"
+    url: "https://arxiv.org/abs/2312.06942"
+    source_type: paper
+    publication_date: 2023-12-12
+    version: v5 (last revised 2024-07-23, per the arXiv dateline)
+    accessed_on: 2026-10-21
+    access_level: full-text-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at the fetched arXiv v5; the abstract page's comments field references an 'ICML version' whose venue status was not independently verified"
+    supports:
+      - "chapters/08-ai-control-and-monitoring/README.md (section 3: control setting — untrusted GPT-4 0613 / trusted GPT-3.5 0613 / trusted labor budgeted to audit 2% of 5,000 APPS problems; protocols: trusted-model-only, upfront auditing, trusted monitoring with a 2%-FPR threshold, defer-to-trusted dynamic routing, trusted editing, untrusted monitoring with collusion countermeasures; the safety and usefulness definitions)"
+      - "chapters/08-ai-control-and-monitoring/README.md (section 4 worked example: Table 7 safety/usefulness frontier rows, the trusted-monitoring attack breakdown (71 attempts, 19 successful, 6 audited), the naive-untrusted-monitoring 0% result, Table 6 collusion-vs-redaction values, and Tables 4-5 synthetic-input collusion values)"
+    limitations: >-
+      Full text read via arXiv's HTML rendering of v5 on 2026-10-21; sections 1-3.5 (setting, results, protocols, collusion) read closely, appendices skimmed for the noise and variance notes only. The task is programming-problem backdoors with attack policies implemented as prompted GPT-4 pipelines — a model organism of subversion, not evidence about any deployed model's alignment. Safety figures are Monte Carlo estimates over simulated scenarios using the paper's downsampling approximation, and the paper's Appendix H states there is some noise in safety measurements. The paper quotes a 53% correctness rate in its upfront-auditing analysis and 54% in its usefulness rescaling — an internal inconsistency the chapter records rather than resolves. The task prompt's candidate arXiv ID 2410.02591 resolved to an unrelated astrophysics paper; the correct ID was found via arXiv search and is the one fetched.
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+  - id: SRC-PAPER-023
+    title: "Evaluating Control Protocols for Untrusted AI Agents"
+    authors_or_organization: "Jon Kutasov, Chloe Loughridge, Yuqi Sun, Henry Sleight, Buck Shlegeris, Tyler Tracy, Joe Benton"
+    url: "https://arxiv.org/abs/2511.02997"
+    source_type: paper
+    publication_date: 2025-11-04
+    version: v1
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/08-ai-control-and-monitoring/README.md (sections 3.2 and 3.4 and the comparison table: systematic evaluation of deferral, resampling, and defer-on-critical-actions protocols in SHADE-Arena against default and adaptive attack policies; the affordance result — protocol-internal knowledge and monitor simulation drop resampling safety from 96% to 17% while defer-on-critical-actions stays robust)"
+    limitations: >-
+      Abstract read only. Author affiliations are not stated on the abstract page and are not claimed. Per-protocol and per-task numbers beyond the abstract's 50%-to-96% and 17% figures live in the unread full text. "Safety" here is defined by SHADE-Arena's agentic attack objectives, which differ from the APPS-backdoor definition of SRC-PAPER-022; the two papers' safety numbers are not directly comparable. The prompt suggested a ControlArena / UK AISI page; the ControlArena GitHub page fetched in-session returned "Page not found," and a dedicated ControlArena arXiv paper was not found by title search, so this SHADE-Arena protocol-evaluation paper is the verified source registered instead, described as what it is.
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+  - id: SRC-PAPER-024
+    title: "Adaptive Attacks on Trusted Monitors Subvert AI Control Protocols"
+    authors_or_organization: "Mikhail Terekhov, Alexander Panfilov, Daniil Dzenhaliou, Caglar Gulcehre, Maksym Andriushchenko, Ameya Prabhu, Jonas Geiping"
+    url: "https://arxiv.org/abs/2510.09462"
+    source_type: paper
+    publication_date: 2025-10-10
+    version: v2 (last revised 2026-03-02, per the arXiv dateline)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched v2 (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/08-ai-control-and-monitoring/README.md (sections 3.2 and 6: trusted monitors as a central point of failure — adaptive prompt-injection attacks embedded in the untrusted model's outputs by an attacker that knows the protocol and the monitor model; universal evasion across the monitor-based protocols tested; the Defer-to-Resample backfire result)"
+    limitations: >-
+      Abstract read only. The two "main AI control benchmarks" are not named in the abstract and are not claimed here; per-monitor evasion rates and attack success statistics are in the unread full text. The attack presumes the untrusted model can embed injections in outputs the monitor reads — a property not every deployment affords, and one the chapter states as a boundary rather than a universal. v2 (2026-03-02) is the fetched version.
+    license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"

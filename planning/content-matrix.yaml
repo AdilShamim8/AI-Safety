@@ -117,7 +117,7 @@ chapters:
     title: "AI control and monitoring"
     path: "chapters/08-ai-control-and-monitoring/"
     phase: D
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Treat trusted/untrusted components as assumptions with failure conditions"
       - "Design control protocols under audit budgets with monitoring, editing, deferral"
@@ -125,8 +125,8 @@ chapters:
     prerequisites: ["05"]
     project_ids: ["P08"]
     assessments: ["control-protocol definition with failure conditions"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-022, SRC-PAPER-023, SRC-PAPER-024, SRC-PAPER-013, SRC-DATASET-006, SRC-DATASET-010]
+    verified_on: 2026-10-21
   - id: "09"
     title: "Mechanistic interpretability foundations"
     path: "chapters/09-mechanistic-interpretability-foundations/"
