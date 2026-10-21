@@ -131,7 +131,7 @@ chapters:
     title: "Mechanistic interpretability foundations"
     path: "chapters/09-mechanistic-interpretability-foundations/"
     phase: E
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Explain residual streams, attention and MLP contributions, feature representations"
       - "Design causal interventions: activation patching with baselines and controls"
@@ -139,8 +139,8 @@ chapters:
     prerequisites: ["02"]
     project_ids: ["P06"]
     assessments: ["causal-claim analysis with controls"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-025, SRC-PAPER-026, SRC-PAPER-027, SRC-PAPER-028, SRC-PAPER-029, SRC-DATASET-001, SRC-DATASET-006]
+    verified_on: 2026-10-21
   - id: "10"
     title: "Sparse features, circuits, and interpretability evaluation"
     path: "chapters/10-sparse-features-circuits-and-interpretability-evaluation/"

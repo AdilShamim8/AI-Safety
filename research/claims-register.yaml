@@ -574,3 +574,54 @@ claims:
     counterevidence: >-
       per-monitor evasion rates and per-benchmark results are in the unread full text; the two benchmarks are unnamed in the abstract; the attack presumes the untrusted model can embed injections in outputs the monitor reads, a property not every deployment affords
     date: 2026-10-21
+
+  - id: CLM-0046
+    claim: >-
+      Elhage et al.'s Mathematical Framework for Transformer Circuits reformulates the decoder-only transformer around the residual stream as a communication channel that attention and MLP blocks read from and write to by vector addition, with attention heads as independent and additive (parallel) components, the QK circuit of a head determining where it looks and the OV circuit determining what information it moves, and MLP blocks analyzed as key/value memories — the decomposition (residual stream, W_QK, W_OV, block outputs written additively) that chapter 09's section 3 is built on.
+    source: SRC-PAPER-025
+    section_or_page: "transformer-circuits.pub/2021/framework, sections 'Virtual Weights and the Residual Stream as a Communication Channel', 'Attention Heads are Independent and Additive', 'QK Circuit'/'OV Circuit' (fetched and spot-verified 2026-10-21)"
+    evidence_strength: "full-text-read (web rendering, single fetch); terminology spot-verified programmatically"
+    assumptions: "the web rendering matches the intended article; the framework's two-layer clarity extends qualitatively to 12+ layer models (the article itself treats this as aspiration at publication)"
+    counterevidence: >-
+      the cleanest demonstrations in the article are on two-layer toy models and induction heads; the framework predates superposition and dictionary-learning results (chapters/10) that complicate 'features as directions'
+    date: 2026-10-21
+  - id: CLM-0047
+    claim: >-
+      Meng et al. (ROME) report that factual associations in autoregressive transformer language models behave as localized, directly-editable computations: a causal-tracing intervention identifies decisive neuron activations, revealing a distinct set of steps in middle-layer feed-forward (MLP) modules that mediate factual predictions while processing subject tokens — the mid-MLP and subject-token signatures that chapter 09's worked-example grid is designed to echo.
+    source: SRC-PAPER-026
+    section_or_page: "arXiv 2202.05262 v5 abstract (fetched 2026-10-21)"
+    evidence_strength: "abstract-read; abstract's central claims quoted, body not read this build"
+    assumptions: "the abstract faithfully represents the body; findings at GPT-2 scale transfer qualitatively to the patching-literature models the chapter references"
+    counterevidence: >-
+      the paper's causal tracing uses its specific noise corruption and GPT-2-scale models; later literature (and chapter 09 section 6) shows single-site restoration conflates computed with stored/relayed sites
+    date: 2026-10-21
+  - id: CLM-0048
+    claim: >-
+      Vig et al. bring causal mediation analysis into NLP interpretability: decomposing a behavior into total, indirect (through mediator components), and direct effects, and — the part chapter 09 leans on — report that model components are not always additive in their effects, with components whose indirect effects amplify or repress each other's contributions, grounding the chapter's redundancy and synergy warnings (ablation-with-backup, joint patches).
+    source: SRC-PAPER-027
+    section_or_page: "arXiv 2004.12265 v2 abstract (fetched 2026-10-21)"
+    evidence_strength: "abstract-read; methodology description quoted from abstract, body not read this build"
+    assumptions: "the abstract's methodology summary faithfully represents the paper; the mediation framing generalizes beyond its gender-bias case study"
+    counterevidence: >-
+      applied to gender-bias coreference in 2020-scale pre-trained LMs; the interaction findings are specific observations in that setting, not a general law of transformers
+    date: 2026-10-21
+  - id: CLM-0049
+    claim: >-
+      Tigges et al. find that sentiment is represented linearly across a range of large language models — a single direction in activation space mostly captures the feature, with one extreme positive and the other negative — and show by causal interventions that the direction is causally relevant in toy tasks and real datasets (Stanford Sentiment Treebank), the canonical linear-representation result behind the chapter's section 3.3 bridge.
+    source: SRC-PAPER-028
+    section_or_page: "arXiv 2310.15154 v1 abstract (fetched 2026-10-21)"
+    evidence_strength: "abstract-read; central claims quoted from abstract, body not read this build"
+    assumptions: "the abstract faithfully represents the body; linear representation of one feature family (sentiment) is evidence for, not proof of, linear representation of other behavioral features"
+    counterevidence: >-
+      one feature family on curated distributions; chapters/10's superposition results explain why many features cannot all be one-dimensional directions simultaneously
+    date: 2026-10-21
+  - id: CLM-0050
+    claim: >-
+      TransformerLens is an open-source (MIT-licensed) hook-based implementation of transformers designed for interpretability research — cached activations, named hooks per component — that is the standard tool project P06 builds its activation-patching harness on; the repository is actively maintained (last push 2026-10-21, 3987 stars per the GitHub API).
+    source: SRC-PAPER-029
+    section_or_page: "github.com/TransformerLensOrg/TransformerLens (API-inspected 2026-10-21)"
+    evidence_strength: "page-inspected (GitHub API metadata); no code executed this build"
+    assumptions: "API metadata (stars, license, push date) reflects repository state; API stability between inspection and P06's execution"
+    counterevidence: >-
+      stars and activity are health indicators, not correctness indicators; P06 must pin a version and record it in its provenance block
+    date: 2026-10-21

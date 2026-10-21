@@ -922,3 +922,85 @@ sources:
     limitations: >-
       Abstract read only. The two "main AI control benchmarks" are not named in the abstract and are not claimed here; per-monitor evasion rates and attack success statistics are in the unread full text. The attack presumes the untrusted model can embed injections in outputs the monitor reads — a property not every deployment affords, and one the chapter states as a boundary rather than a universal. v2 (2026-03-02) is the fetched version.
     license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+
+  - id: SRC-PAPER-025
+    title: "A Mathematical Framework for Transformer Circuits"
+    authors_or_organization: "Nelson Elhage, Neel Nanda, Catherine Olsson, Tom Henighan, Nicholas Joseph, Robert Dasari, Ben Mann, Jackson Kernion, Kamal Ndousse, Andy Jones, Zac Hatfield-Dodds, Dario Amodei, Jared Kaplan, Chris Olah (Transformer Circuits Thread)"
+    url: "https://transformer-circuits.pub/2021/framework/index.html"
+    source_type: paper
+    publication_date: 2021-12-27
+    version: published web article (Transformer Circuits Thread, Part 1)
+    accessed_on: 2026-10-21
+    access_level: full-text-read
+    evidence_class: theoretical
+    peer_review_status: "not peer reviewed (research-thread web publication by an industrial research team)"
+    supports:
+      - "chapters/09-mechanistic-interpretability-foundations/README.md (section 3.1-3.2: the residual stream as a communication channel that components read from and write to by addition; attention heads as independent, additive, parallel components; the QK circuit deciding where to look and the OV circuit deciding what information to move; MLP blocks as the two-layer-attention-equivalent key/value memories that follow)"
+      - "chapters/09-mechanistic-interpretability-foundations/README.md (section 3.3: features as directions over the residual stream, the framing the dictionary-learning work of chapters/10 builds on)"
+    limitations: >-
+      Full text fetched and read 2026-10-21 (2.4M characters of page text; terminology spot-verified: residual stream as communication channel, QK/OV circuits, heads independent and additive). Cleanest results are stated for two-layer models and induction heads; the framework's claim that interpretability 'scales' to production models is aspiration at publication date, not demonstration. Written before sparse autoencoders; its 'features as directions' claim is superseded-in-part by the superposition/dictionary work of chapters/10.
+    license: "unknown (web publication; no separate article license observed on the page)"
+  - id: SRC-PAPER-026
+    title: "Locating and Editing Factual Associations in GPT"
+    authors_or_organization: "Kevin Meng, David Bau, Alex Andonian, Yonatan Belinkov"
+    url: "https://arxiv.org/abs/2202.05262"
+    source_type: paper
+    publication_date: 2022-02-10
+    version: v5 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; the abstract page lists no venue in the API record)"
+    supports:
+      - "chapters/09-mechanistic-interpretability-foundations/README.md (worked example design and section 6: factual associations as localized, directly-editable computations; a causal-intervention method revealing mid-layer feed-forward (MLP) steps that mediate factual predictions while processing subject tokens — the mid-MLP and subject-token signatures the chapter's patching grid echoes)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21 (title, authors, v5, 2022-02-10); body not read this build. The paper's causal-tracing uses specific noise corruption and GPT-2-scale models; its claim is about factual recall, not refusal or honesty. The chapter's M12 worked example is a course-designed stand-in, not a reproduction.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-027
+    title: "Causal Mediation Analysis for Interpreting Neural NLP: The Case of Gender Bias"
+    authors_or_organization: "Jesse Vig, Sebastian Gehrmann, Yonatan Belinkov, Sharon Qian, Daniel Nevo, Simas Sakenis"
+    url: "https://arxiv.org/abs/2004.12265"
+    source_type: paper
+    publication_date: 2020-04-26
+    version: v2 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "published at NAACL 2020 per the paper's public record; the fetched arXiv v2 record itself lists no venue — venue status recorded as commonly-cited, not independently verified this build"
+    supports:
+      - "chapters/09-mechanistic-interpretability-foundations/README.md (sections 3.4 and 6: causal mediation analysis as the formal framing — total/indirect/direct effects through mediator components; the finding that model components can interact non-additively, including components whose effects amplify or repress each other's, which grounds the chapter's redundancy and synergy warnings)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21; body not read this build. Applied to gender-bias coreference in pre-trained LMs at 2020 scale; author list recorded from the API response. The chapter borrows the mediation framing and the interaction caveat, not the specific bias findings.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-028
+    title: "Linear Representations of Sentiment in Large Language Models"
+    authors_or_organization: "Curt Tigges, Oskar John Hollinsworth, Atticus Geiger, Neel Nanda"
+    url: "https://arxiv.org/abs/2310.15154"
+    source_type: paper
+    publication_date: 2023-10-23
+    version: v1 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue in the API record)"
+    supports:
+      - "chapters/09-mechanistic-interpretability-foundations/README.md (section 3.3: sentiment represented linearly — a single direction in activation space with one extreme positive and the other negative, isolated by causal interventions and shown causally relevant — the canonical linear-representation example behind the chapter's 'features as directions' bridge and chapters/11's steering directions)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21; body not read this build. One feature family (sentiment) on curated distributions; the linear-representation claim does not transfer automatically to every behavioral feature the course later cares about (refusal, honesty).
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-029
+    title: "TransformerLens (repository)"
+    authors_or_organization: "TransformerLensOrg (originated by Neel Nanda)"
+    url: "https://github.com/TransformerLensOrg/TransformerLens"
+    source_type: software
+    publication_date: 2022-08-26
+    version: live repository, actively maintained (last push 2026-10-21 per GitHub API)
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: engineering
+    peer_review_status: "not applicable (software)"
+    supports:
+      - "chapters/09-mechanistic-interpretability-foundations/README.md (section 7 readings: the hook-based transformer implementation that project P06 builds its patching harness on — cached activations, named hooks per block, designed for activation patching and ablation experiments)"
+    limitations: >-
+      Repository page inspected via GitHub API 2026-10-21 (3987 stars, MIT license, actively pushed); no code executed this build. Version pinning and API stability are P06's concern, recorded there.
+    license: "MIT (per GitHub API license field)"

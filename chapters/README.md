@@ -17,7 +17,8 @@ catalog with prerequisites and artifacts is
 | 06 | Honesty, uncertainty, and selective prediction | [06-honesty-uncertainty-and-selective-prediction](06-honesty-uncertainty-and-selective-prediction/) — **complete** |
 | 07 | Deception, scheming, and evaluation awareness | [07-deception-scheming-and-evaluation-awareness](07-deception-scheming-and-evaluation-awareness/) — **complete** |
 | 08 | AI control and monitoring | [08-ai-control-and-monitoring](08-ai-control-and-monitoring/) — **complete** |
-| 9–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases D–H)* |
+| 09 | Mechanistic interpretability foundations | [09-mechanistic-interpretability-foundations](09-mechanistic-interpretability-foundations/) — **complete** |
+| 10–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases D–H)* |
 
 Chapters appear here as they are completed — this index never links to a
 chapter that does not exist yet.
