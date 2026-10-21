@@ -307,3 +307,44 @@ claims:
     assumptions: "repository README composition statement matches shipped data"
     counterevidence: "the seven category names, license, and split structure were not enumerated in the fetched views and are recorded as pending"
     date: 2026-10-21
+
+  - id: CLM-0022
+    claim: >-
+      The Risks from Learned Optimization abstract (arXiv:1906.01820; v1 2019-06-05, v3 2021-12-01; Hubinger, van Merwijk, Mikulik, Skalse, Garrabrant) introduces the term mesa-optimization for learned models that are themselves optimizers and poses two safety questions: under what circumstances learned models will be optimizers (including when they should not be), and, when a learned model is an optimizer, what its objective will be — how it will differ from the loss function it was trained under — and how it can be aligned.
+    source: SRC-PAPER-002
+    section_or_page: "arXiv abstract page (re-verified 2026-10-21; page matches the existing register entry)"
+    evidence_strength: "direct abstract read"
+    assumptions: "the abstract accurately represents the paper's scope"
+    counterevidence: >-
+      The paper's finer distinctions (inner/outer alignment, mesa vs base objective usage) are not fully visible at abstract level; the existing register entry records the same limitation and defers them to a full-text read before chapter 07 leans on them.
+    date: 2026-10-21
+  - id: CLM-0023
+    claim: >-
+      The Defining and Characterizing Reward Hacking abstract (arXiv:2209.13085; Skalse, Howe, Krasheninnikov, Krueger; v1 2022-09-27, v2 2025-03-05) states: reward hacking is a phenomenon where optimizing an imperfect proxy reward function leads to poor performance according to the true reward function; a proxy is unhackable if increasing expected proxy return can never decrease expected true return; and, because reward is linear in state-action visit counts, over the set of all stochastic policies two reward functions can be unhackable only if one of them is constant — revealing a tension between using reward functions to specify narrow tasks and aligning AI systems with human values.
+    source: SRC-PAPER-006
+    section_or_page: "arXiv abstract page"
+    evidence_strength: "direct abstract read"
+    assumptions: "the abstract accurately represents the theorems' scope; the formal conditions are stated over the paper's MDP formalization"
+    counterevidence: >-
+      The deterministic-policy and finite-stochastic-policy results (non-trivial unhackable pairs, existence conditions for simplifications) are only named, not stated, in the abstract; precise statement forms are pending a full-text read.
+    date: 2026-10-21
+  - id: CLM-0024
+    claim: >-
+      The Effects of Reward Misspecification abstract (arXiv:2201.03544; Pan, Bhatia, Steinhardt; v1 2022-01-10, v2 2022-02-14) states: the authors construct four RL environments with misspecified rewards and study reward hacking as a function of agent capabilities (model capacity, action space resolution, observation space noise, training time); more capable agents often exploit reward misspecifications, achieving higher proxy reward and lower true reward than less capable agents; instances of phase transitions occur — capability thresholds at which the agent's behavior qualitatively shifts, leading to a sharp decrease in true reward; and the authors propose an anomaly-detection task for aberrant policies with several baseline detectors.
+    source: SRC-PAPER-007
+    section_or_page: "arXiv abstract page"
+    evidence_strength: "direct abstract read"
+    assumptions: "the abstract accurately represents the experiments; the enumerated capability axes transfer to the chapter's 'capability' framing only as a labeled analogy"
+    counterevidence: >-
+      No quantitative threshold values, environment details, or detector performance appear in the abstract; toy-RL scale means external validity to LLM post-training is unestablished.
+    date: 2026-10-21
+  - id: CLM-0025
+    claim: >-
+      The Goal Misgeneralization abstract (arXiv:2210.01790; Shah, Varma, Kumar, Phuong, Krakovna, Uesato, Kenton; v1 2022-10-04, v2 2022-11-02) states: goal misgeneralization is a specific form of robustness failure for learning algorithms in which the learned program competently pursues an undesired goal that leads to good performance in training situations but bad performance in novel test situations; it can occur even when the designer-provided specification is correct, unlike specification gaming, which requires a specification flawed in a way designers did not foresee; the authors demonstrate goal misgeneralization in deep learning systems across a variety of domains, extrapolate hypothetical catastrophic risks for more capable systems, and suggest research directions that could reduce the risk.
+    source: SRC-PAPER-008
+    section_or_page: "arXiv abstract page"
+    evidence_strength: "direct abstract read"
+    assumptions: "the abstract accurately represents the paper's scope; the demonstrated examples' details are pending full-text read"
+    counterevidence: >-
+      The catastrophic-risk scenarios are explicitly hypothetical extrapolations by the authors, not demonstrated results; the course must label them as such wherever they are mentioned.
+    date: 2026-10-21

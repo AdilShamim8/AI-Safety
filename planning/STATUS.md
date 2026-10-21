@@ -26,28 +26,22 @@ as the work it describes. On session start, read this file, then
 | Phase C (part 1): **chapter 01 complete** — README (ten-element structure: risk decomposition with six primitives, evidence kinds, uncertainty taxonomy, invoice-assistant worked example, approach comparison, failure conditions, verified readings), exercises, full worked solutions + assessor rubrics, GLOSSARY seed (18 entries), chapters index; registers +3 sources (SRC-PAPER-001/002, SRC-REPORT-001) and +3 claims (CLM-0006/0007/0008) | `0f9b0a0` (pushed; CI green) | validator + tests green locally |
 | **Dataset catalog (owner-directed depth upgrade)**: `datasets/` — 13 verified real-world safety datasets (TruthfulQA, BOLD, RealToxicityPrompts, ToxiGen, BBQ, XSTest, BeaverTails, HH-RLHF, AdvBench, JailbreakBench, HarmBench, WildChat, SafetyBench) with deep cards; per-fact reference tables (every composition number traced to the URL it was collected from, with access level and date); machine-readable catalog.yaml; curriculum-integration map; usage/licensing policy (BeaverTails NC flag; no content redistribution); pending-verification queue; registers +18 sources (SRC-DATASET-001..015, SRC-PAPER-003/004/005, SRC-DATASET-009b) and +13 claims (CLM-0009..0021) | `ae06ad9` (pushed; CI green run 39574015674) | validator + tests green; remote head verified |
 | **Chapter 02 complete** — ten-element structure: failure pathway (validity-leak chain), five-gate core (construct validity with three card-grounded worked examples; five provenance questions; dependence-aware splits; contamination & adaptive overfitting; Wilson/power/effect sizes with four verified-number worked intervals), guard-layer end-to-end worked example with threshold-straddling honest conclusions, approach comparison table, four failure modes of the method itself, readings split into verified vs assigned-pending, 5 exercises + full solutions with rubrics + arithmetic; GLOSSARY +12 terms; chapters index updated | this commit | validator + tests green locally |
+| **Chapter 03 complete** — ten-element structure: three-way failure taxonomy (proxy/capability/learned-goal) with formal grounding (Skalse et al. hackability conditions; Pan et al. capability thresholds; Shah et al. goal misgeneralization; mesa-optimization re-anchored to SRC-PAPER-002), Goodhart gap G and proxy validity region V(R-hat) defined with notation, truthfulness-judge worked example swept over BoN pressure with real AdvBench/TruthfulQA card numbers and preregistered gates G1/G2 (Wilson intervals recomputed in solutions), approach comparison (5 rows), where-the-methods-fail section, 2 demanding exercises + full solutions with rubrics (509-line solutions file with programmatic arithmetic); GLOSSARY +10 terms; readings = 4 verified sources (1 re-verified) | this commit | validator + tests green | |
 
 ## Current phase
 
-**Phase C in progress.** Chapter 01 is complete; the **real-world dataset
-catalog** is complete (13 datasets, verified 2026-10-21 at page-inspect /
-abstract-read levels with per-fact references); **chapter 02 is complete**
-(construct/provenance/splits/contamination/power/preregistration, all
-worked examples grounded in verified catalog numbers).
+Phase C in progress: chapter 03 complete (3/24); chapters 04–05 written and verified, landing next; P01 code green in its worktree.
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 2 / 24 (Ch. 01, Ch. 02 complete; 03–24 planned; see content matrix)
-- Dataset cards complete: 13 / 13 in the current catalog scope (queue of
-  ~10 further datasets recorded at metadata-only level, deliberately
-  unverified and uncited)
-- Projects complete: 0 / 10 (all `planned`)
+- Chapters complete: 3 / 24
+- Dataset cards complete: 13 verified cards in the catalog
+- Projects complete: 0 / 10
 - Paper notes complete: 0 / 20 required minimum
 - Comparison notes: 0 / 5 planned
-- Incident analyses: 0 / small verified set planned
-- Real local-model experiments executed: 0 / 3 required (blocked on
-  environment check at first model-dependent project; will be recorded
-  honestly either way)
+- Incident analyses: 0 (verified set, grows with the build)
+- Real local-model experiments executed: 0 / 3 required (recorded honestly;
+  compute-tier projects mark their own execution status truthfully)
 
 ## Blockers
 
@@ -57,21 +51,4 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Phase C continues (one coherent commit per unit):
-
-1. **P01 — evaluation harness** (first code project; `src/ai_safety_course`
-   lands here): config-driven runner, local adapters, versioned cases,
-   transparent metrics (Wilson intervals per Ch. 02), resumability, reports,
-   scorer validation against hand-verified examples. Uses TruthfulQA/XSTest
-   metadata (no content redistribution) per the dataset catalog's policy.
-2. Then chapter 03 (specification, reward hacking, goal misgeneralization)
-   -> P02, same discipline.
-3. Verification-round 2 (when web access is available): the catalog's
-   pending queue (OR-Bench, WildJailbreak, WMDP, HaluEval, SimpleQA,
-   ToxiGen/BBQ/HarmBench/SafetyBench licenses, CrowS-Pairs, Winogender,
-   MMLU, GSM8K) and chapter 02's assigned readings (WILDS 2012.07421,
-   TruthfulQA 2109.07958 full-text).
-4. Owner-directed priority note (2026-10-21): the course must read as a
-   premium ($10k-course-grade) curriculum — every chapter must go deep,
-   cite its sources, and tie into real datasets; chapters 01–02 now meet
-   that standard and every later chapter must match it.
+Next exact action: chapter 04 (preference learning and post-training) — its README and solutions are written and its sources verified (InstructGPT, DPO, Constitutional AI, Ziegler); merge its fragment and commit, then chapter 05, then the P01 evaluation-harness project pair (spec + implementation) from worktrees/p01.

@@ -47,7 +47,7 @@ chapters:
     title: "Specification, reward hacking, and goal misgeneralization"
     path: "chapters/03-specification-reward-hacking-and-goal-misgeneralization/"
     phase: C
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Distinguish proxy failure, capability failure, and learned-goal failure"
       - "Analyze Goodhart effects under distribution shift with a concrete counterexample"
@@ -55,8 +55,8 @@ chapters:
     prerequisites: ["01"]
     project_ids: ["P02"]
     assessments: ["counterexample analysis", "bounded experiment report"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-002, SRC-PAPER-006, SRC-PAPER-007, SRC-PAPER-008]
+    verified_on: 2026-10-21
   - id: "04"
     title: "Preference learning and post-training"
     path: "chapters/04-preference-learning-and-post-training/"

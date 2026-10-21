@@ -591,3 +591,55 @@ sources:
       Anthology landing page inspected; full text not read. Citation context
       observed but not independently verified.
     license: "unknown (anthology page terms apply to the listing)"
+
+  - id: SRC-PAPER-006
+    title: "Defining and Characterizing Reward Hacking"
+    authors_or_organization: "Joar Skalse, Nikolaus H. R. Howe, Dmitrii Krasheninnikov, David Krueger"
+    url: "https://arxiv.org/abs/2209.13085"
+    source_type: paper
+    publication_date: 2022-09-27
+    version: v2 (5 Mar 2025)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: theoretical
+    peer_review_status: "unknown (arXiv preprint; no venue listed on abstract page; comments field: '23 pages; modified (fix typo in Figure 1, update link to code in Appendix, remove unrendered characters from arXiv abstract)')"
+    supports:
+      - "chapters/03-specification-reward-hacking-and-goal-misgeneralization/README.md (section 3 core explanation: formal definition of reward hacking, unhackability, linearity result)"
+      - "chapters/03-specification-reward-hacking-and-goal-misgeneralization/README.md (section 5 comparison row: formal hackability analysis)"
+    limitations: >-
+      Abstract read only; full text not fetched this session. Theorem statements beyond the abstract (necessary and sufficient conditions for simplifications, the deterministic-policy and finite-stochastic-policy results) are recorded at abstract fidelity and must be re-verified at full-text read before the chapter quotes precise statement forms. The MDP formalization (reward linear in state-action visit counts) idealizes deployment; transfer of these results to LLM post-training is the chapter's labeled inference, not a demonstrated result. The candidate arXiv ID 2209.13085 was fetched directly and matched intent (title and all four authors observed on the page).
+    license: "arXiv non-exclusive-distribution 1.0 link present on abstract page; no separate article license stated"
+  - id: SRC-PAPER-007
+    title: "The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models"
+    authors_or_organization: "Alexander Pan, Kush Bhatia, Jacob Steinhardt"
+    url: "https://arxiv.org/abs/2201.03544"
+    source_type: paper
+    publication_date: 2022-01-10
+    version: v2 (14 Feb 2022)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "arXiv comments field states 'ICLR 2022; 19 pages'; venue acceptance status not independently verified"
+    supports:
+      - "chapters/03-specification-reward-hacking-and-goal-misgeneralization/README.md (section 3 core explanation: capability-dependent reward hacking and phase transitions)"
+      - "chapters/03-specification-reward-hacking-and-goal-misgeneralization/README.md (section 6 counterexample: phase transitions defeat monitoring; anomaly detectors as proxies)"
+    limitations: >-
+      Abstract read only. The candidate arXiv ID supplied for this paper (1805.08264) resolved to an unrelated condensed-matter paper (E. C. Marino et al., 'The Superconducting and Pseudogap Phase Diagram of High-Tc Cuprates'); the correct ID (2201.03544) was located via arXiv API title search and fetched instead — the fetched page lists Pan, Bhatia, Steinhardt with v1 2022-01-10 and v2 2022-02-14, title as recorded above. Environment constructions, quantitative capability-threshold values, and detector performance numbers are not in the abstract and are left unclaimed pending a full-text read. Four toy RL environments: external validity to LLM post-training is unestablished and must be labeled as an analogy in prose.
+    license: "CC BY 4.0 (license icon and by/4.0 URI displayed on the arXiv abstract page)"
+  - id: SRC-PAPER-008
+    title: "Goal Misgeneralization: Why Correct Specifications Aren't Enough For Correct Goals"
+    authors_or_organization: "Rohin Shah, Vikrant Varma, Ramana Kumar, Mary Phuong, Victoria Krakovna, Jonathan Uesato, Zac Kenton"
+    url: "https://arxiv.org/abs/2210.01790"
+    source_type: paper
+    publication_date: 2022-10-04
+    version: v2 (2 Nov 2022)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "unknown (arXiv preprint; no venue listed on abstract page)"
+    supports:
+      - "chapters/03-specification-reward-hacking-and-goal-misgeneralization/README.md (section 3 core explanation: goal misgeneralization definition, distinction from specification gaming, distribution shift)"
+      - "chapters/03-specification-reward-hacking-and-goal-misgeneralization/README.md (section 6 counterexample: audits cover only imagined shifts)"
+    limitations: >-
+      Abstract read only. The named deep-learning demonstrations, the hypothetical catastrophic-risk scenarios, and the proposed research directions are abstract-level summaries; the chapter may cite the definition and the demonstrated-in-deep-learning claim, but must label the catastrophic extrapolations as the authors' explicitly hypothetical scenarios wherever they are mentioned. No venue or license listed on the abstract page.
+    license: "unknown (arXiv non-exclusive-distribution 1.0 link present; no article license stated on abstract page)"
