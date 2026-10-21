@@ -676,3 +676,54 @@ claims:
     counterevidence: >-
       a position paper: proposes the vocabulary and evaluation guidelines rather than measuring any specific system; the faithfulness/plausibility split is widely adopted but the operationalization details are contested
     date: 2026-10-21
+
+  - id: CLM-0056
+    claim: >-
+      Turner et al. show that adding the difference of activations from a single pair of contrastive prompts at inference time steers language model behavior across contexts — activation engineering with a one-pair recipe — with claimed preservation of off-target behavior; a single prompt pair is simultaneously the method's strength (cheap, targeted) and its transfer limit.
+    source: SRC-PAPER-035
+    section_or_page: "arXiv 2308.10248 v5 abstract (fetched 2026-10-21 by title search after the drafting session's candidate-ID correction)"
+    evidence_strength: "abstract-read; central claims quoted from abstract, body not read this build"
+    assumptions: "the abstract faithfully represents the method and its preservation claims; steering effects transfer beyond the tested distributions"
+    counterevidence: >-
+      off-target preservation is a measured claim in later work (CAA's capability ledger), not a property of the one-pair recipe; single-pair directions are prompt-sensitive
+    date: 2026-10-21
+  - id: CLM-0057
+    claim: >-
+      Panickssery et al. (Contrastive Activation Addition) extract steering vectors from contrastive prompt pairs and report steering that is effective over and on top of finetuning and system prompts while minimally reducing capabilities — the capability-preservation clause being exactly the kind of claim chapter 11's capability ledger (with power arithmetic) exists to test rather than inherit.
+    source: SRC-PAPER-036
+    section_or_page: "arXiv 2312.06681 v4 abstract (fetched 2026-10-21)"
+    evidence_strength: "abstract-read; quoted at abstract level, body not read this build"
+    assumptions: "the abstract's capability claim matches the body's evaluation; benchmark capability batteries transfer to deployment capability"
+    counterevidence: >-
+      'minimally reduces capabilities' is battery-relative: a battery that cannot resolve small drops (chapter 11's 500-item blind-spot example) supports the claim vacuously
+    date: 2026-10-21
+  - id: CLM-0058
+    claim: >-
+      Arditi et al. find that refusal in the instruction-tuned models they study is mediated by a single direction: extracted by difference-in-means over harmful/harmless instruction activations, directional ablation removes refusal (their weight-orthogonalization jailbreak competes with GCG/PAIR-class attacks), activation addition induces refusal bidirectionally, off-target behavior is evaluated with a coherence battery (MMLU, ARC, GSM8K, TruthfulQA) via their substring refusal classifier, and model refusal-direction removal succeeds where dropping a safety-bearing system prompt multiplies attack success several-fold (their table: e.g. Llama-2 7B GCG-M 22.6% with vs 79.9% without the default system prompt).
+    source: SRC-PAPER-037
+    section_or_page: "arXiv 2406.11717 v3 HTML full text, sections 2.3-2.5, 3, 4.2-4.3, 7 (fetched 2026-10-21)"
+    evidence_strength: "full-text-read (HTML rendering, single fetch); ASR table values, classifier, coherence battery, and limitations spot-verified programmatically"
+    assumptions: "the HTML rendering matches the published PDF; curated single-turn instruction distributions exercise the deployment-relevant refusal computation; single direction generalizes across the studied models"
+    counterevidence: >-
+      the paper's own limitations section (curated distributions, model specificity, dual-use of released directions); the mediation claim is about the studied models, not all language models
+    date: 2026-10-21
+  - id: CLM-0059
+    claim: >-
+      In the same paper, evaluation conditions dominate attack numbers: the HarmBench-methodology default-system-prompt convention yields ASR values several times smaller than no-system-prompt evaluation (22.6 vs 79.9 on Llama-2 7B GCG-M; 6.9 vs 61.0 on 13B; 4.4 vs 62.9 on 70B), and their general method's ASR on Qwen models is on par with prompt-specific GCG — attack-success comparisons are meaningless without their evaluation conditions stated, and capability preservation claims require coherence batteries sized to resolve the drops they deny.
+    source: SRC-PAPER-037
+    section_or_page: "arXiv 2406.11717 v3 HTML full text, section 4.2 and appendix F.2 (fetched 2026-10-21)"
+    evidence_strength: "full-text-read; parenthetical no-system-prompt ASR values quoted from the table text"
+    assumptions: "the ASR table's parenthesized values are the no-system-prompt condition as the paper states; the classifier-based ASR is reproducible"
+    counterevidence: >-
+      ASR depends on the attack suite and classifier; 'on par with GCG' is specific to the Qwen family rows quoted
+    date: 2026-10-21
+  - id: CLM-0060
+    claim: >-
+      Burns et al. discover latent knowledge without supervision via a consistency objective — readouts that agree across augmented views of the same question — recovering truth-related directions without labels, with the load-bearing assumption that consistency identifies the truth feature rather than a consistent correlate; the cautionary template for unsupervised probing claims.
+    source: SRC-PAPER-038
+    section_or_page: "arXiv 2212.03827 v2 abstract (fetched 2026-10-21)"
+    evidence_strength: "abstract-read; objective and assumption quoted at abstract level, body not read this build"
+    assumptions: "the abstract faithfully represents the method; the consistency assumption holds on the evaluated distributions"
+    counterevidence: >-
+      consistency can be satisfied by non-truth correlates (dataset artifacts, formatting regularities); later literature debates the assumption's scope
+    date: 2026-10-21

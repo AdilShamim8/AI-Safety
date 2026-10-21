@@ -159,7 +159,7 @@ chapters:
     title: "Behavioral steering and representation interventions"
     path: "chapters/11-behavioral-steering-and-representation-interventions/"
     phase: E
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Use probes and activation steering; state linear-representation assumptions"
       - "Control confounds and transfer limits"
@@ -167,8 +167,8 @@ chapters:
     prerequisites: ["09"]
     project_ids: []
     assessments: ["intervention-evaluation report"]
-    source_ids: []
-    verified_on: null
+    source_ids: [SRC-PAPER-035, SRC-PAPER-036, SRC-PAPER-037, SRC-PAPER-038, SRC-PAPER-039, SRC-DATASET-006, SRC-DATASET-009]
+    verified_on: 2026-10-21
   - id: "12"
     title: "Adversarial ML and robustness"
     path: "chapters/12-adversarial-ml-and-robustness/"

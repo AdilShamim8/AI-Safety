@@ -1086,3 +1086,84 @@ sources:
     limitations: >-
       Abstract and API metadata verified 2026-10-21; the full text of this 6-page opinion piece is short and widely mirrored — recorded at abstract-read verification level for this build, with the faithfulness-vs-plausibility distinction confirmed from the abstract text directly. An opinion/position paper, not an empirical result.
     license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+
+  - id: SRC-PAPER-035
+    title: "Steering Language Models With Activation Engineering"
+    authors_or_organization: "Alexander Matt Turner, Lisa Thiergart, Gavin Leech, David Udell, Juan J. Vazquez, Ulisse Mini, Monte MacDiarmid"
+    url: "https://arxiv.org/abs/2308.10248"
+    source_type: paper
+    publication_date: 2023-08-20
+    version: v5 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue in the API record)"
+    supports:
+      - "chapters/11-.../README.md (section 3.3 and readings: the activation-engineering recipe — a single prompt pair's activations added at inference time to steer behavior, with the off-target-preservation claim; a single prompt pair is both the method's strength and its transfer limit)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21 by title search (the chapter drafting session's candidate ID 2308.07107 resolved to an unrelated information-retrieval survey; 2308.10248 is correct and is the registered ID); body not read this build.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-036
+    title: "Steering Llama 2 via Contrastive Activation Addition"
+    authors_or_organization: "Nina Panickssery, Nick Gabrieli, Julian Schulz, Meg Tong, Evan Hubinger, Alexander Matt Turner"
+    url: "https://arxiv.org/abs/2312.06681"
+    source_type: paper
+    publication_date: 2023-12-09
+    version: v4 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue in the API record)"
+    supports:
+      - "chapters/11-.../README.md (section 3.3 and readings: the contrastive-completion recipe for extracting steering directions, and the claim that steering is effective over and on top of finetuning and system prompts while minimally reducing capabilities — the claim the chapter's capability ledger exists to test rather than assume)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21; body not read this build. Capability-preservation claims quoted at abstract level; the chapter treats them as claims to audit, not results to inherit.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-037
+    title: "Refusal in Language Models Is Mediated by a Single Direction"
+    authors_or_organization: "Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, Neel Nanda"
+    url: "https://arxiv.org/abs/2406.11717"
+    source_type: paper
+    publication_date: 2024-06-17
+    version: v3 (arXiv HTML rendering fetched in full 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: full-text-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue in the API record)"
+    supports:
+      - "chapters/11-.../README.md (backbone: sections 2.3-2.5 — difference-in-means direction selection, activation addition and directional ablation interventions, the substring refusal classifier; section 3 — refusal mediated by a single direction, bidirectional (ablation removes refusal, addition induces it); section 4.2 — the ASR comparison table where orthogonalization competes with GCG/PAIR-class attacks, with and without the model's default system prompt (e.g. Llama-2 7B GCG-M 22.6% with vs 79.9% without); section 4.3 — model-coherence evaluations (MMLU, ARC, GSM8K, TruthfulQA); section 7 — limitations as the template for the chapter's where-the-methods-fail section)"
+    limitations: >-
+      Full text fetched 2026-10-21 via arXiv HTML (132k chars of rendered text; spot-verified programmatically: difference-in-means, substring refusal classifier, ASR table values with/without system prompt, the MMLU/ARC/GSM8K/TruthfulQA coherence battery, limitations section). Curated English single-turn instruction distributions; the several-fold ASR multiplication from dropping the system prompt is specific to the evaluated models and attack suite; directions are model-specific and their release is itself a dual-use question the paper discusses.
+    license: "unknown (arXiv distribution terms; no separate article license observed)"
+  - id: SRC-PAPER-038
+    title: "Discovering Latent Knowledge in Language Models Without Supervision"
+    authors_or_organization: "Collin Burns, Haotian Ye, Dan Klein, Jacob Steinhardt"
+    url: "https://arxiv.org/abs/2212.03827"
+    source_type: paper
+    publication_date: 2022-12-07
+    version: v2 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue in the API record)"
+    supports:
+      - "chapters/11-.../README.md (section 3.2 and readings: the label-free regime — the consistency objective that finds truth-direction-like readouts without labels, its gains, and its load-bearing assumption that consistency identifies the truth feature rather than a correlate; the cautionary template for every unsupervised probe)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21; body not read this build. The consistency-identifies-truth assumption is contested in later literature; the chapter quotes it as an assumption, not a result.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-039
+    title: "Probing Classifiers: Promises, Shortcomings, and Advances"
+    authors_or_organization: "Yonatan Belinkov"
+    url: "https://arxiv.org/abs/2102.12452"
+    source_type: paper
+    publication_date: 2021-02-24
+    version: v4 per arXiv API record (fetched 2026-10-21)
+    accessed_on: 2026-10-21
+    access_level: abstract-read
+    evidence_class: theoretical
+    peer_review_status: "published in Computational Linguistics per common citation; the fetched arXiv v4 API record lists no venue — venue recorded as commonly-cited, not independently verified this build"
+    supports:
+      - "chapters/11-.../README.md (sections 3.2 and 6: the survey-level map of probing methodology limits — decodability not implying causal use, control tasks and selectivity checks — referenced throughout the chapter's probe-caution framework)"
+    limitations: >-
+      Abstract and API metadata verified 2026-10-21; body not read this build. Survey paper: organizes known limits rather than presenting new measurements.
+    license: "unknown (arXiv distribution terms; no separate article license in the API record)"
