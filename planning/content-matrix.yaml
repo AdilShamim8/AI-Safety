@@ -1,0 +1,458 @@
+# Content matrix — chapter/project inventory with truthful maturity.
+#
+# Schema per chapter: id, title, path, phase, maturity, outcomes, prerequisites,
+# project_ids, assessments, source_ids (verified readings), verified_on.
+# Schema per project: id, title, path, phase, maturity, chapter_links,
+# artifacts, status (protocol-only | implemented | smoke-tested |
+# experiment-executed | independently-reproduced), verified_on.
+#
+# maturity: planned | drafting | complete   — "complete" only when the unit's
+# definition of done in planning/BUILD_PLAN.md is fully met.
+# status is the honest execution status of project code+experiments.
+
+schema_version: 1
+baseline_date: 2026-10-20
+last_updated: 2026-10-21
+
+chapters:
+  - id: "01"
+    title: "Risk models and research epistemics"
+    path: "chapters/01-risk-models-and-research-epistemics/"
+    phase: C
+    maturity: planned
+    outcomes:
+      - "Define hazard, capability, propensity, exposure, severity, and causal pathways operationally"
+      - "Apply evidence hierarchies and uncertainty tracking to safety claims"
+      - "Produce a threat hypothesis together with observations that would weaken it"
+    prerequisites: []
+    project_ids: []
+    assessments: ["threat-hypothesis artifact"]
+    source_ids: []
+    verified_on: null
+  - id: "02"
+    title: "Evaluation science and experimental design"
+    path: "chapters/02-evaluation-science-and-experimental-design/"
+    phase: C
+    maturity: planned
+    outcomes:
+      - "Explain construct validity, dataset provenance, grouped splits, contamination, adaptive overfitting"
+      - "Design evaluations with statistical power, cluster-aware intervals, effect sizes, repeated trials"
+      - "Produce a preregistered evaluation plan"
+    prerequisites: ["01"]
+    project_ids: ["P01"]
+    assessments: ["preregistered-evaluation-plan artifact"]
+    source_ids: []
+    verified_on: null
+  - id: "03"
+    title: "Specification, reward hacking, and goal misgeneralization"
+    path: "chapters/03-specification-reward-hacking-and-goal-misgeneralization/"
+    phase: C
+    maturity: planned
+    outcomes:
+      - "Distinguish proxy failure, capability failure, and learned-goal failure"
+      - "Analyze Goodhart effects under distribution shift with a concrete counterexample"
+      - "Run a bounded proxy-vs-intended-objective experiment"
+    prerequisites: ["01"]
+    project_ids: ["P02"]
+    assessments: ["counterexample analysis", "bounded experiment report"]
+    source_ids: []
+    verified_on: null
+  - id: "04"
+    title: "Preference learning and post-training"
+    path: "chapters/04-preference-learning-and-post-training/"
+    phase: D
+    maturity: planned
+    outcomes:
+      - "Explain reward modeling, KL regularization, SFT, PPO-style RLHF, DPO, RLAIF, Constitutional AI and what their objectives do and do not imply"
+      - "Derive at least one post-training objective"
+      - "Audit preference-label quality"
+    prerequisites: ["03"]
+    project_ids: ["P04"]
+    assessments: ["objective derivation", "label-quality audit"]
+    source_ids: []
+    verified_on: null
+  - id: "05"
+    title: "Scalable oversight"
+    path: "chapters/05-scalable-oversight/"
+    phase: D
+    maturity: planned
+    outcomes:
+      - "Explain weak-to-strong supervision, debate, decomposition, process vs outcome supervision"
+      - "Identify oversight failures, evaluator capability limits, correlated errors"
+      - "Design a bounded comparison with checkable ground truth"
+    prerequisites: ["02"]
+    project_ids: ["P05"]
+    assessments: ["bounded-comparison design"]
+    source_ids: []
+    verified_on: null
+  - id: "06"
+    title: "Honesty, uncertainty, and selective prediction"
+    path: "chapters/06-honesty-uncertainty-and-selective-prediction/"
+    phase: D
+    maturity: planned
+    outcomes:
+      - "Distinguish truthfulness vs honesty; calibration, abstention, risk-coverage curves"
+      - "Explain sycophancy and factuality measurement"
+      - "Explain why verbal confidence and token probabilities are not automatic truth probabilities"
+    prerequisites: ["02"]
+    project_ids: ["P03"]
+    assessments: ["calibration-analysis report"]
+    source_ids: []
+    verified_on: null
+  - id: "07"
+    title: "Deception, scheming, and evaluation awareness"
+    path: "chapters/07-deception-scheming-and-evaluation-awareness/"
+    phase: D
+    maturity: planned
+    outcomes:
+      - "Separate learned-optimization hypotheses from evidence; model organisms vs deployment claims"
+      - "Analyze alignment faking and sandbagging demonstrations with their assumptions"
+      - "Produce a skeptical evidence table"
+    prerequisites: ["03"]
+    project_ids: []
+    assessments: ["skeptical-evidence-table artifact"]
+    source_ids: []
+    verified_on: null
+  - id: "08"
+    title: "AI control and monitoring"
+    path: "chapters/08-ai-control-and-monitoring/"
+    phase: D
+    maturity: planned
+    outcomes:
+      - "Treat trusted/untrusted components as assumptions with failure conditions"
+      - "Design control protocols under audit budgets with monitoring, editing, deferral"
+      - "Reason about adaptive red teams, collusion, safety-usefulness tradeoffs"
+    prerequisites: ["05"]
+    project_ids: ["P08"]
+    assessments: ["control-protocol definition with failure conditions"]
+    source_ids: []
+    verified_on: null
+  - id: "09"
+    title: "Mechanistic interpretability foundations"
+    path: "chapters/09-mechanistic-interpretability-foundations/"
+    phase: E
+    maturity: planned
+    outcomes:
+      - "Explain residual streams, attention and MLP contributions, feature representations"
+      - "Design causal interventions: activation patching with baselines and controls"
+      - "Produce a causal claim with controls and off-distribution intervention checks"
+    prerequisites: ["02"]
+    project_ids: ["P06"]
+    assessments: ["causal-claim analysis with controls"]
+    source_ids: []
+    verified_on: null
+  - id: "10"
+    title: "Sparse features, circuits, and interpretability evaluation"
+    path: "chapters/10-sparse-features-circuits-and-interpretability-evaluation/"
+    phase: E
+    maturity: planned
+    outcomes:
+      - "Explain superposition, SAE reconstruction vs usefulness, feature splitting/absorption"
+      - "Evaluate faithfulness and completeness of circuit claims"
+      - "Explain why a compelling visualization is insufficient evidence"
+    prerequisites: ["09"]
+    project_ids: []
+    assessments: ["SAE-critique analysis"]
+    source_ids: []
+    verified_on: null
+  - id: "11"
+    title: "Behavioral steering and representation interventions"
+    path: "chapters/11-behavioral-steering-and-representation-interventions/"
+    phase: E
+    maturity: planned
+    outcomes:
+      - "Use probes and activation steering; state linear-representation assumptions"
+      - "Control confounds and transfer limits"
+      - "Evaluate an intervention on held-out inputs and unrelated tasks (capability side effects)"
+    prerequisites: ["09"]
+    project_ids: []
+    assessments: ["intervention-evaluation report"]
+    source_ids: []
+    verified_on: null
+  - id: "12"
+    title: "Adversarial ML and robustness"
+    path: "chapters/12-adversarial-ml-and-robustness/"
+    phase: F
+    maturity: planned
+    outcomes:
+      - "Distinguish evasion, poisoning, backdoors, extraction, membership inference, model inversion"
+      - "Compare attacker knowledge levels and adaptive evaluation"
+      - "State robustness boundaries honestly"
+    prerequisites: ["02"]
+    project_ids: []
+    assessments: ["threat-model comparison table"]
+    source_ids: []
+    verified_on: null
+  - id: "13"
+    title: "LLM application security"
+    path: "chapters/13-llm-application-security/"
+    phase: F
+    maturity: planned
+    outcomes:
+      - "Map direct/indirect prompt injection to trust boundaries and output handling"
+      - "Explain retrieval risks and secret exposure"
+      - "Explain why system prompts or filters alone are insufficient; map demonstrations to verified framework entries"
+    prerequisites: ["12"]
+    project_ids: ["P07"]
+    assessments: ["injection-to-framework mapping exercise"]
+    source_ids: []
+    verified_on: null
+  - id: "14"
+    title: "Agent, tool, memory, and MCP security"
+    path: "chapters/14-agent-tool-memory-and-mcp-security/"
+    phase: F
+    maturity: planned
+    outcomes:
+      - "Apply capability-based access, least privilege, delegation, tool metadata, authorization"
+      - "Reason about cross-session memory, identity, isolation, resource limits, compromised dependencies"
+      - "Produce a privilege and trust-boundary matrix"
+    prerequisites: ["13"]
+    project_ids: ["P07"]
+    assessments: ["privilege-and-trust-boundary matrix"]
+    source_ids: []
+    verified_on: null
+  - id: "15"
+    title: "Red teaming and adversarial evaluation"
+    path: "chapters/15-red-teaming-and-adversarial-evaluation/"
+    phase: F
+    maturity: planned
+    outcomes:
+      - "Plan threat-modeled coverage with adaptive attacks and benign controls"
+      - "Score with explicit denominators; measure over-refusal and transfer"
+      - "Report responsibly with reproducibility"
+    prerequisites: ["02", "13"]
+    project_ids: ["P07", "P10"]
+    assessments: ["attack/defense report with denominators"]
+    source_ids: []
+    verified_on: null
+  - id: "16"
+    title: "Privacy, provenance, and data/model supply chains"
+    path: "chapters/16-privacy-provenance-and-data-model-supply-chains/"
+    phase: F
+    maturity: planned
+    outcomes:
+      - "Apply data minimization and memorization reasoning; conceptual privacy accounting"
+      - "Audit model artifacts, licenses, provenance, dependency integrity"
+      - "Produce a dataset/model provenance audit"
+    prerequisites: ["02"]
+    project_ids: []
+    assessments: ["provenance-audit artifact"]
+    source_ids: []
+    verified_on: null
+  - id: "17"
+    title: "Distribution shift and deployment reliability"
+    path: "chapters/17-distribution-shift-and-deployment-reliability/"
+    phase: G
+    maturity: planned
+    outcomes:
+      - "Evaluate OOD behavior, subgroup and worst-group outcomes, selective prediction, drift"
+      - "State whether an evaluation covers covariate, label, or concept change"
+      - "Detect silent degradation under uncertainty"
+    prerequisites: ["02"]
+    project_ids: ["P09"]
+    assessments: ["shift-taxonomy analysis"]
+    source_ids: []
+    verified_on: null
+  - id: "18"
+    title: "Reasoning faithfulness and monitorability"
+    path: "chapters/18-reasoning-faithfulness-and-monitorability/"
+    phase: G
+    maturity: planned
+    outcomes:
+      - "Evaluate CoT faithfulness with partial observability and hidden actions"
+      - "Identify monitor evasion and measurement limitations"
+      - "Use action/outcome evidence as an alternative to text explanations"
+    prerequisites: ["08"]
+    project_ids: []
+    assessments: ["faithfulness-evidence critique"]
+    source_ids: []
+    verified_on: null
+  - id: "19"
+    title: "Multimodal and embodied safety"
+    path: "chapters/19-multimodal-and-embodied-safety/"
+    phase: G
+    maturity: planned
+    outcomes:
+      - "Analyze cross-modal injection, perceptual failures, sensor shift, action constraints"
+      - "State simulation-to-reality limits"
+      - "Work a substantive multimodal case and the limits of text-only evaluation"
+    prerequisites: ["13"]
+    project_ids: []
+    assessments: ["worked multimodal case"]
+    source_ids: []
+    verified_on: null
+  - id: "20"
+    title: "Misuse, dangerous capabilities, and release evaluation"
+    path: "chapters/20-misuse-dangerous-capabilities-and-release-evaluation/"
+    phase: G
+    maturity: planned
+    outcomes:
+      - "Explain capability elicitation, access conditions, safeguards, evaluation sensitivity"
+      - "Reason about dual-use tradeoffs and release decisions"
+      - "Keep high-consequence domains at a non-operational evaluation and governance level"
+    prerequisites: ["15"]
+    project_ids: []
+    assessments: ["release-evaluation design (non-operational)"]
+    source_ids: []
+    verified_on: null
+  - id: "21"
+    title: "Sociotechnical and systemic risk"
+    path: "chapters/21-sociotechnical-and-systemic-risk/"
+    phase: G
+    maturity: planned
+    outcomes:
+      - "Analyze human factors, automation bias, fairness and disparate impact, incentives, power concentration"
+      - "Map affected stakeholders and linguistic coverage"
+      - "Explain how organizational choices affect technical validity; produce a stakeholder and failure-pathway analysis"
+    prerequisites: ["01"]
+    project_ids: []
+    assessments: ["stakeholder-and-failure-pathway analysis"]
+    source_ids: []
+    verified_on: null
+  - id: "22"
+    title: "Safety engineering and assurance"
+    path: "chapters/22-safety-engineering-and-assurance/"
+    phase: G
+    maturity: planned
+    outcomes:
+      - "Apply hazard analysis and FMEA/STPA-style reasoning where suitable"
+      - "Build explicit assurance claims with evidence, assumptions, rebuttals, residual risk"
+      - "Explain why a compliance checklist is not a safety proof"
+    prerequisites: ["01", "08"]
+    project_ids: ["P10"]
+    assessments: ["safety-case draft"]
+    source_ids: []
+    verified_on: null
+  - id: "23"
+    title: "Governance and standards for researchers"
+    path: "chapters/23-governance-and-standards-for-researchers/"
+    phase: G
+    maturity: planned
+    outcomes:
+      - "Navigate NIST, OWASP, MITRE ATLAS, current GPAI safety/security guidance, responsible-scaling approaches"
+      - "Distinguish voluntary guidance, legal obligations, and research proposals with dated official sources"
+      - "Use external assessment, incident reporting, and model/system cards"
+    prerequisites: ["22"]
+    project_ids: []
+    assessments: ["standards-mapping exercise with versions"]
+    source_ids: []
+    verified_on: null
+  - id: "24"
+    title: "Research practice and capstone execution"
+    path: "chapters/24-research-practice-and-capstone-execution/"
+    phase: H
+    maturity: planned
+    outcomes:
+      - "Scope literature and nearest baselines with research taste and falsifiability"
+      - "Preregister, design ablations, report reproducibly, handle negative results and ethical release"
+      - "Deliver a defendable research proposal and capstone report"
+    prerequisites: ["02", "22"]
+    project_ids: ["P10"]
+    assessments: ["research proposal", "capstone report"]
+    source_ids: []
+    verified_on: null
+
+projects:
+  - id: "P01"
+    title: "Evaluation harness and scorer validation"
+    path: "projects/p01-evaluation-harness/"
+    phase: C
+    maturity: planned
+    chapter_links: ["02"]
+    artifacts: ["config-driven runner", "local adapters", "versioned cases", "transparent metrics", "resumability", "reports", "scorer validation vs hand-verified examples", "optional documented Inspect integration"]
+    status: protocol-only
+    verified_on: null
+  - id: "P02"
+    title: "Reward misspecification and generalization"
+    path: "projects/p02-reward-misspecification-and-generalization/"
+    phase: C
+    maturity: planned
+    chapter_links: ["03"]
+    artifacts: ["small environment with intended objective vs proxy reward", "optimization vs held-out comparison", "side-effect measurement", "revised-proxy test with limits"]
+    status: protocol-only
+    verified_on: null
+  - id: "P03"
+    title: "Calibration, truthfulness, and abstention"
+    path: "projects/p03-calibration-truthfulness-and-abstention/"
+    phase: D
+    maturity: planned
+    chapter_links: ["06"]
+    artifacts: ["licensed small QA/classification dataset + local model", "validation-only calibration fit", "Brier/log loss", "risk-coverage curves", "free-text scoring limitations"]
+    status: protocol-only
+    verified_on: null
+  - id: "P04"
+    title: "Preference optimization audit"
+    path: "projects/p04-preference-optimization-audit/"
+    phase: D
+    maturity: planned
+    chapter_links: ["04"]
+    artifacts: ["bounded preference-learning run (e.g. tiny local-model DPO)", "derivation with correctness checks", "pre/post comparison", "held-out objective", "label-bias condition", "SFT-vs-preference separation"]
+    status: protocol-only
+    verified_on: null
+  - id: "P05"
+    title: "Weak-to-strong or scalable oversight analogue"
+    path: "projects/p05-weak-to-strong-or-scalable-oversight-analogue/"
+    phase: D
+    maturity: planned
+    chapter_links: ["05"]
+    artifacts: ["checkable tasks", "weak supervisor vs stronger learner vs ground-truth upper reference", "inherited-error measurement", "OOD performance", "small-analogue scope statement"]
+    status: protocol-only
+    verified_on: null
+  - id: "P06"
+    title: "Causal interpretability study"
+    path: "projects/p06-causal-interpretability-study/"
+    phase: E
+    maturity: planned
+    chapter_links: ["09", "10", "11"]
+    artifacts: ["small open model", "activation patching or justified intervention", "clean/corrupted inputs", "random/control interventions", "held-out prompts", "numerical sanity checks", "optional SAE extension"]
+    status: protocol-only
+    verified_on: null
+  - id: "P07"
+    title: "Local RAG and agent prompt-injection defense"
+    path: "projects/p07-local-rag-and-agent-prompt-injection-defense/"
+    phase: F
+    maturity: planned
+    chapter_links: ["13", "14", "15"]
+    artifacts: ["intentionally vulnerable local test app over synthetic documents", "prompt-only baseline vs enforceable authorization/data boundaries/output handling", "unauthorized-action + benign-completion + false-block metrics on unseen cases", "no real secrets or external targets"]
+    status: protocol-only
+    verified_on: null
+  - id: "P08"
+    title: "Control and monitoring protocol"
+    path: "projects/p08-control-and-monitoring-protocol/"
+    phase: D
+    maturity: planned
+    chapter_links: ["08"]
+    artifacts: ["no-monitor vs simple-monitor vs deferral/constrained execution under audit budget", "bounded synthetic task + local model or separated scripted-policy analogue", "usefulness-failure tradeoff", "adaptive test cases", "unverified-trust-assumption discussion", "verified ControlArena integration guide where useful"]
+    status: protocol-only
+    verified_on: null
+  - id: "P09"
+    title: "Distribution shift and subgroup reliability"
+    path: "projects/p09-distribution-shift-and-subgroup-reliability/"
+    phase: G
+    maturity: planned
+    chapter_links: ["17"]
+    artifacts: ["licensed public dataset or reproducibly generated task with explicit shift", "in-distribution vs shifted vs subgroup outcomes", "uncertainty/abstention evaluation", "one mitigation", "leakage prevention", "statistical-vs-causal distinction"]
+    status: protocol-only
+    verified_on: null
+  - id: "P10"
+    title: "Capstone: agent evaluation and assurance dossier"
+    path: "projects/p10-capstone-agent-evaluation-and-assurance-dossier/"
+    phase: H
+    maturity: planned
+    chapter_links: ["22", "24", "15"]
+    artifacts: ["integration of P01 and P07/P08 into a bounded agent system", "pinned configuration", "threat model", "held-out tests", "attack/benign metrics", "resource limits", "logs", "regression suite", "claim-evidence-assumption-rebuttal safety case", "deployment-decision impact", "alternative alignment-research capstone spec (learner assignment, labeled as such)"]
+    status: protocol-only
+    verified_on: null
+
+notes:
+  paper_notes_required: 20
+  paper_notes_complete: 0
+  comparison_notes_planned:
+    - "RLHF vs DPO vs RLAIF"
+    - "behavioral vs mechanistic evidence"
+    - "alignment vs control"
+    - "prompt defenses vs authorization boundaries"
+    - "benchmark scores vs deployment assurance"
+  comparison_notes_complete: 0
+  incident_analyses: "small, carefully verified set; production incidents vs controlled demonstrations vs tabletop scenarios vs hypotheticals kept distinct"
+  glossary: "notation, aliases, common confusions, source and chapter links; grows with chapters"
