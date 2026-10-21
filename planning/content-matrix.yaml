@@ -357,11 +357,11 @@ projects:
     title: "Evaluation harness and scorer validation"
     path: "projects/p01-evaluation-harness/"
     phase: C
-    maturity: planned
+    maturity: complete
     chapter_links: ["02"]
     artifacts: ["config-driven runner", "local adapters", "versioned cases", "transparent metrics", "resumability", "reports", "scorer validation vs hand-verified examples", "optional documented Inspect integration"]
-    status: protocol-only
-    verified_on: null
+    status: implemented
+    verified_on: 2026-10-21
   - id: "P02"
     title: "Reward misspecification and generalization"
     path: "projects/p02-reward-misspecification-and-generalization/"

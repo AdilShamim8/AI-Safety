@@ -757,3 +757,20 @@ sources:
     limitations: >-
       Abstract read only. The PSPACE claim assumes optimal play and a polynomial-time judge model; the MNIST judge is a sparse-pixel classifier, not a persuadable human — both caveats carried in the chapter. The 2018 proposal predates LLM debates; no claim is made about current-model debate performance.
     license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
+
+  - id: SRC-TOOL-001
+    title: "Wilson score interval — reference formulation"
+    authors_or_organization: "Wikipedia (article: Binomial proportion confidence interval, section 'Wilson score interval'); original method: Edwin Bidwell Wilson (1927)"
+    url: "https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval"
+    source_type: documentation
+    publication_date: None
+    version: page as of access date
+    accessed_on: 2026-10-21
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed (encyclopedia article); the underlying method is classical statistics"
+    supports:
+      - "src/ai_safety_course/evaluation/metrics.py (cross-check of the Wilson formulation used by Ch. 02 and implemented here)"
+    limitations: >-
+      Encyclopedia page inspected as a formulation cross-check only; the implementation's authority is the Ch. 02 derivation and its hand-computed known-value tests (494/520 etc.), which the test suite enforces independently of this page. Not cited for any empirical claim.
+    license: "CC BY-SA 4.0 (Wikipedia text; formulation only, no text copied)"

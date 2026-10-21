@@ -430,3 +430,24 @@ claims:
     counterevidence: >-
       a motivation statement, not a demonstrated result; the demonstrated experiments are sub-human-gap analogues
     date: 2026-10-21
+
+  - id: CLM-0110
+    claim: >-
+      The XSTest paper (arXiv 2308.01263) designs its suite as 250 safe prompts across ten prompt types plus 200 unsafe contrast prompts — the paired safe/unsafe structure that P01's synthetic fixture models at the metadata level (never redistributing XSTest content).
+    source: SRC-DATASET-006
+    section_or_page: "source-register entry (abstract-read, accessed 2026-10-21); datasets/cards/06-xstest.md"
+    evidence_strength: "register-anchored, abstract-read level"
+    assumptions: "the register entry and card accurately record the abstract-level composition"
+    counterevidence: >-
+      none sought; composition facts were verified in the dataset-catalog round
+    date: 2026-10-21
+  - id: CLM-0111
+    claim: >-
+      The Wilson score interval formulation (center and half-width as implemented in metrics.py per Ch. 02) matches the formulation stated on the inspected reference page — cross-checked before the harness's known-value tests were trusted; the tests then enforce the formula independently (e.g. 494/520 -> [92.8%, 96.6%]).
+    source: SRC-TOOL-001
+    section_or_page: "page section 'Wilson score interval'"
+    evidence_strength: "page-inspected cross-check plus test-enforced known values"
+    assumptions: "the encyclopedia page states the standard Wilson (1927) formulation; the course's authority is its own derivation and tests, the page is the cross-check"
+    counterevidence: >-
+      none; the formula is classical and the known-value tests are independent of the page
+    date: 2026-10-21

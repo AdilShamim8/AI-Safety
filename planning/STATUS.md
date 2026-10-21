@@ -29,16 +29,17 @@ as the work it describes. On session start, read this file, then
 | **Chapter 03 complete** — ten-element structure: three-way failure taxonomy (proxy/capability/learned-goal) with formal grounding (Skalse et al. hackability conditions; Pan et al. capability thresholds; Shah et al. goal misgeneralization; mesa-optimization re-anchored to SRC-PAPER-002), Goodhart gap G and proxy validity region V(R-hat) defined with notation, truthfulness-judge worked example swept over BoN pressure with real AdvBench/TruthfulQA card numbers and preregistered gates G1/G2 (Wilson intervals recomputed in solutions), approach comparison (5 rows), where-the-methods-fail section, 2 demanding exercises + full solutions with rubrics (509-line solutions file with programmatic arithmetic); GLOSSARY +10 terms; readings = 4 verified sources (1 re-verified) | this commit | validator + tests green | |
 | **Chapter 04 complete** — ten-element structure: failure pathway (proxy chain labels -> reward model -> policy), core explanation of the full post-training stack (SFT, reward modeling with BT surrogate and its four silent assumptions, PPO-style RLHF under KL budget, DPO with the complete closed-form derivation carried end-to-end, RLAIF/Constitutional AI two-phase), DPO gradient derived and numerically verified in solutions (BT pair-loss calibration 0.371/0.184; toy-policy optimum at beta=0.5 with exact arithmetic), label-quality audit grounded in the HH-RLHF and BeaverTails cards, approach comparison table, where-the-methods-fail section, 4 exercises + 220-line solutions with rubrics; GLOSSARY +10 terms; readings = 4 newly verified sources | this commit | validator + tests green | |
 | **Chapter 05 complete** — ten-element structure: failure pathway (the oversight gap and its unaudited remainder), core explanation (weak-to-strong supervision with PGR framing and its small-gap caveat; breakthrough-task experimental design; debate with the PSPACE claim and its optimal-play assumption; decomposition and process-vs-outcome supervision; correlated-error arithmetic carried with exact binomial committee computations), oversight-committee worked example over a paired refusal suite with Wilson intervals and correlation sweep (recomputed in solutions), approach comparison table with cost/coverage/error structure, where-the-methods-fail section, exercises + 365-line solutions with rubrics; GLOSSARY +10 terms; readings = 3 newly verified sources (W2S, Bowman, Debate) + Concrete Problems re-anchored | this commit | validator + tests green | |
+| **P01 complete (implemented)** — the ai_safety_course.evaluation package: config-driven resumable fail-closed runner (CLI: python -m ai_safety_course.evaluation.runner), CaseSet with schema+SHA-256+version, scripted/echo/callable adapters (no network, no model download), Wilson-interval metrics with paired ledger per Ch. 02, RuleBasedRefusalScorer validated 24/24 against hand-verified fixture labels, dated markdown reports with full provenance (case-set checksum, adapter config hash, seed, code version); 24 synthetic paired refusal cases (XSTest-modeled at metadata level, zero content redistribution); demonstration runs executed locally (echo-quickstart, baseline-echo, baseline-all-refuse, demo-scripted-guard — runs/ gitignored per repository data policy) with the genuine generated demo report committed as example-report.md; 71 deterministic offline tests (full suite 78 green, <1s, CPU); preregistered protocol with H1-H3, anchored baselines, stopping rules, disconfirming criteria | this commit | ruff+black+pytest+validator green in worktree | |
 
 ## Current phase
 
-Phase C complete: chapters 03-05 done (5/24) with the methodology spine finished; P01 lands next, then Phase D chapters.
+Phase C COMPLETE: chapters 01-05 + P01 done. Phase D begins with chapter 06.
 
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 5 / 24
 - Dataset cards complete: 13 verified cards in the catalog
-- Projects complete: 0 / 10
+- Projects complete: 1 / 10
 - Paper notes complete: 0 / 20 required minimum
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
@@ -53,4 +54,4 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: land the P01 evaluation-harness project from worktrees/p01 as a two-commit pair (spec, then implementation with its 71 tests, validated fixture set, and genuine example report), then chapter 06 (honesty, uncertainty, selective prediction).
+Next exact action: chapter 06 (honesty, uncertainty, and selective prediction) — verify its candidate sources (TruthfulQA full text, calibration literature), write the chapter, then P03 (calibration project) which will be the first ml-tier project with an honest execution-status decision.
