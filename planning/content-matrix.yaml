@@ -217,16 +217,18 @@ chapters:
     title: "Red teaming and adversarial evaluation"
     path: "chapters/15-red-teaming-and-adversarial-evaluation/"
     phase: F
-    maturity: planned
+    maturity: complete
     outcomes:
-      - "Plan threat-modeled coverage with adaptive attacks and benign controls"
-      - "Score with explicit denominators; measure over-refusal and transfer"
-      - "Report responsibly with reproducibility"
-    prerequisites: ["02", "13"]
+      - "Name the three red-teaming families (human, automated, from-scratch) with founding evidence and failure modes"
+      - "Explain the oracle problem and its inversion (easily-classified failures make red teaming nearly redundant)"
+      - "Design an engagement with coverage taxonomy, denominators, benign controls, adaptive phase, and pre-declared stopping rules"
+      - "Keep the two-sided ledger: attack success and false refusal priced identically; price paired McNemar verdicts"
+      - "Write the responsible-reporting section: staged disclosure, artifact hygiene, claims scoped to conditions"
+    prerequisites: ["02", "12", "13"]
     project_ids: ["P07", "P10"]
     assessments: ["attack/defense report with denominators"]
-    source_ids: []
-    verified_on: null
+    source_ids: ["SRC-PAPER-058", "SRC-PAPER-059", "SRC-PAPER-060", "SRC-PAPER-061"]
+    verified_on: 2026-10-22
   - id: "16"
     title: "Privacy, provenance, and data/model supply chains"
     path: "chapters/16-privacy-provenance-and-data-model-supply-chains/"

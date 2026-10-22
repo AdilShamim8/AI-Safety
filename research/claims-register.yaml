@@ -945,3 +945,47 @@ claims:
     counterevidence: >-
       commentary, not measurement; the post's positive assessment of CaMeL is the author's opinion and is not carried as evidence by the chapter — only the lineage, the framing, and the quoted flaw analysis are
     date: 2026-10-22
+
+  - id: CLM-0081
+    claim: >-
+      The Anthropic red-teaming effort of Ganguli et al. (arXiv:2209.07858) describes red teaming as simultaneously discovering, measuring, and attempting to reduce harmful outputs; released a dataset of 38,961 red team attacks; and found across 3 model sizes and 4 model types that RLHF models are increasingly difficult to red team as they scale while the other model types show a flat trend with scale.
+    source: SRC-PAPER-058
+    section_or_page: "arXiv abstract page for 2209.07858 v2 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; all figures are the authors' abstract-level statements"
+    assumptions: "the released attack dataset is as described; the scaling trend refers to the evaluated model families at the evaluated scales"
+    counterevidence: >-
+      none at abstract level; the trend is a property of the 2022-era evaluated models, and chapter 15 prices it as a dated finding, not a law
+    date: 2026-10-22
+
+  - id: CLM-0082
+    claim: >-
+      Perez et al. (arXiv:2202.03286) demonstrate automated red teaming in which one language model generates test cases against a target language model, using methods from zero-shot generation to reinforcement learning, uncovering tens of thousands of offensive replies in a 280B-parameter chatbot and, via prompt engineering, specific harm classes including offensive discussion of groups, leaked contact information, training-data leakage, and conversation-emergent harms.
+    source: SRC-PAPER-059
+    section_or_page: "arXiv abstract page for 2202.03286 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the paper's own scoping ('one promising tool (among many needed)') is carried intact"
+    assumptions: "the offensive-reply counts are as stated at the evaluated target scale"
+    counterevidence: >-
+      none at abstract level; chapter 15's oracle-problem analysis adds the structural caveat the paper implies — the harms found are bounded by the generator's imagination and the classifier's coverage
+    date: 2026-10-22
+
+  - id: CLM-0083
+    claim: >-
+      Casper et al. (arXiv:2306.09442) propose red teaming from scratch in three steps — exploring the model's behavior range, establishing a definition and measurement of undesired behavior, and exploiting flaws with that measure — arguing that pre-existing classifiers prevent tailored red teaming and that when failures can be easily classified in advance red teaming has limited marginal value; they demonstrate the framework on GPT-3, discovering input classes that elicit false statements and constructing the 20,000-statement CommonClaim dataset.
+    source: SRC-PAPER-060
+    section_or_page: "arXiv abstract page for 2306.09442 v3 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; framework and demonstration figures as stated by the authors"
+    assumptions: "CommonClaim's 20,000 statements are as described in the unread body"
+    counterevidence: >-
+      none at abstract level; the marginal-value argument is the authors' position on scoping, which chapter 15 uses to define the oracle problem rather than as a license to skip red teaming
+    date: 2026-10-22
+
+  - id: CLM-0084
+    claim: >-
+      XSTest (Röttger et al., arXiv:2308.01263 v3, NAACL 2024) comprises 250 safe prompts across ten prompt types that well-calibrated models should not refuse plus 200 unsafe prompts as contrasts, built to identify exaggerated safety behaviours in which clearly safe prompts are refused because they use similar language to unsafe prompts or mention sensitive topics.
+    source: SRC-PAPER-061
+    section_or_page: "arXiv abstract page for 2308.01263 v3 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the 250/200 composition is the v3 abstract's statement"
+    assumptions: "the ten-type breakdown and per-model refusal rates live in the unread body and are not carried as claims"
+    counterevidence: >-
+      an earlier public summary page describes 200 safe prompts; the v3 abstract (250 safe) is the version carried, and the discrepancy is recorded here rather than silently resolved
+    date: 2026-10-22

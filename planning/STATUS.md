@@ -51,13 +51,16 @@ as the work it describes. On session start, read this file, then
 
 | **P07 complete (implemented)** — the ai_safety_course.agent_guard package: the privilege/trust-boundary matrix as code (ToolSpec with credential/reach/feeds/authority; exfiltration pairs, authority gradient, slow-store writers, red-flag audit; fail-closed checksum-pinned loader); the R1-R4 capability policy over provenance-tagged arguments (U/W/A) with R2/R3 as hard blocks and R1/R4 as consent gates resolved by a scripted user; paired harness (undefended full-delegation arm vs capability arm, halt-on-block semantics); Wilson rates, discordant-pair ledgers, exact one-sided sign tests, rule-fire counts; deterministic config-driven runner + CLI + markdown reports with full provenance and per-scenario trace appendix. Fixture: 15-tool atlas-v2 matrix (Ch.14 Atlas + exercise 14.1 CRM) and 16 paired trials (8 attack — six designed-blockable classes plus the two on-purpose residual classes: authored-policy gap via an undeclared capability-reference argument, and consent decay via a socially-engineered user-typed destination; 8 benign — incl. the unattended-automation consent timeout as the honest utility cost). Pinned headline (test-pinned, byte-stable regeneration): capability R1-R4 blocked 6 of 8 scripted attacks that succeeded undefended (paired one-sided sign test p = 0.015625) at a benign cost of 1 of 8 (benign-automated-report); rule fires R1:4 R2:5 R3:1 R4:4; attack rates 8/8 -> 2/8 Wilson [67.6,100]% -> [7.1,59.1]%; benign 8/8 -> 7/8 [52.9,97.8]%. Honest gaps recorded (not hidden): R2 blocks W link-following (unexercised utility cost), R3 covers memory.write only while the audit flags three store writers, tier 1 (live runtime) and tier 2 (human consent-decay rates) marked not-executed. 41 dedicated tests; genuine example-report.md committed | this commit | validator + ruff + black + 530-test suite green | |
 
+
+| **Chapter 15 complete** — ten-element structure: the five-station failure pathway of a red-team *program* (coverage without closure; the oracle problem; overfitting to the red team; the two-sided ledger; the reporting hazard); the three families with founding evidence (human: 38,961 released attacks, RLHF scaling trend [SRC-PAPER-058]; automated: LM-vs-LM, tens of thousands of offensive replies in a 280B target [SRC-PAPER-059]; from-scratch: Explore-Establish-Exploit and the marginal-value inversion [SRC-PAPER-060]); coverage/denominators discipline incl. the zero-success bound; over-refusal as a safety failure of the second kind systematized by XSTest's 250 safe / 200 unsafe structure [SRC-PAPER-061]; adaptive phase institutionalized from Ch.12's defense-evaluation failures; responsible reporting as a design decision. Worked example: the synthetic Meridian engagement — preregistered taxonomy (5 surfaces x 120 attacks), two-tier oracle with recorded agreement, XSTest-structured benign controls, mitigation, re-evaluation with McNemar exact one-sided p = 0.000061 (20-vs-2 discordant), adaptive re-opening of the multi-turn cell, two-sided ledger incl. benign-cost [72.9, 86.9]% and refusal-rise [13.4, 22.8]% — every number recomputed in solutions with the paired-vs-unpaired refusal critique; approach comparison (6 rows); where-the-methods-fail section; 2 exercises + full solutions with rubrics; GLOSSARY +6 terms; registers +4 sources (SRC-PAPER-058..061) and +4 claims (CLM-0081..0084) | this commit | validator + 530-test suite green | |
+
 ## Current phase
 
-Phase F (applications arc) underway: P02, P03, P07, ch12, ch13, ch14 done (14/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 15 (red teaming and adversarial evaluation), then comparison note C03.
+Phase F (applications arc) complete: P02, P03, P07, ch12-ch15 done (15/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is comparison note C03, then chapter 16 (privacy, provenance, supply chains).
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 14 / 24
+- Chapters complete: 15 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 4 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
@@ -75,9 +78,7 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: chapter 15 (red teaming and adversarial
-evaluation) — coverage, adaptive attacks, benign controls, scoring
-with denominators, over-refusal, responsible reporting; then
-comparison note C03 (alignment vs control). P07 is complete
-(2026-10-22) and its harness is reusable for chapter 15's paired
-red-team discipline.
+Next exact action: comparison note C03 (alignment vs control —
+the two paradigm families of Parts I-II, compared on threat model,
+evidence kinds, and failure modes), then chapter 16 (privacy,
+provenance, supply chains).
