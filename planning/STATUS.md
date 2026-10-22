@@ -57,7 +57,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
-- From-scratch researcher track: 2 / 7 modules complete (FS-01, FS-02: notes + tensors.py + 46 tests)
+- From-scratch researcher track: 3 / 7 modules complete (FS-01..FS-03: notes + tensors/neuron/activations code, 109 from-scratch tests)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)
 
@@ -69,11 +69,11 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: from-scratch track — module 03: note
-(03-neuron-and-activations.md, the video's 'Single Neuron Explained' and
-'Activation Functions' chapters + companion repo modules 04 neuron-from-
-scratch and 05 activation-functions) committed together with
-src/ai_safety_course/from_scratch/activations.py + neuron.py and tests
-(test_fs_activations.py, test_fs_neuron.py): six activations with exact
-derivatives, the linear step, forward prediction, MSE loss, and one
-hand-computed gradient-descent learning step on a single weight.
+Next exact action: from-scratch track — module 04: note
+(04-neural-network-and-backprop.md; video chapters 'Neural Network
+Layers' + 'How Networks Learn', companion repo module 06) committed
+together with src/ai_safety_course/from_scratch/network.py + tests
+(test_fs_network.py): a DenseLayer (matmul + bias + activation), an MLP
+class stacking them, manual backpropagation with the three-factor
+chain rule of module 03 generalized per-layer, SGD, and a verified
+convergence run (XOR or a regression toy, pinned in tests).
