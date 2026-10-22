@@ -46,3 +46,4 @@ the register's access level, exactly like paper notes.
 | # | Note | Sources | Level |
 |---|---|---|---|
 | C01 | [RLHF vs DPO vs RLAIF](comparison-01-rlhf-vs-dpo-vs-rlaif.md) | SRC-PAPER-009/010/011/012 | abstract-read (all four) |
+| C02 | [Behavioral vs mechanistic evidence](comparison-02-behavioral-vs-mechanistic-evidence.md) | SRC-PAPER-019/020/025/030/032/034/037 | mixed (2 abstract-read, 1 abstract position, 4 full-text-read) |

@@ -455,7 +455,7 @@ notes:
     - "alignment vs control"
     - "prompt defenses vs authorization boundaries"
     - "benchmark scores vs deployment assurance"
-  comparison_notes_complete: 1
+  comparison_notes_complete: 2
   incident_analyses: "small, carefully verified set; production incidents vs controlled demonstrations vs tabletop scenarios vs hypotheticals kept distinct"
   glossary: "notation, aliases, common confusions, source and chapter links; grows with chapters"
   dataset_catalog: >-
