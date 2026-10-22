@@ -366,11 +366,12 @@ projects:
     title: "Reward misspecification and generalization"
     path: "projects/p02-reward-misspecification-and-generalization/"
     phase: C
-    maturity: planned
+    maturity: complete
     chapter_links: ["03"]
     artifacts: ["small environment with intended objective vs proxy reward", "optimization vs held-out comparison", "side-effect measurement", "revised-proxy test with limits"]
-    status: protocol-only
-    verified_on: null
+    artifacts_delivered: ["src/ai_safety_course/reward_spec/ (metrics, environments, optimizer, runner, report)", "two model organisms with tuning/held_out arms", "three pressure regimes (bon-width, budgeted-search, local-search)", "preregistered gates by interval bounds", "157 offline tests", "genuine example report from the committed warehouse config", "judge-v1/v2 runs executed locally with same discipline"]
+    status: implemented
+    verified_on: 2026-10-22
   - id: "P03"
     title: "Calibration, truthfulness, and abstention"
     path: "projects/p03-calibration-truthfulness-and-abstention/"
