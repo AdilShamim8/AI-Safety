@@ -48,15 +48,18 @@ as the work it describes. On session start, read this file, then
 
 | **Chapter 14 complete** — ten-element structure: the five-station agent failure pathway (query->plan->tool call under credential->memory->supply chain); the capability-machine formalization (agent as (S, pi, T, M); tools as capabilities per Dennis & Van Horn 1966); the delegation audit (what a tool call authenticates — two unauthenticated steps between intention and action); control-vs-data-flow separation with the Dual LLM residual argument-corruption flaw and CaMeL's capability-carrying values; the MCP topology and the spec's own trust rules (tool descriptions untrusted; enforcement left to hosts); tool poisoning (Invariant Labs' add(a,b,sidenote) demonstration); memory as widened attack window (dormancy, provenance loss, re-privileging); supply-chain row. Worked example: the Atlas assistant privilege and trust-boundary matrix (11 tools x credential x reach x untrusted feeds x blast radius), the exfiltration-pair and authority-gradient findings, the R1-R4 capability policy traced through a poisoned-mailbox request (R2 blocking the W-tagged recipient; R1 blocking the hijacked edge), the memory-poisoning dormancy row, and honest pricing — CaMeL 77% vs 84% at assumed 97-task denominators ([68.0, 84.5]% vs [74.9, 89.6]% overlapping: utility cost not resolved from zero at benchmark scale), ToolEmu 23.9% at 144 cases -> [17.4, 31.2%], 68.8% carried as emulator validity not prevalence. Approach comparison (7 rows incl. full delegation, behavior filters, hierarchy, Dual LLM, CaMeL, isolation, evaluation-first); where-the-methods-fail section; 2 exercises + full solutions with rubrics (CRM server expansion growing the exfiltration pairs 3->8; pricing a 'provably secure' vendor claim with the proof-vs-sampling distinction); GLOSSARY +10 terms; registers +7 sources (SRC-PAPER-054..057, SRC-REPORT-005..007) and +7 claims (CLM-0074..0080) | this commit | validator + ruff + black green; full suite 489 tests passed | |
 
+
+| **P07 complete (implemented)** — the ai_safety_course.agent_guard package: the privilege/trust-boundary matrix as code (ToolSpec with credential/reach/feeds/authority; exfiltration pairs, authority gradient, slow-store writers, red-flag audit; fail-closed checksum-pinned loader); the R1-R4 capability policy over provenance-tagged arguments (U/W/A) with R2/R3 as hard blocks and R1/R4 as consent gates resolved by a scripted user; paired harness (undefended full-delegation arm vs capability arm, halt-on-block semantics); Wilson rates, discordant-pair ledgers, exact one-sided sign tests, rule-fire counts; deterministic config-driven runner + CLI + markdown reports with full provenance and per-scenario trace appendix. Fixture: 15-tool atlas-v2 matrix (Ch.14 Atlas + exercise 14.1 CRM) and 16 paired trials (8 attack — six designed-blockable classes plus the two on-purpose residual classes: authored-policy gap via an undeclared capability-reference argument, and consent decay via a socially-engineered user-typed destination; 8 benign — incl. the unattended-automation consent timeout as the honest utility cost). Pinned headline (test-pinned, byte-stable regeneration): capability R1-R4 blocked 6 of 8 scripted attacks that succeeded undefended (paired one-sided sign test p = 0.015625) at a benign cost of 1 of 8 (benign-automated-report); rule fires R1:4 R2:5 R3:1 R4:4; attack rates 8/8 -> 2/8 Wilson [67.6,100]% -> [7.1,59.1]%; benign 8/8 -> 7/8 [52.9,97.8]%. Honest gaps recorded (not hidden): R2 blocks W link-following (unexercised utility cost), R3 covers memory.write only while the audit flags three store writers, tier 1 (live runtime) and tier 2 (human consent-decay rates) marked not-executed. 41 dedicated tests; genuine example-report.md committed | this commit | validator + ruff + black + 530-test suite green | |
+
 ## Current phase
 
-Phase F (applications arc) underway: P02, P03, ch12, ch13, ch14 done (14/24 chapters, 3/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is P07 (injection defense), then chapter 15 (red teaming and adversarial evaluation).
+Phase F (applications arc) underway: P02, P03, P07, ch12, ch13, ch14 done (14/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 15 (red teaming and adversarial evaluation), then comparison note C03.
 
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 14 / 24
 - Dataset cards complete: 13 verified cards in the catalog
-- Projects complete: 3 / 10
+- Projects complete: 4 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 2 / 5 planned (C01, C02 complete 2026-10-22; next candidates: alignment vs control, prompt defenses vs authorization boundaries)
 - Incident analyses: 0 (verified set, grows with the build)
@@ -72,9 +75,9 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: P07 (injection defense) — implements chapters
-13-14's audit discipline as code: the privilege/trust-boundary matrix
-builder, a capability-policy checker with provenance tags, and the
-AgentDojo-style paired evaluation harness with Wilson intervals; then
-chapter 15 (red teaming and adversarial evaluation). The from-scratch
-track is complete and closed (2026-10-22).
+Next exact action: chapter 15 (red teaming and adversarial
+evaluation) — coverage, adaptive attacks, benign controls, scoring
+with denominators, over-refusal, responsible reporting; then
+comparison note C03 (alignment vs control). P07 is complete
+(2026-10-22) and its harness is reusable for chapter 15's paired
+red-team discipline.

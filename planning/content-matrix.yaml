@@ -411,14 +411,14 @@ projects:
     status: protocol-only
     verified_on: null
   - id: "P07"
-    title: "Local RAG and agent prompt-injection defense"
-    path: "projects/p07-local-rag-and-agent-prompt-injection-defense/"
+    title: "Injection defense as a capability audit (paired policy harness)"
+    path: "projects/p07-injection-defense/"
     phase: F
-    maturity: planned
-    chapter_links: ["13", "14", "15"]
-    artifacts: ["intentionally vulnerable local test app over synthetic documents", "prompt-only baseline vs enforceable authorization/data boundaries/output handling", "unauthorized-action + benign-completion + false-block metrics on unseen cases", "no real secrets or external targets"]
-    status: protocol-only
-    verified_on: null
+    maturity: complete
+    chapter_links: ["13", "14"]
+    artifacts: ["privilege and trust-boundary matrix builder with exfiltration-pair and authority-gradient audit (15-tool atlas-v2 fixture, checksum-pinned)", "R1-R4 capability policy over provenance-tagged arguments (R2/R3 hard-block; R1/R4 consent-gated) vs the full-delegation arm", "16 paired scripted trials (8 attack incl. two on-purpose residual classes, 8 benign incl. the consent-timeout utility cost)", "attack-success and benign-completion rates with Wilson intervals, discordant-pair ledgers, exact one-sided sign tests", "genuine deterministic example report with full provenance; 41 dedicated tests", "scoped-not-executed: prompt-only-baseline comparison arm, live agent runtime (tier 1), human consent-decay measurement (tier 2)"]
+    status: implemented
+    verified_on: 2026-10-22
   - id: "P08"
     title: "Control and monitoring protocol"
     path: "projects/p08-control-and-monitoring-protocol/"
