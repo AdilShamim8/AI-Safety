@@ -77,7 +77,7 @@ adapter:
 ```
 
 ```bash
-uv run python -m ai_safety_course.evaluation.runner <run-config.yaml>
+PYTHONPATH=src uv run python -m ai_safety_course.evaluation.runner <run-config.yaml>
 ```
 
 The command writes `state.json` (resumability), `results.json` (the full
