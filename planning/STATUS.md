@@ -54,6 +54,9 @@ as the work it describes. On session start, read this file, then
 
 | **Chapter 15 complete** — ten-element structure: the five-station failure pathway of a red-team *program* (coverage without closure; the oracle problem; overfitting to the red team; the two-sided ledger; the reporting hazard); the three families with founding evidence (human: 38,961 released attacks, RLHF scaling trend [SRC-PAPER-058]; automated: LM-vs-LM, tens of thousands of offensive replies in a 280B target [SRC-PAPER-059]; from-scratch: Explore-Establish-Exploit and the marginal-value inversion [SRC-PAPER-060]); coverage/denominators discipline incl. the zero-success bound; over-refusal as a safety failure of the second kind systematized by XSTest's 250 safe / 200 unsafe structure [SRC-PAPER-061]; adaptive phase institutionalized from Ch.12's defense-evaluation failures; responsible reporting as a design decision. Worked example: the synthetic Meridian engagement — preregistered taxonomy (5 surfaces x 120 attacks), two-tier oracle with recorded agreement, XSTest-structured benign controls, mitigation, re-evaluation with McNemar exact one-sided p = 0.000061 (20-vs-2 discordant), adaptive re-opening of the multi-turn cell, two-sided ledger incl. benign-cost [72.9, 86.9]% and refusal-rise [13.4, 22.8]% — every number recomputed in solutions with the paired-vs-unpaired refusal critique; approach comparison (6 rows); where-the-methods-fail section; 2 exercises + full solutions with rubrics; GLOSSARY +6 terms; registers +4 sources (SRC-PAPER-058..061) and +4 claims (CLM-0081..0084) | this commit | validator + 530-test suite green | |
 
+
+| **Comparison note C03 complete** — alignment vs control: the two paradigm families compared on load-bearing assumptions, evidence accepted, sharpest self-critiques (Sleeper Agents + Alignment Faking vs adaptive monitor subversion + usefulness price), verification ceilings, and scaling-with-capability; the Ch.05 scalable-oversight bridge; three practitioner decisions the comparison settles (marginal dollar, safety-case claim grammar, falsifiers per program); non-claims section. 11 register sources re-anchored (1 full-text-read, 10 abstract-read), no new sources needed | this commit | validator green | |
+
 ## Current phase
 
 Phase F (applications arc) complete: P02, P03, P07, ch12-ch15 done (15/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is comparison note C03, then chapter 16 (privacy, provenance, supply chains).
@@ -64,7 +67,7 @@ Phase F (applications arc) complete: P02, P03, P07, ch12-ch15 done (15/24 chapte
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 4 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
-- Comparison notes: 2 / 5 planned (C01, C02 complete 2026-10-22; next candidates: alignment vs control, prompt defenses vs authorization boundaries)
+- Comparison notes: 3 / 5 planned (C01, C02, C03 complete 2026-10-22; next candidates: prompt defenses vs authorization boundaries, evaluation-time defenses vs training-time alignment)
 - Incident analyses: 0 (verified set, grows with the build)
 - From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
@@ -78,7 +81,7 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: comparison note C03 (alignment vs control —
-the two paradigm families of Parts I-II, compared on threat model,
-evidence kinds, and failure modes), then chapter 16 (privacy,
-provenance, supply chains).
+Next exact action: chapter 16 (privacy, provenance, supply chains)
+— memorization, privacy accounting concepts, model artifacts,
+licenses, dependency integrity; then comparison note C04 (prompt
+defenses vs authorization boundaries).
