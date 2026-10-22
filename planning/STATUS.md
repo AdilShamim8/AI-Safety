@@ -54,7 +54,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Chapters complete: 13 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 3 / 10
-- Paper notes complete: 0 / 20 required minimum
+- Paper notes complete: 10 / 20 required minimum (notes 01-10 committed with index; access-level honesty per the template)
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
