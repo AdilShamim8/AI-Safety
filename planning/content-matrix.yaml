@@ -483,6 +483,6 @@ from_scratch:
     - {id: FS-02, title: "Python and PyTorch fundamentals", note: "02-python-and-pytorch-fundamentals.md", code: "from_scratch/tensors.py", maturity: complete}
     - {id: FS-03, title: "Neuron and activation functions", note: "03-neuron-and-activations.md", code: "from_scratch/neuron.py + activations.py", maturity: complete}
     - {id: FS-04, title: "Neural network and backpropagation", note: "04-neural-network-and-backprop.md", code: "from_scratch/network.py", maturity: complete}
-    - {id: FS-05, title: "Attention and transformers (GPT build)", note: "05-attention-and-transformers.md", code: "from_scratch/attention.py + transformer.py", maturity: planned}
+    - {id: FS-05, title: "Attention and transformers (GPT build)", note: "05-attention-and-transformers.md", code: "from_scratch/attention.py + transformer.py", maturity: drafting}
     - {id: FS-06, title: "Advanced architectures (DeepSeek latent attention, GLM-4 MoE)", note: "06-advanced-architectures.md", code: "from_scratch/moe.py", maturity: planned}
     - {id: FS-07, title: "Research methodology (ablation, LR search, expert search)", note: "07-research-methodology.md", code: null, maturity: planned}
