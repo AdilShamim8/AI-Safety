@@ -376,11 +376,11 @@ projects:
     title: "Calibration, truthfulness, and abstention"
     path: "projects/p03-calibration-truthfulness-and-abstention/"
     phase: D
-    maturity: planned
+    maturity: complete
     chapter_links: ["06"]
     artifacts: ["licensed small QA/classification dataset + local model", "validation-only calibration fit", "Brier/log loss", "risk-coverage curves", "free-text scoring limitations"]
-    status: protocol-only
-    verified_on: null
+    status: implemented
+    verified_on: 2026-10-22
   - id: "P04"
     title: "Preference optimization audit"
     path: "projects/p04-preference-optimization-audit/"

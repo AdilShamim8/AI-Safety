@@ -43,15 +43,17 @@ as the work it describes. On session start, read this file, then
 
 | **Chapter 13 complete** — ten-element structure: the composite-application failure pathway (untrusted text into one instruction stream; privilege delegated to the next-token distribution; consequence executed by the application's tools); direct vs indirect injection with the Greshake taxonomy (data theft, worming, ecosystem contamination; Bing-GPT4 and code-completion demonstrations) and Perez-Ribeiro classes (goal hijacking, prompt leaking); why prompts-as-defense fails as a category (same-channel, optimization-defeatable per GCG, irreducible quoted-injection ambiguity); both defense families with measured effects and stated limits (instruction hierarchy incl. unseen-attack robustness on GPT-3.5; spotlighting ASR >50% -> <2% priced as [40.4%, 59.6%] vs [0.6%, 7.0%] at n=100); output handling as the blast-radius boundary; RAG attack surface; OWASP LLM Top 10 2025 mapping (LLM01-10 page-verified). Worked example: trust-boundary audit of a support RAG bot (four channels, three impact classes, priced claims, non-claims). 2 exercises + full solutions with rubrics (tool-result/error/scratchpad channels; the 'under 2%' pricing discipline with sign-test p=1.5e-4); GLOSSARY +8 terms; registers +5 sources (SRC-PAPER-050..053 abstract-read + SRC-REPORT-004 page-inspected) and +4 claims (CLM-0067..0070); one citation-range collision caught and fixed pre-commit (049 = ch12 Biggio) | this commit | validator + 228-test suite green | |
 
+| **P03 complete (implemented, tier 1)** — the ai_safety_course.calibration package: reliability tables with per-bin counts and Wilson intervals at full-precision z (ECE always reported next to its binning — the K-dependence test-pinned), Brier and clipped log loss, mean gap as a marginal; rank-based risk-coverage curves with AURC, oracle ceiling, and gap; threshold policies with BOTH abstention-ledger sides (selective risk + false-abstention rate); identity/Platt(deterministic Newton)/histogram calibrators as fit-once state machines (validation-only fits); fail-closed checksummed case-set loader; config-driven deterministic runner + CLI + markdown report. Fixture honesty recorded: first draft (perfectly separable classes, every map Brier 0.0000) rejected before any results committed; committed fixture has realistic class overlap. Pinned headline: the inverted instrument's AURC 0.7178 sits ABOVE full-coverage risk 0.4000 (gating worse than answering everything); 98 offline tests (315 total green); genuine example report committed. The ml compute tier (TruthfulQA/XSTest per their cards, local model) and free-text scoring tier are scoped and honestly marked not-executed | this commit | validator + 315-test suite green | |
+
 ## Current phase
 
-Phase F (applications arc) underway: P02, ch12, ch13 done (13/24 chapters, 2/10 projects); next is chapter 14 (agent, tool, memory, MCP security), then P07 (injection defense).
+Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 3/10 projects); next is chapter 14 (agent, tool, memory, MCP security), then P07 (injection defense).
 
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 13 / 24
 - Dataset cards complete: 13 verified cards in the catalog
-- Projects complete: 2 / 10
+- Projects complete: 3 / 10
 - Paper notes complete: 0 / 20 required minimum
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
