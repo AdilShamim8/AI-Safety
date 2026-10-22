@@ -6,6 +6,26 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-22 — AI Researcher From Scratch track)
+
+- `research/ai-researcher-from-scratch/`: the owner-directed 7-module
+  track distilling the video "Become AI Researcher From Scratch - Full
+  Course" (Vuk Rosic, 2025, CC-BY, page-inspected — SRC-VIDEO-001) and
+  its MIT-licensed companion repository zero-to-ai-researcher
+  (SRC-REPO-001, full-text-read) into notes plus stdlib-only code.
+- `src/ai_safety_course/from_scratch/`: six code modules (tensors,
+  activations, neuron, network, attention, transformer, moe) with 174
+  tests — every backward pass finite-difference-checked; a TinyGPT
+  trains on next-token prediction and regenerates its training string
+  (deterministic, pinned in CI).
+- `research/ai-researcher-from-scratch/07-research-methodology.md`:
+  three preregistered protocol templates (ablation, hyperparameter
+  search, architecture-configuration search) mapping the companion's
+  research methodology onto the course's own evaluation discipline.
+- Registers: SRC-VIDEO-001, SRC-REPO-001; claims CLM-0071..0073 (the
+  paper's findings priced at abstract strength). GLOSSARY +10 terms;
+  THIRD_PARTY_NOTICES +2 entries.
+
 
 ### Added (2026-10-21 — fresh start)
 

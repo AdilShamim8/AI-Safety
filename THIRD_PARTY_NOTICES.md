@@ -19,6 +19,8 @@ license are recorded in each project's data card and in the source register.
 |---|---|---|---|---|
 | CC BY 4.0 legal code (the license text itself) | `LICENSE-DOCS` | https://creativecommons.org/licenses/by/4.0/legalcode | CC BY 4.0 | License text reproduced verbatim per its terms; the Creative Commons disclaimer paragraph is retained |
 | (none other) | — | — | — | Entries are added at import time, in the same commit that introduces the material |
+| "Become AI Researcher From Scratch - Full Course" video metadata (title, channel, date, chapter list) | `research/ai-researcher-from-scratch/` (cited as SRC-VIDEO-001) | https://www.youtube.com/watch?v=44l-xL7OKLo | Creative Commons Attribution (reuse allowed), as displayed on the page fetched 2026-10-22 | Metadata and chapter titles only; no spoken-transcript content quoted (transcript not retrievable); CC-BY attribution given in the track README |
+| zero-to-ai-researcher curriculum structure (module names, lesson topics, experiment designs) | `research/ai-researcher-from-scratch/` (cited as SRC-REPO-001) | https://github.com/vukrosic/zero-to-ai-researcher | MIT License, Copyright (c) 2025 Vuk Rosic (LICENSE read at clone time, 2026-10-22) | Structural elements and designs cited with attribution; no MIT-licensed text copied — the track's notes and all code are original to this repository |
 
 ## Policy
 

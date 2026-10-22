@@ -47,7 +47,7 @@ as the work it describes. On session start, read this file, then
 
 ## Current phase
 
-Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 3/10 projects); owner-directed from-scratch researcher track opened 2026-10-22 (research/ai-researcher-from-scratch/, 7 modules, builds before chapter 14 resumes).
+Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 3/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 14 (agent, tool, memory, MCP security), then P07 (injection defense).
 
 ## Curriculum completion counters (truthful)
 
@@ -57,7 +57,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
-- From-scratch researcher track: 6 / 7 modules complete (FS-01..FS-06: notes + all seven code modules incl. moe.py; 174 from-scratch tests)
+- From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)
 
@@ -69,15 +69,8 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: from-scratch track — module 07 (final module,
-protocol-only note, no code): 07-research-methodology.md distilling the
-companion repo's research-methodology layer (three experiments: the
-5-variant ablation at 512 hidden dims with HellaSwag; the learning-rate
-search; the expert-configuration search) and its research-skills list
-(hypothesis formation, controlled experiments, ablations, baseline
-comparisons, reproducibility, documentation) into preregistered
-protocol templates mapped onto this course's own standards (chapter 02
-evaluation science; P02's preregistration discipline; the claims
-register's evidence pricing). Then the track's closing commit:
-GLOSSARY terms for the track, THIRD_PARTY_NOTICES entries for the video
-and companion repo, CHANGELOG entry, README status flip to complete.
+Next exact action: chapter 14 (agent, tool, memory, MCP security) —
+Phase F resumes where it left off; then P07 (injection defense). The
+from-scratch track is complete and closed (2026-10-22); its protocols
+(FS-07) are available for learners, and its paper-note debts are
+none.

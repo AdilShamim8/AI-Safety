@@ -1,8 +1,8 @@
 # AI Researcher From Scratch — an owner-directed research track
 
-> Status: **building** — 6 / 7 module notes complete (counters in
-> [`planning/STATUS.md`](../../planning/STATUS.md) are the truthful record;
-> this page updates as each module lands).
+> Status: **complete** — 7 / 7 module notes, 7 code modules, 174 tests
+> (2026-10-22); the truthful record remains
+> [`planning/STATUS.md`](../../planning/STATUS.md).
 >
 > Source: the owner selected the video
 > [Become AI Researcher From Scratch - Full Course - LLM, Math, Pytorch, Neural Networks, Transformers](https://www.youtube.com/watch?v=44l-xL7OKLo)
@@ -65,7 +65,7 @@ with tests in [`tests/`](../../tests/) (`test_fs_*.py`).
 | 4 | [`04-neural-network-and-backprop.md`](04-neural-network-and-backprop.md) — layers, chain rule, learning | Neural Network Layers; How Networks Learn | `network.py` |
 | 5 | [`05-attention-and-transformers.md`](05-attention-and-transformers.md) — self-attention, causal masking, positional encoding, a small GPT | Attention Mechanism → Building the GPT | `attention.py`, `transformer.py` |
 | 6 | [`06-advanced-architectures.md`](06-advanced-architectures.md) — DeepSeek latent attention, GLM-4 MoE | (companion-repo modules 10–11) | `moe.py` |
-| 7 | `07-research-methodology.md` — the three experiments as research training | (companion-repo methodology layer) | — (protocol module) |
+| 7 | [`07-research-methodology.md`](07-research-methodology.md) — the three experiments as research training | (companion-repo methodology layer) | — (protocol module) |
 
 (Module rows become links as each note lands — the absence of a link is
 the honest signal that the note is not written yet.)
