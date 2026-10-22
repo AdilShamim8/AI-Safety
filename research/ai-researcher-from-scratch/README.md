@@ -1,6 +1,6 @@
 # AI Researcher From Scratch — an owner-directed research track
 
-> Status: **building** — 5 / 7 module notes complete (counters in
+> Status: **building** — 6 / 7 module notes complete (counters in
 > [`planning/STATUS.md`](../../planning/STATUS.md) are the truthful record;
 > this page updates as each module lands).
 >
@@ -64,7 +64,7 @@ with tests in [`tests/`](../../tests/) (`test_fs_*.py`).
 | 3 | [`03-neuron-and-activations.md`](03-neuron-and-activations.md) — one neuron, six activations | Single Neuron Explained; Activation Functions | `neuron.py`, `activations.py` |
 | 4 | [`04-neural-network-and-backprop.md`](04-neural-network-and-backprop.md) — layers, chain rule, learning | Neural Network Layers; How Networks Learn | `network.py` |
 | 5 | [`05-attention-and-transformers.md`](05-attention-and-transformers.md) — self-attention, causal masking, positional encoding, a small GPT | Attention Mechanism → Building the GPT | `attention.py`, `transformer.py` |
-| 6 | `06-advanced-architectures.md` — DeepSeek latent attention, GLM-4 MoE | (companion-repo modules 10–11) | `moe.py` |
+| 6 | [`06-advanced-architectures.md`](06-advanced-architectures.md) — DeepSeek latent attention, GLM-4 MoE | (companion-repo modules 10–11) | `moe.py` |
 | 7 | `07-research-methodology.md` — the three experiments as research training | (companion-repo methodology layer) | — (protocol module) |
 
 (Module rows become links as each note lands — the absence of a link is

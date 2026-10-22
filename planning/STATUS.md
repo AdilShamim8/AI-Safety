@@ -57,7 +57,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
-- From-scratch researcher track: 5 / 7 modules complete (FS-01..FS-05: notes + tensors/neuron/activations/network/attention/transformer code; 159 from-scratch tests; TinyGPT trains and regenerates hello)
+- From-scratch researcher track: 6 / 7 modules complete (FS-01..FS-06: notes + all seven code modules incl. moe.py; 174 from-scratch tests)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)
 
@@ -69,15 +69,15 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: from-scratch track — module 06: note
-(06-advanced-architectures.md) + src/ai_safety_course/from_scratch/moe.py
-+ tests: DeepSeek latent (low-rank) attention as a code variation on
-module 05's MultiHeadAttention (Wq/Wk down-projections through a small
-rank-r latent, Wv unchanged — the KV-cache/parameter trade computed on
-our own shapes), and the sparse top-k Mixture-of-Experts FFN (gate,
-top-k routing with the load-balance framing, expert FFNs) replacing the
-dense SwiGLU in a block; GLM-4 MoE exposition from the companion repo's
-module 11; the Blueberry paper's numbers (CLM-0073) priced honestly at
-abstract strength. Then module 07 (research methodology, protocol-only
-note), then the closing commit (GLOSSARY, THIRD_PARTY_NOTICES,
-CHANGELOG).
+Next exact action: from-scratch track — module 07 (final module,
+protocol-only note, no code): 07-research-methodology.md distilling the
+companion repo's research-methodology layer (three experiments: the
+5-variant ablation at 512 hidden dims with HellaSwag; the learning-rate
+search; the expert-configuration search) and its research-skills list
+(hypothesis formation, controlled experiments, ablations, baseline
+comparisons, reproducibility, documentation) into preregistered
+protocol templates mapped onto this course's own standards (chapter 02
+evaluation science; P02's preregistration discipline; the claims
+register's evidence pricing). Then the track's closing commit:
+GLOSSARY terms for the track, THIRD_PARTY_NOTICES entries for the video
+and companion repo, CHANGELOG entry, README status flip to complete.
