@@ -1,0 +1,18 @@
+# P03 calibration experiment: three instruments x three calibrators (preregistered)
+# Invoked: PYTHONPATH=src uv run python -m ai_safety_course.calibration.runner <this file>
+run_id: "calibration-three-instruments-v1"
+project: "P03"
+status_note: >-
+  implemented (synthetic fixture with scripted instruments — the
+  measurement discipline is the deliverable; the ml compute tier with a
+  licensed dataset and local model is marked honestly in the project README)
+cases_path: "projects/p03-calibration-truthfulness-and-abstention/cases/calibration-cases-v1.yaml"
+instruments: ["well-calibrated-v1", "overconfident-v1", "inverted-v1"]
+calibrators:
+  - "identity"                 # the baseline every map must beat on the eval split
+  - "platt"                    # 2-parameter logistic, Newton, validation-only fit
+  - {kind: "histogram", num_bins: 5}   # equal-width bin accuracies
+num_bins: 10
+thresholds: [0.5, 0.7, 0.9]
+run_date: "2026-10-22"
+output_dir: "runs/p03-calibration-three-instruments-v1"

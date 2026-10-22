@@ -1,0 +1,432 @@
+schema: p03-calibration-cases/v1
+version: 1.0.0
+name: calibration-cases-v1
+description: 'Synthetic calibration fixture: 60 items, three scripted instruments
+  (well-calibrated, overconfident, inverted). Authored 2026-10-22 with seed 20261022;
+  no dataset content redistributed; outcomes and scores are course artifacts.'
+provenance:
+  authorship: authored for this course (synthetic)
+  license: CC BY 4.0 (original course content)
+  design: "deterministic seeded generation; base rates per category band; three instrument\
+    \ archetypes from Chapter 06 \xA73-4"
+cases:
+- id: CC-001
+  category: science
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.306
+    overconfident-v1: 0.583
+    inverted-v1: 0.694
+- id: CC-002
+  category: history
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.0
+    overconfident-v1: 0.4
+    inverted-v1: 1.0
+- id: CC-003
+  category: technology
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.061
+    overconfident-v1: 0.437
+    inverted-v1: 0.939
+- id: CC-004
+  category: medicine
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.978
+    overconfident-v1: 0.987
+    inverted-v1: 0.022
+- id: CC-005
+  category: law
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.539
+    overconfident-v1: 0.724
+    inverted-v1: 0.461
+- id: CC-006
+  category: geography
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.891
+    overconfident-v1: 0.935
+    inverted-v1: 0.109
+- id: CC-007
+  category: science
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.0
+    overconfident-v1: 0.4
+    inverted-v1: 1.0
+- id: CC-008
+  category: history
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.505
+    overconfident-v1: 0.703
+    inverted-v1: 0.495
+- id: CC-009
+  category: technology
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.813
+    overconfident-v1: 0.888
+    inverted-v1: 0.187
+- id: CC-010
+  category: medicine
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.48
+    overconfident-v1: 0.688
+    inverted-v1: 0.52
+- id: CC-011
+  category: law
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.643
+    overconfident-v1: 0.786
+    inverted-v1: 0.357
+- id: CC-012
+  category: geography
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.984
+    overconfident-v1: 0.99
+    inverted-v1: 0.016
+- id: CC-013
+  category: science
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.72
+    overconfident-v1: 0.832
+    inverted-v1: 0.28
+- id: CC-014
+  category: history
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.294
+    overconfident-v1: 0.576
+    inverted-v1: 0.706
+- id: CC-015
+  category: technology
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.76
+    overconfident-v1: 0.856
+    inverted-v1: 0.24
+- id: CC-016
+  category: medicine
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.524
+    overconfident-v1: 0.715
+    inverted-v1: 0.476
+- id: CC-017
+  category: law
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.191
+    overconfident-v1: 0.515
+    inverted-v1: 0.809
+- id: CC-018
+  category: geography
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.72
+    overconfident-v1: 0.832
+    inverted-v1: 0.28
+- id: CC-019
+  category: science
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.0
+    overconfident-v1: 0.4
+    inverted-v1: 1.0
+- id: CC-020
+  category: history
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.547
+    overconfident-v1: 0.728
+    inverted-v1: 0.453
+- id: CC-021
+  category: technology
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.441
+    overconfident-v1: 0.664
+    inverted-v1: 0.559
+- id: CC-022
+  category: medicine
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.467
+    overconfident-v1: 0.68
+    inverted-v1: 0.533
+- id: CC-023
+  category: law
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.404
+    overconfident-v1: 0.642
+    inverted-v1: 0.596
+- id: CC-024
+  category: geography
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.554
+    overconfident-v1: 0.732
+    inverted-v1: 0.446
+- id: CC-025
+  category: science
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.236
+    overconfident-v1: 0.541
+    inverted-v1: 0.764
+- id: CC-026
+  category: history
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.773
+    overconfident-v1: 0.864
+    inverted-v1: 0.227
+- id: CC-027
+  category: technology
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.156
+    overconfident-v1: 0.494
+    inverted-v1: 0.844
+- id: CC-028
+  category: medicine
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.315
+    overconfident-v1: 0.589
+    inverted-v1: 0.685
+- id: CC-029
+  category: law
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.0
+    overconfident-v1: 0.4
+    inverted-v1: 1.0
+- id: CC-030
+  category: geography
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.567
+    overconfident-v1: 0.74
+    inverted-v1: 0.433
+- id: CC-031
+  category: science
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.896
+    overconfident-v1: 0.938
+    inverted-v1: 0.104
+- id: CC-032
+  category: history
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.762
+    overconfident-v1: 0.857
+    inverted-v1: 0.238
+- id: CC-033
+  category: technology
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.366
+    overconfident-v1: 0.619
+    inverted-v1: 0.634
+- id: CC-034
+  category: medicine
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.5
+    overconfident-v1: 0.7
+    inverted-v1: 0.5
+- id: CC-035
+  category: law
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.991
+    overconfident-v1: 0.995
+    inverted-v1: 0.009
+- id: CC-036
+  category: geography
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 1.0
+    overconfident-v1: 1.0
+    inverted-v1: 0.0
+- id: CC-037
+  category: science
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.0
+    overconfident-v1: 0.4
+    inverted-v1: 1.0
+- id: CC-038
+  category: history
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.753
+    overconfident-v1: 0.852
+    inverted-v1: 0.247
+- id: CC-039
+  category: technology
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.76
+    overconfident-v1: 0.856
+    inverted-v1: 0.24
+- id: CC-040
+  category: medicine
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.722
+    overconfident-v1: 0.833
+    inverted-v1: 0.278
+- id: CC-041
+  category: law
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.541
+    overconfident-v1: 0.724
+    inverted-v1: 0.459
+- id: CC-042
+  category: geography
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.348
+    overconfident-v1: 0.609
+    inverted-v1: 0.652
+- id: CC-043
+  category: science
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.524
+    overconfident-v1: 0.714
+    inverted-v1: 0.476
+- id: CC-044
+  category: history
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.408
+    overconfident-v1: 0.645
+    inverted-v1: 0.592
+- id: CC-045
+  category: technology
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.096
+    overconfident-v1: 0.458
+    inverted-v1: 0.904
+- id: CC-046
+  category: medicine
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.08
+    overconfident-v1: 0.448
+    inverted-v1: 0.92
+- id: CC-047
+  category: law
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.678
+    overconfident-v1: 0.807
+    inverted-v1: 0.322
+- id: CC-048
+  category: geography
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.472
+    overconfident-v1: 0.683
+    inverted-v1: 0.528
+- id: CC-049
+  category: science
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.914
+    overconfident-v1: 0.949
+    inverted-v1: 0.086
+- id: CC-050
+  category: history
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.025
+    overconfident-v1: 0.415
+    inverted-v1: 0.975
+- id: CC-051
+  category: technology
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.726
+    overconfident-v1: 0.836
+    inverted-v1: 0.274
+- id: CC-052
+  category: medicine
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 0.507
+    overconfident-v1: 0.704
+    inverted-v1: 0.493
+- id: CC-053
+  category: law
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.0
+    overconfident-v1: 0.4
+    inverted-v1: 1.0
+- id: CC-054
+  category: geography
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.568
+    overconfident-v1: 0.741
+    inverted-v1: 0.432
+- id: CC-055
+  category: science
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.385
+    overconfident-v1: 0.631
+    inverted-v1: 0.615
+- id: CC-056
+  category: history
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 1.0
+    overconfident-v1: 1.0
+    inverted-v1: 0.0
+- id: CC-057
+  category: technology
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.258
+    overconfident-v1: 0.555
+    inverted-v1: 0.742
+- id: CC-058
+  category: medicine
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.0
+    overconfident-v1: 0.4
+    inverted-v1: 1.0
+- id: CC-059
+  category: law
+  expected_outcome: 0
+  instrument_scores:
+    well-calibrated-v1: 0.564
+    overconfident-v1: 0.738
+    inverted-v1: 0.436
+- id: CC-060
+  category: geography
+  expected_outcome: 1
+  instrument_scores:
+    well-calibrated-v1: 1.0
+    overconfident-v1: 1.0
+    inverted-v1: 0.0
