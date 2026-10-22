@@ -1419,3 +1419,39 @@ sources:
     limitations: >-
       Page inspected 2026-10-22; the page lists document versions dated between April 2024 and July 2025 without a single stated release date for the 2025 list; entry descriptions quoted at summary level only.
     license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-VIDEO-001
+    title: "Become AI Researcher From Scratch - Full Course - LLM, Math, Pytorch, Neural Networks, Transformers"
+    authors_or_organization: "Vuk Rosić (YouTube channel)"
+    url: "https://www.youtube.com/watch?v=44l-xL7OKLo"
+    source_type: video
+    publication_date: 2025-11-18
+    version: "video as published (fetched 2026-10-22)"
+    accessed_on: 2026-10-22
+    access_level: page-inspected
+    evidence_class: pedagogical
+    peer_review_status: "not peer reviewed (public course video)"
+    supports:
+      - "research/ai-researcher-from-scratch/ (the owner-directed from-scratch researcher track: the video's chapter list — Course Introduction; AI Math Roadmap; PyTorch Module Overview; Neural Networks Overview; Transformers Overview; Math for AI; PyTorch Introduction; Tensor Operations; Creating Tensors; Matrix Multiplication; Transposing and Permuting; Indexing and Slicing; Concatenating Tensors; Special Tensors; Single Neuron Explained; Activation Functions; Neural Network Layers; How Networks Learn; Attention Mechanism; Self-Attention Code; GPT Architecture Overview; Positional Embeddings; Causal Self-Attention; Building the GPT — is the unit's spine)"
+    limitations: >-
+      YouTube page inspected 2026-10-22 (title, channel, upload date, view/like counts, CC-BY license, and the full chapter list were retrieved); the spoken transcript could not be fetched — the video's spoken content is NOT quoted verbatim anywhere in this repository, and the unit's module notes are distillations anchored to the chapter list plus the companion repository's written materials (SRC-REPO-001), never presented as verbatim transcript.
+    license: "Creative Commons Attribution (reuse allowed), as displayed on the YouTube page fetched 2026-10-22; this repository attributes the video and does not redistribute its spoken content"
+
+  - id: SRC-REPO-001
+    title: "zero-to-ai-researcher (course repository: Zero to AI Researcher — A Complete Learning Journey)"
+    authors_or_organization: "Vuk Rosić (github.com/vukrosic)"
+    url: "https://github.com/vukrosic/zero-to-ai-researcher"
+    source_type: repository
+    publication_date: null
+    version: "main branch as cloned 2026-10-22 (commit at clone time)"
+    accessed_on: 2026-10-22
+    access_level: full-text-read
+    evidence_class: pedagogical
+    peer_review_status: "not peer reviewed (public course repository)"
+    supports:
+      - "research/ai-researcher-from-scratch/ (the written companion of SRC-VIDEO-001: 12-module curriculum — 00 start here; 01 Python beginner lessons (9); 02 math-not-scary (functions, derivatives, gradients, vectors, matrices); 03 PyTorch fundamentals (9 incl. tokenization and embeddings); 04 neuron from scratch (7); 05 activation functions (ReLU, sigmoid, tanh, SiLU, SwiGLU, softmax); 06 neural network from scratch (7 incl. chain rule and backpropagation); 07 attention mechanism (6); 08 transformer feedforward (8 incl. Mixture-of-Experts and the DeepSeek MLP); 09 building a transformer (6 incl. RoPE); 10 DeepSeek latent attention (3); 11 GLM-4 MoE (3))"
+      - "research/ai-researcher-from-scratch/07-research-methodology.md (the repository's research-methodology layer: three structured experiments — a simplified ablation study across 5 architecture variants at 512 hidden dimensions with HellaSwag evaluation; a learning-rate search for DeepSeek-attention+MLP; an expert-configuration search for DeepSeek attention + GLM-4 MoE — and the research-skills list: hypothesis formation, controlled experiments, ablation studies, baseline comparisons, reproducibility, documentation)"
+      - "research/ai-researcher-from-scratch/06-advanced-architectures.md (the ai_research_paper.md head read at source: Blueberry LLM 'train an LLM for 1 dollar' positioning on consumer GPUs, MoE with top-2 routing, and the paper's abstract-level findings — an 8.7x performance gap between best and worst of 5 ablation configurations; 3e-3 reported optimal learning rate with 0.015 validation loss; 4 experts with top-2 routing reported best at 0.061 validation loss)"
+    limitations: >-
+      Repository cloned and its markdown course tree read in full 2026-10-22; the ai_research_paper.md was read at head level (title, authors, abstract, introduction, objectives, related-work stub) — its experiment sections and figures were not read, so its quantitative findings are carried here at abstract strength only; the training code (train_moe.py, deepseek_modeling.py) was inventoried but not executed, and no result from this repository is reproduced or endorsed as verified by this course.
+    license: "MIT License, Copyright (c) 2025 Vuk Rosić (LICENSE file read at clone time); this repository's from-scratch track is an original synthesis that attributes and links the source, and copies no MIT-licensed text beyond short attributed quotations of module titles and curriculum structure"

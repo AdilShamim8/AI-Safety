@@ -47,7 +47,7 @@ as the work it describes. On session start, read this file, then
 
 ## Current phase
 
-Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 3/10 projects); next is chapter 14 (agent, tool, memory, MCP security), then P07 (injection defense).
+Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 3/10 projects); owner-directed from-scratch researcher track opened 2026-10-22 (research/ai-researcher-from-scratch/, 7 modules, builds before chapter 14 resumes).
 
 ## Curriculum completion counters (truthful)
 
@@ -57,6 +57,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
+- From-scratch researcher track: 0 / 7 modules (owner-directed 2026-10-22; notes + stdlib-only code per module)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)
 
@@ -68,4 +69,10 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: P02 (reward misspecification project, pairs with chapter 03) — the first compute-tier project after P01: spec, then implementation against the P01 evaluation harness, then tests and example runs; then chapter 12 (the governance/policy arc opens).
+Next exact action: from-scratch track, unit 1 of 7 — module notes
+`research/ai-researcher-from-scratch/01-math-foundations.md` (functions,
+derivatives, gradients, vectors, matrices; distills the video's "Math for AI"
+chapters against SRC-VIDEO-001 + the companion repo's math-not-scary module,
+SRC-REPO-001), then the matching stdlib code
+`src/ai_safety_course/from_scratch/tensors.py` + tests. After the track's 7
+modules: chapter 14 (agent, tool, memory, MCP security) resumes Phase F.

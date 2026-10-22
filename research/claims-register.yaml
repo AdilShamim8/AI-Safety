@@ -835,3 +835,36 @@ claims:
     counterevidence: >-
       optimized adaptive attackers and non-retrieval channels are outside the claim's measured scope (the chapter's section 4 and exercise 13.2 discipline)
     date: 2026-10-22
+
+  - id: CLM-0071
+    claim: >-
+      The owner-selected video "Become AI Researcher From Scratch - Full Course" (Vuk Rosić, published 2025-11-18, approximately 3 hours from the first chapter to a final chapter starting at 2:56:59, 113,364 views and 6.9K likes at fetch time) is published under a Creative Commons Attribution license (reuse allowed) and teaches the from-scratch researcher path — AI math, PyTorch tensor operations, neural networks, and transformer/GPT construction — in 24 listed chapters from Course Introduction through Building the GPT.
+    source: SRC-VIDEO-001
+    section_or_page: "YouTube watch page for 44l-xL7OKLo (fetched 2026-10-22)"
+    evidence_strength: "page-inspected; title, channel, counts, license, upload date, and chapter list read from the page; the spoken transcript was not retrieved"
+    assumptions: "the page metadata (chapter titles, license badge, counts) reflects the video as published"
+    counterevidence: >-
+      none available at page level; view and like counts change over time and are dated to the fetch
+    date: 2026-10-22
+
+  - id: CLM-0072
+    claim: >-
+      The video's companion repository structures the same journey as 12 modules (start here; Python fundamentals; math; PyTorch fundamentals; neuron from scratch; activation functions; neural network from scratch; attention mechanism; transformer feedforward with Mixture-of-Experts; building a transformer with RoPE; DeepSeek latent attention; GLM-4 MoE) and tops it with a research-methodology layer of three experiments — a 5-variant ablation study at 512 hidden dimensions evaluated on HellaSwag, a learning-rate search, and an expert-configuration search — teaching hypothesis formation, controlled experiments, ablations, and baseline comparisons as skills.
+    source: SRC-REPO-001
+    section_or_page: "README.md and _course/ tree of vukrosic/zero-to-ai-researcher (cloned and read 2026-10-22)"
+    evidence_strength: "full-text-read of the course markdown tree and README; experiment code inventoried, not executed"
+    assumptions: "the README's curriculum and methodology description matches the committed course files (checked by reading the tree)"
+    counterevidence: >-
+      the repository's own README marks the YouTube course as 'coming soon' relative to the repo state, so video and repository may lag each other in coverage — the course tracks the union and cites each element to its own source
+    date: 2026-10-22
+
+  - id: CLM-0073
+    claim: >-
+      The companion repository's research paper (Blueberry LLM) reports, at abstract level: an 8.7x validation-performance gap between the best and worst of five ablation configurations; 3e-3 as the identified optimal learning rate for DeepSeek-attention+MLP (0.015 validation loss, 99.7% accuracy as stated); and 4 experts with top-2 routing as the best DeepSeek-attention+GLM-4-MoE configuration (0.061 validation loss, 98.7% accuracy as stated) on consumer-GPU training positioned at under one dollar.
+    source: SRC-REPO-001
+    section_or_page: "ai_research_paper.md, title/abstract/introduction (read at head level, cloned 2026-10-22)"
+    evidence_strength: "abstract-level statements from the paper head; experiment sections, figures, and training logs not read; nothing reproduced or re-verified by this course"
+    assumptions: "the paper's abstract faithfully reports its experiments; the numbers are the authors' self-reported results on their own setup"
+    counterevidence: >-
+      self-reported single-setup results with no independent replication located; 'under one dollar' positioning is a hardware-cost framing, not an audited cost — the course carries these numbers as the source's claims, priced accordingly in 06-advanced-architectures.md
+    date: 2026-10-22

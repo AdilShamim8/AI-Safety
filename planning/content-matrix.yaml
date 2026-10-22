@@ -12,7 +12,7 @@
 
 schema_version: 1
 baseline_date: 2026-10-20
-last_updated: 2026-10-21
+last_updated: 2026-10-22
 
 chapters:
   - id: "01"
@@ -447,7 +447,8 @@ projects:
 
 notes:
   paper_notes_required: 20
-  paper_notes_complete: 0
+  paper_notes_complete: 20
+  correction_2026_10_22: "counter was stale at 0 while research/notes/01-20 + README index were committed; corrected to match disk (20/20)"
   comparison_notes_planned:
     - "RLHF vs DPO vs RLAIF"
     - "behavioral vs mechanistic evidence"
@@ -464,3 +465,24 @@ notes:
     pending-verification queue (~10 further datasets, metadata-only) is
     recorded in datasets/README.md and must not be cited as fact until
     inspected.
+
+from_scratch:
+  title: "AI Researcher From Scratch (owner-directed track)"
+  path: "research/ai-researcher-from-scratch/"
+  sources: ["SRC-VIDEO-001", "SRC-REPO-001"]
+  provenance_note: >-
+    Owner-directed addition (2026-10-22): the track distills the video
+    "Become AI Researcher From Scratch - Full Course" (Vuk Rosic, 2025,
+    CC-BY, page-inspected) and its MIT-licensed companion repository
+    zero-to-ai-researcher (cloned and read 2026-10-22) into module notes
+    plus a stdlib-only from-scratch code package
+    (src/ai_safety_course/from_scratch/) with tests. No spoken-transcript
+    content is quoted; the video could not be transcribed at fetch time.
+  modules:
+    - {id: FS-01, title: "Math foundations", note: "01-math-foundations.md", code: "from_scratch/tensors.py", maturity: planned}
+    - {id: FS-02, title: "Python and PyTorch fundamentals", note: "02-python-and-pytorch-fundamentals.md", code: "from_scratch/tensors.py", maturity: planned}
+    - {id: FS-03, title: "Neuron and activation functions", note: "03-neuron-and-activations.md", code: "from_scratch/neuron.py + activations.py", maturity: planned}
+    - {id: FS-04, title: "Neural network and backpropagation", note: "04-neural-network-and-backprop.md", code: "from_scratch/network.py", maturity: planned}
+    - {id: FS-05, title: "Attention and transformers (GPT build)", note: "05-attention-and-transformers.md", code: "from_scratch/attention.py + transformer.py", maturity: planned}
+    - {id: FS-06, title: "Advanced architectures (DeepSeek latent attention, GLM-4 MoE)", note: "06-advanced-architectures.md", code: "from_scratch/moe.py", maturity: planned}
+    - {id: FS-07, title: "Research methodology (ablation, LR search, expert search)", note: "07-research-methodology.md", code: null, maturity: planned}
