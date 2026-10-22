@@ -57,13 +57,16 @@ as the work it describes. On session start, read this file, then
 
 | **Comparison note C03 complete** — alignment vs control: the two paradigm families compared on load-bearing assumptions, evidence accepted, sharpest self-critiques (Sleeper Agents + Alignment Faking vs adaptive monitor subversion + usefulness price), verification ceilings, and scaling-with-capability; the Ch.05 scalable-oversight bridge; three practitioner decisions the comparison settles (marginal dollar, safety-case claim grammar, falsifiers per program); non-claims section. 11 register sources re-anchored (1 full-text-read, 10 abstract-read), no new sources needed | this commit | validator green | |
 
+
+| **Chapter 16 complete** — ten-element structure: four-station failure pathway (memorization; membership leakage; unaudited artifact chains; licenses as load-bearing constraints); memorization operationally defined with the three log-linear laws (capacity, duplication, context) [SRC-PAPER-063] and the founding single-document extraction finding [SRC-PAPER-062]; extraction vs membership-inference channels; DP's contract at concept level with the budget-statement requirement [SRC-PAPER-064]; extractable memorization [SRC-PAPER-065]; the artifact-chain audit table (six links, each with its question and control) incl. license lineage; the repository's own licensing/notices practice as the worked instance. Worked example: the Aurora Health Scribe provenance audit — license lineage with the visible fuse; canary audit 12/50 [14.3, 37.4]% at duplication-1 and the paired dedup comparison 9/10 -> 1/10 (8 discordant improvements, exact sign p = 0.0039; a first-draft unpaired p was caught and corrected in-commit); MI 19/200 [6.2, 14.4]%; DP re-train 0/60 -> [0, 6.0]% with the utility ledger; artifact integrity with the checkable one-sentence provenance statement. Approach comparison (6 rows); where-the-methods-fail; 2 exercises + full solutions with rubrics (incl. the n~140-150 canary sizing and the subset-conditional MI argument); GLOSSARY +6; registers +4 sources (SRC-PAPER-062..065, one honestly at snippet-level abstract-read) and +4 claims (CLM-0085..0088) | this commit | validator + 530-test suite green | |
+
 ## Current phase
 
-Phase F (applications arc) complete: P02, P03, P07, ch12-ch15 done (15/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is comparison note C03, then chapter 16 (privacy, provenance, supply chains).
+Phase F (applications arc) complete: P02, P03, P07, ch12-ch16 done (16/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 17 (distribution shift and deployment reliability), then comparison note C04.
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 15 / 24
+- Chapters complete: 16 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 4 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
@@ -81,7 +84,7 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: chapter 16 (privacy, provenance, supply chains)
-— memorization, privacy accounting concepts, model artifacts,
-licenses, dependency integrity; then comparison note C04 (prompt
-defenses vs authorization boundaries).
+Next exact action: chapter 17 (distribution shift and deployment
+reliability) — OOD, worst-group, drift, uncertainty under shift;
+covariate vs label vs concept change; then comparison note C04
+(prompt defenses vs authorization boundaries).

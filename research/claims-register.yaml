@@ -989,3 +989,47 @@ claims:
     counterevidence: >-
       an earlier public summary page describes 200 safe prompts; the v3 abstract (250 safe) is the version carried, and the discrepancy is recorded here rather than silently resolved
     date: 2026-10-22
+
+  - id: CLM-0085
+    claim: >-
+      Carlini et al. (arXiv:2012.07805, USENIX Security 2021) demonstrated training-data extraction against GPT-2 with query access only: hundreds of verbatim training sequences recovered, including names, phone numbers, email addresses, IRC conversations, code, and 128-bit UUIDs, each appearing in just one document of the training data; larger models were more vulnerable to extraction than smaller ones.
+    source: SRC-PAPER-062
+    section_or_page: "arXiv abstract page for 2012.07805 v2 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; all figures are the authors' abstract-level statements"
+    assumptions: "the extraction counts are as described for the GPT-2 family at the evaluated scales"
+    counterevidence: >-
+      none at abstract level; the 2020-era finding is dated to its target model family, and the chapter prices it as the founding measurement, not a constant of current systems
+    date: 2026-10-22
+
+  - id: CLM-0086
+    claim: >-
+      Carlini et al. (arXiv:2202.07646) describe three log-linear relationships quantifying memorization in language models — growth with model capacity, with the number of times an example is duplicated, and with the number of tokens of context used to prompt — with imperfect generalization across model families, and conclude that memorization is more prevalent than previously believed and will likely worsen with scale absent active mitigations.
+    source: SRC-PAPER-063
+    section_or_page: "arXiv abstract page for 2202.07646 v3 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the three laws and the conclusion are abstract-level statements"
+    assumptions: "the log-linear forms are as stated over the evaluated families"
+    counterevidence: >-
+      the paper's own stated complication — the relationships generalize imperfectly across model families — is carried as the claim's qualifier, and the chapter's dedup audit prices the duplication law rather than asserting it
+    date: 2026-10-22
+
+  - id: CLM-0087
+    claim: >-
+      Abadi et al. (arXiv:1607.00133, ACM CCS 2016) developed DP-SGD — algorithmic techniques for learning and a refined analysis of privacy costs within the differential-privacy framework — demonstrating that deep neural networks with non-convex objectives can be trained under a modest privacy budget at a manageable cost in software complexity, training efficiency, and model quality.
+    source: SRC-PAPER-064
+    section_or_page: "arXiv abstract page for 1607.00133 v2 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the cost framing is the authors' abstract-level statement"
+    assumptions: "the privacy-budget magnitudes and cost magnitudes live in the unread body and are not quoted as numbers"
+    counterevidence: >-
+      none at abstract level; the chapter's position is that 'DP-trained' without a stated budget (epsilon, delta, accounting method) is not a claim — a framing consequence, not a contradiction
+    date: 2026-10-22
+
+  - id: CLM-0088
+    claim: >-
+      Nasr et al. (arXiv:2311.17035) study extractable memorization — training data that an adversary can efficiently extract by querying a machine-learning model — and demonstrate extraction against production language-model systems.
+    source: SRC-PAPER-065
+    section_or_page: "arXiv listing surfaced by search (fetched 2026-10-22); abstract page not read in full"
+    evidence_strength: "snippet-level abstract-read: title, lead author, and the extractable-memorization definition visible; production-system details, attack volumes, and the full author list not read"
+    assumptions: "the surfaced definition reflects the paper"
+    counterevidence: >-
+      none available at this access level; the entry is carried at the register's lower-confidence end and the chapter cites it only for the extractable-memorization concept, not for any number
+    date: 2026-10-22

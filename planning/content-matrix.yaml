@@ -231,18 +231,20 @@ chapters:
     verified_on: 2026-10-22
   - id: "16"
     title: "Privacy, provenance, and data/model supply chains"
-    path: "chapters/16-privacy-provenance-and-data-model-supply-chains/"
+    path: "chapters/16-privacy-provenance-and-supply-chains/"
     phase: F
-    maturity: planned
+    maturity: complete
     outcomes:
-      - "Apply data minimization and memorization reasoning; conceptual privacy accounting"
-      - "Audit model artifacts, licenses, provenance, dependency integrity"
-      - "Produce a dataset/model provenance audit"
-    prerequisites: ["02"]
+      - "State memorization operationally and reproduce the three log-linear laws with founding evidence"
+      - "Distinguish content extraction from membership inference and what each discloses"
+      - "Explain DP's contract at concept level and require budget statements for DP-trained claims"
+      - "Audit an artifact chain link by link with integrity controls and a license lineage table"
+      - "Run the canary/dedup audit pattern with intervals, paired comparisons, and release rules"
+    prerequisites: ["02", "12"]
     project_ids: []
     assessments: ["provenance-audit artifact"]
-    source_ids: []
-    verified_on: null
+    source_ids: ["SRC-PAPER-062", "SRC-PAPER-063", "SRC-PAPER-064", "SRC-PAPER-065"]
+    verified_on: 2026-10-22
   - id: "17"
     title: "Distribution shift and deployment reliability"
     path: "chapters/17-distribution-shift-and-deployment-reliability/"
