@@ -55,7 +55,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 3 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
-- Comparison notes: 0 / 5 planned
+- Comparison notes: 1 / 5 planned (C01 RLHF vs DPO vs RLAIF complete 2026-10-22; next candidates: behavioral vs mechanistic evidence, alignment vs control)
 - Incident analyses: 0 (verified set, grows with the build)
 - From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;

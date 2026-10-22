@@ -37,3 +37,12 @@ assumptions, limitations (authors' and the note-author's), nearest
 alternatives, replication feasibility at course scale, a falsifiable
 extension with stopping rule, and interpretation kept separate from
 the sources' claims.
+
+## Comparison notes
+
+Five planned (see `planning/content-matrix.yaml`); each compares at
+the register's access level, exactly like paper notes.
+
+| # | Note | Sources | Level |
+|---|---|---|---|
+| C01 | [RLHF vs DPO vs RLAIF](comparison-01-rlhf-vs-dpo-vs-rlaif.md) | SRC-PAPER-009/010/011/012 | abstract-read (all four) |
