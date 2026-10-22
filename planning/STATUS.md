@@ -57,7 +57,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
-- From-scratch researcher track: 0 / 7 modules (owner-directed 2026-10-22; notes + stdlib-only code per module)
+- From-scratch researcher track: 0.5 / 7 modules (note 01 committed; its code module tensors.py pending — a module counts complete only with note + code + tests)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)
 
@@ -69,10 +69,11 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: from-scratch track, unit 1 of 7 — module notes
-`research/ai-researcher-from-scratch/01-math-foundations.md` (functions,
-derivatives, gradients, vectors, matrices; distills the video's "Math for AI"
-chapters against SRC-VIDEO-001 + the companion repo's math-not-scary module,
-SRC-REPO-001), then the matching stdlib code
-`src/ai_safety_course/from_scratch/tensors.py` + tests. After the track's 7
-modules: chapter 14 (agent, tool, memory, MCP security) resumes Phase F.
+Next exact action: from-scratch track — note 02
+(02-python-and-pytorch-fundamentals.md, the video's PyTorch chapters 7-14
+distilled against the companion repo's PyTorch module) committed together
+with the shared code module `src/ai_safety_course/from_scratch/tensors.py`
++ `tests/test_fs_tensors.py` (tensor container, creation, shapes,
+transpose/permute, matmul, indexing/slicing, concatenation, special
+tensors — stdlib only). After the track's 7 modules: chapter 14 (agent,
+tool, memory, MCP security) resumes Phase F.

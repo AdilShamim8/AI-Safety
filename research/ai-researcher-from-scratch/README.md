@@ -1,7 +1,6 @@
 # AI Researcher From Scratch — an owner-directed research track
 
-> Status: **building** — front door committed 2026-10-22; 0 / 7 module
-> notes complete (counters in
+> Status: **building** — 1 / 7 module notes complete (counters in
 > [`planning/STATUS.md`](../../planning/STATUS.md) are the truthful record;
 > this page updates as each module lands).
 >
@@ -60,7 +59,7 @@ with tests in [`tests/`](../../tests/) (`test_fs_*.py`).
 
 | # | Module (note) | Video chapters covered | Code |
 | --- | --- | --- | --- |
-| 1 | `01-math-foundations.md` — functions, derivatives, gradients, vectors, matrices | Math for AI; AI Math Roadmap | `tensors.py` |
+| 1 | [`01-math-foundations.md`](01-math-foundations.md) — functions, derivatives, gradients, vectors, matrices | Math for AI; AI Math Roadmap | `tensors.py` |
 | 2 | `02-python-and-pytorch-fundamentals.md` — the tensor toolbox by hand | PyTorch Introduction → Special Tensors; tokenization & embeddings | `tensors.py` |
 | 3 | `03-neuron-and-activations.md` — one neuron, six activations | Single Neuron Explained; Activation Functions | `neuron.py`, `activations.py` |
 | 4 | `04-neural-network-and-backprop.md` — layers, chain rule, learning | Neural Network Layers; How Networks Learn | `network.py` |

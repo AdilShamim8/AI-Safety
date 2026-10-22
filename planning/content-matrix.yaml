@@ -479,7 +479,7 @@ from_scratch:
     (src/ai_safety_course/from_scratch/) with tests. No spoken-transcript
     content is quoted; the video could not be transcribed at fetch time.
   modules:
-    - {id: FS-01, title: "Math foundations", note: "01-math-foundations.md", code: "from_scratch/tensors.py", maturity: planned}
+    - {id: FS-01, title: "Math foundations", note: "01-math-foundations.md", code: "from_scratch/tensors.py", maturity: drafting}
     - {id: FS-02, title: "Python and PyTorch fundamentals", note: "02-python-and-pytorch-fundamentals.md", code: "from_scratch/tensors.py", maturity: planned}
     - {id: FS-03, title: "Neuron and activation functions", note: "03-neuron-and-activations.md", code: "from_scratch/neuron.py + activations.py", maturity: planned}
     - {id: FS-04, title: "Neural network and backpropagation", note: "04-neural-network-and-backprop.md", code: "from_scratch/network.py", maturity: planned}
