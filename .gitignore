@@ -49,3 +49,4 @@ secrets/
 .idea/
 .DS_Store
 Thumbs.db
+projects/p07-injection-defense/runs/

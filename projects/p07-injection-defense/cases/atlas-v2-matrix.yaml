@@ -1,0 +1,105 @@
+# Atlas-v2 privilege and trust-boundary matrix — the P07 fixture deployment.
+#
+# Chapter 14's eleven-tool Atlas plus the CRM server of exercise 14.1
+# plus an explicit memory.read: fifteen tools, four untrusted entry
+# channels, two data-egress tools. Structurally: 4 entry x 2 egress
+# = 8 exfiltration pairs; three slow-store writers (files.write,
+# memory.write, crm.update). All content is synthetic and authored
+# for this course — no product names, no real credentials.
+schema_version: p07-privilege-matrix/v1
+
+tools:
+  - name: mail.list
+    credential_scope: "user mailbox: read index"
+    data_reach: "mailbox message titles"
+    untrusted_feeds: []
+    authority: read-only
+
+  - name: mail.read
+    credential_scope: "user mailbox: read bodies"
+    data_reach: "full message bodies"
+    untrusted_feeds: ["external-mail"]
+    authority: read-only
+
+  - name: mail.send
+    credential_scope: "user identity: send"
+    data_reach: "outbound mail to any address"
+    untrusted_feeds: []
+    authority: irreversible-external
+    is_egress: true
+
+  - name: calendar.read
+    credential_scope: "user calendar: read"
+    data_reach: "events"
+    untrusted_feeds: []
+    authority: read-only
+
+  - name: calendar.write
+    credential_scope: "user calendar: write"
+    data_reach: "events"
+    untrusted_feeds: []
+    authority: reversible-with-effort
+
+  - name: files.list
+    credential_scope: "workspace: read tree"
+    data_reach: "directory tree"
+    untrusted_feeds: []
+    authority: read-only
+
+  - name: files.read
+    credential_scope: "workspace: read documents"
+    data_reach: "documents"
+    untrusted_feeds: ["synced-docs"]
+    authority: read-only
+
+  - name: files.write
+    credential_scope: "workspace project dir: write"
+    data_reach: "documents"
+    untrusted_feeds: []
+    authority: irreversible-internal
+    writes_shared_store: true
+
+  - name: pay.invoice
+    credential_scope: "payments account: debit up to 2500"
+    data_reach: "invoices"
+    untrusted_feeds: []
+    authority: irreversible-external
+
+  - name: web.fetch
+    credential_scope: "egress to public web: read pages"
+    data_reach: "page text at any URL"
+    untrusted_feeds: ["public-web"]
+    authority: read-only
+
+  - name: memory.write
+    credential_scope: "agent memory store: write"
+    data_reach: "persistent agent records"
+    untrusted_feeds: []
+    authority: reversible-with-effort
+    writes_shared_store: true
+
+  - name: memory.read
+    credential_scope: "agent memory store: read"
+    data_reach: "persistent agent records"
+    untrusted_feeds: []
+    authority: read-only
+
+  - name: crm.search
+    credential_scope: "CRM tenant: read records"
+    data_reach: "customer records"
+    untrusted_feeds: ["customer-entered-records"]
+    authority: read-only
+
+  - name: crm.update
+    credential_scope: "CRM tenant: write assigned records"
+    data_reach: "customer record fields"
+    untrusted_feeds: []
+    authority: reversible-with-effort
+    writes_shared_store: true
+
+  - name: crm.export
+    credential_scope: "CRM tenant: bulk read + share"
+    data_reach: "CSV of queryable records to any destination"
+    untrusted_feeds: []
+    authority: irreversible-external
+    is_egress: true
