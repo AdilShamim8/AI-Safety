@@ -60,9 +60,12 @@ as the work it describes. On session start, read this file, then
 
 | **Chapter 16 complete** — ten-element structure: four-station failure pathway (memorization; membership leakage; unaudited artifact chains; licenses as load-bearing constraints); memorization operationally defined with the three log-linear laws (capacity, duplication, context) [SRC-PAPER-063] and the founding single-document extraction finding [SRC-PAPER-062]; extraction vs membership-inference channels; DP's contract at concept level with the budget-statement requirement [SRC-PAPER-064]; extractable memorization [SRC-PAPER-065]; the artifact-chain audit table (six links, each with its question and control) incl. license lineage; the repository's own licensing/notices practice as the worked instance. Worked example: the Aurora Health Scribe provenance audit — license lineage with the visible fuse; canary audit 12/50 [14.3, 37.4]% at duplication-1 and the paired dedup comparison 9/10 -> 1/10 (8 discordant improvements, exact sign p = 0.0039; a first-draft unpaired p was caught and corrected in-commit); MI 19/200 [6.2, 14.4]%; DP re-train 0/60 -> [0, 6.0]% with the utility ledger; artifact integrity with the checkable one-sentence provenance statement. Approach comparison (6 rows); where-the-methods-fail; 2 exercises + full solutions with rubrics (incl. the n~140-150 canary sizing and the subset-conditional MI argument); GLOSSARY +6; registers +4 sources (SRC-PAPER-062..065, one honestly at snippet-level abstract-read) and +4 claims (CLM-0085..0088) | this commit | validator + 530-test suite green | |
 
+
+| **Comparison notes C04 and C05 complete — the planned set closes** — C04 (prompt defenses vs authorization boundaries): the two families compared on where they live, trust assumptions, evidence genres, best measured effects, adaptive pressure, failure legibility, and cost profiles; the three decisions it settles (launch gates need boundary claims; defense-in-depth orders boundaries outside; red-team methodology must match the family evaluated); non-claims on superiority. C05 (static benchmarks vs adaptive evaluation): the two instruments compared on question answered, comparability, cost, rot modes, signature failures, and canonical evidence; the composition rule (static first, adaptive second, claims partitioned); the planned five-note set closes with C01–C05 spanning preference learning, evidence kinds, safety paradigms, defense families, and evaluation instruments. 19 register sources re-anchored at their stated levels across the two notes, no new sources needed | this commit | validator green | |
+
 ## Current phase
 
-Phase F (applications arc) complete: P02, P03, P07, ch12-ch16 done (16/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 17 (distribution shift and deployment reliability), then comparison note C04.
+Phase F (applications arc) complete: P02, P03, P07, ch12-ch16 done (16/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 17 (distribution shift and deployment reliability); the comparison-note set (C01–C05) is complete.
 
 ## Curriculum completion counters (truthful)
 
@@ -70,7 +73,7 @@ Phase F (applications arc) complete: P02, P03, P07, ch12-ch16 done (16/24 chapte
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 4 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
-- Comparison notes: 3 / 5 planned (C01, C02, C03 complete 2026-10-22; next candidates: prompt defenses vs authorization boundaries, evaluation-time defenses vs training-time alignment)
+- Comparison notes: 5 / 5 planned — set COMPLETE (C01–C05, 2026-10-22)
 - Incident analyses: 0 (verified set, grows with the build)
 - From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
@@ -86,5 +89,5 @@ depend on it — flagged here so it is not forgotten.)
 
 Next exact action: chapter 17 (distribution shift and deployment
 reliability) — OOD, worst-group, drift, uncertainty under shift;
-covariate vs label vs concept change; then comparison note C04
-(prompt defenses vs authorization boundaries).
+covariate vs label vs concept change — then P04 (preference
+optimization audit) and the remaining projects.

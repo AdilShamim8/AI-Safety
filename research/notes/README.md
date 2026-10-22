@@ -48,3 +48,5 @@ the register's access level, exactly like paper notes.
 | C01 | [RLHF vs DPO vs RLAIF](comparison-01-rlhf-vs-dpo-vs-rlaif.md) | SRC-PAPER-009/010/011/012 | abstract-read (all four) |
 | C02 | [Behavioral vs mechanistic evidence](comparison-02-behavioral-vs-mechanistic-evidence.md) | SRC-PAPER-019/020/025/030/032/034/037 | mixed (2 abstract-read, 1 abstract position, 4 full-text-read) |
 | C03 | [Alignment vs control](comparison-03-alignment-vs-control.md) | SRC-PAPER-006/008/010/011/013/019/020/022/023/024/054 | mixed (1 full-text-read, 10 abstract-read) |
+| C04 | [Prompt defenses vs authorization boundaries](comparison-04-prompt-defenses-vs-authorization-boundaries.md) | SRC-PAPER-004/050/052/053/054; SRC-REPORT-004/005/006/007 | mixed (5 abstract-read, 4 page-inspected) |
+| C05 | [Static benchmarks vs adaptive evaluation](comparison-05-static-benchmarks-vs-adaptive-evaluation.md) | SRC-PAPER-004/045/046/047/048/055/056/058/059/061 | abstract-read (all ten) |
