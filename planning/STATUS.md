@@ -57,7 +57,7 @@ Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 0 / 5 planned
 - Incident analyses: 0 (verified set, grows with the build)
-- From-scratch researcher track: 4 / 7 modules complete (FS-01..FS-04: notes + tensors/neuron/activations/network code; 131 from-scratch tests)
+- From-scratch researcher track: 5 / 7 modules complete (FS-01..FS-05: notes + tensors/neuron/activations/network/attention/transformer code; 159 from-scratch tests; TinyGPT trains and regenerates hello)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)
 
@@ -69,16 +69,15 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: from-scratch track — module 05 (the GPT build):
-src/ai_safety_course/from_scratch/attention.py (scaled dot-product
-attention with the 1/sqrt(d) scaling justified, causal masking, the
-multi-head reshape as permutes) then transformer.py (token+position
-embeddings, transformer block = attention + SwiGLU FFN with residual
-connections, a small autoregressive GPT with greedy/temperature
-sampling), tests incl. causality (later tokens must not affect earlier
-predictions) and a tiny training convergence run; then the note
-05-attention-and-transformers.md covering the video chapters
-'Attention Mechanism', 'Self-Attention Code', 'GPT Architecture
-Overview', 'Positional Embeddings', 'Causal Self-Attention',
-'Building the GPT' + companion repo modules 07-09 (incl. RoPE, at
-exposition level).
+Next exact action: from-scratch track — module 06: note
+(06-advanced-architectures.md) + src/ai_safety_course/from_scratch/moe.py
++ tests: DeepSeek latent (low-rank) attention as a code variation on
+module 05's MultiHeadAttention (Wq/Wk down-projections through a small
+rank-r latent, Wv unchanged — the KV-cache/parameter trade computed on
+our own shapes), and the sparse top-k Mixture-of-Experts FFN (gate,
+top-k routing with the load-balance framing, expert FFNs) replacing the
+dense SwiGLU in a block; GLM-4 MoE exposition from the companion repo's
+module 11; the Blueberry paper's numbers (CLM-0073) priced honestly at
+abstract strength. Then module 07 (research methodology, protocol-only
+note), then the closing commit (GLOSSARY, THIRD_PARTY_NOTICES,
+CHANGELOG).
