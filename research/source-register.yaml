@@ -1455,3 +1455,122 @@ sources:
     limitations: >-
       Repository cloned and its markdown course tree read in full 2026-10-22; the ai_research_paper.md was read at head level (title, authors, abstract, introduction, objectives, related-work stub) — its experiment sections and figures were not read, so its quantitative findings are carried here at abstract strength only; the training code (train_moe.py, deepseek_modeling.py) was inventoried but not executed, and no result from this repository is reproduced or endorsed as verified by this course.
     license: "MIT License, Copyright (c) 2025 Vuk Rosić (LICENSE file read at clone time); this repository's from-scratch track is an original synthesis that attributes and links the source, and copies no MIT-licensed text beyond short attributed quotations of module titles and curriculum structure"
+
+  - id: SRC-PAPER-054
+    title: "Defeating Prompt Injections by Design"
+    authors_or_organization: "Edoardo Debenedetti, Ilia Shumailov, Tianqi Fan, Jamie Hayes, Nicholas Carlini, Daniel Fabian, Christoph Kern, Chongyang Shi, Andreas Terzis, Florian Tramèr (Google DeepMind)"
+    url: "https://arxiv.org/abs/2503.18813"
+    source_type: paper
+    publication_date: 2025-03-24
+    version: "v2 (2025-06-24) per arXiv page"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint)"
+    supports:
+      - "chapters/14-agent-tool-memory-mcp-security/README.md (sections 3.3, 4.2, 4.4, 5 and readings: the CaMeL capability layer — extracting control and data flows from the trusted query so untrusted data cannot impact program flow; capabilities preventing exfiltration of private data over unauthorized flows by enforcing security policies at tool calls; 77% of AgentDojo tasks solved with provable security vs 84% for the undefended system)"
+    limitations: >-
+      Abstract verified 2026-10-22; the 77%/84% figures are abstract-level statements whose exact solved-task counts live in the unread body — chapter 14 prices them with assumed denominators (97, AgentDojo's task count per SRC-PAPER-055) and labels that assumption explicitly; the paper's per-task breakdowns, security-policy formalism, and provable-security theorem statement were not read.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-055
+    title: "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+    authors_or_organization: "Edoardo Debenedetti, Jie Zhang, Mislav Balunović, Luca Beurer-Kellner, Marc Fischer, Florian Tramèr (ETH Zurich; Invariant Labs)"
+    url: "https://arxiv.org/abs/2406.13352"
+    source_type: paper
+    publication_date: 2024-06-19
+    version: "v3 (2024-11-24) per arXiv page; NeurIPS 2024 Datasets and Benchmarks Track"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "peer reviewed at NeurIPS 2024 (Datasets and Benchmarks Track)"
+    supports:
+      - "chapters/14-agent-tool-memory-mcp-security/README.md (sections 3.2, 4.4, 5 and readings: the dynamic agent-security evaluation environment — 97 realistic tasks and 629 security test cases; findings that state-of-the-art LLMs fail many tasks even absent attacks and that existing prompt-injection attacks break some security properties but not all)"
+    limitations: >-
+      Abstract and NeurIPS poster page verified 2026-10-22; task-suite composition, per-model results tables, and the attack/defense paradigms catalogued in the environment live in the unread body; the 97/629 counts are environment facts, not deployed-system measurements.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-056
+    title: "Identifying the Risks of LM Agents with an LM-Emulated Sandbox"
+    authors_or_organization: "Yangjun Ruan, Honghua Dong, Andrew Wang, Silviu Pitis, Yongchou Zhou, Jimmy Ba, Yann Dubois, Chris J. Maddison, Tatsunori Hashimoto (University of Toronto; Vector Institute; Stanford University)"
+    url: "https://arxiv.org/abs/2309.15817"
+    source_type: paper
+    publication_date: 2023-09-25
+    version: "v2 (2024-05-17) per arXiv page"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; ICLR 2024 listed on alphaxiv overview page as venue context, not verified against proceedings)"
+    supports:
+      - "chapters/14-agent-tool-memory-mcp-security/README.md (sections 3.6, 4.4, 5 and readings: the ToolEmu framework — LM-emulated tool execution for scalable agent-risk testing; an LM-based safety evaluator over trajectories; 68.8% of identified failures judged valid as real-world failures; a curated initial benchmark of 36 high-stakes tools and 144 test cases; even the safest LM agent exhibiting severe failures 23.9% of the time per the evaluator; instruction underspecification as a core threat model)"
+    limitations: >-
+      Abstract verified 2026-10-22; the 68.8% is a human-validation rate over emulator-identified failures whose own denominator is not stated in the abstract; the 23.9% is evaluator-judged over the 144-case benchmark, not a deployed-agent incident rate; per-agent breakdowns and the risk taxonomy live in the unread body.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-057
+    title: "Programming Semantics for Multiprogrammed Computations"
+    authors_or_organization: "Jack B. Dennis, Earl C. Van Horn (MIT)"
+    url: "https://cacm.acm.org/research/programming-semantics-for-multiprogrammed-computations-2/"
+    source_type: paper
+    publication_date: 1966-03-01
+    version: "Communications of the ACM, March 1966 issue (CACM archive page fetched)"
+    accessed_on: 2026-10-22
+    access_level: metadata-only
+    evidence_class: conceptual
+    peer_review_status: "peer reviewed in the CACM-era editorial sense (1966; editorial process not equivalent to modern peer review)"
+    supports:
+      - "chapters/14-agent-tool-memory-mcp-security/README.md (sections 3.1, 5 and readings: the origin of the capability model — reasoning about which computations may name which objects; cited as conceptual lineage for treating agent tools as capabilities)"
+    limitations: >-
+      CACM archive and issue pages inspected 2026-10-22 (title, authors, March 1966 date, and the capability-model characterization via the archive's own summary text); the full 1966 paper text was not fetched; cited for the concept's origin and vocabulary only, with no quantitative claim drawn from it.
+    license: "unknown (ACM archive page; public summary text)"
+
+  - id: SRC-REPORT-005
+    title: "Model Context Protocol Specification (version 2025-06-18)"
+    authors_or_organization: "Model Context Protocol project (Anthropic-originated open standard; Linux Foundation-hosted per the project GitHub organization page)"
+    url: "https://modelcontextprotocol.io/specification/2025-06-18"
+    source_type: specification
+    publication_date: 2025-06-18
+    version: "2025-06-18 specification snapshot"
+    accessed_on: 2026-10-22
+    access_level: page-inspected
+    evidence_class: conceptual
+    peer_review_status: "not peer reviewed (open-standard specification)"
+    supports:
+      - "chapters/14-agent-tool-memory-mcp-security/README.md (sections 3.4, 3.7 and readings: the MCP topology — hosts, clients, and servers over JSON-RPC 2.0; server features resources/prompts/tools and client features sampling/roots/elicitation; the specification's own security principles — explicit user consent and control, data privacy, tool safety stating that tools represent arbitrary code execution and that descriptions of tool behavior such as annotations should be considered untrusted unless obtained from a trusted server, LLM sampling controls; and the explicit caveat that MCP itself cannot enforce these security principles at the protocol level)"
+    limitations: >-
+      Specification page inspected 2026-10-22 (overview and Security and Trust & Safety section read); per-component subpages (tools, sampling, roots, elicitation formal schemas) not read; the project's earlier and later specification versions were not compared.
+    license: "unknown (public specification page; the linked GitHub organization states the project is open source under The Linux Foundation hosting)"
+
+  - id: SRC-REPORT-006
+    title: "MCP Security Notification: Tool Poisoning Attacks"
+    authors_or_organization: "Invariant Labs"
+    url: "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks"
+    source_type: web-report
+    publication_date: null
+    version: "blog post as fetched 2026-10-22 (post date not stated on the fetched page; Invariant Labs MCP security series 2025)"
+    accessed_on: 2026-10-22
+    access_level: page-inspected
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed (security vendor research blog)"
+    supports:
+      - "chapters/14-agent-tool-memory-mcp-security/README.md (sections 3.5, 5 and readings: the tool-poisoning demonstration — a tool whose visible signature is benign (add(a, b, sidenote)) whose description embeds a hidden instruction block directing the model to read ~/.cursor/mcp.json and ~/.ssh/id_rsa and pass their contents via the sidenote parameter; demonstrated against the Cursor MCP client; the three stated enabling conditions — no user visibility into full tool descriptions, models trained to follow instructions precisely, malicious behavior concealed behind legitimate functionality)"
+    limitations: >-
+      Blog page inspected 2026-10-22 including the demonstrated tool source block and the Cursor experiment description; a vendor demonstration, not a peer-reviewed measurement — no attack-success-rate denominator is stated on the fetched page, and the post's publication date is not displayed; later client hardening may have changed the demonstrated behavior, which the chapter carries as a mechanism demonstration, not a live vulnerability claim.
+    license: "unknown (public vendor blog page)"
+
+  - id: SRC-REPORT-007
+    title: "CaMeL offers a promising new direction for mitigating prompt injection attacks"
+    authors_or_organization: "Simon Willison (simonwillison.net)"
+    url: "https://simonwillison.net/2025/Apr/11/camel/"
+    source_type: commentary
+    publication_date: 2025-04-11
+    version: "blog post as published"
+    accessed_on: 2026-10-22
+    access_level: page-inspected
+    evidence_class: conceptual
+    peer_review_status: "not peer reviewed (practitioner commentary)"
+    supports:
+      - "chapters/14-agent-tool-memory-mcp-security/README.md (sections 3.2, 3.3, 5 and readings: the original-sin framing — trusted and untrusted text concatenated into the same token stream, with no known reliable way to have an LLM follow instructions in one category while safely applying them to another; the Dual LLM pattern (April 2023) with its privileged and quarantined models; the DeepMind-quoted residual flaw of Dual LLM — the quarantined model still influences the privileged model's arguments, so an attacker who cannot choose which tool is called can still modify its arguments; the data-flow/control-flow reading of CaMeL's contribution)"
+    limitations: >-
+      Blog post inspected 2026-10-22 including the quoted DeepMind passages; a practitioner's analysis quoting the CaMeL authors' own description of Dual LLM's limits — secondhand for the paper's content (the paper itself is SRC-PAPER-054 at abstract-read), and opinion-labeled for its assessments; quoted in the chapter only for the pattern lineage, the quoted flaw analysis, and the concatenation framing.
+    license: "unknown (public blog page; personal-site commentary)"

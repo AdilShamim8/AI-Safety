@@ -45,13 +45,16 @@ as the work it describes. On session start, read this file, then
 
 | **P03 complete (implemented, tier 1)** — the ai_safety_course.calibration package: reliability tables with per-bin counts and Wilson intervals at full-precision z (ECE always reported next to its binning — the K-dependence test-pinned), Brier and clipped log loss, mean gap as a marginal; rank-based risk-coverage curves with AURC, oracle ceiling, and gap; threshold policies with BOTH abstention-ledger sides (selective risk + false-abstention rate); identity/Platt(deterministic Newton)/histogram calibrators as fit-once state machines (validation-only fits); fail-closed checksummed case-set loader; config-driven deterministic runner + CLI + markdown report. Fixture honesty recorded: first draft (perfectly separable classes, every map Brier 0.0000) rejected before any results committed; committed fixture has realistic class overlap. Pinned headline: the inverted instrument's AURC 0.7178 sits ABOVE full-coverage risk 0.4000 (gating worse than answering everything); 98 offline tests (315 total green); genuine example report committed. The ml compute tier (TruthfulQA/XSTest per their cards, local model) and free-text scoring tier are scoped and honestly marked not-executed | this commit | validator + 315-test suite green | |
 
+
+| **Chapter 14 complete** — ten-element structure: the five-station agent failure pathway (query->plan->tool call under credential->memory->supply chain); the capability-machine formalization (agent as (S, pi, T, M); tools as capabilities per Dennis & Van Horn 1966); the delegation audit (what a tool call authenticates — two unauthenticated steps between intention and action); control-vs-data-flow separation with the Dual LLM residual argument-corruption flaw and CaMeL's capability-carrying values; the MCP topology and the spec's own trust rules (tool descriptions untrusted; enforcement left to hosts); tool poisoning (Invariant Labs' add(a,b,sidenote) demonstration); memory as widened attack window (dormancy, provenance loss, re-privileging); supply-chain row. Worked example: the Atlas assistant privilege and trust-boundary matrix (11 tools x credential x reach x untrusted feeds x blast radius), the exfiltration-pair and authority-gradient findings, the R1-R4 capability policy traced through a poisoned-mailbox request (R2 blocking the W-tagged recipient; R1 blocking the hijacked edge), the memory-poisoning dormancy row, and honest pricing — CaMeL 77% vs 84% at assumed 97-task denominators ([68.0, 84.5]% vs [74.9, 89.6]% overlapping: utility cost not resolved from zero at benchmark scale), ToolEmu 23.9% at 144 cases -> [17.4, 31.2%], 68.8% carried as emulator validity not prevalence. Approach comparison (7 rows incl. full delegation, behavior filters, hierarchy, Dual LLM, CaMeL, isolation, evaluation-first); where-the-methods-fail section; 2 exercises + full solutions with rubrics (CRM server expansion growing the exfiltration pairs 3->8; pricing a 'provably secure' vendor claim with the proof-vs-sampling distinction); GLOSSARY +10 terms; registers +7 sources (SRC-PAPER-054..057, SRC-REPORT-005..007) and +7 claims (CLM-0074..0080) | this commit | validator + ruff + black green; full suite 489 tests passed | |
+
 ## Current phase
 
-Phase F (applications arc) underway: P02, P03, ch12, ch13 done (13/24 chapters, 3/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 14 (agent, tool, memory, MCP security), then P07 (injection defense).
+Phase F (applications arc) underway: P02, P03, ch12, ch13, ch14 done (14/24 chapters, 3/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is P07 (injection defense), then chapter 15 (red teaming and adversarial evaluation).
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 13 / 24
+- Chapters complete: 14 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 3 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
@@ -69,8 +72,9 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: chapter 14 (agent, tool, memory, MCP security) —
-Phase F resumes where it left off; then P07 (injection defense). The
-from-scratch track is complete and closed (2026-10-22); its protocols
-(FS-07) are available for learners, and its paper-note debts are
-none.
+Next exact action: P07 (injection defense) — implements chapters
+13-14's audit discipline as code: the privilege/trust-boundary matrix
+builder, a capability-policy checker with provenance tags, and the
+AgentDojo-style paired evaluation harness with Wilson intervals; then
+chapter 15 (red teaming and adversarial evaluation). The from-scratch
+track is complete and closed (2026-10-22).

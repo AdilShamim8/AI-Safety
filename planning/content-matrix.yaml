@@ -199,18 +199,20 @@ chapters:
     verified_on: 2026-10-22
   - id: "14"
     title: "Agent, tool, memory, and MCP security"
-    path: "chapters/14-agent-tool-memory-and-mcp-security/"
+    path: "chapters/14-agent-tool-memory-mcp-security/"
     phase: F
-    maturity: planned
+    maturity: complete
     outcomes:
-      - "Apply capability-based access, least privilege, delegation, tool metadata, authorization"
-      - "Reason about cross-session memory, identity, isolation, resource limits, compromised dependencies"
-      - "Produce a privilege and trust-boundary matrix"
+      - "Define capability, least privilege, and confused deputy; explain why an agent holding user credentials over untrusted context is the deputy"
+      - "Separate control flow from data flow in an agent trace; reproduce the Dual LLM residual argument-corruption flaw and the CaMeL capability-layer fix"
+      - "State the MCP trust rules (descriptions untrusted; protocol cannot enforce its own security principles) and connect tool poisoning to them"
+      - "Build the privilege and trust-boundary matrix; identify exfiltration pairs and the authority gradient; write R1-R4 capability rules"
+      - "Explain memory persistence as widened attack window (dormancy, provenance loss, re-privileging) and price agent-security claims with intervals"
     prerequisites: ["13"]
     project_ids: ["P07"]
     assessments: ["privilege-and-trust-boundary matrix"]
-    source_ids: []
-    verified_on: null
+    source_ids: ["SRC-PAPER-054", "SRC-PAPER-055", "SRC-PAPER-056", "SRC-PAPER-057", "SRC-REPORT-005", "SRC-REPORT-006", "SRC-REPORT-007"]
+    verified_on: 2026-10-22
   - id: "15"
     title: "Red teaming and adversarial evaluation"
     path: "chapters/15-red-teaming-and-adversarial-evaluation/"

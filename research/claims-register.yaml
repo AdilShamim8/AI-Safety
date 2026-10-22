@@ -868,3 +868,80 @@ claims:
     counterevidence: >-
       self-reported single-setup results with no independent replication located; 'under one dollar' positioning is a hardware-cost framing, not an audited cost — the course carries these numbers as the source's claims, priced accordingly in 06-advanced-architectures.md
     date: 2026-10-22
+
+  - id: CLM-0074
+    claim: >-
+      CaMeL (Google DeepMind, arXiv:2503.18813) proposes a defense layer around LLM agents that extracts control and data flows from the trusted query so that untrusted data retrieved by the LLM cannot impact program flow, and uses capabilities to prevent exfiltration of private data over unauthorized flows by enforcing security policies at tool calls; on AgentDojo it solves 77% of tasks with provable security compared to 84% for an undefended system.
+    source: SRC-PAPER-054
+    section_or_page: "arXiv abstract page for 2503.18813 v2 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the 77%/84% figures are the authors' abstract-level statements, not re-verified here"
+    assumptions: "the AgentDojo evaluation in the paper's body matches the abstract's summary; the term 'provable security' refers to an architectural property of the policy-enforced flows as described"
+    counterevidence: >-
+      chapter 14's own pricing (sections 4.4): at the assumed denominator of 97 tasks the two utility intervals overlap ([68.0, 84.5]% vs [74.9, 89.6]%), so the 7-point utility cost is not statistically resolved from zero at benchmark scale; the exact solved-task counts are body-level details not read
+    date: 2026-10-22
+
+  - id: CLM-0075
+    claim: >-
+      AgentDojo (NeurIPS 2024 Datasets and Benchmarks Track) is a dynamic evaluation environment for LLM agents that execute tools over untrusted data, populated with 97 realistic tasks and 629 security test cases, whose findings include that state-of-the-art LLMs fail many tasks even in the absence of attacks and that existing prompt-injection attacks break some security properties but not all.
+    source: SRC-PAPER-055
+    section_or_page: "arXiv abstract page for 2406.13352 v3 and the NeurIPS 2024 poster page (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; environment facts (97/629) and headline findings quoted at abstract level"
+    assumptions: "the benchmark's task suites are as described in the abstract; findings are about the benchmark's attack suite, not about deployed systems"
+    counterevidence: >-
+      none at abstract level; the chapter prices these as benchmark-shaped evidence — deployment incidence is not measured by this source, and the per-model failure rates live in the unread body
+    date: 2026-10-22
+
+  - id: CLM-0076
+    claim: >-
+      ToolEmu (arXiv:2309.15817) uses an LM to emulate tool execution for scalable agent-risk testing with an LM-based safety evaluator over trajectories; 68.8% of failures identified with ToolEmu were judged (in its human evaluation) to be valid real-world agent failures; its curated initial benchmark has 36 high-stakes tools and 144 test cases; and even the safest LM agent it evaluated exhibited severe failures 23.9% of the time according to its evaluator.
+    source: SRC-PAPER-056
+    section_or_page: "arXiv abstract page for 2309.15817 v2 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; all three numbers are the authors' abstract-level statements"
+    assumptions: "the 23.9% is evaluator-judged over the 144-case benchmark (denominator assumed for interval pricing, stated as assumed in the chapter); the 68.8% is a validity rate over emulator-identified failures whose own denominator is not stated in the abstract"
+    counterevidence: >-
+      the two rates must not be multiplied into a deployed-incidence headline — the 68.8% validates the emulator, the 23.9% measures benchmark behavior; neither is a field rate, and the chapter's exercise 14.2 makes that refusal a rubric item
+    date: 2026-10-22
+
+  - id: CLM-0077
+    claim: >-
+      The capability model — reasoning about which computations may name which objects via unforgeable references that jointly name an object and rights over it — originates with Dennis and Van Horn, "Programming Semantics for Multiprogrammed Computations", Communications of the ACM, March 1966.
+    source: SRC-PAPER-057
+    section_or_page: "CACM archive research page for the March 1966 issue (fetched 2026-10-22)"
+    evidence_strength: "metadata-only (title, authors, date, and the capability-model characterization read from the archive's summary); the 1966 full text was not fetched"
+    assumptions: "the archive's characterization of the paper's contribution reflects the paper"
+    counterevidence: >-
+      none; a historical lineage claim with no quantitative content, cited for vocabulary origin only
+    date: 2026-10-22
+
+  - id: CLM-0078
+    claim: >-
+      The Model Context Protocol specification (2025-06-18 snapshot) defines an open JSON-RPC 2.0 protocol between hosts, clients, and servers (server features: resources, prompts, tools; client features: sampling, roots, elicitation) whose own security principles require explicit user consent and state that tools represent arbitrary code execution that must be treated with appropriate caution, that descriptions of tool behavior such as annotations should be considered untrusted unless obtained from a trusted server, and that MCP itself cannot enforce these security principles at the protocol level — leaving enforcement to host implementors.
+    source: SRC-REPORT-005
+    section_or_page: "Specification overview and Security and Trust & Safety section of the 2025-06-18 spec page (fetched 2026-10-22)"
+    evidence_strength: "page-inspected; the quoted principle sentences and the enforcement caveat read from the specification page itself"
+    assumptions: "the 2025-06-18 snapshot is the version described; later spec versions may revise these principles"
+    counterevidence: >-
+      none at page level; the chapter notes the tension between the consent principle (users must understand tools they authorize) and the tool-poisoning finding that users cannot see full descriptions (SRC-REPORT-006)
+    date: 2026-10-22
+
+  - id: CLM-0079
+    claim: >-
+      Invariant Labs demonstrated a "tool poisoning attack" against an MCP client (Cursor): a tool with the benign visible signature add(a, b, sidenote) whose description embeds a hidden instruction block directing the model to read ~/.cursor/mcp.json and ~/.ssh/id_rsa and pass their contents through the sidenote parameter, concealing the action from the user; the post states three enabling conditions (no user visibility into full tool descriptions; models trained to follow instructions precisely; malicious behavior concealed behind legitimate functionality).
+    source: SRC-REPORT-006
+    section_or_page: "Invariant Labs blog post (fetched 2026-10-22), including the demonstrated tool source block"
+    evidence_strength: "page-inspected; a vendor demonstration with the attack code shown, not a peer-reviewed measurement — no success-rate denominator stated on the page"
+    assumptions: "the demonstration ran as described against the client version current at post time"
+    counterevidence: >-
+      vendor demonstration of a mechanism, not a prevalence measurement; post date not displayed on the fetched page, and client hardening since the demonstration is untracked here — the chapter carries it as a mechanism demonstration only
+    date: 2026-10-22
+
+  - id: CLM-0080
+    claim: >-
+      Simon Willison's prompt-injection analysis frames the structural root as trusted and untrusted text concatenated into the same token stream with no known reliable way for an LLM to follow instructions in one category while safely applying them to another; his Dual LLM pattern (April 2023) separates a privileged tool-holding model from a quarantined tool-less model, and the DeepMind CaMeL paper (as quoted by Willison) identifies the pattern's residual flaw — the quarantined model still influences arguments of the privileged model's tool calls, so an attacker who cannot choose which tool is called can still modify its arguments (a data-flow attack on a control-flow defense).
+    source: SRC-REPORT-007
+    section_or_page: "simonwillison.net post of 2025-04-11 (fetched 2026-10-22), including quoted passages from the CaMeL paper"
+    evidence_strength: "page-inspected; the Dual-LLM flaw characterization is a quote of the DeepMind paper as rendered in the blog (secondhand for the paper's wording; the paper itself is carried at SRC-PAPER-054 abstract-read)"
+    assumptions: "the quoted passages faithfully reproduce the CaMeL paper's description of the Dual LLM pattern and its limits"
+    counterevidence: >-
+      commentary, not measurement; the post's positive assessment of CaMeL is the author's opinion and is not carried as evidence by the chapter — only the lineage, the framing, and the quoted flaw analysis are
+    date: 2026-10-22
