@@ -16,7 +16,6 @@ warehouse = default parameters, judge = proxy-v1 unless stated):
   reports stopped_early honestly for every higher requested pressure.
 """
 
-
 import pytest
 
 from ai_safety_course.reward_spec.environments import (

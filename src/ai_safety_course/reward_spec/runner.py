@@ -422,9 +422,7 @@ def run_cell(
     # Gates require distinct measurement names: tag the reference baseline
     # (same construct, untuned policy) so the point/baseline pair reads
     # unambiguously in tables and verdict strings.
-    baseline = rate_metric(
-        f"{baseline.name} [reference]", baseline.successes, baseline.denominator
-    )
+    baseline = rate_metric(f"{baseline.name} [reference]", baseline.successes, baseline.denominator)
     gate_outcome = evaluate_gates(gate, metric_name, point, baseline, pressure=pressure, arm=arm)
     ledger_primary = env.side_effects(primary.policy, arm, seed)
     ledger_control = env.side_effects(control.policy, arm, seed)
