@@ -63,13 +63,16 @@ as the work it describes. On session start, read this file, then
 
 | **Comparison notes C04 and C05 complete — the planned set closes** — C04 (prompt defenses vs authorization boundaries): the two families compared on where they live, trust assumptions, evidence genres, best measured effects, adaptive pressure, failure legibility, and cost profiles; the three decisions it settles (launch gates need boundary claims; defense-in-depth orders boundaries outside; red-team methodology must match the family evaluated); non-claims on superiority. C05 (static benchmarks vs adaptive evaluation): the two instruments compared on question answered, comparability, cost, rot modes, signature failures, and canonical evidence; the composition rule (static first, adaptive second, claims partitioned); the planned five-note set closes with C01–C05 spanning preference learning, evidence kinds, safety paradigms, defense families, and evaluation instruments. 19 register sources re-anchored at their stated levels across the two notes, no new sources needed | this commit | validator green | |
 
+
+| **Chapter 17 complete** — ten-element structure: five-station failure pathway (the snapshot pathology as the floor: 3-15%/11-14% drops on fresh i.i.d. test sets [SRC-PAPER-066]; structured real-world shifts with the ID-OOD gap surviving existing methods [SRC-PAPER-067]; averages hiding groups with the DRO+regularization coupling [SRC-PAPER-068]; calibration degrading with accuracy under shift, breaking Ch.06's gates [SRC-PAPER-069]; drift as the default mode); the taxonomy with per-class detection signals; the monitoring loop (shadow domains, worst-group tracking, calibration surveillance, drift triggers). Worked example: the Halcyon content classifier — ID 481/500 [94.1, 97.6]% vs OOD 421/500 [80.7, 87.1]%, worst-group 61/100 [51.2, 70.0]% vs average-group 92/100 [85.0, 95.9]%, the gate's false escalations 2% -> 37/200 = 18.5% [13.7, 24.5]% (the policy, not the model, is what drift broke), DRO retraining 78/100 [68.9, 85.0]% with the coupling caveat priced; every number recomputed in solutions incl. the validity-window statement artifact. Approach comparison (6 rows); where-the-methods-fail; 2 exercises + full solutions with rubrics; GLOSSARY +5; registers +4 sources (SRC-PAPER-066..069, one at lower-confidence abstract-read honesty) and +4 claims (CLM-0089..0092) | this commit | validator + 530-test suite green | |
+
 ## Current phase
 
-Phase F (applications arc) complete: P02, P03, P07, ch12-ch16 done (16/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 17 (distribution shift and deployment reliability); the comparison-note set (C01–C05) is complete.
+Phase G underway: P02, P03, P07, ch12-ch17 done (17/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); next is chapter 18 (reasoning faithfulness and monitorability); the comparison-note set (C01–C05) is complete.
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 16 / 24
+- Chapters complete: 17 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 4 / 10
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
@@ -87,7 +90,9 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: chapter 17 (distribution shift and deployment
-reliability) — OOD, worst-group, drift, uncertainty under shift;
-covariate vs label vs concept change — then P04 (preference
-optimization audit) and the remaining projects.
+Next exact action: chapter 18 (reasoning faithfulness and
+monitorability) — CoT faithfulness, hidden actions, monitor evasion;
+action/outcome evidence. Then P04 (preference optimization audit),
+P05 (weak-to-strong analogue), P06 (causal interpretability), P08
+(control protocol), P09 (shift/subgroup reliability), P10 (capstone
+assurance dossier), and chapters 19-24.

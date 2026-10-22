@@ -25,7 +25,8 @@ catalog with prerequisites and artifacts is
 | 14 | Agents, tools, memory, and MCP security | [14-agent-tool-memory-mcp-security](14-agent-tool-memory-mcp-security/) — **complete** |
 | 15 | Red teaming and adversarial evaluation | [15-red-teaming-and-adversarial-evaluation](15-red-teaming-and-adversarial-evaluation/) — **complete** |
 | 16 | Privacy, provenance, and supply chains | [16-privacy-provenance-and-supply-chains](16-privacy-provenance-and-supply-chains/) — **complete** |
-| 17–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases F–H)* |
+| 17 | Distribution shift and deployment reliability | [17-distribution-shift-and-deployment-reliability](17-distribution-shift-and-deployment-reliability/) — **complete** |
+| 18–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases G–H)* |
 
 Chapters appear here as they are completed — this index never links to a
 chapter that does not exist yet.

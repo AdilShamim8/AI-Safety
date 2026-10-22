@@ -1710,3 +1710,71 @@ sources:
     limitations: >-
       Surfaced via search-result snippet 2026-10-22: title, author lead (Nasr), and the extractable-memorization definition were visible; the abstract page was not fetched in full, per-attack numbers and the production-system names live in the unread body; the author list beyond the first author is uncertain and is not quoted. This entry is carried at the lower-confidence end of abstract-read.
     license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-066
+    title: "Do ImageNet Classifiers Generalize to ImageNet?"
+    authors_or_organization: "Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, Vaishaal Shankar"
+    url: "https://arxiv.org/abs/1902.10811"
+    source_type: paper
+    publication_date: 2019-02-13
+    version: "v2 (2019-06-12) per arXiv page"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; ICML 2019 not verified against proceedings)"
+    supports:
+      - "chapters/17-distribution-shift-and-deployment-reliability/README.md (sections 1, 3.1, 5 and readings: new test sets for CIFAR-10 and ImageNet built by closely following the original creation processes; accuracy drops of 3-15% on CIFAR-10 and 11-14% on ImageNet across a broad range of models; accuracy gains on original test sets translating to larger gains on new test sets; the drops attributed not to adaptivity but to models' inability to generalize to slightly harder images)"
+    limitations: >-
+      Abstract verified 2026-10-22; per-model drop tables and the adaptivity analysis live in the unread body.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-067
+    title: "WILDS: A Benchmark of in-the-Wild Distribution Shifts"
+    authors_or_organization: "Pang Wei Koh, Shiori Sagawa, Henrik Marklund, Sang Michael Xie, Marvin Zhang, Akshay Balsubramani, Weihua Hu, Michihiro Yasunaga, Richard Lanas Phillips, Irena Gao, Tony Lee, Etienne David, Ian Stavness, Wei Guo, Berton A. Earnshaw, Imran S. Haque, Sara Beery, Jure Leskovec, Anshul Kundaje, Emma Pierson, Sergey Levine, Chelsea Finn, Percy Liang"
+    url: "https://arxiv.org/abs/2012.07421"
+    source_type: paper
+    publication_date: 2020-12-14
+    version: "v3 (2021-07-16) per arXiv page; ICML 2021 per PMLR proceedings page"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "peer reviewed at ICML 2021 (PMLR 139:5637-5664, proceedings page verified)"
+    supports:
+      - "chapters/17-distribution-shift-and-deployment-reliability/README.md (sections 1, 3.1, 3.3, 5 and readings: the curated benchmark of 10 datasets reflecting distribution shifts that naturally arise in real-world applications — across hospitals for tumor identification, across camera traps for wildlife monitoring, across time and location in satellite imaging and poverty mapping; the finding that standard training yields substantially lower out-of-distribution than in-distribution performance and that the gap remains even with existing distribution-shift methods)"
+    limitations: >-
+      Abstract and PMLR proceedings page verified 2026-10-22; per-dataset gap magnitudes and method-by-method results live in the unread body; the open-source evaluation package is referenced, not run.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-068
+    title: "Distributionally Robust Neural Networks for Group Shifts: On the Importance of Regularization for Worst-Case Generalization"
+    authors_or_organization: "Shiori Sagawa, Pang Wei Koh, Tatsunori B. Hashimoto, Percy Liang"
+    url: "https://arxiv.org/abs/1911.08731"
+    source_type: paper
+    publication_date: 2019-11-20
+    version: "v2 (2020-04-02) per arXiv page"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; ICLR 2020 not verified against proceedings)"
+    supports:
+      - "chapters/17-distribution-shift-and-deployment-reliability/README.md (sections 1, 3.1, 4, 5 and readings: overparameterized networks accurate on average yet consistently failing on atypical groups via spurious correlations; naive group DRO failing because training loss vanishes everywhere, locating the problem in worst-group generalization; coupling group DRO with stronger-than-typical regularization (L2 or early stopping) achieving 10-40 percentage-point worst-group improvements while maintaining average accuracy; regularization mattering for worst-group generalization in the overparameterized regime even when unneeded for average generalization)"
+    limitations: >-
+      Abstract verified 2026-10-22; task-specific improvements, group definitions, and the stochastic optimization algorithm's guarantees live in the unread body.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-069
+    title: "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift"
+    authors_or_organization: "Yaniv Ovadia, Emily Fertig, Jie Liu, Zachary Nado, D. Sculley, Alexander D'Amour, Balaji Lakshminarayanan, D. Scott, Jasper Snoek (Google; Harvard)"
+    url: "https://arxiv.org/abs/1906.02530"
+    source_type: paper
+    publication_date: 2019-06-05
+    version: "NeurIPS 2019 (proceedings page verified); arXiv listing surfaced via search"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "peer reviewed at NeurIPS 2019 (proceedings page verified)"
+    supports:
+      - "chapters/17-distribution-shift-and-deployment-reliability/README.md (sections 1, 3.2, 4, 5 and readings: the large-scale benchmark investigating the effect of dataset shift on accuracy and predictive uncertainty in classification, with well-calibrated uncertainty conveying when a model's output should be trusted and shift degrading that trust; the comparison of uncertainty-improvement methods whose behavior differs under shift from at-distribution performance)"
+    limitations: >-
+      Abstract-level content assembled from the NeurIPS proceedings page and search snippets 2026-10-22 (the arXiv abstract page itself was surfaced but not fetched in full); per-method calibration numbers and shift-intensity sweeps live in the unread body; carried at the lower-confidence end of abstract-read.
+    license: "unknown (proceedings page; no separate license stated on the fetched pages)"

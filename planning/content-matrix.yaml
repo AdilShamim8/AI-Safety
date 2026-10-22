@@ -249,16 +249,17 @@ chapters:
     title: "Distribution shift and deployment reliability"
     path: "chapters/17-distribution-shift-and-deployment-reliability/"
     phase: G
-    maturity: planned
+    maturity: complete
     outcomes:
-      - "Evaluate OOD behavior, subgroup and worst-group outcomes, selective prediction, drift"
-      - "State whether an evaluation covers covariate, label, or concept change"
-      - "Detect silent degradation under uncertainty"
-    prerequisites: ["02"]
+      - "Reproduce the five-class shift taxonomy with canonical evidence (snapshot pathology; WILDS; group-DRO coupling; uncertainty under shift)"
+      - "Explain why average accuracy is dishonest for heterogeneous deployments and what worst-group measurement requires"
+      - "State what shift does to calibration and to Ch.06 selective-prediction guarantees"
+      - "Build the shift-taxonomy analysis and monitoring loop (signals, instruments, triggers, validity windows)"
+    prerequisites: ["02", "06"]
     project_ids: ["P09"]
     assessments: ["shift-taxonomy analysis"]
-    source_ids: []
-    verified_on: null
+    source_ids: ["SRC-PAPER-066", "SRC-PAPER-067", "SRC-PAPER-068", "SRC-PAPER-069"]
+    verified_on: 2026-10-22
   - id: "18"
     title: "Reasoning faithfulness and monitorability"
     path: "chapters/18-reasoning-faithfulness-and-monitorability/"

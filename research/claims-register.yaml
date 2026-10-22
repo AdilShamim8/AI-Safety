@@ -1033,3 +1033,47 @@ claims:
     counterevidence: >-
       none available at this access level; the entry is carried at the register's lower-confidence end and the chapter cites it only for the extractable-memorization concept, not for any number
     date: 2026-10-22
+
+  - id: CLM-0089
+    claim: >-
+      Recht et al. (arXiv:1902.10811) rebuilt CIFAR-10 and ImageNet test sets by closely following the original dataset creation processes and found accuracy drops of 3-15% on CIFAR-10 and 11-14% on ImageNet across a broad range of models, with accuracy gains on original test sets translating to larger gains on the new test sets; the drops are attributed not to adaptivity but to models' inability to generalize to slightly harder images.
+    source: SRC-PAPER-066
+    section_or_page: "arXiv abstract page for 1902.10811 v2 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; drop ranges are the authors' abstract-level statements across their evaluated model set"
+    assumptions: "the new-test-set construction faithfully mirrors the original process, as the authors state"
+    counterevidence: >-
+      none at abstract level; the adaptivity-vs-harder-images attribution is the authors' own analysis, carried as their conclusion rather than independently re-derived
+    date: 2026-10-22
+
+  - id: CLM-0090
+    claim: >-
+      Koh et al. (arXiv:2012.07421, ICML 2021) present WILDS, a curated benchmark of 10 datasets reflecting distribution shifts that arise naturally in real-world applications (across hospitals for tumor identification, across camera traps for wildlife monitoring, across time and location in satellite imaging and poverty mapping), and find that standard training yields substantially lower out-of-distribution than in-distribution performance on each dataset, with the gap remaining even for models trained with existing distribution-shift methods.
+    source: SRC-PAPER-067
+    section_or_page: "arXiv abstract page and PMLR proceedings page (fetched 2026-10-22)"
+    evidence_strength: "abstract-read plus proceedings-page verification; per-dataset magnitudes not quoted"
+    assumptions: "the benchmark's held-out-domain construction is as described"
+    counterevidence: >-
+      none at abstract level; the persistence of the gap under existing methods is a statement about the methods evaluated in 2020-2021, priced by chapter 17 as dated evidence about a moving field
+    date: 2026-10-22
+
+  - id: CLM-0091
+    claim: >-
+      Sagawa et al. (arXiv:1911.08731) find that overparameterized neural networks can be highly accurate on average yet consistently fail on atypical groups via spurious correlations; that naive group DRO fails in this regime because training loss vanishes everywhere (the worst-group problem is generalization, not optimization); and that coupling group DRO with stronger-than-typical regularization (L2 or early stopping) achieves 10-40 percentage-point worst-group improvements on an NLI task and two image tasks while maintaining average accuracy.
+    source: SRC-PAPER-068
+    section_or_page: "arXiv abstract page for 1911.08731 v2 (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the 10-40pp range is the authors' abstract-level statement over three tasks"
+    assumptions: "the improvements are as stated for the evaluated tasks and group definitions"
+    counterevidence: >-
+      none at abstract level; the chapter prices the coupling caveat explicitly — the recipe is DRO plus regularization, and reproducing half of it is the documented failure mode
+    date: 2026-10-22
+
+  - id: CLM-0092
+    claim: >-
+      Ovadia et al. (NeurIPS 2019, arXiv:1906.02530) present a large-scale benchmark of predictive-uncertainty methods under dataset shift for classification, investigating the effect of shift on both accuracy and calibration/uncertainty quality, and comparing methods for improving model uncertainty whose behavior under shift differs from their at-distribution performance.
+    source: SRC-PAPER-069
+    section_or_page: "NeurIPS 2019 proceedings page and search-surfaced arXiv listing (fetched 2026-10-22)"
+    evidence_strength: "abstract-read at the lower-confidence end (proceedings page + snippets; the arXiv abstract page not fetched in full); no numeric calibration figures quoted"
+    assumptions: "the benchmark's scope description reflects the paper"
+    counterevidence: >-
+      none at this access level; chapter 17 uses the qualitative mechanism (accuracy and calibration degrade together under shift) and marks per-method numbers as body-level detail not read
+    date: 2026-10-22
