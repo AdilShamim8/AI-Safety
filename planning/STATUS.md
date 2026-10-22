@@ -39,13 +39,15 @@ as the work it describes. On session start, read this file, then
 
 | **P02 complete (implemented)** — the ai_safety_course.reward_spec package: Goodhart-gap / side-effect-ledger / held-out-divergence / paired-comparison / interval-bound-gate metrics at full-precision z; two deterministic model organisms (WarehouseGridworld with authored tuning/held-out instance ensembles; JudgeScoredAnswers implementing the Chapter 03 §4 worked example incl. the revised-proxy v2 patch dynamics); three pressure regimes (bon-width, budgeted-search with exact evaluation budgets, local-search with honest saturation); a config-driven resumable fail-closed runner + CLI + deterministic markdown report; 157 offline tests; preregistered protocol (H1-H3, stopping rules, disconfirming criteria) with pinned headline (warehouse, alpha=131072: primary G=2.000/3 events vs control G=0.000/0 events tuning; held_out 4.667 vs 0.000); genuine example report committed; judge-v1 and judge-v2 runs (14 cells each) executed locally with the same discipline | this commit | validator + 228-test suite green | |
 
+| **Chapter 12 complete** — ten-element structure: four-station failure pathway (proxy -> adversarial optimization -> deployment transfer -> measurement miss); attacker-knowledge grid (decisions/scores/gray/white-box x train/inference) with per-cell feasibility burdens; five canonical families with founding evidence (Szegedy transfer, Goodfellow linear explanation, BadNets 25%-drop trigger with retraining persistence, Tramer near-perfect-fidelity extraction incl. decision-only APIs, Shokri membership inference vs commercial MLaaS); Madry first-order-adversary defense framing; the two canonical defense-evaluation failures (Carlini-Wagner 100% vs distillation's claimed 0.5%; Croce-Hein 50+ model audit with all-but-one overestimated, often >10pp); worked example = end-to-end preregistered adaptive audit with recomputed arithmetic (0.995^n stopping table, Wilson [96.3%, 100%] on 100/100, exact McNemar p=2.8e-7 one-sided on 75/25 discordant pairs); 2 exercises + full solutions with rubrics incl. the 15-cell deployment grid and the audit design with sensitivity table; GLOSSARY +9 terms; registers +10 sources (SRC-PAPER-040..049, all abstract-read verified 2026-10-22; the 039 slot belongs to ch11's Belinkov survey — collision caught and resolved) and +6 claims (CLM-0061..0066) | this commit | validator + 228-test suite green | |
+
 ## Current phase
 
-Phase F (applications arc) OPEN: P02 done (2/10 projects, 11/24 chapters); next is chapter 12 (adversarial ML and robustness), then chapter 13 + P07 (injection defense).
+Phase F (applications arc) underway: P02 done, chapter 12 done (12/24 chapters, 2/10 projects); next is chapter 13 (LLM application security), then chapter 14 + P07 (injection defense).
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 11 / 24
+- Chapters complete: 12 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 2 / 10
 - Paper notes complete: 0 / 20 required minimum

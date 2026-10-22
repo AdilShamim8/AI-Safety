@@ -727,3 +727,68 @@ claims:
     counterevidence: >-
       consistency can be satisfied by non-truth correlates (dataset artifacts, formatting regularities); later literature debates the assumption's scope
     date: 2026-10-21
+  - id: CLM-0061
+    claim: >-
+      Defensive distillation was reported to reduce adversarial-attack success from 95% to 0.5%; Carlini and Wagner's adaptive attacks then succeeded with 100% probability on both distilled and undistilled networks — the canonical case of a defense invalidated by an attacker that adapted to what the defense actually changed.
+    source: SRC-PAPER-044
+    section_or_page: "arXiv 1608.04644 v2 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; both figures quoted from the abstract, the 95%-to-0.5% as reported there"
+    assumptions: "the abstract faithfully reports both numbers; the 0.5% claim originates with the distillation paper (assigned-pending in the register)"
+    counterevidence: >-
+      none at this access level; the distillation primary source is unverified this build
+    date: 2026-10-22
+
+  - id: CLM-0062
+    claim: >-
+      Croce and Hein's parameter-free attack ensemble, evaluated on more than fifty models from recent top ML and computer vision venues, found lower robust test accuracy than reported in all except one case — often more than 10 percentage points lower — identifying several broken defenses: published robustness numbers were systematically inflated until standardized adversarial evaluation existed.
+    source: SRC-PAPER-047
+    section_or_page: "arXiv 2003.01690 v2 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the >50-model scope, the all-but-one direction, and the >10pp magnitude are abstract-level statements"
+    assumptions: "the abstract faithfully summarizes the audit; per-model tables are consistent with it"
+    counterevidence: >-
+      none at this access level; the one exception model is unnamed in the abstract
+    date: 2026-10-22
+
+  - id: CLM-0063
+    claim: >-
+      BadNets demonstrated training-time backdoors in the model supply chain: a US street-sign classifier identifying stop signs as speed limits under a trigger sticker, an average 25% accuracy drop when the trigger is present, backdoor persistence through retraining for another task, and state-of-the-art clean accuracy — the owner's evaluation cannot see the trigger.
+    source: SRC-PAPER-042
+    section_or_page: "arXiv 1708.06733 v2 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the 25% average drop, persistence claim, and stop-sign use case are abstract-level statements"
+    assumptions: "the abstract faithfully reports the experiments"
+    counterevidence: >-
+      none at this access level; later backdoor literature (unread this build) reports both stronger triggers and stronger defenses
+    date: 2026-10-22
+
+  - id: CLM-0064
+    claim: >-
+      Tramer et al. extracted models with near-perfect fidelity through prediction APIs alone — including logistic regression, neural networks, and decision trees, against BigML and Amazon Machine Learning — with extraction remaining possible when confidence values were withheld: model confidentiality is not a property of model quality.
+    source: SRC-PAPER-043
+    section_or_page: "arXiv 1609.02943 v2 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; near-perfect fidelity, the model classes, the services, and the no-confidence case are abstract-level statements"
+    assumptions: "the abstract faithfully reports the experiments; 'near-perfect fidelity' at the abstract's own qualifier"
+    counterevidence: >-
+      none at this access level; modern APIs with hard rate limits and output rounding raise extraction cost (unread this build)
+    date: 2026-10-22
+
+  - id: CLM-0065
+    claim: >-
+      Shokri et al. showed membership inference against commercial machine-learning-as-a-service models (Google and Amazon named on the abstract) by training inference models to recognize differences in the target's predictions on trained versus untrained records, with a hospital-discharge dataset as the sensitive-membership motivation — overfitting leaks training membership through the API.
+    source: SRC-PAPER-041
+    section_or_page: "arXiv 1610.05820 v2 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the mechanism, the commercial targets, and the hospital-discharge motivation are abstract-level statements"
+    assumptions: "the abstract faithfully reports the evaluation; per-dataset accuracies (unread body) are not cited"
+    counterevidence: >-
+      none at this access level; the abstract itself frames results as vulnerability ('can be vulnerable'), not universal success
+    date: 2026-10-22
+
+  - id: CLM-0066
+    claim: >-
+      Szegedy et al.'s founding observation: an imperceptible perturbation causes misclassification, and the same perturbation transfers to a different network trained on a different subset of the dataset — adversarial examples are a property of the objective's off-sample geometry, not of one model's quirks.
+    source: SRC-PAPER-040
+    section_or_page: "arXiv 1312.6199 v4 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; imperceptibility and cross-network transfer are abstract-level statements without numeric rates"
+    assumptions: "the abstract faithfully reports the observations"
+    counterevidence: >-
+      none at this access level; the linear explanation (Goodfellow et al., SRC-PAPER-046) later reframed the cause without contradicting the observation
+    date: 2026-10-22

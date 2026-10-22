@@ -21,7 +21,7 @@ retained for retraining.** Three adversaries: (a) outside attacker,
 | Family | (a) Outside attacker | (b) Malicious customer | (c) Pretraining provider |
 |---|---|---|---|
 | **Evasion** (inference) | **Active**, black-box, decisions-only: prompt-level evasion against the instruction-following composite (the Ch. 13 object). Text outputs give decision-level signal [SRC-PAPER-043's decision-only case shows decision APIs remain attackable]. | **Active**, same cell plus the strongest oracle any attacker gets: free-form chat feedback = cheap adaptive queries. | Passive beneficiary (does not need it). |
-| **Poisoning** (training) | **Vacuous** unless chats are accepted from non-customers: retained chats are customer-contributed training data, so the outside attacker's route *runs through becoming a customer* (cell (b)). | **Active**, gray-box: each chat is a poisoning candidate at the next retrain; feasibility argument = "retention policy already delivers sample submission to training" (the classic poisoning entry, per the survey's train-time taxonomy [SRC-PAPER-039]). | **Active**, white-box: influenced the *base* model's training, upstream of every fine-tune. |
+| **Poisoning** (training) | **Vacuous** unless chats are accepted from non-customers: retained chats are customer-contributed training data, so the outside attacker's route *runs through becoming a customer* (cell (b)). | **Active**, gray-box: each chat is a poisoning candidate at the next retrain; feasibility argument = "retention policy already delivers sample submission to training" (the classic poisoning entry, per the survey's train-time taxonomy [SRC-PAPER-049]). | **Active**, white-box: influenced the *base* model's training, upstream of every fine-tune. |
 | **Backdoor** (training) | Vacuous (no pipeline access). | Weak form of poisoning (trigger *chats* hoping the retention fine-tune bakes them in) — not BadNets-grade: the attacker does not control labels or loss. | **Active, the canonical cell**: outsourced/remote training is exactly BadNets' supply-chain scenario — clean-accuracy-blind triggers installed before the owner ever saw the weights [SRC-PAPER-042]. |
 | **Extraction** (inference) | **Active but expensive**, decisions-only: distill a behavioral student from transcripts (Tramèr et al. show even confidence-free APIs leak; text-only raises query cost and lowers fidelity) [SRC-PAPER-043]. | Same cell, cheaper (rate limits permitting). | Has the model already — vacuous. |
 | **Membership inference** (inference) | **Degraded**: the classic attack reads calibration/confidence [SRC-PAPER-041]; text-only output removes the easy channel, leaving behavioral leakage (does the model *know* this record verbatim?). | Same, plus one step worse: candidates can be *other customers' issues* — the transcript-leakage reading. | Vacuous for the fine-tune; active for the base model's own training set (not this deployment's cell). |
@@ -36,7 +36,7 @@ inference time). What the deployment already gives it: the retention
 policy *is* sample submission — the attack surface is a documented
 business practice, not an exploit. This is the survey's train-time
 attacker with the data-entry path handed over by default
-[SRC-PAPER-039].
+[SRC-PAPER-049].
 
 **Provider → backdoor.** What the attacker needs: control of the
 pretraining run (label quality, data mix, or trigger installation).

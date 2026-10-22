@@ -1167,3 +1167,171 @@ sources:
     limitations: >-
       Abstract and API metadata verified 2026-10-21; body not read this build. Survey paper: organizes known limits rather than presenting new measurements.
     license: "unknown (arXiv distribution terms; no separate article license in the API record)"
+  - id: SRC-PAPER-040
+    title: "Intriguing properties of neural networks"
+    authors_or_organization: "Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan, Ian Goodfellow, Rob Fergus"
+    url: "https://arxiv.org/abs/1312.6199"
+    source_type: paper
+    publication_date: 2013-12-21
+    version: "v4 per arXiv page (revised 2014-02-19)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "published at ICLR 2014 (venue not verified this build; registered at abstract level only)"
+    supports:
+      - "chapters/12-.../README.md (section 3.2 and readings: the founding adversarial-example observation — imperceptible perturbation causing misclassification, with the same perturbation transferring to networks trained on different subsets of the dataset)"
+    limitations: >-
+      Abstract verified 2026-10-22; the abstract states transfer without numeric rates; body not read this build.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-041
+    title: "Membership Inference Attacks against Machine Learning Models"
+    authors_or_organization: "Reza Shokri, Marco Stronati, Congzheng Song, Vitaly Shmatikov"
+    url: "https://arxiv.org/abs/1610.05820"
+    source_type: paper
+    publication_date: 2016-10-18
+    version: "v2 per arXiv page (revised 2017-03-31)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "published at IEEE S&P 2017 (venue not verified this build; registered at abstract level only)"
+    supports:
+      - "chapters/12-.../README.md (section 3.4 and readings: membership inference by training models to recognize differences in the target's predictions on trained-vs-untrained records; evaluated against commercial MLaaS including Google and Amazon; hospital-discharge dataset as the sensitive-membership motivation)"
+    limitations: >-
+      Abstract verified 2026-10-22; per-dataset accuracy numbers live in the unread full text and are not cited; the shadow-model mechanism is described at abstract level.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-042
+    title: "BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain"
+    authors_or_organization: "Tianyu Gu, Brendan Dolan-Gavitt, Siddharth Garg"
+    url: "https://arxiv.org/abs/1708.06733"
+    source_type: paper
+    publication_date: 2017-08-22
+    version: "v2 per arXiv page (revised 2019-03-11)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint)"
+    supports:
+      - "chapters/12-.../README.md (sections 3.1, 3.3, 5 and readings: the backdoor result — stop signs classified as speed limits under a trigger sticker; 25% average accuracy drop when the trigger is present; backdoor persisting through retraining for another task; state-of-the-art clean accuracy giving the owner no signal)"
+    limitations: >-
+      Abstract verified 2026-10-22; per-experiment trigger rates and the MNIST/traffic-sign splits live in the unread full text.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-043
+    title: "Stealing Machine Learning Models via Prediction APIs"
+    authors_or_organization: "Florian Tramer, Fan Zhang, Ari Juels, Michael K. Reiter, Thomas Ristenpart"
+    url: "https://arxiv.org/abs/1609.02943"
+    source_type: paper
+    publication_date: 2016-09-09
+    version: "v2 per arXiv page (revised 2016-10-03)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "published at USENIX Security 2016 (venue not verified this build; registered at abstract level only)"
+    supports:
+      - "chapters/12-.../README.md (sections 3.1, 3.4, 5 and readings: extraction attacks recovering models with near-perfect fidelity against logistic regression, neural networks, and decision trees; demonstrated against BigML and Amazon Machine Learning online services; attacks remaining possible when confidence values are withheld)"
+    limitations: >-
+      Abstract verified 2026-10-22; per-model query counts and fidelity numbers live in the unread full text; 'near-perfect fidelity' is quoted at the abstract's own qualifier.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-044
+    title: "Towards Evaluating the Robustness of Neural Networks"
+    authors_or_organization: "Nicholas Carlini, David Wagner"
+    url: "https://arxiv.org/abs/1608.04644"
+    source_type: paper
+    publication_date: 2016-08-16
+    version: "v2 per arXiv page (revised 2017-03-22)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "published at IEEE S&P 2017 (venue not verified this build; registered at abstract level only)"
+    supports:
+      - "chapters/12-.../README.md (sections 3.6, 4 and readings: three attack algorithms succeeding with 100% probability on both distilled and undistilled networks; defensive distillation's claimed reduction of attack success from 95% to 0.5% (quoted as reported by this abstract); the high-confidence transfer test breaking distillation)"
+    limitations: >-
+      Abstract verified 2026-10-22; the 95%-to-0.5% figure is Papernot et al.'s distillation claim as quoted in this abstract — the primary distillation paper is assigned-pending, not registered; per-metric distances and confidence parameters live in the unread body.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-045
+    title: "Towards Deep Learning Models Resistant to Adversarial Attacks"
+    authors_or_organization: "Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, Adrian Vladu"
+    url: "https://arxiv.org/abs/1706.06083"
+    source_type: paper
+    publication_date: 2017-06-19
+    version: "v4 per arXiv page (revised 2019-09-04)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "published at ICLR 2018 (venue not verified this build; registered at abstract level only)"
+    supports:
+      - "chapters/12-.../README.md (section 3.5 and readings: the first-order-adversary framing — security against an attacker equipped with first-order information as a natural and broad guarantee; training methods with significantly improved resistance to a wide range of attacks; code and pretrained models available)"
+    limitations: >-
+      Abstract verified 2026-10-22; MNIST/CIFAR robust-accuracy percentages live in the unread body and are deliberately NOT cited in the chapter; the guarantee's attacker-class conditioning is stated at abstract level.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-046
+    title: "Explaining and Harnessing Adversarial Examples"
+    authors_or_organization: "Ian J. Goodfellow, Jonathon Shlens, Christian Szegedy"
+    url: "https://arxiv.org/abs/1412.6572"
+    source_type: paper
+    publication_date: 2014-12-20
+    version: "v3 per arXiv page (revised 2015-03-20)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "published at ICLR 2015 (venue not verified this build; registered at abstract level only)"
+    supports:
+      - "chapters/12-.../README.md (section 3.2 and readings: the linear explanation of adversarial vulnerability; the single-step attack method; adversarial training reducing the maxout network's test-set error on adversarial examples)"
+    limitations: >-
+      Abstract verified 2026-10-22; the FGSM name and the error-rate numbers live in the unread body; the abstract states the reduction without the value, and the chapter quotes it at exactly that level.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-047
+    title: "Reliable evaluation of adversarial robustness with an ensemble of diverse parameter-free attacks"
+    authors_or_organization: "Francesco Croce, Matthias Hein"
+    url: "https://arxiv.org/abs/2003.01690"
+    source_type: paper
+    publication_date: 2020-03-03
+    version: "v2 per arXiv page (revised 2020-08-04)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; later venue not verified this build)"
+    supports:
+      - "chapters/12-.../README.md (sections 3.6, 3.7, 4 and readings: the parameter-free attack ensemble evaluated on more than 50 models from recent top ML and computer vision venues; in all except one case lower robust test accuracy than reported, often by more than 10 percentage points; several broken defenses identified)"
+    limitations: >-
+      Abstract verified 2026-10-22; the ensemble's constituent attacks (named in the body) and per-model tables live in the unread full text; 'often by more than 10%' is quoted at the abstract's qualifier.
+
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-048
+    title: "On Evaluating Adversarial Robustness"
+    authors_or_organization: "Nicholas Carlini, Anish Athalye, Nicolas Papernot, Wieland Brendel, Jonas Rauber, Dimitris Tsipras, Ian Goodfellow, Aleksander Madry, Alexey Kurakin"
+    url: "https://arxiv.org/abs/1902.06705"
+    source_type: paper
+    publication_date: 2019-02-18
+    version: "v2 per arXiv page (revised 2019-02-20)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint)"
+    supports:
+      - "chapters/12-.../README.md (sections 3.6, 3.7, 4 and readings: correctly evaluating defenses has proven extremely difficult; most proposed defenses quickly shown incorrect; methodological foundations, accepted best practices, and new evaluation methods to avoid known pitfalls — the chapter's adaptive-evaluation discipline in primary form)"
+    limitations: >-
+      Abstract verified 2026-10-22; the enumerated guidelines and obfuscated-gradients discussion live in the unread body; the chapter cites the paper's agreement-level claim at abstract level.
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-049
+    title: "Wild Patterns: Ten Years After the Rise of Adversarial Machine Learning"
+    authors_or_organization: "Battista Biggio, Fabio Roli"
+    url: "https://arxiv.org/abs/1712.03141"
+    source_type: paper
+    publication_date: 2017-12-08
+    version: "v2 per arXiv page (revised 2018-07-19)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv survey)"
+    supports:
+      - "chapters/12-adversarial-ml-and-robustness/README.md (section 3.1 and readings: the ten-year survey organizing threat models and attacks at training vs test time, with security-evaluation misconceptions as first-class content — the chapter's map)"
+    limitations: >-
+      Abstract and page metadata verified 2026-10-22; body not read this build; the survey's per-attack quantitative details live in the unread full text.
+    license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"

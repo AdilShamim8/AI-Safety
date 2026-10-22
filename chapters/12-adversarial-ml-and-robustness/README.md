@@ -137,7 +137,7 @@ years of adversarial ML from the first poisoning and evasion work
 against non-deep classifiers through the deep-learning era, organized
 around exactly these threat-model distinctions, with the security
 evaluation misconceptions called out as first-class content
-[SRC-PAPER-039].
+[SRC-PAPER-049].
 
 ### 3.2 Evasion: imperceptible perturbation and the adversary's optimization
 
@@ -173,7 +173,7 @@ evasion against a classifier whose inputs the adversary writes.
 
 Poisoning: the attacker contributes training data chosen so the learned
 boundary bends to its advantage — the classic pre-deep-learning form
-Biggio and Roli trace to the field's beginnings [SRC-PAPER-039].
+Biggio and Roli trace to the field's beginnings [SRC-PAPER-049].
 
 Backdoors are the sharp modern form: a trigger pattern installed at
 training time that maps trigger-bearing inputs to attacker-chosen
@@ -393,7 +393,7 @@ because it is the minimum a deployment decision can actually consume.
 | Family | Phase | Attacker knowledge needed | Exploits | Canonical evidence | What a defense claim must survive |
 |---|---|---|---|---|---|
 | Evasion | inference | black-box (transfer) to white-box | off-sample geometry of the objective | Szegedy et al. transfer [SRC-PAPER-040]; C&W 100% vs distillation's claimed 0.5% [SRC-PAPER-044] | adaptive attack at the deployment's perturbation budget, interval-bounded |
-| Poisoning | training | influence over training data | the learning process as the attack surface | surveyed in Biggio–Roli [SRC-PAPER-039] | provenance-controlled data + attack-specific audit |
+| Poisoning | training | influence over training data | the learning process as the attack surface | surveyed in Biggio–Roli [SRC-PAPER-049] | provenance-controlled data + attack-specific audit |
 | Backdoor | training | training pipeline access (outsourcing, supply chain) | clean-accuracy-blind triggers | BadNets: 25% avg drop under trigger; persists retraining [SRC-PAPER-042] | trigger-search audit + provenance chain (Ch. 16) |
 | Extraction | inference | API access (scores or decisions) | queries as labels for a student model | near-perfect fidelity vs BigML/Amazon [SRC-PAPER-043] | query-budget + fidelity-vs-queries curve, audited |
 | Membership inference | inference | API access + candidate records | overfitting leakage | Shokri et al. vs commercial MLaaS [SRC-PAPER-041] | member/non-member benchmarks with baselines and intervals |
@@ -447,7 +447,7 @@ All ten sources are register-verified at the stated access level
 Read in this order.
 
 1. **Biggio & Roli, "Wild Patterns: Ten Years After the Rise of
-   Adversarial Machine Learning"** [SRC-PAPER-039] — *first*: the map.
+   Adversarial Machine Learning"** [SRC-PAPER-049] — *first*: the map.
    Threat models, the train/test-time split, the security-evaluation
    misconceptions. Read the abstract and taxonomy sections; the survey
    is the chapter's spine.

@@ -173,7 +173,7 @@ chapters:
     title: "Adversarial ML and robustness"
     path: "chapters/12-adversarial-ml-and-robustness/"
     phase: F
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Distinguish evasion, poisoning, backdoors, extraction, membership inference, model inversion"
       - "Compare attacker knowledge levels and adaptive evaluation"
@@ -182,7 +182,7 @@ chapters:
     project_ids: []
     assessments: ["threat-model comparison table"]
     source_ids: []
-    verified_on: null
+    verified_on: 2026-10-22
   - id: "13"
     title: "LLM application security"
     path: "chapters/13-llm-application-security/"
