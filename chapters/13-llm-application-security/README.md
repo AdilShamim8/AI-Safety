@@ -26,7 +26,7 @@ pathway this chapter instruments:
    text, not an operating system over channels. This is the structural
    fact the whole chapter turns on — stated formally in the
    instruction-hierarchy framing: current LLMs treat system prompts
-   and untrusted user inputs with the same priority [SRC-PAPER-051].
+   and untrusted user inputs with the same priority [SRC-PAPER-052].
 3. **The attacker writes text that the model follows.** Direct
    injection (the attacker is the user) or indirect injection (the
    attacker plants text in data the application retrieves) — Greshake
@@ -35,7 +35,7 @@ pathway this chapter instruments:
    prompts into data likely to be retrieved, demonstrated against
    real-world systems including Bing's GPT-4-powered chat and
    code-completion engines, with impact classes spanning data theft,
-   worming, and information-ecosystem contamination [SRC-PAPER-049].
+   worming, and information-ecosystem contamination [SRC-PAPER-050].
 4. **The application executes the consequence.** The model emits a
    tool call, a link, a code snippet, a summary that the downstream
    component trusts — and the *output handling* is where injection
@@ -59,12 +59,12 @@ adaptive-evaluation discipline; Chapter 02's interval arithmetic.
 
 - distinguish direct from indirect injection and name the impact
   taxonomy of the latter with its canonical demonstration
-  [SRC-PAPER-049];
+  [SRC-PAPER-050];
 - explain why prompt-level defenses ("ignore instructions inside the
   data") fail as a *category*, and what the two families of real
   defenses look like — training-time privilege separation
-  [SRC-PAPER-051] and architecture-time provenance marking
-  [SRC-PAPER-052] — each with its measured effect and its limits;
+  [SRC-PAPER-052] and architecture-time provenance marking
+  [SRC-PAPER-053] — each with its measured effect and its limits;
 - map any LLM application failure onto the OWASP LLM Top 10 entries it
   realizes (LLM01, LLM05, LLM06, LLM08 in this chapter's scope)
   [SRC-REPORT-004];
@@ -99,7 +99,7 @@ GPT-3: goal hijacking (the model abandons the application's task for
 the attacker's) and prompt leaking (the model emits its own system
 prompt), achieved with simple handcrafted inputs and framed as a
 long-tail risk from low-aptitude but ill-intentioned agents
-[SRC-PAPER-050]. The attack class exists because the application
+[SRC-PAPER-051]. The attack class exists because the application
 layered intent (the system prompt) and content (the user message) into
 one channel the model reads as one.
 
@@ -114,7 +114,7 @@ arbitrary instructions, manipulating application functionality,
 controlling whether and how other APIs are called, and the taxonomy
 classes data theft, worming (self-propagating injection through the
 application's own outputs), and information-ecosystem contamination
-[SRC-PAPER-049].
+[SRC-PAPER-050].
 
 The security-theoretic statement of the channel problem: the
 application constructs a single instruction stream from sources with
@@ -166,7 +166,7 @@ lower-privileged instructions. Wallace et al. report that applied to
 GPT-3.5 it significantly increases robustness against prompt
 injections and jailbreaks, *including types of attacks not seen during
 training*, with minimal degradation of standard capabilities
-[SRC-PAPER-051].
+[SRC-PAPER-052].
 
 What to hold onto: the defense changes the model's *prior* over
 channels — it is still behavior, not mechanism. The paper's own framing
@@ -184,7 +184,7 @@ provenance — delimiters, marking, and encoding variants — so "this is
 data" stops being an instruction the model must choose to obey and
 becomes a property of the text's form. Reported effect: attack success
 rate reduced from greater than 50% to below 2% on GPT-family models,
-with minimal task-efficacy impact [SRC-PAPER-052].
+with minimal task-efficacy impact [SRC-PAPER-053].
 
 **Output handling as the real boundary** (OWASP LLM05): treat model
 output as untrusted program input — validate, sanitize, and encode at
@@ -208,7 +208,7 @@ toward). P07 and Ch. 14 develop the agentic version of this principle.
 Retrieval-augmented generation widens the injection surface in three
 specific ways: (1) the corpus is adversary-writable (a public web page
 is a *published* injection into every chatbot that browses or indexes
-it — Greshake et al.'s worming class [SRC-PAPER-049]); (2) the
+it — Greshake et al.'s worming class [SRC-PAPER-050]); (2) the
 embedding layer is a trust boundary people forget — poisoned or
 gamed embeddings steer what gets retrieved (OWASP's LLM08 entry
 [SRC-REPORT-004], with Ch. 12's poisoning grid behind it); (3) the
@@ -226,11 +226,11 @@ failures map onto:
 | OWASP entry | This chapter's realization |
 |---|---|
 | LLM01 Prompt Injection | The whole chapter; direct (3.1) and indirect (3.1) |
-| LLM02 Sensitive Information Disclosure | Prompt leaking [SRC-PAPER-050]; retrieval of poisoned secrets |
+| LLM02 Sensitive Information Disclosure | Prompt leaking [SRC-PAPER-051]; retrieval of poisoned secrets |
 | LLM04 Data and Model Poisoning | Ch. 12's training-time families, RAG corpus edition |
 | LLM05 Improper Output Handling | The blast-radius boundary (3.4) |
 | LLM06 Excessive Agency | Tool scope the injected instruction can reach (section 4's diagram) |
-| LLM07 System Prompt Leakage | The prompt-leaking class [SRC-PAPER-050] |
+| LLM07 System Prompt Leakage | The prompt-leaking class [SRC-PAPER-051] |
 | LLM08 Vector and Embedding Weaknesses | The retrieval attack surface (3.5) |
 
 The mapping is the *audit vocabulary*, not the fix: saying "that's an
@@ -266,7 +266,7 @@ lookup: injected instructions can steer lookups *of other users' data
 into the answer* — LLM02 disclosure.
 
 **Step 3 — price the defense claims with intervals.** The team
-deploys spotlighting on retrieved content [SRC-PAPER-052]. The
+deploys spotlighting on retrieved content [SRC-PAPER-053]. The
 vendor-era headline "50% → 2%" is an *audit-shaped* claim — run the
 course's arithmetic on a 100-attempt validation: 50/100 successes
 gives Wilson 95% **[40.4%, 59.6%]**; 2/100 gives **[0.6%, 7.0%]**. The
@@ -282,7 +282,7 @@ output-handling gap, which need their own cells.
 **Step 4 — the residual-risk statement.** After spotlighting:
 residual injection probability bounded (per the interval) through the
 retrieved channel; unbounded by evidence through the direct channel
-(no hierarchy training deployed — [SRC-PAPER-051] is the known
+(no hierarchy training deployed — [SRC-PAPER-052] is the known
 mitigation and its absence is a fact); output handling not yet
 implemented (the link validation is the *next* audit). The deployed
 blast radius: refund tool still reachable by any successful
@@ -302,8 +302,8 @@ exists to produce, and P07's code implements its audit loop.
 | Posture | What it does | Measured effect | Limits (stated by the evidence) |
 |---|---|---|---|
 | Prompt-level instruction ("ignore data instructions") | Moves the model's prior over channels | Not a security claim; Ch. 12's adaptive rule applies | Same-channel as the attack; optimization pressure defeats it [SRC-PAPER-004] |
-| Instruction hierarchy (training) | Teaches privilege levels; ignores lower-priority instructions | Significant robustness gains on GPT-3.5 incl. unseen attack types, minimal capability cost [SRC-PAPER-051] | Still behavior, not mechanism; robustness framing, adaptive pressure is the open condition |
-| Spotlighting (provenance marking) | Marks untrusted data by transformation | ASR >50% → <2% (GPT-family; task efficacy minimally affected) [SRC-PAPER-052] | Channel-specific; interval-bounded, audit-attack-set-relative |
+| Instruction hierarchy (training) | Teaches privilege levels; ignores lower-priority instructions | Significant robustness gains on GPT-3.5 incl. unseen attack types, minimal capability cost [SRC-PAPER-052] | Still behavior, not mechanism; robustness framing, adaptive pressure is the open condition |
+| Spotlighting (provenance marking) | Marks untrusted data by transformation | ASR >50% → <2% (GPT-family; task efficacy minimally affected) [SRC-PAPER-053] | Channel-specific; interval-bounded, audit-attack-set-relative |
 | Output handling (the boundary) | Validates model output at every consumer | Decades of injection-defense engineering applied to LLM outputs [SRC-REPORT-004] | Needs enumeration of every consumer; misses disclosure-shaped harms that stay in text |
 | Capability separation (architecture) | Privilege in control flow, not context | The design direction (assigned-pending: CaMeL) | Engineering cost; changes the application's shape |
 
@@ -348,12 +348,12 @@ Register-verified at the stated access levels (per
 
 1. **Greshake et al., "Not what you've signed up for: Compromising
    Real-World LLM-Integrated Applications with Indirect Prompt
-   Injection"** [SRC-PAPER-049] — the indirect-injection paper:
+   Injection"** [SRC-PAPER-050] — the indirect-injection paper:
    the taxonomy (data theft, worming, ecosystem contamination), the
    real-world demonstrations (Bing's GPT-4 chat, code-completion
    engines). The chapter's threat model in primary form.
 2. **Perez & Ribeiro, "Ignore Previous Prompt: Attack Techniques For
-   Language Models"** [SRC-PAPER-050] — the first systematic
+   Language Models"** [SRC-PAPER-051] — the first systematic
    direct-injection treatment: goal hijacking and prompt leaking
    against production GPT-3.
 3. **Zou et al., "Universal and Transferable Adversarial Attacks on
@@ -362,11 +362,11 @@ Register-verified at the stated access levels (per
    pressure on instruction-following (the reason prompts-as-defense
    cannot be a boundary).
 4. **Wallace et al., "The Instruction Hierarchy: Training LLMs to
-   Prioritize Privileged Instructions"** [SRC-PAPER-051] — the
+   Prioritize Privileged Instructions"** [SRC-PAPER-052] — the
    training-time privilege-separation family with its honest
    robustness framing.
 5. **Hines et al., "Defending Against Indirect Prompt Injection
-   Attacks With Spotlighting"** [SRC-PAPER-052] — the
+   Attacks With Spotlighting"** [SRC-PAPER-053] — the
    provenance-marking family; the >50% → <2% ASR reduction that
    section 4 prices with intervals.
 6. **OWASP GenAI Security Project, "Top 10 for LLM Applications
@@ -406,7 +406,7 @@ anything an actual adversary would run, and what stopping rule
 (decide in advance) separates "bounded under adaptive attack" from
 "failed"? (c) The vendor's *next* claim is "our instruction-hierarchy
 fine-tune beats the base model on injection robustness including
-unseen attacks" [SRC-PAPER-051]: design the paired evaluation that
+unseen attacks" [SRC-PAPER-052]: design the paired evaluation that
 would make that claim falsifiable — arms, denominators, the interval
 rule, and the non-claims. (d) Compute the actual verdicts for: 2/100
 vs a base-model 52/100; and a hierarchy-fine-tune at 8/200 vs base
@@ -434,15 +434,15 @@ This chapter is complete when you can:
 
 - [ ] explain the channel problem precisely — why privilege
       delegation to the next-token distribution is the structural
-      fact [SRC-PAPER-051], not a prompt-writing deficiency;
+      fact [SRC-PAPER-052], not a prompt-writing deficiency;
 - [ ] reproduce the indirect-injection impact taxonomy with its
-      canonical demonstration [SRC-PAPER-049] and the two
-      direct-injection classes [SRC-PAPER-050];
+      canonical demonstration [SRC-PAPER-050] and the two
+      direct-injection classes [SRC-PAPER-051];
 - [ ] argue why prompts-as-defense fails as a category (same-channel,
       optimization-defeatable, irreducible ambiguity) with the
       optimized-suffix evidence [SRC-PAPER-004];
 - [ ] name both real defense families with their measured effects and
-      stated limits [SRC-PAPER-051] [SRC-PAPER-052] and the
+      stated limits [SRC-PAPER-052] [SRC-PAPER-053] and the
       output-handling boundary [SRC-REPORT-004];
 - [ ] draw the trust-boundary diagram for a RAG+tools deployment,
       map failures to OWASP entries, and price defense claims with

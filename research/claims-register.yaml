@@ -792,3 +792,46 @@ claims:
     counterevidence: >-
       none at this access level; the linear explanation (Goodfellow et al., SRC-PAPER-046) later reframed the cause without contradicting the observation
     date: 2026-10-22
+  - id: CLM-0067
+    claim: >-
+      Indirect prompt injection enables remote exploitation of LLM-integrated applications by strategically injecting prompts into data likely to be retrieved, demonstrated against real-world systems including Bing's GPT-4-powered Chat and code-completion engines, with an impact taxonomy including data theft, worming, and information-ecosystem contamination.
+    source: SRC-PAPER-050
+    section_or_page: "arXiv 2302.12173 v2 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; all named systems and taxonomy classes are abstract-level statements"
+    assumptions: "the abstract faithfully reports the demonstrations"
+    counterevidence: >-
+      none at this access level; the demonstrations date to the 2023 application generation and specific integrations have since changed
+    date: 2026-10-22
+
+  - id: CLM-0068
+    claim: >-
+      Goal hijacking and prompt leaking are direct-injection attack classes demonstrated against production GPT-3 with simple handcrafted inputs — the application's intent and the user's content share one channel, and the model's compliance is attackable text all the way down.
+    source: SRC-PAPER-051
+    section_or_page: "arXiv 2211.09527 v1 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; both attack classes are named in the abstract without per-attack rates"
+    assumptions: "the abstract faithfully reports the attack classes"
+    counterevidence: >-
+      none at this access level
+    date: 2026-10-22
+
+  - id: CLM-0069
+    claim: >-
+      An instruction hierarchy trained into GPT-3.5 via generated priority-conflict data significantly increases robustness against prompt injections and jailbreaks, including attack types not seen during training, with minimal degradation of standard capabilities — a training-time prior over channels, explicitly framed as robustness rather than prevention.
+    source: SRC-PAPER-052
+    section_or_page: "arXiv 2404.13208 v1 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; the robustness-including-unseen and minimal-degradation claims are abstract-level"
+    assumptions: "the abstract faithfully reports the evaluation; 'significantly' and 'minimal' at the authors' qualifiers"
+    counterevidence: >-
+      optimized-suffix pressure (SRC-PAPER-004) is the adaptive condition the abstract does not claim to have survived at arbitrary budget
+    date: 2026-10-22
+
+  - id: CLM-0070
+    claim: >-
+      Spotlighting — transformations of untrusted input that provide a reliable continuous provenance signal — reduces indirect-injection attack success from greater than 50% to below 2% on GPT-family models with minimal task-efficacy impact: the channel becomes marked by form rather than by instruction.
+    source: SRC-PAPER-053
+    section_or_page: "arXiv 2403.14720 v1 abstract (fetched 2026-10-22)"
+    evidence_strength: "abstract-read; both rate figures are abstract-level statements over the paper's attack set"
+    assumptions: "the abstract faithfully reports the experiments; 'below 2%' is bounded, not proven — the chapter prices it as [0.6%, 7.0%] at n=100"
+    counterevidence: >-
+      optimized adaptive attackers and non-retrieval channels are outside the claim's measured scope (the chapter's section 4 and exercise 13.2 discipline)
+    date: 2026-10-22

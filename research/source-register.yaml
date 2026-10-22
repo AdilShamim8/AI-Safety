@@ -1335,3 +1335,87 @@ sources:
     limitations: >-
       Abstract and page metadata verified 2026-10-22; body not read this build; the survey's per-attack quantitative details live in the unread full text.
     license: "unknown (arXiv distribution terms; no separate article license stated on the abstract page)"
+  - id: SRC-PAPER-050
+    title: "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"
+    authors_or_organization: "Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, Mario Fritz"
+    url: "https://arxiv.org/abs/2302.12173"
+    source_type: paper
+    publication_date: 2023-02-23
+    version: "v2 per arXiv page (revised 2023-05-05)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; later ACM AISec venue not verified this build)"
+    supports:
+      - "chapters/13-llm-application-security/README.md (sections 1, 3.1, 3.5 and readings: indirect prompt injection enabling remote exploitation of LLM-integrated applications by strategically injecting prompts into data likely to be retrieved; demonstrations against real-world systems including Bing's GPT-4-powered Chat and code-completion engines; impact taxonomy including data theft, worming, and information-ecosystem contamination)"
+    limitations: >-
+      Abstract verified 2026-10-22; no numeric success rates appear in the abstract and none are cited; per-application attack details live in the unread full text.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-051
+    title: "Ignore Previous Prompt: Attack Techniques For Language Models"
+    authors_or_organization: "Fabio Perez, Ian Ribeiro"
+    url: "https://arxiv.org/abs/2211.09527"
+    source_type: paper
+    publication_date: 2022-11-17
+    version: "v1 per arXiv page (only version)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint)"
+    supports:
+      - "chapters/13-llm-application-security/README.md (section 3.1 and readings: the direct-injection attack classes against production GPT-3 — goal hijacking and prompt leaking — achieved with simple handcrafted inputs; the long-tail risk framing from low-aptitude but ill-intentioned agents)"
+    limitations: >-
+      Abstract verified 2026-10-22; role confusion and per-attack success rates live in the unread body and are not cited; the abstract names exactly two attack classes.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-052
+    title: "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions"
+    authors_or_organization: "Eric Wallace, Kai Xiao, Reimar Leike, Lilian Weng, Johannes Heidecke, Alex Beutel"
+    url: "https://arxiv.org/abs/2404.13208"
+    source_type: paper
+    publication_date: 2024-04-19
+    version: "v1 per arXiv page (only version)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint)"
+    supports:
+      - "chapters/13-llm-application-security/README.md (sections 1, 3.3, 5 and readings: current LLMs treating system prompts and untrusted user inputs with the same priority; the instruction hierarchy with a data generation method teaching models to selectively ignore lower-privileged instructions; applied to GPT-3.5, significantly increased robustness against attacks including types not seen during training, with minimal degradation of standard capabilities)"
+    limitations: >-
+      Abstract verified 2026-10-22; per-benchmark robustness numbers live in the unread body; 'significantly increases' and 'minimal degradation' are quoted at the abstract's own qualifiers.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-053
+    title: "Defending Against Indirect Prompt Injection Attacks With Spotlighting"
+    authors_or_organization: "Keegan Hines, Gary Lopez, Matthew Hall, Federico Zarfati, Yonatan Zunger, Emre Kiciman"
+    url: "https://arxiv.org/abs/2403.14720"
+    source_type: paper
+    publication_date: 2024-03-20
+    version: "v1 per arXiv page (only version)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint)"
+    supports:
+      - "chapters/13-llm-application-security/README.md (sections 3.4, 4, 5 and readings: the spotlighting family of prompt engineering transformations giving a reliable continuous provenance signal for untrusted input; attack success rate reduced from greater than 50% to below 2% on GPT-family models with minimal task-efficacy impact)"
+    limitations: >-
+      Abstract verified 2026-10-22; the >50%-to-<2% figures are abstract-level statements over the paper's attack set; per-technique (delimiter/marking/encoding) breakdowns live in the unread body.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-REPORT-004
+    title: "OWASP Top 10 for LLM Applications 2025"
+    authors_or_organization: "OWASP GenAI Security Project"
+    url: "https://genai.owasp.org/llm-top-10/"
+    source_type: web-report
+    publication_date: null
+    version: "2025 list page (fetched 2026-10-22)"
+    accessed_on: 2026-10-22
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "community consensus list (OWASP project; not peer review in the academic sense)"
+    supports:
+      - "chapters/13-llm-application-security/README.md (sections 3.4, 3.6 and readings: the ten-entry deployment vocabulary — LLM01 Prompt Injection, LLM02 Sensitive Information Disclosure, LLM03 Supply Chain, LLM04 Data and Model Poisoning, LLM05 Improper Output Handling, LLM06 Excessive Agency, LLM07 System Prompt Leakage, LLM08 Vector and Embedding Weaknesses, LLM09 Misinformation, LLM10 Unbounded Consumption)"
+    limitations: >-
+      Page inspected 2026-10-22; the page lists document versions dated between April 2024 and July 2025 without a single stated release date for the 2025 list; entry descriptions quoted at summary level only.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"

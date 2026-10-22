@@ -41,13 +41,15 @@ as the work it describes. On session start, read this file, then
 
 | **Chapter 12 complete** — ten-element structure: four-station failure pathway (proxy -> adversarial optimization -> deployment transfer -> measurement miss); attacker-knowledge grid (decisions/scores/gray/white-box x train/inference) with per-cell feasibility burdens; five canonical families with founding evidence (Szegedy transfer, Goodfellow linear explanation, BadNets 25%-drop trigger with retraining persistence, Tramer near-perfect-fidelity extraction incl. decision-only APIs, Shokri membership inference vs commercial MLaaS); Madry first-order-adversary defense framing; the two canonical defense-evaluation failures (Carlini-Wagner 100% vs distillation's claimed 0.5%; Croce-Hein 50+ model audit with all-but-one overestimated, often >10pp); worked example = end-to-end preregistered adaptive audit with recomputed arithmetic (0.995^n stopping table, Wilson [96.3%, 100%] on 100/100, exact McNemar p=2.8e-7 one-sided on 75/25 discordant pairs); 2 exercises + full solutions with rubrics incl. the 15-cell deployment grid and the audit design with sensitivity table; GLOSSARY +9 terms; registers +10 sources (SRC-PAPER-040..049, all abstract-read verified 2026-10-22; the 039 slot belongs to ch11's Belinkov survey — collision caught and resolved) and +6 claims (CLM-0061..0066) | this commit | validator + 228-test suite green | |
 
+| **Chapter 13 complete** — ten-element structure: the composite-application failure pathway (untrusted text into one instruction stream; privilege delegated to the next-token distribution; consequence executed by the application's tools); direct vs indirect injection with the Greshake taxonomy (data theft, worming, ecosystem contamination; Bing-GPT4 and code-completion demonstrations) and Perez-Ribeiro classes (goal hijacking, prompt leaking); why prompts-as-defense fails as a category (same-channel, optimization-defeatable per GCG, irreducible quoted-injection ambiguity); both defense families with measured effects and stated limits (instruction hierarchy incl. unseen-attack robustness on GPT-3.5; spotlighting ASR >50% -> <2% priced as [40.4%, 59.6%] vs [0.6%, 7.0%] at n=100); output handling as the blast-radius boundary; RAG attack surface; OWASP LLM Top 10 2025 mapping (LLM01-10 page-verified). Worked example: trust-boundary audit of a support RAG bot (four channels, three impact classes, priced claims, non-claims). 2 exercises + full solutions with rubrics (tool-result/error/scratchpad channels; the 'under 2%' pricing discipline with sign-test p=1.5e-4); GLOSSARY +8 terms; registers +5 sources (SRC-PAPER-050..053 abstract-read + SRC-REPORT-004 page-inspected) and +4 claims (CLM-0067..0070); one citation-range collision caught and fixed pre-commit (049 = ch12 Biggio) | this commit | validator + 228-test suite green | |
+
 ## Current phase
 
-Phase F (applications arc) underway: P02 done, chapter 12 done (12/24 chapters, 2/10 projects); next is chapter 13 (LLM application security), then chapter 14 + P07 (injection defense).
+Phase F (applications arc) underway: P02, ch12, ch13 done (13/24 chapters, 2/10 projects); next is chapter 14 (agent, tool, memory, MCP security), then P07 (injection defense).
 
 ## Curriculum completion counters (truthful)
 
-- Chapters complete: 12 / 24
+- Chapters complete: 13 / 24
 - Dataset cards complete: 13 verified cards in the catalog
 - Projects complete: 2 / 10
 - Paper notes complete: 0 / 20 required minimum

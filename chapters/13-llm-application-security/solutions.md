@@ -134,7 +134,7 @@ section 6 discipline).
 
 ### (c) The paired evaluation for the hierarchy-fine-tune claim
 
-The claim [SRC-PAPER-051's shape]: "our instruction-hierarchy
+The claim [SRC-PAPER-052's shape]: "our instruction-hierarchy
 fine-tune beats the base model on injection robustness including
 unseen attacks." Falsifiable design:
 

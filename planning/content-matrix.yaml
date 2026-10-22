@@ -187,7 +187,7 @@ chapters:
     title: "LLM application security"
     path: "chapters/13-llm-application-security/"
     phase: F
-    maturity: planned
+    maturity: complete
     outcomes:
       - "Map direct/indirect prompt injection to trust boundaries and output handling"
       - "Explain retrieval risks and secret exposure"
@@ -196,7 +196,7 @@ chapters:
     project_ids: ["P07"]
     assessments: ["injection-to-framework mapping exercise"]
     source_ids: []
-    verified_on: null
+    verified_on: 2026-10-22
   - id: "14"
     title: "Agent, tool, memory, and MCP security"
     path: "chapters/14-agent-tool-memory-and-mcp-security/"

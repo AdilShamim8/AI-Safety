@@ -21,7 +21,8 @@ catalog with prerequisites and artifacts is
 | 10 | Sparse features, circuits, and interpretability evaluation | [10-sparse-features-circuits-and-interpretability-evaluation](10-sparse-features-circuits-and-interpretability-evaluation/) — **complete** |
 | 11 | Behavioral steering and representation interventions | [11-behavioral-steering-and-representation-interventions](11-behavioral-steering-and-representation-interventions/) — **complete** |
 | 12 | Adversarial ML and robustness | [12-adversarial-ml-and-robustness](12-adversarial-ml-and-robustness/) — **complete** |
-| 13–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases F–H)* |
+| 13 | LLM application security | [13-llm-application-security](13-llm-application-security/) — **complete** |
+| 14–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases F–H)* |
 
 Chapters appear here as they are completed — this index never links to a
 chapter that does not exist yet.
