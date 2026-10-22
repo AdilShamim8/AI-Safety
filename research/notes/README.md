@@ -18,7 +18,22 @@ full-text-read sources; abstract-level entries say so, per the
 | 08 | [Spotlighting](08-spotlighting.md) | SRC-PAPER-053 | abstract-level |
 | 09 | [The Instruction Hierarchy](09-instruction-hierarchy.md) | SRC-PAPER-052 | abstract-level |
 | 10 | [Weak-to-Strong Generalization](10-weak-to-strong.md) | SRC-PAPER-013 | abstract-level |
+| 11 | [Language Models (Mostly) Know What They Know](11-models-know-what-they-know.md) | SRC-PAPER-016 | abstract-level |
+| 12 | [Alignment Faking in Large Language Models](12-alignment-faking.md) | SRC-PAPER-020 | abstract-level |
+| 13 | [BadNets](13-badnets.md) | SRC-PAPER-042 | abstract-level |
+| 14 | [Stealing Machine Learning Models via Prediction APIs](14-model-extraction.md) | SRC-PAPER-043 | abstract-level |
+| 15 | [Membership Inference Attacks](15-membership-inference.md) | SRC-PAPER-041 | abstract-level |
+| 16 | [Faithfulness vs. Plausibility](16-faithfulness-vs-plausibility.md) | SRC-PAPER-034 | abstract-level (position paper) |
+| 17 | [A Mathematical Framework for Transformer Circuits](17-transformer-circuits-framework.md) | SRC-PAPER-025 | method-level (full-text-read) |
+| 18 | [Towards Monosemanticity](18-towards-monosemanticity.md) | SRC-PAPER-030 | method-level (full-text-read) |
+| 19 | [Wild Patterns: Ten Years of Adversarial ML](19-wild-patterns-survey.md) | SRC-PAPER-049 | abstract-level |
+| 20 | [Madry et al.: Adversarial Training](20-madry-adversarial-training.md) | SRC-PAPER-045 | abstract-level |
 
-Notes appear here as they are completed; the build target is 20
-minimum ([planning/STATUS.md](../../planning/STATUS.md) counts
-truthfully).
+**Build target met: 20/20 notes** (7 method-level from full-text-read
+sources, 13 abstract-level honestly labeled — including one
+position-paper-form entry). Every note carries: the actual problem,
+method, central evidence with non-claims, tested-vs-inherited
+assumptions, limitations (authors' and the note-author's), nearest
+alternatives, replication feasibility at course scale, a falsifiable
+extension with stopping rule, and interpretation kept separate from
+the sources' claims.
