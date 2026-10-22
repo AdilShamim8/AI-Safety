@@ -382,7 +382,9 @@ class Tensor:
             and self.ndim > 0
             and all(isinstance(a, int) and not isinstance(a, bool) for a in axes)
         ):
-            flat = self._flat_index(tuple(_norm_axis(a, self.ndim) for a in axes))
+            flat = self._flat_index(
+                tuple(_norm_index(a, self.shape[d]) for d, a in enumerate(axes))
+            )
             return self.data[flat]
         # mixed ints/slices: build the sub-tensor
         cur_shape = list(self.shape)
@@ -396,7 +398,7 @@ class Tensor:
                 normalized.append(rng)
                 out_shape.append(len(rng))
             else:
-                normalized.append(_norm_axis(int(a), self.ndim))
+                normalized.append(_norm_index(int(a), cur_shape[d]))
         out_shape.extend(cur_shape[len(axes) :])
         for idx in _iter_indices(tuple(out_shape)):
             # map out index -> in index
@@ -627,6 +629,14 @@ def _norm_axis(axis: int, ndim: int) -> int:
     if not 0 <= a < ndim:
         raise ShapeError(f"axis {axis} out of range for {ndim}-D tensor")
     return a
+
+
+def _norm_index(idx: int, size: int) -> int:
+    """Normalize an index against one axis's length (negatives count from the end)."""
+    i = idx + size if idx < 0 else idx
+    if not 0 <= i < size:
+        raise ShapeError(f"index {idx} out of bounds for axis of size {size}")
+    return i
 
 
 def _iter_indices(shape: tuple[int, ...]) -> list[tuple[int, ...]]:

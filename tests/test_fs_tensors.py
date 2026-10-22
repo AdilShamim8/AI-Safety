@@ -275,6 +275,29 @@ def test_full_int_indexing_returns_float() -> None:
     assert t[-1, -1] == 4.0
 
 
+def test_index_beyond_ndim_still_valid() -> None:
+    """Regression: indices are normalized against axis LENGTH, not ndim.
+
+    t[2, 1] on a (3, 3) tensor has index 2 >= ndim 2 but is in bounds;
+    the first implementation wrongly reused axis normalization here.
+    """
+    t = Tensor([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]])
+    assert t[2, 1] == 8.0
+    assert t[:, 2].tolist() == [3.0, 6.0, 9.0]
+    assert t[:, -1].tolist() == [3.0, 6.0, 9.0]
+    assert t[-1].tolist() == [7.0, 8.0, 9.0]
+
+
+def test_index_out_of_bounds_raises() -> None:
+    t = Tensor([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
+    with pytest.raises(ShapeError, match="out of bounds"):
+        _ = t[0, 5]
+    with pytest.raises(ShapeError, match="out of bounds"):
+        _ = t[5, 0]
+    with pytest.raises(ShapeError, match="out of bounds"):
+        _ = t[-3]
+
+
 def test_partial_int_index_returns_row() -> None:
     t = Tensor([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
     row = t[0]
