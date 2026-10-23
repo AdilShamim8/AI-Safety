@@ -1476,3 +1476,47 @@ claims:
     counterevidence: >-
       none observed at this level; the 404 on the canonical page is itself recorded — framework documents move, and this entry's verification trail is weaker than a direct fetch would be
     date: 2026-10-23
+
+  - id: CLM-0149
+    claim: >-
+      Ibrahim et al. (arXiv:2509.08010, 17 authors) argue that measuring and mitigating overreliance — relying on LLMs beyond their capabilities — must become central to LLM research and deployment as LLMs increasingly influence consequential decisions; they consolidate overreliance risks at individual and societal levels including high-stakes errors, governance challenges, and cognitive deskilling; identify LLM characteristics, system design features, and user cognitive biases as jointly raising the concerns; and identify gaps in historical measurement approaches with proposed directions and mitigation strategies.
+    source: SRC-PAPER-096
+    section_or_page: "arXiv abstract page for 2509.08010 v2 (fetched 2026-10-23 via web fetch)"
+    evidence_strength: "abstract-read; the three measurement gaps and per-mitigation detail live in the unread body"
+    assumptions: "the risk consolidation reflects the literature as surveyed"
+    counterevidence: >-
+      none at abstract level; the deskilling claim's longitudinal evidence base is the field's open measurement gap by the paper's own account
+    date: 2026-10-23
+
+  - id: CLM-0150
+    claim: >-
+      Blodgett, Barocas, Daumé, and Wallach (arXiv:2005.14050) survey 146 papers analyzing bias in NLP and find their motivations often vague, inconsistent, and lacking in normative reasoning despite bias analysis being inherently normative, and their proposed quantitative techniques for measuring or mitigating bias poorly matched to their motivations and unengaged with relevant literature outside NLP.
+    source: SRC-PAPER-097
+    section_or_page: "arXiv API abstract for 2005.14050 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the 146-paper corpus and classification scheme live in the unread body"
+    assumptions: "the survey's classification reflects the papers as published"
+    counterevidence: >-
+      none at abstract level; the 2020 corpus predates the LLM era — whether LLM-era bias work improved on the normative discipline is not certified by this source
+    date: 2026-10-23
+
+  - id: CLM-0151
+    claim: >-
+      Kleinberg, Mullainathan, and Raghavan (arXiv:1609.05807) formalize three fairness conditions at the heart of debates about fair probabilistic classification and prove that except in highly constrained special cases no method can satisfy the three conditions simultaneously, with even approximate satisfaction of all three requiring the data's base rates to be equal across groups.
+    source: SRC-PAPER-098
+    section_or_page: "arXiv API abstract for 1609.05807 v2 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the theorem's precise condition statements and proofs live in the unread body"
+    assumptions: "the three conditions as formalized capture the debated notions"
+    counterevidence: >-
+      none at abstract level — an impossibility theorem; the practical escape hatches (equal base rates; relaxing one condition) are the deployment choices the chapter instruments
+    date: 2026-10-23
+
+  - id: CLM-0152
+    claim: >-
+      Hutchinson and Mitchell (arXiv:1811.10104) trace quantitative fairness definitions across education, hiring, and machine-learning testing communities over more than 50 years, finding that earlier definitions in education and hiring testing are similar or identical to modern ML definitions, with the cultural and social context of each testing community shaping which definitions emerged when.
+    source: SRC-PAPER-099
+    section_or_page: "arXiv API abstract for 1811.10104 v2 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the per-era historical analysis lives in the unread body"
+    assumptions: "the historical trace reflects the testing literature as cited"
+    counterevidence: >-
+      none at abstract level; the lesson-for-ML specifics are the authors' synthesis, carried as such
+    date: 2026-10-23

@@ -2510,3 +2510,71 @@ sources:
     limitations: >-
       The canonical announcement page returned 404 at fetch 2026-10-23; the framework's structure was verified through OpenAI deployment-safety hub content surfaced via search (the GPT-6 Astra system card's Preparedness section), recorded at this honesty level rather than as a direct page inspection of the 2023 announcement. The Beta publication date (2023-10-06) is from the citation record of a third-party paper, not verified on an OpenAI page — flagged accordingly.
     license: "surfaced page content (corporate policy; quoted at summary level)"
+
+  - id: SRC-PAPER-096
+    title: "Measuring and mitigating overreliance to build human-compatible AI"
+    authors_or_organization: "Lujain Ibrahim, Katherine M. Collins, Sunnie S. Y. Kim, Anka Reuel, Max Lamparth, Kevin Feng, Lama Ahmad, Prajna Soni, Alia El Kattan, Merlin Stein, Siddharth Swaroop, Vishakh Padmakumar, Ilia Sucholutsky, Andrew Strait, Diyi Yang, Q. Vera Liao, Umang Bhatt (17 authors)"
+    url: "https://arxiv.org/abs/2509.08010"
+    source_type: paper
+    publication_date: 2025-09-08
+    version: "v2 (2026-05-20) per arXiv page"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated on the page)"
+    supports:
+      - "chapters/21-sociotechnical-and-systemic-risk/README.md (station 1 and section 3.1: overreliance as relying on LLMs beyond their capabilities, growing as LLMs influence consequential decisions; risks consolidated at individual and societal levels including high-stakes errors, governance challenges, and cognitive deskilling; the joint mechanism of LLM characteristics, system design features, and user cognitive biases; the measurement gaps and proposed directions)"
+    limitations: >-
+      Abstract page fetched 2026-10-23 via web fetch (the arXiv API was rate-limited at that moment — both access routes recorded). The three named measurement gaps and mitigation details live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated on the page)"
+
+  - id: SRC-PAPER-097
+    title: "Language (Technology) is Power: A Critical Survey of 'Bias' in NLP"
+    authors_or_organization: "Su Lin Blodgett, Solon Barocas, Hal Daumé III, Hanna Wallach"
+    url: "https://arxiv.org/abs/2005.14050"
+    source_type: paper
+    publication_date: 2020-05-28
+    version: "updated 2020-05-29 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed at fetched version (arXiv listing; ACL 2020 not verified against proceedings)"
+    supports:
+      - "chapters/21-sociotechnical-and-systemic-risk/README.md (station 2 and section 3.2: the survey of 146 papers analyzing bias in NLP finding motivations often vague, inconsistent, and lacking normative reasoning despite bias analysis being inherently normative; proposed quantitative techniques poorly matched to motivations and unengaged with relevant non-NLP literature)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The 2020 survey predates LLM-era bias work — the normative-requirement finding is what the chapter carries forward; per-paper classifications live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-098
+    title: "Inherent Trade-Offs in the Fair Determination of Risk Scores"
+    authors_or_organization: "Jon Kleinberg, Sendhil Mullainathan, Manish Raghavan"
+    url: "https://arxiv.org/abs/1609.05807"
+    source_type: paper
+    publication_date: 2016-09-19
+    version: "v2 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: theoretical
+    peer_review_status: "peer-reviewed status not verified at fetched version (arXiv listing; ITCS 2017 not verified against proceedings)"
+    supports:
+      - "chapters/21-sociotechnical-and-systemic-risk/README.md (station 3 and section 3.3: the formalization of three fairness conditions at the heart of public debates and the proof that except in highly constrained special cases no method satisfies them simultaneously, with approximate satisfaction requiring equal base rates across groups)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The theorem's exact conditions (the constrained special cases) live in the unread body; the chapter states the result at the abstract's own level.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-099
+    title: "50 Years of Test (Un)fairness: Lessons for Machine Learning"
+    authors_or_organization: "Ben Hutchinson, Margaret Mitchell"
+    url: "https://arxiv.org/abs/1811.10104"
+    source_type: paper
+    publication_date: 2018-11-25
+    version: "v2 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: synthesis
+    peer_review_status: "peer-reviewed status not verified at fetched version (arXiv listing; FAT* 2019 not verified against proceedings)"
+    supports:
+      - "chapters/21-sociotechnical-and-systemic-risk/README.md (station 4: quantitative fairness definitions introduced across disciplines for over 50 years including education, hiring, and machine learning; the tracing of how fairness notions emerged in education and hiring testing communities with their cultural and social context; earlier definitions similar or identical to modern ML ones)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The historical per-era analysis and the lessons-for-ML specifics live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"

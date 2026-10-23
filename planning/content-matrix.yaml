@@ -470,7 +470,7 @@ chapters:
   title: Sociotechnical and systemic risk
   path: chapters/21-sociotechnical-and-systemic-risk/
   phase: G
-  maturity: planned
+  maturity: complete
   outcomes:
   - Analyze human factors, automation bias, fairness and disparate impact, incentives, power concentration
   - Map affected stakeholders and linguistic coverage
@@ -481,8 +481,12 @@ chapters:
   project_ids: []
   assessments:
   - stakeholder-and-failure-pathway analysis
-  source_ids: []
-  verified_on: null
+  source_ids:
+  - SRC-PAPER-096
+  - SRC-PAPER-097
+  - SRC-PAPER-098
+  - SRC-PAPER-099
+  verified_on: '2026-10-23'
 - id: '22'
   title: Safety engineering and assurance
   path: chapters/22-safety-engineering-and-assurance/

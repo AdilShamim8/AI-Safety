@@ -29,7 +29,8 @@ catalog with prerequisites and artifacts is
 | 18 | Reasoning faithfulness and monitorability | [18-reasoning-faithfulness-and-monitorability](18-reasoning-faithfulness-and-monitorability/) — **complete** |
 | 19 | Multimodal and embodied safety | [19-multimodal-and-embodied-safety](19-multimodal-and-embodied-safety/) — **complete** |
 | 20 | Misuse, dangerous capabilities, release evaluation | [20-misuse-dangerous-capabilities-release-evaluation](20-misuse-dangerous-capabilities-release-evaluation/) — **complete** |
-| 21–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases G–H)* |
+| 21 | Sociotechnical and systemic risk | [21-sociotechnical-and-systemic-risk](21-sociotechnical-and-systemic-risk/) — **complete** |
+| 22–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases G–H)* |
 
 Chapters appear here as they are completed — this index never links to a
 chapter that does not exist yet.

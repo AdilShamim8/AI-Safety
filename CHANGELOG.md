@@ -6,6 +6,18 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — chapter 21)
+
+- `chapters/21-sociotechnical-and-systemic-risk/`: the system around
+  the model — overreliance measurement (complementarity gap, AI-error
+  catch rate), the normative step before any fairness metric, the
+  fairness impossibility landscape with the trade-off statement it
+  forces, 50 years of testing-history context, and coverage mapped as
+  exclusion. Ceres loan-screening worked example with every rate
+  recomputed.
+- Registers +4 (SRC-PAPER-096..099); claims +4 (CLM-0149..0152);
+  GLOSSARY +6 terms.
+
 ### Added (2026-10-23 — chapter 20)
 
 - `chapters/20-misuse-dangerous-capabilities-release-evaluation/`:
