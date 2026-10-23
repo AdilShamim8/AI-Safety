@@ -614,7 +614,7 @@ projects:
   title: Preference optimization audit
   path: projects/p04-preference-optimization-audit/
   phase: D
-  maturity: planned
+  maturity: complete
   chapter_links:
   - '04'
   artifacts:
@@ -624,8 +624,8 @@ projects:
   - held-out objective
   - label-bias condition
   - SFT-vs-preference separation
-  status: protocol-only
-  verified_on: null
+  status: implemented
+  verified_on: '2026-10-23'
 - id: P05
   title: Weak-to-strong or scalable oversight analogue
   path: projects/p05-weak-to-strong-or-scalable-oversight-analogue/

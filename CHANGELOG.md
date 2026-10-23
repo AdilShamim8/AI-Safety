@@ -6,6 +6,16 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — P04 preference optimization audit)
+
+- `src/ai_safety_course/pref_audit/`: Chapter 04's audit as code —
+  BT/DPO machinery (numerically checked), logistic reward model on a
+  noisy feature, the closed-form KL-constrained optimum, and three
+  instruments: proxy-vs-held-out divergence, the concentrated
+  20% label-bias condition (held-out drift −0.0645 while the proxy
+  stays silent), and SFT-vs-preference. 8 pinned deterministic
+  tests; synthetic-corpus tier honesty documented.
+
 ### Added (2026-10-23 — chapter 24; all 24 chapters complete)
 
 - `chapters/24-research-practice-and-capstone-execution/`: the
