@@ -6,6 +6,18 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — chapter 22)
+
+- `chapters/22-safety-engineering-and-assurance/`: the safety case
+  as an argument built to be attacked — hazard-derived decomposition,
+  evidence with confidence ratings, named defeaters with rebuttals
+  or acceptances, the ISCaP-style linking argument, quantified-or-
+  stated residual risk, and re-audit triggers. The Meridian worked
+  example cites the course's own committed results as evidence.
+- Registers +5 (SRC-PAPER-100..104, incl. the one-day-old CoT
+  monitoring roadmap at maximum-recency honesty); claims +5
+  (CLM-0153..0157); GLOSSARY +6 terms.
+
 ### Added (2026-10-23 — chapter 21)
 
 - `chapters/21-sociotechnical-and-systemic-risk/`: the system around

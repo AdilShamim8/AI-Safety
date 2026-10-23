@@ -1520,3 +1520,56 @@ claims:
     counterevidence: >-
       none at abstract level; the lesson-for-ML specifics are the authors' synthesis, carried as such
     date: 2026-10-23
+
+  - id: CLM-0153
+    claim: >-
+      Clymer et al. (arXiv:2505.18003, 6 authors) describe an example end-to-end safety case that misuse safeguards reduce the risk posed by an AI assistant to low levels: red-team estimation of the effort required to evade safeguards, fed into a quantitative uplift model determining how much safeguard-introduced barriers dissuade misuse, providing a continuous deployment-time risk signal, with the components tied into a simple safety case — presented as one concrete path, not the only path, to rigorously justifying low misuse risk.
+    source: SRC-PAPER-100
+    section_or_page: "arXiv API abstract for 2505.18003 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the uplift model's structure and calibration live in the unread body"
+    assumptions: "the uplift model's dissuasion estimates bear on real adversary behavior"
+    counterevidence: >-
+      none at abstract level; the argument inherits every assumption of its internal model — the chapter prices this with Ch. 02's construct discipline
+    date: 2026-10-23
+
+  - id: CLM-0154
+    claim: >-
+      Bloomfield, Fletcher, Khlaaf, Hinde, et al. (arXiv:2102.02625, UK Dstl sponsored) document safety-assurance argument templates for autonomous systems containing ML components — covering safety-requirements development, hazard analysis, a safety-monitor architecture, and adaptation over time — together with generic templates for argument defeaters and evidence confidence used to strengthen, review, and adapt the argument templates.
+    source: SRC-PAPER-101
+    section_or_page: "arXiv API abstract for 2102.02625 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the templates' internal structure lives in the unread body"
+    assumptions: "the template set covers the argument-form needs of ML-containing autonomous systems as claimed"
+    counterevidence: "none observed at this access level"
+    date: 2026-10-23
+
+  - id: CLM-0155
+    claim: >-
+      Salay et al. (arXiv:2108.13294, 9 authors) identify the missing link between system-level safety requirements and unit-level ML component performance requirements in automated-driving safety cases and propose ISCaP — a generic template for the linking safety argument for perception components, taking a deductive and formal approach to strong traceability between levels, demonstrated with a case study.
+    source: SRC-PAPER-102
+    section_or_page: "arXiv API abstract for 2108.13294 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the formal template and case study live in the unread body"
+    assumptions: "the deductive bridge's assumptions are themselves evidenced or surfaced — the paper's own framing of the bridge's conditions"
+    counterevidence: "none at abstract level"
+    date: 2026-10-23
+
+  - id: CLM-0156
+    claim: >-
+      Borg et al. (arXiv:2204.07874, 10 authors) report the SMIRK safety case: a complete safety case for an ML-based pedestrian automatic emergency braking component in an industry-grade simulator, applying the AMLAS framework under a minimalistic operational design domain in the ISO 21448 SOTIF context, with both the system and the safety case released open-source for research reuse.
+    source: SRC-PAPER-103
+    section_or_page: "arXiv API abstract for 2204.07874 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the case's internal argument and lessons-learned live in the unread body"
+    assumptions: "the minimalistic ODD is honestly scoped (the case's own completeness condition)"
+    counterevidence: >-
+      none at abstract level; the minimal ODD is the trade — completeness was bought with scope, and transfers to non-minimal domains are not certified by this source
+    date: 2026-10-23
+
+  - id: CLM-0157
+    claim: >-
+      Schulz (arXiv:2510.19476, published 2025-10-22, accessed one day later) presents a roadmap for safety cases based on chain-of-thought monitoring: a two-part argument structure (models lack dangerous capabilities operating without their CoT; dangerous capabilities enabled by a CoT are detectable by CoT monitoring), with threats to monitorability from neuralese and encoded reasoning categorized into linguistic drift, steganography, and alien reasoning; evaluation of existing and novel CoT-faithfulness maintenance techniques; exploration of extracting monitorable CoT from non-monitorable CoT; and prediction markets aggregating forecasts on key technical milestones influencing feasibility.
+    source: SRC-PAPER-104
+    section_or_page: "arXiv API abstract for 2510.19476 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read at maximum recency pricing (one day post-publication) — a research-agenda document; the prediction markets measure aggregated opinion, not established fact"
+    assumptions: "the two-part argument structure is a viable safety-case form — itself the open question the roadmap addresses"
+    counterevidence: >-
+      Ch. 18's verified stations (obfuscation under optimization; self-instructed evasion) are precisely the counterevidence class the roadmap's threat taxonomy formalizes — carried as open risk, not as settled feasibility
+    date: 2026-10-23

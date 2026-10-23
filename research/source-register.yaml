@@ -2578,3 +2578,88 @@ sources:
     limitations: >-
       Abstract read via the arXiv API 2026-10-23. The historical per-era analysis and the lessons-for-ML specifics live in the unread body.
     license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-100
+    title: "An Example Safety Case for Safeguards Against Misuse"
+    authors_or_organization: "Joshua Clymer, Jonah Weinbaum, Robert Kirk, Kimberly Mai, and 2 further authors (6 total)"
+    url: "https://arxiv.org/abs/2505.18003"
+    source_type: paper
+    publication_date: 2025-05-23
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: methodological
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/22-safety-engineering-and-assurance/README.md (station 1 and section 3.3: the end-to-end misuse-safeguard safety case — red-team effort estimation for evading safeguards, a quantitative uplift model determining how much safeguard barriers dissuade misuse, the continuous deployment-time risk signal, and the tying of components into a simple safety case; presented as one concrete path, not the only path)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The uplift model's structure and calibration details live in the unread body (and its companion site); the argument's strength is bounded by the model's assumptions, which the chapter prices with Ch. 02's discipline.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-101
+    title: "Safety Case Templates for Autonomous Systems"
+    authors_or_organization: "Robin Bloomfield, Gareth Fletcher, Heidy Khlaaf, Luke Hinde, and 1 further author (5 total)"
+    url: "https://arxiv.org/abs/2102.02625"
+    source_type: report
+    publication_date: 2021-01-29
+    version: "updated 2021-03-11 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: methodological
+    peer_review_status: "not peer reviewed (technical report, UK Dstl R-cloud sponsored)"
+    supports:
+      - "chapters/22-safety-engineering-and-assurance/README.md (station 3 and section 3.1: safety-assurance argument templates covering safety-requirements development, hazard analysis, a safety-monitor architecture for autonomous systems with ML components, and system adaptation/change over time; generic templates for argument defeaters and evidence confidence used to strengthen, review, and adapt the argument)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The templates themselves (the notation, the per-template structures) live in the unread body; the chapter uses their named structure (defeater + evidence-confidence slots) as the argument-form discipline.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-102
+    title: "The missing link: Developing a safety case for perception components in automated driving"
+    authors_or_organization: "Rick Salay, Krzysztof Czarnecki, Hiroshi Kuwajima, Hirotoshi Yasuoka, and 5 further authors (9 total)"
+    url: "https://arxiv.org/abs/2108.13294"
+    source_type: paper
+    publication_date: 2021-08-30
+    version: "updated 2022-09-06 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: methodological
+    peer_review_status: "not peer reviewed at fetched version (arXiv listing; venue not verified)"
+    supports:
+      - "chapters/22-safety-engineering-and-assurance/README.md (station 2 and section 3.1: the Integration Safety Case for Perception (ISCaP) — a generic template for the linking safety argument between system-level safety requirements and unit-level component performance requirements, taking a deductive and formal approach to strong traceability between levels, demonstrated with a case study)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The formal template structure and the case study live in the unread body; the chapter carries the missing-link diagnosis and the deductive-traceability discipline.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-103
+    title: "Ergo, SMIRK is Safe: A Safety Case for a Machine Learning Component in a Pedestrian Automatic Emergency Braking System"
+    authors_or_organization: "Markus Borg, Jens Henriksson, Kasper Socha, Olof Lennartsson, and 6 further authors (10 total)"
+    url: "https://arxiv.org/abs/2204.07874"
+    source_type: paper
+    publication_date: 2022-04-16
+    version: "updated 2022-12-06 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "peer-reviewed status not verified at fetched version (arXiv listing)"
+    supports:
+      - "chapters/22-safety-engineering-and-assurance/README.md (station 4 and section 3.2: the complete safety case for the SMIRK ML-based pedestrian automatic emergency braking demonstrator — an application of the AMLAS framework under a minimalistic operational design domain, in the ISO 21448 SOTIF context, with lessons learned, both the system and the safety case released under open-source license for reuse)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The safety case's internal argument structure and the lessons-learned detail live in the unread body; the chapter carries the existence proof (complete ML-component safety case, ODD-scoped, open).
+    license: "unknown (arXiv distribution terms; the artifacts themselves are stated to be open-source — specific license unread)"
+
+  - id: SRC-PAPER-104
+    title: "A Concrete Roadmap towards Safety Cases based on Chain-of-Thought Monitoring"
+    authors_or_organization: "Julian Schulz"
+    url: "https://arxiv.org/abs/2510.19476"
+    source_type: paper
+    publication_date: 2025-10-22
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: methodological
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint one day old at access; no venue stated in the API record)"
+    supports:
+      - "chapters/22-safety-engineering-and-assurance/README.md (station 5 and section 3.3: the roadmap for CoT-monitoring safety cases — the two-part structure (models lack dangerous capabilities without their CoT; dangerous capabilities enabled by a CoT are detectable by CoT monitoring); the threats to monitorability via neuralese and encoded reasoning categorized as linguistic drift, steganography, and alien reasoning; the evaluation of faithfulness-maintenance techniques; extracting monitorable CoT from non-monitorable reasoning; and prediction markets aggregating forecasts on the feasibility milestones)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23 — one day after publication (2025-10-22), recency priced at maximum: this is a research-agenda document, not settled findings; the prediction-market instrument measures aggregated opinion, not fact. Carried as the frontier direction of Ch. 18's concerns formalized.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"

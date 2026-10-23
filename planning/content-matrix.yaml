@@ -491,7 +491,7 @@ chapters:
   title: Safety engineering and assurance
   path: chapters/22-safety-engineering-and-assurance/
   phase: G
-  maturity: planned
+  maturity: complete
   outcomes:
   - Apply hazard analysis and FMEA/STPA-style reasoning where suitable
   - Build explicit assurance claims with evidence, assumptions, rebuttals, residual risk
@@ -503,8 +503,13 @@ chapters:
   - P10
   assessments:
   - safety-case draft
-  source_ids: []
-  verified_on: null
+  source_ids:
+  - SRC-PAPER-100
+  - SRC-PAPER-101
+  - SRC-PAPER-102
+  - SRC-PAPER-103
+  - SRC-PAPER-104
+  verified_on: '2026-10-23'
 - id: '23'
   title: Governance and standards for researchers
   path: chapters/23-governance-and-standards-for-researchers/
