@@ -6,6 +6,16 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — P05 weak-to-strong analogue)
+
+- `src/ai_safety_course/w2s_audit/`: the scalable-oversight
+  question as a minimal deterministic analogue — a 30%-flip weak
+  supervisor, a strong learner trained only on its labels, and the
+  invariant ground-truth boundary. Weak-to-strong effect
+  demonstrated: +0.255 oversight gap recovered with disjoint
+  intervals, persisting under covariate shift. Small-analogue scope
+  statement carried in the README. 7 pinned tests.
+
 ### Added (2026-10-23 — P09 shift/subgroup reliability)
 
 - `src/ai_safety_course/shift_audit/`: Chapter 17's audit as code —

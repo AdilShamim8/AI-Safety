@@ -630,7 +630,7 @@ projects:
   title: Weak-to-strong or scalable oversight analogue
   path: projects/p05-weak-to-strong-or-scalable-oversight-analogue/
   phase: D
-  maturity: planned
+  maturity: complete
   chapter_links:
   - '05'
   artifacts:
@@ -639,8 +639,8 @@ projects:
   - inherited-error measurement
   - OOD performance
   - small-analogue scope statement
-  status: protocol-only
-  verified_on: null
+  status: implemented
+  verified_on: '2026-10-23'
 - id: P06
   title: Causal interpretability study
   path: projects/p06-causal-interpretability-study/
