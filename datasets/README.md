@@ -54,7 +54,7 @@ example AdvBench's 520-row canonical CSV vs. a mirror card describing the
 paper's 500-behavior framing), the card records **both** numbers with both
 provenances rather than silently picking one.
 
-## The catalog (18 verified datasets)
+## The catalog (22 verified datasets)
 
 | # | Dataset | Risk area | Task shape | License (as observed) | Card |
 |---|---------|-----------|------------|-----------------------|------|
@@ -76,6 +76,10 @@ provenances rather than silently picking one.
 | 16 | WMDP | Hazardous-knowledge proxy | 3,668 MCQ (bio/cyber/chem) | MIT (HF page) | [card](cards/16-wmdp.md) |
 | 17 | HaluEval | Hallucination recognition | 35K samples (5K general + 3x10K tasks) | apache-2.0 (HF mirror) | [card](cards/17-halueval.md) |
 | 18 | SimpleQA | Short-form factuality | 4,326 questions, 10 topics | repo MIT; data-file license unstated | [card](cards/18-simpleqa.md) |
+| 19 | CrowS-Pairs | Stereotype pairs (masked-LM bias) | 1,508 pairs, 9 bias types | CC BY-SA 4.0 (README statement) | [card](cards/19-crows-pairs.md) |
+| 20 | Winogender Schemas | Gender-bias coreference probe | 120 templates -> 720 sentences | MIT (canonical repo) | [card](cards/20-winogender.md) |
+| 21 | MMLU | General-capability anchor | 57 tasks; test 14,042 | MIT (HF page) | [card](cards/21-mmlu.md) |
+| 22 | GSM8K | General-capability anchor (reasoning) | 8.5K abstract / 8,792 artifact | MIT (canonical repo) | [card](cards/22-gsm8k.md) |
 
 ## Curriculum integration map
 
@@ -120,11 +124,12 @@ research layer that later projects cite.
 ## Pending-verification queue
 
 Datasets we consider important but which were **not verified in this round**
-(2026-10-21 web-verification budget was finite; these are recorded at
-`metadata-only` level and must not be cited as facts until inspected):
+(2026-10-21 web-verification budget was finite; recorded at `metadata-only`
+level until inspected). The 2026-10-23 rounds verified every item below that
+had been queued — the queue is now **empty**; new entries appear here only
+when a future unit names a dataset it cannot yet verify:
 
-- CrowS-Pairs, Winogender (classic bias benchmarks)
-- MMLU, GSM8K (general-capability anchors for Ch.17 shift discussion)
+
 
 Resolved 2026-10-23 (moved out of this queue by direct verification, recorded
 in the cards and catalog): ToxiGen license (MIT text, Microsoft copyright,
@@ -140,6 +145,13 @@ Also verified 2026-10-23 and promoted to full cards (DS-014..DS-018): OR-Bench
 + HF page; 3,668 MCQ, MIT); HaluEval (paper abstract + canonical README + mirror
 page; 35K composition); SimpleQA (paper abstract + simple-evals repo + canonical
 CSV parsed directly; 4,326 questions with topic distribution).
+
+Also verified 2026-10-23 (DS-019..DS-022, completing the queue): CrowS-Pairs
+(1,508 pairs; CC BY-SA 4.0 from the README statement with ROCStories+MNLI seed
+provenance); Winogender (120 templates -> 720 sentences with the authors' PPV
+interpretation rule; MIT); MMLU (57 tasks; test 14,042 / validation 1,531 / dev
+285 / auxiliary_train 99,842); GSM8K (8.5K-abstract vs 8,792-artifact documented
+discrepancy; MIT).
 
 Adjacent datasets observed at page level during verification (recorded so the
 next round does not have to rediscover them): lmsys/toxic-chat (10K annotated
@@ -168,3 +180,7 @@ ucf-crcv/BBQ-V (14,144 image-question pairs, visual stereotypes).
 16. [WMDP — hazardous-knowledge proxy and unlearning benchmark](cards/16-wmdp.md)
 17. [HaluEval — hallucination recognition benchmark](cards/17-halueval.md)
 18. [SimpleQA — short-form factuality with abstention grading](cards/18-simpleqa.md)
+19. [CrowS-Pairs — stereotype pairs for masked-LM bias](cards/19-crows-pairs.md)
+20. [Winogender — gender-bias coreference probe](cards/20-winogender.md)
+21. [MMLU — multitask knowledge anchor](cards/21-mmlu.md)
+22. [GSM8K — grade-school reasoning anchor](cards/22-gsm8k.md)

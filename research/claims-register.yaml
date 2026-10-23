@@ -1227,3 +1227,87 @@ claims:
     assumptions: "the repository LICENSE governs the repository contents"
     counterevidence: "none observed; the honest gap is the limitation"
     date: 2026-10-23
+
+  - id: CLM-0126
+    claim: >-
+      Nangia, Vania, Bhalerao, and Bowman (arXiv:2010.00133) introduce CrowS-Pairs: 1,508 examples covering stereotypes dealing with nine types of bias including race, religion, and age, in a minimal-pair design contrasting more-stereotyping and less-stereotyping sentences about historically disadvantaged versus advantaged groups; they find that all three widely-used masked language models they evaluate substantially favor sentences expressing stereotypes in every category.
+    source: SRC-PAPER-079
+    section_or_page: "arXiv API abstract for 2010.00133 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-type counts and per-model scores live in the unread body"
+    assumptions: "the minimal-pair construction measures stereotype preference as intended"
+    counterevidence: >-
+      none at abstract level; the MLM scoping means the finding must not be projected onto decoder-only chat models without re-instrumentation
+    date: 2026-10-23
+
+  - id: CLM-0127
+    claim: >-
+      CrowS-Pairs is licensed under Creative Commons Attribution-ShareAlike 4.0 International, and is created using prompts taken from the ROCStories corpora and the fiction part of MNLI (canonical repository README statement, read 2026-10-23; HF tag corroborates the license).
+    source: SRC-DATASET-021
+    section_or_page: "canonical GitHub README license section (fetched 2026-10-23)"
+    evidence_strength: "page-inspected (direct read); the repository carries no LICENSE file, so the README statement is the recorded authority"
+    assumptions: "the README statement governs the released data"
+    counterevidence: "none observed; the seed-corpus provenance is an obligation note, not a conflict"
+    date: 2026-10-23
+
+  - id: CLM-0128
+    claim: >-
+      Rudinger, Naradowsky, Leonard, and Van Durme (arXiv:1804.09301) introduce Winogender schemas — Winograd-schema-style minimal pairs of sentences differing only by the gender of one pronoun — and with them evaluate and confirm systematic gender bias in three publicly-available coreference resolution systems, correlating this bias with real-world and textual gender statistics.
+    source: SRC-PAPER-080
+    section_or_page: "arXiv API abstract for 1804.09301 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the three systems' identities and scores live in the unread body"
+    assumptions: "the schema construction isolates pronoun gender as the varying factor"
+    counterevidence: >-
+      none at abstract level; the authors' own interpretation rule (high positive predictive value, low negative) limits what a pass on the probe can claim
+    date: 2026-10-23
+
+  - id: CLM-0129
+    claim: >-
+      The Winogender Schemas canonical repository states: 120 templates (60 occupations, two templates per occupation) fully instantiated into 720 sentences (120 templates x {female, male, neutral} x {participant, someone}), in data/templates.tsv and data/all_sentences.tsv; the repository is MIT-licensed (copyright (c) 2018 Rachel Rudinger, LICENSE read directly 2026-10-23).
+    source: SRC-DATASET-022
+    section_or_page: "canonical GitHub README and LICENSE, master branch (fetched 2026-10-23)"
+    evidence_strength: "page-inspected (direct read); arithmetic cross-checked (120 x 3 x 2 = 720)"
+    assumptions: "the README describes the released files"
+    counterevidence: "none observed"
+    date: 2026-10-23
+
+  - id: CLM-0130
+    claim: >-
+      Hendrycks et al. (arXiv:2009.03300) propose MMLU, a test of multitask accuracy covering 57 tasks including elementary mathematics, US history, computer science, and law; at publication most recent models had near random-chance accuracy, with the very largest GPT-3 model improving over random chance by almost 20 percentage points on average.
+    source: SRC-PAPER-081
+    section_or_page: "arXiv API abstract for 2009.03300 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-task and per-model tables live in the unread body"
+    assumptions: "the 57-task coverage is as described"
+    counterevidence: >-
+      none at abstract level; the 2020 baseline claim is dated — current models far exceed it, so the finding must be quoted as historical calibration, not a current frontier statement
+    date: 2026-10-23
+
+  - id: CLM-0131
+    claim: >-
+      The cais/mmlu Hugging Face hosting carries the mit license tag, and its split sizes under the all configuration are: test 14,042, validation 1,531, dev 285, auxiliary_train 99,842 (datasets-server API, fetched 2026-10-23).
+    source: SRC-DATASET-023
+    section_or_page: "HF API page and datasets-server size endpoint (fetched 2026-10-23)"
+    evidence_strength: "page-inspected (API); auxiliary_train provenance not verified and not relied upon"
+    assumptions: "the hosting reflects the canonical release"
+    counterevidence: "none observed"
+    date: 2026-10-23
+
+  - id: CLM-0132
+    claim: >-
+      Cobbe et al. (arXiv:2110.14168, 12 authors, OpenAI) introduce GSM8K — 8.5K high quality linguistically diverse grade school math word problems per the abstract — and find that even the largest transformer models fail to achieve high test performance despite the conceptual simplicity of the distribution, proposing training verifiers to solve math word problems as the remedy.
+    source: SRC-PAPER-082
+    section_or_page: "arXiv API abstract for 2110.14168 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the released artifact's splits sum to 8,792 (7,473 train + 1,319 test), a documented abstract-vs-artifact discrepancy recorded in the card"
+    assumptions: "the characterization (high quality, linguistically diverse, multi-step) reflects the data"
+    counterevidence: >-
+      none at abstract level; the 2021 failure finding is dated — current models score far higher, and the dataset's course role is a retained-reasoning control, not a frontier claim
+    date: 2026-10-23
+
+  - id: CLM-0133
+    claim: >-
+      The openai/grade-school-math repository (canonical GSM8K home) is MIT-licensed (copyright (c) 2021 OpenAI, LICENSE read directly 2026-10-23), and the openai/gsm8k Hugging Face hosting provides main and socratic configurations with identical split sizes (train 7,473 / test 1,319 each, datasets-server API).
+    source: SRC-DATASET-024
+    section_or_page: "canonical LICENSE (master branch) and HF API pages (fetched 2026-10-23)"
+    evidence_strength: "page-inspected (direct read + API)"
+    assumptions: "the repository and hosting reflect the canonical release"
+    counterevidence: "none observed; the 8.5K-vs-8,792 count discrepancy is recorded, not reconciled silently"
+    date: 2026-10-23

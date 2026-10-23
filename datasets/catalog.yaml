@@ -702,3 +702,171 @@ datasets:
         url: "https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv"
         collected: "4,326 rows; columns metadata/problem/answer; topic distribution; multi-line quoted-field artifact"
         accessed_on: 2026-10-23
+
+  - id: DS-019
+    name: "CrowS-Pairs"
+    organization: "NYU (paper: Nangia, Vania, Bhalerao, Bowman)"
+    hf_id: "nyu-mll/crows_pairs"
+    canonical_url: "https://github.com/nyu-mll/crows-pairs"
+    paper:
+      id: "2010.00133"
+      url: "https://arxiv.org/abs/2010.00133"
+      title: "CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models"
+      verified_title: true
+    risk_area: "social bias (stereotype pairs)"
+    task: ["masked-LM stereotype preference measurement"]
+    license:
+      as_observed: "CC BY-SA 4.0"
+      where_observed: "canonical repository README license section (verbatim statement), corroborated by the HF tag cc-by-sa-4.0, fetched 2026-10-23; repository carries no LICENSE file — README statement is the authority"
+    size_facts:
+      - fact: "1,508 examples covering stereotypes dealing with nine types of bias including race, religion, and age"
+        ref: "R1"
+      - fact: "minimal-pair design (more-stereotyping vs less-stereotyping sentence); historically disadvantaged groups contrasted with advantaged groups; all three widely-used MLMs evaluated substantially favor stereotype-expressing sentences in every category"
+        ref: "R1"
+      - fact: "seed provenance: prompts taken from the ROCStories corpora and the fiction part of MNLI (README statement)"
+        ref: "R2"
+    course_use:
+      chapters: ["02", "17"]
+      projects: ["P09"]
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/19-crows-pairs.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2010.00133"
+        collected: "title; 4 authors; 2020-09-30; abstract (1,508 examples; nine bias types; minimal-pair design; MLM stereotype-favoring finding)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://github.com/nyu-mll/crows-pairs"
+        collected: "license statement (CC BY-SA 4.0); seed provenance (ROCStories + MNLI fiction)"
+        accessed_on: 2026-10-23
+      - id: "R3"
+        url: "https://huggingface.co/datasets/nyu-mll/crows_pairs"
+        collected: "license tag cc-by-sa-4.0; 943 downloads; 15 likes; last modified 2024-01-18"
+        accessed_on: 2026-10-23
+
+  - id: DS-020
+    name: "Winogender Schemas"
+    organization: "Johns Hopkins (paper: Rudinger, Naradowsky, Leonard, Van Durme)"
+    hf_id: "oskarvanderwal/winogender (hosting)"
+    canonical_url: "https://github.com/rudinger/winogender-schemas"
+    paper:
+      id: "1804.09301"
+      url: "https://arxiv.org/abs/1804.09301"
+      title: "Winogender Schemas (gender-bias probe for coreference; arXiv listing verified)"
+      verified_title: true
+    risk_area: "gender bias (coreference)"
+    task: ["diagnostic minimal-pair probe"]
+    license:
+      as_observed: "MIT (LICENSE read directly: copyright (c) 2018 Rachel Rudinger)"
+      where_observed: "canonical repository LICENSE, master branch, fetched 2026-10-23; HF hosting tag agrees"
+    size_facts:
+      - fact: "120 templates (60 occupations, two per occupation) generating 720 sentences (120 x {female, male, neutral} x {participant, someone})"
+        ref: "R2"
+      - fact: "systematic gender bias confirmed in three publicly-available coreference resolution systems; bias correlated with real-world and textual gender statistics"
+        ref: "R1"
+      - fact: "authors' interpretation rule: high positive predictive value, low negative predictive value (demonstrates presence, not absence, of bias)"
+        ref: "R2"
+    course_use:
+      chapters: ["02", "17"]
+      projects: ["P09"]
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/20-winogender.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/1804.09301"
+        collected: "authors; 2018-04-25; abstract (schema-style minimal pairs differing by pronoun gender; three coreference systems; correlation with real-world statistics)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://github.com/rudinger/winogender-schemas"
+        collected: "120 templates / 720 sentences arithmetic; data file names; PPV/NPV quote; MIT license (c) 2018 Rachel Rudinger"
+        accessed_on: 2026-10-23
+      - id: "R3"
+        url: "https://huggingface.co/datasets/oskarvanderwal/winogender"
+        collected: "license tag mit; 1,489 downloads; last modified 2024-03-07"
+        accessed_on: 2026-10-23
+
+  - id: DS-021
+    name: "MMLU"
+    organization: "UC Berkeley et al. (paper: Hendrycks, Burns, Basart, Zou, Mazeika, Song, +1)"
+    hf_id: "cais/mmlu"
+    canonical_url: "https://huggingface.co/datasets/cais/mmlu"
+    paper:
+      id: "2009.03300"
+      url: "https://arxiv.org/abs/2009.03300"
+      title: "Measuring Massive Multitask Language Understanding"
+      verified_title: true
+    risk_area: "general-capability anchor (retained-knowledge control)"
+    task: ["multitask multiple-choice accuracy"]
+    license:
+      as_observed: "mit"
+      where_observed: "HF API license tag on cais/mmlu, fetched 2026-10-23"
+    size_facts:
+      - fact: "57 tasks including elementary mathematics, US history, computer science, law, and more"
+        ref: "R1"
+      - fact: "splits (all config): test 14,042; validation 1,531; dev 285; auxiliary_train 99,842"
+        ref: "R3"
+      - fact: "at publication most recent models near random-chance accuracy; the very largest GPT-3 model improved over random chance by almost 20 percentage points on average"
+        ref: "R1"
+    course_use:
+      chapters: ["17", "20"]
+      projects: []
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/21-mmlu.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2009.03300"
+        collected: "title; 7 authors; 2020-09-07; abstract (57 tasks; near-random baselines; largest GPT-3 ~20pp over random)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://huggingface.co/datasets/cais/mmlu"
+        collected: "license tag mit; arXiv tags; 881 likes; 541,018 downloads; last modified 2024-03-08"
+        accessed_on: 2026-10-23
+      - id: "R3"
+        url: "https://datasets-server.huggingface.co/size?dataset=cais/mmlu"
+        collected: "all/test 14,042; all/validation 1,531; all/dev 285; all/auxiliary_train 99,842; spot-checked per-subject splits"
+        accessed_on: 2026-10-23
+
+  - id: DS-022
+    name: "GSM8K"
+    organization: "OpenAI (paper: Cobbe et al., 12 authors)"
+    hf_id: "openai/gsm8k"
+    canonical_url: "https://github.com/openai/grade-school-math"
+    paper:
+      id: "2110.14168"
+      url: "https://arxiv.org/abs/2110.14168"
+      title: "Training Verifiers to Solve Math Word Problems"
+      verified_title: true
+    risk_area: "general-capability anchor (retained-reasoning control)"
+    task: ["multi-step math word problems"]
+    license:
+      as_observed: "MIT (LICENSE read directly: copyright (c) 2021 OpenAI)"
+      where_observed: "canonical repository LICENSE, master branch, fetched 2026-10-23; HF tag agrees"
+    size_facts:
+      - fact: "abstract states 8.5K high quality linguistically diverse grade school math word problems; released splits sum to 8,792 (train 7,473 + test 1,319) — documented discrepancy recorded"
+        ref: "R1"
+      - fact: "two HF configurations (main and socratic) with identical counts: train 7,473 / test 1,319 each"
+        ref: "R3"
+      - fact: "at publication even the largest transformer models failed to achieve high test performance; the paper introduces training verifiers as the remedy"
+        ref: "R1"
+    course_use:
+      chapters: ["17"]
+      projects: []
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/22-gsm8k.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2110.14168"
+        collected: "title; 12 authors; 2021-10-27; abstract (8.5K characterization; failure of largest models; training verifiers)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://github.com/openai/grade-school-math"
+        collected: "MIT License (c) 2021 OpenAI"
+        accessed_on: 2026-10-23
+      - id: "R3"
+        url: "https://huggingface.co/datasets/openai/gsm8k + datasets-server size API"
+        collected: "license tag mit; arXiv tag 2110.14168; 2,000 likes; 986,952 downloads; main and socratic splits 7,473/1,319 each"
+        accessed_on: 2026-10-23

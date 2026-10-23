@@ -6,6 +6,17 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — dataset queue completion round)
+
+- Final four pending datasets verified and promoted to cards (catalog
+  DS-019..DS-022): CrowS-Pairs, Winogender, MMLU, GSM8K. The
+  pending-verification queue is now empty.
+- Honest discrepancy records: GSM8K's abstract 8.5K vs released
+  8,792 (7,473+1,319); CrowS-Pairs license authority is the README
+  statement (no LICENSE file in the repo).
+- Registers +8 (SRC-PAPER-079..082, SRC-DATASET-021..024); claims +8
+  (CLM-0126..0133). Catalog: 18 -> 22 datasets.
+
 ### Added (2026-10-23 — pending-dataset verification round)
 
 - Five datasets promoted from the metadata-only pending queue to full

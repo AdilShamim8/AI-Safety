@@ -2119,3 +2119,139 @@ sources:
     limitations: >-
       The CSV was fetched and parsed for structure and counts only; no question or answer text is reproduced in the course. The data URL displayed no separate license statement; the repository MIT license was read directly. Topic counts sum-checked programmatically (858+709+550+475+424+368+341+293+173+135 = 4,326).
     license: "repository MIT (GitHub license API); data-file license not stated at the file location"
+
+  - id: SRC-PAPER-079
+    title: "CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models"
+    authors_or_organization: "Nikita Nangia, Clara Vania, Rasika Bhalerao, Samuel R. Bowman"
+    url: "https://arxiv.org/abs/2010.00133"
+    source_type: paper
+    publication_date: 2020-09-30
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; EMNLP 2021 not verified against proceedings)"
+    supports:
+      - "datasets/cards/19-crows-pairs.md and datasets/catalog.yaml DS-019 (composition: 1,508 examples, nine bias types; minimal-pair design; the finding that all three widely-used MLMs evaluated substantially favor stereotype-expressing sentences in every category)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The crowdsourcing protocol, per-type counts, and per-model scores live in the unread body. The MLM-scoping (masked language models) is load-bearing for honest reuse.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-080
+    title: "Winogender Schemas: A diagnostic probe for gender bias in coreference (arXiv 1804.09301)"
+    authors_or_organization: "Rachel Rudinger, Jason Naradowsky, Brian Leonard, Benjamin Van Durme"
+    url: "https://arxiv.org/abs/1804.09301"
+    source_type: paper
+    publication_date: 2018-04-25
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; ACL 2018 not verified against proceedings)"
+    supports:
+      - "datasets/cards/20-winogender.md and datasets/catalog.yaml DS-020 (design: Winograd-schema-style minimal pairs differing only by pronoun gender; finding: systematic gender bias confirmed in three publicly-available coreference resolution systems, correlated with real-world and textual gender statistics)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23; the arXiv listing title was not separately captured (feed-title parsing artifact) — the schema design and findings are what the abstract states. Composition (120 templates / 720 sentences) is README-verified (SRC-DATASET-022). The three systems' identities and scores live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-081
+    title: "Measuring Massive Multitask Language Understanding"
+    authors_or_organization: "Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and 1 further author (7 total)"
+    url: "https://arxiv.org/abs/2009.03300"
+    source_type: paper
+    publication_date: 2020-09-07
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; ICLR 2021 not verified against proceedings)"
+    supports:
+      - "datasets/cards/21-mmlu.md and datasets/catalog.yaml DS-021 (composition: 57 tasks; baselines: most recent models near random chance, largest GPT-3 almost 20pp over random on average)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The collection methodology and per-model tables live in the unread body. Split sizes are HF-datasets-server-verified (SRC-DATASET-023), not abstract-stated.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-082
+    title: "Training Verifiers to Solve Math Word Problems"
+    authors_or_organization: "Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser, and 6 further authors (12 total, OpenAI)"
+    url: "https://arxiv.org/abs/2110.14168"
+    source_type: paper
+    publication_date: 2021-10-27
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "datasets/cards/22-gsm8k.md and datasets/catalog.yaml DS-022 (composition: 8.5K high quality linguistically diverse grade school math word problems per the abstract; finding: even the largest transformer models fail to achieve high test performance; the training-verifiers remedy)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The abstract's 8.5K differs from the released artifact's 8,792 (7,473+1,319) — recorded as a documented discrepancy in the card. The verification protocol and per-model results live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-DATASET-021
+    title: "CrowS-Pairs canonical repository and Hugging Face hosting"
+    authors_or_organization: "nyu-mll"
+    url: "https://github.com/nyu-mll/crows-pairs"
+    source_type: dataset-page
+    publication_date: null
+    version: "master branch README fetched raw 2026-10-23; HF hosting last modified 2024-01-18"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (repository and hosting pages)"
+    supports:
+      - "datasets/cards/19-crows-pairs.md and datasets/catalog.yaml DS-019 (license: CC BY-SA 4.0 stated in the README license section; seed provenance: ROCStories corpora and the fiction part of MNLI; HF tag cc-by-sa-4.0)"
+    limitations: >-
+      The repository carries no LICENSE file; the README statement is the recorded authority. ShareAlike terms and seed-corpus obligations apply downstream.
+    license: "CC BY-SA 4.0 (README statement; HF tag corroborates)"
+
+  - id: SRC-DATASET-022
+    title: "Winogender Schemas canonical repository and Hugging Face hosting"
+    authors_or_organization: "Rachel Rudinger (canonical); oskarvanderwal (HF hosting)"
+    url: "https://github.com/rudinger/winogender-schemas"
+    source_type: dataset-page
+    publication_date: null
+    version: "master branch README + LICENSE fetched raw 2026-10-23; HF hosting last modified 2024-03-07"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (repository and hosting pages)"
+    supports:
+      - "datasets/cards/20-winogender.md and datasets/catalog.yaml DS-020 (composition: 120 templates (60 occupations x 2) generating 720 sentences; data files templates.tsv and all_sentences.tsv; the authors' positive-predictive-value interpretation rule; MIT license copyright (c) 2018 Rachel Rudinger)"
+    limitations: >-
+      Composition arithmetic stated in the README and cross-checked by the course (120 x 3 x 2 = 720). The HF hosting is a third-party mirror with an agreeing MIT tag.
+    license: "MIT (canonical LICENSE, read directly)"
+
+  - id: SRC-DATASET-023
+    title: "MMLU Hugging Face hosting and split-size API"
+    authors_or_organization: "cais (Center for AI Safety)"
+    url: "https://huggingface.co/datasets/cais/mmlu"
+    source_type: dataset-page
+    publication_date: null
+    version: "HF API page + datasets-server size endpoint, fetched 2026-10-23; last modified 2024-03-08"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (hosting pages)"
+    supports:
+      - "datasets/cards/21-mmlu.md and datasets/catalog.yaml DS-021 (license tag mit; split sizes under the all config: test 14,042, validation 1,531, dev 285, auxiliary_train 99,842; spot-checked per-subject splits)"
+    limitations: >-
+      Split sizes verified via the datasets-server API, not the paper. The auxiliary_train provenance is not verified and not relied upon.
+    license: "mit (page tag)"
+
+  - id: SRC-DATASET-024
+    title: "GSM8K canonical repository, Hugging Face hosting, and split-size API"
+    authors_or_organization: "OpenAI"
+    url: "https://github.com/openai/grade-school-math"
+    source_type: dataset-page
+    publication_date: null
+    version: "master branch LICENSE fetched raw 2026-10-23; HF API + datasets-server size endpoint same date; HF last modified 2026-03-23"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (repository and hosting pages)"
+    supports:
+      - "datasets/cards/22-gsm8k.md and datasets/catalog.yaml DS-022 (license: MIT, copyright (c) 2021 OpenAI, read directly; split sizes: main train 7,473 / test 1,319, socratic same counts; the 8.5K-abstract vs 8,792-artifact discrepancy recorded)"
+    limitations: >-
+      Split sizes verified via the datasets-server API. The discrepancy between the abstract's 8.5K and the artifact's 8,792 is recorded at both levels rather than silently reconciled.
+    license: "MIT (canonical LICENSE, read directly)"
