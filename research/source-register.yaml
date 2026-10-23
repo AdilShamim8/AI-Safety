@@ -2340,3 +2340,88 @@ sources:
     limitations: >-
       Abstract read via the arXiv API 2026-10-23, one week after publication — recency priced. Per-model controllability rates and the monitoring setup details live in the unread body. The defensive direction (steering CoTs into monitorable shapes) is the chapter's symmetric inference, not a paper claim.
     license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-088
+    title: "FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts"
+    authors_or_organization: "Yichen Gong, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, and 3 further authors (8 total)"
+    url: "https://arxiv.org/abs/2311.05608"
+    source_type: paper
+    publication_date: 2023-11-09
+    version: "v3 (2025-01-19) per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/19-multimodal-and-embodied-safety/README.md (station 1: the black-box typographic jailbreak converting prohibited content into images; average attack success rate of 82.50% across six open-source LVLMs; ablations and embedding-distribution analysis attributing success to the deficiency of safety alignment for visual embeddings; comparison with five text-only and four image-based jailbreaks showing negligible attack costs)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The 82.50% figure is on 2023-era open-source LVLMs — dated evidence priced by the chapter as a mechanism demonstration whose current-model rate must be re-measured per deployment.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-089
+    title: "MM-SafetyBench: A Benchmark for Safety Evaluation of Multimodal Large Language Models"
+    authors_or_organization: "Xin Liu, Yichen Zhu, Jindong Gu, Yunshi Lan, Chao Yang, and 1 further author (6 total)"
+    url: "https://arxiv.org/abs/2311.17600"
+    source_type: paper
+    publication_date: 2023-11-29
+    version: "v5 (2024-06-19) per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/19-multimodal-and-embodied-safety/README.md (station 2: MLLMs compromised by query-relevant images as if the text query itself were malicious; the benchmark of 13 scenarios and 5,040 text-image pairs; 12 state-of-the-art models susceptible even when the equipped LLMs were safety-aligned; the prompting-based mitigation strategy)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. Per-scenario results and the mitigation's measured effect sizes live in the unread body; the mitigation is described as enhancing resilience — partial, not complete.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-090
+    title: "Visual Adversarial Examples Jailbreak Aligned Large Language Models"
+    authors_or_organization: "Xiangyu Qi, Kaixuan Huang, Ashwinee Panda, Peter Henderson, Mengdi Wang, and 1 further author (6 total)"
+    url: "https://arxiv.org/abs/2306.13213"
+    source_type: paper
+    publication_date: 2023-06-22
+    version: "v2 (2023-08-16) per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/19-multimodal-and-embodied-safety/README.md (station 3: the continuous high-dimensional visual input as the weak link of vision-integrated LLMs; the expanded attack-surface and adversarial-objective framing; a single visual adversarial example universally jailbreaking an aligned LLM to heed a wide range of harmful instructions, with harmfulness generalizing beyond the corpus used to optimize the attack)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The optimization details, the target models, and per-instruction success rates live in the unread body. The harmful-content description stays at category level in this course.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-091
+    title: "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World"
+    authors_or_organization: "12 authors (Rookie143 repository authors; full list in the unread body)"
+    url: "https://arxiv.org/abs/2407.20242"
+    source_type: paper
+    publication_date: 2024-07-16
+    version: "v5 per arXiv API listing (2024 publication, version observed at fetch)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/19-multimodal-and-embodied-safety/README.md (station 4: the embodied-LLM attack paradigm via typical voice-based user-system interactions; the three exploited vulnerabilities — manipulation of LLMs within robotic systems, misalignment between linguistic outputs and physical actions, unintentional hazardous behaviors from world-knowledge flaws; the benchmark of malicious physical action queries; effectiveness against Voxposer, Code as Policies, and ProgPrompt)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The author list beyond the repository attribution was not separately captured at this access level (recorded honestly); attack success rates and the benchmark's composition live in the unread body. Demonstration against 2024-era embodied frameworks.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-092
+    title: "Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses"
+    authors_or_organization: "38 authors (survey collaboration)"
+    url: "https://arxiv.org/abs/2605.02900"
+    source_type: paper
+    publication_date: 2026-03-28
+    version: "v2 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/19-multimodal-and-embodied-safety/README.md (station 5 and section 3.4: the embodied pipeline taxonomy — perception, cognition, planning, action and interaction, agentic system; synthesis of 500+ papers across adversarial, backdoor, jailbreak, and hardware-level attacks and defenses; the named overlooked challenges — fragility of multimodal perception fusion, instability of planning under jailbreak attacks, trustworthiness of human-agent interaction in open-ended scenarios; the uncertain-sensing/incomplete-knowledge/dynamic-interaction framing where failures lead directly to physical harm)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. A survey's claims are synthesis-level: the named fragilities mark where evidence is thin, which the chapter prices as weak links rather than settled findings. Author names beyond the count were not separately captured at this access level.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"

@@ -428,7 +428,7 @@ chapters:
   title: Multimodal and embodied safety
   path: chapters/19-multimodal-and-embodied-safety/
   phase: G
-  maturity: planned
+  maturity: complete
   outcomes:
   - Analyze cross-modal injection, perceptual failures, sensor shift, action constraints
   - State simulation-to-reality limits
@@ -438,8 +438,13 @@ chapters:
   project_ids: []
   assessments:
   - worked multimodal case
-  source_ids: []
-  verified_on: null
+  source_ids:
+  - SRC-PAPER-088
+  - SRC-PAPER-089
+  - SRC-PAPER-090
+  - SRC-PAPER-091
+  - SRC-PAPER-092
+  verified_on: '2026-10-23'
 - id: '20'
   title: Misuse, dangerous capabilities, and release evaluation
   path: chapters/20-misuse-dangerous-capabilities-and-release-evaluation/

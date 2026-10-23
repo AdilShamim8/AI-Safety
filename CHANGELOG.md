@@ -6,6 +6,18 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — chapter 19)
+
+- `chapters/19-multimodal-and-embodied-safety/`: the modality change
+  as a safety-case change — five verified failure stations (typographic
+  jailbreaks with the visual-embedding attribution, query-relevant
+  image compromise, universal visual jailbreak, BadRobot's embodied
+  vulnerabilities, the survey's pipeline fragilities), the Vantage
+  five-instrument audit with exact recomputed statistics, and the
+  sim-to-real honesty limit.
+- Registers +5 (SRC-PAPER-088..092); claims +5 (CLM-0139..0143);
+  GLOSSARY +6 terms.
+
 ### Added (2026-10-23 — chapter 18)
 
 - `chapters/18-reasoning-faithfulness-and-monitorability/`: the CoT

@@ -1366,3 +1366,58 @@ claims:
     counterevidence: >-
       none at abstract level; the defensive direction (steering CoTs into monitorable shapes) is not demonstrated in the abstract — only the evasion direction is
     date: 2026-10-23
+
+  - id: CLM-0139
+    claim: >-
+      Gong et al. (arXiv:2311.05608) introduce FigStep, a black-box jailbreak against large vision-language models that converts prohibited content into images through typography, achieving an average attack success rate of 82.50% across six open-source LVLMs, with ablation and embedding-distribution analysis attributing the success to a deficiency of safety alignment for visual embeddings, and with lower attack costs than five text-only and four image-based jailbreak comparisons.
+    source: SRC-PAPER-088
+    section_or_page: "arXiv API abstract for 2311.05608 v3 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the 82.50% is on 2023-era open-source models — mechanism demonstration, dated as to rates"
+    assumptions: "the typography-to-bypass mechanism is as described"
+    counterevidence: >-
+      none at abstract level; current-model rates are unmeasured by this source — the chapter requires per-deployment re-measurement
+    date: 2026-10-23
+
+  - id: CLM-0140
+    claim: >-
+      Liu et al. (arXiv:2311.17600) observe that multimodal large language models can be compromised by query-relevant images as if the text query itself were malicious, and introduce MM-SafetyBench — 13 scenarios, 5,040 text-image pairs — finding 12 state-of-the-art models susceptible even when their equipped LLMs were safety-aligned, and proposing a prompting strategy that enhances resilience against such attacks.
+    source: SRC-PAPER-089
+    section_or_page: "arXiv API abstract for 2311.17600 v5 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-model breach rates and the mitigation's effect sizes live in the unread body"
+    assumptions: "the query-relevant image construction elicits the breach as described"
+    counterevidence: >-
+      none at abstract level; the mitigation is partial by the paper's own framing (enhances resilience), and legitimate-image mechanisms have no filterable artifact
+    date: 2026-10-23
+
+  - id: CLM-0141
+    claim: >-
+      Qi et al. (arXiv:2306.13213) argue the continuous, high-dimensional visual input is a weak link of vision-integrated LLMs with an expanded attack surface and wider achievable adversarial objectives, and demonstrate that a single visual adversarial example can universally jailbreak an aligned LLM — compelling it to heed a wide range of harmful instructions it otherwise would not, generating harmful content beyond the scope of the corpus used to optimize the attack.
+    source: SRC-PAPER-090
+    section_or_page: "arXiv API abstract for 2306.13213 v2 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-instruction rates and optimization details live in the unread body"
+    assumptions: "the universal-jailbreak demonstration is as described on the evaluated models"
+    counterevidence: >-
+      none at abstract level; the result predates current VLMs, and compression/processing pipelines attenuate transferred perturbations (the chapter's instrument 3 measures this per deployment)
+    date: 2026-10-23
+
+  - id: CLM-0142
+    claim: >-
+      The BadRobot authors (arXiv:2407.20242, 12 authors) introduce an attack paradigm that makes embodied LLM agents violate safety and ethical constraints through typical voice-based user-system interactions, exploiting three vulnerabilities — manipulation of LLMs within robotic systems, misalignment between linguistic outputs and physical actions, and unintentional hazardous behaviors caused by world-knowledge flaws — with a benchmark of malicious physical action queries demonstrating effectiveness against Voxposer, Code as Policies, and ProgPrompt.
+    source: SRC-PAPER-091
+    section_or_page: "arXiv API abstract for 2407.20242 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; attack success rates live in the unread body; the linguistic/physical misalignment vulnerability is the chapter's load-bearing finding"
+    assumptions: "the attacked frameworks are as represented"
+    counterevidence: >-
+      none at abstract level; demonstration against 2024-era frameworks — the vulnerability classes, not the specific rates, are what transfer
+    date: 2026-10-23
+
+  - id: CLM-0143
+    claim: >-
+      The 38-author survey (arXiv:2605.02900) organizes embodied-AI safety across the full pipeline — perception, cognition, planning, action and interaction, and the agentic system — synthesizing 500+ papers across adversarial, backdoor, jailbreak, and hardware-level attacks and defenses, and identifies overlooked challenges: the fragility of multimodal perception fusion, the instability of planning under jailbreak attacks, and the trustworthiness of human-agent interaction in open-ended scenarios, with embodied agents acting under uncertain sensing, incomplete knowledge, and dynamic human-robot interaction where failures can directly lead to physical harm.
+    source: SRC-PAPER-092
+    section_or_page: "arXiv API abstract for 2605.02900 v2 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read, synthesis-level; the named fragilities mark thin-evidence areas, priced by the chapter as weak links rather than settled findings"
+    assumptions: "the taxonomy covers the field as claimed"
+    counterevidence: >-
+      none at this access level; surveys age — the 2026 date is recent, but per-topic depth must come from the primary sources it indexes
+    date: 2026-10-23
