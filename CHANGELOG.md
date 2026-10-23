@@ -6,6 +6,15 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — P08 control protocol; the build's 100th commit)
+
+- `src/ai_safety_course/control_protocol/`: the Ch. 08 frontier as
+  code — paired three-protocol comparison (no-monitor /
+  simple-monitor / defer-to-trusted) with identical seeded flagging,
+  showing the monitor's recall as the safety ceiling and defer
+  buying usefulness back at the audit budget's price (61 trusted
+  executions, ~23% of throughput). 6 pinned tests.
+
 ### Added (2026-10-23 — P05 weak-to-strong analogue)
 
 - `src/ai_safety_course/w2s_audit/`: the scalable-oversight

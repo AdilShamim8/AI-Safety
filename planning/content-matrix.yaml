@@ -686,7 +686,7 @@ projects:
   title: Control and monitoring protocol
   path: projects/p08-control-and-monitoring-protocol/
   phase: D
-  maturity: planned
+  maturity: complete
   chapter_links:
   - 08
   artifacts:
@@ -696,8 +696,8 @@ projects:
   - adaptive test cases
   - unverified-trust-assumption discussion
   - verified ControlArena integration guide where useful
-  status: protocol-only
-  verified_on: null
+  status: implemented
+  verified_on: '2026-10-23'
 - id: P09
   title: Distribution shift and subgroup reliability
   path: projects/p09-distribution-shift-and-subgroup-reliability/
