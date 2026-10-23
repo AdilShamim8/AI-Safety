@@ -2714,3 +2714,54 @@ sources:
     limitations: >-
       Timeline page inspected 2026-10-23 (a community explorer, not the official journal text — the underlying regulation's official numbering was not separately captured on this page; recorded honestly). The chapter uses the dates for mapping arithmetic only and explicitly does not interpret any article for a legal position — not legal advice.
     license: "page content (community explorer site)"
+
+  - id: SRC-PAPER-105
+    title: "The Benchmark Lottery"
+    authors_or_organization: "Mostafa Dehghani, Yi Tay, Alexey A. Gritsenko, Zhe Zhao, Neil Houlsby, and 3 further authors (8 total)"
+    url: "https://arxiv.org/abs/2107.07002"
+    source_type: paper
+    publication_date: 2021-07-14
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "peer-reviewed status not verified at fetched version (arXiv listing; NeurIPS 2022 Datasets and Benchmarks not verified against proceedings)"
+    supports:
+      - "chapters/24-research-practice-and-capstone-execution/README.md (station 1 and section 3.3: the notion of a benchmark lottery describing the overall fragility of the ML benchmarking process — many factors other than fundamental algorithmic superiority may lead to a method being perceived as superior, with relative performance of algorithms altered significantly simply by choosing different benchmark setups)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The specific benchmark setups and the magnitude of the demonstrated alterations live in the unread body; the chapter's flip-probability arithmetic is the course's own quantification of the fragility claim, not the paper's numbers.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-106
+    title: "Who Benchmarks the Benchmarks? Towards Comprehensive Evaluation of Commonsense Reasoning Benchmarks"
+    authors_or_organization: "Pavel Chizhov, Anton Changalidis, Vishnu Prasad Vijaya Kumar, Yannick Detrois, Mattia Nee, and 2 further authors (7 total)"
+    url: "https://arxiv.org/abs/2504.07825"
+    source_type: paper
+    publication_date: 2025-04-10
+    version: "v2 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/24-research-practice-and-capstone-execution/README.md (station 2 and section 3.3: commonsense MCQ benchmarks (e.g., HellaSwag, PIQA) being outdated and carrying numerous validity issues; the HellaSwag case study documenting issues ranging from ungrammaticality and numerous typos to misleading prompts and equally correct options)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The per-issue-class counts and the proposed evaluation methodology live in the unread body; the chapter carries the issue taxonomy for instrument audits.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-107
+    title: "Position: Embracing Negative Results in Machine Learning"
+    authors_or_organization: "Florian Karl, Lukas Malte Kemeter, Gabriel Dax, Paulina Sierak"
+    url: "https://arxiv.org/abs/2406.03980"
+    source_type: paper
+    publication_date: 2024-06-06
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: methodological
+    peer_review_status: "peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)"
+    supports:
+      - "chapters/24-research-practice-and-capstone-execution/README.md (station 3 and section 3.5: the position that predictive performance on selected problems is not a good indicator of a publication's worth, that using it as such fosters inefficiencies and wrong incentives in the ML research community, and the call for publishing negative results to improve scientific output)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The position's full argument and proposed publication norms live in the unread body; the chapter carries the call and its incentive diagnosis.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"

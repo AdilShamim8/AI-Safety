@@ -536,7 +536,7 @@ chapters:
   title: Research practice and capstone execution
   path: chapters/24-research-practice-and-capstone-execution/
   phase: H
-  maturity: planned
+  maturity: complete
   outcomes:
   - Scope literature and nearest baselines with research taste and falsifiability
   - Preregister, design ablations, report reproducibly, handle negative results and ethical release
@@ -549,8 +549,11 @@ chapters:
   assessments:
   - research proposal
   - capstone report
-  source_ids: []
-  verified_on: null
+  source_ids:
+  - SRC-PAPER-105
+  - SRC-PAPER-106
+  - SRC-PAPER-107
+  verified_on: '2026-10-23'
 projects:
 - id: P01
   title: Evaluation harness and scorer validation

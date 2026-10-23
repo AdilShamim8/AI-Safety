@@ -1606,3 +1606,36 @@ claims:
     counterevidence: >-
       none observed; the honest limits are stated — community page, no official numbering captured, and the chapter draws no legal conclusions from the dates
     date: 2026-10-23
+
+  - id: CLM-0161
+    claim: >-
+      Dehghani et al. (arXiv:2107.07002, 8 authors) propose the notion of a benchmark lottery describing the overall fragility of the ML benchmarking process: many factors other than fundamental algorithmic superiority may lead to a method being perceived as superior, and on multiple prevalent benchmark setups the relative performance of algorithms may be altered significantly simply by choosing different benchmark setups.
+    source: SRC-PAPER-105
+    section_or_page: "arXiv API abstract for 2107.07002 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the demonstrated alteration magnitudes live in the unread body; the course's flip-probability arithmetic quantifies the fragility claim independently"
+    assumptions: "the demonstrated setups are representative of benchmark practice"
+    counterevidence: >-
+      none at abstract level; the lottery is a property of noisy comparisons at small gaps and small n — exactly what the chapter's arithmetic makes checkable per claim
+    date: 2026-10-23
+
+  - id: CLM-0162
+    claim: >-
+      Chizhov et al. (arXiv:2504.07825, 7 authors) find that some popular commonsense-reasoning MCQ benchmarks (e.g., HellaSwag, PIQA) are outdated and contain numerous validity issues, illustrated via a HellaSwag case study documenting issues ranging from basic ungrammaticality and numerous typos to misleading prompts and equally correct options.
+    source: SRC-PAPER-106
+    section_or_page: "arXiv API abstract for 2504.07825 v2 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-issue-class counts and the proposed benchmark-evaluation methodology live in the unread body"
+    assumptions: "the case-study findings generalize to the benchmark as a whole as claimed"
+    counterevidence: >-
+      none at abstract level; HellaSwag's maintainers' responses and any post-2025 fixes are not covered by this source — the audit practice is what the chapter carries, not a permanent verdict on any specific benchmark
+    date: 2026-10-23
+
+  - id: CLM-0163
+    claim: >-
+      Karl, Kemeter, Dax, and Sierak (arXiv:2406.03980) argue that predictive performance on selected problems is not a good indicator of a machine-learning publication's worth, that using it as such fosters inefficiencies and wrong incentives in the research community, and call for the publication of negative results to improve the community's scientific output.
+    source: SRC-PAPER-107
+    section_or_page: "arXiv API abstract for 2406.03980 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the full position argument and proposed norms live in the unread body"
+    assumptions: "the incentive diagnosis reflects the publication system as described"
+    counterevidence: >-
+      none at abstract level — a position paper; the counter-position (performance-primary evaluation) exists in practice and is the incentive the position argues against
+    date: 2026-10-23

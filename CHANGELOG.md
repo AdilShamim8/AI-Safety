@@ -6,6 +6,19 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — chapter 24; all 24 chapters complete)
+
+- `chapters/24-research-practice-and-capstone-execution/`: the
+  methodology assembled into the capstone — falsifiable scoping,
+  baselines that can win, preregistration, the benchmark-lottery
+  arithmetic (flip probabilities computed per comparison), the
+  ablation grid as inward-facing safety case, negative results
+  written to be useful, and the ethical-release review. The worked
+  example is the P10 proposal in miniature with all arithmetic
+  shown.
+- Registers +3 (SRC-PAPER-105..107); claims +3 (CLM-0161..0163);
+  GLOSSARY +6 terms. Chapter spine: 24/24.
+
 ### Added (2026-10-23 — chapter 23)
 
 - `chapters/23-governance-and-standards/`: instruments sorted by
