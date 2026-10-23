@@ -506,3 +506,199 @@ datasets:
         url: "https://aclanthology.org/2024.acl-long.830"
         collected: "ACL 2024 long paper listing; authors (Zhang et al.); citation count context"
         accessed_on: 2026-10-21
+
+  - id: DS-014
+    name: "OR-Bench"
+    organization: "Justin Cui, Wei-Lin Chiang, Ion Stoica, Cho-Jui Hsieh (UCLA / Berkeley)"
+    hf_id: "bench-llms/or-bench (paper's org) and bench-llm/or-bench (higher-traffic hosting)"
+    canonical_url: "https://github.com/justincui03/or-bench"
+    paper:
+      id: "2405.20947"
+      url: "https://arxiv.org/abs/2405.20947"
+      title: "OR-Bench: An Over-Refusal Benchmark for Large Language Models"
+      verified_title: true
+    risk_area: "over-refusal / exaggerated safety"
+    task: ["over-refusal measurement (automatically generated prompts)"]
+    license:
+      as_observed: "cc-by-4.0 (both HF hostings carry the tag)"
+      where_observed: "HF API license tags on bench-llms/or-bench and bench-llm/or-bench, fetched 2026-10-23; org-name discrepancy between the paper's stated URL and the higher-traffic hosting recorded in the card"
+    size_facts:
+      - fact: "80,000 over-refusal prompts across 10 common rejection categories; subset of ~1,000 hard prompts; additional 600 toxic prompts as contrast"
+        ref: "R1"
+      - fact: "measurement study covers 32 popular LLMs across 8 model families"
+        ref: "R1"
+    course_use:
+      chapters: ["06"]
+      projects: []
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/14-or-bench.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2405.20947"
+        collected: "title; authors; v1 2024-05-31 / v5 2025-06-15; abstract (80,000 prompts, 10 categories, ~1,000 hard, 600 toxic, 32 LLMs / 8 families, automatic generation method)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://huggingface.co/datasets/bench-llms/or-bench"
+        collected: "license tag cc-by-4.0; 937 downloads; the org named in the paper's URL"
+        accessed_on: 2026-10-23
+      - id: "R3"
+        url: "https://huggingface.co/datasets/bench-llm/or-bench"
+        collected: "license tag cc-by-4.0; 9,801 downloads; last modified 2024-12-19; org-name discrepancy recorded"
+        accessed_on: 2026-10-23
+
+  - id: DS-015
+    name: "WildJailbreak"
+    organization: "allenai (paper: Jiang et al., 11 authors)"
+    hf_id: "allenai/wildjailbreak"
+    canonical_url: "https://huggingface.co/datasets/allenai/wildjailbreak"
+    paper:
+      id: "2406.18510"
+      url: "https://arxiv.org/abs/2406.18510"
+      title: "WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models"
+      verified_title: true
+    risk_area: "jailbreak training / adversarial safety training"
+    task: ["safety training set (vanilla + adversarial prompt-response pairs)"]
+    license:
+      as_observed: "odc-by"
+      where_observed: "HF API license tag on allenai/wildjailbreak, fetched 2026-10-23"
+    size_facts:
+      - fact: "262K vanilla (direct request) and adversarial (complex jailbreak) prompt-response pairs"
+        ref: "R1"
+      - fact: "contrastive design: harmful queries (vanilla and adversarial) plus benign queries that resemble harmful queries in form but contain no harm"
+        ref: "R1"
+      - fact: "built by mining in-the-wild user-chatbot interactions; 5.7K unique clusters of novel jailbreak tactics; up to 4.6x more diverse and successful adversarial attacks than state-of-the-art jailbreak methods"
+        ref: "R1"
+    course_use:
+      chapters: ["04", "15"]
+      projects: []
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/15-wildjailbreak.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2406.18510"
+        collected: "title; 11 authors; submitted 2024-06-26; abstract (5.7K tactic clusters; 262K pairs; contrastive design; 4.6x comparison; open training-set motivation)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://huggingface.co/datasets/allenai/wildjailbreak"
+        collected: "license tag odc-by; arXiv tag 2406.18510; 164 likes; 6,196 downloads; last modified 2024-08-08"
+        accessed_on: 2026-10-23
+
+  - id: DS-016
+    name: "WMDP (Weapons of Mass Destruction Proxy)"
+    organization: "consortium of academics and technical consultants (paper: Li et al., 57 authors)"
+    hf_id: "cais/wmdp"
+    canonical_url: "https://wmdp.ai"
+    paper:
+      id: "2403.03218"
+      url: "https://arxiv.org/abs/2403.03218"
+      title: "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning"
+      verified_title: true
+    risk_area: "hazardous knowledge / unlearning"
+    task: ["multiple-choice proxy measurement of hazardous knowledge"]
+    license:
+      as_observed: "mit"
+      where_observed: "HF API license tag on cais/wmdp, fetched 2026-10-23"
+    size_facts:
+      - fact: "3,668 multiple-choice questions across biosecurity, cybersecurity, and chemical security"
+        ref: "R1"
+      - fact: "stringently filtered to eliminate sensitive information prior to public release; dual role as hazardous-knowledge evaluation and unlearning benchmark; RMU unlearning method reduces WMDP performance while maintaining general capabilities"
+        ref: "R1"
+    course_use:
+      chapters: ["20"]
+      projects: []
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/16-wmdp.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2403.03218"
+        collected: "title; 57 authors; v1 2024-03-05 / v7 2024-05-15; abstract (3,668 MCQ; bio/cyber/chem; filtering; RMU; wmdp.ai; White House EO context)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://huggingface.co/datasets/cais/wmdp"
+        collected: "license tag mit; arXiv tag 2403.03218; 32 likes; 26,806 downloads; last modified 2024-04-27"
+        accessed_on: 2026-10-23
+
+  - id: DS-017
+    name: "HaluEval"
+    organization: "RUC AI Box (paper: Li, Cheng, Zhao, Nie, Wen)"
+    hf_id: "pminervini/HaluEval (mirror)"
+    canonical_url: "https://github.com/RUCAIBox/HaluEval"
+    paper:
+      id: "2305.11747"
+      url: "https://arxiv.org/abs/2305.11747"
+      title: "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models"
+      verified_title: true
+    risk_area: "hallucination recognition"
+    task: ["hallucination recognition (forced choice) across general/QA/dialogue/summarization"]
+    license:
+      as_observed: "apache-2.0 (HF mirror tag); canonical repository license not displayed on the fetched pages"
+      where_observed: "HF API license tag on pminervini/HaluEval, fetched 2026-10-23; canonical GitHub README and listing showed no license statement — recorded honestly in the card"
+    size_facts:
+      - fact: "35K generated and human-annotated hallucinated samples: 5K general (Alpaca-sourced user queries, human-annotated ChatGPT responses) + 10K each QA (HotpotQA seed), dialogue (OpenDialKG seed), summarization (CNN/Daily Mail seed)"
+        ref: "R2"
+      - fact: "sampling-then-filtering generation framework; about 19.5% of ChatGPT responses hallucinated (topic-specific, fabricating unverifiable information)"
+        ref: "R1"
+    course_use:
+      chapters: ["06"]
+      projects: []
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/17-halueval.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2305.11747"
+        collected: "title; 5 authors; v1 2023-05-19 / updated 2023-10-23; abstract (sampling-then-filtering; human labelers; ~19.5% topic-specific; external-knowledge/reasoning findings)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://github.com/RUCAIBox/HaluEval"
+        collected: "35K composition; 5K/10K/10K/10K per-task split with seed corpora and field schemas"
+        accessed_on: 2026-10-23
+      - id: "R3"
+        url: "https://huggingface.co/datasets/pminervini/HaluEval"
+        collected: "license tag apache-2.0; 34 likes; 8,996 downloads; last modified 2023-12-07"
+        accessed_on: 2026-10-23
+
+  - id: DS-018
+    name: "SimpleQA"
+    organization: "OpenAI (paper: Wei et al., 8 authors)"
+    hf_id: "none canonical; mirror basicv8vc/SimpleQA observed (not used as a fact source)"
+    canonical_url: "https://github.com/openai/simple-evals"
+    paper:
+      id: "2411.04368"
+      url: "https://arxiv.org/abs/2411.04368"
+      title: "Measuring short-form factuality in large language models"
+      verified_title: true
+    risk_area: "short-form factuality"
+    task: ["fact-seeking QA with correct/incorrect/not-attempted grading"]
+    license:
+      as_observed: "simple-evals repository MIT (LICENSE read directly); the data file at openaipublic blob storage shows no separate license statement at the file location"
+      where_observed: "GitHub license API for openai/simple-evals, fetched 2026-10-23; data-URL license status recorded honestly in the card"
+    size_facts:
+      - fact: "4,326 questions (direct CSV parse; naive line count 4,333 due to multi-line quoted fields)"
+        ref: "R3"
+      - fact: "topic distribution: Science and technology 858, Politics 709, Art 550, Other 475, Geography 424, Sports 368, Music 341, TV shows 293, History 173, Video games 135 (sum 4,326)"
+        ref: "R3"
+      - fact: "adversarially collected against GPT-4 responses; single indisputable answers; ideal behavior gets as many correct as possible while not attempting low-confidence questions"
+        ref: "R1"
+    course_use:
+      chapters: ["06"]
+      projects: ["P10"]
+    access_level: "abstract-read"
+    verified_on: 2026-10-23
+    card: "cards/18-simpleqa.md"
+    references:
+      - id: "R1"
+        url: "https://arxiv.org/abs/2411.04368"
+        collected: "title; 8 authors; submitted 2024-11-07; abstract (adversarial collection against GPT-4; single answers; three-way grading; know-what-you-know framing; github.com/openai/simple-evals)"
+        accessed_on: 2026-10-23
+      - id: "R2"
+        url: "https://github.com/openai/simple-evals"
+        collected: "MIT license (LICENSE read via GitHub API); file listing (simpleqa_eval.py)"
+        accessed_on: 2026-10-23
+      - id: "R3"
+        url: "https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv"
+        collected: "4,326 rows; columns metadata/problem/answer; topic distribution; multi-line quoted-field artifact"
+        accessed_on: 2026-10-23

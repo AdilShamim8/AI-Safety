@@ -1949,3 +1949,173 @@ sources:
     limitations: >-
       License file fetched and read 2026-10-23. The MIT license covers the repository contents including the data directory; mirror repositories (e.g. walledai mirrors) carry their own framing and are not the authority. Harmful-content policy unchanged: this course describes AdvBench at category level only and redistributes none of it.
     license: "MIT (SPDX, GitHub license API)"
+
+  - id: SRC-PAPER-074
+    title: "OR-Bench: An Over-Refusal Benchmark for Large Language Models"
+    authors_or_organization: "Justin Cui, Wei-Lin Chiang, Ion Stoica, Cho-Jui Hsieh"
+    url: "https://arxiv.org/abs/2405.20947"
+    source_type: paper
+    publication_date: 2024-05-31
+    version: "v5 (2025-06-15) per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "datasets/cards/14-or-bench.md and datasets/catalog.yaml DS-014 (composition: 80,000 over-refusal prompts across 10 rejection categories, ~1,000 hard prompts, 600 toxic prompts; method: automatic generation of over-refusal datasets; study: 32 LLMs across 8 model families)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The generation pipeline, per-category composition, and per-model results live in the unread body. The HF org-name discrepancy (bench-llms in the paper URL vs bench-llm as the higher-traffic hosting) is recorded in the card, unresolved.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-075
+    title: "WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models"
+    authors_or_organization: "Liwei Jiang, Kavel Rao, Seungju Han, Allyson Ettinger, Faeze Brahman, and 6 further authors (11 total)"
+    url: "https://arxiv.org/abs/2406.18510"
+    source_type: paper
+    publication_date: 2024-06-26
+    version: "v1 (single version per arXiv API)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "datasets/cards/15-wildjailbreak.md and datasets/catalog.yaml DS-015 (composition: 262K vanilla and adversarial prompt-response pairs; contrastive harmful/benign design; 5.7K tactic clusters mined from in-the-wild interactions; up to 4.6x more diverse and successful attacks than state-of-the-art jailbreak methods)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The dataset name (WildJailbreak) differs from the paper title (WildTeaming) — recorded to prevent citation confusion. Clustering pipeline, splits, and experiment tables live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-076
+    title: "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning"
+    authors_or_organization: "Nathaniel Li, Alexander Pan, Anjali Gopal, Summer Yue, Daniel Berrios, and 52 further authors (57 total)"
+    url: "https://arxiv.org/abs/2403.03218"
+    source_type: paper
+    publication_date: 2024-03-05
+    version: "v7 (2024-05-15) per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; ICML 2024 not verified against proceedings)"
+    supports:
+      - "datasets/cards/16-wmdp.md and datasets/catalog.yaml DS-016 (composition: 3,668 multiple-choice questions across biosecurity, cybersecurity, chemical security; stringent filtering prior to release; dual evaluation and unlearning role; RMU unlearning method reducing WMDP performance while maintaining general capabilities)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. Per-domain counts, the filtering rubric, RMU's technical details, and retained-capability results live in the unread body. The proxy framing (knowledge, not capability) is load-bearing and preserved in every course use.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-077
+    title: "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models"
+    authors_or_organization: "Junyi Li, Xiaoxue Cheng, Wayne Xin Zhao, Jian-Yun Nie, Ji-Rong Wen"
+    url: "https://arxiv.org/abs/2305.11747"
+    source_type: paper
+    publication_date: 2023-05-19
+    version: "updated 2023-10-23 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "datasets/cards/17-halueval.md and datasets/catalog.yaml DS-017 (method: ChatGPT-based sampling-then-filtering plus human annotation; the topic-specific ~19.5% hallucinated-response figure; the external-knowledge and reasoning-step findings)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The 35K composition is README-verified (canonical repository) rather than abstract-stated. The 19.5% figure is on the authors' topic distribution — a construct statement. Annotation protocol and per-model results live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-078
+    title: "Measuring short-form factuality in large language models (SimpleQA)"
+    authors_or_organization: "Jason Wei, Nguyen Karina, Hyung Won Chung, Yunxin Joy Jiao, Spencer Papay, and 3 further authors (8 total, OpenAI)"
+    url: "https://arxiv.org/abs/2411.04368"
+    source_type: paper
+    publication_date: 2024-11-07
+    version: "v1 (single version per arXiv API)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "datasets/cards/18-simpleqa.md and datasets/catalog.yaml DS-018 (design: adversarially collected against GPT-4 responses; single indisputable answers; correct/incorrect/not-attempted grading; the know-what-you-know selective-prediction framing)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The 4,326-question count and topic distribution come from the course's own direct parse of the canonical CSV (recorded as SRC-DATASET-020), not from the abstract. Per-model results and the collection protocol live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-DATASET-016
+    title: "OR-Bench Hugging Face hostings (bench-llms/or-bench and bench-llm/or-bench)"
+    authors_or_organization: "bench-llms and bench-llm (Hugging Face organizations)"
+    url: "https://huggingface.co/datasets/bench-llms/or-bench"
+    source_type: dataset-page
+    publication_date: null
+    version: null
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (dataset hosting page)"
+    supports:
+      - "datasets/cards/14-or-bench.md and datasets/catalog.yaml DS-014 (license tag cc-by-4.0 on both hostings; download counts 937 and 9,801; last-modified dates; the org-name discrepancy between the paper's stated URL and the higher-traffic hosting)"
+    limitations: >-
+      Pages inspected via the HF API 2026-10-23. Which org is authoritative is unresolved at this access level; both agree on license and description.
+    license: "cc-by-4.0 (page tag)"
+
+  - id: SRC-DATASET-017
+    title: "WildJailbreak Hugging Face dataset page"
+    authors_or_organization: "allenai"
+    url: "https://huggingface.co/datasets/allenai/wildjailbreak"
+    source_type: dataset-page
+    publication_date: null
+    version: "last modified 2024-08-08 per HF API"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (dataset hosting page)"
+    supports:
+      - "datasets/cards/15-wildjailbreak.md and datasets/catalog.yaml DS-015 (license tag odc-by; arXiv tag 2406.18510; 164 likes; 6,196 downloads)"
+    limitations: >-
+      Page inspected via the HF API 2026-10-23. Composition facts are abstract-anchored (SRC-PAPER-075), not page-anchored; the page's own card body was not fetched.
+    license: "odc-by (page tag)"
+
+  - id: SRC-DATASET-018
+    title: "WMDP Hugging Face dataset page"
+    authors_or_organization: "cais (Center for AI Safety)"
+    url: "https://huggingface.co/datasets/cais/wmdp"
+    source_type: dataset-page
+    publication_date: null
+    version: "last modified 2024-04-27 per HF API"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (dataset hosting page)"
+    supports:
+      - "datasets/cards/16-wmdp.md and datasets/catalog.yaml DS-016 (license tag mit; arXiv tag 2403.03218; 32 likes; 26,806 downloads)"
+    limitations: >-
+      Page inspected via the HF API 2026-10-23. Composition facts are abstract-anchored (SRC-PAPER-076); the page's own card body was not fetched.
+    license: "mit (page tag)"
+
+  - id: SRC-DATASET-019
+    title: "HaluEval canonical repository and Hugging Face mirror page"
+    authors_or_organization: "RUCAIBox (canonical GitHub); pminervini (HF mirror)"
+    url: "https://github.com/RUCAIBox/HaluEval"
+    source_type: dataset-page
+    publication_date: null
+    version: "main branch README fetched raw 2026-10-23; HF mirror last modified 2023-12-07"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (repository and hosting pages)"
+    supports:
+      - "datasets/cards/17-halueval.md and datasets/catalog.yaml DS-017 (35K composition: 5K general from Alpaca + 10K each QA/HotpotQA, dialogue/OpenDialKG, summarization/CNN-DM; per-task field schemas; mirror license tag apache-2.0)"
+    limitations: >-
+      README fetched and read 2026-10-23. The canonical repository displayed no license file in the fetched listing; the apache-2.0 tag comes from the mirror page only — recorded honestly.
+    license: "apache-2.0 (mirror page tag; canonical repository license not displayed)"
+
+  - id: SRC-DATASET-020
+    title: "SimpleQA canonical data file and simple-evals repository"
+    authors_or_organization: "OpenAI"
+    url: "https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv"
+    source_type: dataset-page
+    publication_date: null
+    version: "CSV fetched and parsed 2026-10-23; URL pinned by openai/simple-evals simpleqa_eval.py at main"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (data file and repository)"
+    supports:
+      - "datasets/cards/18-simpleqa.md and datasets/catalog.yaml DS-018 (4,326 questions by direct CSV parse; columns metadata/problem/answer; topic distribution 858/709/550/475/424/368/341/293/173/135; simple-evals repository MIT license read via the GitHub license API)"
+    limitations: >-
+      The CSV was fetched and parsed for structure and counts only; no question or answer text is reproduced in the course. The data URL displayed no separate license statement; the repository MIT license was read directly. Topic counts sum-checked programmatically (858+709+550+475+424+368+341+293+173+135 = 4,326).
+    license: "repository MIT (GitHub license API); data-file license not stated at the file location"

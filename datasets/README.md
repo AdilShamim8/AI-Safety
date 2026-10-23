@@ -54,7 +54,7 @@ example AdvBench's 520-row canonical CSV vs. a mirror card describing the
 paper's 500-behavior framing), the card records **both** numbers with both
 provenances rather than silently picking one.
 
-## The catalog (13 verified datasets)
+## The catalog (18 verified datasets)
 
 | # | Dataset | Risk area | Task shape | License (as observed) | Card |
 |---|---------|-----------|------------|-----------------------|------|
@@ -71,6 +71,11 @@ provenances rather than silently picking one.
 | 11 | HarmBench | Automated red teaming | framework + 400 text behaviors (200/100/100) | MIT (canonical repo) | [card](cards/11-harmbench.md) |
 | 12 | WildChat | Real user–assistant traffic | 650K → 1M → 3.2M conversation releases | ODC-BY (1M release, 2024-06-26) | [card](cards/12-wildchat.md) |
 | 13 | SafetyBench | Multi-category safety MCQ | 11,435 questions, EN+ZH | MIT (canonical repo) | [card](cards/13-safetybench.md) |
+| 14 | OR-Bench | Over-refusal (exaggerated safety) | 80,000 prompts, 10 categories + ~1,000 hard + 600 toxic | CC-BY-4.0 (both HF hostings) | [card](cards/14-or-bench.md) |
+| 15 | WildJailbreak | Adversarial safety training | 262K vanilla + adversarial pairs | ODC-BY (HF page) | [card](cards/15-wildjailbreak.md) |
+| 16 | WMDP | Hazardous-knowledge proxy | 3,668 MCQ (bio/cyber/chem) | MIT (HF page) | [card](cards/16-wmdp.md) |
+| 17 | HaluEval | Hallucination recognition | 35K samples (5K general + 3x10K tasks) | apache-2.0 (HF mirror) | [card](cards/17-halueval.md) |
+| 18 | SimpleQA | Short-form factuality | 4,326 questions, 10 topics | repo MIT; data-file license unstated | [card](cards/18-simpleqa.md) |
 
 ## Curriculum integration map
 
@@ -78,7 +83,7 @@ Where each dataset is *used by the course* (unit → datasets → role):
 
 | Unit | Datasets used | Role in that unit |
 |------|---------------|-------------------|
-| Ch.02 Evaluation science | all 13 | construct-validity worked examples; contamination, denominator, and adaptive-overfitting discussions use the real composition numbers above |
+| Ch.02 Evaluation science | all 13 core (01-13) | construct-validity worked examples; contamination, denominator, and adaptive-overfitting discussions use the real composition numbers above |
 | Ch.04 Preference learning | BeaverTails, HH-RLHF | label-quality audit material: annotation dimensions, preference-pair structure |
 | Ch.06 Honesty & calibration | TruthfulQA | truthfulness construct; MC scoring; abstention behavior |
 | Ch.12 Adversarial ML | AdvBench | gradient-based suffix attack target set; ASR metric construction |
@@ -118,11 +123,6 @@ Datasets we consider important but which were **not verified in this round**
 (2026-10-21 web-verification budget was finite; these are recorded at
 `metadata-only` level and must not be cited as facts until inspected):
 
-- OR-Bench (over-refusal; canonical identifier to be confirmed)
-- WildJailbreak (adversarial-vs-vanilla safety training set)
-- WMDP (hazardous-knowledge MCQ benchmark)
-- HaluEval (hallucination QA benchmark)
-- SimpleQA (short-form factuality)
 - CrowS-Pairs, Winogender (classic bias benchmarks)
 - MMLU, GSM8K (general-capability anchors for Ch.17 shift discussion)
 
@@ -133,6 +133,13 @@ upstream repo — HF-page scope caveat recorded); BBQ canonical license
 composition (400/200/100/100 by direct CSV read); SafetyBench license (MIT);
 AdvBench direct LICENSE read (MIT, llm-attacks repo); JailbreakBench repo
 license confirmation (MIT).
+
+Also verified 2026-10-23 and promoted to full cards (DS-014..DS-018): OR-Bench
+(paper abstract + both HF hostings; org-name discrepancy recorded); WildJailbreak
+(WildTeaming paper abstract + HF page; 262K pairs, ODC-BY); WMDP (paper abstract
++ HF page; 3,668 MCQ, MIT); HaluEval (paper abstract + canonical README + mirror
+page; 35K composition); SimpleQA (paper abstract + simple-evals repo + canonical
+CSV parsed directly; 4,326 questions with topic distribution).
 
 Adjacent datasets observed at page level during verification (recorded so the
 next round does not have to rediscover them): lmsys/toxic-chat (10K annotated
@@ -156,3 +163,8 @@ ucf-crcv/BBQ-V (14,144 image-question pairs, visual stereotypes).
 11. [HarmBench — standardized automated red teaming](cards/11-harmbench.md)
 12. [WildChat — real user traffic at three scales](cards/12-wildchat.md)
 13. [SafetyBench — bilingual multi-category safety MCQ](cards/13-safetybench.md)
+14. [OR-Bench — large-scale over-refusal measurement](cards/14-or-bench.md)
+15. [WildJailbreak — open adversarial safety training data](cards/15-wildjailbreak.md)
+16. [WMDP — hazardous-knowledge proxy and unlearning benchmark](cards/16-wmdp.md)
+17. [HaluEval — hallucination recognition benchmark](cards/17-halueval.md)
+18. [SimpleQA — short-form factuality with abstention grading](cards/18-simpleqa.md)

@@ -6,6 +6,19 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — pending-dataset verification round)
+
+- Five datasets promoted from the metadata-only pending queue to full
+  cards (catalog DS-014..DS-018): OR-Bench, WildJailbreak, WMDP,
+  HaluEval, SimpleQA. Each card carries the verification trail
+  (abstract-read papers, HF API page inspections, direct README/CSV
+  reads) with honest gaps.
+- SimpleQA's canonical CSV parsed directly: 4,326 questions with the
+  full topic distribution (sum-checked); the 4,333 naive line count
+  explained as a multi-line-quoted-field artifact.
+- Registers +10 (SRC-PAPER-074..078, SRC-DATASET-016..020); claims +10
+  (CLM-0116..0125). Catalog: 13 -> 18 datasets.
+
 ### Added (2026-10-23 — dataset license and composition verification round)
 
 - Six license gaps closed by direct canonical LICENSE reads: ToxiGen (MIT
