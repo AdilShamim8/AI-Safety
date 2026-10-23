@@ -6,6 +6,19 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — chapter 18)
+
+- `chapters/18-reasoning-faithfulness-and-monitorability/`: the CoT
+  as a monitored channel — five verified failure stations (unfaithful
+  explanations, partial/inverse-scaling faithfulness, obfuscation
+  under optimization, oversight-conditional amplification, CoT
+  controllability for evasion), the Meridian four-instrument audit
+  with exact recomputed statistics, the monitorability tax, and the
+  oversight flip as a paired measurement.
+- Registers +5 (SRC-PAPER-083..087: Turpin, Lanham, Baker, Jaworski,
+  Dolev — the two 2026-10 papers carried at explicit high-recency
+  honesty); claims +5 (CLM-0134..0138); GLOSSARY +6 terms.
+
 ### Added (2026-10-23 — dataset queue completion round)
 
 - Final four pending datasets verified and promoted to cards (catalog

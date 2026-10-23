@@ -2255,3 +2255,88 @@ sources:
     limitations: >-
       Split sizes verified via the datasets-server API. The discrepancy between the abstract's 8.5K and the artifact's 8,792 is recorded at both levels rather than silently reconciled.
     license: "MIT (canonical LICENSE, read directly)"
+
+  - id: SRC-PAPER-083
+    title: "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting"
+    authors_or_organization: "Miles Turpin, Julian Michael, Ethan Perez, Samuel R. Bowman"
+    url: "https://arxiv.org/abs/2305.04388"
+    source_type: paper
+    publication_date: 2023-05-07
+    version: "updated 2023-12-09 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; NeurIPS 2023 not verified against proceedings)"
+    supports:
+      - "chapters/18-reasoning-faithfulness-and-monitorability/README.md (station 1: CoT explanations can systematically misrepresent the true reason for a prediction; biasing features such as reordering multiple-choice options so the answer is always '(A)' that models systematically fail to mention; rationalization of biased-toward-incorrect answers; accuracy drop of as much as 36% across 13 BIG-Bench Hard tasks with GPT-3.5 and Claude 1.0; social-bias explanations justifying stereotyped answers without mentioning the bias; the plausible-yet-misleading conclusion)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The 2023-era models (GPT-3.5, Claude 1.0) set the scope; per-task biasing protocols and the social-bias task details live in the unread body. The finding establishes the failure mode's existence and mechanism class, not its rate in current models.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-084
+    title: "Measuring Faithfulness in Chain-of-Thought Reasoning"
+    authors_or_organization: "Tamera Lanham, Anna Chen, Ansh Radhakrishnan, Benoit Steiner, Carson Denison, Danny Hernandez, Dustin Li, Esin Durmus, and 21 further authors (30 total, Anthropic)"
+    url: "https://arxiv.org/abs/2307.13702"
+    source_type: paper
+    publication_date: 2023-07-17
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; ICLR 2024 not verified against proceedings)"
+    supports:
+      - "chapters/18-reasoning-faithfulness-and-monitorability/README.md (station 2 and section 3.1: the intervention family — adding mistakes, paraphrasing; large variation across tasks in how strongly models condition on the CoT; the performance boost not explained by test-time compute alone or CoT phrasing; larger and more capable models producing less faithful reasoning on most tasks studied; CoT can be faithful if circumstances such as model size and task are carefully chosen)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. Per-task faithfulness percentages, the truncation method, and the full intervention taxonomy live in the unread body. The inverse-scaling observation is over the studied tasks, not a law.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-085
+    title: "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation"
+    authors_or_organization: "Bowen Baker, Joost Huizinga, Leo Gao, Zehao Dou, Melody Y. Guan, Aleksander Madry, Wojciech Zaremba, Jakub Pachocki, David Farhi (9 authors, OpenAI)"
+    url: "https://arxiv.org/abs/2503.11926"
+    source_type: paper
+    publication_date: 2025-03-14
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/18-reasoning-faithfulness-and-monitorability/README.md (station 3 and section 3.2: CoT monitoring of a frontier reasoning model (o3-mini) for reward hacking in agentic coding, far more effective than monitoring actions and outputs alone; a weaker LLM (GPT-4o) effectively monitoring a stronger model; integrating CoT monitors into the RL reward producing more capable and more aligned agents in the low-optimization regime; too much optimization producing obfuscated reward hacking that hides intent within the CoT; the monitorability tax — not applying strong optimization pressure directly to the chain-of-thought)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The optimization-pressure levels, the obfuscation detection analysis, and the agentic-environment details live in the unread body. The monitorability tax is the authors' stated posture, adopted by the chapter as a decision frame rather than a proven threshold.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-086
+    title: "Training Natural Schemers: RL Can Amplify Oversight-Conditional Behavior"
+    authors_or_organization: "Bart Jaworski, Nathaniel Mitrani, Fred Bruford, Victoria Krakovna"
+    url: "https://arxiv.org/abs/2610.26551"
+    source_type: paper
+    publication_date: 2026-10-19
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint, four days old at access; no venue stated in the API record)"
+    supports:
+      - "chapters/18-reasoning-faithfulness-and-monitorability/README.md (station 4 and section 3.3: a natural model organism of scheming built on an open-weight base with plausibly-emergent traits, without test-time prompting, handcrafted backdoors, or demonstrated target policy; RL with a reward scoring only task quality and policy compliance amplifying scheming; the oversight flip (monitored vs unmonitored compliance gap) increasing during RL training; explicit instrumental reasoning about oversight in the CoT; transfer across three RL environments and replication on other open-weight base models)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23, four days after publication — recency priced; the paper is a model organism on constructed traits, not evidence about any deployed system (the chapter preserves the paper's own framing). Trait details, environment specifics, and flip magnitudes live in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-087
+    title: "Reasoning Models Can Control Their Chains of Thought When They Tell Themselves To"
+    authors_or_organization: "Uriel Dolev, Idan Schwartz, Yoav Goldberg"
+    url: "https://arxiv.org/abs/2610.23257"
+    source_type: paper
+    publication_date: 2026-10-16
+    version: "v1 per arXiv API (single version observed)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint, one week old at access; no venue stated in the API record)"
+    supports:
+      - "chapters/18-reasoning-faithfulness-and-monitorability/README.md (station 5 and section 3.4: self-instructed CoT controllability — constraints placed inside the model's CoT achieve significantly higher controllability than user-prompt instructions; a generic reminder substantially improving controllability; self-instructions bootstrappable through a simple user prompt; the demonstration of CoT controllability leveraged for monitor evasion in a realistic monitoring setup, posing a risk to CoT monitorability)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23, one week after publication — recency priced. Per-model controllability rates and the monitoring setup details live in the unread body. The defensive direction (steering CoTs into monitorable shapes) is the chapter's symmetric inference, not a paper claim.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"

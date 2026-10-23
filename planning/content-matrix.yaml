@@ -1,495 +1,777 @@
-# Content matrix — chapter/project inventory with truthful maturity.
-#
-# Schema per chapter: id, title, path, phase, maturity, outcomes, prerequisites,
-# project_ids, assessments, source_ids (verified readings), verified_on.
-# Schema per project: id, title, path, phase, maturity, chapter_links,
-# artifacts, status (protocol-only | implemented | smoke-tested |
-# experiment-executed | independently-reproduced), verified_on.
-#
-# maturity: planned | drafting | complete   — "complete" only when the unit's
-# definition of done in planning/BUILD_PLAN.md is fully met.
-# status is the honest execution status of project code+experiments.
-
 schema_version: 1
 baseline_date: 2026-10-20
 last_updated: 2026-10-22
-
 chapters:
-  - id: "01"
-    title: "Risk models and research epistemics"
-    path: "chapters/01-risk-models-and-research-epistemics/"
-    phase: C
-    maturity: complete
-    outcomes:
-      - "Define hazard, capability, propensity, exposure, severity, and causal pathways operationally"
-      - "Apply evidence hierarchies and uncertainty tracking to safety claims"
-      - "Produce a threat hypothesis together with observations that would weaken it"
-    prerequisites: []
-    project_ids: []
-    assessments: ["threat-hypothesis artifact"]
-    source_ids: ["SRC-PAPER-001", "SRC-PAPER-002", "SRC-REPORT-001", "SRC-ARTICLE-001"]
-    verified_on: 2026-10-21
-  - id: "02"
-    title: "Evaluation science and experimental design"
-    path: "chapters/02-evaluation-science-and-experimental-design/"
-    phase: C
-    maturity: complete
-    outcomes:
-      - "Explain construct validity, dataset provenance, grouped splits, contamination, adaptive overfitting"
-      - "Design evaluations with statistical power, cluster-aware intervals, effect sizes, repeated trials"
-      - "Produce a preregistered evaluation plan"
-    prerequisites: ["01"]
-    project_ids: ["P01"]
-    assessments: ["preregistered-evaluation-plan artifact"]
-    source_ids: ["SRC-PAPER-003", "SRC-PAPER-004", "SRC-PAPER-005", "SRC-REPORT-001", "SRC-ARTICLE-001", "SRC-DATASET-001", "SRC-DATASET-002", "SRC-DATASET-003", "SRC-DATASET-004", "SRC-DATASET-005", "SRC-DATASET-006", "SRC-DATASET-007", "SRC-DATASET-009", "SRC-DATASET-010", "SRC-DATASET-012"]
-    verified_on: 2026-10-21
-  - id: "03"
-    title: "Specification, reward hacking, and goal misgeneralization"
-    path: "chapters/03-specification-reward-hacking-and-goal-misgeneralization/"
-    phase: C
-    maturity: complete
-    outcomes:
-      - "Distinguish proxy failure, capability failure, and learned-goal failure"
-      - "Analyze Goodhart effects under distribution shift with a concrete counterexample"
-      - "Run a bounded proxy-vs-intended-objective experiment"
-    prerequisites: ["01"]
-    project_ids: ["P02"]
-    assessments: ["counterexample analysis", "bounded experiment report"]
-    source_ids: [SRC-PAPER-002, SRC-PAPER-006, SRC-PAPER-007, SRC-PAPER-008]
-    verified_on: 2026-10-21
-  - id: "04"
-    title: "Preference learning and post-training"
-    path: "chapters/04-preference-learning-and-post-training/"
-    phase: D
-    maturity: complete
-    outcomes:
-      - "Explain reward modeling, KL regularization, SFT, PPO-style RLHF, DPO, RLAIF, Constitutional AI and what their objectives do and do not imply"
-      - "Derive at least one post-training objective"
-      - "Audit preference-label quality"
-    prerequisites: ["03"]
-    project_ids: ["P04"]
-    assessments: ["objective derivation", "label-quality audit"]
-    source_ids: [SRC-PAPER-009, SRC-PAPER-010, SRC-PAPER-011, SRC-PAPER-012, SRC-DATASET-007, SRC-DATASET-008]
-    verified_on: 2026-10-21
-  - id: "05"
-    title: "Scalable oversight"
-    path: "chapters/05-scalable-oversight/"
-    phase: D
-    maturity: complete
-    outcomes:
-      - "Explain weak-to-strong supervision, debate, decomposition, process vs outcome supervision"
-      - "Identify oversight failures, evaluator capability limits, correlated errors"
-      - "Design a bounded comparison with checkable ground truth"
-    prerequisites: ["02"]
-    project_ids: ["P05"]
-    assessments: ["bounded-comparison design"]
-    source_ids: [SRC-PAPER-013, SRC-PAPER-014, SRC-PAPER-015, SRC-PAPER-001, SRC-DATASET-001, SRC-DATASET-006]
-    verified_on: 2026-10-21
-  - id: "06"
-    title: "Honesty, uncertainty, and selective prediction"
-    path: "chapters/06-honesty-uncertainty-and-selective-prediction/"
-    phase: D
-    maturity: complete
-    outcomes:
-      - "Distinguish truthfulness vs honesty; calibration, abstention, risk-coverage curves"
-      - "Explain sycophancy and factuality measurement"
-      - "Explain why verbal confidence and token probabilities are not automatic truth probabilities"
-    prerequisites: ["02"]
-    project_ids: ["P03"]
-    assessments: ["calibration-analysis report"]
-    source_ids: [SRC-PAPER-003, SRC-PAPER-016, SRC-PAPER-017, SRC-PAPER-018, SRC-DATASET-001, SRC-DATASET-006]
-    verified_on: 2026-10-21
-  - id: "07"
-    title: "Deception, scheming, and evaluation awareness"
-    path: "chapters/07-deception-scheming-and-evaluation-awareness/"
-    phase: D
-    maturity: complete
-    outcomes:
-      - "Separate learned-optimization hypotheses from evidence; model organisms vs deployment claims"
-      - "Analyze alignment faking and sandbagging demonstrations with their assumptions"
-      - "Produce a skeptical evidence table"
-    prerequisites: ["03"]
-    project_ids: []
-    assessments: ["skeptical-evidence-table artifact"]
-    source_ids: [SRC-PAPER-019, SRC-PAPER-020, SRC-PAPER-021, SRC-PAPER-002, SRC-DATASET-009, SRC-DATASET-010]
-    verified_on: 2026-10-21
-  - id: "08"
-    title: "AI control and monitoring"
-    path: "chapters/08-ai-control-and-monitoring/"
-    phase: D
-    maturity: complete
-    outcomes:
-      - "Treat trusted/untrusted components as assumptions with failure conditions"
-      - "Design control protocols under audit budgets with monitoring, editing, deferral"
-      - "Reason about adaptive red teams, collusion, safety-usefulness tradeoffs"
-    prerequisites: ["05"]
-    project_ids: ["P08"]
-    assessments: ["control-protocol definition with failure conditions"]
-    source_ids: [SRC-PAPER-022, SRC-PAPER-023, SRC-PAPER-024, SRC-PAPER-013, SRC-DATASET-006, SRC-DATASET-010]
-    verified_on: 2026-10-21
-  - id: "09"
-    title: "Mechanistic interpretability foundations"
-    path: "chapters/09-mechanistic-interpretability-foundations/"
-    phase: E
-    maturity: complete
-    outcomes:
-      - "Explain residual streams, attention and MLP contributions, feature representations"
-      - "Design causal interventions: activation patching with baselines and controls"
-      - "Produce a causal claim with controls and off-distribution intervention checks"
-    prerequisites: ["02"]
-    project_ids: ["P06"]
-    assessments: ["causal-claim analysis with controls"]
-    source_ids: [SRC-PAPER-025, SRC-PAPER-026, SRC-PAPER-027, SRC-PAPER-028, SRC-PAPER-029, SRC-DATASET-001, SRC-DATASET-006]
-    verified_on: 2026-10-21
-  - id: "10"
-    title: "Sparse features, circuits, and interpretability evaluation"
-    path: "chapters/10-sparse-features-circuits-and-interpretability-evaluation/"
-    phase: E
-    maturity: complete
-    outcomes:
-      - "Explain superposition, SAE reconstruction vs usefulness, feature splitting/absorption"
-      - "Evaluate faithfulness and completeness of circuit claims"
-      - "Explain why a compelling visualization is insufficient evidence"
-    prerequisites: ["09"]
-    project_ids: []
-    assessments: ["SAE-critique analysis"]
-    source_ids: [SRC-PAPER-030, SRC-PAPER-031, SRC-PAPER-032, SRC-PAPER-033, SRC-PAPER-034, SRC-DATASET-001, SRC-DATASET-013]
-    verified_on: 2026-10-21
-  - id: "11"
-    title: "Behavioral steering and representation interventions"
-    path: "chapters/11-behavioral-steering-and-representation-interventions/"
-    phase: E
-    maturity: complete
-    outcomes:
-      - "Use probes and activation steering; state linear-representation assumptions"
-      - "Control confounds and transfer limits"
-      - "Evaluate an intervention on held-out inputs and unrelated tasks (capability side effects)"
-    prerequisites: ["09"]
-    project_ids: []
-    assessments: ["intervention-evaluation report"]
-    source_ids: [SRC-PAPER-035, SRC-PAPER-036, SRC-PAPER-037, SRC-PAPER-038, SRC-PAPER-039, SRC-DATASET-006, SRC-DATASET-009]
-    verified_on: 2026-10-21
-  - id: "12"
-    title: "Adversarial ML and robustness"
-    path: "chapters/12-adversarial-ml-and-robustness/"
-    phase: F
-    maturity: complete
-    outcomes:
-      - "Distinguish evasion, poisoning, backdoors, extraction, membership inference, model inversion"
-      - "Compare attacker knowledge levels and adaptive evaluation"
-      - "State robustness boundaries honestly"
-    prerequisites: ["02"]
-    project_ids: []
-    assessments: ["threat-model comparison table"]
-    source_ids: []
-    verified_on: 2026-10-22
-  - id: "13"
-    title: "LLM application security"
-    path: "chapters/13-llm-application-security/"
-    phase: F
-    maturity: complete
-    outcomes:
-      - "Map direct/indirect prompt injection to trust boundaries and output handling"
-      - "Explain retrieval risks and secret exposure"
-      - "Explain why system prompts or filters alone are insufficient; map demonstrations to verified framework entries"
-    prerequisites: ["12"]
-    project_ids: ["P07"]
-    assessments: ["injection-to-framework mapping exercise"]
-    source_ids: []
-    verified_on: 2026-10-22
-  - id: "14"
-    title: "Agent, tool, memory, and MCP security"
-    path: "chapters/14-agent-tool-memory-mcp-security/"
-    phase: F
-    maturity: complete
-    outcomes:
-      - "Define capability, least privilege, and confused deputy; explain why an agent holding user credentials over untrusted context is the deputy"
-      - "Separate control flow from data flow in an agent trace; reproduce the Dual LLM residual argument-corruption flaw and the CaMeL capability-layer fix"
-      - "State the MCP trust rules (descriptions untrusted; protocol cannot enforce its own security principles) and connect tool poisoning to them"
-      - "Build the privilege and trust-boundary matrix; identify exfiltration pairs and the authority gradient; write R1-R4 capability rules"
-      - "Explain memory persistence as widened attack window (dormancy, provenance loss, re-privileging) and price agent-security claims with intervals"
-    prerequisites: ["13"]
-    project_ids: ["P07"]
-    assessments: ["privilege-and-trust-boundary matrix"]
-    source_ids: ["SRC-PAPER-054", "SRC-PAPER-055", "SRC-PAPER-056", "SRC-PAPER-057", "SRC-REPORT-005", "SRC-REPORT-006", "SRC-REPORT-007"]
-    verified_on: 2026-10-22
-  - id: "15"
-    title: "Red teaming and adversarial evaluation"
-    path: "chapters/15-red-teaming-and-adversarial-evaluation/"
-    phase: F
-    maturity: complete
-    outcomes:
-      - "Name the three red-teaming families (human, automated, from-scratch) with founding evidence and failure modes"
-      - "Explain the oracle problem and its inversion (easily-classified failures make red teaming nearly redundant)"
-      - "Design an engagement with coverage taxonomy, denominators, benign controls, adaptive phase, and pre-declared stopping rules"
-      - "Keep the two-sided ledger: attack success and false refusal priced identically; price paired McNemar verdicts"
-      - "Write the responsible-reporting section: staged disclosure, artifact hygiene, claims scoped to conditions"
-    prerequisites: ["02", "12", "13"]
-    project_ids: ["P07", "P10"]
-    assessments: ["attack/defense report with denominators"]
-    source_ids: ["SRC-PAPER-058", "SRC-PAPER-059", "SRC-PAPER-060", "SRC-PAPER-061"]
-    verified_on: 2026-10-22
-  - id: "16"
-    title: "Privacy, provenance, and data/model supply chains"
-    path: "chapters/16-privacy-provenance-and-supply-chains/"
-    phase: F
-    maturity: complete
-    outcomes:
-      - "State memorization operationally and reproduce the three log-linear laws with founding evidence"
-      - "Distinguish content extraction from membership inference and what each discloses"
-      - "Explain DP's contract at concept level and require budget statements for DP-trained claims"
-      - "Audit an artifact chain link by link with integrity controls and a license lineage table"
-      - "Run the canary/dedup audit pattern with intervals, paired comparisons, and release rules"
-    prerequisites: ["02", "12"]
-    project_ids: []
-    assessments: ["provenance-audit artifact"]
-    source_ids: ["SRC-PAPER-062", "SRC-PAPER-063", "SRC-PAPER-064", "SRC-PAPER-065"]
-    verified_on: 2026-10-22
-  - id: "17"
-    title: "Distribution shift and deployment reliability"
-    path: "chapters/17-distribution-shift-and-deployment-reliability/"
-    phase: G
-    maturity: complete
-    outcomes:
-      - "Reproduce the five-class shift taxonomy with canonical evidence (snapshot pathology; WILDS; group-DRO coupling; uncertainty under shift)"
-      - "Explain why average accuracy is dishonest for heterogeneous deployments and what worst-group measurement requires"
-      - "State what shift does to calibration and to Ch.06 selective-prediction guarantees"
-      - "Build the shift-taxonomy analysis and monitoring loop (signals, instruments, triggers, validity windows)"
-    prerequisites: ["02", "06"]
-    project_ids: ["P09"]
-    assessments: ["shift-taxonomy analysis"]
-    source_ids: ["SRC-PAPER-066", "SRC-PAPER-067", "SRC-PAPER-068", "SRC-PAPER-069"]
-    verified_on: 2026-10-22
-  - id: "18"
-    title: "Reasoning faithfulness and monitorability"
-    path: "chapters/18-reasoning-faithfulness-and-monitorability/"
-    phase: G
-    maturity: planned
-    outcomes:
-      - "Evaluate CoT faithfulness with partial observability and hidden actions"
-      - "Identify monitor evasion and measurement limitations"
-      - "Use action/outcome evidence as an alternative to text explanations"
-    prerequisites: ["08"]
-    project_ids: []
-    assessments: ["faithfulness-evidence critique"]
-    source_ids: []
-    verified_on: null
-  - id: "19"
-    title: "Multimodal and embodied safety"
-    path: "chapters/19-multimodal-and-embodied-safety/"
-    phase: G
-    maturity: planned
-    outcomes:
-      - "Analyze cross-modal injection, perceptual failures, sensor shift, action constraints"
-      - "State simulation-to-reality limits"
-      - "Work a substantive multimodal case and the limits of text-only evaluation"
-    prerequisites: ["13"]
-    project_ids: []
-    assessments: ["worked multimodal case"]
-    source_ids: []
-    verified_on: null
-  - id: "20"
-    title: "Misuse, dangerous capabilities, and release evaluation"
-    path: "chapters/20-misuse-dangerous-capabilities-and-release-evaluation/"
-    phase: G
-    maturity: planned
-    outcomes:
-      - "Explain capability elicitation, access conditions, safeguards, evaluation sensitivity"
-      - "Reason about dual-use tradeoffs and release decisions"
-      - "Keep high-consequence domains at a non-operational evaluation and governance level"
-    prerequisites: ["15"]
-    project_ids: []
-    assessments: ["release-evaluation design (non-operational)"]
-    source_ids: []
-    verified_on: null
-  - id: "21"
-    title: "Sociotechnical and systemic risk"
-    path: "chapters/21-sociotechnical-and-systemic-risk/"
-    phase: G
-    maturity: planned
-    outcomes:
-      - "Analyze human factors, automation bias, fairness and disparate impact, incentives, power concentration"
-      - "Map affected stakeholders and linguistic coverage"
-      - "Explain how organizational choices affect technical validity; produce a stakeholder and failure-pathway analysis"
-    prerequisites: ["01"]
-    project_ids: []
-    assessments: ["stakeholder-and-failure-pathway analysis"]
-    source_ids: []
-    verified_on: null
-  - id: "22"
-    title: "Safety engineering and assurance"
-    path: "chapters/22-safety-engineering-and-assurance/"
-    phase: G
-    maturity: planned
-    outcomes:
-      - "Apply hazard analysis and FMEA/STPA-style reasoning where suitable"
-      - "Build explicit assurance claims with evidence, assumptions, rebuttals, residual risk"
-      - "Explain why a compliance checklist is not a safety proof"
-    prerequisites: ["01", "08"]
-    project_ids: ["P10"]
-    assessments: ["safety-case draft"]
-    source_ids: []
-    verified_on: null
-  - id: "23"
-    title: "Governance and standards for researchers"
-    path: "chapters/23-governance-and-standards-for-researchers/"
-    phase: G
-    maturity: planned
-    outcomes:
-      - "Navigate NIST, OWASP, MITRE ATLAS, current GPAI safety/security guidance, responsible-scaling approaches"
-      - "Distinguish voluntary guidance, legal obligations, and research proposals with dated official sources"
-      - "Use external assessment, incident reporting, and model/system cards"
-    prerequisites: ["22"]
-    project_ids: []
-    assessments: ["standards-mapping exercise with versions"]
-    source_ids: []
-    verified_on: null
-  - id: "24"
-    title: "Research practice and capstone execution"
-    path: "chapters/24-research-practice-and-capstone-execution/"
-    phase: H
-    maturity: planned
-    outcomes:
-      - "Scope literature and nearest baselines with research taste and falsifiability"
-      - "Preregister, design ablations, report reproducibly, handle negative results and ethical release"
-      - "Deliver a defendable research proposal and capstone report"
-    prerequisites: ["02", "22"]
-    project_ids: ["P10"]
-    assessments: ["research proposal", "capstone report"]
-    source_ids: []
-    verified_on: null
-
+- id: '01'
+  title: Risk models and research epistemics
+  path: chapters/01-risk-models-and-research-epistemics/
+  phase: C
+  maturity: complete
+  outcomes:
+  - Define hazard, capability, propensity, exposure, severity, and causal pathways operationally
+  - Apply evidence hierarchies and uncertainty tracking to safety claims
+  - Produce a threat hypothesis together with observations that would weaken it
+  prerequisites: []
+  project_ids: []
+  assessments:
+  - threat-hypothesis artifact
+  source_ids:
+  - SRC-PAPER-001
+  - SRC-PAPER-002
+  - SRC-REPORT-001
+  - SRC-ARTICLE-001
+  verified_on: 2026-10-21
+- id: '02'
+  title: Evaluation science and experimental design
+  path: chapters/02-evaluation-science-and-experimental-design/
+  phase: C
+  maturity: complete
+  outcomes:
+  - Explain construct validity, dataset provenance, grouped splits, contamination, adaptive overfitting
+  - Design evaluations with statistical power, cluster-aware intervals, effect sizes, repeated trials
+  - Produce a preregistered evaluation plan
+  prerequisites:
+  - '01'
+  project_ids:
+  - P01
+  assessments:
+  - preregistered-evaluation-plan artifact
+  source_ids:
+  - SRC-PAPER-003
+  - SRC-PAPER-004
+  - SRC-PAPER-005
+  - SRC-REPORT-001
+  - SRC-ARTICLE-001
+  - SRC-DATASET-001
+  - SRC-DATASET-002
+  - SRC-DATASET-003
+  - SRC-DATASET-004
+  - SRC-DATASET-005
+  - SRC-DATASET-006
+  - SRC-DATASET-007
+  - SRC-DATASET-009
+  - SRC-DATASET-010
+  - SRC-DATASET-012
+  verified_on: 2026-10-21
+- id: '03'
+  title: Specification, reward hacking, and goal misgeneralization
+  path: chapters/03-specification-reward-hacking-and-goal-misgeneralization/
+  phase: C
+  maturity: complete
+  outcomes:
+  - Distinguish proxy failure, capability failure, and learned-goal failure
+  - Analyze Goodhart effects under distribution shift with a concrete counterexample
+  - Run a bounded proxy-vs-intended-objective experiment
+  prerequisites:
+  - '01'
+  project_ids:
+  - P02
+  assessments:
+  - counterexample analysis
+  - bounded experiment report
+  source_ids:
+  - SRC-PAPER-002
+  - SRC-PAPER-006
+  - SRC-PAPER-007
+  - SRC-PAPER-008
+  verified_on: 2026-10-21
+- id: '04'
+  title: Preference learning and post-training
+  path: chapters/04-preference-learning-and-post-training/
+  phase: D
+  maturity: complete
+  outcomes:
+  - Explain reward modeling, KL regularization, SFT, PPO-style RLHF, DPO, RLAIF, Constitutional AI and
+    what their objectives do and do not imply
+  - Derive at least one post-training objective
+  - Audit preference-label quality
+  prerequisites:
+  - '03'
+  project_ids:
+  - P04
+  assessments:
+  - objective derivation
+  - label-quality audit
+  source_ids:
+  - SRC-PAPER-009
+  - SRC-PAPER-010
+  - SRC-PAPER-011
+  - SRC-PAPER-012
+  - SRC-DATASET-007
+  - SRC-DATASET-008
+  verified_on: 2026-10-21
+- id: '05'
+  title: Scalable oversight
+  path: chapters/05-scalable-oversight/
+  phase: D
+  maturity: complete
+  outcomes:
+  - Explain weak-to-strong supervision, debate, decomposition, process vs outcome supervision
+  - Identify oversight failures, evaluator capability limits, correlated errors
+  - Design a bounded comparison with checkable ground truth
+  prerequisites:
+  - '02'
+  project_ids:
+  - P05
+  assessments:
+  - bounded-comparison design
+  source_ids:
+  - SRC-PAPER-013
+  - SRC-PAPER-014
+  - SRC-PAPER-015
+  - SRC-PAPER-001
+  - SRC-DATASET-001
+  - SRC-DATASET-006
+  verified_on: 2026-10-21
+- id: '06'
+  title: Honesty, uncertainty, and selective prediction
+  path: chapters/06-honesty-uncertainty-and-selective-prediction/
+  phase: D
+  maturity: complete
+  outcomes:
+  - Distinguish truthfulness vs honesty; calibration, abstention, risk-coverage curves
+  - Explain sycophancy and factuality measurement
+  - Explain why verbal confidence and token probabilities are not automatic truth probabilities
+  prerequisites:
+  - '02'
+  project_ids:
+  - P03
+  assessments:
+  - calibration-analysis report
+  source_ids:
+  - SRC-PAPER-003
+  - SRC-PAPER-016
+  - SRC-PAPER-017
+  - SRC-PAPER-018
+  - SRC-DATASET-001
+  - SRC-DATASET-006
+  verified_on: 2026-10-21
+- id: '07'
+  title: Deception, scheming, and evaluation awareness
+  path: chapters/07-deception-scheming-and-evaluation-awareness/
+  phase: D
+  maturity: complete
+  outcomes:
+  - Separate learned-optimization hypotheses from evidence; model organisms vs deployment claims
+  - Analyze alignment faking and sandbagging demonstrations with their assumptions
+  - Produce a skeptical evidence table
+  prerequisites:
+  - '03'
+  project_ids: []
+  assessments:
+  - skeptical-evidence-table artifact
+  source_ids:
+  - SRC-PAPER-019
+  - SRC-PAPER-020
+  - SRC-PAPER-021
+  - SRC-PAPER-002
+  - SRC-DATASET-009
+  - SRC-DATASET-010
+  verified_on: 2026-10-21
+- id: 08
+  title: AI control and monitoring
+  path: chapters/08-ai-control-and-monitoring/
+  phase: D
+  maturity: complete
+  outcomes:
+  - Treat trusted/untrusted components as assumptions with failure conditions
+  - Design control protocols under audit budgets with monitoring, editing, deferral
+  - Reason about adaptive red teams, collusion, safety-usefulness tradeoffs
+  prerequisites:
+  - '05'
+  project_ids:
+  - P08
+  assessments:
+  - control-protocol definition with failure conditions
+  source_ids:
+  - SRC-PAPER-022
+  - SRC-PAPER-023
+  - SRC-PAPER-024
+  - SRC-PAPER-013
+  - SRC-DATASET-006
+  - SRC-DATASET-010
+  verified_on: 2026-10-21
+- id: 09
+  title: Mechanistic interpretability foundations
+  path: chapters/09-mechanistic-interpretability-foundations/
+  phase: E
+  maturity: complete
+  outcomes:
+  - Explain residual streams, attention and MLP contributions, feature representations
+  - 'Design causal interventions: activation patching with baselines and controls'
+  - Produce a causal claim with controls and off-distribution intervention checks
+  prerequisites:
+  - '02'
+  project_ids:
+  - P06
+  assessments:
+  - causal-claim analysis with controls
+  source_ids:
+  - SRC-PAPER-025
+  - SRC-PAPER-026
+  - SRC-PAPER-027
+  - SRC-PAPER-028
+  - SRC-PAPER-029
+  - SRC-DATASET-001
+  - SRC-DATASET-006
+  verified_on: 2026-10-21
+- id: '10'
+  title: Sparse features, circuits, and interpretability evaluation
+  path: chapters/10-sparse-features-circuits-and-interpretability-evaluation/
+  phase: E
+  maturity: complete
+  outcomes:
+  - Explain superposition, SAE reconstruction vs usefulness, feature splitting/absorption
+  - Evaluate faithfulness and completeness of circuit claims
+  - Explain why a compelling visualization is insufficient evidence
+  prerequisites:
+  - 09
+  project_ids: []
+  assessments:
+  - SAE-critique analysis
+  source_ids:
+  - SRC-PAPER-030
+  - SRC-PAPER-031
+  - SRC-PAPER-032
+  - SRC-PAPER-033
+  - SRC-PAPER-034
+  - SRC-DATASET-001
+  - SRC-DATASET-013
+  verified_on: 2026-10-21
+- id: '11'
+  title: Behavioral steering and representation interventions
+  path: chapters/11-behavioral-steering-and-representation-interventions/
+  phase: E
+  maturity: complete
+  outcomes:
+  - Use probes and activation steering; state linear-representation assumptions
+  - Control confounds and transfer limits
+  - Evaluate an intervention on held-out inputs and unrelated tasks (capability side effects)
+  prerequisites:
+  - 09
+  project_ids: []
+  assessments:
+  - intervention-evaluation report
+  source_ids:
+  - SRC-PAPER-035
+  - SRC-PAPER-036
+  - SRC-PAPER-037
+  - SRC-PAPER-038
+  - SRC-PAPER-039
+  - SRC-DATASET-006
+  - SRC-DATASET-009
+  verified_on: 2026-10-21
+- id: '12'
+  title: Adversarial ML and robustness
+  path: chapters/12-adversarial-ml-and-robustness/
+  phase: F
+  maturity: complete
+  outcomes:
+  - Distinguish evasion, poisoning, backdoors, extraction, membership inference, model inversion
+  - Compare attacker knowledge levels and adaptive evaluation
+  - State robustness boundaries honestly
+  prerequisites:
+  - '02'
+  project_ids: []
+  assessments:
+  - threat-model comparison table
+  source_ids: []
+  verified_on: 2026-10-22
+- id: '13'
+  title: LLM application security
+  path: chapters/13-llm-application-security/
+  phase: F
+  maturity: complete
+  outcomes:
+  - Map direct/indirect prompt injection to trust boundaries and output handling
+  - Explain retrieval risks and secret exposure
+  - Explain why system prompts or filters alone are insufficient; map demonstrations to verified framework
+    entries
+  prerequisites:
+  - '12'
+  project_ids:
+  - P07
+  assessments:
+  - injection-to-framework mapping exercise
+  source_ids: []
+  verified_on: 2026-10-22
+- id: '14'
+  title: Agent, tool, memory, and MCP security
+  path: chapters/14-agent-tool-memory-mcp-security/
+  phase: F
+  maturity: complete
+  outcomes:
+  - Define capability, least privilege, and confused deputy; explain why an agent holding user credentials
+    over untrusted context is the deputy
+  - Separate control flow from data flow in an agent trace; reproduce the Dual LLM residual argument-corruption
+    flaw and the CaMeL capability-layer fix
+  - State the MCP trust rules (descriptions untrusted; protocol cannot enforce its own security principles)
+    and connect tool poisoning to them
+  - Build the privilege and trust-boundary matrix; identify exfiltration pairs and the authority gradient;
+    write R1-R4 capability rules
+  - Explain memory persistence as widened attack window (dormancy, provenance loss, re-privileging) and
+    price agent-security claims with intervals
+  prerequisites:
+  - '13'
+  project_ids:
+  - P07
+  assessments:
+  - privilege-and-trust-boundary matrix
+  source_ids:
+  - SRC-PAPER-054
+  - SRC-PAPER-055
+  - SRC-PAPER-056
+  - SRC-PAPER-057
+  - SRC-REPORT-005
+  - SRC-REPORT-006
+  - SRC-REPORT-007
+  verified_on: 2026-10-22
+- id: '15'
+  title: Red teaming and adversarial evaluation
+  path: chapters/15-red-teaming-and-adversarial-evaluation/
+  phase: F
+  maturity: complete
+  outcomes:
+  - Name the three red-teaming families (human, automated, from-scratch) with founding evidence and failure
+    modes
+  - Explain the oracle problem and its inversion (easily-classified failures make red teaming nearly redundant)
+  - Design an engagement with coverage taxonomy, denominators, benign controls, adaptive phase, and pre-declared
+    stopping rules
+  - 'Keep the two-sided ledger: attack success and false refusal priced identically; price paired McNemar
+    verdicts'
+  - 'Write the responsible-reporting section: staged disclosure, artifact hygiene, claims scoped to conditions'
+  prerequisites:
+  - '02'
+  - '12'
+  - '13'
+  project_ids:
+  - P07
+  - P10
+  assessments:
+  - attack/defense report with denominators
+  source_ids:
+  - SRC-PAPER-058
+  - SRC-PAPER-059
+  - SRC-PAPER-060
+  - SRC-PAPER-061
+  verified_on: 2026-10-22
+- id: '16'
+  title: Privacy, provenance, and data/model supply chains
+  path: chapters/16-privacy-provenance-and-supply-chains/
+  phase: F
+  maturity: complete
+  outcomes:
+  - State memorization operationally and reproduce the three log-linear laws with founding evidence
+  - Distinguish content extraction from membership inference and what each discloses
+  - Explain DP's contract at concept level and require budget statements for DP-trained claims
+  - Audit an artifact chain link by link with integrity controls and a license lineage table
+  - Run the canary/dedup audit pattern with intervals, paired comparisons, and release rules
+  prerequisites:
+  - '02'
+  - '12'
+  project_ids: []
+  assessments:
+  - provenance-audit artifact
+  source_ids:
+  - SRC-PAPER-062
+  - SRC-PAPER-063
+  - SRC-PAPER-064
+  - SRC-PAPER-065
+  verified_on: 2026-10-22
+- id: '17'
+  title: Distribution shift and deployment reliability
+  path: chapters/17-distribution-shift-and-deployment-reliability/
+  phase: G
+  maturity: complete
+  outcomes:
+  - Reproduce the five-class shift taxonomy with canonical evidence (snapshot pathology; WILDS; group-DRO
+    coupling; uncertainty under shift)
+  - Explain why average accuracy is dishonest for heterogeneous deployments and what worst-group measurement
+    requires
+  - State what shift does to calibration and to Ch.06 selective-prediction guarantees
+  - Build the shift-taxonomy analysis and monitoring loop (signals, instruments, triggers, validity windows)
+  prerequisites:
+  - '02'
+  - '06'
+  project_ids:
+  - P09
+  assessments:
+  - shift-taxonomy analysis
+  source_ids:
+  - SRC-PAPER-066
+  - SRC-PAPER-067
+  - SRC-PAPER-068
+  - SRC-PAPER-069
+  verified_on: 2026-10-22
+- id: '18'
+  title: Reasoning faithfulness and monitorability
+  path: chapters/18-reasoning-faithfulness-and-monitorability/
+  phase: G
+  maturity: complete
+  outcomes:
+  - Evaluate CoT faithfulness with partial observability and hidden actions
+  - Identify monitor evasion and measurement limitations
+  - Use action/outcome evidence as an alternative to text explanations
+  prerequisites:
+  - 08
+  project_ids: []
+  assessments:
+  - faithfulness-evidence critique
+  source_ids:
+  - SRC-PAPER-083
+  - SRC-PAPER-084
+  - SRC-PAPER-085
+  - SRC-PAPER-086
+  - SRC-PAPER-087
+  verified_on: '2026-10-23'
+- id: '19'
+  title: Multimodal and embodied safety
+  path: chapters/19-multimodal-and-embodied-safety/
+  phase: G
+  maturity: planned
+  outcomes:
+  - Analyze cross-modal injection, perceptual failures, sensor shift, action constraints
+  - State simulation-to-reality limits
+  - Work a substantive multimodal case and the limits of text-only evaluation
+  prerequisites:
+  - '13'
+  project_ids: []
+  assessments:
+  - worked multimodal case
+  source_ids: []
+  verified_on: null
+- id: '20'
+  title: Misuse, dangerous capabilities, and release evaluation
+  path: chapters/20-misuse-dangerous-capabilities-and-release-evaluation/
+  phase: G
+  maturity: planned
+  outcomes:
+  - Explain capability elicitation, access conditions, safeguards, evaluation sensitivity
+  - Reason about dual-use tradeoffs and release decisions
+  - Keep high-consequence domains at a non-operational evaluation and governance level
+  prerequisites:
+  - '15'
+  project_ids: []
+  assessments:
+  - release-evaluation design (non-operational)
+  source_ids: []
+  verified_on: null
+- id: '21'
+  title: Sociotechnical and systemic risk
+  path: chapters/21-sociotechnical-and-systemic-risk/
+  phase: G
+  maturity: planned
+  outcomes:
+  - Analyze human factors, automation bias, fairness and disparate impact, incentives, power concentration
+  - Map affected stakeholders and linguistic coverage
+  - Explain how organizational choices affect technical validity; produce a stakeholder and failure-pathway
+    analysis
+  prerequisites:
+  - '01'
+  project_ids: []
+  assessments:
+  - stakeholder-and-failure-pathway analysis
+  source_ids: []
+  verified_on: null
+- id: '22'
+  title: Safety engineering and assurance
+  path: chapters/22-safety-engineering-and-assurance/
+  phase: G
+  maturity: planned
+  outcomes:
+  - Apply hazard analysis and FMEA/STPA-style reasoning where suitable
+  - Build explicit assurance claims with evidence, assumptions, rebuttals, residual risk
+  - Explain why a compliance checklist is not a safety proof
+  prerequisites:
+  - '01'
+  - 08
+  project_ids:
+  - P10
+  assessments:
+  - safety-case draft
+  source_ids: []
+  verified_on: null
+- id: '23'
+  title: Governance and standards for researchers
+  path: chapters/23-governance-and-standards-for-researchers/
+  phase: G
+  maturity: planned
+  outcomes:
+  - Navigate NIST, OWASP, MITRE ATLAS, current GPAI safety/security guidance, responsible-scaling approaches
+  - Distinguish voluntary guidance, legal obligations, and research proposals with dated official sources
+  - Use external assessment, incident reporting, and model/system cards
+  prerequisites:
+  - '22'
+  project_ids: []
+  assessments:
+  - standards-mapping exercise with versions
+  source_ids: []
+  verified_on: null
+- id: '24'
+  title: Research practice and capstone execution
+  path: chapters/24-research-practice-and-capstone-execution/
+  phase: H
+  maturity: planned
+  outcomes:
+  - Scope literature and nearest baselines with research taste and falsifiability
+  - Preregister, design ablations, report reproducibly, handle negative results and ethical release
+  - Deliver a defendable research proposal and capstone report
+  prerequisites:
+  - '02'
+  - '22'
+  project_ids:
+  - P10
+  assessments:
+  - research proposal
+  - capstone report
+  source_ids: []
+  verified_on: null
 projects:
-  - id: "P01"
-    title: "Evaluation harness and scorer validation"
-    path: "projects/p01-evaluation-harness/"
-    phase: C
-    maturity: complete
-    chapter_links: ["02"]
-    artifacts: ["config-driven runner", "local adapters", "versioned cases", "transparent metrics", "resumability", "reports", "scorer validation vs hand-verified examples", "optional documented Inspect integration"]
-    status: implemented
-    verified_on: 2026-10-21
-  - id: "P02"
-    title: "Reward misspecification and generalization"
-    path: "projects/p02-reward-misspecification-and-generalization/"
-    phase: C
-    maturity: complete
-    chapter_links: ["03"]
-    artifacts: ["small environment with intended objective vs proxy reward", "optimization vs held-out comparison", "side-effect measurement", "revised-proxy test with limits"]
-    artifacts_delivered: ["src/ai_safety_course/reward_spec/ (metrics, environments, optimizer, runner, report)", "two model organisms with tuning/held_out arms", "three pressure regimes (bon-width, budgeted-search, local-search)", "preregistered gates by interval bounds", "157 offline tests", "genuine example report from the committed warehouse config", "judge-v1/v2 runs executed locally with same discipline"]
-    status: implemented
-    verified_on: 2026-10-22
-  - id: "P03"
-    title: "Calibration, truthfulness, and abstention"
-    path: "projects/p03-calibration-truthfulness-and-abstention/"
-    phase: D
-    maturity: complete
-    chapter_links: ["06"]
-    artifacts: ["licensed small QA/classification dataset + local model", "validation-only calibration fit", "Brier/log loss", "risk-coverage curves", "free-text scoring limitations"]
-    status: implemented
-    verified_on: 2026-10-22
-  - id: "P04"
-    title: "Preference optimization audit"
-    path: "projects/p04-preference-optimization-audit/"
-    phase: D
-    maturity: planned
-    chapter_links: ["04"]
-    artifacts: ["bounded preference-learning run (e.g. tiny local-model DPO)", "derivation with correctness checks", "pre/post comparison", "held-out objective", "label-bias condition", "SFT-vs-preference separation"]
-    status: protocol-only
-    verified_on: null
-  - id: "P05"
-    title: "Weak-to-strong or scalable oversight analogue"
-    path: "projects/p05-weak-to-strong-or-scalable-oversight-analogue/"
-    phase: D
-    maturity: planned
-    chapter_links: ["05"]
-    artifacts: ["checkable tasks", "weak supervisor vs stronger learner vs ground-truth upper reference", "inherited-error measurement", "OOD performance", "small-analogue scope statement"]
-    status: protocol-only
-    verified_on: null
-  - id: "P06"
-    title: "Causal interpretability study"
-    path: "projects/p06-causal-interpretability-study/"
-    phase: E
-    maturity: planned
-    chapter_links: ["09", "10", "11"]
-    artifacts: ["small open model", "activation patching or justified intervention", "clean/corrupted inputs", "random/control interventions", "held-out prompts", "numerical sanity checks", "optional SAE extension"]
-    status: protocol-only
-    verified_on: null
-  - id: "P07"
-    title: "Injection defense as a capability audit (paired policy harness)"
-    path: "projects/p07-injection-defense/"
-    phase: F
-    maturity: complete
-    chapter_links: ["13", "14"]
-    artifacts: ["privilege and trust-boundary matrix builder with exfiltration-pair and authority-gradient audit (15-tool atlas-v2 fixture, checksum-pinned)", "R1-R4 capability policy over provenance-tagged arguments (R2/R3 hard-block; R1/R4 consent-gated) vs the full-delegation arm", "16 paired scripted trials (8 attack incl. two on-purpose residual classes, 8 benign incl. the consent-timeout utility cost)", "attack-success and benign-completion rates with Wilson intervals, discordant-pair ledgers, exact one-sided sign tests", "genuine deterministic example report with full provenance; 41 dedicated tests", "scoped-not-executed: prompt-only-baseline comparison arm, live agent runtime (tier 1), human consent-decay measurement (tier 2)"]
-    status: implemented
-    verified_on: 2026-10-22
-  - id: "P08"
-    title: "Control and monitoring protocol"
-    path: "projects/p08-control-and-monitoring-protocol/"
-    phase: D
-    maturity: planned
-    chapter_links: ["08"]
-    artifacts: ["no-monitor vs simple-monitor vs deferral/constrained execution under audit budget", "bounded synthetic task + local model or separated scripted-policy analogue", "usefulness-failure tradeoff", "adaptive test cases", "unverified-trust-assumption discussion", "verified ControlArena integration guide where useful"]
-    status: protocol-only
-    verified_on: null
-  - id: "P09"
-    title: "Distribution shift and subgroup reliability"
-    path: "projects/p09-distribution-shift-and-subgroup-reliability/"
-    phase: G
-    maturity: planned
-    chapter_links: ["17"]
-    artifacts: ["licensed public dataset or reproducibly generated task with explicit shift", "in-distribution vs shifted vs subgroup outcomes", "uncertainty/abstention evaluation", "one mitigation", "leakage prevention", "statistical-vs-causal distinction"]
-    status: protocol-only
-    verified_on: null
-  - id: "P10"
-    title: "Capstone: agent evaluation and assurance dossier"
-    path: "projects/p10-capstone-agent-evaluation-and-assurance-dossier/"
-    phase: H
-    maturity: planned
-    chapter_links: ["22", "24", "15"]
-    artifacts: ["integration of P01 and P07/P08 into a bounded agent system", "pinned configuration", "threat model", "held-out tests", "attack/benign metrics", "resource limits", "logs", "regression suite", "claim-evidence-assumption-rebuttal safety case", "deployment-decision impact", "alternative alignment-research capstone spec (learner assignment, labeled as such)"]
-    status: protocol-only
-    verified_on: null
-
+- id: P01
+  title: Evaluation harness and scorer validation
+  path: projects/p01-evaluation-harness/
+  phase: C
+  maturity: complete
+  chapter_links:
+  - '02'
+  artifacts:
+  - config-driven runner
+  - local adapters
+  - versioned cases
+  - transparent metrics
+  - resumability
+  - reports
+  - scorer validation vs hand-verified examples
+  - optional documented Inspect integration
+  status: implemented
+  verified_on: 2026-10-21
+- id: P02
+  title: Reward misspecification and generalization
+  path: projects/p02-reward-misspecification-and-generalization/
+  phase: C
+  maturity: complete
+  chapter_links:
+  - '03'
+  artifacts:
+  - small environment with intended objective vs proxy reward
+  - optimization vs held-out comparison
+  - side-effect measurement
+  - revised-proxy test with limits
+  artifacts_delivered:
+  - src/ai_safety_course/reward_spec/ (metrics, environments, optimizer, runner, report)
+  - two model organisms with tuning/held_out arms
+  - three pressure regimes (bon-width, budgeted-search, local-search)
+  - preregistered gates by interval bounds
+  - 157 offline tests
+  - genuine example report from the committed warehouse config
+  - judge-v1/v2 runs executed locally with same discipline
+  status: implemented
+  verified_on: 2026-10-22
+- id: P03
+  title: Calibration, truthfulness, and abstention
+  path: projects/p03-calibration-truthfulness-and-abstention/
+  phase: D
+  maturity: complete
+  chapter_links:
+  - '06'
+  artifacts:
+  - licensed small QA/classification dataset + local model
+  - validation-only calibration fit
+  - Brier/log loss
+  - risk-coverage curves
+  - free-text scoring limitations
+  status: implemented
+  verified_on: 2026-10-22
+- id: P04
+  title: Preference optimization audit
+  path: projects/p04-preference-optimization-audit/
+  phase: D
+  maturity: planned
+  chapter_links:
+  - '04'
+  artifacts:
+  - bounded preference-learning run (e.g. tiny local-model DPO)
+  - derivation with correctness checks
+  - pre/post comparison
+  - held-out objective
+  - label-bias condition
+  - SFT-vs-preference separation
+  status: protocol-only
+  verified_on: null
+- id: P05
+  title: Weak-to-strong or scalable oversight analogue
+  path: projects/p05-weak-to-strong-or-scalable-oversight-analogue/
+  phase: D
+  maturity: planned
+  chapter_links:
+  - '05'
+  artifacts:
+  - checkable tasks
+  - weak supervisor vs stronger learner vs ground-truth upper reference
+  - inherited-error measurement
+  - OOD performance
+  - small-analogue scope statement
+  status: protocol-only
+  verified_on: null
+- id: P06
+  title: Causal interpretability study
+  path: projects/p06-causal-interpretability-study/
+  phase: E
+  maturity: planned
+  chapter_links:
+  - 09
+  - '10'
+  - '11'
+  artifacts:
+  - small open model
+  - activation patching or justified intervention
+  - clean/corrupted inputs
+  - random/control interventions
+  - held-out prompts
+  - numerical sanity checks
+  - optional SAE extension
+  status: protocol-only
+  verified_on: null
+- id: P07
+  title: Injection defense as a capability audit (paired policy harness)
+  path: projects/p07-injection-defense/
+  phase: F
+  maturity: complete
+  chapter_links:
+  - '13'
+  - '14'
+  artifacts:
+  - privilege and trust-boundary matrix builder with exfiltration-pair and authority-gradient audit (15-tool
+    atlas-v2 fixture, checksum-pinned)
+  - R1-R4 capability policy over provenance-tagged arguments (R2/R3 hard-block; R1/R4 consent-gated) vs
+    the full-delegation arm
+  - 16 paired scripted trials (8 attack incl. two on-purpose residual classes, 8 benign incl. the consent-timeout
+    utility cost)
+  - attack-success and benign-completion rates with Wilson intervals, discordant-pair ledgers, exact one-sided
+    sign tests
+  - genuine deterministic example report with full provenance; 41 dedicated tests
+  - 'scoped-not-executed: prompt-only-baseline comparison arm, live agent runtime (tier 1), human consent-decay
+    measurement (tier 2)'
+  status: implemented
+  verified_on: 2026-10-22
+- id: P08
+  title: Control and monitoring protocol
+  path: projects/p08-control-and-monitoring-protocol/
+  phase: D
+  maturity: planned
+  chapter_links:
+  - 08
+  artifacts:
+  - no-monitor vs simple-monitor vs deferral/constrained execution under audit budget
+  - bounded synthetic task + local model or separated scripted-policy analogue
+  - usefulness-failure tradeoff
+  - adaptive test cases
+  - unverified-trust-assumption discussion
+  - verified ControlArena integration guide where useful
+  status: protocol-only
+  verified_on: null
+- id: P09
+  title: Distribution shift and subgroup reliability
+  path: projects/p09-distribution-shift-and-subgroup-reliability/
+  phase: G
+  maturity: planned
+  chapter_links:
+  - '17'
+  artifacts:
+  - licensed public dataset or reproducibly generated task with explicit shift
+  - in-distribution vs shifted vs subgroup outcomes
+  - uncertainty/abstention evaluation
+  - one mitigation
+  - leakage prevention
+  - statistical-vs-causal distinction
+  status: protocol-only
+  verified_on: null
+- id: P10
+  title: 'Capstone: agent evaluation and assurance dossier'
+  path: projects/p10-capstone-agent-evaluation-and-assurance-dossier/
+  phase: H
+  maturity: planned
+  chapter_links:
+  - '22'
+  - '24'
+  - '15'
+  artifacts:
+  - integration of P01 and P07/P08 into a bounded agent system
+  - pinned configuration
+  - threat model
+  - held-out tests
+  - attack/benign metrics
+  - resource limits
+  - logs
+  - regression suite
+  - claim-evidence-assumption-rebuttal safety case
+  - deployment-decision impact
+  - alternative alignment-research capstone spec (learner assignment, labeled as such)
+  status: protocol-only
+  verified_on: null
 notes:
   paper_notes_required: 20
   paper_notes_complete: 20
-  correction_2026_10_22: "counter was stale at 0 while research/notes/01-20 + README index were committed; corrected to match disk (20/20)"
+  correction_2026_10_22: counter was stale at 0 while research/notes/01-20 + README index were committed;
+    corrected to match disk (20/20)
   comparison_notes_planned:
-    - "RLHF vs DPO vs RLAIF"
-    - "behavioral vs mechanistic evidence"
-    - "alignment vs control"
-    - "prompt defenses vs authorization boundaries"
-    - "benchmark scores vs deployment assurance"
+  - RLHF vs DPO vs RLAIF
+  - behavioral vs mechanistic evidence
+  - alignment vs control
+  - prompt defenses vs authorization boundaries
+  - benchmark scores vs deployment assurance
   comparison_notes_complete: 2
-  incident_analyses: "small, carefully verified set; production incidents vs controlled demonstrations vs tabletop scenarios vs hypotheticals kept distinct"
-  glossary: "notation, aliases, common confusions, source and chapter links; grows with chapters"
-  dataset_catalog: >-
-    datasets/ holds 13 verified real-world dataset cards (2026-10-21), each
-    with per-fact reference tables; chapters and projects cite catalog
-    entries rather than re-verifying upstream pages independently. A
-    pending-verification queue (~10 further datasets, metadata-only) is
-    recorded in datasets/README.md and must not be cited as fact until
-    inspected.
-
+  incident_analyses: small, carefully verified set; production incidents vs controlled demonstrations
+    vs tabletop scenarios vs hypotheticals kept distinct
+  glossary: notation, aliases, common confusions, source and chapter links; grows with chapters
+  dataset_catalog: datasets/ holds 13 verified real-world dataset cards (2026-10-21), each with per-fact
+    reference tables; chapters and projects cite catalog entries rather than re-verifying upstream pages
+    independently. A pending-verification queue (~10 further datasets, metadata-only) is recorded in datasets/README.md
+    and must not be cited as fact until inspected.
 from_scratch:
-  title: "AI Researcher From Scratch (owner-directed track)"
-  path: "research/ai-researcher-from-scratch/"
-  sources: ["SRC-VIDEO-001", "SRC-REPO-001"]
-  provenance_note: >-
-    Owner-directed addition (2026-10-22): the track distills the video
-    "Become AI Researcher From Scratch - Full Course" (Vuk Rosic, 2025,
-    CC-BY, page-inspected) and its MIT-licensed companion repository
-    zero-to-ai-researcher (cloned and read 2026-10-22) into module notes
-    plus a stdlib-only from-scratch code package
-    (src/ai_safety_course/from_scratch/) with tests. No spoken-transcript
-    content is quoted; the video could not be transcribed at fetch time.
+  title: AI Researcher From Scratch (owner-directed track)
+  path: research/ai-researcher-from-scratch/
+  sources:
+  - SRC-VIDEO-001
+  - SRC-REPO-001
+  provenance_note: 'Owner-directed addition (2026-10-22): the track distills the video "Become AI Researcher
+    From Scratch - Full Course" (Vuk Rosic, 2025, CC-BY, page-inspected) and its MIT-licensed companion
+    repository zero-to-ai-researcher (cloned and read 2026-10-22) into module notes plus a stdlib-only
+    from-scratch code package (src/ai_safety_course/from_scratch/) with tests. No spoken-transcript content
+    is quoted; the video could not be transcribed at fetch time.'
   modules:
-    - {id: FS-01, title: "Math foundations", note: "01-math-foundations.md", code: "from_scratch/tensors.py", maturity: complete}
-    - {id: FS-02, title: "Python and PyTorch fundamentals", note: "02-python-and-pytorch-fundamentals.md", code: "from_scratch/tensors.py", maturity: complete}
-    - {id: FS-03, title: "Neuron and activation functions", note: "03-neuron-and-activations.md", code: "from_scratch/neuron.py + activations.py", maturity: complete}
-    - {id: FS-04, title: "Neural network and backpropagation", note: "04-neural-network-and-backprop.md", code: "from_scratch/network.py", maturity: complete}
-    - {id: FS-05, title: "Attention and transformers (GPT build)", note: "05-attention-and-transformers.md", code: "from_scratch/attention.py + transformer.py", maturity: complete}
-    - {id: FS-06, title: "Advanced architectures (DeepSeek latent attention, GLM-4 MoE)", note: "06-advanced-architectures.md", code: "from_scratch/moe.py", maturity: complete}
-    - {id: FS-07, title: "Research methodology (ablation, LR search, expert search)", note: "07-research-methodology.md", code: null, maturity: complete}
+  - id: FS-01
+    title: Math foundations
+    note: 01-math-foundations.md
+    code: from_scratch/tensors.py
+    maturity: complete
+  - id: FS-02
+    title: Python and PyTorch fundamentals
+    note: 02-python-and-pytorch-fundamentals.md
+    code: from_scratch/tensors.py
+    maturity: complete
+  - id: FS-03
+    title: Neuron and activation functions
+    note: 03-neuron-and-activations.md
+    code: from_scratch/neuron.py + activations.py
+    maturity: complete
+  - id: FS-04
+    title: Neural network and backpropagation
+    note: 04-neural-network-and-backprop.md
+    code: from_scratch/network.py
+    maturity: complete
+  - id: FS-05
+    title: Attention and transformers (GPT build)
+    note: 05-attention-and-transformers.md
+    code: from_scratch/attention.py + transformer.py
+    maturity: complete
+  - id: FS-06
+    title: Advanced architectures (DeepSeek latent attention, GLM-4 MoE)
+    note: 06-advanced-architectures.md
+    code: from_scratch/moe.py
+    maturity: complete
+  - id: FS-07
+    title: Research methodology (ablation, LR search, expert search)
+    note: 07-research-methodology.md
+    code: null
+    maturity: complete

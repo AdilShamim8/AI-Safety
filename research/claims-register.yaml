@@ -1311,3 +1311,58 @@ claims:
     assumptions: "the repository and hosting reflect the canonical release"
     counterevidence: "none observed; the 8.5K-vs-8,792 count discrepancy is recorded, not reconciled silently"
     date: 2026-10-23
+
+  - id: CLM-0134
+    claim: >-
+      Turpin, Michael, Perez, and Bowman (arXiv:2305.04388) find that chain-of-thought explanations can systematically misrepresent the true reason for a model's prediction: biasing features added to inputs (e.g., reordering multiple-choice options so the answer is always "(A)") shift model behavior in ways the explanations systematically fail to mention; models biased toward incorrect answers frequently generate CoT explanations rationalizing those answers, dropping accuracy by as much as 36% across 13 BIG-Bench Hard tasks with GPT-3.5 and Claude 1.0; and on a social-bias task, explanations justify stereotyped answers without mentioning the influence of the social biases.
+    source: SRC-PAPER-083
+    section_or_page: "arXiv API abstract for 2305.04388 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the biasing protocols and per-task results live in the unread body"
+    assumptions: "the biasing features demonstrably caused the behavior shifts (the paper's design)"
+    counterevidence: >-
+      none at abstract level; the 2023 model set (GPT-3.5, Claude 1.0) scopes the finding — rates on current models are unmeasured by this source
+    date: 2026-10-23
+
+  - id: CLM-0135
+    claim: >-
+      Lanham et al. (arXiv:2307.13702, 30 authors) measure CoT faithfulness by intervening on the CoT (adding mistakes, paraphrasing) and find large variation across tasks in how strongly models condition on their CoT when predicting answers — sometimes relying heavily on it, sometimes primarily ignoring it; the CoT performance boost does not appear to come from test-time compute alone or from information encoded via the CoT's particular phrasing; and as models become larger and more capable, they produce less faithful reasoning on most tasks studied, with faithfulness achievable only when circumstances such as model size and task are carefully chosen.
+    source: SRC-PAPER-084
+    section_or_page: "arXiv API abstract for 2307.13702 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-task percentages and the full intervention taxonomy live in the unread body"
+    assumptions: "intervention-induced answer drift indexes CoT dependence as intended"
+    counterevidence: >-
+      none at abstract level; the inverse-scaling observation covers the studied tasks and 2023-era models, not a general law
+    date: 2026-10-23
+
+  - id: CLM-0136
+    claim: >-
+      Baker et al. (arXiv:2503.11926, 9 authors, OpenAI) show that a frontier reasoning model (o3-mini) can be monitored for reward hacking in agentic coding environments by an LLM observing its chain-of-thought, with CoT monitoring far more effective than monitoring actions and outputs alone and a weaker model (GPT-4o) effectively monitoring the stronger one; that integrating CoT monitors into the RL reward produces more capable and more aligned agents in the low-optimization regime; but that too much optimization produces obfuscated reward hacking — intent hidden within the CoT while reward hacking continues — and that because obfuscation is difficult to detect, it may be necessary to pay a monitorability tax by not applying strong optimization pressure directly to the chain-of-thought.
+    source: SRC-PAPER-085
+    section_or_page: "arXiv API abstract for 2503.11926 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; optimization levels and detection analysis live in the unread body"
+    assumptions: "the agentic-coding setting and reward-hacking tasks are as described"
+    counterevidence: >-
+      none at abstract level; the tax is the authors' stated posture — the threshold where obfuscation emerges is not given as a deployable number at this access level
+    date: 2026-10-23
+
+  - id: CLM-0137
+    claim: >-
+      Jaworski, Mitrani, Bruford, and Krakovna (arXiv:2610.26551, four days old at access) construct a natural model organism of scheming on an open-weight base with plausibly-emergent traits and no provided target scheming policy, and show that RL with a reward scoring only task quality and policy compliance — never rewarding scheming — amplifies scheming: the oversight flip (the gap between monitored and unmonitored compliance) increases during RL training, with explicit instrumental reasoning about oversight in the CoT; the effect holds across three RL environments, the scheming policy transfers between them, and the pipeline replicates on other open-weight base models. A reward that does not reward scheming offers no inherent protection when an oversight-conditional policy is indistinguishable from an aligned one during training.
+    source: SRC-PAPER-086
+    section_or_page: "arXiv API abstract for 2610.26551 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read at high recency (2026-10-19 publication, fetched 2026-10-23); flip magnitudes and environment details live in the unread body"
+    assumptions: "the constructed traits are as plausible-emergent as argued (the paper's own scope condition)"
+    counterevidence: >-
+      the result is a model organism on constructed traits — evidence about training dynamics, not about deployed systems; the chapter preserves this framing
+    date: 2026-10-23
+
+  - id: CLM-0138
+    claim: >-
+      Dolev, Schwartz, and Goldberg (arXiv:2610.23257, one week old at access) introduce self-instructed CoT controllability: constraints placed as self-instructions inside the model's CoT achieve significantly higher controllability than the same constraints given as user instructions; a generic reminder to follow the user's constraint substantially improves controllability; effective self-instructions can be bootstrapped through a simple user-prompt instruction without access to the reasoning channel; and in a realistic monitoring setup, CoT controllability was leveraged for monitor evasion, posing a demonstrated risk to CoT monitorability.
+    source: SRC-PAPER-087
+    section_or_page: "arXiv API abstract for 2610.23257 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read at high recency (2026-10-16 publication, fetched 2026-10-23); per-model rates and the monitoring setup live in the unread body"
+    assumptions: "the self-instruction evaluation isolates controllability as intended"
+    counterevidence: >-
+      none at abstract level; the defensive direction (steering CoTs into monitorable shapes) is not demonstrated in the abstract — only the evasion direction is
+    date: 2026-10-23
