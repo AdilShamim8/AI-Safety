@@ -6,6 +6,16 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — pending-paper verification round)
+
+- Source register +4: SRC-PAPER-070 (PPO, abstract-read), SRC-PAPER-071
+  (HH-RLHF, abstract-read), SRC-PAPER-072 (BeaverTails, abstract-read),
+  SRC-PAPER-073 (TruthfulQA, abstract-read). Claims +4: CLM-0112..0115.
+- Chapters 02/04/06 readings: every "assigned, verification pending"
+  paper marker closed with the actual abstract-page fetch; WILDS's
+  stale pending line corrected to the already-verified SRC-PAPER-067.
+- The InstructGPT register limitation note about PPO-pending closed.
+
 ### Added (2026-10-22 — AI Researcher From Scratch track)
 
 - `research/ai-researcher-from-scratch/`: the owner-directed 7-module

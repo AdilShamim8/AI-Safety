@@ -365,13 +365,19 @@ are part of the evidence (P01's runner emits them automatically).
   number used above [datasets/README.md](../../datasets/README.md).
 - Owner's reference article — full-text-read; course framing [SRC-ARTICLE-001].
 
-**Assigned, verification pending** (identifier from the project brief;
-abstract not yet read in this build — do not cite as verified):
+**Verified in a later round** (closes this chapter's 2026-10-21 pending markers):
 
-- WILDS, arXiv:2012.07421 — distribution-shift evaluation; the seed
-  reading reused in Ch. 17.
-- TruthfulQA paper, arXiv:2109.07958 — full-text read assigned with Ch. 06;
-  this chapter used only the page-verified composition facts [cards/01].
+- WILDS, arXiv:2012.07421 — abstract-read, verified 2026-10-22 with chapter 17
+  [SRC-PAPER-067; CLM-0090]: the curated benchmark of 10 datasets with
+  naturally arising distribution shifts; standard training yields lower
+  out-of-distribution than in-distribution performance, with the gap
+  persisting under existing methods.
+- TruthfulQA paper, arXiv:2109.07958 — abstract-read, verified 2026-10-23
+  [SRC-PAPER-073; CLM-0115]: 817 questions across 38 categories; best tested
+  model truthful on 58% versus human 94%; largest models generally least
+  truthful on the 2021 model set (dated evidence, priced in chapter 6). The
+  chapter's composition facts remain card-anchored
+  [cards/01](../../datasets/cards/01-truthfulqa.md).
 
 ## 8. Exercises
 

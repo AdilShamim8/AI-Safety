@@ -658,7 +658,7 @@ sources:
     supports:
       - "chapters/04-preference-learning-and-post-training/README.md (section 3: three-stage pipeline SFT -> reward model -> PPO-style RLHF; 1.3B-vs-175B preference result)"
     limitations: >-
-      Abstract read only in this build. The InstructGPT labeler demographics, inter-annotator agreement statistics, and API-prompt-distribution details live in the full text and are not relied upon. The preference result is on the authors' prompt distribution with their labelers — a construct statement, not a general alignment claim (the chapter says so). PPO mechanics for section 3.5 are described as the standard implementation picture with the PPO paper itself pending verification (recorded in the chapter's readings as assigned, verification pending).
+      Abstract read only in this build. The InstructGPT labeler demographics, inter-annotator agreement statistics, and API-prompt-distribution details live in the full text and are not relied upon. The preference result is on the authors' prompt distribution with their labelers — a construct statement, not a general alignment claim (the chapter says so). PPO mechanics for section 3.5 were described as the standard implementation picture while the PPO paper itself was pending verification; that marker was closed 2026-10-23 with the PPO abstract read [SRC-PAPER-070].
     license: "unknown (arXiv distribution terms; no separate article license observed on the abstract page)"
   - id: SRC-PAPER-010
     title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
@@ -1778,3 +1778,72 @@ sources:
     limitations: >-
       Abstract-level content assembled from the NeurIPS proceedings page and search snippets 2026-10-22 (the arXiv abstract page itself was surfaced but not fetched in full); per-method calibration numbers and shift-intensity sweeps live in the unread body; carried at the lower-confidence end of abstract-read.
     license: "unknown (proceedings page; no separate license stated on the fetched pages)"
+
+  - id: SRC-PAPER-070
+    title: "Proximal Policy Optimization Algorithms"
+    authors_or_organization: "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov"
+    url: "https://arxiv.org/abs/1707.06347"
+    source_type: paper
+    publication_date: 2017-07-20
+    version: "v2 (2017-08-28) per arXiv page"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed (arXiv report; no venue stated on the fetched page)"
+    supports:
+      - "chapters/04-preference-learning-and-post-training/README.md (section 3.5 objective mechanics, now verified: a family of policy-gradient methods alternating between sampling data through interaction with the environment and optimizing a surrogate objective by stochastic gradient ascent; the objective enabling multiple epochs of minibatch updates where standard policy gradient performs one gradient update per data sample; TRPO-like benefits while simpler to implement, more general, and with better empirical sample complexity; evaluated on benchmark tasks including simulated robotic locomotion and Atari game playing, outperforming other online policy gradient methods)"
+    limitations: >-
+      Abstract verified 2026-10-23, closing the chapter's 2026-10-21 pending-verification marker. The clipped-surrogate algebra, hyperparameters, and per-task results live in the unread body. The RLHF framing in chapter 4 is the course's own composition: this is a general RL method paper with no language-model or human-feedback experiments, and the chapter's reward-model-plus-KL-penalty picture comes from InstructGPT [SRC-PAPER-009], not from this abstract.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-071
+    title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+    authors_or_organization: "Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, Nicholas Joseph, Saurav Kadavath, Jackson Kernion, Tom Conerly, Sheer El-Showk, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Tristan Hume, Scott Johnston, Shauna Kravec, Liane Lovitt, Neel Nanda, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, Chris Olah, Ben Mann, Jared Kaplan (Anthropic)"
+    url: "https://arxiv.org/abs/2204.05862"
+    source_type: paper
+    publication_date: 2022-04-12
+    version: "v1 (single version per arXiv page)"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated on the fetched page)"
+    supports:
+      - "chapters/04-preference-learning-and-post-training/README.md (readings, now verified: preference modeling and RLHF finetuning of language models to act as helpful and harmless assistants; alignment training improving performance on almost all NLP evaluations while remaining compatible with specialized skills such as python coding and summarization; the iterated online mode updating preference models and RL policies on a weekly cadence with fresh human feedback data; the robustness finding of a roughly linear relation between the RL reward and the square root of the KL divergence between the policy and its initialization)"
+    limitations: >-
+      Abstract verified 2026-10-23, closing the chapter's pending-verification marker. The worker protocol (recruiting, pay, agreement statistics) that exercise 4.2 audits lives in the unread body; the HH-RLHF card [SRC-DATASET-008 page-level] remains the verified source for dataset composition. The sqrt-KL relation is the authors' abstract-level statement on their models.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-072
+    title: "BeaverTails: Towards Improved Safety Alignment of LLM via a Human-Preference Dataset"
+    authors_or_organization: "Jiaming Ji, Mickel Liu, Juntao Dai, Xuehai Pan, Chi Zhang, Ce Bian, Chi Zhang, Ruiyang Sun, Yizhou Wang, Yaodong Yang"
+    url: "https://arxiv.org/abs/2307.04657"
+    source_type: paper
+    publication_date: 2023-07-10
+    version: "v3 (2023-11-07) per arXiv page"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated on the fetched page; NeurIPS 2023 D&B not verified against proceedings)"
+    supports:
+      - "chapters/04-preference-learning-and-post-training/README.md (readings, now verified: the dataset separating helpfulness and harmlessness annotations for question-answering pairs; 333,963 question-answer pairs with safety meta-labels; 361,903 pairs of expert comparison data for both the helpfulness and harmlessness metrics; demonstrated applications in content moderation and RLHF)"
+    limitations: >-
+      Abstract verified 2026-10-23, closing the chapter's pending-verification marker; the two counts corroborate the card's page-inspected numbers at abstract-read level [SRC-DATASET-007]. The annotation protocol and preference-pair construction details that exercise 4.2 audits live in the unread body. License constraint stands: the dataset card records CC BY-NC 4.0 (usage constraint flagged in the card).
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-PAPER-073
+    title: "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
+    authors_or_organization: "Stephanie Lin, Jacob Hilton, Owain Evans"
+    url: "https://arxiv.org/abs/2109.07958"
+    source_type: paper
+    publication_date: 2021-09-08
+    version: "v2 (2022-05-08) per arXiv page"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated on the fetched page)"
+    supports:
+      - "chapters/02-evaluation-science-and-experimental-design/README.md (readings, now verified: the benchmark of 817 questions spanning 38 categories including health, law, finance and politics, crafted so that some humans would answer falsely due to a false belief or misconception)"
+      - "chapters/06-honesty-uncertainty-and-selective-prediction/README.md (readings, now verified: the best tested model truthful on 58 percent of questions versus human performance of 94 percent; models generating many false answers that mimic popular misconceptions and have the potential to deceive humans; the largest models generally the least truthful, contrasting with other NLP tasks where performance improves with model size; the authors' conclusion that scaling alone is less promising for truthfulness than fine-tuning with objectives other than imitation of web text). Tested models: GPT-3, GPT-Neo/J, GPT-2, and a T5-based model."
+    limitations: >-
+      Abstract verified 2026-10-23. The 817/38 composition corroborates the card's page-inspected numbers [SRC-DATASET-001] at abstract-read level. The question of whether the 2021 result transfers to current models is priced by the chapters as dated evidence; per-category results, the informative/true-answer taxonomy, and the GPT-3 few-shot protocol live in the unread body; the full-text pass assigned in chapter 6 remains open.
+    license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"

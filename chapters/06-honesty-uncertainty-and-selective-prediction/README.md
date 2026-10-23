@@ -459,10 +459,17 @@ of the reliability table rather than its summary.
   and 06 supply the page-inspected composition numbers used above
   ([datasets/README.md](../../datasets/README.md)).
 
-**Assigned, verification pending** (do not cite as verified): the TruthfulQA
-paper itself (arXiv:2109.07958), assigned for this chapter's full-text pass;
-this chapter used only the card's page-verified composition facts
-([card](../../datasets/cards/01-truthfulqa.md)).
+**Verified in a later round (abstract level):** the TruthfulQA paper itself
+(arXiv:2109.07958), abstract-read 2026-10-23
+[SRC-PAPER-073; CLM-0115] — the best of the tested 2021 models was truthful
+on 58% of questions versus human performance of 94%; the largest models were
+generally the least truthful (inverse scaling on the 2021 model set — dated
+evidence that must not be projected onto current chat models); scaling alone
+was judged less promising than fine-tuning with non-imitation objectives.
+This chapter's composition numbers remain card-anchored
+([card](../../datasets/cards/01-truthfulqa.md)); the full-text pass (per-category
+results, the informative/true taxonomy, the GPT-3 few-shot protocol) remains
+assigned and open.
 
 ## 8. Exercises
 

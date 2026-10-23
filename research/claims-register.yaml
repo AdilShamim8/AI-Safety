@@ -1077,3 +1077,47 @@ claims:
     counterevidence: >-
       none at this access level; chapter 17 uses the qualitative mechanism (accuracy and calibration degrade together under shift) and marks per-method numbers as body-level detail not read
     date: 2026-10-22
+
+  - id: CLM-0112
+    claim: >-
+      Schulman et al. (arXiv:1707.06347) propose proximal policy optimization: a family of policy-gradient methods whose surrogate objective enables multiple epochs of minibatch updates (versus one gradient update per data sample in standard policy gradient), retaining trust-region-like benefits while being simpler to implement, more general, and more sample-efficient (empirically), with experiments on simulated robotic locomotion and Atari game playing.
+    source: SRC-PAPER-070
+    section_or_page: "arXiv abstract page for 1707.06347 v2 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-task results and the clipped-surrogate algebra live in the unread body"
+    assumptions: "the surrogate-objective description in the abstract reflects the paper's mechanics"
+    counterevidence: >-
+      none at abstract level; the paper predates LLM RLHF — any claim that PPO is the best RLHF optimizer is unsupported by this source, and chapter 4 uses it only for objective mechanics
+    date: 2026-10-23
+
+  - id: CLM-0113
+    claim: >-
+      Bai et al. (arXiv:2204.05862, Anthropic) report that finetuning language models as helpful-and-harmless assistants with preference modeling and RLHF improves performance on almost all NLP evaluations and is compatible with specialized skills such as python coding and summarization; that an iterated online mode updated preference models and RL policies weekly with fresh human feedback; and that robustness analysis identified a roughly linear relation between the RL reward and the square root of the KL divergence between the policy and its initialization.
+    source: SRC-PAPER-071
+    section_or_page: "arXiv abstract page for 2204.05862 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the sqrt-KL relation is the authors' abstract-level statement on their models; worker protocol and agreement statistics live in the unread body"
+    assumptions: "the evaluation set and models are as described in the body"
+    counterevidence: >-
+      none at abstract level; the near-universal NLP improvement claim is scoped to the authors' evaluations; later literature on RLHF reward hacking and sycophancy is the standing counterevidence class for optimism about the pipeline, priced in chapter 4
+    date: 2026-10-23
+
+  - id: CLM-0114
+    claim: >-
+      Ji et al. (arXiv:2307.04657) report the BeaverTails dataset: 333,963 question-answer pairs with safety meta-labels and 361,903 pairs of expert comparison data for both helpfulness and harmlessness, with demonstrated applications in content moderation and RLHF; the dataset separates helpfulness and harmlessness annotations for question-answering pairs.
+    source: SRC-PAPER-072
+    section_or_page: "arXiv abstract page for 2307.04657 v3 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the two counts corroborate the page-inspected card [SRC-DATASET-007]; annotation protocol details live in the unread body"
+    assumptions: "the reported counts correspond to the released dataset revision"
+    counterevidence: >-
+      none at abstract level; the dataset's CC BY-NC 4.0 license (card-verified) constrains use regardless of the paper's claims
+    date: 2026-10-23
+
+  - id: CLM-0115
+    claim: >-
+      Lin, Hilton, and Evans (arXiv:2109.07958) report TruthfulQA: 817 questions across 38 categories crafted so that some humans would answer falsely due to false beliefs or misconceptions; the best of the tested models (GPT-3, GPT-Neo/J, GPT-2, and a T5-based model) was truthful on 58 percent of questions versus human performance of 94 percent; the largest models were generally the least truthful; and scaling alone was judged less promising for improving truthfulness than fine-tuning with objectives other than imitation of web text.
+    source: SRC-PAPER-073
+    section_or_page: "arXiv abstract page for 2109.07958 v2 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the 58/94 numbers are the authors' headline results on the 2021 model set; per-category results and the answer taxonomy live in the unread body"
+    assumptions: "the human-performance baseline is as measured by the authors' protocol"
+    counterevidence: >-
+      the inverse-scaling observation is specific to the 2021 model set and predates instruction-tuned models — later chat models score far higher on TruthfulQA-style probes, so the 'largest are least truthful' relation must not be cited as a claim about current models; chapter 6 prices it as dated evidence
+    date: 2026-10-23
