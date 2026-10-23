@@ -1,8 +1,9 @@
 # Dataset card: SafetyBench
 
-license: **check pending** (not verified this round) · verification date
-2026-10-21 · prepared by the course build · status: composition verified at
-`page-inspected` level across repository and anthology pages
+license: MIT — read directly 2026-10-23 from the canonical repository LICENSE
+((c) 2023 thu-coai) [R3] · verification date 2026-10-21 (updated 2026-10-23) ·
+prepared by the course build · status: composition verified at
+`page-inspected` level across repository and anthology pages; license closed
 
 ## 1. Identity and provenance
 
@@ -82,6 +83,7 @@ license: **check pending** (not verified this round) · verification date
 |--------|--------|--------------------|--------------|------|
 | [R1] | https://github.com/thu-coai/safetybench | "11,435 diverse multiple choice questions spanning across 7 distinct categories of safety concerns"; bilingual Chinese+English statement | page-inspected | 2026-10-21 |
 | [R2] | https://aclanthology.org/2024.acl-long.830 | ACL 2024 long-paper listing; authorship (Zhang et al.); abstract-level composition statement consistent with [R1] | page-inspected | 2026-10-21 |
+| [R3] | https://github.com/thu-coai/safetybench (LICENSE via GitHub license API) | MIT License, copyright (c) 2023 thu-coai (1,065 bytes); SPDX MIT | page-inspected | 2026-10-23 |
 | [R4-observation] | https://huggingface.co/datasets/thu-coai/Agent-SafetyBench | existence and date of the related Agent-SafetyBench release (recorded as adjacent observation, not a SafetyBench fact) | page-inspected | 2026-10-21 |
 
 Explicitly **not** claimed: the 7 category names, arXiv identifier (pending

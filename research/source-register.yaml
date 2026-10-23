@@ -1847,3 +1847,105 @@ sources:
     limitations: >-
       Abstract verified 2026-10-23. The 817/38 composition corroborates the card's page-inspected numbers [SRC-DATASET-001] at abstract-read level. The question of whether the 2021 result transfers to current models is priced by the chapters as dated evidence; per-category results, the informative/true-answer taxonomy, and the GPT-3 few-shot protocol live in the unread body; the full-text pass assigned in chapter 6 remains open.
     license: "unknown (arXiv distribution terms / public web page; no separate license stated on the fetched page)"
+
+  - id: SRC-REPO-002
+    title: "microsoft/ToxiGen (repository LICENSE.txt)"
+    authors_or_organization: "Microsoft Corporation"
+    url: "https://github.com/microsoft/ToxiGen"
+    source_type: repository
+    publication_date: null
+    version: "LICENSE.txt (3,539 bytes) fetched via GitHub license API 2026-10-23"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (license file)"
+    supports:
+      - "datasets/cards/04-toxigen.md and datasets/catalog.yaml DS-004 (license resolution: the LICENSE.txt body is the MIT License text with 'Copyright (c) Microsoft Corporation.' under a 'TOXIGEN' title header; GitHub's automatic license detection returns NOASSERTION/'Other' because of the non-standard header — both facts recorded)"
+    limitations: >-
+      License file fetched and read 2026-10-23, closing the card's pending-verification marker. Scope caveat recorded honestly: the repository license plausibly governs the upstream release, but the Hugging Face dataset page (skg/toxigen-data) still displays no license tag, and whether the HF copy is covered by the repository license is an inference, not a verified fact.
+    license: "MIT License text (Microsoft copyright, custom TOXIGEN header)"
+
+  - id: SRC-REPO-003
+    title: "nyu-mll/BBQ (repository LICENSE)"
+    authors_or_organization: "NYU Machine Learning for Language (nyu-mll)"
+    url: "https://github.com/nyu-mll/BBQ"
+    source_type: repository
+    publication_date: null
+    version: "LICENSE (18,649 bytes, full CC legal code) fetched via GitHub license API 2026-10-23"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (license file)"
+    supports:
+      - "datasets/cards/05-bbq.md and datasets/catalog.yaml DS-005 (canonical license resolution: Creative Commons Attribution 4.0 International, SPDX CC-BY-4.0, full legal code; the repository hosts the dataset files themselves, so the license covers the data, superseding the placeholder text observed on mirror pages)"
+    limitations: >-
+      License file fetched and read 2026-10-23. The mirror pages inspected earlier (heegyu/bbq, HiTZ/bbq) carry their own terms; the canonical nyu-mll repository is the authority recorded here.
+    license: "CC-BY-4.0 (SPDX, GitHub license API)"
+
+  - id: SRC-REPO-004
+    title: "centerforaisafety/HarmBench (repository LICENSE)"
+    authors_or_organization: "Center for AI Safety (centerforaisafety)"
+    url: "https://github.com/centerforaisafety/HarmBench"
+    source_type: repository
+    publication_date: null
+    version: "LICENSE (1,074 bytes) fetched via GitHub license API 2026-10-23"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (license file)"
+    supports:
+      - "datasets/cards/11-harmbench.md and datasets/catalog.yaml DS-011 (license resolution: MIT License, copyright (c) 2024 centerforaisafety)"
+    limitations: >-
+      License file fetched and read 2026-10-23, closing the card's license-check-pending marker. The walledai/HarmBench HF mirror may carry additional statements; the canonical repository license is the authority recorded here. The dataset's harmful-behavior descriptions remain described at category level only in this course.
+    license: "MIT (SPDX, GitHub license API)"
+
+  - id: SRC-REPO-005
+    title: "thu-coai/safetybench (repository LICENSE)"
+    authors_or_organization: "thu-coai (Tsinghua University Conversational AI group)"
+    url: "https://github.com/thu-coai/safetybench"
+    source_type: repository
+    publication_date: null
+    version: "LICENSE (1,065 bytes) fetched via GitHub license API 2026-10-23"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (license file)"
+    supports:
+      - "datasets/cards/13-safetybench.md and datasets/catalog.yaml DS-013 (license resolution: MIT License, copyright (c) 2023 thu-coai)"
+    limitations: >-
+      License file fetched and read 2026-10-23, closing the card's license-check-pending marker. Not to be confused with the separate thu-coai/Agent-SafetyBench repository (different dataset, recorded in the adjacent-datasets note).
+    license: "MIT (SPDX, GitHub license API)"
+
+  - id: SRC-REPO-006
+    title: "JailbreakBench/jailbreakbench (repository LICENSE)"
+    authors_or_organization: "JailbreakBench Team"
+    url: "https://github.com/JailbreakBench/jailbreakbench"
+    source_type: repository
+    publication_date: null
+    version: "LICENSE (1,076 bytes) fetched via GitHub license API 2026-10-23"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (license file)"
+    supports:
+      - "datasets/cards/10-jailbreakbench.md and datasets/catalog.yaml DS-010 (license confirmation at the repository level: MIT License, copyright (c) 2023 JailbreakBench Team — the catalog already carried the HF dataset page's verbatim MIT statement; this direct LICENSE read independently confirms it from the canonical repository)"
+    limitations: >-
+      License file fetched and read 2026-10-23. The artificialjailbreaks subdirectory and HF artifacts may carry separate terms; the repository root license is what was read and recorded.
+    license: "MIT (SPDX, GitHub license API)"
+
+  - id: SRC-REPO-007
+    title: "llm-attacks/llm-attacks (repository LICENSE; hosts AdvBench data)"
+    authors_or_organization: "Andy Zou, Zifan Wang, Nicholas Carlini, Milind Jaggi, Dawn Song, Jacob Steinhardt, Matt Fredrikson, Eric Wallace (Universal and Transferable Adversarial Attacks paper authors)"
+    url: "https://github.com/llm-attacks/llm-attacks"
+    source_type: repository
+    publication_date: null
+    version: "LICENSE (1,065 bytes) fetched via GitHub license API 2026-10-23; data/advbench/harmful_behaviors.csv (82,125 bytes) and harmful_strings.csv (34,654 bytes) confirmed present in the repo"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (license file and directory listing)"
+    supports:
+      - "datasets/cards/09-advbench.md and datasets/catalog.yaml DS-009 (license resolution: MIT License, copyright (c) 2023 Andy Zou, covering the repository whose data/advbench directory hosts harmful_behaviors.csv — the canonical location of the AdvBench data; closes the 'direct LICENSE read pending' marker)"
+    limitations: >-
+      License file fetched and read 2026-10-23. The MIT license covers the repository contents including the data directory; mirror repositories (e.g. walledai mirrors) carry their own framing and are not the authority. Harmful-content policy unchanged: this course describes AdvBench at category level only and redistributes none of it.
+    license: "MIT (SPDX, GitHub license API)"

@@ -6,6 +6,20 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — dataset license and composition verification round)
+
+- Six license gaps closed by direct canonical LICENSE reads: ToxiGen (MIT
+  text, Microsoft copyright, TOXIGEN header; GitHub NOASSERTION nuance
+  recorded), BBQ (CC-BY-4.0), HarmBench (MIT), SafetyBench (MIT), AdvBench
+  (MIT, llm-attacks canonical), JailbreakBench (MIT, repo-level
+  confirmation). Register: SRC-REPO-002..007.
+- HarmBench behavior-set composition verified by direct CSV read: 400 text
+  behaviors (200 standard / 100 copyright / 100 contextual; test 320, val
+  80; multimodal 110) with the semantic-category distribution — closes the
+  "behavior-set size NOT verified" marker.
+- Datasets catalog, six cards, index table, and pending-verification queue
+  updated; all arithmetic cross-checked (41+159=200, 20+80=100, 19+81=100).
+
 ### Added (2026-10-23 — pending-paper verification round)
 
 - Source register +4: SRC-PAPER-070 (PPO, abstract-read), SRC-PAPER-071

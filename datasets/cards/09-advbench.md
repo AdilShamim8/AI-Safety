@@ -1,9 +1,12 @@
 # Dataset card: AdvBench
 
-LICENSE file present in the canonical repository (direct read pending); MIT
-stated by the inspected mirror [R2] · verification date 2026-10-21 · prepared
+LICENSE read directly 2026-10-23 from the canonical repository: MIT
+License, copyright (c) 2023 Andy Zou [R5] — the earlier mirror-stated MIT is
+now confirmed from `llm-attacks/llm-attacks`, whose `data/advbench/` hosts
+`harmful_behaviors.csv` (82,125 bytes) and `harmful_strings.csv` (34,654
+bytes) · verification date 2026-10-21 (updated 2026-10-23) · prepared
 by the course build · status: canonical CSV verified line-by-line; paper
-verified at `abstract-read` level
+verified at `abstract-read` level; license closed
 
 ## 1. Identity and provenance
 
@@ -95,3 +98,4 @@ verified at `abstract-read` level
 | [R2] | https://huggingface.co/datasets/walledai/AdvBench | mirror description ("500 harmful behaviors" framing); MIT license statement for the mirror copy; omission of harmful_strings.csv noted | page-inspected | 2026-10-21 |
 | [R3] | https://arxiv.org/abs/2307.15043 | title; author list; v1 2023-07-27 / v2 2023-12-20; abstract (GCG method; transfer to ChatGPT, Bard, Claude, LLaMA-2-Chat, Pythia, Falcon) | abstract-read | 2026-10-21 |
 | [R4] | https://llm-attacks.org | author affiliations (CMU, Center for AI Safety, Google DeepMind, Bosch Center for AI); ethics and disclosure page (pre-publication disclosure to affected companies; full-disclosure rationale) | page-inspected | 2026-10-21 |
+| [R5] | https://github.com/llm-attacks/llm-attacks (LICENSE + data/advbench/ via GitHub API) | MIT License, copyright (c) 2023 Andy Zou (1,065 bytes); data/advbench/ confirmed hosting harmful_behaviors.csv (82,125 bytes) and harmful_strings.csv (34,654 bytes) | page-inspected | 2026-10-23 |

@@ -1,9 +1,11 @@
 # Dataset card: BBQ (Bias Benchmark for QA)
 
-license: **not captured at page level** (mirror card carried a placeholder
-[R2]) — canonical license check pending · verification date 2026-10-21 ·
+license: **CC-BY-4.0** — resolved 2026-10-23 by direct read of the canonical
+repository LICENSE (full Creative Commons Attribution 4.0 International legal
+code, 18,649 bytes, SPDX CC-BY-4.0) [R4]; the mirror placeholder is
+superseded · verification date 2026-10-21 (updated 2026-10-23) ·
 prepared by the course build · status: composition verified across three
-hosted pages; license open
+hosted pages; canonical license closed
 
 ## 1. Identity and provenance
 
@@ -91,9 +93,12 @@ hosted pages; license open
 
 ## 7. Maintenance
 
-- Canonical license: pending (placeholder text observed on the mirror [R2]
-  is recorded honestly rather than guessed). Course projects (P09) must not
-  redistribute item text until the canonical license is verified.
+- Canonical license: **resolved 2026-10-23** — CC-BY-4.0, read directly
+  from the canonical repository LICENSE [R4] (full Creative Commons
+  Attribution 4.0 International legal code, 18,649 bytes; the repository
+  hosts the dataset files, so the license covers the data). Course projects
+  (P09) may now cite the license; redistribution of item text should still
+  follow CC-BY-4.0 attribution requirements.
 
 ## References (where each fact was collected)
 
@@ -102,7 +107,8 @@ hosted pages; license open
 | [R1] | https://huggingface.co/datasets/heegyu/bbq | 58,492 rows; 50.9 MB; full author list; GitHub nyu-mll/BBQ; paper abstract incl. the 3.4pp / >5pp gender findings; ACL 2022 Findings citation block (2022.findings-acl.165, pp. 2086–2105, DOI 10.18653/v1/2022.findings-acl.165) | page-inspected | 2026-10-21 |
 | [R2] | https://huggingface.co/datasets/HiTZ/bbq | 9 categories with names; ambig/disambig config naming; ans0/1/2 + label field structure; test + 4-shot train split semantics; Religion no-train exception; license placeholder observed | page-inspected | 2026-10-21 |
 | [R3] | https://huggingface.co/datasets/walledai/BBQ | independent second mirror showing the same 58,492-row count | page-inspected | 2026-10-21 |
+| [R4] | https://github.com/nyu-mll/BBQ (LICENSE via GitHub license API) | CC-BY-4.0 (Creative Commons Attribution 4.0 International), full legal code, 18,649 bytes; SPDX CC-BY-4.0; the canonical repository hosts the dataset files themselves | page-inspected | 2026-10-23 |
 
 Explicitly **not** claimed: arXiv identifier (2110.08193 recorded at
-metadata-only level), per-category item counts, construction timeline,
-canonical license text — pending the canonical repository and paper read.
+metadata-only level), per-category item counts, construction timeline —
+pending the paper read. The canonical license is now verified [R4].

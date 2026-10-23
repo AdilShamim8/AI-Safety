@@ -1,8 +1,11 @@
 # Dataset card: HarmBench
 
-license: **check pending** (not verified this round) · verification date
-2026-10-21 · prepared by the course build · status: paper verified at
-`abstract-read` level; behavior-set composition pending
+license: MIT — read directly 2026-10-23 from the canonical repository LICENSE
+((c) 2024 centerforaisafety) [R4] · verification date 2026-10-21 (updated
+2026-10-23) · prepared by the course build · status: paper verified at
+`abstract-read` level; behavior-set composition verified by direct CSV read
+(400 text behaviors: 200 standard / 100 copyright / 100 contextual; test 320,
+val 80; multimodal 110) [R5]
 
 ## 1. Identity and provenance
 
@@ -29,12 +32,13 @@ license: **check pending** (not verified this round) · verification date
   of 18 red teaming methods and 33 target LLMs and defenses** [R1], plus a
   new **adversarial training method** that improves robustness across
   attacks [R1].
-- Behavior-set sizes (the commonly quoted "200 behaviors", contextual vs
-  standard behavior splits): **NOT verified this round** — the abstract
-  does not state counts, and the dataset pages were not successfully
-  inspected. This card deliberately leaves the composition section thin
-  until the repository README is read; the pending-verification queue in
-  [the catalog](../README.md) carries this item.
+- Behavior-set sizes: **VERIFIED 2026-10-23 by direct CSV read** [R5] —
+  400 text behaviors (200 standard, 100 copyright, 100 contextual); test
+  split 320 (159/80/81), val split 80 (41/20/19); multimodal set 110. The
+  commonly quoted "200 behaviors" refers to the standard functional subset.
+  Semantic categories: cybercrime_intrusion 67, illegal 65,
+  misinformation_disinformation 65, chemical_biological 56,
+  harassment_bullying 25, harmful 22, copyright 100.
 
 ## 3. Collection and labeling
 
@@ -84,3 +88,5 @@ license: **check pending** (not verified this round) · verification date
 | [R1] | https://arxiv.org/abs/2402.04249 | title; 12-author list; v1 2024-02-06 / v2 2024-02-27; abstract (standardized framework; 18 red teaming methods; 33 target LLMs and defenses; adversarial training contribution) | abstract-read | 2026-10-21 |
 | [R2] | https://github.com/centerforaisafety/HarmBench | repository existence; description consistent with paper | page-inspected | 2026-10-21 |
 | [R3] | https://huggingface.co/datasets/walledai/HarmBench | mirror existence (not used as a source of composition facts) | page-inspected | 2026-10-21 |
+| [R4] | https://github.com/centerforaisafety/HarmBench (LICENSE via GitHub license API) | MIT License, copyright (c) 2024 centerforaisafety (1,074 bytes); SPDX MIT | page-inspected | 2026-10-23 |
+| [R5] | https://github.com/centerforaisafety/HarmBench/data/behavior_datasets/harmbench_behaviors_text_all.csv (+ text_test, text_val, multimodal_all; fetched and parsed) | 400 text behaviors (200 standard, 100 copyright, 100 contextual); columns Behavior/FunctionalCategory/SemanticCategory/Tags/ContextString/BehaviorID; semantic categories: cybercrime_intrusion 67, illegal 65, misinformation_disinformation 65, chemical_biological 56, harassment_bullying 25, harmful 22, copyright 100; test split 320 (159/80/81), val split 80 (41/20/19); multimodal 110 | page-inspected (direct CSV read) | 2026-10-23 |

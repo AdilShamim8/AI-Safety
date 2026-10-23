@@ -136,8 +136,8 @@ datasets:
     risk_area: "implicit toxicity / adversarial benign statements"
     task: ["text classification"]
     license:
-      as_observed: "not shown on inspected page"
-      where_observed: "n/a — pending verification of the microsoft/ToxiGen repository license"
+      as_observed: "MIT License text, 'Copyright (c) Microsoft Corporation.', under a 'TOXIGEN' title header (LICENSE.txt, 3,539 bytes)"
+      where_observed: "https://github.com/microsoft/ToxiGen LICENSE.txt via GitHub license API, fetched 2026-10-23 [R2]; GitHub auto-detection returns NOASSERTION/'Other' due to the non-standard header — the file body is the MIT text. Scope caveat: the HF dataset page still shows no license tag; whether the HF copy is covered by the repository license is an inference, not verified"
     size_facts:
       - fact: "overall size category 100K-1M rows"
         ref: "R1"
@@ -170,8 +170,8 @@ datasets:
     risk_area: "stereotype bias in question answering"
     task: ["multiple-choice QA", "bias measurement"]
     license:
-      as_observed: "not captured at page level (mirror card showed a placeholder)"
-      where_observed: "n/a — canonical license check pending"
+      as_observed: "CC-BY-4.0 (Creative Commons Attribution 4.0 International), full legal code (LICENSE, 18,649 bytes)"
+      where_observed: "https://github.com/nyu-mll/BBQ LICENSE via GitHub license API, fetched 2026-10-23 [R4]; the canonical repository hosts the dataset files themselves, so the license covers the data — superseding the placeholder text observed on mirror pages"
     size_facts:
       - fact: "58,492 rows on inspected mirror (twice, on two mirrors)"
         ref: "R1"
@@ -316,8 +316,8 @@ datasets:
     risk_area: "adversarial suffix attacks / jailbreaks"
     task: ["adversarial attack target set"]
     license:
-      as_observed: "LICENSE file present in repo; MIT stated by the walledai mirror card"
-      where_observed: "GitHub file listing + mirror card; direct LICENSE read pending"
+      as_observed: "LICENSE file present in repo, read directly 2026-10-23: MIT License, copyright (c) 2023 Andy Zou (1,065 bytes)"
+      where_observed: "https://github.com/llm-attacks/llm-attacks LICENSE via GitHub license API; the repo's data/advbench/ hosts harmful_behaviors.csv (82,125 bytes) and harmful_strings.csv (34,654 bytes) — closes the 'direct LICENSE read pending' marker"
     size_facts:
       - fact: "harmful_behaviors.csv has 521 lines (520 data rows + header), 80.2 KB"
         ref: "R1"
@@ -398,13 +398,15 @@ datasets:
     risk_area: "automated red teaming / robust refusal"
     task: ["red-teaming framework + behavior sets"]
     license:
-      as_observed: "license check pending"
-      where_observed: "n/a"
+      as_observed: "MIT License, copyright (c) 2024 centerforaisafety (LICENSE, 1,074 bytes)"
+      where_observed: "https://github.com/centerforaisafety/HarmBench LICENSE via GitHub license API, fetched 2026-10-23; SPDX MIT"
     size_facts:
       - fact: "abstract reports a large-scale comparison of 18 red teaming methods and 33 target LLMs and defenses"
         ref: "R1"
-      - fact: "behavior-set size (e.g., 200 behaviors) NOT verified this round — pending full-text/GitHub README read"
-        ref: "R1"
+      - fact: "behavior set verified by direct CSV read 2026-10-23: harmbench_behaviors_text_all.csv = 400 text behaviors (200 standard, 100 copyright, 100 contextual); semantic categories: cybercrime_intrusion 67, illegal 65, misinformation_disinformation 65, chemical_biological 56, harassment_bullying 25, harmful 22, copyright 100; test split = 320 (159 standard, 80 copyright, 81 contextual), val split = 80 (41/20/19); multimodal set = 110 behaviors"
+        ref: "R3"
+      - fact: "the commonly cited '200 behaviors' refers to the standard functional subset — now verified against the canonical CSV"
+        ref: "R3"
     course_use:
       chapters: ["15", "20"]
       projects: ["P10"]
@@ -418,8 +420,12 @@ datasets:
         accessed_on: 2026-10-21
       - id: "R2"
         url: "https://github.com/centerforaisafety/HarmBench"
-        collected: "repository existence and title/description"
+        collected: "repository existence and title/description; LICENSE read directly 2026-10-23 (MIT, (c) 2024 centerforaisafety)"
         accessed_on: 2026-10-21
+      - id: "R3"
+        url: "https://github.com/centerforaisafety/HarmBench/data/behavior_datasets/harmbench_behaviors_text_all.csv (fetched and parsed 2026-10-23)"
+        collected: "400 rows; columns Behavior/FunctionalCategory/SemanticCategory/Tags/ContextString/BehaviorID; functional counts 200/100/100; semantic category distribution; val/test splits 80/320; multimodal_all 110 rows"
+        accessed_on: 2026-10-23
 
   - id: DS-012
     name: "WildChat"
@@ -476,8 +482,8 @@ datasets:
     risk_area: "multi-category safety knowledge"
     task: ["multiple-choice safety evaluation"]
     license:
-      as_observed: "license check pending"
-      where_observed: "n/a"
+      as_observed: "MIT License, copyright (c) 2023 thu-coai (LICENSE, 1,065 bytes)"
+      where_observed: "https://github.com/thu-coai/safetybench LICENSE via GitHub license API, fetched 2026-10-23; SPDX MIT"
     size_facts:
       - fact: "11,435 multiple-choice questions across 7 safety categories"
         ref: "R1"

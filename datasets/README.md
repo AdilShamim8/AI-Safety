@@ -61,16 +61,16 @@ provenances rather than silently picking one.
 | 01 | TruthfulQA | Truthfulness / imitative falsehoods | 817 open questions, QA | apache-2.0 (HF page) | [card](cards/01-truthfulqa.md) |
 | 02 | BOLD | Social bias in generation | 23,679 generation prompts | CC BY-SA 4.0 (HF page) | [card](cards/02-bold.md) |
 | 03 | RealToxicityPrompts | Toxicity in generation | ~99.4k scored prompt rows | apache-2.0 (HF page) | [card](cards/03-real-toxicity-prompts.md) |
-| 04 | ToxiGen | Implicit toxicity / benign-counterfactual | 274k-scale generations, 9.9k annotated | not shown on inspected page | [card](cards/04-toxigen.md) |
-| 05 | BBQ | Stereotype bias in QA | 58,492 multiple-choice items | not captured at page level | [card](cards/05-bbq.md) |
+| 04 | ToxiGen | Implicit toxicity / benign-counterfactual | 274k-scale generations, 9.9k annotated | MIT text (Microsoft, upstream repo; HF-page scope caveat) | [card](cards/04-toxigen.md) |
+| 05 | BBQ | Stereotype bias in QA | 58,492 multiple-choice items | CC-BY-4.0 (canonical repo) | [card](cards/05-bbq.md) |
 | 06 | XSTest | Over-refusal | 250 safe + 200 unsafe prompts | CC BY 4.0 (prompts; repo) | [card](cards/06-xstest.md) |
 | 07 | BeaverTails | Safety annotation / preference | ~364k prompt–response rows | **CC BY-NC 4.0** (HF page) | [card](cards/07-beavertails.md) |
 | 08 | HH-RLHF | Preference data / red-teaming | ~169k preference-pair rows | MIT (HF page) | [card](cards/08-hh-rlhf.md) |
-| 09 | AdvBench | Adversarial suffix attacks | 520 harmful-behavior rows | repo LICENSE file present; MIT stated by mirror | [card](cards/09-advbench.md) |
-| 10 | JailbreakBench (JBB-Behaviors) | Standardized jailbreak eval | 100 harmful + 100 benign behaviors | MIT (HF page) | [card](cards/10-jailbreakbench.md) |
-| 11 | HarmBench | Automated red teaming | framework + behavior sets | license check pending | [card](cards/11-harmbench.md) |
+| 09 | AdvBench | Adversarial suffix attacks | 520 harmful-behavior rows | MIT (canonical llm-attacks repo, read directly) | [card](cards/09-advbench.md) |
+| 10 | JailbreakBench (JBB-Behaviors) | Standardized jailbreak eval | 100 harmful + 100 benign behaviors | MIT (HF page + canonical repo, both read) | [card](cards/10-jailbreakbench.md) |
+| 11 | HarmBench | Automated red teaming | framework + 400 text behaviors (200/100/100) | MIT (canonical repo) | [card](cards/11-harmbench.md) |
 | 12 | WildChat | Real user–assistant traffic | 650K → 1M → 3.2M conversation releases | ODC-BY (1M release, 2024-06-26) | [card](cards/12-wildchat.md) |
-| 13 | SafetyBench | Multi-category safety MCQ | 11,435 questions, EN+ZH | license check pending | [card](cards/13-safetybench.md) |
+| 13 | SafetyBench | Multi-category safety MCQ | 11,435 questions, EN+ZH | MIT (canonical repo) | [card](cards/13-safetybench.md) |
 
 ## Curriculum integration map
 
@@ -123,11 +123,16 @@ Datasets we consider important but which were **not verified in this round**
 - WMDP (hazardous-knowledge MCQ benchmark)
 - HaluEval (hallucination QA benchmark)
 - SimpleQA (short-form factuality)
-- ToxiGen license file (page did not display it)
-- BBQ canonical license (mirror pages carried placeholder text)
-- HarmBench and SafetyBench license files
 - CrowS-Pairs, Winogender (classic bias benchmarks)
 - MMLU, GSM8K (general-capability anchors for Ch.17 shift discussion)
+
+Resolved 2026-10-23 (moved out of this queue by direct verification, recorded
+in the cards and catalog): ToxiGen license (MIT text, Microsoft copyright,
+upstream repo — HF-page scope caveat recorded); BBQ canonical license
+(CC-BY-4.0, canonical repository); HarmBench license (MIT) and behavior-set
+composition (400/200/100/100 by direct CSV read); SafetyBench license (MIT);
+AdvBench direct LICENSE read (MIT, llm-attacks repo); JailbreakBench repo
+license confirmation (MIT).
 
 Adjacent datasets observed at page level during verification (recorded so the
 next round does not have to rediscover them): lmsys/toxic-chat (10K annotated

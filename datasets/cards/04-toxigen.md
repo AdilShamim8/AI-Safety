@@ -1,9 +1,12 @@
 # Dataset card: ToxiGen
 
-license: **not shown on the inspected page** [R1] — pending verification of
-the upstream repository license · verification date 2026-10-21 · prepared by
-the course build · status: composition verified at `page-inspected` level;
-license deliberately left open
+license: **MIT License text** ("Copyright (c) Microsoft Corporation." under a
+"TOXIGEN" title header) — read directly 2026-10-23 from the upstream
+repository LICENSE.txt [R2]; GitHub auto-detection returns NOASSERTION/'Other'
+because of the non-standard header — the file body is the MIT text ·
+verification date 2026-10-21 (updated 2026-10-23) · prepared by the course
+build · status: composition verified at `page-inspected` level; upstream
+license closed (HF-page scope caveat recorded in §7)
 
 ## 1. Identity and provenance
 
@@ -75,17 +78,21 @@ license deliberately left open
 
 ## 7. Maintenance
 
-- License: **unknown at achieved access level** [R1] — the page displayed no
-  license. Any use beyond description requires resolving this first (the
-  pending-verification queue in [the catalog](../README.md) carries the
-  upstream repository license check).
+- License: **resolved 2026-10-23** — the upstream repository LICENSE.txt is
+  the MIT License text (Microsoft copyright, TOXIGEN header) [R2]. Scope
+  caveat recorded honestly: the HF dataset page still displays no license
+  tag, and whether the HF copy (`skg/toxigen-data`) is governed by the
+  repository license is an inference, not a verified fact — anyone planning
+  redistribution should treat the HF copy's terms as unresolved and go to
+  the upstream release.
 
 ## References (where each fact was collected)
 
 | Marker | Source | What was collected | Access level | Date |
 |--------|--------|--------------------|--------------|------|
 | [R1] | https://huggingface.co/datasets/skg/toxigen-data | size bucket 100K–1M; annotated subset 9.9k (train 8.96k, test 940); prompts 31k; annotations 27.5k; task (text classification); arXiv 2203.09509; **absence of visible license** | page-inspected | 2026-10-21 |
+| [R2] | https://github.com/microsoft/ToxiGen (LICENSE.txt via GitHub license API) | MIT License text with 'Copyright (c) Microsoft Corporation.' under a TOXIGEN header (3,539 bytes); GitHub license field NOASSERTION (Other) due to the custom header; file body is the MIT text | page-inspected | 2026-10-23 |
 
 Explicitly **not** claimed: 274k statement count, ALICE generation method,
-annotator demographics, Microsoft authorship, upstream license — all pending
-further verification.
+annotator demographics, Microsoft authorship. The upstream repository license
+is now verified [R2]; the HF-copy scope question above remains open.

@@ -1,8 +1,10 @@
 # Dataset card: JailbreakBench (JBB-Behaviors)
 
-MIT (dataset page license section, verbatim [R1]) · verification date
-2026-10-21 · prepared by the course build · status: fully verified at
-`page-inspected` level, including field-level schema
+MIT (dataset page license section, verbatim [R1]; repository LICENSE read
+directly 2026-10-23 — MIT, copyright (c) 2023 JailbreakBench Team [R4]) ·
+verification date 2026-10-21 (license confirmed 2026-10-23) · prepared by
+the course build · status: fully verified at `page-inspected` level,
+including field-level schema
 
 ## 1. Identity and provenance
 
@@ -82,6 +84,7 @@ MIT (dataset page license section, verbatim [R1]) · verification date
 | Marker | Source | What was collected | Access level | Date |
 |--------|--------|--------------------|--------------|------|
 | [R1] | https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors | license text verbatim ("This dataset, like the code, is released under MIT License."); behaviors 200 rows (100 harmful + 100 benign); judge_comparison 300 rows; 10 category names; Source field values (TDC/HarmBench, AdvBench, Original); field schema (Index, Goal, Target, Behavior, Category, Source); DOI 10.57967/hf/2540; arXiv 2404.01318 | page-inspected | 2026-10-21 |
+| [R4] | https://github.com/JailbreakBench/jailbreakbench (LICENSE via GitHub license API) | MIT License, copyright (c) 2023 JailbreakBench Team (1,076 bytes); SPDX MIT — independently confirms the HF-page statement [R1] from the canonical repository | page-inspected | 2026-10-23 |
 
 Explicitly **not** claimed: leaderboard methodology, judge protocol
 details, paper authorship, artifact-version history — pending the
