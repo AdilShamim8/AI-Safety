@@ -702,7 +702,7 @@ projects:
   title: Distribution shift and subgroup reliability
   path: projects/p09-distribution-shift-and-subgroup-reliability/
   phase: G
-  maturity: planned
+  maturity: complete
   chapter_links:
   - '17'
   artifacts:
@@ -712,8 +712,8 @@ projects:
   - one mitigation
   - leakage prevention
   - statistical-vs-causal distinction
-  status: protocol-only
-  verified_on: null
+  status: implemented
+  verified_on: '2026-10-23'
 - id: P10
   title: 'Capstone: agent evaluation and assurance dossier'
   path: projects/p10-capstone-agent-evaluation-and-assurance-dossier/

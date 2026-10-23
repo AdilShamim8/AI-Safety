@@ -6,6 +6,15 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — P09 shift/subgroup reliability)
+
+- `src/ai_safety_course/shift_audit/`: Chapter 17's audit as code —
+  group-structured synthetic deployment with a spurious flip under
+  shift; ID vs OOD with disjoint intervals; worst-group vs average;
+  ECE degradation; and the DRO-lite half-recipe mitigation failing
+  honestly (the GroupDRO coupling caveat reproduced deterministically).
+  6 pinned tests.
+
 ### Added (2026-10-23 — P04 preference optimization audit)
 
 - `src/ai_safety_course/pref_audit/`: Chapter 04's audit as code —
