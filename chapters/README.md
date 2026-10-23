@@ -31,7 +31,8 @@ catalog with prerequisites and artifacts is
 | 20 | Misuse, dangerous capabilities, release evaluation | [20-misuse-dangerous-capabilities-release-evaluation](20-misuse-dangerous-capabilities-release-evaluation/) — **complete** |
 | 21 | Sociotechnical and systemic risk | [21-sociotechnical-and-systemic-risk](21-sociotechnical-and-systemic-risk/) — **complete** |
 | 22 | Safety engineering and assurance | [22-safety-engineering-and-assurance](22-safety-engineering-and-assurance/) — **complete** |
-| 23–24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phases G–H)* |
+| 23 | Governance and standards | [23-governance-and-standards](23-governance-and-standards/) — **complete** |
+| 24 | See [SYLLABUS.md](../SYLLABUS.md) | *planned (Phase H)* |
 
 Chapters appear here as they are completed — this index never links to a
 chapter that does not exist yet.

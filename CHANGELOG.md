@@ -6,6 +6,18 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — chapter 23)
+
+- `chapters/23-governance-and-standards/`: instruments sorted by
+  what they are — guidance (NIST AI RMF 1.0, voluntary, revision
+  named), obligation (EU AI Act with in-force/pending arithmetic),
+  knowledge bases (ATLAS with pinned counts), community lists
+  (OWASP), self-commitments (RSP/Preparedness). The standards map
+  with versions, the cited-vs-actual column, and the four-question
+  citation-forensics protocol. Not-legal-advice boundary enforced.
+- Registers +3 (SRC-REPORT-010..012; NIST four functions at
+  JS-rendering honesty); claims +3 (CLM-0158..0160); GLOSSARY +5.
+
 ### Added (2026-10-23 — chapter 22)
 
 - `chapters/22-safety-engineering-and-assurance/`: the safety case

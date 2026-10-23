@@ -514,7 +514,7 @@ chapters:
   title: Governance and standards for researchers
   path: chapters/23-governance-and-standards-for-researchers/
   phase: G
-  maturity: planned
+  maturity: complete
   outcomes:
   - Navigate NIST, OWASP, MITRE ATLAS, current GPAI safety/security guidance, responsible-scaling approaches
   - Distinguish voluntary guidance, legal obligations, and research proposals with dated official sources
@@ -524,8 +524,14 @@ chapters:
   project_ids: []
   assessments:
   - standards-mapping exercise with versions
-  source_ids: []
-  verified_on: null
+  source_ids:
+  - SRC-REPORT-010
+  - SRC-REPORT-011
+  - SRC-REPORT-012
+  - SRC-REPORT-004
+  - SRC-REPORT-008
+  - SRC-REPORT-009
+  verified_on: '2026-10-23'
 - id: '24'
   title: Research practice and capstone execution
   path: chapters/24-research-practice-and-capstone-execution/

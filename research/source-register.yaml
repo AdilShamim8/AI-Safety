@@ -2663,3 +2663,54 @@ sources:
     limitations: >-
       Abstract read via the arXiv API 2026-10-23 — one day after publication (2025-10-22), recency priced at maximum: this is a research-agenda document, not settled findings; the prediction-market instrument measures aggregated opinion, not fact. Carried as the frontier direction of Ch. 18's concerns formalized.
     license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-REPORT-010
+    title: "NIST AI Risk Management Framework (AI RMF 1.0) — landing page"
+    authors_or_organization: "National Institute of Standards and Technology (NIST)"
+    url: "https://www.nist.gov/itl/ai-risk-management-framework"
+    source_type: report
+    publication_date: 2023-01-26
+    version: "AI RMF 1.0; DOI NIST.AI.100-1; revision under way as part of the White House AI Action Plan (page statement)"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: policy
+    peer_review_status: "not peer reviewed (government framework document)"
+    supports:
+      - "chapters/23-governance-and-standards/README.md (station 1 and section 3.1: title and version; publication date 2023-01-26; the explicit statement that the framework is intended for voluntary use; companion documents (AI RMF Playbook, Roadmap, Crosswalk); the ongoing revision under the White House AI Action Plan; the DOI 10.6028/NIST.AI.100-1)"
+    limitations: >-
+      Landing page inspected 2026-10-23 (title, version, date, voluntary-use statement, companion documents, revision status, DOI all page-verified). The four core functions (Govern, Map, Measure, Manage) are the NIST AI 100-1 document structure carried at document-structure confidence: the NIST landing, publication, and playbook pages fetched are JavaScript-rendered and did not display the function names — recorded at mixed confidence rather than claimed as page-verified. This entry is guidance-genre (voluntary), not law.
+    license: "public domain (US government work; page terms standard)"
+
+  - id: SRC-REPORT-011
+    title: "MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems)"
+    authors_or_organization: "MITRE"
+    url: "https://atlas.mitre.org/"
+    source_type: web-report
+    publication_date: null
+    version: "living knowledge base; counts pinned at fetch: 16 tactics, 208 techniques, 40 mitigations, 73 case studies (fetched 2026-10-23)"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: metadata
+    peer_review_status: "not peer reviewed (curated knowledge base)"
+    supports:
+      - "chapters/23-governance-and-standards/README.md (station 3 and section 3.3: ATLAS as a globally accessible, living knowledge base of adversary tactics and techniques involving AI — attacks against AI-enabled systems, abuse or manipulation of AI capabilities, and harmful autonomous behavior materially enabled by AI — built from empirical evidence from real-world attacks and realistic demonstrations from AI red teams and security groups; the pinned counts; the ATT&CK adaptation relationship marked in the matrix)"
+    limitations: >-
+      Page inspected 2026-10-23. The counts are a living-database snapshot — they move; the map pins them at the fetch date. ATLAS is a knowledge base, not a standard: it obligates no one, and citing it as a requirement is the genre error the chapter instruments.
+    license: "page content (MITRE; usage terms not separately captured)"
+
+  - id: SRC-REPORT-012
+    title: "EU AI Act — implementation timeline (artificialintelligenceact.eu)"
+    authors_or_organization: "EU AI Act explorer project (Future of Life Institute / community)"
+    url: "https://artificialintelligenceact.eu/implementation-timeline/"
+    source_type: web-report
+    publication_date: null
+    version: "timeline page as fetched 2026-10-23"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: policy
+    peer_review_status: "not peer reviewed (community-maintained explorer of the official regulation)"
+    supports:
+      - "chapters/23-governance-and-standards/README.md (station 2 and section 3.1: the EU AI Act's entry into force 2024-08-01; general-purpose AI model requirements (Chapter V) applying from 2025-08-02 with a compliance deadline of 2027-08-02 for GPAI models placed on the market before 2025-08-02; Chapter III high-risk obligations applying 2027-12-02 for Article 6(2)/Annex III systems and 2028-08-02 for Article 6(1)/Annex I systems)"
+    limitations: >-
+      Timeline page inspected 2026-10-23 (a community explorer, not the official journal text — the underlying regulation's official numbering was not separately captured on this page; recorded honestly). The chapter uses the dates for mapping arithmetic only and explicitly does not interpret any article for a legal position — not legal advice.
+    license: "page content (community explorer site)"

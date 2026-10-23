@@ -1573,3 +1573,36 @@ claims:
     counterevidence: >-
       Ch. 18's verified stations (obfuscation under optimization; self-instructed evasion) are precisely the counterevidence class the roadmap's threat taxonomy formalizes — carried as open risk, not as settled feasibility
     date: 2026-10-23
+
+  - id: CLM-0158
+    claim: >-
+      The NIST AI Risk Management Framework (AI RMF 1.0, published 2023-01-26, DOI NIST.AI.100-1) is explicitly intended for voluntary use, with companion documents (Playbook, Roadmap, Crosswalk), and is being revised as part of the White House AI Action Plan (landing page facts, verified 2026-10-23). The framework's four core functions (Govern, Map, Measure, Manage) are its documented structure, carried at document-structure confidence because the fetched NIST pages are JavaScript-rendered and did not display them.
+    source: SRC-REPORT-010
+    section_or_page: "nist.gov landing page (fetched 2026-10-23)"
+    evidence_strength: "page-inspected for title/version/date/voluntary/DOI/revision; the four functions at mixed confidence — recorded honestly"
+    assumptions: "the landing page accurately reflects the framework document"
+    counterevidence: >-
+      none observed; the genre fact (voluntary) is the load-bearing content — alignment citations inherit exactly the force of voluntary guidance, no more
+    date: 2026-10-23
+
+  - id: CLM-0159
+    claim: >-
+      MITRE ATLAS is a globally accessible, living knowledge base of adversary tactics and techniques involving AI — attacks against AI-enabled systems, abuse or manipulation of AI capabilities, and harmful autonomous behavior materially enabled by AI — based on empirical evidence from real-world attacks and AI red-team demonstrations; at the 2026-10-23 fetch it carried 16 tactics, 208 techniques, 40 mitigations, and 73 case studies, with some tactics/techniques adapted from MITRE ATT&CK.
+    source: SRC-REPORT-011
+    section_or_page: "atlas.mitre.org (fetched 2026-10-23)"
+    evidence_strength: "page-inspected; counts are a living-database snapshot pinned at the fetch date"
+    assumptions: "the curation basis (real attacks + red-team demos) is as stated"
+    counterevidence: >-
+      none observed; the genre caution is the claim's own — a knowledge base obligates no one, and counts move
+    date: 2026-10-23
+
+  - id: CLM-0160
+    claim: >-
+      The EU AI Act entered into force on 2024-08-01; its general-purpose AI model requirements (Chapter V) apply from 2025-08-02, with providers of GPAI models placed on the market before that date required to comply by 2027-08-02; Chapter III high-risk obligations apply from 2027-12-02 for systems classified high-risk under Article 6(2)/Annex III and from 2028-08-02 for Article 6(1)/Annex I systems (implementation timeline, verified 2026-10-23 via the community explorer page; official-journal numbering not separately captured).
+    source: SRC-REPORT-012
+    section_or_page: "artificialintelligenceact.eu implementation timeline (fetched 2026-10-23)"
+    evidence_strength: "page-inspected (community explorer of the regulation's dates); used for mapping arithmetic, not legal interpretation"
+    assumptions: "the explorer's dates match the regulation's official timeline"
+    counterevidence: >-
+      none observed; the honest limits are stated — community page, no official numbering captured, and the chapter draws no legal conclusions from the dates
+    date: 2026-10-23
