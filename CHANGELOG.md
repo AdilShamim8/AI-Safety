@@ -6,6 +6,19 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-23 — chapter 20)
+
+- `chapters/20-misuse-dangerous-capabilities-release-evaluation/`:
+  the release gate as a pre-registered causal claim — uplift studies
+  with paired statistics, the elicitation ladder with lower-bound
+  grammar, the metric-mirage check, safety-level frameworks read as
+  auditable claim structures, and the Prometheus worked example with
+  a measured/assumed/waived release memo. Non-operational scope
+  enforced throughout.
+- Registers +5 (SRC-PAPER-093..095; SRC-REPORT-008 RSP
+  page-inspected; SRC-REPORT-009 Preparedness with 404-honesty);
+  claims +5 (CLM-0144..0148); GLOSSARY +5 terms.
+
 ### Added (2026-10-23 — chapter 19)
 
 - `chapters/19-multimodal-and-embodied-safety/`: the modality change

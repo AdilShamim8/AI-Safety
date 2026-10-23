@@ -449,7 +449,7 @@ chapters:
   title: Misuse, dangerous capabilities, and release evaluation
   path: chapters/20-misuse-dangerous-capabilities-and-release-evaluation/
   phase: G
-  maturity: planned
+  maturity: complete
   outcomes:
   - Explain capability elicitation, access conditions, safeguards, evaluation sensitivity
   - Reason about dual-use tradeoffs and release decisions
@@ -459,8 +459,13 @@ chapters:
   project_ids: []
   assessments:
   - release-evaluation design (non-operational)
-  source_ids: []
-  verified_on: null
+  source_ids:
+  - SRC-PAPER-093
+  - SRC-PAPER-094
+  - SRC-PAPER-095
+  - SRC-REPORT-008
+  - SRC-REPORT-009
+  verified_on: '2026-10-23'
 - id: '21'
   title: Sociotechnical and systemic risk
   path: chapters/21-sociotechnical-and-systemic-risk/

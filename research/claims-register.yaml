@@ -1421,3 +1421,58 @@ claims:
     counterevidence: >-
       none at this access level; surveys age — the 2026 date is recent, but per-topic depth must come from the primary sources it indexes
     date: 2026-10-23
+
+  - id: CLM-0144
+    claim: >-
+      Hendrycks, Mazeika, and Woodside (arXiv:2306.12001) organize catastrophic AI risks into four categories — malicious use (individuals or groups intentionally using AI to cause harm), AI race (competitive environments compelling actors to deploy unsafe AIs or cede control), organizational risks (human factors and complex systems increasing chances of catastrophic accidents), and rogue AIs (the difficulty of controlling agents far more intelligent than humans) — with hazards, illustrative stories, ideal scenarios, and mitigation suggestions per category.
+    source: SRC-PAPER-093
+    section_or_page: "arXiv API abstract for 2306.12001 v6 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read, synthesis-level; per-category detail lives in the unread body"
+    assumptions: "the four-category taxonomy covers the field as claimed at 2023"
+    counterevidence: >-
+      none at this access level; taxonomies age — the 2026 field (agent risks especially) extends it, which the course handles by pairing with later sources
+    date: 2026-10-23
+
+  - id: CLM-0145
+    claim: >-
+      Phuong et al. (arXiv:2403.13793, 27 authors) introduce a programme of dangerous-capability evaluations covering four areas — persuasion and deception, cyber-security, self-proliferation, and self-reasoning — piloted on Gemini 1.0 models, finding no evidence of strong dangerous capabilities in the evaluated models while flagging early warning signs, with the stated goal of advancing a rigorous science of dangerous capability evaluation for future models.
+    source: SRC-PAPER-094
+    section_or_page: "arXiv API abstract for 2403.13793 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; per-area designs and the early-warning specifics live in the unread body"
+    assumptions: "the four areas are the evaluation-relevant consensus as claimed"
+    counterevidence: >-
+      none at abstract level; the no-strong-capabilities finding is specific to Gemini 1.0 models at 2024 elicitation — dated evidence by the paper's own future-models framing
+    date: 2026-10-23
+
+  - id: CLM-0146
+    claim: >-
+      Schaeffer, Miranda, and Koyejo (arXiv:2304.15004) present an alternative explanation for claimed emergent abilities of large language models: the apparent sharpness (instantaneous transition from absent to present) and unpredictability (appearing at unforeseeable scales) can be artifacts induced by the choice of nonlinear or discontinuous evaluation metrics, rather than reflecting discontinuous changes in underlying capabilities.
+    source: SRC-PAPER-095
+    section_or_page: "arXiv API abstract for 2304.15004 (fetched 2026-10-23)"
+    evidence_strength: "abstract-read; the metric demonstrations and the conditions under which emergence survives live in the unread body"
+    assumptions: "the metric-artifact mechanism is demonstrated for the studied tasks"
+    counterevidence: >-
+      at abstract level, none; the broader debate (whether all emergence claims dissolve) is not adjudicated by this source alone — the chapter uses only the artifact mechanism, not the universal claim
+    date: 2026-10-23
+
+  - id: CLM-0147
+    claim: >-
+      Anthropic's Responsible Scaling Policy (announcement page, published 2023-09-19, page-inspected 2026-10-23) defines AI Safety Levels modeled on US government biosafety levels: ASL-1 (no meaningful catastrophic risk), ASL-2 (early signs of dangerous capabilities — current LLMs including Claude at publication), ASL-3 (substantial increase in catastrophic misuse risk compared to non-AI baselines, or low-level autonomous capabilities), and ASL-4+ (not yet defined, with the commitment to write ASL-4 measures before reaching ASL-3); the policy was formally approved by Anthropic's board, with changes requiring board approval and Long Term Benefit Trust consultation.
+    source: SRC-REPORT-008
+    section_or_page: "anthropic.com announcement page (fetched 2026-10-23)"
+    evidence_strength: "page-inspected; the ASL structure and triggers quoted from the page; the full policy document's measurement protocols not fetched"
+    assumptions: "the announcement page accurately summarizes the policy document"
+    counterevidence: >-
+      none observed; the 2023 page is a dated snapshot — the policy has since been revised, and this entry does not certify Anthropic's current posture
+    date: 2026-10-23
+
+  - id: CLM-0148
+    claim: >-
+      OpenAI's Preparedness Framework (Beta, 2023) tracks frontier-risk categories including cybersecurity, biological and chemical threats, persuasion, and model autonomy, with risk levels Low, Medium, High, and Critical — Critical meaning a model is not deployable — and with the stated posture that evaluations represent lower bounds on potential capabilities (additional prompting, fine-tuning, longer rollouts, or novel scaffolding could elicit behaviors beyond what was observed). Structure verified 2026-10-23 via OpenAI deployment-safety content (the canonical 2023 announcement page returned 404 at fetch; the surfaced system-card content also records a model assessed Critical in Cybersecurity and High in Biological and Chemical in September 2026).
+    source: SRC-REPORT-009
+    section_or_page: "OpenAI deployment-safety hub content surfaced via search (2026-10-23); canonical announcement page 404"
+    evidence_strength: "page-inspected at search-surfaced level; the Beta publication date itself is from a third-party citation record — flagged honestly; the framework's threshold definitions were not read in full"
+    assumptions: "the surfaced system-card content accurately reflects the framework's structure"
+    counterevidence: >-
+      none observed at this level; the 404 on the canonical page is itself recorded — framework documents move, and this entry's verification trail is weaker than a direct fetch would be
+    date: 2026-10-23

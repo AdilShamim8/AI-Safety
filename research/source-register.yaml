@@ -2425,3 +2425,88 @@ sources:
     limitations: >-
       Abstract read via the arXiv API 2026-10-23. A survey's claims are synthesis-level: the named fragilities mark where evidence is thin, which the chapter prices as weak links rather than settled findings. Author names beyond the count were not separately captured at this access level.
     license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-093
+    title: "An Overview of Catastrophic AI Risks"
+    authors_or_organization: "Dan Hendrycks, Mantas Mazeika, Thomas Woodside"
+    url: "https://arxiv.org/abs/2306.12001"
+    source_type: paper
+    publication_date: 2023-06-21
+    version: "v6 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md (station 1 and scope statement: the four categories of catastrophic AI risk — malicious use, AI race, organizational risks, rogue AIs — with per-category hazards, illustrative stories, ideal scenarios, and practical mitigation suggestions)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. A 2023 survey-style overview: the taxonomy is the load-bearing content for the course; the paper's own mitigation suggestions are not relied upon. Category detail lives in the unread body.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-094
+    title: "Evaluating Frontier Models for Dangerous Capabilities"
+    authors_or_organization: "Mary Phuong, Matthew Aitchison, Elliot Catt, Sarah Cogan, Alexandre Kaskasoli, Victoria Krakovna, and 21 further authors (27 total)"
+    url: "https://arxiv.org/abs/2403.13793"
+    source_type: paper
+    publication_date: 2024-03-20
+    version: "updated 2024-04-05 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "not peer reviewed at fetched version (arXiv preprint; no venue stated in the API record)"
+    supports:
+      - "chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md (station 2 and section 3.2: the dangerous-capability evaluation programme covering four areas — persuasion and deception, cyber-security, self-proliferation, self-reasoning — piloted on Gemini 1.0 models; no strong dangerous capabilities found but early warning signs flagged; the goal of advancing a rigorous science of dangerous capability evaluation in preparation for future models)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The evaluation designs per area, the early-warning specifics, and the elicitation methodology detail live in the unread body; the chapter's elicitation-ladder discipline is the course's own composition of the field's stated posture (evaluations as lower bounds), attributed at the posture level.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-PAPER-095
+    title: "Are Emergent Abilities of Large Language Models a Mirage?"
+    authors_or_organization: "Rylan Schaeffer, Brando Miranda, Sanmi Koyejo"
+    url: "https://arxiv.org/abs/2304.15004"
+    source_type: paper
+    publication_date: 2023-04-28
+    version: "updated 2023-05-22 per arXiv API"
+    accessed_on: 2026-10-23
+    access_level: abstract-read
+    evidence_class: empirical
+    peer_review_status: "peer review status not verified at fetched version (arXiv listing; NeurIPS 2023 Outstanding Paper not verified against proceedings)"
+    supports:
+      - "chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md (station 3 and section 3.3: the alternative explanation for emergent abilities as artifacts of the metric — the claim that sharpness and unpredictability of emergent abilities can be induced by the choice of nonlinear/discontinuous metrics rather than reflecting discontinuous capability change)"
+    limitations: >-
+      Abstract read via the arXiv API 2026-10-23. The specific metrics and per-task demonstrations live in the unread body. The chapter uses the artifact mechanism (report capability trends under both thresholded and continuous metrics), which is the abstract's stated program applied to gates.
+    license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-REPORT-008
+    title: "Anthropic's Responsible Scaling Policy (announcement page)"
+    authors_or_organization: "Anthropic"
+    url: "https://www.anthropic.com/news/anthropics-responsible-scaling-policy"
+    source_type: report
+    publication_date: 2023-09-19
+    version: "page as published 2023-09-19 (page-inspected 2026-10-23; the policy has since evolved — the page is the 2023 document)"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: policy
+    peer_review_status: "not peer reviewed (corporate policy document)"
+    supports:
+      - "chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md (station 5 and section 3.4: the AI Safety Levels structure modeled on US biosafety levels — ASL-1 no meaningful catastrophic risk, ASL-2 early signs including current LLMs, ASL-3 substantial misuse-risk increase over non-AI baselines or low-level autonomous capabilities, ASL-4+ not yet defined with the commitment to write ASL-4 measures before reaching ASL-3; board approval and Long Term Benefit Trust consultation for changes)"
+    limitations: >-
+      Announcement-page inspection 2026-10-23: the ASL structure and triggers are quoted from the page; the full policy document's measurement protocols were not fetched. The 2023 page predates the policy's later revisions (2024-2025) — dated snapshot, recorded as such; current Anthropic posture is not certified by this entry.
+    license: "page content (corporate announcement; quoted at summary level)"
+
+  - id: SRC-REPORT-009
+    title: "OpenAI Preparedness Framework (Beta) — structure and current assessments"
+    authors_or_organization: "OpenAI"
+    url: "https://openai.com/index/previewing-openais-preparedness-framework-for-frontier-ai-risks/ (canonical page 404 at fetch; structure verified via OpenAI deployment-safety content surfaced 2026-10-23)"
+    source_type: report
+    publication_date: 2023-10-06
+    version: "Beta framework (2023); structure and current category levels (e.g., GPT-6 Astra Critical in Cybersecurity, High in Biological and Chemical per the September 2026 system card content surfaced at search time)"
+    accessed_on: 2026-10-23
+    access_level: page-inspected
+    evidence_class: policy
+    peer_review_status: "not peer reviewed (corporate policy document)"
+    supports:
+      - "chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md (station 5 and section 3.4: the Preparedness Framework's risk levels Low/Medium/High/Critical with Critical meaning not deployable; the tracked capability categories including cybersecurity, biological and chemical, persuasion, and model autonomy; the evaluations-as-lower-bounds posture stated in surfaced content — additional prompting, fine-tuning, longer rollouts, or novel scaffolding could elicit behaviors beyond what was observed)"
+    limitations: >-
+      The canonical announcement page returned 404 at fetch 2026-10-23; the framework's structure was verified through OpenAI deployment-safety hub content surfaced via search (the GPT-6 Astra system card's Preparedness section), recorded at this honesty level rather than as a direct page inspection of the 2023 announcement. The Beta publication date (2023-10-06) is from the citation record of a third-party paper, not verified on an OpenAI page — flagged accordingly.
+    license: "surfaced page content (corporate policy; quoted at summary level)"
