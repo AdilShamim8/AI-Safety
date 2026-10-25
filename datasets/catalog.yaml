@@ -1360,3 +1360,43 @@ datasets:
       budget; robustness-overestimation diagnosis; image classification scope with model restrictions;
       title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-033
+  name: FEVER
+  organization: paper by Nie et al. (2018); fever.ai canonical site
+  canonical_url: https://arxiv.org/abs/1803.05355
+  paper:
+    id: '1803.05355'
+    url: https://arxiv.org/abs/1803.05355
+    title: 'FEVER: a large-scale dataset for Fact Extraction and VERification'
+    verified_title: true
+  risk_area: fact verification / evidence-anchored factuality
+  task:
+  - claim verification
+  - evidence retrieval
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (site terms uninspected)
+  size_facts:
+  - fact: 185,445 claims (abstract-stated)
+    ref: R1
+  - fact: 'three-way labels: Supported / Refuted / NotEnoughInfo (abstract-stated)'
+    ref: R1
+  - fact: annotator agreement 0.6841 Fleiss kappa (abstract-stated)
+    ref: R1
+  - fact: evidence sentences recorded for Supported and Refuted classes (abstract-stated)
+    ref: R1
+  course_use:
+    chapters:
+    - '06'
+    - '02'
+    projects:
+    - P03
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/33-fever.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/1803.05355
+    collected: 'abstract: 185,445 claims from altered Wikipedia sentences, blinded verification, three-way
+      labels with 0.6841 Fleiss kappa agreement, evidence-linked judgments; title/authors/date verified'
+    accessed_on: '2026-10-25'
