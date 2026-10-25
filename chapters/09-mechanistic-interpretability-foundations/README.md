@@ -391,7 +391,7 @@ arXiv this session, so Tigges et al. is the verified replacement. **Optional
 deeper material** (not verified this build): the `chapters/10` and
 `chapters/11` reading lists.
 
-**Note companions:** [34 Othello-GPT — the probe-plus-intervention evidence pattern](../../research/notes/34-emergent-world-representations.md)[50 Induction heads — the six-argument mechanism hypothesis](../../research/notes/50-induction-heads.md)
+**Note companions:** [34 Othello-GPT — the probe-plus-intervention evidence pattern](../../research/notes/34-emergent-world-representations.md)[50 Induction heads — the six-argument mechanism hypothesis](../../research/notes/50-induction-heads.md) [52 ROME — facts as localized, editable computation](../../research/notes/52-rome-factual-associations.md)
 
 ## 8. Exercises
 
