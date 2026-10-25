@@ -121,3 +121,15 @@ intermediate gates; these are the route-level exits.
 No certification, no expertise guarantee, no career promise. The course
 builds demonstrable skills and evidence; what that becomes is up to you and
 your reviewers.
+
+## The session-2 layer (2026-10-25)
+
+Every route now carries: its [progress tracker](roadmaps/progress/README.md)
+(artifact-gated milestones with self-audit questions), its session-2
+reading spine (route-page blocks), and the dashboard's progress
+widget rendering the checkboxes. The audit-only route gained the
+[judge's audit](planning/SESSION2_JUDGE_AUDIT.md) as its method
+exemplar. The map's shape is unchanged — the spine was complete at
+150 commits; session 2 deepened coverage (74 notes, 43 cards, 14
+incidents, 12 comparisons) and added the tracking layer the owner
+asked for, without moving a single chapter.
