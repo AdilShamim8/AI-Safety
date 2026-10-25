@@ -1,7 +1,7 @@
 # Research notes
 
 The research notebook: **74 paper notes**, **12 comparison notes**, and
-**11 incident reviews** (in [incidents/](incidents/README.md)). Paper
+**14 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
 written at the level the register's access supports (method-level for
