@@ -114,6 +114,15 @@ that is what live market data does.
    "Member of Technical Staff" / "Safety Engineer" / "Responsible AI
    Engineer" variants on the boards [SRC-CURR-007].
 
+## The concrete version: first 90 days
+
+The ladder above maps the whole journey; [first-90-days.md](first-90-days.md)
+makes the opening concrete — shared weeks 1-4 (the spine), then a
+week-by-week plan per role with an ARTIFACT gating every Friday,
+day-90 checkpoints defined as things you can hand a stranger, and the
+three honest failure modes (reading without artifacts, tutorial drift,
+skipping the spine).
+
 ## Progress tracking — the step-by-step ladder
 
 Track progress in artifacts, not hours. Each rung below is complete

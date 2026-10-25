@@ -45,7 +45,9 @@ scale.
   course), ~24-week part-time (~6–8 h/week, one full specialization), or
   open-ended research (full curriculum + capstone). The arithmetic is in
   [ROADMAP.md](ROADMAP.md) — the focused route does not pretend 24 advanced
-  chapters and 10 projects fit into 12 weeks.
+  chapters and 10 projects fit into 12 weeks. For a week-by-week
+  concrete opening instead, use [roadmaps/first-90-days.md](roadmaps/first-90-days.md)
+  (all roles share weeks 1–4; an artifact gates every Friday).
 
 Exit criteria are **artifacts**, not reading completion: each route ends with
 portfolio evidence you can show (a replication, a threat model, a safety
