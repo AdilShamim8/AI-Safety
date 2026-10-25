@@ -3,6 +3,16 @@
 Five minutes from zero to a study plan. This page assumes nothing except that
 you can read Markdown and run Python.
 
+## Step 0 — See the whole thing first (5 minutes)
+
+Open **[index.html](index.html)** in a browser — the generated dashboard
+shows everything this repository contains and how each piece was verified:
+the evidence ladder every source passed, the 24-chapter map, the ten
+implemented projects with their pinned results, the dataset catalog, the
+source and claims registers (searchable), the three career tracks, and the
+beginner quickstart. It is one self-contained file: it works offline, and
+every number on it is generated from the repository's own data.
+
 ## Step 1 — Diagnose honestly (60–90 minutes)
 
 Work the five tasks in [prerequisites/diagnostic.md](prerequisites/diagnostic.md)
@@ -59,11 +69,13 @@ critique, a project, or a specific research deliverable.
 
 ## Current build state (read this once)
 
-This is an honest work-in-progress build: units appear when they are complete,
-and [planning/STATUS.md](planning/STATUS.md) tracks exactly what exists. If a
-chapter you need is not there yet, the roadmap still tells you what it will
-cover and which readings it will require; the source register already records
-the verified sources behind the plan.
+The build has reached its target scope: all 24 chapters, all 10 projects
+(deterministic and runnable on a laptop), 22 verified dataset cards, and the
+from-scratch researcher track — with [planning/STATUS.md](planning/STATUS.md)
+tracking exactly what exists and what remains honestly not-executed (the
+compute-tier experiments and the human-subject tiers). Where a project marks
+a tier as not-executed, the README says so and the protocol for running it
+is written; nothing is claimed that was not run.
 
 ## Asking questions and reporting problems
 
