@@ -97,14 +97,14 @@ def test_payload_is_valid_json_with_careers() -> None:
 
 
 def test_generated_index_html_up_to_date() -> None:
-    """The committed index.html must be regenerable: rendering fresh data
-    must produce a file whose structural skeleton matches (the generated
-    date and commit count legitimately differ)."""
+    """The committed index.html must carry the repo's CURRENT counts: the
+    payload embedded in the file is compared to a fresh build, ignoring
+    only fields that legitimately differ between builds (the generation
+    date, and the commit count under shallow CI clones)."""
     out = REPO_ROOT / "index.html"
     assert out.is_file()
     committed = out.read_text(encoding="utf-8")
     assert "window.DASHBOARD_DATA" in committed
-    # the nine sections survived generation
     for section in (
         "overview",
         "method",
@@ -113,7 +113,46 @@ def test_generated_index_html_up_to_date() -> None:
         "datasets",
         "sources",
         "claims",
+        "incidents",
+        "notes",
         "careers",
         "quickstart",
     ):
         assert f'id="{section}"' in committed, section
+    m = re.search(r"window\.DASHBOARD_DATA = (\{.*?\});?\n", committed, re.S)
+    assert m, "payload not found in committed index.html"
+    embedded = json.loads(m.group(1))
+    fresh = build_dashboard.build_data()
+    drift = []
+    for key in (
+        "sources",
+        "claims",
+        "datasets",
+        "chapters",
+        "projects",
+        "incidents",
+        "fs_track",
+        "careers",
+        "quickstart",
+    ):
+        if len(embedded.get(key, [])) != len(fresh[key]):
+            drift.append(f"{key}: embedded {len(embedded.get(key, []))} vs repo {len(fresh[key])}")
+    for field in (
+        "tests",
+        "sources",
+        "claims",
+        "datasets",
+        "notes",
+        "paper_notes",
+        "comparison_notes",
+        "fs_modules",
+    ):
+        if embedded.get("repo", {}).get(field) != fresh["repo"][field]:
+            drift.append(
+                f"repo.{field}: embedded {embedded.get('repo', {}).get(field)}"
+                f" vs repo {fresh['repo'][field]}"
+            )
+    assert not drift, (
+        "committed dashboard is stale — regenerate with "
+        "scripts/build_dashboard.py: " + "; ".join(drift)
+    )

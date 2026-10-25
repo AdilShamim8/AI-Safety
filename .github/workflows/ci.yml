@@ -20,6 +20,8 @@ jobs:
         run: uv sync --frozen
       - name: Repository validation (register schemas, local links, sizes)
         run: uv run python scripts/validate_repo.py .
+      - name: Missing-values audit (registers, cards, cross-references)
+        run: uv run python scripts/audit_missing.py
       - name: Tests
         run: uv run pytest
       - name: Lint (src, scripts, tests)
