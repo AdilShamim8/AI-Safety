@@ -1625,3 +1625,37 @@ datasets:
     collected: 'abstract: highly realistic and reproducible web environment for language-guided agents,
       answering the synthetic-environment disconnect; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-040
+  name: GAIA
+  organization: paper by Mialon et al. (2023)
+  canonical_url: https://arxiv.org/abs/2311.12983
+  paper:
+    id: '2311.12983'
+    url: https://arxiv.org/abs/2311.12983
+    title: 'GAIA: a benchmark for General AI Assistants'
+    verified_title: true
+  risk_area: general-assistant capability (reasoning, tools, multimodality)
+  task:
+  - assistant evaluation
+  - tool-use benchmarking
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: human respondents 92% vs 15% for GPT-4 equipped [tools clause truncates] (abstract-stated)
+    ref: R1
+  course_use:
+    chapters:
+    - '14'
+    - '20'
+    projects: []
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/40-gaia.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2311.12983
+    collected: 'abstract: real-world questions requiring reasoning, multimodality, browsing, tool use
+      — conceptually simple for humans, challenging for AIs; 92% human vs 15% GPT-4; title/authors/date
+      verified'
+    accessed_on: '2026-10-25'
