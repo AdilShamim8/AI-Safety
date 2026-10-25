@@ -2299,3 +2299,16 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0187
+  claim: Holistic Evaluation of Language Models taxonomizes scenario (use-case) and metric (desiderata)
+    spaces, selects a broad subset based on coverage and feasibility while explicitly noting what is missing
+    or underrepresented (e.g., question answering for neglected English dialects, trustworthiness metrics),
+    and measures 7 metrics (including accuracy, calibration, robustness) per scenario to improve transparency
+    of language models.
+  source: SRC-PAPER-124
+  section_or_page: arXiv:2211.09110v2 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; methodology, omissions
+    discipline, and metric count stated in the abstract; metric list truncates after three, boundary recorded)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
