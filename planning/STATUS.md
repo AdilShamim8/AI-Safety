@@ -124,7 +124,7 @@ carry written protocols for whoever does.
 - Chapters complete: 24 / 24 — the full chapter spine is DONE
 - Dataset cards complete: 22 verified cards in the catalog (13 core + 9 verified in the 2026-10-23 rounds; pending-verification queue EMPTY)
 - Projects complete: **10 / 10 — the project spine is DONE** (P06 and P10 closed 2026-10-25)
-- Paper notes complete: 32 (20 required minimum + 12 added 2026-10-25, all indexed; 7 method-level from full-text-read sources, 25 abstract-level honestly labeled; each with a falsifiable extension)
+- Paper notes complete: 50 (20 required minimum + 12 added 2026-10-25 + 18 added in session 2 from the API-verified pool: 33 Concrete Problems, 34 Othello-GPT, 35 Obfuscated Gradients, 36 Non-robust Features, 37 Overoptimization, 38 Unfaithful CoT, 39 Lost in the Middle, 40 Situational Awareness, 41 Model-Written Evals, 42 HH-RLHF, 43 CoT Faithfulness, 44 Jailbroken, 45 Many-Shot [full-text, Anthropic page], 46 FActScore, 47 SelfCheckGPT, 48 Inverse Scaling, 49 HELM, 50 Induction Heads [full-text, transformer-circuits]; each with SRC + CLM registers, chapter cross-links, and a falsifiable extension)
 - Comparison notes: 6 (C01–C05 planned set + the C06 extension 2026-10-25: safety cases vs red-team reports)
 - Incident analyses: 3 (Air Canada liability 2024 BCCRT 149; DPD post-update regression; Chevy dealership commitment-authority — all page-inspected sources with honest limitations)
 - From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
@@ -151,8 +151,9 @@ remote-verified.
 
 ## Next exact action
 
-Working the session-2 backlog in judged order. Current phase: B —
-notes 33–50 (Concrete Problems first, closing G1). After each unit:
+Phase B CLOSED (commits 156-176): notes 33-50 with registers, cross-
+links through 12 chapters, 18 glossary terms. Current phase: C — dataset
+cards 23-34 (closing G2), StrongREJECT first. After each unit:
 STATUS counters move in the same commit as the work. The standing
 actions from session 1 remain: rotate the exposed token when the
 session ends; the three not-executed experiment tiers stay honestly
