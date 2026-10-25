@@ -35,6 +35,48 @@ REPO = Path(__file__).resolve().parents[1]
 TEMPLATE = REPO / "scripts/dashboard_template.html"
 OUT = REPO / "index.html"
 
+#: What the build honestly did NOT execute — mirrors each project
+#: README's not-executed tiers and STATUS's counters. The dashboard
+#: shows the wins AND the gaps; hiding the gaps here would betray the
+#: method the page is selling.
+NOT_EXECUTED = [
+    {
+        "id": "P03",
+        "tier": "ml compute tier",
+        "what": (
+            "TruthfulQA / XSTest runs against a local small model " "with the real scorer pipeline"
+        ),
+    },
+    {
+        "id": "P04",
+        "tier": "real-model tier",
+        "what": (
+            "the preference-optimization audit on an actual tuned policy "
+            "(the deterministic organism carries the seam)"
+        ),
+    },
+    {
+        "id": "P06",
+        "tier": "compute tier",
+        "what": "activation patching on a real open model (TransformerLens-style hooking per the Ch.09 exercise protocol)",
+    },
+    {
+        "id": "P07",
+        "tier": "tier 1 + tier 2",
+        "what": "the live agent runtime, and human consent-decay rates (tier-2 evidence: out of scope for an offline build)",
+    },
+    {
+        "id": "P10",
+        "tier": "live + adaptive",
+        "what": "a live agent system and the adaptive red-team phase against the deployed configuration",
+    },
+    {
+        "id": "course-wide",
+        "tier": "real local-model experiments",
+        "what": "0 of the 3 required compute-tier executions (recorded honestly in planning/STATUS.md)",
+    },
+]
+
 CAREERS = [
     {
         "role": "AI safety researcher",
@@ -408,6 +450,7 @@ def build_data() -> dict:
         "sources": sources,
         "claims": claims,
         "incidents": incidents,
+        "not_executed": NOT_EXECUTED,
         "fs_track": fs_track,
         "careers": CAREERS,
         "quickstart": QUICKSTART,

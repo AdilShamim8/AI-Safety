@@ -132,6 +132,7 @@ footer p{max-width:85ch;margin:4px 0}
   <a class="navlink" href="#datasets">Datasets</a>
   <a class="navlink" href="#sources">Sources</a>
   <a class="navlink" href="#claims">Claims</a>
+  <a class="navlink" href="#honesty">Honesty</a>
   <a class="navlink" href="#incidents">Incidents</a>
   <a class="navlink" href="#notes">Notes</a>
   <a class="navlink" href="#careers">Careers</a>
@@ -141,7 +142,7 @@ footer p{max-width:85ch;margin:4px 0}
   <div class="hero">
     <div class="kicker">Open-source research curriculum · every claim tracked</div>
     <h1>AI Safety, from first principles<br>to a portfolio you can audit.</h1>
-    <p class="sub">24 chapters, 10 implemented projects, 22 verified real-world datasets, a from-scratch researcher track, and a source-and-claims register behind every number on this page. This dashboard is generated from the repository's own data — the same discipline the course teaches, applied to itself.</p>
+    <p class="sub">24 chapters, 10 implemented projects, 22 verified real-world datasets, 30 paper notes, a from-scratch researcher track, and a source-and-claims register behind every number on this page — plus the honesty ledger of what was NOT run. This dashboard is generated from the repository's own data — the same discipline the course teaches, applied to itself.</p>
     <div class="meta" id="hero-meta"></div>
   </div>
 
@@ -211,27 +212,33 @@ footer p{max-width:85ch;margin:4px 0}
     <div class="panel"><div class="body"><table class="grid" id="clm-table"></table></div></div>
   </section>
 
+  <section id="honesty">
+    <h2><span class="idx">08</span> The honesty ledger — what this build did NOT run</h2>
+    <p class="lede">Every project above marks its not-executed tiers in its own README; this panel surfaces them at the front door. A curriculum that teaches honest evaluation cannot hide its own gaps in its showcase — the gaps are part of the method.</p>
+    <div class="projgrid" id="honesty-grid"></div>
+  </section>
+
   <section id="incidents">
-    <h2><span class="idx">08</span> Incident reviews — production, verified, unromanticized</h2>
+    <h2><span class="idx">09</span> Incident reviews — production, verified, unromanticized</h2>
     <p class="lede">Real deployments that failed, reviewed with the strict template: observable facts first, established conclusions attributed, unknowns kept unknown, and the overreach named. First-party reports outrank press coverage; where only press exists, the note says so.</p>
     <div class="projgrid" id="incident-grid"></div>
   </section>
 
   <section id="notes">
-    <h2><span class="idx">09</span> The research notebook — 25 notes and the from-scratch track</h2>
-    <p class="lede">20 paper notes (each with a falsifiable extension), 5 comparison notes, and the 7-module from-scratch researcher track that builds the evaluated object by hand: tensors, a neuron, backprop, attention, transformers, MoE — stdlib-only with Python/PyTorch cross-checks.</p>
+    <h2><span class="idx">10</span> The research notebook — 30 notes and the from-scratch track</h2>
+    <p class="lede">25 paper notes (each with a falsifiable extension), 5 comparison notes, and the 7-module from-scratch researcher track that builds the evaluated object by hand: tensors, a neuron, backprop, attention, transformers, MoE — stdlib-only with Python/PyTorch cross-checks.</p>
     <div class="stats" style="margin-bottom:14px" id="note-stats"></div>
     <div class="panel"><div class="body"><table class="grid" id="fs-table"></table></div></div>
   </section>
 
   <section id="careers">
-    <h2><span class="idx">10</span> Three careers, one spine</h2>
+    <h2><span class="idx">11</span> Three careers, one spine</h2>
     <p class="lede">The course's routes map to three role families. The demand signal below is dated 2026-10-25 with per-claim provenance — live market data drifts; the register makes re-verification one fetch away.</p>
     <div class="careergrid" id="career-grid"></div>
   </section>
 
   <section id="quickstart">
-    <h2><span class="idx">11</span> Start here — the beginner path</h2>
+    <h2><span class="idx">12</span> Start here — the beginner path</h2>
     <p class="lede">Everything below runs on a laptop with Python 3.12 and ~2 GB of disk. No GPUs, no API keys, no dataset downloads for the deterministic track.</p>
     <ol class="steps" id="quickstart-steps"></ol>
   </section>
@@ -386,6 +393,13 @@ const clmCols = [
 ];
 explorer($("#clm-table"), $("#clm-search"), $("#clm-count"), D.claims,
   (c, q) => !q || [c.claim, c.source, c.id].join(" ").toLowerCase().includes(q), clmCols);
+
+/* ---- honesty ledger ---- */
+$("#honesty-grid").innerHTML = D.not_executed.map(n =>
+  `<div class="proj"><div class="id">${esc(n.id)} · <span class="badge amber">${esc(n.tier)}</span></div>` +
+  `<div class="ti">not executed</div><div class="hd">${esc(n.what)}</div>` +
+  `<div class="pkg">scoped in the project README — protocol written, honestly marked</div></div>`
+).join("");
 
 /* ---- incidents ---- */
 $("#incident-grid").innerHTML = D.incidents.map(i =>
