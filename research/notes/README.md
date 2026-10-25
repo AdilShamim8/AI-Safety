@@ -30,6 +30,8 @@ full-text-read sources; abstract-level entries say so, per the
 | 20 | [Madry et al.: Adversarial Training](20-madry-adversarial-training.md) | SRC-PAPER-045 | abstract-level |
 | 21 | [CaMeL: Defeating Prompt Injections by Design](21-camel-defeating-injections-by-design.md) | SRC-PAPER-054 | abstract-level |
 | 22 | [AgentDojo: Dynamic Evaluation of Agent Attacks and Defenses](22-agentdojo-dynamic-evaluation.md) | SRC-PAPER-055 | abstract-level |
+| 23 | [AI Sandbagging: Strategic Underperformance on Evaluations](23-ai-sandbagging.md) | SRC-PAPER-021 | abstract-level |
+| 24 | [Explore, Establish, Exploit: Red Teaming from Scratch](24-explore-establish-exploit.md) | SRC-PAPER-060 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one
