@@ -275,6 +275,7 @@ scoping); the AI-race category [SRC-PAPER-093]; Ch. 17's
 worst-group discipline; Ch. 20's gate memos.
 
 **Note companions:** [19 Wild patterns — a survey of real-world ML failures](../../research/notes/19-wild-patterns-survey.md) Incidents: [incident 13](../../research/notes/incidents/13-eeoc-itutorgroup.md)[incident 14](../../research/notes/incidents/14-amazon-recruiting-tool.md)[incident 05](../../research/notes/incidents/05-nyc-mycity-chatbot.md)
+Dataset cards: [card 35](../../datasets/cards/35-hatexplain.md)[card 36](../../datasets/cards/36-dynahate.md)[card 37](../../datasets/cards/37-stereoset.md)[card 41](../../datasets/cards/41-civil-comments.md)[card 42](../../datasets/cards/42-lmsys-chat-1m.md)
 
 ## 8. Exercises
 

@@ -380,6 +380,7 @@ are part of the evidence (P01's runner emits them automatically).
   [cards/01](../../datasets/cards/01-truthfulqa.md).
 
 **Note companions:** [41 Model-written evaluations — cheap breadth, inherited blind spots](../../research/notes/41-model-written-evaluations.md)[48 Inverse scaling — the anti-"scale will fix it" evidence](../../research/notes/48-inverse-scaling.md)[49 HELM — evaluation as a coverage discipline with named holes](../../research/notes/49-helm.md) [C12 Model-written vs human-curated supply — where the blind spot lives](../../research/notes/comparison-12-evaluation-supply-strategies.md) [53 Deep double descent — the folk theorem killed from both ends](../../research/notes/53-deep-double-descent.md)[59 CheckList — behavioral testing's grammar](../../research/notes/59-checklist-behavioral-testing.md)[60 Dynabench — the benchmark that fights back](../../research/notes/60-dynabench-dynamic-benchmarking.md)
+Dataset cards: [card 38](../../datasets/cards/38-anli.md)
 
 ## 8. Exercises
 

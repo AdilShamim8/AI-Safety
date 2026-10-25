@@ -297,6 +297,7 @@ injection discipline; Ch. 17's shift taxonomy; Ch. 18's
 action-over-text monitoring principle.
 
 **Note companions:** [64 Physical-world adversarial examples — the embodied inheritance](../../research/notes/64-physical-world-adversarial.md)
+Dataset cards: [card 43](../../datasets/cards/43-mm-safetybench.md)
 
 ## 8. Exercises
 
