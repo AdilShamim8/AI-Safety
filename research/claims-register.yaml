@@ -2519,3 +2519,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0203
+  claim: 'An adversary can perform a training-data extraction attack to recover individual training examples
+    by querying a trained-and-published large language model: demonstrated on GPT-2 with hundreds of verbatim
+    training sequences extracted, including personally identifiable information (names, phone numbers,
+    and email addresses) and IRC conversations.'
+  source: SRC-PAPER-132
+  section_or_page: arXiv:2012.07805 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; attack class, target,
+    yield, and PII classes stated in the abstract, rates and ranking method unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
