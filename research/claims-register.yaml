@@ -2702,3 +2702,17 @@ claims:
   assumptions: the coverage accurately reports the demo's outputs and the criticism
   counterevidence: none observed; Meta withdrew the demo rather than defending it
   date: '2026-10-25'
+- id: CLM-0218
+  claim: iTutorGroup programmed its tutor-application software to automatically reject female applicants
+    aged 55 or older and male applicants aged 60 or older; the EEOC sued in May 2022 and iTutorGroup agreed
+    in August 2023 to pay $365,000 to more than 200 allegedly rejected applicants — the US agency's first
+    bias lawsuit involving AI software, per Reuters.
+  source: SRC-REPORT-037
+  section_or_page: EEOC newsroom 2023-09-11 + Reuters 2023-08-10 + EEOC suit release 2022-05-05 (all page-inspected
+    via search-result content)
+  evidence_strength: page-inspected regulator statements with the settlement amount, cutoff ages, and
+    applicant count stated; wire-service corroboration of the first-AI-suit characterization
+  assumptions: the EEOC's description of the software's programmed behavior is accurate
+  counterevidence: none observed; the settlement resolved the suit without admission per standard consent-decree
+    structure
+  date: '2026-10-25'

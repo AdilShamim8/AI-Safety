@@ -4528,3 +4528,52 @@ sources:
   limitations: Full page content retrieved 2026-10-25 via the search tool's document fetch. The form-vs-verification
     diagnosis is this outlet's analysis, quoted with attribution.
   license: unknown (site terms; brief quotation with attribution)
+- id: SRC-REPORT-037
+  title: iTutorGroup to Pay $365,000 to Settle EEOC Discriminatory Hiring Suit (2023-09-11)
+  authors_or_organization: U.S. Equal Employment Opportunity Commission (newsroom)
+  url: https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit
+  source_type: report
+  publication_date: '2023-09-11'
+  version: release as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: primary institutional statement
+  peer_review_status: not peer reviewed (government agency release)
+  supports:
+  - research/notes/incidents/13-eeoc-itutorgroup.md
+  limitations: Page inspected via search-result content 2026-10-25 (settlement amount, age-cutoff facts,
+    and programming statement verified in snippet); full release and consent decree not independently
+    fetched.
+  license: unknown (government site terms)
+- id: SRC-REPORT-038
+  title: Tutoring firm settles US agency's first bias lawsuit involving AI software (2023-08-10)
+  authors_or_organization: Reuters
+  url: https://www.reuters.com/legal/tutoring-firm-settles-us-agencys-first-bias-lawsuit-involving-ai-software-2023-08-10
+  source_type: report
+  publication_date: '2023-08-10'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (wire service)
+  supports:
+  - research/notes/incidents/13-eeoc-itutorgroup.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, settlement facts, first-AI-lawsuit
+    characterization, 200+ applicants verified in snippet); full article not independently fetched.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-039
+  title: EEOC Sues iTutorGroup for Age Discrimination (2022-05-05)
+  authors_or_organization: U.S. Equal Employment Opportunity Commission (newsroom)
+  url: https://www.eeoc.gov/newsroom/eeoc-sues-itutorgroup-age-discrimination
+  source_type: report
+  publication_date: '2022-05-05'
+  version: release as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: primary institutional statement
+  peer_review_status: not peer reviewed (government agency release)
+  supports:
+  - research/notes/incidents/13-eeoc-itutorgroup.md
+  limitations: Page inspected via search-result content 2026-10-25 (suit date and programmed-rejection
+    statement verified in snippet); full release not independently fetched.
+  license: unknown (government site terms)
