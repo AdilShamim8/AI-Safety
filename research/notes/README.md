@@ -38,6 +38,8 @@ full-text-read sources; abstract-level entries say so, per the
 | 28 | [Sycophancy: the preference pipeline, training in flattery](28-sycophancy-preference-pressure.md) | SRC-PAPER-018 | abstract-level |
 | 29 | [Are Emergent Abilities a Mirage? Metric choice manufactures thresholds](29-emergent-abilities-mirage.md) | SRC-PAPER-095 | abstract-level |
 | 30 | [Constitutional AI: supervision moved into a document](30-constitutional-ai.md) | SRC-PAPER-011 | abstract-level |
+| 31 | [GCG: universal suffixes and the end of prompt-level confidence](31-gcg-universal-suffixes.md) | SRC-PAPER-004 | abstract-level |
+| 32 | [Verbalized confidence: the channel the model can be taught to fake](32-verbalized-confidence.md) | SRC-PAPER-017 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one
