@@ -2765,3 +2765,92 @@ sources:
     limitations: >-
       Abstract read via the arXiv API 2026-10-23. The position's full argument and proposed publication norms live in the unread body; the chapter carries the call and its incentive diagnosis.
     license: "unknown (arXiv distribution terms; no separate license stated in the API record)"
+
+  - id: SRC-CURR-005
+    title: "How to use your career to reduce AI risk (80,000 Hours AI safety hub)"
+    authors_or_organization: "80,000 Hours"
+    url: "https://80000hours.org/ai"
+    source_type: course
+    publication_date: null
+    version: "live page, '1 day ago' update marker observed at fetch"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed (career-advice organization)"
+    supports:
+      - "roadmaps/careers-index.md (career-path families, entry mechanisms, community programs)"
+      - "the course's career-track pages (fellowships, advising, conferences)"
+    limitations: >-
+      Career-advice content, not scientific claims; the page's job counts and
+      program names change over time and were observed at fetch on 2026-10-25.
+      Salary and outcome figures elsewhere in this register carry their own
+      access levels; this page grounds the STRUCTURE of entry paths (governance,
+      technical research, security, fieldbuilding), not any outcome statistics.
+    license: "unknown (80,000 Hours site terms; standard web quoting only)"
+
+  - id: SRC-CURR-006
+    title: "MATS Program (ML Alignment & Theory Scholars)"
+    authors_or_organization: "MATS Program (matsprogram.org)"
+    url: "https://matsprogram.org"
+    source_type: course
+    publication_date: null
+    version: "live page; Winter 2027 cohort applications marked closed at fetch"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed (fellowship program self-description)"
+    supports:
+      - "roadmaps/careers-index.md (fellowship structure, stipend/compute terms, alumni outcomes)"
+    limitations: >-
+      Self-reported program statistics (631 researchers since late 2021, 220+
+      papers with 19,000+ citations, 75% of alumni working in alignment,
+      10% co-founding organizations) are the program's own figures observed on
+      its page on 2026-10-25 — treated as the program's marketing of itself,
+      useful for structure and scale, not as independent outcome evidence.
+      The $1,250/week stipend and $2k/week compute are the page's stated terms.
+    license: "unknown (program site terms)"
+
+  - id: SRC-CURR-007
+    title: "AISafety.com jobs board"
+    authors_or_organization: "AISafety.com"
+    url: "https://aisafety.com/jobs"
+    source_type: report
+    publication_date: null
+    version: "live board; 553 jobs, 'updated 2 days ago' observed at fetch"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: observation
+    peer_review_status: "not peer reviewed (aggregated job listings)"
+    supports:
+      - "roadmaps/careers-index.md (the live demand signal: hiring orgs and disclosed salary ranges)"
+    limitations: >-
+      A snapshot of a live board: counts and listings change continuously;
+      salary ranges are EMPLOYER-DISCLOSED from postings (e.g. Anthropic
+      Research Engineer / Security Engineer, RL Security $320,000-$405,000;
+      Staff SRE Safeguards ML Infrastructure $320,000-$485,000; Policy
+      Development, Technical AI Governance $265,000-$295,000) and reflect the
+      posting, not verified compensation. Board coverage is self-selected.
+    license: "unknown (job board site terms)"
+
+  - id: SRC-CURR-008
+    title: "AI Cybersecurity Careers 2026: The Market Reality (SANS white paper)"
+    authors_or_organization: "SANS Institute"
+    url: "https://www.sans.org/white-papers/sans-ai-cybersecurity-careers-guide"
+    source_type: report
+    publication_date: null
+    version: "2026 edition; compiled from 10,643 job postings analyzed September 2026 (per page)"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: observation
+    peer_review_status: "not peer reviewed (industry white paper with stated method)"
+    supports:
+      - "roadmaps/careers-index.md (the AI-security role taxonomy and which titles hire today)"
+    limitations: >-
+      Vendor-published white paper (SANS sells the mapped courses and GIAC
+      certifications); the stated method (10,643 postings from public ATS and
+      career sites, September 2026) is a real corpus but the mapping to SANS
+      curriculum is commercial. The four hiring-today titles (AI/ML Security
+      Engineer, AI Red Team Engineer, AI Governance and Security Risk Lead,
+      AI Security Architect) are observed claims from the page, not verified
+      against the underlying postings.
+    license: "unknown (SANS site terms; registration may gate the full PDF)"

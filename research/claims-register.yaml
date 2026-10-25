@@ -1639,3 +1639,64 @@ claims:
     counterevidence: >-
       none at abstract level — a position paper; the counter-position (performance-primary evaluation) exists in practice and is the incentive the position argues against
     date: 2026-10-23
+
+  - id: CLM-0164
+    claim: >-
+      On 2026-10-25 the 80,000 Hours AI-safety hub page listed career-path
+      families including AI governance and policy, AI safety technical
+      research, AI security, and AI fieldbuilding, and pointed to a curated
+      job board it described as carrying 900+ open roles plus free one-on-one
+      career advising and a "How to get into AI safety in three months"
+      starting guide.
+    source: SRC-CURR-005
+    section_or_page: "80000hours.org/ai (full page inspect)"
+    evidence_strength: "direct single-fetch observation of a live page"
+    assumptions: "page counts and program names change over time; the snapshot is the claim, not any stable statistic"
+    counterevidence: "none observed this session; the sibling board jobs.80000hours.org showed 948 roles in a search snippet the same day — consistent scale"
+    date: 2026-10-25
+
+  - id: CLM-0165
+    claim: >-
+      The MATS Program page stated on 2026-10-25 that the fellowship runs 12
+      weeks with an optional funded 6-12 month extension in Berkeley or
+      London, pays a $1,250 weekly stipend plus $2k/week of compute, and
+      reported 631 researchers trained since late 2021 with 220+ papers,
+      19,000+ citations, 75% of alumni working in alignment, and 10% having
+      co-founded AI-safety organizations; Winter 2027 applications were
+      marked closed.
+    source: SRC-CURR-006
+    section_or_page: "matsprogram.org (full page inspect)"
+    evidence_strength: "direct single-fetch observation of the program's self-reported figures"
+    assumptions: "self-reported program statistics; no independent verification of alumni outcomes was attempted"
+    counterevidence: "none observed this session; figures are marketing-adjacent and should be re-checked per cohort"
+    date: 2026-10-25
+
+  - id: CLM-0166
+    claim: >-
+      On 2026-10-25 the AISafety.com jobs board listed 553 open roles
+      (marked updated 2 days prior) across organizations including Anthropic,
+      Google DeepMind, METR, Redwood Research, UK AISI, RAND, FAR AI,
+      Constellation, Epoch AI and Apart Research, with employer-disclosed
+      salary ranges including $320,000-$405,000 for an Anthropic Research
+      Engineer / Security Engineer (RL Security) role and $265,000-$295,000
+      for an Anthropic Policy Development (Technical AI Governance) role.
+    source: SRC-CURR-007
+    section_or_page: "aisafety.com/jobs (board snapshot)"
+    evidence_strength: "direct single-fetch observation of employer-disclosed ranges"
+    assumptions: "salary ranges reflect postings, not verified compensation; board coverage is self-selected and US-heavy"
+    counterevidence: "none observed this session; a live board's counts are perishable by design"
+    date: 2026-10-25
+
+  - id: CLM-0167
+    claim: >-
+      A SANS white paper compiled from 10,643 job postings analyzed in
+      September 2026 maps ten AI-cybersecurity roles and reports that four
+      hire under their own titles today: AI/ML Security Engineer, AI Red
+      Team Engineer, AI Governance and Security Risk Lead, and AI Security
+      Architect.
+    source: SRC-CURR-008
+    section_or_page: "sans.org white-paper landing page"
+    evidence_strength: "page-level observation of the paper's stated method and headline taxonomy"
+    assumptions: "the 10,643-posting corpus and four-title claim are the vendor's own; full PDF not fetched"
+    counterevidence: "vendor-published (SANS sells the mapped courses and GIAC certifications); the taxonomy is commercially motivated and not independently replicated"
+    date: 2026-10-25
