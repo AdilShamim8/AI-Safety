@@ -102,15 +102,30 @@ as the work it describes. On session start, read this file, then
 
 ## Current phase
 
-Phase G CLOSED COMPLETE: all 24 chapters, ALL TEN PROJECTS (P01-P10; P06 and P10 closed 2026-10-25), 20/20 paper notes, 5/5 comparison notes, the from-scratch researcher track (7/7). Registers at 164 sources / 153 claims. Remaining (owner-directed 2026-10-25): the repo-wide missing-values audit, the career-track deepening pages, and the dashboard (index.html) deliverable.
+**The 150-commit milestone build (2026-10-25):** the owner-directed
+session completed the target scope and the deliverables around it —
+P06 and P10 closed (10/10 projects), the missing-values audit became a
+standing CI instrument, the careers layer landed (verified market
+sources, the three-role index, the five-rung ladder, first-90-days),
+index.html shipped as the generated self-contained dashboard (12
+widget sections incl. the honesty ledger of not-executed tiers),
+three production incident reviews entered the verified set, the
+research notebook grew to 32 paper notes + 6 comparison notes, and the
+learner surface gained verifying-sources, the audit-only route, FAQ,
+MAINTENANCE, and AWESOME.md. Registers at 164 sources / 153 claims;
+594 tests green; CI green; audit clean (0 hard findings). Remaining
+honest work: the compute-tier executions (3 real local-model
+experiments, marked not-executed throughout) and the human-subject
+tiers — both require resources this build does not have, and both
+carry written protocols for whoever does.
 
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 24 / 24 — the full chapter spine is DONE
 - Dataset cards complete: 22 verified cards in the catalog (13 core + 9 verified in the 2026-10-23 rounds; pending-verification queue EMPTY)
 - Projects complete: **10 / 10 — the project spine is DONE** (P06 and P10 closed 2026-10-25)
-- Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
-- Comparison notes: 5 / 5 planned — set COMPLETE (C01–C05, 2026-10-22)
+- Paper notes complete: 32 (20 required minimum + 12 added 2026-10-25, all indexed; 7 method-level from full-text-read sources, 25 abstract-level honestly labeled; each with a falsifiable extension)
+- Comparison notes: 6 (C01–C05 planned set + the C06 extension 2026-10-25: safety cases vs red-team reports)
 - Incident analyses: 3 (Air Canada liability 2024 BCCRT 149; DPD post-update regression; Chevy dealership commitment-authority — all page-inspected sources with honest limitations)
 - From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
@@ -124,8 +139,13 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action (owner-directed 2026-10-25): the repo-wide missing-values
-audit (scripts/audit_missing.py — scan every register, card, chapter,
-roadmap for gaps and fill them), then the career-track pages (AI safety
-researcher / AI security / AI engineer), then the dashboard (index.html)
-deliverable with widget visualizations.
+The owner-directed 2026-10-25 deliverables are complete (audit,
+careers, dashboard, incidents, notes, learner surface). The standing
+next actions, in priority order: (1) the owner rotates the exposed
+GitHub token (it was provided in chat; every push used it
+transiently, never stored — rotation closes the loop); (2) if compute
+becomes available, the three not-executed experiment tiers (P03 ml
+tier, P06 real-model patching, P04 real-policy audit) each carry a
+written protocol and pinned expectations; (3) the registers re-verify
+on a schedule — market and standards sources drift, and
+prerequisites/verifying-sources.md documents the one-fetch re-check.
