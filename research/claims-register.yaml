@@ -2765,3 +2765,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0223
+  claim: Single-step adversarial training at scale converges to a degenerate global minimum — robustness
+    to the single-step attack family rather than to perturbations — and ensemble adversarial training
+    fixes it by augmenting training with perturbations transferred from other (holdout) models, exposing
+    the learner to attack directions its own fast craft never generates.
+  source: SRC-PAPER-149
+  section_or_page: arXiv:1705.07204 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; degeneracy diagnosis
+    and ensemble solution stated)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

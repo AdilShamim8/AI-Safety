@@ -1,6 +1,6 @@
 # Research notes
 
-The research notebook: **73 paper notes**, **12 comparison notes**, and
+The research notebook: **74 paper notes**, **12 comparison notes**, and
 **11 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 74 | [Ensemble adversarial training: robust to your attacks is not robust](74-ensemble-adversarial-training.md) | SRC-PAPER-149 | abstract-level |
 | 73 | [HotFlip: gradients cross the modality line into text](73-hotflip.md) | SRC-PAPER-148 | abstract-level |
 | 72 | [Universal adversarial perturbations: one vector, every image](72-universal-perturbations.md) | SRC-PAPER-147 | abstract-level |
 | 71 | [FGSM: the linear explanation and the one-step instrument](71-fgsm.md) | SRC-PAPER-146 | abstract-level |
