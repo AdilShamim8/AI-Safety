@@ -103,3 +103,35 @@ No. The exit criteria are artifacts — a falsified hypothesis, a threat
 model, a safety case, a deployability dossier — because that is what
 interviewers at every organization in the
 [careers index](roadmaps/careers-index.md) actually probe.
+
+**Why do some notes say the abstract "truncates"?**
+Because the arXiv API record for that paper cuts off mid-sentence,
+and the note refuses to fill the gap from memory. The session-2
+note set (33-70) was verified against the API title-by-title —
+five of the eighteen planned IDs were wrong in the register's own
+draft, caught before a single note cited them. "Truncation
+recorded" is the discipline: the honest limit is printed where the
+invented number would have gone.
+
+**Why do the incidents include failures that were fixed quickly?**
+Because the response half is the lesson. Cursor corrected in three
+hours; MyCity kept the bot up; Air Canada fought to a tribunal.
+[Comparison 10](research/notes/comparison-10-incident-response-postures.md)
+extracts the pattern: time-to-honest-characterization sorts the
+outcomes more than the failures themselves did. Fast fixes that
+never happened would be noise; fast fixes that did are the
+curriculum.
+
+**What's the difference between the four progress trackers?**
+The discipline: each route's checkboxes name artifacts a stranger
+can audit — the researcher's falsifiable extensions, the security
+specialist's paired ledgers, the engineer's price-tagged controls,
+the auditor's written challenges. Fork the repo, tick in your fork,
+and your commit history is the progress record. The trackers live
+in [roadmaps/progress/](roadmaps/progress/README.md).
+
+**Why does the dashboard show a bar chart of notes per chapter?**
+Because coverage is a claim, and the chart is the claim's audit:
+nine chapters silently had zero note companions until the widget
+surfaced it (fixed the same day). If a bar drops to zero again,
+that is a regression — which is the point of rendering it.
