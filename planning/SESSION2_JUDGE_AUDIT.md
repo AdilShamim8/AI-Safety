@@ -210,3 +210,41 @@ skip, one crossed commit message — were each caught by the
 instruments this repo built for exactly that purpose, and each is
 recorded in writing. That is the build's method surviving contact
 with itself, which was the only test that mattered.
+
+## 7. How the contingency band was spent (phase J, 2026-10-25)
+
+Phase J reserved commits 244–300 for "any honestly-earned extra depth the
+earlier phases surface." What the earlier phases actually surfaced was not
+more coverage — it was drift: seven hand-written prose surfaces (the README's
+status line and structure table, FAQ, START_HERE, CITATION.cff, both notes
+front doors, AWESOME) still described the 150-commit corpus while the
+registers, the dashboard, and the tables beneath them had moved on. The
+dashboard could not drift — it regenerates from the data — and that is
+precisely why the hand-written surfaces did: nothing checked them.
+
+So the contingency bought instruments, not more content:
+
+- **The count-drift test** (`tests/test_count_drift.py`): recomputes the
+  corpus counts from the registers and directories, then requires every
+  count-bearing surface to carry them. Dated records (STATUS, CHANGELOG,
+  this audit) are exempt by design — they describe past states honestly.
+  On first run it caught its own commit's drift (the suite grew with its
+  eight tests while README said 594); on second strengthening it caught
+  the blind spot the status line exposed — one true occurrence of a
+  number does not make the false one two paragraphs up harmless.
+- **Two re-check rotations** over 26 sampled register URLs: the second
+  caught one genuinely dead URL (the ACLU analysis behind incident 14 had
+  moved sections) — corrected in the register with the move recorded.
+- **The records the session owed its readers**: CITATION.cff's first real
+  version and date-released keys (the 2.0.0 "release" commit had touched
+  only the dashboard's version string), the CHANGELOG's consolidated
+  session-2 entry, MAINTENANCE's instrument entries, ROADMAP's completion
+  paragraph, the incidents index's fourth era.
+
+The judge's phase-J sentence: the session set out to deepen coverage and
+ended by proving why the deepening needed guarding — every count a human
+hand-writes is a claim the registers will eventually contradict, and the
+fix is not more careful hands, it is a test. The standing limitations are
+unchanged and still honest: three experiment tiers remain not-executed
+with their protocols written, the human-subject tiers remain future work,
+and the owner's push token remains exposed-in-chat and must be rotated.
