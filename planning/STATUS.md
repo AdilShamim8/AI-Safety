@@ -151,7 +151,14 @@ remote-verified.
 
 ## Next exact action
 
-**Session 2 CLOSED at 300/300 commits (2026-10-25).** Every commit
+**Session 2 CLOSED at 300/300 commits (2026-10-25)**, plus one
+fix-forward commit (301) the closure earned: CI had been red for 95
+consecutive runs (246–340) — a black-formatting violation in
+`scripts/build_dashboard.py` introduced with the progress-widget commit
+and invisible locally because the session's local gate script omitted
+`black --check` while CI ran it. The fix-forward formats the file,
+the local gate now mirrors CI exactly, and the violation's full
+history is recorded in the commit message and CHANGELOG. Every commit
 was pushed individually and remote-verified before the next. The
 judged gaps G1–G7 are all CLOSED with evidence (the audit's closure
 tables); the closing surface is complete: seven drifted count surfaces

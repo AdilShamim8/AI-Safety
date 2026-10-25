@@ -284,16 +284,14 @@ def _incidents() -> list[dict[str, str]]:
         m = _re.match(r"\| (\d\d) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \|", line)
         if m:
             row = {
-                    "no": m.group(1),
-                    "name": m.group(2),
-                    "class": m.group(3),
-                    "lesson": m.group(4),
-                    "note": (
-                        m.group(5).strip()[1:-1]
-                        if m.group(5).strip().startswith("[")
-                        else m.group(5)
-                    ),
-                }
+                "no": m.group(1),
+                "name": m.group(2),
+                "class": m.group(3),
+                "lesson": m.group(4),
+                "note": (
+                    m.group(5).strip()[1:-1] if m.group(5).strip().startswith("[") else m.group(5)
+                ),
+            }
             no = int(m.group(1))
             if no <= 3:
                 row["era"] = "liability & authority (2023-24)"
@@ -322,8 +320,6 @@ def _fs_track() -> list[dict[str, str]]:
     return out
 
 
-
-
 def _note_coverage() -> list[dict]:
     """Count note-companion links per chapter README for the coverage widget."""
     out = []
@@ -333,12 +329,15 @@ def _note_coverage() -> list[dict]:
             continue
         text = readme.read_text(encoding="utf-8")
         links = re.findall(r"\]\(\.\./\.\./research/notes/([\w-]+\.md)\)", text)
-        out.append({
-            "ch": pdir.name.split("-")[0],
-            "title": pdir.name.split("-", 1)[1],
-            "notes": len(set(links)),
-        })
+        out.append(
+            {
+                "ch": pdir.name.split("-")[0],
+                "title": pdir.name.split("-", 1)[1],
+                "notes": len(set(links)),
+            }
+        )
     return out
+
 
 def _progress_trackers() -> list[dict]:
     """Parse the per-route progress trackers into milestone summaries."""
@@ -364,13 +363,16 @@ def _progress_trackers() -> list[dict]:
                 continue
             if cur is not None and line.startswith("- [ ]"):
                 cur["boxes"] += 1
-        out.append({
-            "slug": slug,
-            "role": role,
-            "milestones": milestones,
-            "boxes": sum(m["boxes"] for m in milestones),
-        })
+        out.append(
+            {
+                "slug": slug,
+                "role": role,
+                "milestones": milestones,
+                "boxes": sum(m["boxes"] for m in milestones),
+            }
+        )
     return out
+
 
 def _project_headlines() -> dict[str, str]:
     """One-line honest headline per project, read from each README's

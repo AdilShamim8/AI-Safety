@@ -65,6 +65,15 @@ Unreleased until a tagged release exists.
   reviews / 43 dataset cards / 296 glossary terms). Final state recorded
   in `planning/STATUS.md`; the owner's standing action on session end is
   to rotate the exposed push token.
+- **Fixed (the closure's fix-forward)**: a black-formatting violation in
+  `scripts/build_dashboard.py` that had kept CI red for 95 consecutive
+  runs (246–340) — introduced by the dashboard-widget commits of the
+  deepening stretch and never caught locally because the session's local
+  gate script ran ruff, pytest, the validator, and the audit but omitted
+  `black --check`, while CI ran black on src/scripts/tests. The file is
+  formatted, the local gate now mirrors CI exactly, and the lesson is
+  the session's own rule restated: a gate that does not match the
+  checker of record is not a gate.
 ### Added (2026-10-25 — the milestone build: incidents, notes, learner surface)
 
 - Three production incident reviews (`research/notes/incidents/`):
