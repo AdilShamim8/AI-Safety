@@ -2897,3 +2897,47 @@ sources:
       content and the vendor/model behind the AI element were never named.
       No independent technical postmortem exists in the public record.
     license: "unknown (BBC terms; brief quotation only)"
+
+  - id: SRC-REPORT-015
+    title: "Incident 622: Chevrolet Dealer Chatbot Agrees to Sell Tahoe for $1 (AI Incident Database)"
+    authors_or_organization: "AI Incident Database (Responsible AI Collaborative)"
+    url: "https://incidentdatabase.ai/cite/622"
+    source_type: report
+    publication_date: 2023-12-18
+    version: "incident entry as fetched"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: observation
+    peer_review_status: "curated incident database (editor-reviewed submissions)"
+    supports:
+      - "research/notes/incidents/03-chevy-dealership-chatbot-authority.md"
+    limitations: >-
+      Aggregator entry synthesizing eight press reports; the incident date,
+      entities (GM, OpenAI, Fullpath, Chevrolet of Watsonville), taxonomy
+      classification (risk subdomain 7.3 lack of capability or robustness,
+      post-deployment, unintentional) and the quoted bot reply were observed
+      on the entry page. Underlying press reports were not individually
+      fetched this session.
+    license: "unknown (AIID site terms; brief quotation only)"
+
+  - id: SRC-REPORT-016
+    title: "Chevrolet Dealer Chatbot Prompt Injection 2023: $1 Tahoe (NHI Management Group breach analysis)"
+    authors_or_organization: "NHI Management Group (Lalit Choda)"
+    url: "https://nhimg.org/chevrolet-dealer-chatbot-prompt-injection-2023-1-dollar-tahoe"
+    source_type: report
+    publication_date: null
+    version: "analysis page as fetched (updated 2026)"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: synthesis
+    peer_review_status: "not peer reviewed (vendor blog analysis citing press coverage)"
+    supports:
+      - "research/notes/incidents/03-chevy-dealership-chatbot-authority.md"
+    limitations: >-
+      Secondary analysis that itself cites Business Insider, The Autopian,
+      Jalopnik and GM Authority (not independently fetched this session);
+      its value here is the consolidated detail (Chris White's earlier
+      Mastodon posts incl. Navier-Stokes code; Bakke's exact prompts; the
+      Horwitz quotes; the deactivation timeline) at page-inspected level.
+      Commercial motivation (NHI security consultancy) recorded.
+    license: "unknown (site terms)"
