@@ -2110,3 +2110,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0172
+  claim: A transformer trained only to predict legal Othello moves encodes board state in its activations
+    (decodable by linear probes), and latent interventions on that representation update subsequent move
+    predictions as if the latent move had been played; probing evidence alone is correlational, and the
+    intervention is what establishes the representation as load-bearing.
+  source: SRC-PAPER-109
+  section_or_page: arXiv:2210.13382 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; both load-bearing
+    results stated in the abstract, no numbers claimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
