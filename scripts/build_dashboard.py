@@ -680,7 +680,9 @@ def _awesome() -> list[dict]:
             note = note.lstrip("—- ").strip()
             entries.append(
                 {
-                    "name": e["name"],
+                    # titles carry live markdown links since the link
+                    # layer opened (rotation 3); render them as anchors
+                    "name": _md_inline(e["name"]),
                     "ids": ids,
                     "note": _md_inline(note),
                 }

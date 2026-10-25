@@ -145,3 +145,34 @@ instead of making the test weaker. Keep that order of operations.
   (SRC-PAPER-100..140, the notes 51-66 spine) plus any entry whose
   limitations mention an unreachable page — re-attempt those first
   (G7's rule: a soft-null stays null only if still unreachable).
+- **Rotation 3 (2026-10-25, the link layer)**: redirected from the
+  planned middle-band sample by the owner's directive — every URL
+  cited in AWESOME.md was fetched and identity-checked before the
+  file's entries became clickable links. Scope: all 91 distinct IDs
+  cited on that page, through the new standing instrument
+  `scripts/verify_links.py` with three priced channels — the arXiv
+  spine (51 IDs) title-matched against the arXiv API, the course
+  video via YouTube's oEmbed endpoint, and the rest (39) via direct
+  server-side GET with title/og:title extraction and a token-overlap
+  identity check. Result: 91/91 live, zero dead, zero wrong pages.
+  78 title-verified LIVE; 9 YouTube channel/playlist pages alive but
+  JS-shelled to this client (identity anchored by the register's
+  same-day page inspection and exact handle URLs); 4 bot-blocked
+  (OWASP's LLM Top 10, the American Bar Association, ACM's CACM,
+  openai.com — all real pages the register corroborates). Honest
+  drifts recorded: 80000hours.org/ai now serves "mitigate" where the
+  register's fetch read "reduce"; matsprogram.org's page title is
+  "MATS Research"; the EU AI Act timeline page leads with
+  "Implementation Timeline". The rotation also caught two mis-cited
+  governance IDs in AWESOME.md — the RSP and OpenAI Preparedness
+  lines pointed at the MCP-spec and Invariant-Labs register entries
+  (SRC-REPORT-005/006) instead of SRC-REPORT-008/009 — corrected
+  before linking; SRC-REPORT-009's canonical 404 (register-recorded)
+  returned 403 to this client and stays deliberately unlinked; its
+  url field was cleaned of an inline annotation (the 404 record
+  lives in its limitations). Going forward every new link passes
+  `verify_links.py --ids <ID>` before landing (AWESOME.md's
+  how-to-extend rule 5), pinned by tests/test_awesome_links.py.
+  Next rotation: the planned middle register band
+  (SRC-PAPER-100..140) plus the full-register sweep --all as the
+  link layer's first annual re-check.

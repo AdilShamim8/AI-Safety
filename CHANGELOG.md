@@ -7,6 +7,39 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The link layer (2026-10-25)
+
+- `AWESOME.md` entries now carry their live links — 94 external
+  markdown links (80 bold titles plus the prose mentions: the
+  companion repository and video course, the control paper, the RSP,
+  the three liability-era incidents, the AI Incident Database root).
+  Every link was verified before landing, not assumed: the new
+  standing instrument `scripts/verify_links.py` fetched all 91 URLs
+  cited on the page through three priced channels (arXiv API title
+  match for the 51-paper spine, YouTube oEmbed for the course video,
+  server-side GET with title/og:title identity checks for the rest) —
+  91/91 live, zero dead, zero wrong pages. The run is recorded as
+  re-check rotation 3 in `MAINTENANCE.md`, with honest drifts noted
+  (80000hours.org/ai now says "mitigate" where the register's fetch
+  read "reduce"; matsprogram.org titles itself "MATS Research").
+- Verification caught and fixed two mis-cited governance IDs: the
+  Anthropic RSP and OpenAI Preparedness lines in AWESOME.md pointed
+  at the MCP-spec and Invariant-Labs register entries
+  (SRC-REPORT-005/006) instead of SRC-REPORT-008/009. The OpenAI
+  Preparedness canonical URL (404 recorded in the register; 403 to
+  datacenter clients at rotation) stays deliberately unlinked, and
+  its register url field was cleaned of an inline annotation.
+- The link discipline is now enforced, not just stated: rule 5 of
+  AWESOME.md's how-to-extend section sends every new link through
+  `verify_links.py --ids <ID>` first, and
+  `tests/test_awesome_links.py` (4 tests, suite now 607) pins that
+  every bold entry links to exactly its register URL, that no
+  unregistered external link ships, and that the intro's
+  verified-count claim matches the file's own ID set.
+- `scripts/build_dashboard.py` renders AWESOME.md entry titles as
+  anchors (the website's resource-map section is clickable to the
+  live sources); `index.html` regenerated.
+
 ### Resource index expansion (2026-10-25)
 
 - `AWESOME.md` reorganized into media layers for future growth: a new

@@ -1755,7 +1755,8 @@ function esc(s){ return String(s == null ? "" : s); }
     }
     sec.entries.forEach(function(e){
       var row = el("div","awe");
-      var b = el("b", null, e.name);
+      var b = el("b");
+      b.innerHTML = e.name; /* markdown-linked titles since rotation 3 */
       row.appendChild(b);
       e.ids.forEach(function(id){
         row.appendChild(el("span","srcid", id));

@@ -3037,8 +3037,7 @@ sources:
 - id: SRC-REPORT-009
   title: OpenAI Preparedness Framework (Beta) — structure and current assessments
   authors_or_organization: OpenAI
-  url: https://openai.com/index/previewing-openais-preparedness-framework-for-frontier-ai-risks/ (canonical
-    page 404 at fetch; structure verified via OpenAI deployment-safety content surfaced 2026-10-23)
+  url: https://openai.com/index/previewing-openais-preparedness-framework-for-frontier-ai-risks/
   source_type: report
   publication_date: 2023-10-06
   version: Beta framework (2023); structure and current category levels (e.g., GPT-6 Astra Critical in

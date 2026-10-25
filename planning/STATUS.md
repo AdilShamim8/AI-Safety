@@ -253,3 +253,22 @@ dataset-catalog heading still said "22 verified cards" against a
 43-card catalog — corrected, and `test_awesome_counts` now pins the
 phrase `{cards} verified cards` so the instrument covers that class
 too.
+
+## Session 4 — the link layer (2026-10-25)
+
+The owner's directive: the reorganized AWESOME.md cited its sources by
+register ID but carried no clickable links, and the links were never
+verified. Executed as rotation 3: every one of the 91 URLs cited on
+that page was fetched and identity-checked through the new standing
+instrument `scripts/verify_links.py` (arXiv API title match for the
+51-paper spine, YouTube oEmbed for the course video, server-side GET
+with token-overlap identity checks for the rest) — 91/91 live, zero
+dead, zero wrong pages. AWESOME.md now carries 94 verified external
+links; the website's resource-map section renders the titles as
+anchors; verification caught and fixed two mis-cited governance IDs
+(the RSP and OpenAI Preparedness lines pointed at SRC-REPORT-005/006
+instead of SRC-REPORT-008/009) before anything was linked; the
+expected-dead OpenAI Preparedness canonical URL stays unlinked by
+design. The discipline is pinned by tests/test_awesome_links.py
+(suite 607). SECURITY standing action unchanged: the session token
+remains exposed in chat history and must be rotated by the owner.
