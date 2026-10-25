@@ -310,6 +310,39 @@ def _fs_track() -> list[dict[str, str]]:
     return out
 
 
+
+def _progress_trackers() -> list[dict]:
+    """Parse the per-route progress trackers into milestone summaries."""
+    routes = [
+        ("alignment-research", "AI safety researcher"),
+        ("ai-security-engineering", "AI security specialist"),
+        ("evaluations-and-assurance", "AI (safety) engineer"),
+        ("audit-only", "The reader/judge (audit route)"),
+    ]
+    out = []
+    for slug, role in routes:
+        f = REPO / "roadmaps" / "progress" / f"{slug}.md"
+        if not f.is_file():
+            continue
+        text = f.read_text(encoding="utf-8")
+        milestones = []
+        cur = None
+        for line in text.splitlines():
+            m = re.match(r"^## (M\d+) — (.+?)(?: \(.*\))?$", line)
+            if m:
+                cur = {"id": m.group(1), "name": m.group(2), "boxes": 0}
+                milestones.append(cur)
+                continue
+            if cur is not None and line.startswith("- [ ]"):
+                cur["boxes"] += 1
+        out.append({
+            "slug": slug,
+            "role": role,
+            "milestones": milestones,
+            "boxes": sum(m["boxes"] for m in milestones),
+        })
+    return out
+
 def _project_headlines() -> dict[str, str]:
     """One-line honest headline per project, read from each README's
     'Pinned results' or opening — sourced from the repo itself."""
@@ -465,6 +498,7 @@ def build_data() -> dict:
         "not_executed": NOT_EXECUTED,
         "fs_track": fs_track,
         "careers": CAREERS,
+        "progress": _progress_trackers(),
         "quickstart": QUICKSTART,
     }
 

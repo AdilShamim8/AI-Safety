@@ -70,6 +70,7 @@ def test_render_contains_all_sections() -> None:
         "sources",
         "claims",
         "careers",
+        "progress",
         "quickstart",
     ):
         assert f'id="{section}"' in html, section
@@ -84,6 +85,8 @@ def test_payload_is_valid_json_with_careers() -> None:
     assert m, "payload not found"
     payload = json.loads(m.group(2))
     assert len(payload["careers"]) == 3
+    assert len(payload["progress"]) == 4
+    assert sum(r["boxes"] for r in payload["progress"]) >= 100
     roles = {c["role"] for c in payload["careers"]}
     assert roles == {
         "AI safety researcher",
@@ -116,6 +119,7 @@ def test_generated_index_html_up_to_date() -> None:
         "incidents",
         "notes",
         "careers",
+        "progress",
         "quickstart",
     ):
         assert f'id="{section}"' in committed, section
@@ -133,6 +137,7 @@ def test_generated_index_html_up_to_date() -> None:
         "incidents",
         "fs_track",
         "careers",
+        "progress",
         "quickstart",
     ):
         if len(embedded.get(key, [])) != len(fresh[key]):

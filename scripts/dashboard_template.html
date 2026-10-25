@@ -136,6 +136,7 @@ footer p{max-width:85ch;margin:4px 0}
   <a class="navlink" href="#incidents">Incidents</a>
   <a class="navlink" href="#notes">Notes</a>
   <a class="navlink" href="#careers">Careers</a>
+  <a class="navlink" href="#progress">Progress</a>
   <a class="navlink" href="#quickstart">Start here</a>
 </nav>
 <main>
@@ -237,8 +238,15 @@ footer p{max-width:85ch;margin:4px 0}
     <div class="careergrid" id="career-grid"></div>
   </section>
 
+  <section id="progress">
+    <h2><span class="idx">12</span> Track your progress — artifact-gated, route by route</h2>
+    <p class="lede">The owner's ask, made interactive: pick a role, follow the milestones, tick a box only when the artifact exists and a stranger can audit it. The bars below count each route's evidence checkboxes in <code>roadmaps/progress/</code> — fork the repo to tick your own copy.</p>
+    <div class="careergrid" id="progress-grid"></div>
+    <p class="lede" style="margin-top:1rem">The self-audit rule: a milestone is done when you can answer its questions out loud without notes. Reading without doing is the named failure mode — the tracker catches it at every milestone boundary.</p>
+  </section>
+
   <section id="quickstart">
-    <h2><span class="idx">12</span> Start here — the beginner path</h2>
+    <h2><span class="idx">13</span> Start here — the beginner path</h2>
     <p class="lede">Everything below runs on a laptop with Python 3.12 and ~2 GB of disk. No GPUs, no API keys, no dataset downloads for the deterministic track.</p>
     <ol class="steps" id="quickstart-steps"></ol>
   </section>
@@ -419,6 +427,30 @@ const fsBase = "https://github.com/AdilShamim8/AI-Safety/tree/main/research/ai-r
 $("#fs-table").innerHTML =
   "<tr><th>Module</th><th>Note</th></tr>" +
   D.fs_track.map(m => `<tr><td><b>${esc(m.title)}</b></td><td><a href="${fsBase}${esc(m.file)}">read →</a></td></tr>`).join("");
+
+/* ---- progress trackers ---- */
+$("#progress-grid").innerHTML = D.progress.map(r => `
+  <div class="career-card">
+    <h3>${esc(r.role)}</h3>
+    <p class="small">${r.boxes} evidence checkboxes · ${r.milestones.length} milestones ·
+      <a href="roadmaps/progress/${r.slug}.md">fork the tracker</a></p>
+    <div class="milestone-list">
+      ${r.milestones.map(m => `
+        <div class="milestone">
+          <span class="mid">${esc(m.id)}</span>
+          <span class="mname">${esc(m.name)}</span>
+          <span class="mboxes">${m.boxes} artifacts</span>
+        </div>`).join("")}
+    </div>
+  </div>`).join("");
+
+/* ---- progress trackers ---- */
+.milestone-list { display: flex; flex-direction: column; gap: .25rem; margin-top: .5rem; }
+.milestone { display: flex; gap: .5rem; align-items: baseline; font-size: .85rem;
+  border-left: 3px solid var(--accent, #4a7db5); padding-left: .5rem; }
+.mid { font-weight: 700; min-width: 2.2rem; color: var(--muted, #667); }
+.mname { flex: 1; }
+.mboxes { color: var(--muted, #667); font-variant-numeric: tabular-nums; }
 
 /* ---- careers ---- */
 $("#career-grid").innerHTML = D.careers.map(c =>
