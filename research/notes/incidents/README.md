@@ -14,6 +14,7 @@ coverage; where only press coverage exists, the note says so.
 | 04 | Google AI Overviews rollout (2024-05) — 'eat rocks,' glue pizza | production incident | popularity is not a truth oracle: satire laundered into authoritative answers with no abstention layer, patched by manual removal | [04-google-ai-overviews-eat-rocks.md](04-google-ai-overviews-eat-rocks.md) |
 | 05 | NYC MyCity chatbot — unlawful-favoring answers on a government channel (2024) | production incident | authoritative presentation multiplies harm; domain questions need source-pinned routing, and the keep-it-up decision is its own failure | [05-nyc-mycity-chatbot.md](05-nyc-mycity-chatbot.md) |
 | 06 | Cursor support bot 'Sam' invents a one-device policy (2025-04) | production incident | confabulation on an authoritative channel manufactures policy to explain a bug — and acknowledgment speed is the whole ballgame | [06-cursor-invented-policy.md](06-cursor-invented-policy.md) |
+| 07 | Slack AI exfiltration via indirect prompt injection (2024-08, disclosed) | security incident | the retrieval boundary is a trust boundary: public instruction plus private data in one context, exfiltrated through rendered markdown — and 'intended behavior' is not a threat model | [07-slack-ai-exfiltration.md](07-slack-ai-exfiltration.md) |
 
 All three incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,

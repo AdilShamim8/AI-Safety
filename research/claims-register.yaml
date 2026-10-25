@@ -2370,3 +2370,18 @@ claims:
   assumptions: the article accurately reproduces the bot email and reply text from the user's screenshots
   counterevidence: none observed; the company acknowledged the failure and corrected within hours
   date: '2026-10-25'
+- id: CLM-0192
+  claim: 'PromptArmor responsibly disclosed (public writeup 2024-08) a vulnerability in Slack AI: an attacker
+    posting an indirect prompt injection in a public channel could cause the RAG-style assistant, when
+    a member queried their own secrets, to render a markdown link carrying private-channel data to an
+    attacker-controlled URL in its query string — exfiltrating private-channel content the attacker could
+    not access, with Slack''s initial response defending public-channel searchability as intended behavior.'
+  source: SRC-REPORT-024
+  section_or_page: PromptArmor disclosure (full retrieval) + Simon Willison independent analysis 2024-08-20
+    (full retrieval)
+  evidence_strength: page-inspected security-research disclosure with the full attack chain, corroborated
+    by an independent expert's full-text analysis
+  assumptions: the published attack chain reproduces the disclosed vulnerability as demonstrated to Slack
+    during responsible disclosure
+  counterevidence: none observed; Slack's initial response disputed severity framing, not the mechanics
+  date: '2026-10-25'

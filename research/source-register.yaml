@@ -3965,3 +3965,39 @@ sources:
     are the article's reproductions; the underlying Reddit thread was moderator-removed; the Hacker News
     apology was not independently fetched this session.
   license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-024
+  title: Data Exfiltration from Slack AI via Indirect Prompt Injection (responsible disclosure writeup,
+    2024-08)
+  authors_or_organization: PromptArmor (security research disclosure)
+  url: https://www.promptarmor.com/resources/data-exfiltration-from-slack-ai-via-indirect-prompt-injection
+  source_type: report
+  publication_date: '2024-08-20'
+  version: disclosure page as retrieved in full
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: security research disclosure
+  peer_review_status: not peer reviewed (vendor security research with responsible disclosure; credits
+    Cefalu for prompt injection and Greshake for the indirect form)
+  supports:
+  - research/notes/incidents/07-slack-ai-exfiltration.md
+  limitations: Full page content retrieved 2026-10-25. Commercial motivation (security vendor) recorded.
+    Demonstrations used the researchers' own channels; no in-the-wild exploitation claimed. Slack's response
+    quoted as shared by the reporters; remediation state after publication unrecorded.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-025
+  title: Data exfiltration from Slack AI via indirect prompt injection (independent analysis, 2024-08-20)
+  authors_or_organization: Simon Willison (simonwillison.net)
+  url: https://simonwillison.net/2024/Aug/20/data-exfiltration-from-slack-ai
+  source_type: report
+  publication_date: '2024-08-20'
+  version: link post as retrieved in full
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: expert technical analysis
+  peer_review_status: not peer reviewed (widely-cited independent researcher's analysis)
+  supports:
+  - research/notes/incidents/07-slack-ai-exfiltration.md
+  limitations: Full page content retrieved 2026-10-25. Independent corroboration of the PromptArmor mechanics
+    with the injected payload quoted; the 'Slack do not yet understand the nature and severity' assessment
+    is this author's judgment, attributed as such.
+  license: unknown (site terms; brief quotation only)
