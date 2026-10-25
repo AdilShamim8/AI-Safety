@@ -222,6 +222,7 @@ footer p{max-width:85ch;margin:4px 0}
   <section id="incidents">
     <h2><span class="idx">09</span> Incident reviews — production, verified, unromanticized</h2>
     <p class="lede">Real deployments that failed, reviewed with the strict template: observable facts first, established conclusions attributed, unknowns kept unknown, and the overreach named. First-party reports outrank press coverage; where only press exists, the note says so.</p>
+    <div id="incident-timeline"></div>
     <div class="projgrid" id="incident-grid"></div>
   </section>
 
@@ -409,6 +410,20 @@ $("#honesty-grid").innerHTML = D.not_executed.map(n =>
   `<div class="pkg">scoped in the project README — protocol written, honestly marked</div></div>`
 ).join("");
 
+/* ---- incidents timeline ---- */
+(() => {
+  const eras = {};
+  D.incidents.forEach(i => { (eras[i.era] = eras[i.era] || []).push(i); });
+  const eraKeys = ["liability & authority (2023-24)", "rollout & channel (2023-25)", "history (2016-23)", "accountability (2018-23)"];
+  $("#incident-timeline").innerHTML = `<div class="tl">` + eraKeys.filter(k => eras[k]).map(k => `
+    <div class="tl-era">
+      <div class="tl-head"><span class="tl-era-name">${esc(k)}</span><span class="tl-count">${eras[k].length} incidents</span></div>
+      <div class="tl-dots">${eras[k].map(i => `
+        <a class="tl-dot" href="https://github.com/AdilShamim8/AI-Safety/tree/main/research/notes/incidents/${esc(i.note)}" title="${esc(i.name)} — ${esc(i.lesson)}">${i.no}</a>`).join("")}
+      </div>
+    </div>`).join("") + `</div>`;
+})();
+
 /* ---- incidents ---- */
 $("#incident-grid").innerHTML = D.incidents.map(i =>
   `<div class="proj"><div class="id">INCIDENT ${i.no} · <span class="badge amber">${esc(i.class)}</span></div>` +
@@ -428,6 +443,18 @@ $("#fs-table").innerHTML =
   "<tr><th>Module</th><th>Note</th></tr>" +
   D.fs_track.map(m => `<tr><td><b>${esc(m.title)}</b></td><td><a href="${fsBase}${esc(m.file)}">read →</a></td></tr>`).join("");
 
+/* ---- incidents timeline ---- */
+.tl { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+.tl-era { flex: 1 1 200px; border: 1px solid var(--line, #ddd); border-radius: 8px; padding: .6rem .8rem; }
+.tl-head { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin-bottom: .4rem; }
+.tl-era-name { font-size: .8rem; font-weight: 700; }
+.tl-count { font-size: .72rem; color: var(--muted, #667); }
+.tl-dots { display: flex; flex-wrap: wrap; gap: .3rem; }
+.tl-dot { display: inline-flex; align-items: center; justify-content: center; min-width: 1.6rem; height: 1.6rem;
+  border-radius: 50%; background: var(--accent, #4a7db5); color: #fff; font-size: .72rem; font-weight: 700;
+  text-decoration: none; padding: 0 .3rem; }
+.tl-dot:hover { filter: brightness(1.2); }
+
 /* ---- progress trackers ---- */
 $("#progress-grid").innerHTML = D.progress.map(r => `
   <div class="career-card">
@@ -443,6 +470,18 @@ $("#progress-grid").innerHTML = D.progress.map(r => `
         </div>`).join("")}
     </div>
   </div>`).join("");
+
+/* ---- incidents timeline ---- */
+.tl { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+.tl-era { flex: 1 1 200px; border: 1px solid var(--line, #ddd); border-radius: 8px; padding: .6rem .8rem; }
+.tl-head { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin-bottom: .4rem; }
+.tl-era-name { font-size: .8rem; font-weight: 700; }
+.tl-count { font-size: .72rem; color: var(--muted, #667); }
+.tl-dots { display: flex; flex-wrap: wrap; gap: .3rem; }
+.tl-dot { display: inline-flex; align-items: center; justify-content: center; min-width: 1.6rem; height: 1.6rem;
+  border-radius: 50%; background: var(--accent, #4a7db5); color: #fff; font-size: .72rem; font-weight: 700;
+  text-decoration: none; padding: 0 .3rem; }
+.tl-dot:hover { filter: brightness(1.2); }
 
 /* ---- progress trackers ---- */
 .milestone-list { display: flex; flex-direction: column; gap: .25rem; margin-top: .5rem; }

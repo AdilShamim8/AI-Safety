@@ -283,8 +283,7 @@ def _incidents() -> list[dict[str, str]]:
     for line in table.splitlines():
         m = _re.match(r"\| (\d\d) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \|", line)
         if m:
-            rows.append(
-                {
+            row = {
                     "no": m.group(1),
                     "name": m.group(2),
                     "class": m.group(3),
@@ -295,7 +294,20 @@ def _incidents() -> list[dict[str, str]]:
                         else m.group(5)
                     ),
                 }
-            )
+            no = int(m.group(1))
+            if no <= 3:
+                row["era"] = "liability & authority (2023-24)"
+                row["year"] = "2023-24"
+            elif no <= 8:
+                row["era"] = "rollout & channel (2023-25)"
+                row["year"] = "2023-25"
+            elif no <= 11:
+                row["era"] = "history (2016-23)"
+                row["year"] = "2016-23"
+            else:
+                row["era"] = "accountability (2018-23)"
+                row["year"] = "2018-23"
+            rows.append(row)
     return rows
 
 
