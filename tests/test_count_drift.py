@@ -83,6 +83,26 @@ def test_readme_structure_table_counts() -> None:
     assert f"{t['tests']}-test suite" in text
 
 
+def test_readme_suite_mentions_agree() -> None:
+    """Every 'N-test suite' phrase in the README must state the real count.
+
+    The first version of this instrument pinned one phrase and missed the
+    stale status line saying 'a 592-test suite' two paragraphs above the
+    corrected table saying '602-test suite' — a single `in text` match is
+    satisfied by one true occurrence while a false one survives. This test
+    collects every suite-size mention and requires them all to agree.
+    """
+    t = _truth()
+    mentions = re.findall(r"(\d+)(?:-test suite| deterministic tests)", _read("README.md"))
+    assert mentions, "README must state the test-suite size"
+    assert set(mentions) == {str(t["tests"])}, f"stale suite sizes: {mentions}"
+    # the status line's count phrasings must also agree with the registers
+    text = _squash(_read("README.md"))
+    assert f"{t['cards']} verified dataset cards" in text
+    assert f"{t['sources']} registered sources" in text
+    assert f"{t['claims']} registered claims" in text
+
+
 def test_faq_source_count() -> None:
     t = _truth()
     text = _squash(_read("FAQ.md"))

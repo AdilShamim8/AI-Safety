@@ -6,9 +6,10 @@ researchers. Free to read, free to run at meaningful small scale: no paid API
 or subscription is required for the core path.
 
 **Status (honest, updated 2026-10-25):** the build is complete at its target
-scope — 24 of 24 chapters, 10 of 10 projects implemented (deterministic,
-offline, stdlib-first), 22 verified dataset cards, 160 registered sources,
-150 registered claims, and a 592-test suite green in CI. Every project marks
+scope and deepened — 24 of 24 chapters, 10 of 10 projects implemented
+(deterministic, offline, stdlib-first), 43 verified dataset cards, 231
+registered sources, 206 registered claims, 74 paper notes + 12 comparisons
++ 14 incident reviews, and a 603-test suite green in CI. Every project marks
 its honest not-executed tiers where compute was out of scope. Live counters
 and per-unit evidence: [`planning/STATUS.md`](planning/STATUS.md). The whole
 build is also navigable as a generated dashboard: **[index.html](index.html)**
@@ -19,8 +20,8 @@ build is also navigable as a generated dashboard: **[index.html](index.html)**
 1. **Open [index.html](index.html)** — the whole build as one page:
    what exists, how it was verified (the evidence ladder), the 24
    chapters, the 10 projects, the dataset/source/claims explorers,
-   the honesty ledger of what was *not* run, the careers, and the
-   beginner path.
+   the honesty ledger of what was *not* run, the incident timeline,
+   the per-route progress bars, the careers, and the beginner path.
 2. **Read [START_HERE.md](START_HERE.md)** and take the
    [diagnostic](prerequisites/diagnostic.md) — five tasks with worked
    answers place your starting point.
@@ -29,7 +30,7 @@ build is also navigable as a generated dashboard: **[index.html](index.html)**
    [evaluations and assurance](roadmaps/evaluations-and-assurance.md),
    or [audit-only](roadmaps/audit-only.md) — then make the first 90
    days concrete: [roadmaps/first-90-days.md](roadmaps/first-90-days.md).
-4. **Run it**: `uv sync && uv run pytest` — 594 deterministic tests,
+4. **Run it**: `uv sync && uv run pytest` — 603 deterministic tests,
    offline, no GPUs, no API keys.
 5. **Wonder about anything**: [FAQ.md](FAQ.md),
    [AWESOME.md](AWESOME.md) (the annotated source map),
@@ -100,7 +101,7 @@ arithmetic: [ROADMAP.md](ROADMAP.md).
 | `datasets/` | 43 verified real-world dataset cards + machine-readable catalog | **complete** — queue empty |
 | `planning/` | Build plan, status, content matrix, ADRs | **exists** — the build's durable record |
 | `templates/` | Chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review templates | **complete** (8) |
-| `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 602-test suite (401 package + 174 from-scratch + 27 repo-instrument) |
+| `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 603-test suite (401 package + 174 from-scratch + 28 repo-instrument) |
 | `scripts/` | Validator, missing-values audit, dashboard generator | **exists** — all run in CI |
 
 ## Getting started
