@@ -6,6 +6,8 @@ Chapter link:
 `src/ai_safety_course/control_protocol/` · Tests:
 `tests/test_control_protocol.py` (6 tests, pinned numbers)
 
+
+**Session-2 companion materials:** [unfaithful CoT](../../research/notes/38-unfaithful-explanations.md)/[measuring faithfulness](../../research/notes/43-measuring-cot-faithfulness.md) (your monitor-validation items), [the off-switch game](../../research/notes/63-off-switch-game.md) (halt semantics' formal ancestor), [incident 11](../../research/notes/incidents/11-bing-sydney-persona-collapse.md) (the drift tripwire's case), [C11](../../research/notes/comparison-11-situational-awareness-vs-persona-drift.md).
 ## What this project is
 
 Chapter 08's control setting in miniature: an untrusted policy

@@ -9,6 +9,8 @@ Code: `src/ai_safety_course/assurance/` · Tests:
 `tests/test_assurance.py` (11 tests, pinned numbers) · Genuine
 [dossier](example-dossier.md) committed from a real run
 
+
+**Session-2 companion materials:** [HELM](../../research/notes/49-helm.md) (residual-coverage fields), [trojan detection in LLMs](../../research/notes/69-trojan-detection-llms.md) (the artifact-screening tier), [TrojAI](../../datasets/cards/34-trojai.md)/[WebArena](../../datasets/cards/39-webarena.md)/[GAIA](../../datasets/cards/40-gaia.md), [incidents 05](../../research/notes/incidents/05-nyc-mycity-chatbot.md)/[06](../../research/notes/incidents/06-cursor-invented-policy.md) (the gate failures your dossier argues against), [C10](../../research/notes/comparison-10-incident-response-postures.md).
 ## What this project is
 
 The course's integrating artifact: the project stack assembled into one

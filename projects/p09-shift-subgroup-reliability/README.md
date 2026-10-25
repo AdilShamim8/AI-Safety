@@ -6,6 +6,8 @@ Chapter link:
 · Code: `src/ai_safety_course/shift_audit/` · Tests:
 `tests/test_shift_audit.py` (6 tests, pinned numbers)
 
+
+**Session-2 companion materials:** [lost in the middle](../../research/notes/39-lost-in-the-middle.md) (position subgroups), [inverse scaling](../../research/notes/48-inverse-scaling.md) (upgrade drift), [underspecification](../../research/notes/66-underspecification.md) (the mechanism your slices expose), [FEVER](../../datasets/cards/33-fever.md)/[Civil Comments](../../datasets/cards/41-civil-comments.md)/[HateXplain](../../datasets/cards/35-hatexplain.md) (slice sources), [incidents 13](../../research/notes/incidents/13-eeoc-itutorgroup.md)/[14](../../research/notes/incidents/14-amazon-recruiting-tool.md) (the subgroup audit that would have caught them).
 ## What this project is
 
 Chapter 17's audit discipline as executable code on a seeded
