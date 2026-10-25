@@ -1735,3 +1735,37 @@ datasets:
     collected: 'abstract: one million conversations, 25 LLMs, 210K unique IPs, collected in the wild from
       Vicuna demo and Chatbot Arena; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-043
+  name: MM-SafetyBench
+  organization: paper by Liu et al. (2023); benchmark publicly released
+  canonical_url: https://arxiv.org/abs/2311.17600
+  paper:
+    id: '2311.17600'
+    url: https://arxiv.org/abs/2311.17600
+    title: 'MM-SafetyBench: A Benchmark for Safety Evaluation of Multimodal Large Language Models'
+    verified_title: true
+  risk_area: multimodal safety / image-borne attacks
+  task:
+  - multimodal safety evaluation
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: query-relevant-image attack design (abstract-stated)
+    ref: R1
+  - fact: scenario counts and taxonomy body-level, unclaimed
+    ref: R1
+  course_use:
+    chapters:
+    - '19'
+    projects:
+    - P10
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/43-mm-safetybench.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2311.17600
+    collected: 'abstract: MLLMs compromised by query-relevant images as if the text query were malicious;
+      comprehensive safety-critical framework; title/authors/date verified'
+    accessed_on: '2026-10-25'
