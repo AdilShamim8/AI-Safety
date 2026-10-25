@@ -106,9 +106,19 @@ QUICKSTART = [
     {
         "title": "Take the diagnostic (30 min)",
         "body": (
-            "Read <code>START_HERE.md</code>, then <code>prerequisites/diagnostic.md</code> "
-            "— five tasks (R1–R5) that place your math, ML, and security baseline. "
-            "Worked answers are included; grade yourself honestly."
+            "Read <code>START_HERE.md</code> (and <code>FAQ.md</code> for the questions "
+            "everyone asks next), then <code>prerequisites/diagnostic.md</code> — five "
+            "tasks (R1–R5) that place your math, ML, and security baseline. Worked "
+            "answers are included; grade yourself honestly."
+        ),
+    },
+    {
+        "title": "Learn the verification habit (5 min, once)",
+        "body": (
+            "<code>prerequisites/verifying-sources.md</code> — where each kind of "
+            "information actually lives, what an access level is, and how to write a "
+            "falsifiable claim. The whole course runs on this; the evidence ladder "
+            "above is what it looks like at scale."
         ),
     },
     {
