@@ -1145,3 +1145,38 @@ datasets:
     collected: 'abstract: 110 malicious agent tasks, 440 with augmentations; agents-as-misuse-target framing;
       title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-027
+  name: InjecAgent
+  organization: paper by Zhan et al. (2024); benchmark publicly released
+  canonical_url: https://arxiv.org/abs/2403.02691
+  paper:
+    id: '2403.02691'
+    url: https://arxiv.org/abs/2403.02691
+    title: 'InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model
+      Agents'
+    verified_title: true
+  risk_area: indirect prompt injection against tool-using agents
+  task:
+  - agent attack evaluation
+  - injection susceptibility
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: composition not established at abstract-read level (taxonomy and counts body-level)
+    ref: R1
+  course_use:
+    chapters:
+    - '14'
+    - '13'
+    projects:
+    - P07
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/27-injecagent.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2403.02691
+    collected: 'abstract: IPI threat definition (malicious instructions embedded in processed content,
+      manipulating agents into detrimental actions); assess-and-mitigate purpose; title/authors/date verified'
+    accessed_on: '2026-10-25'
