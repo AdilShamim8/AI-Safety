@@ -7,6 +7,33 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### Resource index expansion (2026-10-25)
+
+- `AWESOME.md` reorganized into media layers for future growth: a new
+  **video library** (four watching tracks — from-scratch and
+  foundations, safety explainers, paper explainers and technical talk,
+  frontier coverage and lab channels), a new **blogs and ongoing
+  commentary** section (alignment theory, LLM security practice,
+  post-training technical practice, strategy and measurement), a
+  paper-spine bridge section, three new course/on-ramp entries, and a
+  closing **how-to-extend** section stating the register-first
+  admission discipline for future videos, channels, blogs, papers, and
+  resources.
+- 20 new register entries, every one opened at page level via
+  search-engine renders on 2026-10-25 and priced with per-source
+  limitations: 9 video channels (Rob Miles AI Safety, Andrej Karpathy,
+  3Blue1Brown's neural-networks series, Yannic Kilcher, Machine
+  Learning Street Talk, AI Explained, AI Coffee Break with Letitia,
+  Anthropic's official channel, Computerphile's Rob Miles playlist),
+  8 blogs (AI Alignment Forum, LessWrong, Simon Willison's
+  prompt-injection series, Interconnects, Lil'Log, Cold Takes, Epoch
+  AI, Redwood Research), and 3 resources (AI Safety Camp,
+  AISafety.info/Stampy, Neel Nanda's interpretability getting-started
+  guide). No spoken video content is quoted anywhere; perishable
+  counts (subscribers, posts) carry fetch dates.
+- Register now 251 sources / 206 claims; README (two places), FAQ
+  (one place), and the dashboard/website counts regenerated to match.
+
 ### Final verification pass (2026-10-25)
 
 - Full-corpus external re-verification: all 142 arXiv-URL sources

@@ -4681,3 +4681,490 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-VIDEO-002
+  title: Rob Miles AI Safety (YouTube channel)
+  authors_or_organization: Robert Miles
+  url: https://www.youtube.com/@RobertMilesAI
+  source_type: video
+  publication_date: null
+  version: channel listing as displayed at fetch (handle, description, counts)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public educational channel)
+  supports:
+  - 'AWESOME.md (the video library, safety-explainer track: the dedicated AI-safety explainer channel —
+    channel description at fetch read "Videos about Artificial Intelligence Safety Research, for
+    everyone")'
+  limitations: Channel page inspected via a search-engine render on 2026-10-25 (handle @RobertMilesAI,
+    about 174,000 subscribers and 75 videos as displayed). No individual videos were watched in this
+    session and no spoken content is quoted anywhere in this repository; subscriber and video counts
+    are perishable display values, not archival facts. Standing corroborated by third-party pages
+    fetched the same day — the AGI Show episode page and The Inside View interview both describe this
+    as the most-subscribed dedicated AI-alignment explainer channel, and its host as a former
+    University of Nottingham PhD researcher who began making safety videos on Computerphile
+    (SRC-VIDEO-010).
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+    (unlike the SRC-VIDEO-001 video, which displays CC-BY)
+- id: SRC-VIDEO-003
+  title: 'Andrej Karpathy (YouTube channel): Let''s build GPT and Deep Dive into LLMs'
+  authors_or_organization: Andrej Karpathy
+  url: https://www.youtube.com/@AndrejKarpathy
+  source_type: video
+  publication_date: null
+  version: channel listing as displayed at fetch (17 videos; flagship courses listed)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public educational channel)
+  supports:
+  - 'AWESOME.md (the video library, from-scratch-and-foundations track: the build-it-yourself lecture
+    lineage that pairs with the repository''s from-scratch researcher track)'
+  - 'research/ai-researcher-from-scratch/ (companion video track: the channel''s "Let''s build GPT:
+    from scratch, in code, spelled out" and "Deep Dive into LLMs like ChatGPT" cover the same
+    tokenization-to-transformer-to-post-training arc the unit''s module notes distill)'
+  limitations: Channel page inspected via a search-engine render on 2026-10-25 (handle @AndrejKarpathy,
+    about 1.73 million subscribers, 17 videos; "Let''s build GPT" displayed near 8 million views and
+    "Deep Dive into LLMs like ChatGPT" near 10 million views). The full chapter list of the Deep Dive
+    video was retrieved with the page (pretraining data, tokenization, network I/O and internals,
+    inference, GPT-2 training, post-training, hallucinations and tool use, supervised finetuning to
+    reinforcement learning, RLHF, DeepSeek-R1, closing guidance); no video was watched and no spoken
+    content is quoted in this repository. View and subscriber counts are perishable display values.
+    Instructor biography as displayed on the page — founding member at OpenAI (2015), Sr. Director of
+    AI at Tesla (2017-2022), founder of Eureka Labs.
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+- id: SRC-VIDEO-004
+  title: '3Blue1Brown: the neural-networks video series (Deep Learning chapters)'
+  authors_or_organization: Grant Sanderson (3Blue1Brown)
+  url: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+  source_type: video
+  publication_date: null
+  version: series as listed at fetch; the transformer lessons carry April 2024 lesson dates
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public educational series)
+  supports:
+  - 'AWESOME.md (the video library, from-scratch-and-foundations track: the visual-on-intuition entry
+    point for transformer mechanics that the interpretability chapters assume)'
+  - 'prerequisites/ (the math-on-ramp layer: the series covers the gradient-descent and linear-algebra
+    intuitions the prerequisites pages refresh)'
+  limitations: Playlist page and two companion lesson pages inspected via search-engine renders on
+    2026-10-25 — 3blue1brown.com/lessons/gpt ("Transformers, the tech behind LLMs | Deep Learning
+    Chapter 5", lesson dated 2025-04-01 in the render, attributed to Grant Sanderson with text
+    adaptation by Justin Sun) and 3blue1brown.com/lessons/attention ("Attention in transformers,
+    step-by-step | Deep Learning Chapter 6", dated 2025-04-07 in the render). Lesson text was read
+    (tokenization, embeddings-as-directions, attention-as-context-update); no video was watched and
+    no spoken content is quoted. Channel totals as displayed at the same fetch — 118 videos, about
+    4.2 million subscribers, 373 million views — perishable display values.
+  license: lesson pages display standard site terms; video series under standard YouTube terms of
+    service; no Creative Commons license displayed
+- id: SRC-VIDEO-005
+  title: Yannic Kilcher (YouTube channel)
+  authors_or_organization: Yannic Kilcher
+  url: https://www.youtube.com/c/YannicKilcher
+  source_type: video
+  publication_date: null
+  version: channel listing as displayed at fetch (description and paper-explained playlists)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public educational channel)
+  supports:
+  - 'AWESOME.md (the video library, paper-explainer track: long-form paper walkthroughs as a
+    complement to reading the register''s paper spine directly)'
+  limitations: Channel page inspected via a search-engine render on 2026-10-25 (channel description
+    read in full — "I make videos about machine learning research papers, programming, and issues of
+    the AI community, and the broader impact of AI in society"; a Papers Explained playlist listing
+    was retrieved). No individual videos were watched; no spoken content is quoted in this
+    repository. Coverage breadth (which of the register's 148 papers have dedicated videos) was not
+    inventoried — the channel is indexed here as a track, not as a per-paper citation.
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+- id: SRC-VIDEO-006
+  title: Machine Learning Street Talk (YouTube channel and podcast)
+  authors_or_organization: Dr Tim Scarfe and Dr Keith Duggar (MLST)
+  url: https://www.youtube.com/@MachineLearningStreetTalk
+  source_type: video
+  publication_date: null
+  version: channel listing as displayed at fetch; mlst.ai/about page read the same day
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: commentary
+  peer_review_status: not peer reviewed (public interview and discussion channel)
+  supports:
+  - 'AWESOME.md (the video library, technical-talk track: long-form interviews with AI researchers —
+    the closest video analogue to the note companions'' method-level discussions)'
+  limitations: Channel page and the mlst.ai about page inspected via search-engine renders on
+    2026-10-25 (about page read — "the leading highly technical AI podcast... Dr Tim Scarfe and Dr
+    Keith Duggar"; channel description describes coverage of advanced AI research, science and
+    philosophy). No episodes were listened to or watched in this session; guest lists were not
+    inventoried; the channel is indexed as a track, not as per-episode citations.
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+- id: SRC-VIDEO-007
+  title: AI Explained (YouTube channel)
+  authors_or_organization: AI Explained (channel author; creator of the Simple Bench benchmark)
+  url: https://www.youtube.com/@aiexplained-official
+  source_type: video
+  publication_date: null
+  version: channel listing as displayed at fetch (description and video listing)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: commentary
+  peer_review_status: not peer reviewed (public commentary channel)
+  supports:
+  - 'AWESOME.md (the video library, frontier-coverage track: practitioner commentary on frontier-model
+    releases and capability claims — priced as commentary, never as evidence for the chapters'' claims)'
+  limitations: Channel page inspected via a search-engine render on 2026-10-25 (channel description
+    read — "Covering the biggest news of the century - the arrival of smarter-than-human AI. The
+    author of Simple Bench, exposing the remaining human-LLM reasoning gap"). No videos were
+    watched; no spoken content is quoted in this repository. The channel is a news-and-frames
+    source — its value here is orienting learners to the release cycle the course teaches them to
+    audit, not corroborating any factual claim.
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+- id: SRC-VIDEO-008
+  title: AI Coffee Break with Letitia (YouTube channel)
+  authors_or_organization: Letitia Parcalabescu
+  url: https://www.youtube.com/c/aicoffeebreak
+  source_type: video
+  publication_date: null
+  version: channel listing as displayed at fetch (description; companion site aicoffeebreak.com)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public educational channel)
+  supports:
+  - 'AWESOME.md (the video library, paper-explainer track: bite-sized technical explainers of current
+    AI papers, mostly NLP and multimodal)'
+  limitations: Channel page and the companion site inspected via search-engine renders on 2026-10-25
+    (channel description read — "Lighthearted bite-sized ML videos for your AI Coffee Break! Mostly
+    videos about the latest technical advancements in AI, such as large language models"; the
+    companion site and the host's X profile identify her as a University of Heidelberg PhD
+    researcher and MLST guest). No videos were watched; no spoken content is quoted in this
+    repository.
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+- id: SRC-VIDEO-009
+  title: Anthropic (official YouTube channel)
+  authors_or_organization: Anthropic PBC
+  url: https://www.youtube.com/@anthropic-ai
+  source_type: video
+  publication_date: null
+  version: channel listing as displayed at fetch (178 videos; Research playlist listing retrieved)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: primary institutional statement
+  peer_review_status: not peer reviewed (vendor channel; the lab speaking about its own work)
+  supports:
+  - 'AWESOME.md (the video library, lab-channel track: the vendor''s own research-communication layer —
+    including its reward-hacking explainer video — priced as institutional self-presentation)'
+  - 'chapters/03-specification-reward-hacking-and-goal-misgeneralization/ (orientation viewing: the
+    channel''s "What is AI ''reward hacking''—and why do we worry about it?" is the lab-voiced
+    companion to the chapter''s paper spine)'
+  limitations: Channel page inspected via a search-engine render on 2026-10-25 (handle @anthropic-ai,
+    about 823,000 subscribers and 178 videos as displayed; channel description read — "We''re an AI
+    safety and research company. Talk to our AI assistant Claude on claude.com."). A Research
+    playlist listing was retrieved with the page, including "What is AI ''reward hacking''—and why do
+    we worry about it?", "The different levels of how Claude thinks", and "Translating Claude''s
+    thoughts into language". No videos were watched; no spoken content is quoted in this
+    repository. This is a vendor channel — the register prices it as the lab presenting its own
+    framing, the same honesty applied to SRC-REPORT-005.
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+- id: SRC-VIDEO-010
+  title: 'Computerphile: the Artificial Intelligence with Rob Miles playlist'
+  authors_or_organization: Computerphile (Brady Haran network); presented by Robert Miles
+  url: https://www.youtube.com/playlist?list=PLzH6n4zXuckquVnQ0KlMDxyT5YE-sA8Ps
+  source_type: video
+  publication_date: null
+  version: playlist listing as displayed at fetch (playlist description retrieved)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public educational playlist)
+  supports:
+  - 'AWESOME.md (the video library, safety-explainer track: the playlist where the channel''s host
+    began — the historical root of the AI-safety explainer lineage on YouTube)'
+  limitations: Playlist page inspected via a search-engine render on 2026-10-25 (playlist description
+    read — "Rob Miles is passionate about AI Safety - If we ever invent or discover a general
+    artificial intelligence of human intelligence or higher, it's important to..."). The origin
+    account is the host's own words in The Inside View interview fetched the same day — he began
+    making these videos as a University of Nottingham PhD student after a producer approached
+    researchers for topics. No videos were watched; no spoken content is quoted in this repository;
+    the individual-video list inside the playlist was not inventoried.
+  license: standard YouTube terms of service; no Creative Commons license displayed at playlist level
+- id: SRC-BLOG-001
+  title: AI Alignment Forum (research blog hub)
+  authors_or_organization: AI Alignment Forum (alignmentforum.org)
+  url: https://www.alignmentforum.org
+  source_type: blog
+  publication_date: null
+  version: site as rendered at fetch (front page and about page)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: synthesis
+  peer_review_status: not peer reviewed (curated research forum)
+  supports:
+  - 'AWESOME.md (the blogs index, alignment-theory track: the field''s ongoing-discourse layer that
+    the register''s paper spine complements — where working drafts circulate before and after
+    publication)'
+  - 'research/notes/ (provenance context: several note-companion papers debuted as forum posts; the
+    forum is where the field argues about them)'
+  limitations: Front page and about page inspected via search-engine renders on 2026-10-25 (about
+    text read — "a single online hub for researchers to discuss all ideas related to ensuring that
+    transformatively powerful AIs are aligned with human" intentions; front page carried live posts
+    by evhub on monitorability evaluations, TurnTrout, Stuart Armstrong, and Vanessa Kosoy, with
+    Eliezer Yudkowsky among the visible commenters). Individual posts were not read in this session;
+    the forum is registered as a hub, not as a per-post citation. Forum content is self-published
+    with moderation-level curation only — the register prices it below peer review and below the
+    paper spine.
+  license: individual posts retain their authors' licenses; no site-wide open license observed at
+    fetch
+- id: SRC-BLOG-002
+  title: LessWrong (community forum)
+  authors_or_organization: LessWrong (founded by Eliezer Yudkowsky; launched February 2009)
+  url: https://www.lesswrong.com
+  source_type: blog
+  publication_date: '2009-02-01'
+  version: site as rendered at fetch (front page and about page)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: synthesis
+  peer_review_status: not peer reviewed (community forum)
+  supports:
+  - 'AWESOME.md (the blogs index, alignment-theory track: the parent community the Alignment Forum
+    (SRC-BLOG-001) layers on — the wider venue where rationality technique and AI-risk argument
+    developed together)'
+  limitations: Front page and about page inspected via search-engine renders on 2026-10-25 (about
+    text read — "an online forum and community dedicated to improving human reasoning and
+    decision-making"); founding date and founder corroborated by the Wikipedia article on LessWrong
+    fetched the same day (launched 2009-02-01 from Yudkowsky's Overcoming Bias posts). The front
+    page carried live posts by Eliezer Yudkowsky, leogao, and others. Individual posts were not
+    read in this session; the forum is registered as a hub, not as per-post citations. Community
+    content with no editorial review — priced as discourse, not evidence.
+  license: individual posts retain their authors' licenses; no site-wide open license observed at
+    fetch
+- id: SRC-BLOG-003
+  title: 'Simon Willison''s Weblog: the prompt-injection series'
+  authors_or_organization: Simon Willison
+  url: https://simonwillison.net/series/prompt-injection/
+  source_type: blog
+  publication_date: null
+  version: series listing as rendered at fetch (series page and tag page)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (practitioner weblog)
+  supports:
+  - 'AWESOME.md (the blogs index, LLM-security track: the longest-running practitioner record of the
+    attack class Chapter 13 teaches — the blog that tracked prompt injection from its first public
+    demonstrations onward)'
+  - 'chapters/13-llm-application-security/ (practitioner companion: ongoing coverage of
+    injection defenses, agent-security patterns, and new attack papers as they appear — the living
+    layer on top of the chapter''s paper spine)'
+  limitations: Series page and tag page inspected via search-engine renders on 2026-10-25 (series
+    description read — "A class of security vulnerabilities in software built on top of Large
+    Language Models"; the tag page displayed 163 posts tagged prompt-injection; the series listing
+    carried posts dated from 2022-09-12 ("Prompt injection attacks against GPT-3") through 2026).
+    Individual post bodies were not read in this session beyond the listing summaries; post-count is
+    a perishable display value. Author credential as displayed — co-creator of Datasette; the blog's
+    standing is practitioner-reported, which is exactly the evidence class the register assigns.
+  license: weblog posts under the author's stated terms (simonwillison.net); no single open license
+    observed at fetch; short quotations only, attributed
+- id: SRC-BLOG-004
+  title: Interconnects (post-training and open-models weblog)
+  authors_or_organization: Nathan Lambert (Interconnects / Trillium Labs)
+  url: https://www.interconnects.ai
+  source_type: blog
+  publication_date: null
+  version: site as rendered at fetch (RLHF topic listing and post pages)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: expert technical analysis
+  peer_review_status: not peer reviewed (independent research weblog)
+  supports:
+  - 'AWESOME.md (the blogs index, technical-practice track: the post-training practice layer —
+    RLHF and open-recipe analysis that Chapter 04''s paper spine sits inside)'
+  limitations: Site pages inspected via search-engine renders on 2026-10-25 (post listings retrieved
+    included "The state of post-training in 2025" dated 2025-01-08, "A recipe for frontier model
+    post-training" dated 2024-08-07, and 2026 posts on the author's post-training textbook; the
+    author's personal site read — co-founder and executive director of Trillium Labs, working on
+    open language models, RLHF, and post-training). Individual post bodies were not read in this
+    session; the weblog is registered as the ongoing-practice index for the post-training chapters,
+    not as a per-post citation.
+  license: weblog posts under the author's stated terms; no open license observed at fetch
+- id: SRC-BLOG-005
+  title: 'Lil''Log (technical survey weblog)'
+  authors_or_organization: Lilian Weng
+  url: https://lilianweng.github.io
+  source_type: blog
+  publication_date: null
+  version: site as rendered at fetch (safety tag listing and two post heads)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: expert technical analysis
+  peer_review_status: not peer reviewed (independent technical weblog of survey length)
+  supports:
+  - 'AWESOME.md (the blogs index, technical-practice track: long-form technical surveys — the
+    bridge between the course''s chapter texts and the primary paper spine)'
+  - 'chapters/13-llm-application-security/ (companion survey: "Adversarial Attacks on
+    LLMs", dated 2023-10-25 at fetch, covers the attack families the chapter teaches)'
+  - 'chapters/06-honesty-uncertainty-and-selective-prediction/ (companion survey: "Extrinsic
+    Hallucinations in LLMs", dated 2024-07-07 at fetch, covers the factuality instruments the
+    chapter audits)'
+  limitations: Site home, safety-tag page, and two post pages inspected via search-engine renders on
+    2026-10-25 (post dates read from the pages; the safety tag listing showed the adversarial-attacks
+    and hallucination posts among others). Post bodies were not read beyond their openings in this
+    session; the weblog is registered as a survey hub, not as per-post citations. Author affiliation
+    at fetch is OpenAI safety systems — noted for source-awareness pricing, the same caveat the
+    register applies to vendor-adjacent material.
+  license: site and posts hosted on GitHub Pages; no explicit open license observed at fetch; short
+    quotations only, attributed
+- id: SRC-BLOG-006
+  title: Cold Takes (strategy weblog)
+  authors_or_organization: Holden Karnofsky
+  url: https://www.cold-takes.com
+  source_type: blog
+  publication_date: null
+  version: site as rendered at fetch (about page and series page)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: synthesis
+  peer_review_status: not peer reviewed (independent strategy weblog)
+  supports:
+  - 'AWESOME.md (the blogs index, strategy track: the argued-positions layer on timelines and
+    transformation — context for the release-gate and scaling-curve chapters, priced as argued
+    positions, never as consensus)'
+  limitations: About page and the "most important century" series page inspected via search-engine
+    renders on 2026-10-25 (series page dated 2021-09-19; about text read — the series "argues that
+    the 21st century could be the most important century ever for humanity" via transformative AI).
+    Individual essays were not read in this session. The weblog is explicitly an argument, not a
+    measurement — the register carries it as the canonical statement of a position the course
+    teaches learners to steelman and audit, alongside the chapters' own uncertainty discipline.
+  license: weblog posts under the author's stated terms; no open license observed at fetch
+- id: SRC-BLOG-007
+  title: Epoch AI (research-institute site and trends blog)
+  authors_or_organization: Epoch AI
+  url: https://epoch.ai
+  source_type: blog
+  publication_date: null
+  version: site as rendered at fetch (home, trends, and scaling topic pages)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: empirical
+  peer_review_status: not peer reviewed at fetched pages (research-institute publications; individual
+    papers carry their own statuses)
+  supports:
+  - 'AWESOME.md (the blogs index, measurement track: the training-compute and scaling-data source —
+    the empirical layer under the chapters'' capability-trend claims)'
+  - 'chapters/20-misuse-dangerous-capabilities-release-evaluation/ (measurement context: the
+    trends page''s finding at fetch — "Since 2020, the compute used to train frontier language
+    models has increased 5x per year" — is the published trend line the release-evaluation
+    chapter''s scaling arithmetic leans on)'
+  limitations: Home, trends, and scaling topic pages inspected via search-engine renders on
+    2026-10-25 (about text read — "a research institute investigating key trends and questions that
+    will shape the trajectory and governance of Artificial Intelligence"; the trends page carried
+    the 5x-per-year frontier-compute figure and the scaling topic page described the institute's
+    coverage — training-compute trends, data availability, scaling laws, hardware constraints). The
+    underlying datasets and papers were not independently re-derived in this session; figures are
+    carried at page-statement strength with the fetch date attached, as the register's honesty
+    rules require for living-data sources.
+  license: site content under the institute's stated terms; data and code releases carry their own
+    licenses (not inventoried at this fetch)
+- id: SRC-BLOG-008
+  title: Redwood Research blog (AI-safety-lab commentary)
+  authors_or_organization: Redwood Research
+  url: https://blog.redwoodresearch.org
+  source_type: blog
+  publication_date: null
+  version: site as rendered at fetch (one post head read)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: expert technical analysis
+  peer_review_status: not peer reviewed (safety-lab weblog)
+  supports:
+  - 'AWESOME.md (the blogs index, measurement track: the safety-lab commentary layer on capability
+    trends — the lab behind the AI-control paper (SRC-PAPER-022) reading the same Epoch data the
+    course teaches from)'
+  limitations: One post page inspected via a search-engine render on 2026-10-25 ("What's going on
+    with AI progress and trends? (As of 5/2025)", dated 2025-05-03, which quotes Epoch's 4.5x-per-year
+    frontier-compute trend and argues the future trend will likely be slower). The rest of the blog
+    was not inventoried in this session; the entry prices the lab's commentary channel, not any
+    specific claim.
+  license: weblog posts under the lab's stated terms; no open license observed at fetch
+- id: SRC-CURR-009
+  title: AI Safety Camp (AISC)
+  authors_or_organization: AI Safety Camp (organizers Remmelt and Robert; online program)
+  url: https://www.aisafety.camp
+  source_type: course
+  publication_date: null
+  version: site as rendered at fetch (home, about/FAQ, and research-outputs pages)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (community-run program)
+  supports:
+  - 'AWESOME.md (the courses, fellowships, and on-ramps section: the team-based project on-ramp —
+    join as project lead or team member, 10 hours per week for 3 months, fully online)'
+  - 'roadmaps/careers-index.md (the entry-path layer: the camp''s own stated criteria — theory of
+    change, plan fit, downside risk, and lead commitment — are a working example of how safety
+    programs screen for capability acceleration risk)'
+  limitations: Home, about/FAQ, and research-outputs pages inspected via search-engine renders on
+    2026-10-25 (program structure read — two ways to join, at-least-10h/week commitment for 3 months
+    mid-January to mid-April, entirely online; the outputs page listed ten editions from AISC1 in
+    Las Palmas 2018 through AISC10 virtual 2025; the about page states organizers accept projects
+    unilaterally and will not accept projects whose capability acceleration outweighs their safety
+    value). Outcome statistics were not collected or verified — self-reported program structure
+    only, priced the same way the register prices MATS (SRC-CURR-006).
+  license: site content under the program's stated terms; no open license observed at fetch
+- id: SRC-CURR-010
+  title: 'AISafety.info (Stampy — the community-maintained AI-safety FAQ wiki)'
+  authors_or_organization: AISafety.info (founded by Robert Miles; maintained by volunteers)
+  url: https://aisafety.info
+  source_type: documentation
+  publication_date: null
+  version: site as rendered at fetch (home page and chatbot page)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: synthesis
+  peer_review_status: not peer reviewed (community wiki)
+  supports:
+  - 'AWESOME.md (the courses, fellowships, and on-ramps section: the question-and-answer on-ramp —
+    the community''s collective FAQ, with a chatbot front end, for the first questions a newcomer
+    asks)'
+  limitations: Home page and chat page inspected via search-engine renders on 2026-10-25 (home text
+    read — "Ask Stampy, our chatbot, any questions about AI safety" and the project description "a
+    project founded by Rob Miles... maintained by a global team of specialists and volunteers").
+    Corroborated the same day by the LessWrong soft-launch announcement (2023-10-05, which
+    described an interactive FAQ on existential risk from AI) and a third-party wiki page
+    (280-plus live answers at soft launch; open-source repositories under the StampyAI GitHub
+    organization; Distillation Fellowship paused at the time of that page's record). Individual
+    answers were not audited for accuracy in this session; community-maintained content, priced
+    accordingly.
+  license: site released under CC BY-SA as displayed at fetch (aisafety.com sister page footer);
+    wiki content under the site's stated terms
+- id: SRC-CURR-011
+  title: 'How To Become A Mechanistic Interpretability Researcher (getting-started guide)'
+  authors_or_organization: Neel Nanda
+  url: https://www.alignmentforum.org/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher
+  source_type: course
+  publication_date: '2025-09-02'
+  version: guide as published at fetch (Alignment Forum post; companion resource cluster at
+    neelnanda.io)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (practitioner guide)
+  supports:
+  - 'AWESOME.md (the courses, fellowships, and on-ramps section: the interpretability on-ramp — the
+    field''s standard getting-started curriculum, written by a working interpretability researcher)'
+  - 'chapters/09-mechanistic-interpretability-foundations/ (the practitioner path beyond the chapter: concrete steps —
+    pick a paper, load the model, re-run the analysis — the same loop the chapter''s exercises
+    teach at toy scale)'
+  limitations: Guide page inspected via a search-engine render on 2026-10-25 (post dated 2025-09-02,
+    described as the updated guide on skilling up, getting involved, and reaching actual research;
+    audience explicitly ranges from newcomers to researchers with over a year of experience). The
+    companion resource cluster at neelnanda.io was corroborated by search renders the same day
+    (Concrete Steps to Get Started in Transformer Mechanistic Interpretability; a quickstart guide;
+    a barebones prereqs guide co-authored with Jess Smith; a comprehensive glossary) — pages were
+    seen in render, not read end-to-end. The guide is one researcher's advised path, not a
+    consensus curriculum; priced as practitioner guidance.
+  license: Alignment Forum post under the author's chosen license; companion pages under the
+    author's stated terms; no open license observed at fetch

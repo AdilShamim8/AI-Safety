@@ -11,6 +11,117 @@ the load-bearing idea a chapter or project takes from it — not a
 generic summary. Where a source's honest access level matters (vendor
 white paper, self-reported program data), the annotation says so.
 
+The index is organized in media layers: the **video library** and the
+**blogs and ongoing commentary** (the living layers, opened 2026-10-25),
+then the paper spine's ten thematic sections, then the datasets,
+courses and on-ramps, note companions, incidents, and career data.
+The closing section states the extension discipline — the price of
+admission for every new line in this file.
+
+## The video library (watching tracks)
+
+Videos carry the same register discipline as papers: every channel
+below was opened at page level on 2026-10-25 (handle, description,
+counts as displayed), every entry records what was and was not
+inspected, and no spoken video content is quoted anywhere in this
+repository. Subscriber and view counts are perishable display values,
+not archival facts — the register prices them accordingly.
+
+Four tracks, each with a job:
+
+- **From-scratch and foundations** — the build-it-yourself lineage:
+  - **Andrej Karpathy's channel** [SRC-VIDEO-003] — "Let's build GPT:
+    from scratch, in code, spelled out" and "Deep Dive into LLMs like
+    ChatGPT" (the full chapter list is in the register): the video
+    companion of the from-scratch researcher track — the same
+    tokenization → transformer → post-training arc, taught at full
+    scale by a founding OpenAI member.
+  - **3Blue1Brown's neural-networks series** [SRC-VIDEO-004] — the
+    visual-intuition layer for transformer mechanics (Deep Learning
+    chapters 5–6, April 2024 lesson dates at fetch); what to watch
+    before Chapter 09 if the residual stream still feels abstract.
+  - **The from-scratch video course** [SRC-VIDEO-001] — Vuk Rosić's
+    full course (the owner-selected mechanics track), with its MIT
+    companion repository [SRC-REPO-001].
+- **Safety explainers** — the vocabulary on-ramp:
+  - **Rob Miles AI Safety** [SRC-VIDEO-002] — the dedicated explainer
+    channel (about 174,000 subscribers at the 2026-10-25 fetch); the
+    field's common vocabulary, explained for everyone, before
+    Chapter 01's risk models demand it.
+  - **Computerphile's Artificial Intelligence with Rob Miles playlist**
+    [SRC-VIDEO-010] — where that explainer lineage began (University
+    of Nottingham); the early videos that introduced a generation to
+    alignment vocabulary.
+- **Paper explainers and technical talk** — walkthroughs and
+  interviews:
+  - **Yannic Kilcher's channel** [SRC-VIDEO-005] — long-form paper
+    walkthroughs; watch alongside — never instead of — reading the
+    paper spine below.
+  - **AI Coffee Break with Letitia** [SRC-VIDEO-008] — bite-sized
+    current-paper explainers (NLP and multimodal focus).
+  - **Machine Learning Street Talk** [SRC-VIDEO-006] — the long-form
+    technical interview channel; the video analogue of the note
+    companions' method-level discussions.
+- **Frontier coverage and lab channels** — the release-cycle layer:
+  - **AI Explained** [SRC-VIDEO-007] — frontier-release commentary,
+    priced as news-and-frames: useful for orienting to the release
+    cycle Chapter 20 teaches you to audit, never as evidence.
+  - **Anthropic's channel** [SRC-VIDEO-009] — the vendor's own
+    research-communication layer, including its reward-hacking
+    explainer; institutional self-presentation, priced exactly like
+    the RSP [SRC-REPORT-005].
+
+## Blogs and ongoing commentary
+
+Papers are the spine; blogs are the living layer — where the field
+argues between publications, where practitioners report attacks
+before any venue exists, and where measurement institutes publish
+the trend lines the chapters lean on. Registered and priced like
+everything else here: hubs are hubs, arguments are arguments, and
+vendor-adjacent authors say so in the register entry.
+
+- **AI Alignment Forum** [SRC-BLOG-001] — the research hub where
+  several register papers debuted as posts; read it for the current
+  state of the argument, cite the paper version.
+- **LessWrong** [SRC-BLOG-002] — the parent community (founded by
+  Yudkowsky, 2009) the Alignment Forum layers on; rationality
+  technique and AI-risk argument developed together here. Discourse,
+  not evidence — the register says so.
+- **Simon Willison's prompt-injection series** [SRC-BLOG-003] — the
+  longest-running practitioner record of Chapter 13's attack class,
+  from the first public demonstrations (September 2022) through the
+  agent-security pattern posts (163 tagged posts at the 2026-10-25
+  fetch); the living layer on the chapter's paper spine.
+- **Interconnects** [SRC-BLOG-004] — Nathan Lambert's post-training
+  practice layer for Chapter 04: state-of-post-training surveys and
+  open-recipe analysis, from the author of the field's post-training
+  textbook-in-progress.
+- **Lil'Log** [SRC-BLOG-005] — Lilian Weng's survey-length technical
+  posts: "Adversarial Attacks on LLMs" (2023-10-25) for Chapter 13,
+  "Extrinsic Hallucinations in LLMs" (2024-07-07) for Chapter 06 —
+  each a bridge between the chapter text and the primary papers.
+- **Cold Takes** [SRC-BLOG-006] — Holden Karnofsky's "most important
+  century" argument (2021): the canonical timelines position, taught
+  here as a position to steelman and audit, not a consensus.
+- **Epoch AI** [SRC-BLOG-007] — the training-compute measurement
+  source (frontier compute at 5× per year since 2020, at fetch); the
+  empirical layer under Chapter 20's scaling arithmetic.
+- **Redwood Research blog** [SRC-BLOG-008] — the safety lab's own
+  commentary on those same trends (its 4.5×-per-year reading and the
+  slope dispute it argues); the lab behind the control paper
+  [SRC-PAPER-022].
+
+## The paper spine (research papers)
+
+The ten thematic sections below hold the 148 registered papers — 142
+carrying arXiv URLs, every one of them title-verified against the
+arXiv API in the final verification pass (zero mismatches). They are
+organized by the job the field's literature does for this course,
+not by venue or year; the note companions turn the load-bearing
+subset into runnable analysis. How to add more papers — the register
+route, the verification route, the note route — is the closing
+section of this file.
+
 ## The methodological spine
 
 - **Concrete Problems in AI Safety** [SRC-PAPER-001] — the field's
@@ -177,10 +288,11 @@ contamination status. Start with TruthfulQA [DS-001], AdvBench
 
 - **ARENA curriculum** [SRC-CURR-001] — the ML-engineer-side safety
   curriculum this course's prerequisites are calibrated against.
-- **The from-scratch video course** [SRC-VIDEO-001] + its MIT companion
-  repo [SRC-REPO-001] — the owner-selected mechanics track
-  (research/ai-researcher-from-scratch/), distilled into 7 module
-  notes with runnable stdlib code.
+- **The from-scratch researcher track**
+  (research/ai-researcher-from-scratch/) — the owner-selected mechanics
+  track, distilled into 7 module notes with runnable stdlib code; its
+  video course [SRC-VIDEO-001] is indexed in the video library above,
+  with the companion repository [SRC-REPO-001].
 - **MATS** [SRC-CURR-006] — the alignment fellowship (12 weeks,
   Berkeley/London; self-reported outcomes priced as such in the
   register).
@@ -188,6 +300,20 @@ contamination status. Start with TruthfulQA [DS-001], AdvBench
   900+-role board; the careers index's structure source.
 - **BlueDot Impact** (named on the 80k hub [SRC-CURR-005]) — free
   entry-level courses; the community on-ramp.
+- **AI Safety Camp** [SRC-CURR-009] — the team-based project on-ramp:
+  ten editions by 2025, join as project lead or team member, 10
+  hours/week for 3 months, fully online; its stated screening rule —
+  rejecting projects whose capability acceleration outweighs their
+  safety value — is itself a working example of the caution the field
+  teaches.
+- **AISafety.info (Stampy)** [SRC-CURR-010] — Rob Miles's
+  community-maintained FAQ wiki with a chatbot front end; the
+  first-questions on-ramp for newcomers (community-maintained, priced
+  as such).
+- **Neel Nanda's interpretability getting-started guide**
+  [SRC-CURR-011] — the practitioner path beyond Chapters 09–11: pick
+  a paper, load the model, re-run the analysis — the same loop the
+  chapter exercises teach at toy scale, at research scale.
 
 ## The note companions (start from the map, land in the notebook)
 
@@ -244,3 +370,40 @@ collection grows from — cite entries by ID with fetch dates.
   own curriculum (the caveat is the lesson).
 - Both live in [roadmaps/careers-index.md](roadmaps/careers-index.md)
   with per-claim provenance and the five-rung progress ladder.
+
+## How to extend this index
+
+The discipline that keeps this file a map instead of a link dump.
+Every rule below is enforced by the repository's own gates — the
+audit fails on unregistered IDs, the count-drift tests fail on stale
+numbers, and the validator fails on schema gaps.
+
+1. **Register first, annotate second.** A new video, channel, blog,
+   paper, or resource enters as a full
+   [source-register.yaml](research/source-register.yaml) entry — all
+   fourteen fields — and only then gets its line here, carrying the
+   bracketed ID. The audit's cross-reference check guarantees no ID
+   appears in prose without a register entry behind it.
+2. **Open the page, date the look, level the access.** Channels at
+   `page-inspected` means the channel page was actually seen (handle,
+   description, counts as displayed) — record what was inspected and
+   what was not. Blogs at `page-inspected` means the post listing was
+   read. Papers enter at `abstract-read` minimum, with the arXiv API
+   title match recorded. Perishable numbers (subscribers, post counts,
+   open roles) always carry their fetch date.
+3. **Annotate the job, not the subject.** One sentence on what the
+   source is FOR — which track, chapter, or project leans on it and
+   for which load-bearing idea. A generic summary is a rejection.
+4. **Price the honesty in the line itself.** Vendor channels are
+   institutional self-presentation; community wikis are
+   community-maintained; argued positions are argued positions; the
+   annotation says which, the same way the register does.
+5. **Run the gate before committing.** `python scripts/validate_repo.py .`,
+   `python scripts/audit_missing.py`, `pytest`, `ruff`, `black` — and
+   regenerate the dashboard (`python scripts/build_dashboard.py`)
+   whenever the registers changed, because the website renders
+   register-derived counts.
+
+What never enters: unregistered links, resource-list listicles,
+anything not opened at page level by the person adding it, and any
+number without a fetch date attached.
