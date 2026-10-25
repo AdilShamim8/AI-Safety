@@ -53,6 +53,7 @@ the chapter you are already reading.
 | 36 | [Adversarial examples are features: the non-robust-features thesis](36-adversarial-features-not-bugs.md) | SRC-PAPER-111 | abstract-level |
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
+| 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one

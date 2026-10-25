@@ -2171,3 +2171,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0177
+  claim: 'On multi-document question answering and key-value retrieval, language-model performance depends
+    strongly on the position of relevant information in the input context: highest at the beginning or
+    end and significantly degraded in the middle — a U-shaped curve observed even for explicitly long-context
+    models, indicating non-robust use of long-context information.'
+  source: SRC-PAPER-114
+  section_or_page: arXiv:2307.03172v3 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; the U-shape and the
+    long-context-model clause are stated in the abstract, no per-model numbers claimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
