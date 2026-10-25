@@ -151,11 +151,18 @@ remote-verified.
 
 ## Next exact action
 
-Phases B and C CLOSED: notes 33-50 (commits 156-176) and dataset cards
-23-34 (commits 178-189), all API-verified. Phases B-E CLOSED plus the deepening tranche: 70 notes, 43 cards,
-14 incidents, 12 comparisons, 4 trackers + widget. Remaining: the
-closing surface (learner pages, sweeps, re-checks, milestone). After each unit:
-STATUS counters move in the same commit as the work. The standing
+All seven judged gaps CLOSED with evidence (see the judge audit's
+closure table). Phase J — the closing surface — is underway and mostly
+done: the count-drift sweep fixed seven stale surfaces (README's
+structure table, FAQ, START_HERE, CITATION.cff, both notes front
+doors, AWESOME); `tests/test_count_drift.py` now pins every
+count-bearing surface to the registers; CITATION.cff carries real
+version/date-released keys; two G7 re-check rotations covered 26
+URLs (one dead ACLU URL caught and corrected); the CHANGELOG holds
+the consolidated session-2 record; MAINTENANCE documents both new
+instruments. Remaining for the milestone: ROADMAP's completion row,
+the README tour refresh, the judge audit's phase-J closure note,
+and the closing full-gate pass. The standing
 actions from session 1 remain: rotate the exposed token when the
 session ends; the three not-executed experiment tiers stay honestly
 marked; registers re-verify on the MAINTENANCE schedule.
