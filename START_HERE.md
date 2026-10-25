@@ -37,8 +37,10 @@ scale.
 
 - Routes: [alignment research](roadmaps/alignment-research.md),
   [AI security engineering](roadmaps/ai-security-engineering.md),
-  [evaluations and assurance](roadmaps/evaluations-and-assurance.md) — or
-  audit-only if you want the spine without a specialization.
+  [evaluations and assurance](roadmaps/evaluations-and-assurance.md),
+  or [audit-only](roadmaps/audit-only.md) if you want the spine
+  without a specialization — the reviewer's route (≈120 h, no
+  PyTorch).
 - Schedules: 12-week focused (~10 h/week, a **selection**, not the whole
   course), ~24-week part-time (~6–8 h/week, one full specialization), or
   open-ended research (full curriculum + capstone). The arithmetic is in
