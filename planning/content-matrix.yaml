@@ -447,7 +447,7 @@ chapters:
   verified_on: '2026-10-23'
 - id: '20'
   title: Misuse, dangerous capabilities, and release evaluation
-  path: chapters/20-misuse-dangerous-capabilities-and-release-evaluation/
+  path: chapters/20-misuse-dangerous-capabilities-release-evaluation/
   phase: G
   maturity: complete
   outcomes:
@@ -512,7 +512,7 @@ chapters:
   verified_on: '2026-10-23'
 - id: '23'
   title: Governance and standards for researchers
-  path: chapters/23-governance-and-standards-for-researchers/
+  path: chapters/23-governance-and-standards/
   phase: G
   maturity: complete
   outcomes:
@@ -702,7 +702,7 @@ projects:
   verified_on: '2026-10-23'
 - id: P09
   title: Distribution shift and subgroup reliability
-  path: projects/p09-distribution-shift-and-subgroup-reliability/
+  path: projects/p09-shift-subgroup-reliability/
   phase: G
   maturity: complete
   chapter_links:
