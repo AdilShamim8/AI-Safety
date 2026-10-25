@@ -1035,3 +1035,38 @@ datasets:
       standard evaluation); two components (forbidden prompts + response-harmfulness scorer); title/authors/date
       verified'
     accessed_on: '2026-10-25'
+- id: DS-024
+  name: Do-Not-Answer
+  organization: paper by Wang et al. (2023); hosted on Hugging Face
+  hf_id: librarian-bots/do-not-answer
+  canonical_url: https://arxiv.org/abs/2308.13387
+  paper:
+    id: '2308.13387'
+    url: https://arxiv.org/abs/2308.13387
+    title: 'Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs'
+    verified_title: true
+  risk_area: safeguard evaluation / refusal quality
+  task:
+  - safety evaluation
+  - refusal annotation
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (HF license tag uninspected)
+  size_facts:
+  - fact: composition not established at abstract-read level (six-model annotation announced, counts body-level)
+    ref: R1
+  course_use:
+    chapters:
+    - '04'
+    - '15'
+    projects:
+    - P07
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/24-do-not-answer.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2308.13387
+    collected: 'abstract: first open-source safeguard-evaluation dataset; curated to only should-not-follow
+      instructions; six LLMs'' responses annotated; title/authors/date verified'
+    accessed_on: '2026-10-25'
