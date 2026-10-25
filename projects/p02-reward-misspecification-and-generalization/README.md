@@ -7,6 +7,8 @@ real trained model — that boundary is stated honestly below) · 2026-10-22 ·
 chapter link: [Ch. 03 — specification, reward hacking, and goal
 misgeneralization](../../chapters/03-specification-reward-hacking-and-goal-misgeneralization/README.md)
 
+
+**Session-2 companion materials:** [overoptimization scaling laws](../../research/notes/37-reward-overoptimization.md) (your peak-and-fall's source), [HH-RLHF](../../research/notes/42-helpful-harmless-rlhf.md) (the sqrt-KL budget), [double descent](../../research/notes/53-deep-double-descent.md), [power-seeking](../../research/notes/67-power-seeking.md)/[reward tampering](../../research/notes/68-reward-tampering.md) (the incentive ladder above your organism), [FGSM](../../research/notes/71-fgsm.md)/[ensemble training](../../research/notes/74-ensemble-adversarial-training.md), [C09](../../research/notes/comparison-09-kl-budgets-vs-gold-gates.md).
 ## The question this project answers
 
 Can this repository *demonstrate* the Goodhart mechanism end-to-end — a
