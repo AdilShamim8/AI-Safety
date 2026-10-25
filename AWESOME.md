@@ -189,6 +189,25 @@ contamination status. Start with TruthfulQA [DS-001], AdvBench
 - **BlueDot Impact** (named on the 80k hub [SRC-CURR-005]) — free
   entry-level courses; the community on-ramp.
 
+## The note companions (start from the map, land in the notebook)
+
+The research notebook now carries 32 paper notes and 6 comparison
+notes — each anchored to a register source at the level the access
+supports, each ending in a falsifiable extension runnable at course
+scale. The fastest way in: the chapter you are reading names its
+note companions in the readings section; the full index is
+[research/notes/README.md](research/notes/README.md). The notes added
+in the 2026-10-25 session alone: CaMeL (21 — the boundary that moved
+out of the model), AgentDojo (22 — the environment as the
+instrument), Sandbagging (23 — the evaluation channel's gameability),
+Explore-Establish-Exploit (24 — red teaming as method), DPO (25 — the
+reparameterization), InstructGPT (26 — the pipeline), Debate (27 —
+the optimality assumption), Sycophancy (28 — the preference pipeline),
+Mirage (29 — metric choice manufactures thresholds), Constitutional
+AI (30 — supervision in a document), GCG (31 — the optimized attack),
+Verbalized confidence (32 — the trained channel), plus comparison C06
+(safety cases vs red-team reports — assurance's two documents).
+
 ## The incident record
 
 Three production incidents reviewed under the strict template
