@@ -102,3 +102,19 @@ a finding, never an inconvenience: recent example — the dashboard
 commit-count test failed on CI because GitHub's shallow clone has no
 history; the fix made the generator honest about shallow clones
 instead of making the test weaker. Keep that order of operations.
+
+## Session-2 standing instruments (2026-10-25)
+
+- **Coverage widget**: `build_dashboard.py::_note_coverage` renders
+  notes-per-chapter as bars; a zero bar is a regression. It caught
+  the nine-chapter silent-skip bug in production — keep it.
+- **Incidents timeline**: era-grouped from the incidents README
+  table; a new incident needs its era row (the builder assigns by
+  incident number — update `_incidents` when the eras grow).
+- **Progress trackers**: `roadmaps/progress/*.md` are hand-written;
+  the dashboard's counts parse checkbox density per milestone. A
+  tracker edit does not need a dashboard change unless milestones
+  are added or renamed.
+- **Register growth**: every note/incident/dataset addition moves
+  the counts the freshness test pins — run the full gate, not just
+  the file you touched (the session's own lesson, twice).
