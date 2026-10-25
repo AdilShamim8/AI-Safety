@@ -2641,3 +2641,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0213
+  claim: In Markov decision processes, certain environmental symmetries are provably sufficient for optimal
+    policies to tend to seek power over the environment — the first formal theory of the statistical tendencies
+    of optimal policies, establishing that power-seeking incentives arise from environment-plus-objective
+    structure rather than anthropomorphic drives.
+  source: SRC-PAPER-142
+  section_or_page: arXiv:1912.01683 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; sufficiency result
+    and scope stated, symmetries and theorems body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

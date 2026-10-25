@@ -4426,3 +4426,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-142
+  title: Optimal Policies Tend to Seek Power
+  authors_or_organization: Alexander Matt Turner, Logan Smith, Rohin Shah, Andrew Critch (+1 more)
+  url: https://arxiv.org/abs/1912.01683
+  source_type: paper
+  publication_date: '2019-12-03'
+  version: 1912.01683v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/67-power-seeking.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)
