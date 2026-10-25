@@ -2224,3 +2224,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0181
+  claim: CoT faithfulness is measurable by intervening on the reasoning (adding mistakes, paraphrasing)
+    and testing how strongly answers condition on it; models vary widely across tasks in CoT-conditioning
+    — sometimes relying heavily, sometimes primarily ignoring it — and CoT's performance boost cannot
+    be explained by added test-time compute alone or by phrasing-encoded information alone.
+  source: SRC-PAPER-118
+  section_or_page: arXiv:2307.13702v1 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; design and cross-task
+    variation stated in the abstract; the final scale clause truncates in the API record and is left unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
