@@ -6,6 +6,41 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-25 — the milestone build: incidents, notes, learner surface)
+
+- Three production incident reviews (`research/notes/incidents/`):
+  Moffatt v. Air Canada 2024 BCCRT 149 (the generation channel is not
+  a source of record; "nobody checked" reads as negligence), the DPD
+  post-update regression (same-channel instructions are not a
+  boundary; behavior-changing releases need behavioral gates), and
+  the Chevrolet of Watsonville commitment-authority incident (a
+  public LLM channel with commitment authority and no boundary will
+  be tested by the public). All strict-template: facts first,
+  unknowns kept unknown, what-this-does-NOT-demonstrate sections.
+  Sources SRC-REPORT-013..016 (page-inspected, honest limitations).
+- Twelve paper notes (21–32: CaMeL, AgentDojo, Sandbagging,
+  Explore-Establish-Exploit, DPO, InstructGPT, Debate, Sycophancy,
+  Mirage, Constitutional AI, GCG, Verbalized confidence) + comparison
+  C06 (safety cases vs red-team reports) — the notebook grows to
+  32 + 6, every note ending in a falsifiable extension runnable at
+  course scale.
+- The learner surface: `prerequisites/verifying-sources.md` (the
+  field guide with the five-minute drill), `roadmaps/audit-only.md`
+  (the reviewer's route), `roadmaps/first-90-days.md` (week-by-week
+  plans per role, artifact-gated), `FAQ.md`, `MAINTENANCE.md` (the
+  operating manual), and `AWESOME.md` (the annotated resource index —
+  the README's promised-but-unbuilt item, delivered).
+- GLOSSARY +18 terms; chapter cross-links (ch.04/05/06/07/13/15/20/22
+  gain note and incident companions); README/START_HERE/SYLLABUS/
+  ROADMAP honest-state corrections and the dashboard as front door;
+  CITATION.cff and THIRD_PARTY_NOTICES updated for the completed
+  scope and the new quoted material.
+- CI hardened: the corrupted `branches: ain]` trigger fixed, the
+  missing-values audit as a CI step, the dashboard freshness test
+  (committed payload vs fresh build, field-by-field), the PR-template
+  audit/regeneration checkboxes, and the AGENTS.md resume protocol
+  carrying the session's own two push-then-fail lessons.
+
 ### Added (2026-10-25 — the dashboard website and the careers layer)
 
 - `index.html` + `scripts/build_dashboard.py` +
