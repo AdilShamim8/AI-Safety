@@ -36,6 +36,8 @@ full-text-read sources; abstract-level entries say so, per the
 | 26 | [InstructGPT: the pipeline that made helpful a target](26-instructgpt-pipeline.md) | SRC-PAPER-009 | abstract-level |
 | 27 | [AI Safety via Debate: the optimality claim and its load-bearing assumption](27-debate-optimality.md) | SRC-PAPER-015 | abstract-level |
 | 28 | [Sycophancy: the preference pipeline, training in flattery](28-sycophancy-preference-pressure.md) | SRC-PAPER-018 | abstract-level |
+| 29 | [Are Emergent Abilities a Mirage? Metric choice manufactures thresholds](29-emergent-abilities-mirage.md) | SRC-PAPER-095 | abstract-level |
+| 30 | [Constitutional AI: supervision moved into a document](30-constitutional-ai.md) | SRC-PAPER-011 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one
