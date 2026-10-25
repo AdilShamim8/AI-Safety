@@ -4239,3 +4239,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-131
+  title: 'The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks'
+  authors_or_organization: Nicholas Carlini, Chang Liu, Úlfar Erlingsson, Jernej Kos (+1 more)
+  url: https://arxiv.org/abs/1802.08232
+  source_type: paper
+  publication_date: '2018-02-22'
+  version: 1802.08232v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/56-secret-sharer-memorization.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)

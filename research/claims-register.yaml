@@ -2507,3 +2507,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0202
+  claim: A testing methodology quantitatively assesses the risk that rare or unique training-data sequences
+    are unintentionally memorized by generative sequence models, enabling training choices that minimize
+    memorization; experiments show unintended memorization is persistent, hard to avoid, and can have
+    serious consequences for models trained on sensitive data.
+  source: SRC-PAPER-131
+  section_or_page: arXiv:1802.08232 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; methodology, purpose,
+    and persistent-hard-to-avoid verdict stated in the abstract, metric details and numbers unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
