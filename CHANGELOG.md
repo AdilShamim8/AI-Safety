@@ -7,6 +7,30 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### Session 3 - the website (2026-10-25)
+
+- `index.html` redesigned from a dark widget dashboard into the full
+  editorial website the repository's front door deserves: seventeen
+  section-numbered surfaces on warm paper with ink typography and one
+  oxblood accent, a sticky table of contents with scrollspy, a drop-cap
+  masthead with the generated standing-facts line, the evidence ladder
+  with real access-level counts, the honesty ledger, the complete
+  SYLLABUS course catalog grouped by route with a route filter, all ten
+  projects with their honest headlines, the full notebook index (search
+  + method-level filter), the fourteen-incident four-era timeline,
+  searchable dataset/source/claims/glossary explorers, the careers layer
+  with route sequences and progress trackers, the quickstart with the
+  three schedules, the FAQ, the AWESOME resource map with register-ID
+  chips, and a colophon.
+- `scripts/build_dashboard.py` gains eight extraction surfaces, all
+  parsed from the repository's own documents (SYLLABUS, GLOSSARY, FAQ,
+  AWESOME, study schedules, notes index, chapter directories, access
+  counts); `tests/test_dashboard.py`'s payload contract is unchanged and
+  still green.
+- AWESOME.md count drift caught and corrected ("22 verified cards" vs
+  the 43-card catalog); `tests/test_count_drift.py` now pins the
+  corrected phrase.
+
 ### Session 2 — the judged deepening (opened 2026-10-25)
 
 - `planning/SESSION2_JUDGE_AUDIT.md` — the LLM-as-judge pass over the whole

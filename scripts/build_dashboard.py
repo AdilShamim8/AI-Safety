@@ -397,6 +397,381 @@ def _project_headlines() -> dict[str, str]:
     return headlines
 
 
+GH_BASE = "https://github.com/AdilShamim8/AI-Safety"
+
+#: The four routes and the synthesis block, as the dependency map draws
+#: them (planning/dependency-map.md) — prose structure, not counts.
+ROUTES = [
+    {
+        "slug": "alignment-research",
+        "name": "Alignment research",
+        "verb": "investigate failures",
+        "purpose": "Investigate alignment interventions and their failure modes.",
+        "evidence": ("Replication, ablation, critical research memo, falsifiable extension"),
+        "sequence": (
+            "03 specification → 04 preference learning → 05 oversight → "
+            "07 deception → 09–11 interpretability → 18 faithfulness"
+        ),
+        "url": f"{GH_BASE}/tree/main/roadmaps/alignment-research.md",
+    },
+    {
+        "slug": "ai-security-engineering",
+        "name": "AI security engineering",
+        "verb": "bound them",
+        "purpose": "Secure AI applications and agent workflows.",
+        "evidence": (
+            "Threat model, isolated attack/defense evaluation, regression "
+            "suite, remediation report"
+        ),
+        "sequence": (
+            "12 adversarial ML → 13 LLM app security → 14 agent/MCP "
+            "security → 15 red teaming → 16 privacy & supply chains → 19 multimodal"
+        ),
+        "url": f"{GH_BASE}/tree/main/roadmaps/ai-security-engineering.md",
+    },
+    {
+        "slug": "evaluations-and-assurance",
+        "name": "Evaluations and assurance",
+        "verb": "test and argue them",
+        "purpose": "Design credible tests and contextual safety arguments.",
+        "evidence": (
+            "Dataset card, validated scorers, uncertainty analysis, "
+            "monitoring study, evidence-backed safety case"
+        ),
+        "sequence": (
+            "05 oversight → 08 control → 17 shift & reliability → "
+            "22 safety engineering → 23 governance"
+        ),
+        "url": f"{GH_BASE}/tree/main/roadmaps/evaluations-and-assurance.md",
+    },
+    {
+        "slug": "audit-only",
+        "name": "Audit-only",
+        "verb": "read and judge",
+        "purpose": "Read and judge the build without PyTorch — the verification route.",
+        "evidence": "Critical audits, register cross-checks, honest-tier reviews",
+        "sequence": "01–02 spine → the registers → chapter critiques → the audit checklist",
+        "url": f"{GH_BASE}/tree/main/roadmaps/audit-only.md",
+    },
+]
+
+#: Chapter blocks as the dependency map and route pages group them: display
+#: name, short key (used by the page's route filter), and member chapter ids.
+#: Chapter 05 appears in both the alignment and evaluations lines (the route
+#: pages both claim it); the catalog shows it once, tagged for both. Chapter
+#: 06 is the evaluations route's honesty/calibration unit per that route
+#: page's own sequence (week 4: "Ch.06 honesty, uncertainty, selective
+#: prediction").
+CHAPTER_BLOCKS = [
+    ("The common methodological spine", "spine", ["01", "02"]),
+    ("The alignment-research line", "alignment", ["03", "04", "05", "07", "09", "10", "11", "18"]),
+    ("The security-engineering line", "security", ["12", "13", "14", "15", "16", "19"]),
+    ("The evaluations-and-assurance line", "evaluations", ["06", "08", "17", "22", "23"]),
+    ("The synthesis", "synthesis", ["20", "21", "24"]),
+]
+
+#: Incident-era descriptions, from research/notes/incidents/README.md.
+INCIDENT_ERAS = [
+    {
+        "era": "liability & authority (2023-24)",
+        "range": "01-03",
+        "desc": (
+            "The classic era: the generation channel meets contract law. "
+            "Air Canada's tribunal, DPD's regression, Chevy's $1 Tahoe."
+        ),
+    },
+    {
+        "era": "rollout & channel (2023-25)",
+        "range": "04-08",
+        "desc": (
+            "AI Overviews' satire laundering, MyCity's unlawful answers, "
+            "Cursor's invented policy, Slack's injection exfiltration, Samsung's pastes."
+        ),
+    },
+    {
+        "era": "history (2016-23)",
+        "range": "09-11",
+        "desc": (
+            "The incidents the modern conversation grew from — Bing's spilled "
+            "prompt, Tay's sixteen hours, Sydney's two hours — reviewed under "
+            "the same template."
+        ),
+    },
+    {
+        "era": "accountability (2018-23)",
+        "range": "12-14",
+        "desc": (
+            "The harm arrived through the training data and the audit was the "
+            "instrument that worked: Galactica's three-day withdrawal, the "
+            "EEOC's first AI-bias settlement, Amazon's scrapped recruiting engine."
+        ),
+    },
+]
+
+#: The three schedules, parsed from roadmaps/study-schedules.md.
+
+
+def _md_inline(text: str) -> str:
+    """Minimal inline-markdown renderer for prose pulled out of the repo's
+    own documents: bold, code spans, and links (relative targets are
+    absolutized to the GitHub blob URL so the single-file page stays
+    navigable). Text is HTML-escaped first; everything else is additive."""
+    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    def _link(m: re.Match[str]) -> str:
+        label, target = m.group(1), m.group(2)
+        if target.startswith(("http", "#", "mailto:")):
+            href = target
+        else:
+            href = f"{GH_BASE}/blob/main/{target}"
+        return f'<a href="{href}">{label}</a>'
+
+    text = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", _link, text)
+    text = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", text)
+    text = re.sub(r"(?<![\w&;])`([^`\n]+)`", r"<code>\1</code>", text)
+    return text
+
+
+def _paragraphs(lines: list[str]) -> list[str]:
+    """Split a run of lines into blank-line-separated paragraphs."""
+    out: list[str] = []
+    cur: list[str] = []
+    for line in lines:
+        if line.strip():
+            cur.append(line.strip())
+        elif cur:
+            out.append(" ".join(cur))
+            cur = []
+    if cur:
+        out.append(" ".join(cur))
+    return out
+
+
+def _syllabus_rows() -> list[dict[str, str]]:
+    """The 24-row course catalog from SYLLABUS.md: description, hard
+    prerequisites, core artifact, and attached projects per chapter."""
+    text = (REPO / "SYLLABUS.md").read_text(encoding="utf-8")
+    rows: list[dict[str, str]] = []
+    for line in text.splitlines():
+        m = re.match(r"\| (\d{2}) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \|$", line)
+        if not m:
+            continue
+        chapter = m.group(2)
+        if " — " in chapter:
+            title, desc = chapter.split(" — ", 1)
+        else:
+            title, desc = chapter, ""
+        prereq = m.group(3).strip()
+        rows.append(
+            {
+                "id": m.group(1),
+                "title": title.strip(),
+                "desc": desc.strip(),
+                "prereq": "" if prereq == "—" else prereq,
+                "artifact": m.group(4).strip(),
+                "projects": m.group(5).strip(),
+            }
+        )
+    return rows
+
+
+def _glossary() -> list[dict[str, str]]:
+    """Glossary terms from GLOSSARY.md's table: term, definition, common
+    confusion, and the chapters that use it."""
+    text = (REPO / "GLOSSARY.md").read_text(encoding="utf-8")
+    rows: list[dict[str, str]] = []
+    for line in text.splitlines():
+        if not line.startswith("| **"):
+            continue
+        parts = [p.strip() for p in line.split("|")]
+        if len(parts) < 6:
+            continue
+        rows.append(
+            {
+                "term": parts[1].strip("*"),
+                "def": parts[2],
+                "aliases": parts[3],
+                "confusion": parts[4],
+                "chapters": parts[5],
+            }
+        )
+    return rows
+
+
+def _faq() -> list[dict]:
+    """FAQ.md into sectioned question cards; answers keep their links as
+    GitHub-absolutized anchors."""
+    text = (REPO / "FAQ.md").read_text(encoding="utf-8")
+    sections: list[dict] = []
+    cur_section: dict | None = None
+    cur_q: dict | None = None
+    buf: list[str] = []
+    for line in text.splitlines():
+        if line.startswith("## ") and "FAQ" not in line:
+            cur_section = {"section": line[3:].strip(), "items": []}
+            sections.append(cur_section)
+            cur_q = None
+            buf = []
+            continue
+        if line.startswith("**") and line.rstrip().endswith("**") and "?" in line:
+            if cur_q is not None:
+                cur_q["a"] = _md_inline(" ".join(buf)).strip()
+            elif cur_section is not None and buf:
+                cur_section["intro"] = _md_inline(" ".join(buf))
+            buf = []
+            if cur_section is not None:
+                cur_q = {"q": _md_inline(line.strip("*")), "a": ""}
+                cur_section["items"].append(cur_q)
+            continue
+        buf.append(line)
+    if cur_q is not None:
+        cur_q["a"] = _md_inline(" ".join(buf)).strip()
+    for s in sections:
+        for item in s["items"]:
+            item["a"] = item["a"].strip()
+    return sections
+
+
+def _awesome() -> list[dict]:
+    """AWESOME.md into themed sections of annotated entries. Sections
+    without `- **bold**` entries (e.g. pointers to other repo surfaces)
+    keep their paragraph as the section note — nothing is dropped."""
+    text = (REPO / "AWESOME.md").read_text(encoding="utf-8")
+    sections: list[dict] = []
+    cur_section: dict | None = None
+    cur_entry: dict | None = None
+    para: list[str] = []
+    for line in text.splitlines():
+        if line.startswith("## ") and "AWESOME" not in line:
+            cur_section = {"section": line[3:].strip(), "entries": [], "paras": []}
+            sections.append(cur_section)
+            cur_entry = None
+            para = []
+            continue
+        if line.startswith("- **") and cur_section is not None:
+            m = re.match(r"- \*\*(.+?)\*\*(.*)$", line)
+            cur_entry = {"name": m.group(1), "rest": [m.group(2).strip()]}
+            cur_section["entries"].append(cur_entry)
+            continue
+        if cur_entry is not None and line.startswith("  "):
+            cur_entry["rest"].append(line.strip())
+            continue
+        if cur_section is not None and line.startswith("- "):
+            # non-bold list line: belongs to the section paragraph flow
+            para.append(line[2:].strip())
+            continue
+        if cur_section is not None:
+            if line.strip():
+                para.append(line.strip())
+            elif para:
+                cur_section["paras"].append(" ".join(para))
+                para = []
+    if cur_section is not None and para:
+        cur_section["paras"].append(" ".join(para))
+    out: list[dict] = []
+    for s in sections:
+        entries = []
+        for e in s["entries"]:
+            rest = " ".join(r for r in e["rest"] if r)
+            ids = re.findall(r"(?:SRC|DS)-[A-Z]+-\d+", rest)
+            note = rest
+            # strip the leading id bracket(s) and dash separator
+            note = re.sub(r"^(\s*\[[^\]]*\]\s*)+", "", note)
+            note = note.lstrip("—- ").strip()
+            entries.append(
+                {
+                    "name": e["name"],
+                    "ids": ids,
+                    "note": _md_inline(note),
+                }
+            )
+        # trim parenthetical stale-count risk from the display title
+        title = re.sub(r"\s*\(\d+[^)]*\)$", "", s["section"])
+        out.append(
+            {
+                "section": title,
+                "full_title": s["section"],
+                "entries": entries,
+                "note": _md_inline(" ".join(s["paras"])).strip(),
+            }
+        )
+    return out
+
+
+def _schedules() -> list[dict]:
+    """Study-schedule headlines from roadmaps/study-schedules.md."""
+    text = (REPO / "roadmaps" / "study-schedules.md").read_text(encoding="utf-8")
+    schedules: list[dict] = []
+    cur: dict | None = None
+    buf: list[str] = []
+    for line in text.splitlines():
+        m = re.match(r"## Schedule ([A-Z]) — (.+)$", line)
+        if m:
+            if cur is not None:
+                cur["note"] = _md_inline(" ".join(buf[:2])).strip()
+            cur = {"letter": m.group(1), "tagline": m.group(2).strip(), "note": ""}
+            schedules.append(cur)
+            buf = []
+            continue
+        if cur is not None:
+            buf.append(line)
+    if cur is not None:
+        cur["note"] = _md_inline(" ".join(buf[:2])).strip()
+    return schedules
+
+
+def _notes_index() -> dict:
+    """The research-notebook index: paper notes with their register source
+    and honest method level, plus the comparison-note titles."""
+    table = (REPO / "research" / "notes" / "README.md").read_text(encoding="utf-8")
+    papers: list[dict] = []
+    for line in table.splitlines():
+        m = re.match(
+            r"\| (\d{2}) \| \[(.+?)\]\(([\w-]+\.md)\) \| (SRC-[A-Z]+-\d+) \| (.+?) \|", line
+        )
+        if m:
+            papers.append(
+                {
+                    "no": m.group(1),
+                    "title": m.group(2),
+                    "file": m.group(3),
+                    "source": m.group(4),
+                    "level": m.group(5),
+                }
+            )
+    comparisons = []
+    for p in sorted((REPO / "research" / "notes").glob("comparison-*.md")):
+        first = p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")
+        comparisons.append({"file": p.name, "title": first})
+    return {"papers": papers, "comparisons": comparisons}
+
+
+def _dir_names(directory: str, prefix: str) -> dict[str, str]:
+    """Actual on-disk directory names keyed by chapter/project number, so
+    generated links never depend on slugifying a display title."""
+    out: dict[str, str] = {}
+    for d in sorted((REPO / directory).iterdir()):
+        if d.is_dir() and d.name.startswith(prefix):
+            num = d.name.split("-", 1)[0]
+            out[num.upper() if prefix.startswith("p") else num] = d.name
+    return out
+
+
+def _access_counts(sources_raw: list[dict]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for s in sources_raw:
+        lvl = str(s.get("access_level", "unknown"))
+        counts[lvl] = counts.get(lvl, 0) + 1
+    order = [
+        "full-text-read",
+        "abstract-read",
+        "page-inspected",
+        "metadata-only",
+        "unavailable",
+    ]
+    return {lvl: counts.get(lvl, 0) for lvl in order if counts.get(lvl, 0)}
+
+
 def build_data() -> dict:
     sources_raw = _load(REPO / "research/source-register.yaml")["sources"]
     claims_raw = _load(REPO / "research/claims-register.yaml")["claims"]
@@ -504,9 +879,27 @@ def build_data() -> dict:
         t = str(s.get("source_type", "other"))
         type_counts[t] = type_counts.get(t, 0) + 1
 
+    # The catalog surfaces parsed from the repo's own documents
+    syllabus_rows = _syllabus_rows()
+    glossary = _glossary()
+    faq = _faq()
+    awesome = _awesome()
+    schedules = _schedules()
+    notes_index = _notes_index()
+    chapter_dirs = _dir_names("chapters", "")
+    project_dirs = _dir_names("projects", "p")
+
+    # attach the real directory name to each catalog row, so generated
+    # links never depend on slugifying a display title
+    for row in syllabus_rows:
+        row["dir"] = chapter_dirs.get(row["id"], "")
+    for pr in projects:
+        pr["dir"] = project_dirs.get(pr["id"], "")
+
     return {
         "repo": {
             "source_types": dict(sorted(type_counts.items(), key=lambda kv: -kv[1])),
+            "access_counts": _access_counts(sources_raw),
             "commits": commits_count,
             "shallow": commits_shallow,
             "tests": _test_count(),
@@ -517,21 +910,31 @@ def build_data() -> dict:
             "paper_notes": papers,
             "comparison_notes": comparisons,
             "note_titles": note_titles,
+            "glossary_terms": len(glossary),
             "fs_modules": fs_modules,
             "generated_on": datetime.now(UTC).date().isoformat(),
         },
         "chapters": chapters,
+        "chapter_catalog": syllabus_rows,
+        "chapter_blocks": [{"block": b, "short": s, "ids": ids} for b, s, ids in CHAPTER_BLOCKS],
         "projects": projects,
         "datasets": datasets,
         "sources": sources,
         "claims": claims,
         "incidents": incidents,
+        "incident_eras": INCIDENT_ERAS,
         "not_executed": NOT_EXECUTED,
         "fs_track": fs_track,
         "careers": CAREERS,
+        "routes": ROUTES,
         "progress": _progress_trackers(),
         "note_coverage": _note_coverage(),
         "quickstart": QUICKSTART,
+        "notes_index": notes_index,
+        "glossary": glossary,
+        "faq": faq,
+        "awesome": awesome,
+        "schedules": schedules,
     }
 
 

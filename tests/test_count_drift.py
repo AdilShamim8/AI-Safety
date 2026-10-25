@@ -168,3 +168,4 @@ def test_awesome_counts() -> None:
     text = _squash(_read("AWESOME.md"))
     assert (f"{t['paper_notes']} paper notes and {t['comparison_notes']} comparison notes") in text
     assert f"{t['incidents']} incidents reviewed" in text
+    assert f"{t['cards']} verified cards" in text

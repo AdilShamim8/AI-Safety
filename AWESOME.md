@@ -165,7 +165,7 @@ white paper, self-reported program data), the annotation says so.
   days, Annex I 649 days out at verification date) Ch.23 teaches as
   phase-in discipline.
 
-## The dataset catalog (22 verified cards)
+## The dataset catalog (43 verified cards)
 
 Not repeated here — the cards ARE the annotation:
 [datasets/catalog.yaml](datasets/catalog.yaml). Each card traces every

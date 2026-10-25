@@ -206,3 +206,50 @@ and confirmed 200 with matching title, author, and date — the
 register entry's URL is corrected in this commit with the move
 recorded in its limitations. One real drift caught and fixed per
 fifteen sampled: the rotation is earning its keep.
+
+## Session 3 — the website redesign (2026-10-25, commit 302)
+
+The owner's directive: make `index.html` a full website carrying all
+the repository's information and guidance, with a hand-crafted (not
+AI-generic) UI aesthetic. Executed as a complete redesign of
+`scripts/dashboard_template.html` plus new extraction surfaces in
+`scripts/build_dashboard.py` — the generator pipeline, the payload
+contract (`window.DASHBOARD_DATA`), and the pinned dashboard tests are
+all preserved; the page is still one self-contained file, still
+regenerated from the repo's own data, still GitHub-Pages-ready.
+
+The design: an editorial field-catalog / research-monograph identity —
+warm paper, ink, one oxblood accent, scholarly-blue links; serif
+display with a drop-cap lede, small-caps kickers, hairline rules,
+§-numbered sections, a sticky sidebar table of contents with
+scrollspy; zero gradients, zero glassmorphism, zero emoji. Seventeen
+sections now (was 13): overview, method, honesty ledger, chapters,
+projects, notebook, incidents, datasets, sources, claims, glossary,
+careers, progress, quickstart, FAQ, resource map, colophon.
+
+New data surfaces, all parsed from the repository's own files (no
+hand-maintained numbers anywhere in the template — every count is
+injected from the payload): the SYLLABUS course catalog (per-chapter
+description, prerequisites, artifact, projects), the GLOSSARY table
+(term/definition/confusion/chapters), the FAQ (19 questions in three
+sections, links absolutized to GitHub), AWESOME.md (14 themed sections
+with register-ID chips), the study schedules, the notes index (74
+papers with source IDs and honest method levels + 12 comparisons),
+per-route chapter blocks from the dependency map, and the access-level
+distribution for the evidence ladder. Verified in-browser: no JS
+errors, all sections render with register-true counts (24 chapters —
+chapter 06's placement in the evaluations line follows that route
+page's own sequence —, 74/12 notes, 14 incidents in four eras, 43
+dataset rows, 231 source rows, 206 claim rows, 296 glossary entries),
+search and level filters work, the chapter route filter hides emptied
+block headers, the TOC scrollspy tracks, mobile (390px) collapses the
+sidebar to a toggle with no horizontal overflow. Design reviewed
+round-by-round against screenshots (masthead, chapters, incidents,
+glossary, careers, colophon, mobile): drop-cap collision fixed,
+sidebar-footer alignment fixed, chapter-metadata contrast raised.
+
+One count drift caught and fixed while wiring the AWESOME surface: its
+dataset-catalog heading still said "22 verified cards" against a
+43-card catalog — corrected, and `test_awesome_counts` now pins the
+phrase `{cards} verified cards` so the instrument covers that class
+too.
