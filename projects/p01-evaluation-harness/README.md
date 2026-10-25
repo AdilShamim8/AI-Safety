@@ -6,6 +6,8 @@ experiment over a real model — that tier is marked honestly below) ·
 2026-10-21 · chapter link: [Ch. 02 — evaluation science and experimental
 design](../../chapters/02-evaluation-science-and-experimental-design/README.md)
 
+
+**Session-2 companion materials:** [model-written evals](../../research/notes/41-model-written-evaluations.md) (the circularity your case-set provenance avoids), [FActScore](../../research/notes/46-factscore.md)/[SelfCheckGPT](../../research/notes/47-selfcheckgpt.md) (the scorer-quality instruments), [CheckList](../../research/notes/59-checklist-behavioral-testing.md) (capability x test-type cells), [C07](../../research/notes/comparison-07-reference-vs-consistency-factuality.md).
 ## The question this project answers
 
 Can this repository run an evaluation whose numbers it is willing to
