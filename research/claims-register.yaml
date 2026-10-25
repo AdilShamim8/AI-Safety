@@ -2531,3 +2531,17 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0204
+  claim: 'Three log-linear relationships quantify the degree to which large language models emit memorized
+    training data: memorization significantly grows with model capacity and with the number of times an
+    example has been duplicated (the third stated axis truncates in the API record and is recorded rather
+    than invented) — with memorization framed as undesirable on privacy, utility, and fairness grounds
+    simultaneously.'
+  source: SRC-PAPER-133
+  section_or_page: arXiv:2202.07646 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; the log-linear claim,
+    the first two axes, and the three-fold framing stated in the abstract; slopes and the truncated third
+    axis unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

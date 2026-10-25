@@ -1,6 +1,6 @@
 # Research notes
 
-The research notebook: **57 paper notes**, **12 comparison notes**, and
+The research notebook: **58 paper notes**, **12 comparison notes**, and
 **11 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 58 | [Quantifying memorization: three log-linear laws for the governance knobs](58-quantifying-memorization.md) | SRC-PAPER-133 | abstract-level |
 | 57 | [Training-data extraction: publishing the model publishes some of the data](57-extracting-training-data.md) | SRC-PAPER-132 | abstract-level |
 | 56 | [The Secret Sharer: unintended memorization, measured first](56-secret-sharer-memorization.md) | SRC-PAPER-131 | abstract-level |
 | 55 | [TRADES: the robustness-accuracy trade-off, decomposed and priced](55-trades-robustness-accuracy.md) | SRC-PAPER-130 | abstract-level |
