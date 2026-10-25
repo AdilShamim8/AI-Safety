@@ -6,6 +6,29 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-25 — the dashboard website and the careers layer)
+
+- `index.html` + `scripts/build_dashboard.py` +
+  `scripts/dashboard_template.html`: the whole course as one
+  self-contained verified website — nine widget sections (build
+  numbers, the judge's evidence ladder, chapter map, project cards,
+  dataset/source/claims explorers with live filters, the three career
+  tracks with the progress ladder, the beginner quickstart). Generated
+  from the repository's own registers; zero external dependencies;
+  6 generator tests pin the contract.
+- `scripts/audit_missing.py`: the repo-wide missing-values audit as a
+  permanent instrument (six checks; first run caught three stale
+  content-matrix paths; runs in CI with 4 regression tests).
+- `roadmaps/careers-index.md`: the three role families mapped to the
+  live job market — dated demand signal with per-claim provenance
+  (553+900 open roles, SANS four-titles-hiring-today, MATS terms and
+  self-reported outcomes, employer-disclosed salary ranges), entry
+  mechanisms per role, and the five-rung artifact-based progress
+  ladder. Registers +4 sources (SRC-CURR-005..008, page-inspected) and
+  +4 claims (CLM-0164..0167) with counterevidence.
+- README/START_HERE: stale status lines corrected (the README still
+  said 0/24 chapters); the dashboard is now the front door.
+
 ### Added (2026-10-25 — P10 capstone: agent evaluation and assurance dossier)
 
 - `src/ai_safety_course/assurance/`: the course's integrating artifact —
