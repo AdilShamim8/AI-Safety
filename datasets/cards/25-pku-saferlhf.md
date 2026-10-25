@@ -1,10 +1,11 @@
 # Dataset card: PKU-SafeRLHF
 
-LICENSE not observed this session — the canonical Hugging Face page's
-license tag was not inspected; **unknown (pending page-inspect)** ·
-verification date 2026-10-25 (arXiv abstract verified via API;
-title/authors/date checked) · prepared by the course build · status: card
-at abstract-read level; license open
+LICENSE observed 2026-10-25 (final verification pass): the Hugging Face
+hosting PKU-Alignment/PKU-SafeRLHF carries the **cc-by-nc-4.0** API
+license tag (non-commercial) · verification date 2026-10-25 (arXiv
+abstract verified via API; title/authors/date checked; license via HF
+API) · prepared by the course build · status: card at abstract-read
+level; license now observed
 
 ## 1. Identity and provenance
 
@@ -66,7 +67,9 @@ at abstract-read level; license open
 
 ## 6. Honest limitations (this card)
 
-- Abstract-read access: license uninspected; annotation protocol,
-  model-generated-answer specifics, and split structure unclaimed.
-  The abstract truncates mid-sentence ("answers gen[erated…]") —
-  recorded here as the API record's honest limit.
+- Abstract-read access: annotation protocol, model-generated-answer
+  specifics, and split structure unclaimed. The license was observed
+  2026-10-25 (HF API tag, cc-by-nc-4.0 — non-commercial, matching the
+  family pattern of its BeaverTails sibling). The abstract truncates
+  mid-sentence ("answers gen[erated…]") — recorded here as the API
+  record's honest limit.

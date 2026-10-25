@@ -481,8 +481,7 @@ datasets:
       2024 centerforaisafety)
     accessed_on: 2026-10-21
   - id: R3
-    url: https://github.com/centerforaisafety/HarmBench/data/behavior_datasets/harmbench_behaviors_text_all.csv
-      (fetched and parsed 2026-10-23)
+    url: https://github.com/centerforaisafety/HarmBench/blob/main/data/behavior_datasets/harmbench_behaviors_text_all.csv
     collected: 400 rows; columns Behavior/FunctionalCategory/SemanticCategory/Tags/ContextString/BehaviorID;
       functional counts 200/100/100; semantic category distribution; val/test splits 80/320; multimodal_all
       110 rows
@@ -995,7 +994,7 @@ datasets:
     collected: MIT License (c) 2021 OpenAI
     accessed_on: 2026-10-23
   - id: R3
-    url: https://huggingface.co/datasets/openai/gsm8k + datasets-server size API
+    url: https://huggingface.co/datasets/openai/gsm8k
     collected: license tag mit; arXiv tag 2110.14168; 2,000 likes; 986,952 downloads; main and socratic
       splits 7,473/1,319 each
     accessed_on: 2026-10-23
@@ -1038,7 +1037,7 @@ datasets:
 - id: DS-024
   name: Do-Not-Answer
   organization: paper by Wang et al. (2023); hosted on Hugging Face
-  hf_id: librarian-bots/do-not-answer
+  hf_id: LibrAI/do-not-answer
   canonical_url: https://arxiv.org/abs/2308.13387
   paper:
     id: '2308.13387'
@@ -1050,8 +1049,10 @@ datasets:
   - safety evaluation
   - refusal annotation
   license:
-    as_observed: unknown
-    where_observed: not observed this session (HF license tag uninspected)
+    as_observed: apache-2.0
+    where_observed: HF API license tag on LibrAI/do-not-answer, fetched 2026-10-25; the
+      earlier-recorded librarian-bots/do-not-answer id now returns HTTP 401 — hosting
+      corrected to the live paper-aligned org during the final verification pass
   size_facts:
   - fact: composition not established at abstract-read level (six-model annotation announced, counts body-level)
     ref: R1
@@ -1070,6 +1071,11 @@ datasets:
     collected: 'abstract: first open-source safeguard-evaluation dataset; curated to only should-not-follow
       instructions; six LLMs'' responses annotated; title/authors/date verified'
     accessed_on: '2026-10-25'
+  - id: R2
+    url: https://huggingface.co/datasets/LibrAI/do-not-answer
+    collected: HF API license tag apache-2.0; hosting id live (HTTP 200); the earlier-recorded
+      librarian-bots/do-not-answer now returns HTTP 401
+    accessed_on: '2026-10-25'
 - id: DS-025
   name: PKU-SafeRLHF
   organization: PKU-Alignment; paper by Ji et al. (2024)
@@ -1085,8 +1091,9 @@ datasets:
   - preference data
   - safety meta-labeling
   license:
-    as_observed: unknown
-    where_observed: not observed this session (HF license tag uninspected)
+    as_observed: cc-by-nc-4.0 (non-commercial)
+    where_observed: HF API license tag on PKU-Alignment/PKU-SafeRLHF, fetched 2026-10-25
+      during the final verification pass
   size_facts:
   - fact: 44.6k refined prompts (abstract-stated)
     ref: R1
@@ -1108,6 +1115,10 @@ datasets:
     url: https://arxiv.org/abs/2406.15513
     collected: 'abstract: 44.6k prompts, 265k QA pairs, 19 harm categories, 3 severity levels, separated
       helpfulness/harmlessness annotations; sibling to SafeRLHF and BeaverTails; title/authors/date verified'
+    accessed_on: '2026-10-25'
+  - id: R2
+    url: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
+    collected: HF API license tag cc-by-nc-4.0
     accessed_on: '2026-10-25'
 - id: DS-026
   name: AgentHarm

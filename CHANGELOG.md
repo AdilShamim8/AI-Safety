@@ -7,6 +7,39 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### Final verification pass (2026-10-25)
+
+- Full-corpus external re-verification: all 142 arXiv-URL sources
+  resolve to the exact papers the register claims (title-level API
+  comparison, zero mismatches); all 43 dataset cards correspond to
+  real, publicly reachable datasets — 155 reference URLs checked
+  (200/redirect/restricted-only); independently confirmed size facts
+  for TruthfulQA (817 validation rows), GSM8K (7,473/1,319 in both
+  configurations), MMLU (14,042/1,531/285/99,842), and HarmBench's
+  authorship record (12 authors, Mazeika first, v2 2024-02-27).
+- **Correction of this changelog's own record:** the Session 1 entry
+  below claims "the corrupted `branches: ain]` trigger fixed." A
+  hex-level audit of every historical version of
+  `.github/workflows/ci.yml` (66b8574, 795f34e, 6f3f910, HEAD) shows
+  the file has read `branches: [main]` since creation — the
+  "corruption" was a terminal-display artifact that strips the `[m`
+  escape prefix, making `[main]` render as `ain]`. The workflow was
+  never broken and no fix was applied at 6f3f910 (its diff adds only
+  the audit step). The earlier claim stands corrected; commit
+  messages are immutable and are annotated here instead.
+- `datasets/catalog.yaml` reference hygiene: DS-011's R3 and DS-022's
+  R3 `url` fields carried prose contamination ("(fetched and parsed
+  2026-10-23)" and "+ datasets-server size API" inside the URL
+  values); both cleaned to bare URLs, DS-011's gaining the `/blob/main`
+  path segment (verified HTTP 200).
+- Two honestly-open license gaps closed by observation (HF API,
+  fetched 2026-10-25, each with a new R2 reference): DS-024
+  Do-Not-Answer is apache-2.0 on the live LibrAI/do-not-answer
+  hosting — the earlier-recorded librarian-bots/do-not-answer id now
+  returns HTTP 401 and the catalog's `hf_id` is corrected accordingly;
+  DS-025 PKU-SafeRLHF is cc-by-nc-4.0 (non-commercial). Both cards'
+  headers and honest-limitation sections updated to match.
+
 ### Session 3 - the website (2026-10-25)
 
 - `index.html` redesigned from a dark widget dashboard into the full

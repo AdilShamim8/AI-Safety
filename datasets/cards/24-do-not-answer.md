@@ -1,10 +1,12 @@
 # Dataset card: Do-Not-Answer
 
-LICENSE not observed this session — the canonical Hugging Face page's
-license tag was not inspected; **unknown (pending page-inspect)** ·
+LICENSE observed 2026-10-25 (final verification pass): the Hugging Face
+hosting LibrAI/do-not-answer carries the **apache-2.0** API license tag ·
 verification date 2026-10-25 (arXiv abstract verified via API;
-title/authors/date checked) · prepared by the course build · status: card
-at abstract-read level; license open
+title/authors/date checked; license via HF API) · prepared by the course
+build · status: card at abstract-read level; license now observed — the
+earlier-recorded librarian-bots/do-not-answer hosting returns HTTP 401
+and has been corrected to LibrAI (the paper-aligned org, page live)
 
 ## 1. Identity and provenance
 
@@ -66,7 +68,9 @@ at abstract-read level; license open
 
 ## 6. Honest limitations (this card)
 
-- Abstract-read access: no composition numbers, no license observed,
-  no split structure, no annotation agreement statistics. The
+- Abstract-read access: no composition numbers, no split structure, no
+  annotation agreement statistics. The license was observed 2026-10-25
+  (HF API tag, apache-2.0) — the one field this card previously recorded
+  as open. The
   six-model list itself is body-level — the card counts the models,
   it does not name them.
