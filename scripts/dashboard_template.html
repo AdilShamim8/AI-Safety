@@ -287,6 +287,20 @@ $("#evidence-ladder").innerHTML = LEVELS.map(([lvl, cls, desc]) => {
     `<div class="n">${n}</div><div class="t">${lvl}</div><div class="d">${desc} · ${pct}%</div></div>`;
 }).join("");
 
+/* ---- source-type distribution ---- */
+(function () {
+  const el = document.createElement("div");
+  el.className = "stats";
+  el.style.marginTop = "14px";
+  const max = Math.max(...Object.values(D.repo.source_types || {1: 1}));
+  el.innerHTML = Object.entries(D.repo.source_types || {}).map(([t, n]) =>
+    `<div class="stat" title="${esc(t)}: ${n} sources"><div class="v blue">${n}</div>` +
+    `<div class="l">${esc(t)}</div></div>`
+  ).join("");
+  const anchor = document.querySelector("#evidence-ladder");
+  if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(el, anchor.nextSibling);
+})();
+
 /* ---- chapter grid ---- */
 const ROUTE_OF = { "03": "alignment", "04": "alignment", "05": "alignment", "07": "alignment", "09": "alignment", "10": "alignment", "11": "alignment", "18": "alignment",
   "12": "security", "13": "security", "14": "security", "15": "security", "16": "security", "19": "security",

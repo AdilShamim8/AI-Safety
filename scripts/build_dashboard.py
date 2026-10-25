@@ -370,8 +370,15 @@ def build_data() -> dict:
     # network, attention, transformer, moe (7 modules)
     fs_modules = 7
 
+    # Source-type distribution for the register widget
+    type_counts: dict[str, int] = {}
+    for s in sources_raw:
+        t = str(s.get("source_type", "other"))
+        type_counts[t] = type_counts.get(t, 0) + 1
+
     return {
         "repo": {
+            "source_types": dict(sorted(type_counts.items(), key=lambda kv: -kv[1])),
             "commits": commits_count,
             "shallow": commits_shallow,
             "tests": _test_count(),
