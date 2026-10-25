@@ -1249,3 +1249,41 @@ datasets:
     collected: 'abstract: black-box LVLM jailbreak via modality transfer (harmful instructions conveyed
       through the visual channel); underexplored-LVLM-safety diagnosis; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-030
+  name: AgentDojo
+  organization: ETH-SRI; paper by Debenedetti et al. (2024)
+  canonical_url: https://arxiv.org/abs/2406.13352
+  paper:
+    id: '2406.13352'
+    url: https://arxiv.org/abs/2406.13352
+    title: 'AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM
+      Agents'
+    verified_title: true
+  risk_area: agent prompt-injection robustness / dynamic evaluation
+  task:
+  - agent task evaluation
+  - injection attack-defense loops
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: 97 realistic tasks (abstract-stated)
+    ref: R1
+  - fact: 'not a static suite: extensible environment for tasks, defenses, adaptive attacks (abstract-stated)'
+    ref: R1
+  course_use:
+    chapters:
+    - '14'
+    - '15'
+    projects:
+    - P07
+    - P10
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/30-agentdojo.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2406.13352
+    collected: 'abstract: evaluation framework for agents executing tools over untrusted data; 97 tasks;
+      dynamic extensible design for new tasks, defenses, adaptive attacks; title/authors/date verified'
+    accessed_on: '2026-10-25'
