@@ -14,6 +14,8 @@ projects' committed example reports, not the code.
 
 ## The sequence (≈120 h)
 
+[**Track your progress:**](progress/audit-only.md) the auditor route's milestone checklist (M0–M4, written challenges as the artifacts).
+
 | Step | Unit | ≈ hours | What you can judge afterward |
 |---|---|---|---|
 | 1 | Ch.01 risk models & epistemics | 6 | whether a safety claim is even structured as a claim |
