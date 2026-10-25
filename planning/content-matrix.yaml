@@ -805,3 +805,11 @@ from_scratch:
     note: 07-research-methodology.md
     code: null
     maturity: complete
+
+# Session-2 layer (2026-10-25): the 34 units above are unchanged and
+# complete; session 2 added the verticals that cross them — 42 paper
+# notes (33-74), 21 dataset cards (23-43), 11 incident reviews (04-14),
+# 6 comparisons (C07-C12), 48 glossary terms, 4 progress trackers,
+# and 3 dashboard widgets. Cross-references live in each chapter's
+# Note-companions lines and each project's session-2 companion block;
+# the dashboard's coverage widget machine-checks chapter coverage.
