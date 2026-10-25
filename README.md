@@ -24,11 +24,13 @@ build is also navigable as a generated dashboard: **[index.html](index.html)**
    comparison notes, and uncertainty tracking.
 4. A collection of **reproducible, bounded experiments** and capstones
    (10 projects, each with a CPU smoke mode and an honest execution status).
-5. A generated **dashboard website** ([index.html](index.html)) — the whole
+5. An annotated **resource index** ([AWESOME.md](AWESOME.md)) — a map, not a
+   link dump: every entry registered, dated, and access-leveled.
+6. A generated **dashboard website** ([index.html](index.html)) — the whole
    build as one self-contained page: progress counters, the verification
    evidence ladder, chapter map, project cards, dataset/source/claims
    explorers, career tracks, and a beginner quickstart.
-6. A maintained **open-source project** you can navigate, run, cite, and
+7. A maintained **open-source project** you can navigate, run, cite, and
    contribute to.
 
 The organizing chain used throughout:
