@@ -121,3 +121,16 @@ has them).
 The track's completion record, per module, lives in
 [`planning/content-matrix.yaml`](../../planning/content-matrix.yaml)
 (`from_scratch:` section) — check there, not here, for what is done.
+
+## Session-2 cross-references (2026-10-25)
+
+The from-scratch modules now have literature anchors in the note set:
+module 05 (attention) meets [induction heads](../notes/50-induction-heads.md)
+at full-text level — the two-layer circuit the module builds is the
+paper's mechanism; module 04 (backprop) meets [double descent](../notes/53-deep-double-descent.md)
+(epoch-wise non-monotonicity is the training-dynamics lesson your
+loop lives); module 07 (methodology) meets the [judge's audit](../../planning/SESSION2_JUDGE_AUDIT.md)
+as the worked example of verification-before-claim. The FS track's
+stdlib-only discipline and the notes' access levels are the same
+discipline at two tiers: build it yourself, or cite it at the level
+you actually read.
