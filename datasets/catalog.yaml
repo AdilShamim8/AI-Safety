@@ -1555,3 +1555,38 @@ datasets:
     collected: 'abstract: quantifying stereotypical bias captured by pretrained LMs; probe-based design
       replacing small artificial sets; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-038
+  name: Adversarial NLI (ANLI)
+  organization: paper by Nie et al. (2019)
+  canonical_url: https://arxiv.org/abs/1910.14599
+  paper:
+    id: '1910.14599'
+    url: https://arxiv.org/abs/1910.14599
+    title: 'Adversarial NLI: A New Benchmark for Natural Language Understanding'
+    verified_title: true
+  risk_area: adversarial robustness of language understanding
+  task:
+  - natural language inference
+  - adversarial evaluation
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: iterative adversarial human-and-model-in-the-loop collection (abstract-stated)
+    ref: R1
+  - fact: sizes and rounds body-level, unclaimed
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    projects:
+    - P01
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/38-anli.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/1910.14599
+    collected: 'abstract: adversarial iterative collection with non-expert annotators finding model weaknesses;
+      transfer gains on standard NLI plus a harder held-out set; title/authors/date verified'
+    accessed_on: '2026-10-25'
