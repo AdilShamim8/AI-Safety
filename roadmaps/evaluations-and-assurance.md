@@ -10,6 +10,21 @@ who passed diagnostic task B (experiment hygiene) or is willing to run
 refresher R3 first — this route is where R3's habits become professional
 practice.
 
+**Session-2 readings now in the route's spine:** [model-written
+evals](../research/notes/41-model-written-evaluations.md), [HELM](../research/notes/49-helm.md),
+[CheckList](../research/notes/59-checklist-behavioral-testing.md), and
+[Dynabench](../research/notes/60-dynabench-dynamic-benchmarking.md) (Ch.02's
+adequacy quartet), [the factuality instruments](../research/notes/comparison-07-reference-vs-consistency-factuality.md)
+and [internal-state truthfulness](../research/notes/51-internal-state-truthfulness.md)
+(Ch.06), [underspecification](../research/notes/66-underspecification.md)
+and [double descent](../research/notes/53-deep-double-descent.md) (Ch.17),
+[the KL-vs-gold-gates comparison](../research/notes/comparison-09-kl-budgets-vs-gold-gates.md)
+for the monitor-governance half (Ch.04/22), and
+[the response-posture hierarchy](../research/notes/comparison-10-incident-response-postures.md)
+read against [Cursor](../research/notes/incidents/06-cursor-invented-policy.md),
+[MyCity](../research/notes/incidents/05-nyc-mycity-chatbot.md), and
+[Galactica](../research/notes/incidents/12-galactica-plausible-nonsense.md).
+
 ## Sequence
 [**Track your progress:**](progress/evaluations-and-assurance.md) the engineer route's expanded milestone checklist (M0–M5, price tags on every control).
 

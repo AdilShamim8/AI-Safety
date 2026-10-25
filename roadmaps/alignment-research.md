@@ -9,6 +9,21 @@ each intervention actually establishes.
 prerequisites (see [diagnostic](../prerequisites/diagnostic.md)) who wants
 to produce research-style portfolio evidence, not just read about alignment.
 
+**Session-2 readings now in the route's spine:** [the founding
+taxonomy](../research/notes/33-concrete-problems.md) (Ch.01's anchor),
+[Goodhart's curve](../research/notes/37-reward-overoptimization.md) with
+[the RLHF baseline](../research/notes/42-helpful-harmless-rlhf.md) (Ch.03/04),
+[the factuality instruments](../research/notes/comparison-07-reference-vs-consistency-factuality.md)
+(Ch.06), [Othello-GPT](../research/notes/34-emergent-world-representations.md)
+and [induction heads](../research/notes/50-induction-heads.md) (Ch.09),
+[situational awareness](../research/notes/40-taken-out-of-context.md) with
+[the two-drift comparison](../research/notes/comparison-11-situational-awareness-vs-persona-drift.md)
+(Ch.07/17), and the incentive family — [CIRL](../research/notes/62-cirl-assistance-games.md),
+[the off-switch game](../research/notes/63-off-switch-game.md),
+[power-seeking](../research/notes/67-power-seeking.md),
+[reward tampering](../research/notes/68-reward-tampering.md) — for the
+theory depth the proposal will be judged on.
+
 ## Sequence
 [**Track your progress:**](progress/alignment-research.md) the researcher route's expanded milestone checklist (M0–M6, artifact-gated).
 

@@ -12,6 +12,16 @@ probability statement without flinching). No PyTorch required; the
 route never builds anything, it audits everything. Expect to run the
 projects' committed example reports, not the code.
 
+**Session-2 readings now in the route's spine:** the [judge's
+audit](../planning/SESSION2_JUDGE_AUDIT.md) as a worked example of the
+auditor's own method; [the accountability-era incidents](../research/notes/incidents/README.md)
+(Galactica, EEOC-iTutorGroup, Amazon) with [the response-posture
+comparison](../research/notes/comparison-10-incident-response-postures.md);
+[the supply-strategy comparison](../research/notes/comparison-12-evaluation-supply-strategies.md)
+for reading benchmark claims critically; and the
+[verification re-check](../planning/STATUS.md) as the one-fetch drill
+done at repo scale.
+
 ## The sequence (≈120 h)
 
 [**Track your progress:**](progress/audit-only.md) the auditor route's milestone checklist (M0–M4, written challenges as the artifacts).

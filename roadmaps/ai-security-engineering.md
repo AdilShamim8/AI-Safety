@@ -10,6 +10,23 @@ likely need R4 for chapter 03 and R1/R2 light for chapter 12), or an ML
 engineer who needs R5. The route deliberately teaches both languages; the
 diagnostic tells you which side to refresh.
 
+**Session-2 readings now in the route's spine:** [obfuscated
+gradients](../research/notes/35-obfuscated-gradients.md) and
+[non-robust features](../research/notes/36-adversarial-features-not-bugs.md)
+(Ch.12), [the two-mode jailbreak taxonomy](../research/notes/44-jailbroken-failure-modes.md)
+with [the one-bit diagnostic](../research/notes/comparison-08-jailbreak-modes-defense-families.md)
+(Ch.13), [many-shot](../research/notes/45-many-shot-jailbreaking.md) and
+[Llama Guard](../research/notes/65-llama-guard-safeguard-model.md) (Ch.13/15),
+[HotFlip](../research/notes/73-hotflip.md) for the text-attack lineage,
+the memorization trilogy — [Secret Sharer](../research/notes/56-secret-sharer-memorization.md),
+[extraction](../research/notes/57-extracting-training-data.md),
+[quantification](../research/notes/58-quantifying-memorization.md) — with
+[trojan detection](../research/notes/69-trojan-detection-llms.md) (Ch.16),
+and the incident quartet: [Slack exfiltration](../research/notes/incidents/07-slack-ai-exfiltration.md),
+[Bing's spilled prompt](../research/notes/incidents/09-bing-chat-prompt-disclosure.md),
+[Samsung's pastes](../research/notes/incidents/08-samsung-chatgpt-pastes.md),
+[Tay](../research/notes/incidents/10-microsoft-tay-corruption.md).
+
 ## Sequence
 [**Track your progress:**](progress/ai-security-engineering.md) the security route's expanded milestone checklist (M0–M6, paired ledgers enforced).
 
