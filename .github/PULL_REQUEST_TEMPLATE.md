@@ -14,6 +14,12 @@ it — the build history is a review sequence (see `planning/BUILD_PLAN.md`).
       statuses match reality on disk after this PR (no status inflation).
 - [ ] No navigation links to files that do not exist (run
       `uv run python scripts/validate_repo.py .`).
+- [ ] The missing-values audit is clean: `uv run python
+      scripts/audit_missing.py` reports 0 hard findings.
+- [ ] If registers, the catalog, the matrix, incidents, or notes
+      changed: `uv run python scripts/build_dashboard.py` was run and
+      the regenerated `index.html` is in this PR (CI's freshness test
+      compares the committed payload's counts).
 - [ ] Third-party material (code, text, figures, data) is declared in
       `THIRD_PARTY_NOTICES.md` in this PR.
 - [ ] No secrets, model weights, raw datasets, caches, or unreviewed raw

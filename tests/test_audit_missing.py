@@ -54,3 +54,38 @@ def test_access_level_vocabulary() -> None:
         "metadata-only",
         "unavailable",
     }
+
+
+def test_source_schema_fields_complete() -> None:
+    """The 13-field schema is what 'complete' means for a source: the
+    audit's own vocabulary is pinned so a field cannot silently drop
+    out of SRC_FIELDS (and thus out of the audit's enforcement)."""
+    assert set(audit_missing.SRC_FIELDS) == {
+        "id",
+        "title",
+        "authors_or_organization",
+        "url",
+        "source_type",
+        "publication_date",
+        "version",
+        "accessed_on",
+        "access_level",
+        "evidence_class",
+        "peer_review_status",
+        "supports",
+        "limitations",
+        "license",
+    }
+
+
+def test_claim_schema_fields_complete() -> None:
+    assert set(audit_missing.CLAIM_FIELDS) == {
+        "id",
+        "claim",
+        "source",
+        "section_or_page",
+        "evidence_strength",
+        "assumptions",
+        "counterevidence",
+        "date",
+    }
