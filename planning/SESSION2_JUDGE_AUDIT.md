@@ -191,3 +191,22 @@ The build's honesty ledger is its most valuable artifact; this session's job
 is to grow the *coverage* without ever trading that away. Every item in
 section 2 lands with its source at its true access level, or it does not
 land at all — and the difference is recorded here and in STATUS.
+
+## 6. The judged closure (2026-10-25, end of session 2)
+
+| Gap | Verdict | Evidence |
+|---|---|---|
+| G1 — notes coverage | **CLOSED** (32 → 74 notes) | 42 session-2 notes, every source verified against the arXiv API or a fetched page; five wrong draft IDs caught pre-citation; truncations printed, never filled |
+| G2 — dataset cards | **CLOSED** (22 → 43) | 21 cards at honest abstract-read levels with licenses pending-where-uninspected; the catalog's every soft-null is an allowed-never-inferred |
+| G3 — incidents | **CLOSED** (3 → 14) | Eleven additions across four eras, each page-inspect-gated with registers SRC-REPORT-017..041 and CLM-0189..0219 |
+| G4 — progress trackers | **CLOSED** | Four route trackers (117 artifact checkboxes, 25 milestones), the index, and every route page wired |
+| G5 — dashboard interactivity | **CLOSED** | Progress widget (13 sections), incidents timeline, notes-coverage bars — the last caught a real nine-chapter bug in production |
+| G6 — glossary/comparisons | **CLOSED** | 296 terms (+48); comparisons 6 → 12, each with its falsifiable resolution |
+| G7 — verification re-checks | **CLOSED for this session** | Rotating sample re-fetched: 10/11 alive, 1 automation-403 recorded as such; the MAINTENANCE schedule owns the next rotation |
+
+The judge's closing sentence: the session's own failures — five
+wrong arXiv IDs, a masked gate failure, a silent nine-chapter sweep
+skip, one crossed commit message — were each caught by the
+instruments this repo built for exactly that purpose, and each is
+recorded in writing. That is the build's method surviving contact
+with itself, which was the only test that mattered.
