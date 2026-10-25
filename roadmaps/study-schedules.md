@@ -86,3 +86,13 @@ schedule; schedule A is a selection by design. If you need the full
 curriculum, that is schedule C, and its 350–500 h estimate is for a learner
 already past the prerequisites — add refresher hours on top if the diagnostic
 found gaps.
+
+## Where schedules meet careers
+
+Every schedule ends somewhere; [careers-index.md](careers-index.md)
+maps the destinations (the three role families, the dated demand
+signal, entry mechanisms) and [first-90-days.md](first-90-days.md)
+reverse-engineers the opening weeks from those destinations — shared
+spine first, role fork at week 5, an artifact gating every Friday.
+If a schedule above feels abstract, start there and let it choose
+your schedule for you.

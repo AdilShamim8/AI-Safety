@@ -6,6 +6,14 @@ cross-links replace repetition. Chapter directories carry the full treatment
 (each with exercises, readings with reasons, and completion criteria); this
 page is the map. Completion state lives truthfully in
 [planning/STATUS.md](planning/STATUS.md) and `planning/content-matrix.yaml`.
+Companion pages: the whole build as a generated dashboard
+([index.html](index.html)), the annotated resource index
+([AWESOME.md](AWESOME.md)), the route pages
+([roadmaps/](roadmaps/) — including [audit-only](roadmaps/audit-only.md)),
+the careers mapping ([roadmaps/careers-index.md](roadmaps/careers-index.md)
+with [first-90-days.md](roadmaps/first-90-days.md)), and the
+verification discipline every reading assumes
+([prerequisites/verifying-sources.md](prerequisites/verifying-sources.md)).
 
 | ID | Chapter | Hard prerequisites | Core artifact | Projects |
 |---|---|---|---|---|
