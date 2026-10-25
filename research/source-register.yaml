@@ -4358,3 +4358,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-138
+  title: The Off-Switch Game
+  authors_or_organization: Dylan Hadfield-Menell, Anca Dragan, Pieter Abbeel, Stuart Russell
+  url: https://arxiv.org/abs/1611.08219
+  source_type: paper
+  publication_date: '2016-11-24'
+  version: 1611.08219v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/63-off-switch-game.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)

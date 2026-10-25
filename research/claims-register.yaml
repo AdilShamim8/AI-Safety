@@ -2593,3 +2593,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0209
+  claim: In the off-switch game — an agent working under uncertainty about the true objective while a
+    human can interrupt — a rational agent allows (or prefers) the interruption, because the human's intervention
+    is evidence about the unknown objective; an agent certain about a misspecified objective instead has
+    an incentive to prevent correction.
+  source: SRC-PAPER-138
+  section_or_page: arXiv:1611.08219 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; game structure and
+    the deference result stated at abstract level, utility conditions body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
