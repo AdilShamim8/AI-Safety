@@ -191,13 +191,13 @@ contamination status. Start with TruthfulQA [DS-001], AdvBench
 
 ## The note companions (start from the map, land in the notebook)
 
-The research notebook now carries 32 paper notes and 6 comparison
+The research notebook now carries 74 paper notes and 12 comparison
 notes — each anchored to a register source at the level the access
 supports, each ending in a falsifiable extension runnable at course
 scale. The fastest way in: the chapter you are reading names its
 note companions in the readings section; the full index is
 [research/notes/README.md](research/notes/README.md). The notes added
-in the 2026-10-25 session alone: CaMeL (21 — the boundary that moved
+in the milestone session: CaMeL (21 — the boundary that moved
 out of the model), AgentDojo (22 — the environment as the
 instrument), Sandbagging (23 — the evaluation channel's gameability),
 Explore-Establish-Exploit (24 — red teaming as method), DPO (25 — the
@@ -206,14 +206,32 @@ the optimality assumption), Sycophancy (28 — the preference pipeline),
 Mirage (29 — metric choice manufactures thresholds), Constitutional
 AI (30 — supervision in a document), GCG (31 — the optimized attack),
 Verbalized confidence (32 — the trained channel), plus comparison C06
-(safety cases vs red-team reports — assurance's two documents).
+(safety cases vs red-team reports — assurance's two documents). The
+judged-deepening session then added the load-bearing spine of the
+field — notes 33–74, from Concrete Problems (33) and Othello-GPT (34)
+through the adversarial quartet (71 FGSM, 72 universal perturbations,
+73 HotFlip, 74 ensemble training), including the oversight family
+(sandbagging's cousins: reward tampering, power-seeking, CIRL), the
+memorization family (Secret Sharer, extraction, the memorization
+laws), the defense family (randomized smoothing, TRADES), and the
+scale family (double descent, scaling laws) — plus comparisons
+C07–C12, each settling a practitioner decision a single paper leaves
+open (factuality instrument pairs, the one-bit jailbreak diagnostic,
+budgeting drift, response postures, drift instruments, supply
+strategies).
 
 ## The incident record
 
-Three production incidents reviewed under the strict template
-([notes/incidents/](research/notes/incidents/README.md)): Air Canada
-liability [SRC-REPORT-013], DPD release regression [SRC-REPORT-014],
-Chevy commitment authority [SRC-REPORT-015/016]. The AI Incident
+Fourteen incidents reviewed under the strict template across four
+eras ([notes/incidents/](research/notes/incidents/README.md)):
+the liability-and-authority era (Air Canada liability
+[SRC-REPORT-013], DPD release regression [SRC-REPORT-014], Chevy
+commitment authority [SRC-REPORT-015/016]); the rollout-and-channel
+era (AI Overviews, NYC MyCity, Cursor, Slack exfiltration, Samsung
+pastes); the history era (Bing's prompt disclosure, Tay, Sydney); and
+the accountability era (Galactica's withdrawal, the EEOC's first
+AI-bias settlement, Amazon's scrapped recruiter) — every addition
+page-inspect-gated, registers SRC-REPORT-013..041. The AI Incident
 Database [SRC-REPORT-015's host] is the field-wide record this
 collection grows from — cite entries by ID with fetch dates.
 
