@@ -2741,3 +2741,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0221
+  claim: There exist universal, image-agnostic, very small perturbation vectors that cause natural images
+    to be misclassified with high probability by state-of-the-art deep classifiers — computable by a systematic
+    algorithm — establishing adversarial vulnerability as a structural property of decision geometry rather
+    than an input-specific curiosity.
+  source: SRC-PAPER-147
+  section_or_page: arXiv:1610.08401 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; existence, generality,
+    and algorithm stated; rates truncated and unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

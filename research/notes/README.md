@@ -1,6 +1,6 @@
 # Research notes
 
-The research notebook: **71 paper notes**, **12 comparison notes**, and
+The research notebook: **72 paper notes**, **12 comparison notes**, and
 **11 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 72 | [Universal adversarial perturbations: one vector, every image](72-universal-perturbations.md) | SRC-PAPER-147 | abstract-level |
 | 71 | [FGSM: the linear explanation and the one-step instrument](71-fgsm.md) | SRC-PAPER-146 | abstract-level |
 | 70 | [Scaling laws: the predictability that created every scale question](70-scaling-laws.md) | SRC-PAPER-145 | abstract-level |
 | 69 | [Trojan detection in LLMs: the specification question in detection costume](69-trojan-detection-llms.md) | SRC-PAPER-144 | abstract-level |
