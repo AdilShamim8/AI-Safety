@@ -15,10 +15,13 @@ repository-code: "https://github.com/AdilShamim8/AI-Safety"
 title: AI Safety
 abstract: >-
   An open-source research curriculum and working project repository covering
-  AI safety, alignment, AI security, and evaluations: a dependency-aware
-  roadmap, 24 advanced chapter units, 10 runnable projects with honest
-  execution status, paper notes with uncertainty tracking, and an annotated
-  resource index.
+  AI safety, alignment, AI security, and evaluations: 24 chapter units,
+  10 deterministic runnable projects with honest execution status, 24
+  paper/comparison notes, 3 production incident reviews, 22 verified
+  dataset cards, a from-scratch researcher track, an annotated resource
+  index, and a source/claims register (164 sources, 153 claims) behind
+  every number — plus a generated dashboard (index.html) presenting the
+  whole build with its evidence ladder.
 authors:
   - family-names: Shamim
     given-names: Adil
