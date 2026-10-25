@@ -91,6 +91,17 @@ mix post-cutoff developments into the baseline snapshot.
 ## Resume protocol
 
 On session start: (1) read this file; (2) read `planning/STATUS.md`; (3) run
-`git log --oneline -10` and `git status` to confirm tree state; (4) continue from the
-"next exact action" recorded in `planning/STATUS.md` instead of re-planning the
-project.
+`git log --oneline -10` and `git status` to confirm tree state; (4) verify the
+baseline is green before any new work — `uv run pytest`, `uv run ruff check .`,
+`uv run black --check .`, `uv run python scripts/validate_repo.py`, and
+`uv run python scripts/audit_missing.py` (a red baseline means fix first,
+never build on it); (5) continue from the "next exact action" recorded in
+`planning/STATUS.md` instead of re-planning the project.
+
+Watch CI after pushing (the Actions API or the run page): the 2026-10-25
+session caught two push-then-fail defects that local gates missed — the
+shallow-clone commit count (fixed by making the generator honest about
+missing history, not by weakening the test) and line-length drift that a
+partial-file lint pass skipped (fixed forward, then fixed the HABIT: run
+the whole gate over the whole repo). A red CI run is a finding about the
+gate discipline, not an inconvenience.
