@@ -349,3 +349,9 @@ brief dated 2026-10-20 (research baseline 2026-10-20; build execution began
 
 - No curriculum chapters or projects are complete yet; see
   `planning/STATUS.md` for the live, truthful state.
+
+- Message-hygiene record: commit `ebd1407` says "P02" in its title but
+  its content is P03's companion line (an interrupted loop crossed
+  streams mid-commit). P01 and P02's own lines landed correctly in the
+  two commits prior. Recorded rather than force-pushed — history stays
+  append-only; messages get caught by honesty.
