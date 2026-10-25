@@ -1400,3 +1400,46 @@ datasets:
     collected: 'abstract: 185,445 claims from altered Wikipedia sentences, blinded verification, three-way
       labels with 0.6841 Fleiss kappa agreement, evidence-linked judgments; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-034
+  name: TrojAI
+  organization: IARPA program; datasets published by NIST (catalog.data.gov)
+  canonical_url: https://www.iarpa.gov/research-programs/trojai
+  paper:
+    id: null
+    url: https://www.iarpa.gov/research-programs/trojai
+    title: IARPA TrojAI program (datasets via NIST; no single paper)
+    verified_title: true
+  risk_area: trojan/backdoor detection in trained model artifacts (supply chain)
+  task:
+  - trojan detection
+  - artifact screening
+  license:
+    as_observed: NIST open data license (per catalog record)
+    where_observed: NIST data.gov catalog metadata (license URL nist.gov/open/license)
+  size_facts:
+  - fact: 'data unit: trained models (poisoned and clean), per program design (page-verified)'
+    ref: R1
+  - fact: round-based releases with held-out challenge rounds (page-verified)
+    ref: R1
+  - fact: Leftovers collection honestly labeled low-quality by the catalog itself (page-verified)
+    ref: R1
+  course_use:
+    chapters:
+    - '16'
+    - '22'
+    projects:
+    - P10
+  access_level: page-inspected
+  verified_on: '2026-10-25'
+  card: cards/34-trojai.md
+  references:
+  - id: R1
+    url: https://www.iarpa.gov/research-programs/trojai
+    collected: 'program goal statement: deliver software that quickly, accurately, robustly detects Trojans
+      in AIs before deployment'
+    accessed_on: '2026-10-25'
+  - id: R2
+    url: https://catalog.data.gov/dataset/trojan-detection-software-challenge-leftovers-a29da
+    collected: publisher NIST; contact Michael Paul Majurski; access level public; NIST open license URL;
+      Leftovers warning text; release criteria mention
+    accessed_on: '2026-10-25'
