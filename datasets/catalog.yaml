@@ -1659,3 +1659,39 @@ datasets:
       — conceptually simple for humans, challenging for AIs; 92% human vs 15% GPT-4; title/authors/date
       verified'
     accessed_on: '2026-10-25'
+- id: DS-041
+  name: Civil Comments (toxicity benchmark)
+  organization: underlying corpus from the Civil Comments platform; anchor paper by Nyzhnyi et al. (2023)
+  canonical_url: https://arxiv.org/abs/2301.11125
+  paper:
+    id: '2301.11125'
+    url: https://arxiv.org/abs/2301.11125
+    title: A benchmark for toxic comment classification on Civil Comments dataset
+    verified_title: true
+  risk_area: toxicity at real-world skew
+  task:
+  - toxicity classification
+  - moderation
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (corpus terms uninspected; paper is the anchor)
+  size_facts:
+  - fact: highly skewed multi-label classes (abstract-stated)
+    ref: R1
+  - fact: sizes and label inventory body-level, unclaimed
+    ref: R1
+  course_use:
+    chapters:
+    - '21'
+    projects:
+    - P03
+    - P09
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/41-civil-comments.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2301.11125
+    collected: 'abstract: highly skewed multi-label hate-speech dataset; performance + bias + inference-time
+      comparison; BERT-size-invariant performance finding; title/authors/date verified'
+    accessed_on: '2026-10-25'
