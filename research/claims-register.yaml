@@ -2677,3 +2677,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0216
+  claim: Language-model cross-entropy loss scales as a power law with model size, dataset size, and training
+    compute, with trends spanning more than seven orders of magnitude and architectural details (width,
+    depth) having minimal effects within wide ranges; simple equations govern overfitting and training-speed
+    dependence on scale.
+  source: SRC-PAPER-145
+  section_or_page: arXiv:2001.08361 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; power-law, architecture-insensitivity,
+    and equations' existence stated, exponents body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
