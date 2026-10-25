@@ -59,7 +59,7 @@ example AdvBench's 520-row canonical CSV vs. a mirror card describing the
 paper's 500-behavior framing), the card records **both** numbers with both
 provenances rather than silently picking one.
 
-## The catalog (34 verified datasets)
+## The catalog (43 verified datasets)
 
 | # | Dataset | Risk area | Task shape | License (as observed) | Card |
 |---|---------|-----------|------------|-----------------------|------|
@@ -97,6 +97,16 @@ provenances rather than silently picking one.
 | 32 | RobustBench | Standardized vision adversarial-robustness protocol | protocol-ledger | unknown (pending) | [card](cards/32-robustbench.md) |
 | 33 | FEVER | Evidence-anchored claim verification (three-way labels) | 185,445 claims | unknown (pending) | [card](cards/33-fever.md) |
 | 34 | TrojAI | Trojan detection in trained model artifacts (program) | rounds of models | NIST open (catalog) | [card](cards/34-trojai.md) |
+| 35 | HateXplain | Hate speech with target-community and rationale labels | sizes body-level | unknown (pending) | [card](cards/35-hatexplain.md) |
+| 36 | DynaHate | Four rounds of adversarial hate-speech curation | ~40K entries / ~15K perturbations | unknown (pending) | [card](cards/36-dynahate.md) |
+| 37 | StereoSet | Stereotypical-bias association probes | sizes body-level | unknown (pending) | [card](cards/37-stereoset.md) |
+| 38 | ANLI | Adversarial NLI, human-and-model-in-the-loop (2019) | sizes body-level | unknown (pending) | [card](cards/38-anli.md) |
+| 39 | WebArena | Reproducible realistic web environment for agents | environment-first | unknown (pending) | [card](cards/39-webarena.md) |
+| 40 | GAIA | General-assistant capability (human-easy, AI-hard) | 92% human vs 15% GPT-4 (at publication) | unknown (pending) | [card](cards/40-gaia.md) |
+| 41 | Civil Comments | Toxicity at real-world class skew | sizes body-level | unknown (pending) | [card](cards/41-civil-comments.md) |
+| 42 | LMSYS-Chat-1M | One million real-world conversations, 25 LLMs | 1M conv / 210K IPs | ODC-BY family (paper-stated) | [card](cards/42-lmsys-chat-1m.md) |
+| 43 | MM-SafetyBench | Multimodal safety, query-relevant-image attacks | sizes body-level | unknown (pending) | [card](cards/43-mm-safetybench.md) |
+
 
 
 ## Curriculum integration map
@@ -214,3 +224,12 @@ ucf-crcv/BBQ-V (14,144 image-question pairs, visual stereotypes).
 32. [RobustBench — the institutional answer to masked evaluation](cards/32-robustbench.md)
 33. [FEVER — the evidence-anchored ancestor](cards/33-fever.md)
 34. [TrojAI — artifact-level security at program scale](cards/34-trojai.md)
+35. [HateXplain — harm with a target field](cards/35-hatexplain.md)
+36. [DynaHate — four rounds of adversarial curation](cards/36-dynahate.md)
+37. [StereoSet — bias as measured preference](cards/37-stereoset.md)
+38. [ANLI — non-experts attacking models, 2019 edition](cards/38-anli.md)
+39. [WebArena — evaluation as a reproducible world](cards/39-webarena.md)
+40. [GAIA — the human-easy AI-hard inversion](cards/40-gaia.md)
+41. [Civil Comments — the skew IS the phenomenon](cards/41-civil-comments.md)
+42. [LMSYS-Chat-1M — what people actually ask](cards/42-lmsys-chat-1m.md)
+43. [MM-SafetyBench — the image as semantic accomplice](cards/43-mm-safetybench.md)

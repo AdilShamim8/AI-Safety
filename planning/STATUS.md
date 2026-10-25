@@ -122,7 +122,7 @@ carry written protocols for whoever does.
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 24 / 24 — the full chapter spine is DONE
-- Dataset cards complete: 34 verified cards in the catalog (13 core + 9 verified 2026-10-23 + 12 session-2 cards: StrongREJECT, Do-Not-Answer, PKU-SafeRLHF, AgentHarm, InjecAgent, BIPIA, FigStep, AgentDojo, CounterFact/ROME, RobustBench, FEVER, TrojAI — arXiv-API-verified with honest abstract-read levels, licenses pending where uninspected)
+- Dataset cards complete: 43 verified cards in the catalog (13 core + 9 verified 2026-10-23 + 12 + 9 session-2 cards: StrongREJECT, Do-Not-Answer, PKU-SafeRLHF, AgentHarm, InjecAgent, BIPIA, FigStep, AgentDojo, CounterFact/ROME, RobustBench, FEVER, TrojAI, HateXplain, DynaHate, StereoSet, ANLI, WebArena, GAIA, Civil Comments, LMSYS-Chat-1M, MM-SafetyBench — arXiv-API-verified with honest abstract-read levels, licenses pending where uninspected)
 - Projects complete: **10 / 10 — the project spine is DONE** (P06 and P10 closed 2026-10-25)
 - Paper notes complete: 50 (20 required minimum + 12 added 2026-10-25 + 18 added in session 2 from the API-verified pool: 33 Concrete Problems, 34 Othello-GPT, 35 Obfuscated Gradients, 36 Non-robust Features, 37 Overoptimization, 38 Unfaithful CoT, 39 Lost in the Middle, 40 Situational Awareness, 41 Model-Written Evals, 42 HH-RLHF, 43 CoT Faithfulness, 44 Jailbroken, 45 Many-Shot [full-text, Anthropic page], 46 FActScore, 47 SelfCheckGPT, 48 Inverse Scaling, 49 HELM, 50 Induction Heads [full-text, transformer-circuits]; each with SRC + CLM registers, chapter cross-links, and a falsifiable extension)
 - Comparison notes: 6 (C01–C05 planned set + the C06 extension 2026-10-25: safety cases vs red-team reports)
