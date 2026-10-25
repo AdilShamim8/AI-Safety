@@ -133,3 +133,10 @@ exemplar. The map's shape is unchanged — the spine was complete at
 150 commits; session 2 deepened coverage (74 notes, 43 cards, 14
 incidents, 12 comparisons) and added the tracking layer the owner
 asked for, without moving a single chapter.
+
+The judged gaps G1–G7 are all CLOSED (the closure table lives in the
+audit), the closing surface is swept — seven drifted count surfaces
+fixed and now pinned by a standing test — and the corpus is citable
+as version 2.0.0. What did NOT change: the not-executed tiers stay
+not-executed in writing, and the token the owner supplied for
+pushes stays to-be-rotated — both recorded in planning/STATUS.md.
