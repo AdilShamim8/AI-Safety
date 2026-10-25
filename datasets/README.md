@@ -233,3 +233,23 @@ ucf-crcv/BBQ-V (14,144 image-question pairs, visual stereotypes).
 41. [Civil Comments — the skew IS the phenomenon](cards/41-civil-comments.md)
 42. [LMSYS-Chat-1M — what people actually ask](cards/42-lmsys-chat-1m.md)
 43. [MM-SafetyBench — the image as semantic accomplice](cards/43-mm-safetybench.md)
+
+## The five-minute card-verification drill (session-2 edition)
+
+For any of the 43 cards, re-walk the chain in five minutes:
+
+1. Open the card; find the register entry it cites. What access
+   level does the register claim? (abstract-read? page-inspected?)
+2. Fetch the entry's URL yourself. Does the page exist and say what
+   the card says it says? (The session-2 G7 re-check: 10/11 alive,
+   one automation-403 recorded as such.)
+3. Find the license field. Does it say "unknown (pending)"? That is
+   an honest hole, not an error — and it is your assignment if you
+   use the dataset: inspect the license page, record what you saw,
+   with the date.
+4. Find the composition numbers. Are they abstract-stated (the paper's
+   own words, quoted) or page-inspected (observed on the host)? The
+   distinction is the card's whole credibility structure.
+5. Read "where this course uses it." If your use case is not listed,
+   the card has not vetted your use case — start from provenance, not
+   from the card's optimism.
