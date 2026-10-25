@@ -3758,3 +3758,20 @@ sources:
   limitations: Full text read from the public page 2026-10-25 via page inspection; quantitative findings
     quoted from the page.
   license: unknown (site terms; brief quotation only)
+- id: SRC-PAPER-121
+  title: 'FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation'
+  authors_or_organization: Sewon Min, Kalpesh Krishna, Xinxi Lyu, Mike Lewis (+5 more)
+  url: https://arxiv.org/abs/2305.14251
+  source_type: paper
+  publication_date: '2023-05-23'
+  version: 2305.14251v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/46-factscore.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)

@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 46 | [FActScore: atomic decomposition turns factuality into a rate](46-factscore.md) | SRC-PAPER-121 | abstract-level |
 | 45 | [Many-shot jailbreaking: in-context attack at context-window scale](45-many-shot-jailbreaking.md) | SRC-PAPER-120 | method-level (full-text-read) |
 | 44 | [Jailbroken: competing objectives and mismatched generalization](44-jailbroken-failure-modes.md) | SRC-PAPER-119 | abstract-level |
 | 43 | [Measuring CoT faithfulness: intervention as the instrument](43-measuring-cot-faithfulness.md) | SRC-PAPER-118 | abstract-level |

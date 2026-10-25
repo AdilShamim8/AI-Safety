@@ -2262,3 +2262,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0184
+  claim: FActScore evaluates long-form generation factuality by decomposing text into atomic facts and
+    computing the percentage supported by a reliable knowledge source — addressing the mixed supported/unsupported
+    nature of generations that makes binary judgments inadequate; human evaluation of biography generations
+    from InstructGPT, ChatGPT, and PerplexityAI demonstrated the need for fine-grained scoring.
+  source: SRC-PAPER-121
+  section_or_page: arXiv:2305.14251v2 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; design and demonstrated-need
+    stated in the abstract, per-model numbers truncated and unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
