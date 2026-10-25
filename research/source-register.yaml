@@ -4597,7 +4597,7 @@ sources:
 - id: SRC-REPORT-041
   title: Why Amazon's Automated Hiring Tool Discriminated (2018-10-12)
   authors_or_organization: ACLU
-  url: https://www.aclu.org/news/privacy-technology/why-amazons-automated-hiring-tool-discriminated-against-women
+  url: https://www.aclu.org/news/womens-rights/why-amazons-automated-hiring-tool-discriminated-against
   source_type: report
   publication_date: '2018-10-12'
   version: analysis as indexed
@@ -4609,6 +4609,9 @@ sources:
   - research/notes/incidents/14-amazon-recruiting-tool.md
   limitations: Page inspected via search-result content 2026-10-25 (mechanism sentence verified in snippet);
     full analysis not independently fetched. Advocacy position recorded as organizational context.
+    URL corrected on the 2026-10-25 re-check rotation — the original /news/privacy-technology/...-against-women
+    path returned 404 (the article moved sections); the live /news/womens-rights/...-against path was
+    located via search and confirmed 200 with matching title, author (Rachel Goodman), and date.
   license: unknown (site terms; brief quotation only)
 - id: SRC-PAPER-146
   title: Explaining and Harnessing Adversarial Examples

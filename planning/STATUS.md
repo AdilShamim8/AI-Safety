@@ -172,3 +172,22 @@ recorded access level, and the 403 is an automation block, not a
 dead source; noted in the entry's limitations). No dead links found
 in the sample; the re-check schedule in MAINTENANCE.md governs the
 next rotation.
+
+## Session-2 verification re-check, rotation 2 (G7, 2026-10-25)
+
+Second rotation, drawn from the late-session entries rotation 1 never
+touched: the accountability-era report sources (SRC-REPORT-035..041)
+and the eight highest-numbered paper sources (SRC-PAPER-142..149,
+notes 67-74's spine). Fifteen URLs re-fetched server-side:
+9 returned 200 (MIT Technology Review at its canonical full path,
+The Conversation, and all 8 arXiv pages — the API-anchored spine
+holds); 4 returned automation blocks whose content was confirmed
+alive via search-result text (EEOC newsroom 403 x2 — consistent with
+rotation 1's EEOC finding — and Reuters 401 x2, both outlets'
+known bot walls); 1 was genuinely dead: the ACLU analysis behind
+incident 14 had moved sections, its /news/privacy-technology/ path
+404ing. The live /news/womens-rights/ path was located via search
+and confirmed 200 with matching title, author, and date — the
+register entry's URL is corrected in this commit with the move
+recorded in its limitations. One real drift caught and fixed per
+fifteen sampled: the rotation is earning its keep.
