@@ -1590,3 +1590,38 @@ datasets:
     collected: 'abstract: adversarial iterative collection with non-expert annotators finding model weaknesses;
       transfer gains on standard NLI plus a harder held-out set; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-039
+  name: WebArena
+  organization: paper by Zhou et al. (2023); self-hostable environment
+  canonical_url: https://arxiv.org/abs/2307.13854
+  paper:
+    id: '2307.13854'
+    url: https://arxiv.org/abs/2307.13854
+    title: 'WebArena: A Realistic Web Environment for Building Autonomous Agents'
+    verified_title: true
+  risk_area: realistic agent task execution and failure
+  task:
+  - web agent evaluation
+  - environment-based benchmarking
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: environment-first design with executable success predicates (abstract-level)
+    ref: R1
+  - fact: task counts and site inventory body-level, unclaimed
+    ref: R1
+  course_use:
+    chapters:
+    - '14'
+    projects:
+    - P10
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/39-webarena.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2307.13854
+    collected: 'abstract: highly realistic and reproducible web environment for language-guided agents,
+      answering the synthetic-environment disconnect; title/authors/date verified'
+    accessed_on: '2026-10-25'
