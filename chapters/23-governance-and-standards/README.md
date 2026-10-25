@@ -254,7 +254,7 @@ gap: framework revision pending, map pinned to 1.0."
 Preparedness [SRC-REPORT-009]; Ch. 13's OWASP usage; Ch. 20's
 framework-audit questions; Ch. 22's safety-case slots.
 
-**Note companions:** [19 Wild patterns — surveying the governance-visible failures](../../research/notes/19-wild-patterns-survey.md)
+**Note companions:** [19 Wild patterns — surveying the governance-visible failures](../../research/notes/19-wild-patterns-survey.md) Incidents: [incident 13](../../research/notes/incidents/13-eeoc-itutorgroup.md)
 
 ## 8. Exercises
 

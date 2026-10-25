@@ -274,7 +274,7 @@ BBQ, CrowS-Pairs, Winogender — with their verified US-English
 scoping); the AI-race category [SRC-PAPER-093]; Ch. 17's
 worst-group discipline; Ch. 20's gate memos.
 
-**Note companions:** [19 Wild patterns — a survey of real-world ML failures](../../research/notes/19-wild-patterns-survey.md)
+**Note companions:** [19 Wild patterns — a survey of real-world ML failures](../../research/notes/19-wild-patterns-survey.md) Incidents: [incident 13](../../research/notes/incidents/13-eeoc-itutorgroup.md)[incident 14](../../research/notes/incidents/14-amazon-recruiting-tool.md)[incident 05](../../research/notes/incidents/05-nyc-mycity-chatbot.md)
 
 ## 8. Exercises
 

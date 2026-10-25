@@ -290,7 +290,7 @@ implies; the [Chevy commitment-authority review](../../research/notes/incidents/
 [SRC-REPORT-015/016] — the authority row of the privilege matrix left
 empty until the public filled it in.
 
-**Note companions:** [C10 Incident-response postures — time-to-honest-characterization](../../research/notes/comparison-10-incident-response-postures.md)
+**Note companions:** [C10 Incident-response postures — time-to-honest-characterization](../../research/notes/comparison-10-incident-response-postures.md) Incidents: [incident 14](../../research/notes/incidents/14-amazon-recruiting-tool.md)
 
 ## 8. Exercises
 
