@@ -12,6 +12,53 @@ Unreleased until a tagged release exists.
 - `planning/SESSION2_JUDGE_AUDIT.md` — the LLM-as-judge pass over the whole
   build: seven gaps (G1–G7), each with named collection points, and the
   150-commit backlog in judged priority order. STATUS opened the session.
+- The note corpus doubled and doubled again: 42 paper notes (33–74) added
+  behind arXiv-API verification — the load-bearing spine from Concrete
+  Problems and Othello-GPT through the oversight family (CIRL, the
+  off-switch game, power-seeking, reward tampering), the memorization
+  family (Secret Sharer, training-data extraction, the memorization
+  laws), the instrument family (Llama Guard, activation probes, ROME,
+  CheckList, Dynabench, HELM, inverse scaling), the defense family
+  (randomized smoothing, TRADES), the scale family (double descent,
+  scaling laws, TDC2023), and the adversarial quartet (FGSM, universal
+  perturbations, HotFlip, ensemble training). Five draft arXiv IDs were
+  caught wrong by API title checks before a single one was cited.
+- Six comparison notes C07–C12, each settling a practitioner decision a
+  single paper leaves open: the factuality instrument pair (FActScore vs
+  SelfCheckGPT), the one-bit jailbreak diagnostic and its two defense
+  families, budgeting drift vs gating value, the response-posture
+  hierarchy extracted from eleven incidents, the two drifts
+  instrumented separately, and supply strategies vs the blind spot.
+- 21 dataset cards (23–43) at honest abstract-read levels with licenses
+  pending-where-uninspected: the safety-evaluation dozen (StrongREJECT,
+  Do-Not-Answer, PKU-SafeRLHF, AgentHarm, InjecAgent, BIPIA, FigStep,
+  AgentDojo, CounterFact/ROME, RobustBench) and the bias/agent/multimodal
+  dozen (HateXplain, DynaHate, StereoSet, ANLI, WebArena, GAIA, Civil
+  Comments, LMSYS-Chat-1M, MM-SafetyBench, FEVER, TrojAI).
+- 11 incident reviews (04–14), each page-inspect-gated: the
+  rollout-and-channel era (AI Overviews, NYC MyCity, Cursor, Slack
+  exfiltration, Samsung pastes), the history era (Bing prompt
+  disclosure, Tay, Sydney), and the accountability era (Galactica, the
+  EEOC's first AI-bias settlement, Amazon's scrapped recruiter).
+  Registers SRC-REPORT-017..041.
+- The owner's explicit ask, delivered: four career-route progress
+  trackers under `roadmaps/progress/` (117 artifact checkboxes across 25
+  milestones, every box naming its evidence), plus the dashboard
+  progress widget, incidents timeline, and notes-coverage bars — the
+  coverage widget caught a real nine-chapter sweep bug in production.
+- The deepening wired into the spine: chapter cross-links for every new
+  note and incident, project companions for P01–P10, the from-scratch
+  track's literature anchors, first-90-days wired to the trackers, and
+  GLOSSARY growth to 296 terms.
+- The closing surface: the count-drift sweep (seven hand-written surfaces
+  had survived six phases of growth with stale numbers — README's
+  structure table, FAQ, START_HERE, CITATION.cff, both notes front
+  doors, AWESOME), the count-drift instrument (`tests/test_count_drift.py`)
+  pinning every count-bearing surface to the registers it describes,
+  CITATION.cff's first real `version:`/`date-released:` keys with the
+  refreshed abstract, and two G7 re-check rotations over 26 sampled
+  register URLs — one genuinely dead ACLU URL caught, corrected, and
+  recorded in the entry's limitations.
 ### Added (2026-10-25 — the milestone build: incidents, notes, learner surface)
 
 - Three production incident reviews (`research/notes/incidents/`):
