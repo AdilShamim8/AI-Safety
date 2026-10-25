@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Safety — the course, verified</title>
+<meta name="description" content="An open-source AI-safety research curriculum: 24 chapters, 10 projects, 22 verified datasets, 160 sourced references — every claim tracked, every number auditable.">
+<style>
+:root{
+  --bg:#0e1116; --bg2:#151a21; --bg3:#1d242e; --line:#2a323d;
+  --fg:#e8ecf1; --fg2:#aab4c0; --fg3:#6d7885;
+  --acc:#4fc38f; --acc2:#5aa7e0; --warn:#e0a75a; --bad:#e06c75;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.55}
+a{color:var(--acc2);text-decoration:none}
+a:hover{text-decoration:underline}
+code,.mono{font-family:var(--mono);font-size:.85em}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(14,17,22,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:0 20px;display:flex;align-items:center;gap:6px;overflow-x:auto;white-space:nowrap}
+nav .brand{font-weight:700;color:var(--fg);padding:12px 14px 12px 0;font-size:15px}
+nav .brand .dot{color:var(--acc)}
+nav a.navlink{color:var(--fg2);font-size:13px;padding:12px 10px;border-bottom:2px solid transparent}
+nav a.navlink:hover{color:var(--fg);text-decoration:none;border-bottom-color:var(--acc)}
+main{max-width:1180px;margin:0 auto;padding:28px 20px 80px}
+
+/* hero */
+.hero{padding:34px 0 10px}
+.hero .kicker{color:var(--acc);font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.hero h1{font-size:clamp(28px,4.5vw,44px);line-height:1.12;margin:8px 0 10px;font-weight:800;letter-spacing:-.01em}
+.hero p.sub{color:var(--fg2);max-width:70ch;font-size:15.5px}
+.hero .meta{margin-top:14px;color:var(--fg3);font-size:12.5px;font-family:var(--mono);display:flex;flex-wrap:wrap;gap:16px}
+.hero .meta b{color:var(--fg2);font-weight:600}
+
+/* sections */
+section{margin-top:46px}
+section>h2{font-size:22px;font-weight:750;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+section>h2 .idx{color:var(--fg3);font-family:var(--mono);font-size:13px;font-weight:400}
+section>p.lede{color:var(--fg2);max-width:78ch;margin:6px 0 16px;font-size:14.5px}
+
+/* stat cards */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat .v{font-size:26px;font-weight:800;font-family:var(--mono);color:var(--acc)}
+.stat .v.blue{color:var(--acc2)}
+.stat .l{color:var(--fg2);font-size:12.5px;margin-top:2px}
+
+/* evidence ladder (the judge's instrument) */
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:6px}
+.rung{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;position:relative;overflow:hidden}
+.rung .bar{position:absolute;left:0;top:0;bottom:0;width:4px}
+.rung .n{font-family:var(--mono);font-size:22px;font-weight:700}
+.rung .t{font-size:13px;color:var(--fg);font-weight:600}
+.rung .d{font-size:11.5px;color:var(--fg3);margin-top:2px}
+.judge{background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:14px}
+.judge h3{font-size:15px;margin-bottom:8px}
+.judge p{color:var(--fg2);font-size:13.5px;max-width:85ch}
+.judge ol{margin:10px 0 4px 20px;color:var(--fg2);font-size:13.5px}
+.judge ol li{margin:4px 0}
+
+/* generic tables/cards */
+table.grid{width:100%;border-collapse:collapse;font-size:13px}
+table.grid th{color:var(--fg3);text-align:left;font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:8px 10px;border-bottom:1px solid var(--line)}
+table.grid td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.grid tr:hover td{background:var(--bg2)}
+.badge{display:inline-block;font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:20px;border:1px solid var(--line);color:var(--fg2);white-space:nowrap}
+.badge.green{color:var(--acc);border-color:color-mix(in srgb,var(--acc) 45%,transparent)}
+.badge.blue{color:var(--acc2);border-color:color-mix(in srgb,var(--acc2) 45%,transparent)}
+.badge.amber{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 45%,transparent)}
+.badge.red{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 45%,transparent)}
+
+/* explorer controls */
+.controls{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.controls input[type=search],.controls select{background:var(--bg2);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 12px;font-size:13px;font-family:var(--sans);min-width:200px}
+.controls input[type=search]:focus,.controls select:focus{outline:1px solid var(--acc2)}
+.controls .count{align-self:center;color:var(--fg3);font-size:12px;font-family:var(--mono)}
+.panel{background:var(--bg2);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.panel .body{max-height:430px;overflow:auto}
+
+/* chapter map */
+.chapgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:10px}
+.chap{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+.chap .no{font-family:var(--mono);color:var(--fg3);font-size:11px}
+.chap .ti{font-size:13.5px;font-weight:650;margin-top:1px}
+.chap .route{margin-top:6px;display:flex;gap:5px;flex-wrap:wrap}
+.chap.done{border-left:3px solid var(--acc)}
+
+/* project cards */
+.projgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.proj{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.proj .id{font-family:var(--mono);color:var(--acc);font-size:12px;font-weight:700}
+.proj .ti{font-size:14.5px;font-weight:700;margin:2px 0 6px}
+.proj .hd{color:var(--fg2);font-size:12.5px}
+.proj .pkg{margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--fg3)}
+
+/* career cards */
+.careergrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.career{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.career h3{font-size:15.5px}
+.career .q{color:var(--acc);font-size:12.5px;font-family:var(--mono);margin:4px 0 8px}
+.career p{color:var(--fg2);font-size:13px}
+.ladderlist{margin:10px 0 0 0;list-style:none}
+.ladderlist li{padding:7px 0 7px 26px;position:relative;border-bottom:1px dashed var(--line);color:var(--fg2);font-size:13px}
+.ladderlist li:last-child{border-bottom:none}
+.ladderlist li::before{content:"";position:absolute;left:6px;top:12px;width:9px;height:9px;border:1.5px solid var(--fg3);border-radius:2px}
+.ladderlist li b{color:var(--fg);font-weight:650}
+
+/* quickstart */
+.steps{counter-reset:step;list-style:none}
+.steps li{counter-increment:step;position:relative;padding:10px 0 10px 46px;border-bottom:1px solid var(--line);color:var(--fg2);font-size:13.5px}
+.steps li:last-child{border-bottom:none}
+.steps li::before{content:counter(step);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:50%;background:var(--bg3);border:1px solid var(--line);color:var(--acc);font-family:var(--mono);font-size:13px;display:flex;align-items:center;justify-content:center;font-weight:700}
+.steps li b{color:var(--fg)}
+.steps li code{background:var(--bg3);padding:1px 6px;border-radius:5px;border:1px solid var(--line)}
+
+footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 20px;color:var(--fg3);font-size:12.5px;max-width:1180px;margin-left:auto;margin-right:auto}
+footer p{max-width:85ch;margin:4px 0}
+@media (max-width:640px){nav .brand{display:none}}
+</style>
+</head>
+<body>
+<nav>
+  <span class="brand">AI-Safety<span class="dot">.</span></span>
+  <a class="navlink" href="#overview">Overview</a>
+  <a class="navlink" href="#method">The judge</a>
+  <a class="navlink" href="#chapters">Chapters</a>
+  <a class="navlink" href="#projects">Projects</a>
+  <a class="navlink" href="#datasets">Datasets</a>
+  <a class="navlink" href="#sources">Sources</a>
+  <a class="navlink" href="#claims">Claims</a>
+  <a class="navlink" href="#careers">Careers</a>
+  <a class="navlink" href="#quickstart">Start here</a>
+</nav>
+<main>
+  <div class="hero">
+    <div class="kicker">Open-source research curriculum · every claim tracked</div>
+    <h1>AI Safety, from first principles<br>to a portfolio you can audit.</h1>
+    <p class="sub">24 chapters, 10 implemented projects, 22 verified real-world datasets, a from-scratch researcher track, and a source-and-claims register behind every number on this page. This dashboard is generated from the repository's own data — the same discipline the course teaches, applied to itself.</p>
+    <div class="meta" id="hero-meta"></div>
+  </div>
+
+  <section id="overview">
+    <h2><span class="idx">01</span> The build, in numbers</h2>
+    <p class="lede">Generated from <code>planning/</code>, <code>research/</code>, and the test suite at build time — not hand-maintained. If a number here disagrees with the repo, the generator is broken and that is a bug.</p>
+    <div class="stats" id="stat-cards"></div>
+  </section>
+
+  <section id="method">
+    <h2><span class="idx">02</span> The judge's instrument — how information gets in</h2>
+    <p class="lede">This repository treats "the LLM as judge" as a discipline, not a vibe: no fact enters the corpus without an access level, a date, and a limitation note. The ladder below is the current state of all registered sources by evidence strength.</p>
+    <div class="ladder" id="evidence-ladder"></div>
+    <div class="judge">
+      <h3>The verification protocol every source passes</h3>
+      <p>Nothing is trusted because it is famous. The method, applied uniformly:</p>
+      <ol>
+        <li><b>Fetch the primary source</b> — the arXiv abstract page, the canonical repo, the license file — never a memory of it, and record the access level honestly.</li>
+        <li><b>Register the claim, not the vibe</b> — every number lands in the claims register with a falsifiable statement, assumptions, and counterevidence.</li>
+        <li><b>Price the weakness</b> — vendor-published figures, self-reported outcomes, and dated snapshots are marked as exactly that, in the prose and in the register.</li>
+        <li><b>Keep the audit trail hot</b> — the missing-values audit and repo validator run in CI; every cross-reference (SRC-*/CLM-*) in 134 markdown files is machine-checked.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="chapters">
+    <h2><span class="idx">03</span> The 24-chapter spine</h2>
+    <p class="lede">Three specializations share one methodological spine. Every chapter follows the ten-element structure with verified readings, worked examples, and full solutions with rubrics.</p>
+    <div class="chapgrid" id="chapter-grid"></div>
+  </section>
+
+  <section id="projects">
+    <h2><span class="idx">04</span> Ten projects, all implemented</h2>
+    <p class="lede">Deterministic, offline, stdlib-only implementations with pinned numbers and honest not-executed tiers. Each card links to the project's README with its preregistered protocol.</p>
+    <div class="projgrid" id="project-grid"></div>
+  </section>
+
+  <section id="datasets">
+    <h2><span class="idx">05</span> The verified dataset catalog</h2>
+    <p class="lede">22 real-world safety datasets with deep cards: composition facts traced to the URL each was collected from, licenses as observed, contamination status, and course integration. No dataset content is redistributed.</p>
+    <div class="controls">
+      <input type="search" id="ds-search" placeholder="Search datasets… (name, org, risk area)">
+      <select id="ds-license"><option value="">All licenses</option></select>
+      <span class="count" id="ds-count"></span>
+    </div>
+    <div class="panel"><div class="body"><table class="grid" id="ds-table"></table></div></div>
+  </section>
+
+  <section id="sources">
+    <h2><span class="idx">06</span> The source register</h2>
+    <p class="lede">Every external fact's provenance: what it is, where it lives, when it was accessed, and at what evidence strength. Filter by access level to see the honesty structure directly.</p>
+    <div class="controls">
+      <input type="search" id="src-search" placeholder="Search sources… (title, org, type)">
+      <select id="src-level"><option value="">All access levels</option></select>
+      <span class="count" id="src-count"></span>
+    </div>
+    <div class="panel"><div class="body"><table class="grid" id="src-table"></table></div></div>
+  </section>
+
+  <section id="claims">
+    <h2><span class="idx">07</span> The claims register</h2>
+    <p class="lede">Falsifiability as infrastructure: each registered claim carries its source, evidence strength, assumptions, and counterevidence. This is what "verified" means here — checkable, not trusted.</p>
+    <div class="controls">
+      <input type="search" id="clm-search" placeholder="Search claims…">
+      <span class="count" id="clm-count"></span>
+    </div>
+    <div class="panel"><div class="body"><table class="grid" id="clm-table"></table></div></div>
+  </section>
+
+  <section id="careers">
+    <h2><span class="idx">08</span> Three careers, one spine</h2>
+    <p class="lede">The course's routes map to three role families. The demand signal below is dated 2026-10-25 with per-claim provenance — live market data drifts; the register makes re-verification one fetch away.</p>
+    <div class="careergrid" id="career-grid"></div>
+  </section>
+
+  <section id="quickstart">
+    <h2><span class="idx">09</span> Start here — the beginner path</h2>
+    <p class="lede">Everything below runs on a laptop with Python 3.12 and ~2 GB of disk. No GPUs, no API keys, no dataset downloads for the deterministic track.</p>
+    <ol class="steps" id="quickstart-steps"></ol>
+  </section>
+</main>
+<footer>
+  <p><b>Generated artifact.</b> This page is built by <code>scripts/build_dashboard.py</code> from the repository's own registers, catalogs, and matrices. Regenerate with <code>uv run python scripts/build_dashboard.py</code>.</p>
+  <p><b>Licenses.</b> Original code MIT; original prose CC BY 4.0; dataset facts belong to their cited sources; no dataset content is redistributed. See <code>LICENSE</code>, <code>LICENSE-DOCS</code>, and <code>THIRD_PARTY_NOTICES.md</code>.</p>
+  <p><b>The discipline.</b> Every number on this page traces to a register entry with an access level and a date. The missing-values audit and the repo validator run in CI. If you find a number that does not trace, that is a bug — please open an issue.</p>
+</footer>
+<script>
+window.DASHBOARD_DATA = /*__DATA__*/null;
+</script>
+<script>
+"use strict";
+const D = window.DASHBOARD_DATA;
+const $ = (s, el) => (el || document).querySelector(s);
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---- hero meta ---- */
+$("#hero-meta").innerHTML =
+  `<span>commits <b>${D.repo.commits}</b></span>` +
+  `<span>tests <b>${D.repo.tests}</b></span>` +
+  `<span>sources <b>${D.repo.sources}</b></span>` +
+  `<span>claims <b>${D.repo.claims}</b></span>` +
+  `<span>generated <b>${D.repo.generated_on}</b></span>`;
+
+/* ---- overview stat cards ---- */
+$("#stat-cards").innerHTML = [
+  ["chapters", `${D.chapters.length}`, "chapters — the full spine"],
+  ["projects", `${D.projects.filter(p => p.status === "implemented").length}/${D.projects.length}`, "projects implemented"],
+  ["notes", D.repo.notes, "paper + comparison notes"],
+  ["blue", D.repo.datasets, "verified dataset cards"],
+  ["blue", D.repo.sources, "register sources"],
+  ["blue", D.repo.claims, "registered claims"],
+  ["", D.repo.tests, "deterministic tests, CI-green"],
+  ["", D.repo.commits, "commits since baseline"],
+  ["", D.repo.fs_modules, "from-scratch code modules"],
+].map(([c, v, l]) => `<div class="stat"><div class="v ${c}">${v}</div><div class="l">${l}</div></div>`).join("");
+
+/* ---- evidence ladder ---- */
+const LEVELS = [
+  ["full-text-read", "green", "the full paper/report was actually read"],
+  ["abstract-read", "blue", "the arXiv abstract page was fetched and read"],
+  ["page-inspected", "amber", "the live page was inspected on the date recorded"],
+  ["metadata-only", "", "structure only — never cites facts"],
+  ["unavailable", "red", "could not be fetched; recorded, not used"],
+];
+$("#evidence-ladder").innerHTML = LEVELS.map(([lvl, cls, desc]) => {
+  const n = D.sources.filter(s => s.access_level === lvl).length;
+  const pct = D.sources.length ? Math.round(100 * n / D.sources.length) : 0;
+  const color = lvl === "full-text-read" ? "var(--acc)" : lvl === "abstract-read" ? "var(--acc2)" : lvl === "page-inspected" ? "var(--warn)" : lvl === "unavailable" ? "var(--bad)" : "var(--fg3)";
+  return `<div class="rung"><span class="bar" style="background:${color};opacity:${0.25 + 0.75 * pct / 100}"></span>` +
+    `<div class="n">${n}</div><div class="t">${lvl}</div><div class="d">${desc} · ${pct}%</div></div>`;
+}).join("");
+
+/* ---- chapter grid ---- */
+const ROUTE_OF = { "03": "alignment", "04": "alignment", "05": "alignment", "07": "alignment", "09": "alignment", "10": "alignment", "11": "alignment", "18": "alignment",
+  "12": "security", "13": "security", "14": "security", "15": "security", "16": "security", "19": "security",
+  "17": "evaluations", "22": "evaluations", "23": "evaluations", "08": "evaluations" };
+const ROUTE_LABEL = { alignment: "alignment", security: "security", evaluations: "evaluations", shared: "shared spine" };
+$("#chapter-grid").innerHTML = D.chapters.map(ch => {
+  const r = ROUTE_OF[String(parseInt(ch.id, 10))] || "shared";
+  return `<div class="chap done"><div class="no">CH ${String(ch.id).padStart(2, "0")} · phase ${ch.phase}</div>` +
+    `<div class="ti">${esc(ch.title)}</div><div class="route"><span class="badge">${ROUTE_LABEL[r]}</span>` +
+    `<span class="badge green">${ch.maturity || "complete"}</span></div></div>`;
+}).join("");
+
+/* ---- project grid ---- */
+$("#project-grid").innerHTML = D.projects.map(p =>
+  `<div class="proj"><div class="id">${p.id} · ${p.status === "implemented" ? '<span class="badge green">implemented</span>' : '<span class="badge amber">' + p.status + "</span>"}</div>` +
+  `<div class="ti">${esc(p.title)}</div><div class="hd">${esc(p.headline)}</div>` +
+  `<div class="pkg">${p.package}</div></div>`
+).join("");
+
+/* ---- datasets explorer ---- */
+function renderTable(tbody, rows, cols) {
+  const head = "<tr>" + cols.map(c => `<th>${c.h}</th>`).join("") + "</tr>";
+  const body = rows.map(r => "<tr>" + cols.map(c => c.f(r)).join("") + "</tr>").join("");
+  tbody.innerHTML = head + body;
+}
+function explorer(tableEl, searchEl, countEl, data, filterFn, cols) {
+  function draw() {
+    const q = searchEl.value.trim().toLowerCase();
+    const rows = data.filter(d => filterFn(d, q));
+    renderTable(tableEl, rows, cols);
+    countEl.textContent = `${rows.length} / ${data.length}`;
+  }
+  searchEl.addEventListener("input", draw);
+  draw();
+  return draw;
+}
+const dsCols = [
+  { h: "Dataset", f: d => `<b>${esc(d.name)}</b><br><span style="color:var(--fg3);font-size:11.5px">${esc(d.organization)}</span>` },
+  { h: "Risk area", f: d => esc(d.risk_area) },
+  { h: "License", f: d => `<span class="badge ${/mit|apache/.test(String(d.license)) ? "green" : /cc-by|odc/.test(String(d.license)) ? "blue" : "amber"}">${esc(d.license)}</span>` },
+  { h: "Course use", f: d => esc(d.course_use) },
+  { h: "Verified", f: d => `<span class="mono">${esc(d.verified_on)}</span>` },
+  { h: "Card", f: d => `<a href="${esc(d.card_url)}">card ↗</a>` },
+];
+const dsDraw = explorer($("#ds-table"), $("#ds-search"), $("#ds-count"), D.datasets,
+  (d, q) => !q || [d.name, d.organization, d.risk_area].join(" ").toLowerCase().includes(q), dsCols);
+$("#ds-license").innerHTML += [...new Set(D.datasets.map(d => d.license))].sort().map(l => `<option value="${esc(l)}">${esc(l)}</option>`).join("");
+$("#ds-license").addEventListener("change", () => {
+  const lic = $("#ds-license").value;
+  const q = $("#ds-search").value.trim().toLowerCase();
+  const rows = D.datasets.filter(d => (!lic || d.license === lic) && (!q || [d.name, d.organization, d.risk_area].join(" ").toLowerCase().includes(q)));
+  renderTable($("#ds-table"), rows, dsCols);
+  $("#ds-count").textContent = `${rows.length} / ${D.datasets.length}`;
+});
+
+/* ---- sources explorer ---- */
+const srcLevelCls = l => l === "full-text-read" ? "green" : l === "abstract-read" ? "blue" : l === "page-inspected" ? "amber" : l === "unavailable" ? "red" : "";
+const srcCols = [
+  { h: "ID", f: s => `<span class="mono" style="color:var(--fg3)">${esc(s.id)}</span>` },
+  { h: "Source", f: s => `<b>${esc(s.title)}</b><br><span style="color:var(--fg3);font-size:11.5px">${esc(s.org)} · ${esc(s.type)}</span>` },
+  { h: "Access", f: s => `<span class="badge ${srcLevelCls(s.access_level)}">${esc(s.access_level)}</span>` },
+  { h: "Accessed", f: s => `<span class="mono">${esc(s.accessed_on)}</span>` },
+  { h: "Link", f: s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">url ↗</a>` },
+];
+explorer($("#src-table"), $("#src-search"), $("#src-count"), D.sources,
+  (s, q) => !q || [s.title, s.org, s.type, s.id].join(" ").toLowerCase().includes(q), srcCols);
+$("#src-level").innerHTML += LEVELS.map(([l]) => `<option value="${l}">${l}</option>`).join("");
+$("#src-level").addEventListener("change", () => {
+  const lvl = $("#src-level").value;
+  const q = $("#src-search").value.trim().toLowerCase();
+  const rows = D.sources.filter(s => (!lvl || s.access_level === lvl) && (!q || [s.title, s.org, s.type, s.id].join(" ").toLowerCase().includes(q)));
+  renderTable($("#src-table"), rows, srcCols);
+  $("#src-count").textContent = `${rows.length} / ${D.sources.length}`;
+});
+
+/* ---- claims explorer ---- */
+const clmCols = [
+  { h: "ID", f: c => `<span class="mono" style="color:var(--fg3)">${esc(c.id)}</span>` },
+  { h: "Claim", f: c => esc(c.claim).slice(0, 220) + (c.claim.length > 220 ? "…" : "") },
+  { h: "Source", f: c => `<span class="mono">${esc(c.source)}</span>` },
+  { h: "Strength", f: c => esc(c.evidence_strength) },
+  { h: "Date", f: c => `<span class="mono">${esc(c.date)}</span>` },
+];
+explorer($("#clm-table"), $("#clm-search"), $("#clm-count"), D.claims,
+  (c, q) => !q || [c.claim, c.source, c.id].join(" ").toLowerCase().includes(q), clmCols);
+
+/* ---- careers ---- */
+$("#career-grid").innerHTML = D.careers.map(c =>
+  `<div class="career"><h3>${esc(c.role)}</h3><div class="q">${esc(c.question)}</div>` +
+  `<p>${esc(c.summary)}</p><p style="margin-top:8px"><a href="${esc(c.route_url)}">the route →</a> · ` +
+  `<a href="${esc(c.page_url)}">the career page →</a></p>` +
+  `<ul class="ladderlist">` + c.ladder.map(r => `<li><b>${esc(r[0])}</b> — ${esc(r[1])}</li>`).join("") + `</ul></div>`
+).join("");
+
+/* ---- quickstart ---- */
+$("#quickstart-steps").innerHTML = D.quickstart.map(s =>
+  `<li><b>${esc(s.title)}</b> — ${s.body}</li>`
+).join("");
+</script>
+</body>
+</html>

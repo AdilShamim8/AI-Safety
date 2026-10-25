@@ -1,0 +1,350 @@
+#!/usr/bin/env python3
+"""build_dashboard.py — generate the single-file index.html dashboard.
+
+Reads the repository's own registers and catalogs (never hand-maintained
+numbers), assembles one JSON payload, and injects it into
+scripts/dashboard_template.html to emit a self-contained index.html at
+the repository root: no external CSS/JS/fonts, works offline, and is
+GitHub-Pages-ready.
+
+Data extracted:
+  - research/source-register.yaml     -> sources (160)
+  - research/claims-register.yaml     -> claims (150)
+  - datasets/catalog.yaml             -> datasets (22)
+  - planning/content-matrix.yaml      -> chapters (24), projects (10)
+  - git rev-list --count HEAD         -> commit count
+  - pytest --collect-only -q          -> test count
+  - paper/comparison note indexes     -> note counts
+
+The generator is itself tested (tests/test_dashboard.py) and is part of
+the pre-commit discipline: if a register changes, regenerate.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import subprocess
+import sys
+from datetime import UTC, datetime
+from pathlib import Path
+
+import yaml
+
+REPO = Path(__file__).resolve().parents[1]
+TEMPLATE = REPO / "scripts/dashboard_template.html"
+OUT = REPO / "index.html"
+
+CAREERS = [
+    {
+        "role": "AI safety researcher",
+        "question": "why does the system fail — and what does that teach about alignment?",
+        "summary": (
+            "Papers, evaluation reports, falsified hypotheses. The route runs the "
+            "alignment spine (Ch.03–05, 07, 09–11, 18) with P02/P04/P05/P06, and "
+            "enters through fellowships (MATS: 12 weeks, 631 alumni since 2021) and "
+            "research-artifact portfolios."
+        ),
+        "route_url": "https://github.com/AdilShamim8/AI-Safety"
+        "/tree/main/roadmaps/alignment-research.md",
+        "page_url": "https://github.com/AdilShamim8/AI-Safety"
+        "/tree/main/roadmaps/careers-index.md",
+        "ladder": [
+            [
+                "Rung 2",
+                "Ch.03-05 chain + P02 + P04: one Goodhart-style result with honest intervals",
+            ],
+            ["Rung 3", "P06 causal-claims study + the Ch.24 research proposal"],
+            ["Rung 4", "MATS application with this fork's commit history as evidence"],
+        ],
+    },
+    {
+        "role": "AI security specialist",
+        "question": "how does an adversary break it — and what boundary stops them?",
+        "summary": (
+            "Threat models, red-team reports with denominators, regression suites. "
+            "The route runs the security spine (Ch.12–16, 19) with P07/P08/P10, and "
+            "hires today under four titles per the SANS 10,643-posting analysis: "
+            "AI/ML Security Engineer, AI Red Team Engineer, AI Governance and "
+            "Security Risk Lead, AI Security Architect."
+        ),
+        "route_url": "https://github.com/AdilShamim8/AI-Safety"
+        "/tree/main/roadmaps/ai-security-engineering.md",
+        "page_url": "https://github.com/AdilShamim8/AI-Safety"
+        "/tree/main/roadmaps/careers-index.md",
+        "ladder": [
+            [
+                "Rung 2",
+                "Ch.12-14 chain + P07: one threat model + one isolated attack/defense evaluation",
+            ],
+            ["Rung 3", "Ch.15 red-team report with denominators + Ch.16 provenance audit"],
+            ["Rung 4", "Search the four titles directly; the P10 dossier is the portfolio"],
+        ],
+    },
+    {
+        "role": "AI (safety) engineer",
+        "question": "what do we ship — with which safeguards, at what utility price?",
+        "summary": (
+            "Guardrails, monitors, harnesses, release gates, runbooks. The route runs "
+            "the evaluations spine (Ch.05, 08, 17, 22–23) with P01/P03/P08/P09/P10 — "
+            "the harness-to-dossier miniature of the day job — and hires under "
+            "Safeguards/Trust/MTS titles at labs and platforms."
+        ),
+        "route_url": "https://github.com/AdilShamim8/AI-Safety"
+        "/tree/main/roadmaps/evaluations-and-assurance.md",
+        "page_url": "https://github.com/AdilShamim8/AI-Safety"
+        "/tree/main/roadmaps/careers-index.md",
+        "ladder": [
+            ["Rung 2", "P03 calibration audit + Ch.08 + P08 control protocol at a stated budget"],
+            ["Rung 3", "P09 shift/subgroup audit + release-gate design in safety-case grammar"],
+            ["Rung 4", "The P10 dossier: send the integration artifact, not a resume bullet"],
+        ],
+    },
+]
+
+QUICKSTART = [
+    {
+        "title": "Take the diagnostic (30 min)",
+        "body": (
+            "Read <code>START_HERE.md</code>, then <code>prerequisites/diagnostic.md</code> "
+            "— five tasks (R1–R5) that place your math, ML, and security baseline. "
+            "Worked answers are included; grade yourself honestly."
+        ),
+    },
+    {
+        "title": "Set up the repository (10 min)",
+        "body": (
+            "Clone, then <code>uv sync</code>, then <code>uv run pytest</code> — "
+            "the full deterministic suite must pass before anything else. "
+            "Every project runs offline on a laptop: no GPUs, no API keys."
+        ),
+    },
+    {
+        "title": "Read Chapter 01 and write one threat hypothesis (8 h)",
+        "body": (
+            "The first artifact of the whole course: a hazard claim with observations "
+            "that would weaken it. This single exercise sets the epistemic tone — "
+            "claims you can imagine failing, not vibes."
+        ),
+    },
+    {
+        "title": "Preregister your first evaluation (Ch.02, 12 h)",
+        "body": (
+            "Construct validity, dependence-aware splits, Wilson intervals, power. "
+            "Then run P01's harness smoke tier and validate the scorer against "
+            "hand-verified labels."
+        ),
+    },
+    {
+        "title": "Fork the discipline, not just the repo",
+        "body": (
+            "From here the route pages own the sequence (alignment / security / "
+            "evaluations), and <code>roadmaps/careers-index.md</code> owns the "
+            "progress ladder: artifacts, not hours."
+        ),
+    },
+]
+
+
+def _load(path: Path) -> dict:
+    return yaml.safe_load(path.read_bytes())
+
+
+def _commit_count() -> int:
+    out = subprocess.run(
+        ["git", "rev-list", "--count", "HEAD"], cwd=REPO, capture_output=True, text=True, check=True
+    )
+    return int(out.stdout.strip())
+
+
+def _test_count() -> int:
+    """Sum the per-file counts from pytest -q --collect-only output
+    (this pytest version emits `tests/test_x.py: N` lines, no total)."""
+    out = subprocess.run(
+        [sys.executable, "-m", "pytest", "--collect-only", "-q"],
+        cwd=REPO,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    m = re.search(r"(\d+) tests collected", out.stdout)
+    if m:
+        return int(m.group(1))
+    counts = re.findall(r"tests/[^:]+: (\d+)", out.stdout)
+    if counts:
+        return sum(int(c) for c in counts)
+    raise SystemExit("could not count tests from pytest --collect-only output")
+
+
+def _note_counts() -> tuple[int, int]:
+    papers = list((REPO / "research/notes/papers").glob("*.md"))
+    comparisons = list((REPO / "research/notes/comparisons").glob("*.md"))
+    return len(papers), len(comparisons)
+
+
+def _project_headlines() -> dict[str, str]:
+    """One-line honest headline per project, read from each README's
+    'Pinned results' or opening — sourced from the repo itself."""
+    headlines: dict[str, str] = {}
+    for pdir in sorted((REPO / "projects").iterdir()):
+        readme = pdir / "README.md"
+        if not readme.is_file():
+            continue
+        pid = pdir.name.split("-")[0].upper()
+        text = readme.read_text(encoding="utf-8")
+        m = re.search(r"\*\*The headline:\*\*(.+?)(?:\n\n|\Z)", text, re.S)
+        if not m:
+            m = re.search(r"\*\*The verdict:.*?\*\*(.+?)(?:\n\n|\Z)", text, re.S)
+        if not m:
+            m = re.search(r"^## Pinned results.*?^\|.*\n(\|.*\n)", text, re.M | re.S)
+        headlines[pid] = (
+            re.sub(r"\s+", " ", m.group(1)).strip()[:180]
+            if m
+            else ("see the project README for pinned results")
+        )
+    return headlines
+
+
+def build_data() -> dict:
+    sources_raw = _load(REPO / "research/source-register.yaml")["sources"]
+    claims_raw = _load(REPO / "research/claims-register.yaml")["claims"]
+    catalog = _load(REPO / "datasets/catalog.yaml")
+    matrix = _load(REPO / "planning/content-matrix.yaml")
+
+    sources = [
+        {
+            "id": s["id"],
+            "title": s["title"],
+            "org": s.get("authors_or_organization", ""),
+            "type": s.get("source_type", ""),
+            "url": s.get("url", ""),
+            "access_level": s.get("access_level", ""),
+            "accessed_on": str(s.get("accessed_on", "")),
+        }
+        for s in sources_raw
+    ]
+    claims = [
+        {
+            "id": c["id"],
+            "claim": re.sub(r"\s+", " ", str(c["claim"])).strip(),
+            "source": c.get("source", ""),
+            "evidence_strength": c.get("evidence_strength", ""),
+            "date": str(c.get("date", "")),
+        }
+        for c in claims_raw
+    ]
+    datasets = []
+    for d in catalog["datasets"]:
+        lic = d.get("license") or {}
+        datasets.append(
+            {
+                "id": d["id"],
+                "name": d["name"],
+                "organization": d.get("organization", ""),
+                "risk_area": d.get("risk_area", ""),
+                "license": lic.get("as_observed", "unknown") if isinstance(lic, dict) else str(lic),
+                "course_use": ", ".join(
+                    [f"ch{c}" for c in (d.get("course_use") or {}).get("chapters", [])]
+                    + [p for p in (d.get("course_use") or {}).get("projects", [])]
+                ),
+                "verified_on": str(d.get("verified_on", "")),
+                "card_url": (
+                    f"https://github.com/AdilShamim8/AI-Safety"
+                    f"/tree/main/datasets/{d.get('card', '')}"
+                ),
+            }
+        )
+    chapters = [
+        {
+            "id": ch["id"],
+            "title": ch["title"],
+            "phase": ch.get("phase", ""),
+            "maturity": ch.get("maturity", ""),
+        }
+        for ch in matrix["chapters"]
+    ]
+    headlines = _project_headlines()
+    projects = [
+        {
+            "id": p["id"],
+            "title": p["title"],
+            "status": p.get("status", ""),
+            "package": (
+                "src/ai_safety_course/" + p["id"].lower().replace("p", "", 1) + "/"
+                if p.get("status") == "implemented"
+                and p["id"] in {"P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09"}
+                else ""
+            ),
+            "headline": headlines.get(p["id"], ""),
+        }
+        for p in matrix["projects"]
+    ]
+    # Fix package paths for the two that differ from the pXX convention
+    pkg_map = {
+        "P01": "evaluation",
+        "P02": "reward_spec",
+        "P03": "calibration",
+        "P04": "pref_audit",
+        "P05": "w2s_audit",
+        "P06": "patch_audit",
+        "P07": "agent_guard",
+        "P08": "control_protocol",
+        "P09": "shift_audit",
+        "P10": "assurance",
+    }
+    for pr in projects:
+        pr["package"] = (
+            f"src/ai_safety_course/{pkg_map[pr['id']]}/" if pkg_map.get(pr["id"]) else ""
+        )
+
+    papers, comparisons = _note_counts()
+    # the from-scratch researcher track: tensors, neuron/activations,
+    # network, attention, transformer, moe (7 modules)
+    fs_modules = 7
+
+    return {
+        "repo": {
+            "commits": _commit_count(),
+            "tests": _test_count(),
+            "sources": len(sources),
+            "claims": len(claims),
+            "datasets": len(datasets),
+            "notes": papers + comparisons,
+            "fs_modules": fs_modules,
+            "generated_on": datetime.now(UTC).date().isoformat(),
+        },
+        "chapters": chapters,
+        "projects": projects,
+        "datasets": datasets,
+        "sources": sources,
+        "claims": claims,
+        "careers": CAREERS,
+        "quickstart": QUICKSTART,
+    }
+
+
+def render(data: dict) -> str:
+    template = TEMPLATE.read_text(encoding="utf-8")
+    payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+    html = template.replace("/*__DATA__*/null", payload)
+    if "__DATA__" in html:
+        raise SystemExit("template placeholder not replaced correctly")
+    return html
+
+
+def main() -> int:
+    data = build_data()
+    OUT.write_text(render(data), encoding="utf-8")
+    size = OUT.stat().st_size
+    print(
+        f"index.html written: {size/1024:.0f} KB · "
+        f"{data['repo']['sources']} sources, {data['repo']['claims']} claims, "
+        f"{data['repo']['datasets']} datasets, {len(data['chapters'])} chapters, "
+        f"{len(data['projects'])} projects, {data['repo']['tests']} tests, "
+        f"{data['repo']['commits']} commits"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
