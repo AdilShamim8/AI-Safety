@@ -1695,3 +1695,43 @@ datasets:
     collected: 'abstract: highly skewed multi-label hate-speech dataset; performance + bias + inference-time
       comparison; BERT-size-invariant performance finding; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-042
+  name: LMSYS-Chat-1M
+  organization: LMSYS (Zheng et al., 2023); distributed via Hugging Face
+  hf_id: lmsys/lmsys-chat-1m
+  canonical_url: https://arxiv.org/abs/2309.11998
+  paper:
+    id: '2309.11998'
+    url: https://arxiv.org/abs/2309.11998
+    title: 'LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset'
+    verified_title: true
+  risk_area: real-world usage distribution for safety evaluation
+  task:
+  - usage analysis
+  - deployment-representative evaluation
+  license:
+    as_observed: ODC-BY family (paper-stated; page uninspected)
+    where_observed: paper release notes (page inspection pending, recorded honestly)
+  size_facts:
+  - fact: 1M real-world conversations (abstract-stated)
+    ref: R1
+  - fact: 25 state-of-the-art LLMs (abstract-stated)
+    ref: R1
+  - fact: 210K unique IP addresses (abstract-stated)
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    - '21'
+    projects:
+    - P01
+    - P09
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/42-lmsys-chat-1m.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2309.11998
+    collected: 'abstract: one million conversations, 25 LLMs, 210K unique IPs, collected in the wild from
+      Vicuna demo and Chatbot Arena; title/authors/date verified'
+    accessed_on: '2026-10-25'
