@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 41 | [Model-written evaluations: cheap breadth, inherited blind spots](41-model-written-evaluations.md) | SRC-PAPER-116 | abstract-level |
 | 40 | [Situational awareness: out-of-context reasoning as the measurable prerequisite](40-taken-out-of-context.md) | SRC-PAPER-115 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read

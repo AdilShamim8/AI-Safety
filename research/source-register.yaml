@@ -3674,3 +3674,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-116
+  title: Discovering Language Model Behaviors with Model-Written Evaluations
+  authors_or_organization: Ethan Perez, Sam Ringer, Kamilė Lukošiūtė, Karina Nguyen (+59 more)
+  url: https://arxiv.org/abs/2212.09251
+  source_type: paper
+  publication_date: '2022-12-19'
+  version: 2212.09251v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/41-model-written-evaluations.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)
