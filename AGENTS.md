@@ -105,3 +105,25 @@ missing history, not by weakening the test) and line-length drift that a
 partial-file lint pass skipped (fixed forward, then fixed the HABIT: run
 the whole gate over the whole repo). A red CI run is a finding about the
 gate discipline, not an inconvenience.
+
+## Session-2 protocol lessons (2026-10-25)
+
+Four catches this session, each by an instrument that existed for
+exactly that purpose — future agents inherit the hardened rules:
+
+1. **Never pipe gate output through `tail`**: the pipe swallows the
+   exit code and a failed gate went green (stale dashboard, commit
+   156). The gate script now writes to a log and fails on FAILED
+   lines itself; call it bare.
+2. **Verify every arXiv ID against the API before citing**: five of
+   eighteen planned IDs were wrong in a hand-built list (wrong paper,
+   same-looking number). Title-search first, `id_list` second, note
+   the truncations the record carries.
+3. **A sweep that prints "linked" without checking the write**: the
+   nine-chapter silent skip happened because an append-only script
+   printed success for chapters it never touched. Machine-check the
+   invariant after every sweep (the coverage widget exists for this).
+4. **Commit messages can cross streams under timeout**: an
+   interrupted loop committed P03's content under P02's title. The
+   record stays append-only; the mislabel is corrected in writing
+   (CHANGELOG), never by force-push.
