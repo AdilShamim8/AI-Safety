@@ -100,7 +100,7 @@ arithmetic: [ROADMAP.md](ROADMAP.md).
 | `datasets/` | 43 verified real-world dataset cards + machine-readable catalog | **complete** — queue empty |
 | `planning/` | Build plan, status, content matrix, ADRs | **exists** — the build's durable record |
 | `templates/` | Chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review templates | **complete** (8) |
-| `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 594-test suite (401 package + 174 from-scratch + 19 repo-instrument) |
+| `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 602-test suite (401 package + 174 from-scratch + 27 repo-instrument) |
 | `scripts/` | Validator, missing-values audit, dashboard generator | **exists** — all run in CI |
 
 ## Getting started

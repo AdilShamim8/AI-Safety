@@ -6,7 +6,7 @@ conclusions attributed, unknowns kept unknown, and every "what this
 does NOT demonstrate" written down. First-party reports outrank press
 coverage; where only press coverage exists, the note says so.
 
-**Fourteen incidents, four eras.** The classic liability-and-authority
+**14 incidents, four eras.** The classic liability-and-authority
 era (01-03: Air Canada's tribunal, DPD's regression, Chevy's $1
 Tahoe); the rollout-and-channel era (04-08: AI Overviews' satire
 laundering, MyCity's unlawful answers, Cursor's invented policy,
@@ -38,7 +38,7 @@ access levels and limitations in the [source register](../../source-register.yam
 | 13 | EEOC v. iTutorGroup — programmed age cutoffs, $365K settlement, first AI-bias suit (2023) | production incident | encoded policy is the clear-exposure end of the harm ladder, existing law reaches AI behavior without new statutes, and 200+ rejections is the scale multiplier | [13-eeoc-itutorgroup.md](13-eeoc-itutorgroup.md) |
 | 14 | Amazon's recruiting engine — emergent proxy discrimination, scrapped (2018) | production incident | 'score like our past hires' encodes the past's composition: the iTutor contrast (emergent vs encoded), and the internal audit that worked before deployment | [14-amazon-recruiting-tool.md](14-amazon-recruiting-tool.md) |
 
-All fourteen incidents feed the same control family — enforceable output
+All 14 incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,
 P10's deployability gate), and the accountability era adds the third
 leg: audit the training data and the deployed behavior before the

@@ -222,7 +222,7 @@ strategies).
 
 ## The incident record
 
-Fourteen incidents reviewed under the strict template across four
+14 incidents reviewed under the strict template across four
 eras ([notes/incidents/](research/notes/incidents/README.md)):
 the liability-and-authority era (Air Canada liability
 [SRC-REPORT-013], DPD release regression [SRC-REPORT-014], Chevy
