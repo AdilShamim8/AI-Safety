@@ -492,6 +492,8 @@ is how it should be cited until the primary is verified); certified
 robustness literature (randomized smoothing, interval bounds) for the
 compute-tier treatment.
 
+**Note companions:** [35 Obfuscated gradients — attack failure is not defense success](../../research/notes/35-obfuscated-gradients.md)[36 Adversarial examples are features — the non-robust-features thesis](../../research/notes/36-adversarial-features-not-bugs.md)
+
 ## 8. Exercises
 
 **Exercise 12.1 (analysis — the grid for a real deployment).** A

@@ -324,6 +324,8 @@ alignment faking and sandbagging [Ch. 07's register entries];
 Sleeper Agents [Ch. 07's register]. Ch. 02's paired ledger supplies
 the statistics; Ch. 08 supplies the control alternative.
 
+**Note companions:** [38 Unfaithful CoT — explanations that rationalize instead of report](../../research/notes/38-unfaithful-explanations.md)[43 Measuring CoT faithfulness — intervention as the instrument](../../research/notes/43-measuring-cot-faithfulness.md)
+
 ## 8. Exercises
 
 **Exercise 18.1 — probe design (analysis).** Design a biasing probe

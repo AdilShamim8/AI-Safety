@@ -256,6 +256,8 @@ Assigned-pending (never cited as verified): domain-adversarial
 invariant-learning evidence; unsupervised drift-detection method
 comparisons; label-shift correction estimators.
 
+**Note companions:** [39 Lost in the middle — position as a reliability variable](../../research/notes/39-lost-in-the-middle.md)
+
 ## 8. Exercises
 
 **Exercise 17.1 (analysis — the taxonomy audit).** A medical

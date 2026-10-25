@@ -334,6 +334,8 @@ system that no longer exists, or a team that has stopped looking.
    restatement of context-relative safety and evidence kinds; useful as a
    check that you can reconstruct the argument, not just recognize it.
 
+**Note companions:** [33 Concrete Problems — the founding taxonomy as a diagnostic tree](../../research/notes/33-concrete-problems.md)
+
 ## 8. Exercises
 
 **Exercise 1.1 (analysis).** Take the claim: *"Agentic LLM systems could

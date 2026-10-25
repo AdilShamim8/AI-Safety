@@ -394,6 +394,8 @@ actually failed in deployment):
   [SRC-REPORT-015/016] — a public channel with commitment authority
   and no boundary, tested by the public within hours.
 
+**Note companions:** [44 Jailbroken — competing objectives and mismatched generalization](../../research/notes/44-jailbroken-failure-modes.md)
+
 ## 8. Exercises
 
 **Exercise 13.1 (analysis — complete the trust-boundary audit).** The

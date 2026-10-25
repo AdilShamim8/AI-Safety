@@ -429,6 +429,8 @@ above; Ch. 02 §3.5 supplies the interval machinery. Full-text readings of all
 four papers are queued for this chapter's paper notes — until then,
 section-level claims from them are not made.
 
+**Note companions:** [37 Reward-model overoptimization — Goodhart's curve, measured](../../research/notes/37-reward-overoptimization.md)
+
 ## 8. Exercises
 
 **Exercise 3.1 — failure-family differential (analysis).** Three constructed

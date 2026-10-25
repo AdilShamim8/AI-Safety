@@ -379,6 +379,8 @@ are part of the evidence (P01's runner emits them automatically).
   chapter's composition facts remain card-anchored
   [cards/01](../../datasets/cards/01-truthfulqa.md).
 
+**Note companions:** [41 Model-written evaluations — cheap breadth, inherited blind spots](../../research/notes/41-model-written-evaluations.md)[48 Inverse scaling — the anti-"scale will fix it" evidence](../../research/notes/48-inverse-scaling.md)[49 HELM — evaluation as a coverage discipline with named holes](../../research/notes/49-helm.md)
+
 ## 8. Exercises
 
 **Exercise 1.1 — construct audit.** A vendor reports "our model is 96%
