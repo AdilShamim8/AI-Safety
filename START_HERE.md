@@ -38,7 +38,9 @@ scale.
 - Routes: [alignment research](roadmaps/alignment-research.md),
   [AI security engineering](roadmaps/ai-security-engineering.md),
   [evaluations and assurance](roadmaps/evaluations-and-assurance.md),
-  or [audit-only](roadmaps/audit-only.md) if you want the spine
+  or [audit-only](roadmaps/audit-only.md) if you want the spine — and know that a second, judged deepening pass (notes 33–50,
+new real-world datasets and incidents, per-route progress trackers) is
+tracked openly in [the session-2 judge audit](planning/SESSION2_JUDGE_AUDIT.md)
   without a specialization — the reviewer's route (≈120 h, no
   PyTorch).
 - Schedules: 12-week focused (~10 h/week, a **selection**, not the whole
