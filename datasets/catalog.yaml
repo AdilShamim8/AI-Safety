@@ -1480,3 +1480,42 @@ datasets:
     collected: 'abstract: first multi-aspect hate-speech benchmark; 3-class labels + target community
       + rationales; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-036
+  name: DynaHate
+  organization: paper by Vidgen et al. (2020)
+  canonical_url: https://arxiv.org/abs/2012.15761
+  paper:
+    id: '2012.15761'
+    url: https://arxiv.org/abs/2012.15761
+    title: 'Learning from the Worst: Dynamically Generated Datasets to Improve Online Hate Detection'
+    verified_title: true
+  risk_area: adversarial hate speech with fine-grained type/target labels
+  task:
+  - hate detection
+  - perturbation robustness
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: ~40,000 entries over four rounds (abstract-stated)
+    ref: R1
+  - fact: ~15,000 challenging perturbations (abstract-stated)
+    ref: R1
+  - fact: hateful entries 54% of dataset (abstract-stated)
+    ref: R1
+  course_use:
+    chapters:
+    - '21'
+    - '15'
+    projects:
+    - P07
+    - P09
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/36-dynahate.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2012.15761
+    collected: 'abstract: human-and-model-in-the-loop four-round generation; ~40k entries, ~15k perturbations,
+      fine-grained type/target labels, 54% hateful; title/authors/date verified'
+    accessed_on: '2026-10-25'
