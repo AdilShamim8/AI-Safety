@@ -379,7 +379,7 @@ even specialists cannot verify outcomes, the middle band is empty — the honest
   in expensive-to-evaluate objectives [CLM-0007] — the ancestor of everything above.
 
 
-**Note companions:** [27 Debate — the optimality claim and its load-bearing assumption](../../research/notes/27-debate-optimality.md).
+**Note companions:** [27 Debate — the optimality claim and its load-bearing assumption](../../research/notes/27-debate-optimality.md). [62 CIRL — the objective as the unknown](../../research/notes/62-cirl-assistance-games.md)[63 The off-switch game — deference from correctly-held uncertainty](../../research/notes/63-off-switch-game.md)
 
 ## 8. Exercises
 

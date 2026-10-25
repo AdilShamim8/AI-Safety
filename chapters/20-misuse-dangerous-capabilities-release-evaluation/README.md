@@ -309,7 +309,7 @@ over-refusal/hallucination instruments on the safety side of the
 gate.
 
 
-**Note companions:** [29 The Mirage — metric choice manufacturing thresholds](../../research/notes/29-emergent-abilities-mirage.md).
+**Note companions:** [29 The Mirage — metric choice manufacturing thresholds](../../research/notes/29-emergent-abilities-mirage.md). [70 Scaling laws — forecasting licensed](../../research/notes/70-scaling-laws.md)
 
 ## 8. Exercises
 

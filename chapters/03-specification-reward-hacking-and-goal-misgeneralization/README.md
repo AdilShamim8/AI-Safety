@@ -429,7 +429,7 @@ above; Ch. 02 §3.5 supplies the interval machinery. Full-text readings of all
 four papers are queued for this chapter's paper notes — until then,
 section-level claims from them are not made.
 
-**Note companions:** [37 Reward-model overoptimization — Goodhart's curve, measured](../../research/notes/37-reward-overoptimization.md)
+**Note companions:** [37 Reward-model overoptimization — Goodhart's curve, measured](../../research/notes/37-reward-overoptimization.md) [62 CIRL — uncertainty as structure](../../research/notes/62-cirl-assistance-games.md)[67 Power-seeking — instrumental convergence formalized](../../research/notes/67-power-seeking.md)[68 Reward tampering — the agent edits the scoreboard](../../research/notes/68-reward-tampering.md)
 
 ## 8. Exercises
 
