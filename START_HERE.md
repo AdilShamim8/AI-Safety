@@ -26,6 +26,13 @@ tells you exactly what to study and which chapters will hurt without it.
 The point is calibration, not gatekeeping: nobody checks your answers, but
 the advanced chapters will be unpleasant if the gaps stay open.
 
+One prerequisite applies to every route and is worth five minutes
+today: [verifying sources](prerequisites/verifying-sources.md) — where
+each kind of information actually lives, what an access level is, and
+how to write a falsifiable claim. The whole course runs on that
+habit; the dashboard's evidence ladder is what it looks like at
+scale.
+
 ## Step 2 — Pick a route and a schedule (10 minutes)
 
 - Routes: [alignment research](roadmaps/alignment-research.md),
