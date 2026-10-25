@@ -59,7 +59,7 @@ example AdvBench's 520-row canonical CSV vs. a mirror card describing the
 paper's 500-behavior framing), the card records **both** numbers with both
 provenances rather than silently picking one.
 
-## The catalog (22 verified datasets)
+## The catalog (34 verified datasets)
 
 | # | Dataset | Risk area | Task shape | License (as observed) | Card |
 |---|---------|-----------|------------|-----------------------|------|
@@ -85,6 +85,19 @@ provenances rather than silently picking one.
 | 20 | Winogender Schemas | Gender-bias coreference probe | 120 templates -> 720 sentences | MIT (canonical repo) | [card](cards/20-winogender.md) |
 | 21 | MMLU | General-capability anchor | 57 tasks; test 14,042 | MIT (HF page) | [card](cards/21-mmlu.md) |
 | 22 | GSM8K | General-capability anchor (reasoning) | 8.5K abstract / 8,792 artifact | MIT (canonical repo) | [card](cards/22-gsm8k.md) |
+| 23 | StrongREJECT | Jailbreak evaluation methodology (scorer quality) | sizes body-level | unknown (pending) | [card](cards/23-strongreject.md) |
+| 24 | Do-Not-Answer | Refusal-side safeguard evaluation (curated should-not-follow) | sizes body-level | unknown (pending) | [card](cards/24-do-not-answer.md) |
+| 25 | PKU-SafeRLHF | Safety preference data, decoupled helpful/harm labels | 44.6K prompts / 265K pairs | unknown (pending) | [card](cards/25-pku-saferlhf.md) |
+| 26 | AgentHarm | Explicitly malicious agent-task benchmark | 110 tasks / 440 augmented | unknown (pending) | [card](cards/26-agentharm.md) |
+| 27 | InjecAgent | Indirect prompt injection vs tool-integrated agents | sizes body-level | unknown (pending) | [card](cards/27-injecagent.md) |
+| 28 | BIPIA | Injection via external content (integration era) | sizes body-level | unknown (pending) | [card](cards/28-bipia.md) |
+| 29 | FigStep | Multimodal jailbreak via typographic payloads | sizes body-level | unknown (pending) | [card](cards/29-figstep.md) |
+| 30 | AgentDojo | Dynamic (extensible) agent-injection environment | 97 realistic tasks | unknown (pending) | [card](cards/30-agentdojo.md) |
+| 31 | CounterFact (ROME) | Causal model-editing evaluation suite | sizes body-level | unknown (pending) | [card](cards/31-counterfact-rome.md) |
+| 32 | RobustBench | Standardized vision adversarial-robustness protocol | protocol-ledger | unknown (pending) | [card](cards/32-robustbench.md) |
+| 33 | FEVER | Evidence-anchored claim verification (three-way labels) | 185,445 claims | unknown (pending) | [card](cards/33-fever.md) |
+| 34 | TrojAI | Trojan detection in trained model artifacts (program) | rounds of models | NIST open (catalog) | [card](cards/34-trojai.md) |
+
 
 ## Curriculum integration map
 
@@ -189,3 +202,15 @@ ucf-crcv/BBQ-V (14,144 image-question pairs, visual stereotypes).
 20. [Winogender — gender-bias coreference probe](cards/20-winogender.md)
 21. [MMLU — multitask knowledge anchor](cards/21-mmlu.md)
 22. [GSM8K — grade-school reasoning anchor](cards/22-gsm8k.md)
+23. [StrongREJECT — the benchmark against empty jailbreaks](cards/23-strongreject.md)
+24. [Do-Not-Answer — the refusal-side evaluation set](cards/24-do-not-answer.md)
+25. [PKU-SafeRLHF — decoupled helpfulness and harmlessness labels](cards/25-pku-saferlhf.md)
+26. [AgentHarm — misuse at task-family granularity](cards/26-agentharm.md)
+27. [InjecAgent — the content-borne attack benchmark](cards/27-injecagent.md)
+28. [BIPIA — the integration-era injection benchmark](cards/28-bipia.md)
+29. [FigStep — the modality-boundary jailbreak](cards/29-figstep.md)
+30. [AgentDojo — the extensible environment over the static suite](cards/30-agentdojo.md)
+31. [CounterFact (ROME) — the causal-editing measuring stick](cards/31-counterfact-rome.md)
+32. [RobustBench — the institutional answer to masked evaluation](cards/32-robustbench.md)
+33. [FEVER — the evidence-anchored ancestor](cards/33-fever.md)
+34. [TrojAI — artifact-level security at program scale](cards/34-trojai.md)

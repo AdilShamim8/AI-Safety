@@ -122,7 +122,7 @@ carry written protocols for whoever does.
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 24 / 24 — the full chapter spine is DONE
-- Dataset cards complete: 22 verified cards in the catalog (13 core + 9 verified in the 2026-10-23 rounds; pending-verification queue EMPTY)
+- Dataset cards complete: 34 verified cards in the catalog (13 core + 9 verified 2026-10-23 + 12 session-2 cards: StrongREJECT, Do-Not-Answer, PKU-SafeRLHF, AgentHarm, InjecAgent, BIPIA, FigStep, AgentDojo, CounterFact/ROME, RobustBench, FEVER, TrojAI — arXiv-API-verified with honest abstract-read levels, licenses pending where uninspected)
 - Projects complete: **10 / 10 — the project spine is DONE** (P06 and P10 closed 2026-10-25)
 - Paper notes complete: 50 (20 required minimum + 12 added 2026-10-25 + 18 added in session 2 from the API-verified pool: 33 Concrete Problems, 34 Othello-GPT, 35 Obfuscated Gradients, 36 Non-robust Features, 37 Overoptimization, 38 Unfaithful CoT, 39 Lost in the Middle, 40 Situational Awareness, 41 Model-Written Evals, 42 HH-RLHF, 43 CoT Faithfulness, 44 Jailbroken, 45 Many-Shot [full-text, Anthropic page], 46 FActScore, 47 SelfCheckGPT, 48 Inverse Scaling, 49 HELM, 50 Induction Heads [full-text, transformer-circuits]; each with SRC + CLM registers, chapter cross-links, and a falsifiable extension)
 - Comparison notes: 6 (C01–C05 planned set + the C06 extension 2026-10-25: safety cases vs red-team reports)
@@ -151,9 +151,9 @@ remote-verified.
 
 ## Next exact action
 
-Phase B CLOSED (commits 156-176): notes 33-50 with registers, cross-
-links through 12 chapters, 18 glossary terms. Current phase: C — dataset
-cards 23-34 (closing G2), StrongREJECT first. After each unit:
+Phases B and C CLOSED: notes 33-50 (commits 156-176) and dataset cards
+23-34 (commits 178-189), all API-verified. Current phase: D — incidents
+04-11 (closing G3), page-inspect-gated one at a time. After each unit:
 STATUS counters move in the same commit as the work. The standing
 actions from session 1 remain: rotate the exposed token when the
 session ends; the three not-executed experiment tiers stay honestly
