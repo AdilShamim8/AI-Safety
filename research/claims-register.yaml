@@ -2326,3 +2326,18 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0189
+  claim: Google's May 2024 AI Overviews rollout produced documented absurd and dangerous answers including
+    recommending users eat at least one small rock per day ('rocks are a vital source of minerals and
+    vitamins') and put non-toxic glue on pizza; Google manually removed answers one by one, and the rock
+    recommendation traced to a well-read satirical article from The Onion — the retrieval-grounded generator
+    summarized what was popular, not what was true.
+  source: SRC-REPORT-017
+  section_or_page: The Verge 2024-05-24 + BBC 2024-05-24 + The Conversation 2024-05-27 (page-inspected
+    via search-result content and one full retrieval)
+  evidence_strength: page-inspected press coverage from three independent outlets with quoted overview
+    text; mechanism (Onion sourcing) established by the retrieved analysis piece
+  assumptions: quoted overview text in press coverage accurately reproduces the deployed outputs
+  counterevidence: none observed this session; Google's public defense acknowledged issues while defending
+    the product
+  date: '2026-10-25'

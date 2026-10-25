@@ -3843,3 +3843,56 @@ sources:
   limitations: Full text read from the public page 2026-10-25 via page inspection; quantitative findings
     quoted from the page.
   license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-017
+  title: Google scrambles to manually remove weird AI answers in search (AI Overviews rollout coverage,
+    2024-05-24)
+  authors_or_organization: The Verge
+  url: https://www.theverge.com/2024/5/24/24164119/google-ai-overview-mistakes-search-race-openai
+  source_type: report
+  publication_date: '2024-05-24'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (technology press)
+  supports:
+  - research/notes/incidents/04-google-ai-overviews-eat-rocks.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, date, and core facts verified
+    in snippet); full article text not independently fetched this session. Follow-up defense coverage
+    (2024-05-30) noted but not separately registered.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-018
+  title: Google AI search tells users to glue pizza and eat rocks (2024-05-24)
+  authors_or_organization: BBC News
+  url: https://www.bbc.com/news/articles/cd11gzejgz4o
+  source_type: report
+  publication_date: '2024-05-24'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (news agency)
+  supports:
+  - research/notes/incidents/04-google-ai-overviews-eat-rocks.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, date, 'geologists recommend
+    one rock per day' detail, and Google spokesperson acknowledgment verified in snippet); full article
+    not independently fetched this session.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-019
+  title: 'Eat a rock a day, put glue on your pizza: how Google''s AI is losing touch with reality (2024-05-27)'
+  authors_or_organization: The Conversation (academic-rigor outlet; analysis piece)
+  url: https://theconversation.com/eat-a-rock-a-day-put-glue-on-your-pizza-how-googles-ai-is-losing-touch-with-reality-230953
+  source_type: report
+  publication_date: '2024-05-27'
+  version: article as retrieved in full
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: analysis
+  peer_review_status: editorially reviewed analysis by academics (The Conversation's model), not peer
+    reviewed
+  supports:
+  - research/notes/incidents/04-google-ai-overviews-eat-rocks.md
+  limitations: Full page content retrieved 2026-10-25 via the search tool's document fetch. The mechanism
+    claim (Onion-satire sourcing for the rock recommendation) is this outlet's analysis, quoted with attribution;
+    Google's internal sourcing data is not public.
+  license: unknown (site terms; brief quotation with attribution)
