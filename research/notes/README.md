@@ -28,6 +28,7 @@ full-text-read sources; abstract-level entries say so, per the
 | 18 | [Towards Monosemanticity](18-towards-monosemanticity.md) | SRC-PAPER-030 | method-level (full-text-read) |
 | 19 | [Wild Patterns: Ten Years of Adversarial ML](19-wild-patterns-survey.md) | SRC-PAPER-049 | abstract-level |
 | 20 | [Madry et al.: Adversarial Training](20-madry-adversarial-training.md) | SRC-PAPER-045 | abstract-level |
+| 21 | [CaMeL: Defeating Prompt Injections by Design](21-camel-defeating-injections-by-design.md) | SRC-PAPER-054 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one

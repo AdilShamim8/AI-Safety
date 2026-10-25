@@ -373,11 +373,13 @@ Register-verified at the stated access levels (per
    2025"** [SRC-REPORT-004] — the mapping vocabulary (LLM01–LLM10,
    page-verified 2026-10-22).
 
-Assigned-pending (never cited as verified): the CaMeL
-capability-separation design (design-direction references in section
-3.4 are architectural pointers, not evidence claims); Simon Willard's
+Assigned-pending (never cited as verified): Simon Willard's
 "prompt injection primer" series; the instruction-hierarchy follow-up
-evaluations under optimized attack.
+evaluations under optimized attack. (The CaMeL capability-separation
+design was promoted from this list on 2026-10-25: SRC-PAPER-054 was
+abstract-verified at registration and now carries an abstract-level
+[paper note](../../research/notes/21-camel-defeating-injections-by-design.md)
+with the 77%-vs-84% pair priced and the v1/v2 drift recorded.)
 
 Production-incident companions (the chapter's classes, as they
 actually failed in deployment):
