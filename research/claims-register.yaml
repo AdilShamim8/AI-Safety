@@ -2134,3 +2134,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0174
+  claim: Adversarial examples can be directly attributed to non-robust features — patterns in the data
+    distribution that are highly predictive yet brittle and incomprehensible to humans — whose existence
+    in standard datasets the paper establishes within a theoretical framework, tying the phenomenon to
+    a misalignment between the human-specified notion of robustness and the inherent geometry of the data.
+  source: SRC-PAPER-111
+  section_or_page: arXiv:1905.02175v4 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; thesis stated in the
+    abstract, body experiments only announced)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
