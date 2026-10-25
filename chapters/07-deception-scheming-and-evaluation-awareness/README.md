@@ -461,7 +461,7 @@ like organic traffic.
   failure wearing a committee hat.
 
 
-**Note companions:** [23 AI Sandbagging — the evaluation channel's gameability](../../research/notes/23-ai-sandbagging.md). [40 Taken out of context — situational awareness, capability plus incentive](../../research/notes/40-taken-out-of-context.md)
+**Note companions:** [23 AI Sandbagging — the evaluation channel's gameability](../../research/notes/23-ai-sandbagging.md). [40 Taken out of context — situational awareness, capability plus incentive](../../research/notes/40-taken-out-of-context.md) [C11 Situational awareness vs persona drift — two monitoring budgets](../../research/notes/comparison-11-situational-awareness-vs-persona-drift.md)
 
 ## 8. Exercises
 

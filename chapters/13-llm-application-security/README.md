@@ -394,7 +394,7 @@ actually failed in deployment):
   [SRC-REPORT-015/016] — a public channel with commitment authority
   and no boundary, tested by the public within hours.
 
-**Note companions:** [44 Jailbroken — competing objectives and mismatched generalization](../../research/notes/44-jailbroken-failure-modes.md)
+**Note companions:** [44 Jailbroken — competing objectives and mismatched generalization](../../research/notes/44-jailbroken-failure-modes.md) [C08 Competing objectives vs mismatched generalization — the one-bit diagnostic](../../research/notes/comparison-08-jailbreak-modes-defense-families.md)
 
 ## 8. Exercises
 

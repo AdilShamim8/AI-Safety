@@ -472,7 +472,7 @@ results, the informative/true taxonomy, the GPT-3 few-shot protocol) remains
 assigned and open.
 
 
-**Note companions:** [28 Sycophancy — the preference pipeline, training in flattery](../../research/notes/28-sycophancy-preference-pressure.md). [46 FActScore — atomic decomposition makes factuality countable](../../research/notes/46-factscore.md)[47 SelfCheckGPT — sampling consistency as the black-box detector](../../research/notes/47-selfcheckgpt.md)
+**Note companions:** [28 Sycophancy — the preference pipeline, training in flattery](../../research/notes/28-sycophancy-preference-pressure.md). [46 FActScore — atomic decomposition makes factuality countable](../../research/notes/46-factscore.md)[47 SelfCheckGPT — sampling consistency as the black-box detector](../../research/notes/47-selfcheckgpt.md) [C07 Reference-anchored vs consistency-based factuality — the instrument pair](../../research/notes/comparison-07-reference-vs-consistency-factuality.md)
 
 ## 8. Exercises
 

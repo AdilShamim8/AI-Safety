@@ -303,7 +303,7 @@ professional-certification-style red-team curricula; legal
 frameworks for coordinated disclosure of AI findings.
 
 
-**Note companions:** [24 Explore, Establish, Exploit — red teaming as methodology](../../research/notes/24-explore-establish-exploit.md). [45 Many-shot jailbreaking — the attack that scales with the window](../../research/notes/45-many-shot-jailbreaking.md)
+**Note companions:** [24 Explore, Establish, Exploit — red teaming as methodology](../../research/notes/24-explore-establish-exploit.md). [45 Many-shot jailbreaking — the attack that scales with the window](../../research/notes/45-many-shot-jailbreaking.md) [C12 Evaluation supply strategies — generate for breadth, curate for judgment](../../research/notes/comparison-12-evaluation-supply-strategies.md)
 
 ## 8. Exercises
 

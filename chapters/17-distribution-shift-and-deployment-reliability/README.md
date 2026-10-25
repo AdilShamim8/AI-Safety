@@ -256,7 +256,7 @@ Assigned-pending (never cited as verified): domain-adversarial
 invariant-learning evidence; unsupervised drift-detection method
 comparisons; label-shift correction estimators.
 
-**Note companions:** [39 Lost in the middle — position as a reliability variable](../../research/notes/39-lost-in-the-middle.md)
+**Note companions:** [39 Lost in the middle — position as a reliability variable](../../research/notes/39-lost-in-the-middle.md) [C11 Situational awareness vs persona drift — the deployment-side drift](../../research/notes/comparison-11-situational-awareness-vs-persona-drift.md)
 
 ## 8. Exercises
 
