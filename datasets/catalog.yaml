@@ -1,872 +1,1037 @@
-# Dataset catalog — machine-readable registry of verified real-world datasets.
-#
-# Schema per entry:
-#   id, name, organization, hf_id (if hosted), canonical_url, paper (arXiv id+url),
-#   risk_area, task, license (as observed, + where observed), size facts
-#   (each with a reference marker [Rn] resolved in the card),
-#   course_use (chapters, projects), access_level, verified_on, card path,
-#   references (url -> facts collected from that url, with access date).
-#
-# Honesty rules (inherited from research/source-register.yaml):
-# - "license.as_observed" is what the named page displayed on verified_on.
-# - Row counts are dated observations of hosted pages, not permanent truths.
-# - access_level follows the repository convention: page-inspected |
-#   abstract-read | metadata-only. No card fact may cite metadata-only.
-
 schema_version: 1
 baseline_date: 2026-10-20
 verified_on: 2026-10-21
-redistribution_policy: "never redistribute dataset content in this repository"
-
+redistribution_policy: never redistribute dataset content in this repository
 datasets:
-  - id: DS-001
-    name: "TruthfulQA"
-    organization: "truthfulqa (Hugging Face); paper by Lin, Hilton, and Evans"
-    hf_id: "truthfulqa/truthful_qa"
-    canonical_url: "https://huggingface.co/datasets/truthfulqa/truthful_qa"
-    paper:
-      id: "2109.07958"
-      url: "https://arxiv.org/abs/2109.07958"
-      title: "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
-      verified_title: false
-    risk_area: "truthfulness / imitative falsehoods"
-    task: ["question answering", "multiple choice", "text generation"]
-    license:
-      as_observed: "apache-2.0"
-      where_observed: "Hugging Face dataset page license tag"
-    size_facts:
-      - fact: "817 rows in the validation split"
-        ref: "R1"
-      - fact: "size category 1K-10K on the HF page"
-        ref: "R1"
-    course_use:
-      chapters: ["02", "06"]
-      projects: ["P03"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/01-truthfulqa.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/truthfulqa/truthful_qa"
-        collected: "license tag (apache-2.0); validation split 817 rows; tasks; adversarial subcategories (Misconceptions, Proverbs, Misquotations, Conspiracies, Superstitions); arXiv link 2109.07958"
-        accessed_on: 2026-10-21
-
-  - id: DS-002
-    name: "BOLD (Bias in Open-Ended Language Generation)"
-    organization: "hosted under AmazonScience on Hugging Face"
-    hf_id: "AmazonScience/bold"
-    canonical_url: "https://huggingface.co/datasets/AmazonScience/bold"
-    paper:
-      id: "2101.11718"
-      url: "https://arxiv.org/abs/2101.11718"
-      title: "BOLD: Dataset and Metrics for Measuring Biases in Open-Ended Language Generation"
-      verified_title: true
-    risk_area: "social bias in open-ended generation"
-    task: ["text generation"]
-    license:
-      as_observed: "CC BY-SA 4.0"
-      where_observed: "HF page text: 'Creative Commons Attribution Share Alike 4.0 International license'"
-    size_facts:
-      - fact: "23,679 text generation prompts"
-        ref: "R1"
-      - fact: "Profession: 18 sub-groups, 10,195 prompts"
-        ref: "R1"
-      - fact: "Gender: 2 sub-groups, 3,204 prompts"
-        ref: "R1"
-      - fact: "Race: 4 sub-groups, 7,657 prompts"
-        ref: "R1"
-      - fact: "Religious ideologies: 7 sub-groups, 639 prompts"
-        ref: "R1"
-      - fact: "Political ideologies: 12 sub-groups, 1,984 prompts"
-        ref: "R1"
-    course_use:
-      chapters: ["02", "21"]
-      projects: ["P09"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/02-bold.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/AmazonScience/bold"
-        collected: "license sentence; 23,679 prompts; per-domain sub-group and prompt counts; task; arXiv 2101.11718"
-        accessed_on: 2026-10-21
-
-  - id: DS-003
-    name: "RealToxicityPrompts"
-    organization: "allenai"
-    hf_id: "allenai/real-toxicity-prompts"
-    canonical_url: "https://huggingface.co/datasets/allenai/real-toxicity-prompts"
-    paper:
-      id: "2009.11462"
-      url: "https://arxiv.org/abs/2009.11462"
-      title: "RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models"
-      verified_title: false
-    risk_area: "toxicity in generation"
-    task: ["text generation", "toxicity scoring"]
-    license:
-      as_observed: "apache-2.0"
-      where_observed: "Hugging Face dataset page license tag"
-    size_facts:
-      - fact: "99.4k rows in the default subset"
-        ref: "R1"
-      - fact: "8 toxicity subcategories in fields (threat, insult, severe_toxicity, toxicity, profanity, sexually_explicit, identity_attack, flirtation)"
-        ref: "R1"
-    course_use:
-      chapters: ["02", "15"]
-      projects: ["P09"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/03-real-toxicity-prompts.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/allenai/real-toxicity-prompts"
-        collected: "license tag; 99.4k rows; field names incl. 8 toxicity subcategories; arXiv 2009.11462"
-        accessed_on: 2026-10-21
-
-  - id: DS-004
-    name: "ToxiGen"
-    organization: "skg (Hugging Face); paper by Microsoft Research and collaborators"
-    hf_id: "skg/toxigen-data"
-    canonical_url: "https://huggingface.co/datasets/skg/toxigen-data"
-    paper:
-      id: "2203.09509"
-      url: "https://arxiv.org/abs/2203.09509"
-      title: "ToxiGen: A Large-Scale Machine-Generated Dataset for Implicit Toxicity Detection"
-      verified_title: false
-    risk_area: "implicit toxicity / adversarial benign statements"
-    task: ["text classification"]
-    license:
-      as_observed: "MIT License text, 'Copyright (c) Microsoft Corporation.', under a 'TOXIGEN' title header (LICENSE.txt, 3,539 bytes)"
-      where_observed: "https://github.com/microsoft/ToxiGen LICENSE.txt via GitHub license API, fetched 2026-10-23 [R2]; GitHub auto-detection returns NOASSERTION/'Other' due to the non-standard header — the file body is the MIT text. Scope caveat: the HF dataset page still shows no license tag; whether the HF copy is covered by the repository license is an inference, not verified"
-    size_facts:
-      - fact: "overall size category 100K-1M rows"
-        ref: "R1"
-      - fact: "annotated subset 9.9k rows (train 8.96k, test 940)"
-        ref: "R1"
-      - fact: "prompts split 31k rows; annotations split 27.5k rows"
-        ref: "R1"
-    course_use:
-      chapters: ["02", "21"]
-      projects: []
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/04-toxigen.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/skg/toxigen-data"
-        collected: "split/row counts (annotated 9.9k; prompts 31k; annotations 27.5k); size category; task; arXiv 2203.09509; absence of visible license"
-        accessed_on: 2026-10-21
-
-  - id: DS-005
-    name: "BBQ (Bias Benchmark for QA)"
-    organization: "NYU MLL (paper); multiple HF mirrors"
-    hf_id: "heegyu/bbq (mirror inspected)"
-    canonical_url: "https://github.com/nyu-mll/BBQ"
-    paper:
-      id: "2110.08193"
-      url: "https://arxiv.org/abs/2110.08193"
-      title: "BBQ: A Hand-Built Bias Benchmark for Question Answering"
-      verified_title: true
-    risk_area: "stereotype bias in question answering"
-    task: ["multiple-choice QA", "bias measurement"]
-    license:
-      as_observed: "CC-BY-4.0 (Creative Commons Attribution 4.0 International), full legal code (LICENSE, 18,649 bytes)"
-      where_observed: "https://github.com/nyu-mll/BBQ LICENSE via GitHub license API, fetched 2026-10-23 [R4]; the canonical repository hosts the dataset files themselves, so the license covers the data — superseding the placeholder text observed on mirror pages"
-    size_facts:
-      - fact: "58,492 rows on inspected mirror (twice, on two mirrors)"
-        ref: "R1"
-      - fact: "9 demographic categories (age, disability, gender identity, nationality, physical appearance, race/ethnicity, religion, SES, sexual orientation)"
-        ref: "R2"
-      - fact: "ambiguous and disambiguated variants; 3 answer options; 4-shot train splits; Religion has no train split"
-        ref: "R2"
-      - fact: "paper published in Findings of ACL 2022, pages 2086-2105"
-        ref: "R3"
-    course_use:
-      chapters: ["02", "21"]
-      projects: ["P09"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/05-bbq.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/heegyu/bbq"
-        collected: "58,492 rows; 50.9 MB; authors list; GitHub nyu-mll/BBQ; paper abstract"
-        accessed_on: 2026-10-21
-      - id: "R2"
-        url: "https://huggingface.co/datasets/HiTZ/bbq"
-        collected: "ambig/disambig configs; 9 categories; ans0/1/2 + label fields; train/test split semantics; Religion no-train note"
-        accessed_on: 2026-10-21
-      - id: "R3"
-        url: "https://huggingface.co/datasets/heegyu/bbq"
-        collected: "ACL Anthology citation block (2022.findings-acl.165, pages 2086-2105, DOI)"
-        accessed_on: 2026-10-21
-
-  - id: DS-006
-    name: "XSTest"
-    organization: "Paul Röttger and coauthors (Oxford / Bocconi / UCL / AltANA)"
-    hf_id: "paul-rottger/xstest (canonical HF), mirrors inspected"
-    canonical_url: "https://github.com/paul-rottger/xstest"
-    paper:
-      id: "2308.01263"
-      url: "https://arxiv.org/abs/2308.01263"
-      title: "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models"
-      verified_title: true
-    risk_area: "over-refusal / exaggerated safety"
-    task: ["refusal measurement"]
-    license:
-      as_observed: "CC BY 4.0 for prompts; model completions under original Meta/Mistral/OpenAI licenses"
-      where_observed: "GitHub repository README license section (verbatim)"
-    size_facts:
-      - fact: "250 safe prompts across ten prompt types"
-        ref: "R1"
-      - fact: "200 unsafe prompts as contrasts"
-        ref: "R1"
-      - fact: "accepted at NAACL 2024 main conference"
-        ref: "R2"
-    course_use:
-      chapters: ["02", "15"]
-      projects: ["P01", "P07"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/06-xstest.md"
-    references:
-      - id: "R1"
-        url: "https://github.com/paul-rottger/xstest"
-        collected: "license text (CC-BY-4.0 prompts; completions under vendor licenses); authors; NAACL 2024 + anthology link; repo stats"
-        accessed_on: 2026-10-21
-      - id: "R2"
-        url: "https://arxiv.org/abs/2308.01263"
-        collected: "abstract (250 safe + 200 unsafe design); submission history v1 2023-08-02, v3 2024-04-01; authors"
-        accessed_on: 2026-10-21
-
-  - id: DS-007
-    name: "BeaverTails"
-    organization: "PKU-Alignment"
-    hf_id: "PKU-Alignment/BeaverTails"
-    canonical_url: "https://huggingface.co/datasets/PKU-Alignment/BeaverTails"
-    paper:
-      id: "2307.04657"
-      url: "https://arxiv.org/abs/2307.04657"
-      title: "BeaverTails: Towards Improved Safety Alignment of LLM via a Human-Preference Dataset"
-      verified_title: false
-    risk_area: "safety annotation / preference data"
-    task: ["text classification", "safety annotation"]
-    license:
-      as_observed: "cc-by-nc-4.0 (NON-COMMERCIAL)"
-      where_observed: "Hugging Face dataset page license tag"
-    size_facts:
-      - fact: "364k rows in the default subset"
-        ref: "R1"
-      - fact: "330k_train 301k rows; 330k_test 33.4k rows; 30k_train 27.2k rows; 30k_test 3.02k rows"
-        ref: "R1"
-      - fact: "14 safety-annotation dimensions, at least: animal abuse; child abuse; controversial topics/politics; discrimination/stereotype/injustice; drug abuse/weapons/banned substance; financial crime/property crime/theft; hate speech/offensive language; misinformation regarding ethics/laws (list as displayed, truncated in fetch)"
-        ref: "R1"
-    course_use:
-      chapters: ["04", "15"]
-      projects: ["P04"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/07-beavertails.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/PKU-Alignment/BeaverTails"
-        collected: "license tag cc-by-nc-4.0; 364k default rows; four split configs with row counts; dimension names; arXiv 2307.04657"
-        accessed_on: 2026-10-21
-
-  - id: DS-008
-    name: "Anthropic HH-RLHF"
-    organization: "Anthropic"
-    hf_id: "Anthropic/hh-rlhf"
-    canonical_url: "https://huggingface.co/datasets/Anthropic/hh-rlhf"
-    paper:
-      id: "2204.05862"
-      url: "https://arxiv.org/abs/2204.05862"
-      title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
-      verified_title: false
-    risk_area: "preference data / red-teaming"
-    task: ["preference learning", "safety training data"]
-    license:
-      as_observed: "mit"
-      where_observed: "Hugging Face dataset page license tag"
-    size_facts:
-      - fact: "169k total rows (train 161k, test 8.55k)"
-        ref: "R1"
-    course_use:
-      chapters: ["04", "15"]
-      projects: ["P04"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/08-hh-rlhf.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/Anthropic/hh-rlhf"
-        collected: "license tag mit; 169k rows (train 161k, test 8.55k); arXiv 2204.05862"
-        accessed_on: 2026-10-21
-
-  - id: DS-009
-    name: "AdvBench"
-    organization: "llm-attacks (CMU / Center for AI Safety / Google DeepMind / Bosch authors)"
-    hf_id: "none canonical; walledai/AdvBench is a mirror"
-    canonical_url: "https://github.com/llm-attacks/llm-attacks"
-    paper:
-      id: "2307.15043"
-      url: "https://arxiv.org/abs/2307.15043"
-      title: "Universal and Transferable Adversarial Attacks on Aligned Language Models"
-      verified_title: true
-    risk_area: "adversarial suffix attacks / jailbreaks"
-    task: ["adversarial attack target set"]
-    license:
-      as_observed: "LICENSE file present in repo, read directly 2026-10-23: MIT License, copyright (c) 2023 Andy Zou (1,065 bytes)"
-      where_observed: "https://github.com/llm-attacks/llm-attacks LICENSE via GitHub license API; the repo's data/advbench/ hosts harmful_behaviors.csv (82,125 bytes) and harmful_strings.csv (34,654 bytes) — closes the 'direct LICENSE read pending' marker"
-    size_facts:
-      - fact: "harmful_behaviors.csv has 521 lines (520 data rows + header), 80.2 KB"
-        ref: "R1"
-      - fact: "columns: goal, target"
-        ref: "R1"
-      - fact: "the repo also ships harmful_strings.csv and transfer_expriment_behaviors.csv"
-        ref: "R1"
-      - fact: "mirror card describes 'a set of 500 harmful behaviors' (paper framing)"
-        ref: "R2"
-    course_use:
-      chapters: ["12", "15"]
-      projects: ["P07"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/09-advbench.md"
-    references:
-      - id: "R1"
-        url: "https://github.com/llm-attacks/llm-attacks/blob/main/data/advbench/harmful_behaviors.csv"
-        collected: "521 lines / 520 rows / 80.2 KB; goal+target columns; commit a62d130 (Jul 27 2023)"
-        accessed_on: 2026-10-21
-      - id: "R2"
-        url: "https://huggingface.co/datasets/walledai/AdvBench"
-        collected: "mirror description ('500 harmful behaviors' framing); MIT license statement for the mirror; note that harmful_strings.csv is omitted there"
-        accessed_on: 2026-10-21
-      - id: "R3"
-        url: "https://arxiv.org/abs/2307.15043"
-        collected: "authors (Zou, Wang, Carlini, Nasr, Kolter, Fredrikson); v1 2023-07-27, v2 2023-12-20; abstract (GCG method, transfer to ChatGPT/Bard/Claude)"
-        accessed_on: 2026-10-21
-
-  - id: DS-010
-    name: "JailbreakBench (JBB-Behaviors)"
-    organization: "JailbreakBench project (mult-institution academic collaboration)"
-    hf_id: "JailbreakBench/JBB-Behaviors"
-    canonical_url: "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors"
-    paper:
-      id: "2404.01318"
-      url: "https://arxiv.org/abs/2404.01318"
-      title: "JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models"
-      verified_title: false
-    risk_area: "jailbreak robustness"
-    task: ["standardized jailbreak evaluation"]
-    license:
-      as_observed: "MIT ('This dataset, like the code, is released under MIT License.')"
-      where_observed: "Hugging Face dataset page license section (verbatim)"
-    size_facts:
-      - fact: "behaviors subset 200 rows: harmful split 100 + benign split 100"
-        ref: "R1"
-      - fact: "judge_comparison subset 300 rows"
-        ref: "R1"
-      - fact: "10 behavior categories aligned with OpenAI usage policies"
-        ref: "R1"
-      - fact: "Source field with 3 values (TDC/HarmBench, AdvBench, Original)"
-        ref: "R1"
-      - fact: "DOI 10.57967/hf/2540"
-        ref: "R1"
-    course_use:
-      chapters: ["15", "20"]
-      projects: ["P07", "P10"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/10-jailbreakbench.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors"
-        collected: "MIT license text; subset/split row counts; 10 categories; Source values; DOI; arXiv 2404.01318; field schema (Index, Goal, Target, Behavior, Category, Source)"
-        accessed_on: 2026-10-21
-
-  - id: DS-011
-    name: "HarmBench"
-    organization: "Center for AI Safety (paper: Mazeika et al., 12 authors)"
-    hf_id: "official HF dataset ID not confirmed this round; walledai/HarmBench is a mirror"
-    canonical_url: "https://github.com/centerforaisafety/HarmBench"
-    paper:
-      id: "2402.04249"
-      url: "https://arxiv.org/abs/2402.04249"
-      title: "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal"
-      verified_title: true
-    risk_area: "automated red teaming / robust refusal"
-    task: ["red-teaming framework + behavior sets"]
-    license:
-      as_observed: "MIT License, copyright (c) 2024 centerforaisafety (LICENSE, 1,074 bytes)"
-      where_observed: "https://github.com/centerforaisafety/HarmBench LICENSE via GitHub license API, fetched 2026-10-23; SPDX MIT"
-    size_facts:
-      - fact: "abstract reports a large-scale comparison of 18 red teaming methods and 33 target LLMs and defenses"
-        ref: "R1"
-      - fact: "behavior set verified by direct CSV read 2026-10-23: harmbench_behaviors_text_all.csv = 400 text behaviors (200 standard, 100 copyright, 100 contextual); semantic categories: cybercrime_intrusion 67, illegal 65, misinformation_disinformation 65, chemical_biological 56, harassment_bullying 25, harmful 22, copyright 100; test split = 320 (159 standard, 80 copyright, 81 contextual), val split = 80 (41/20/19); multimodal set = 110 behaviors"
-        ref: "R3"
-      - fact: "the commonly cited '200 behaviors' refers to the standard functional subset — now verified against the canonical CSV"
-        ref: "R3"
-    course_use:
-      chapters: ["15", "20"]
-      projects: ["P10"]
-    access_level: "abstract-read"
-    verified_on: 2026-10-21
-    card: "cards/11-harmbench.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2402.04249"
-        collected: "authors (Mazeika, Phan, Yin, Zou, Wang, Mu, Sakhaee, Li, Basart, Li, Forsyth, Hendrycks); v1 2024-02-06, v2 2024-02-27; abstract (18 methods, 33 targets, adversarial training)"
-        accessed_on: 2026-10-21
-      - id: "R2"
-        url: "https://github.com/centerforaisafety/HarmBench"
-        collected: "repository existence and title/description; LICENSE read directly 2026-10-23 (MIT, (c) 2024 centerforaisafety)"
-        accessed_on: 2026-10-21
-      - id: "R3"
-        url: "https://github.com/centerforaisafety/HarmBench/data/behavior_datasets/harmbench_behaviors_text_all.csv (fetched and parsed 2026-10-23)"
-        collected: "400 rows; columns Behavior/FunctionalCategory/SemanticCategory/Tags/ContextString/BehaviorID; functional counts 200/100/100; semantic category distribution; val/test splits 80/320; multimodal_all 110 rows"
-        accessed_on: 2026-10-23
-
-  - id: DS-012
-    name: "WildChat"
-    organization: "allenai"
-    hf_id: "allenai/WildChat"
-    canonical_url: "https://huggingface.co/datasets/allenai/WildChat"
-    paper:
-      id: null
-      url: null
-      title: "WildChat: 1M ChatGPT Interaction Logs"
-      verified_title: false
-    risk_area: "real-user data / privacy / provenance"
-    task: ["real-traffic corpus"]
-    license:
-      as_observed: "ODC-BY for WildChat-1M (license change effective 2024-06-26, retroactive); Ai2 Impact License referenced by the nontoxic variant"
-      where_observed: "HF pages for WildChat-1M and WildChat-nontoxic"
-    size_facts:
-      - fact: "allenai/WildChat: 650K conversations"
-        ref: "R1"
-      - fact: "allenai/WildChat-1M: 1 million conversations"
-        ref: "R2"
-      - fact: "allenai/WildChat-4.8M: 3,199,860 conversations, non-toxic user inputs only"
-        ref: "R3"
-    course_use:
-      chapters: ["16", "21"]
-      projects: ["P09"]
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/12-wildchat.md"
-    references:
-      - id: "R1"
-        url: "https://huggingface.co/datasets/allenai/WildChat"
-        collected: "650K conversations; collection method sentence (free access to GPT-3.5 offered to online users)"
-        accessed_on: 2026-10-21
-      - id: "R2"
-        url: "https://huggingface.co/datasets/allenai/WildChat-1M"
-        collected: "1M conversations; license change to ODC-BY dated 2024-06-26, retroactive; commit 7d6490e README update"
-        accessed_on: 2026-10-21
-      - id: "R3"
-        url: "https://huggingface.co/datasets/allenai/WildChat-4.8M"
-        collected: "3,199,860 conversations; non-toxic-only filter; release date Aug 11 2025"
-        accessed_on: 2026-10-21
-
-  - id: DS-013
-    name: "SafetyBench"
-    organization: "thu-coai (Tsinghua)"
-    hf_id: "thu-coai/SafetyBench"
-    canonical_url: "https://github.com/thu-coai/safetybench"
-    paper:
-      id: "2309.07045"
-      url: "https://arxiv.org/abs/2309.07045"
-      title: "Evaluating the Safety of Large Language Models"
-      verified_title: true
-    risk_area: "multi-category safety knowledge"
-    task: ["multiple-choice safety evaluation"]
-    license:
-      as_observed: "MIT License, copyright (c) 2023 thu-coai (LICENSE, 1,065 bytes)"
-      where_observed: "https://github.com/thu-coai/safetybench LICENSE via GitHub license API, fetched 2026-10-23; SPDX MIT"
-    size_facts:
-      - fact: "11,435 multiple-choice questions across 7 safety categories"
-        ref: "R1"
-      - fact: "Chinese and English data both included"
-        ref: "R1"
-      - fact: "published at ACL 2024 (2024.acl-long.830), Zhang et al."
-        ref: "R2"
-    course_use:
-      chapters: ["23", "02"]
-      projects: []
-    access_level: "page-inspected"
-    verified_on: 2026-10-21
-    card: "cards/13-safetybench.md"
-    references:
-      - id: "R1"
-        url: "https://github.com/thu-coai/safetybench"
-        collected: "11,435 MCQs; 7 categories; bilingual EN+ZH statement"
-        accessed_on: 2026-10-21
-      - id: "R2"
-        url: "https://aclanthology.org/2024.acl-long.830"
-        collected: "ACL 2024 long paper listing; authors (Zhang et al.); citation count context"
-        accessed_on: 2026-10-21
-
-  - id: DS-014
-    name: "OR-Bench"
-    organization: "Justin Cui, Wei-Lin Chiang, Ion Stoica, Cho-Jui Hsieh (UCLA / Berkeley)"
-    hf_id: "bench-llms/or-bench (paper's org) and bench-llm/or-bench (higher-traffic hosting)"
-    canonical_url: "https://github.com/justincui03/or-bench"
-    paper:
-      id: "2405.20947"
-      url: "https://arxiv.org/abs/2405.20947"
-      title: "OR-Bench: An Over-Refusal Benchmark for Large Language Models"
-      verified_title: true
-    risk_area: "over-refusal / exaggerated safety"
-    task: ["over-refusal measurement (automatically generated prompts)"]
-    license:
-      as_observed: "cc-by-4.0 (both HF hostings carry the tag)"
-      where_observed: "HF API license tags on bench-llms/or-bench and bench-llm/or-bench, fetched 2026-10-23; org-name discrepancy between the paper's stated URL and the higher-traffic hosting recorded in the card"
-    size_facts:
-      - fact: "80,000 over-refusal prompts across 10 common rejection categories; subset of ~1,000 hard prompts; additional 600 toxic prompts as contrast"
-        ref: "R1"
-      - fact: "measurement study covers 32 popular LLMs across 8 model families"
-        ref: "R1"
-    course_use:
-      chapters: ["06"]
-      projects: []
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/14-or-bench.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2405.20947"
-        collected: "title; authors; v1 2024-05-31 / v5 2025-06-15; abstract (80,000 prompts, 10 categories, ~1,000 hard, 600 toxic, 32 LLMs / 8 families, automatic generation method)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://huggingface.co/datasets/bench-llms/or-bench"
-        collected: "license tag cc-by-4.0; 937 downloads; the org named in the paper's URL"
-        accessed_on: 2026-10-23
-      - id: "R3"
-        url: "https://huggingface.co/datasets/bench-llm/or-bench"
-        collected: "license tag cc-by-4.0; 9,801 downloads; last modified 2024-12-19; org-name discrepancy recorded"
-        accessed_on: 2026-10-23
-
-  - id: DS-015
-    name: "WildJailbreak"
-    organization: "allenai (paper: Jiang et al., 11 authors)"
-    hf_id: "allenai/wildjailbreak"
-    canonical_url: "https://huggingface.co/datasets/allenai/wildjailbreak"
-    paper:
-      id: "2406.18510"
-      url: "https://arxiv.org/abs/2406.18510"
-      title: "WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models"
-      verified_title: true
-    risk_area: "jailbreak training / adversarial safety training"
-    task: ["safety training set (vanilla + adversarial prompt-response pairs)"]
-    license:
-      as_observed: "odc-by"
-      where_observed: "HF API license tag on allenai/wildjailbreak, fetched 2026-10-23"
-    size_facts:
-      - fact: "262K vanilla (direct request) and adversarial (complex jailbreak) prompt-response pairs"
-        ref: "R1"
-      - fact: "contrastive design: harmful queries (vanilla and adversarial) plus benign queries that resemble harmful queries in form but contain no harm"
-        ref: "R1"
-      - fact: "built by mining in-the-wild user-chatbot interactions; 5.7K unique clusters of novel jailbreak tactics; up to 4.6x more diverse and successful adversarial attacks than state-of-the-art jailbreak methods"
-        ref: "R1"
-    course_use:
-      chapters: ["04", "15"]
-      projects: []
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/15-wildjailbreak.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2406.18510"
-        collected: "title; 11 authors; submitted 2024-06-26; abstract (5.7K tactic clusters; 262K pairs; contrastive design; 4.6x comparison; open training-set motivation)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://huggingface.co/datasets/allenai/wildjailbreak"
-        collected: "license tag odc-by; arXiv tag 2406.18510; 164 likes; 6,196 downloads; last modified 2024-08-08"
-        accessed_on: 2026-10-23
-
-  - id: DS-016
-    name: "WMDP (Weapons of Mass Destruction Proxy)"
-    organization: "consortium of academics and technical consultants (paper: Li et al., 57 authors)"
-    hf_id: "cais/wmdp"
-    canonical_url: "https://wmdp.ai"
-    paper:
-      id: "2403.03218"
-      url: "https://arxiv.org/abs/2403.03218"
-      title: "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning"
-      verified_title: true
-    risk_area: "hazardous knowledge / unlearning"
-    task: ["multiple-choice proxy measurement of hazardous knowledge"]
-    license:
-      as_observed: "mit"
-      where_observed: "HF API license tag on cais/wmdp, fetched 2026-10-23"
-    size_facts:
-      - fact: "3,668 multiple-choice questions across biosecurity, cybersecurity, and chemical security"
-        ref: "R1"
-      - fact: "stringently filtered to eliminate sensitive information prior to public release; dual role as hazardous-knowledge evaluation and unlearning benchmark; RMU unlearning method reduces WMDP performance while maintaining general capabilities"
-        ref: "R1"
-    course_use:
-      chapters: ["20"]
-      projects: []
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/16-wmdp.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2403.03218"
-        collected: "title; 57 authors; v1 2024-03-05 / v7 2024-05-15; abstract (3,668 MCQ; bio/cyber/chem; filtering; RMU; wmdp.ai; White House EO context)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://huggingface.co/datasets/cais/wmdp"
-        collected: "license tag mit; arXiv tag 2403.03218; 32 likes; 26,806 downloads; last modified 2024-04-27"
-        accessed_on: 2026-10-23
-
-  - id: DS-017
-    name: "HaluEval"
-    organization: "RUC AI Box (paper: Li, Cheng, Zhao, Nie, Wen)"
-    hf_id: "pminervini/HaluEval (mirror)"
-    canonical_url: "https://github.com/RUCAIBox/HaluEval"
-    paper:
-      id: "2305.11747"
-      url: "https://arxiv.org/abs/2305.11747"
-      title: "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models"
-      verified_title: true
-    risk_area: "hallucination recognition"
-    task: ["hallucination recognition (forced choice) across general/QA/dialogue/summarization"]
-    license:
-      as_observed: "apache-2.0 (HF mirror tag); canonical repository license not displayed on the fetched pages"
-      where_observed: "HF API license tag on pminervini/HaluEval, fetched 2026-10-23; canonical GitHub README and listing showed no license statement — recorded honestly in the card"
-    size_facts:
-      - fact: "35K generated and human-annotated hallucinated samples: 5K general (Alpaca-sourced user queries, human-annotated ChatGPT responses) + 10K each QA (HotpotQA seed), dialogue (OpenDialKG seed), summarization (CNN/Daily Mail seed)"
-        ref: "R2"
-      - fact: "sampling-then-filtering generation framework; about 19.5% of ChatGPT responses hallucinated (topic-specific, fabricating unverifiable information)"
-        ref: "R1"
-    course_use:
-      chapters: ["06"]
-      projects: []
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/17-halueval.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2305.11747"
-        collected: "title; 5 authors; v1 2023-05-19 / updated 2023-10-23; abstract (sampling-then-filtering; human labelers; ~19.5% topic-specific; external-knowledge/reasoning findings)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://github.com/RUCAIBox/HaluEval"
-        collected: "35K composition; 5K/10K/10K/10K per-task split with seed corpora and field schemas"
-        accessed_on: 2026-10-23
-      - id: "R3"
-        url: "https://huggingface.co/datasets/pminervini/HaluEval"
-        collected: "license tag apache-2.0; 34 likes; 8,996 downloads; last modified 2023-12-07"
-        accessed_on: 2026-10-23
-
-  - id: DS-018
-    name: "SimpleQA"
-    organization: "OpenAI (paper: Wei et al., 8 authors)"
-    hf_id: "none canonical; mirror basicv8vc/SimpleQA observed (not used as a fact source)"
-    canonical_url: "https://github.com/openai/simple-evals"
-    paper:
-      id: "2411.04368"
-      url: "https://arxiv.org/abs/2411.04368"
-      title: "Measuring short-form factuality in large language models"
-      verified_title: true
-    risk_area: "short-form factuality"
-    task: ["fact-seeking QA with correct/incorrect/not-attempted grading"]
-    license:
-      as_observed: "simple-evals repository MIT (LICENSE read directly); the data file at openaipublic blob storage shows no separate license statement at the file location"
-      where_observed: "GitHub license API for openai/simple-evals, fetched 2026-10-23; data-URL license status recorded honestly in the card"
-    size_facts:
-      - fact: "4,326 questions (direct CSV parse; naive line count 4,333 due to multi-line quoted fields)"
-        ref: "R3"
-      - fact: "topic distribution: Science and technology 858, Politics 709, Art 550, Other 475, Geography 424, Sports 368, Music 341, TV shows 293, History 173, Video games 135 (sum 4,326)"
-        ref: "R3"
-      - fact: "adversarially collected against GPT-4 responses; single indisputable answers; ideal behavior gets as many correct as possible while not attempting low-confidence questions"
-        ref: "R1"
-    course_use:
-      chapters: ["06"]
-      projects: ["P10"]
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/18-simpleqa.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2411.04368"
-        collected: "title; 8 authors; submitted 2024-11-07; abstract (adversarial collection against GPT-4; single answers; three-way grading; know-what-you-know framing; github.com/openai/simple-evals)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://github.com/openai/simple-evals"
-        collected: "MIT license (LICENSE read via GitHub API); file listing (simpleqa_eval.py)"
-        accessed_on: 2026-10-23
-      - id: "R3"
-        url: "https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv"
-        collected: "4,326 rows; columns metadata/problem/answer; topic distribution; multi-line quoted-field artifact"
-        accessed_on: 2026-10-23
-
-  - id: DS-019
-    name: "CrowS-Pairs"
-    organization: "NYU (paper: Nangia, Vania, Bhalerao, Bowman)"
-    hf_id: "nyu-mll/crows_pairs"
-    canonical_url: "https://github.com/nyu-mll/crows-pairs"
-    paper:
-      id: "2010.00133"
-      url: "https://arxiv.org/abs/2010.00133"
-      title: "CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models"
-      verified_title: true
-    risk_area: "social bias (stereotype pairs)"
-    task: ["masked-LM stereotype preference measurement"]
-    license:
-      as_observed: "CC BY-SA 4.0"
-      where_observed: "canonical repository README license section (verbatim statement), corroborated by the HF tag cc-by-sa-4.0, fetched 2026-10-23; repository carries no LICENSE file — README statement is the authority"
-    size_facts:
-      - fact: "1,508 examples covering stereotypes dealing with nine types of bias including race, religion, and age"
-        ref: "R1"
-      - fact: "minimal-pair design (more-stereotyping vs less-stereotyping sentence); historically disadvantaged groups contrasted with advantaged groups; all three widely-used MLMs evaluated substantially favor stereotype-expressing sentences in every category"
-        ref: "R1"
-      - fact: "seed provenance: prompts taken from the ROCStories corpora and the fiction part of MNLI (README statement)"
-        ref: "R2"
-    course_use:
-      chapters: ["02", "17"]
-      projects: ["P09"]
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/19-crows-pairs.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2010.00133"
-        collected: "title; 4 authors; 2020-09-30; abstract (1,508 examples; nine bias types; minimal-pair design; MLM stereotype-favoring finding)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://github.com/nyu-mll/crows-pairs"
-        collected: "license statement (CC BY-SA 4.0); seed provenance (ROCStories + MNLI fiction)"
-        accessed_on: 2026-10-23
-      - id: "R3"
-        url: "https://huggingface.co/datasets/nyu-mll/crows_pairs"
-        collected: "license tag cc-by-sa-4.0; 943 downloads; 15 likes; last modified 2024-01-18"
-        accessed_on: 2026-10-23
-
-  - id: DS-020
-    name: "Winogender Schemas"
-    organization: "Johns Hopkins (paper: Rudinger, Naradowsky, Leonard, Van Durme)"
-    hf_id: "oskarvanderwal/winogender (hosting)"
-    canonical_url: "https://github.com/rudinger/winogender-schemas"
-    paper:
-      id: "1804.09301"
-      url: "https://arxiv.org/abs/1804.09301"
-      title: "Winogender Schemas (gender-bias probe for coreference; arXiv listing verified)"
-      verified_title: true
-    risk_area: "gender bias (coreference)"
-    task: ["diagnostic minimal-pair probe"]
-    license:
-      as_observed: "MIT (LICENSE read directly: copyright (c) 2018 Rachel Rudinger)"
-      where_observed: "canonical repository LICENSE, master branch, fetched 2026-10-23; HF hosting tag agrees"
-    size_facts:
-      - fact: "120 templates (60 occupations, two per occupation) generating 720 sentences (120 x {female, male, neutral} x {participant, someone})"
-        ref: "R2"
-      - fact: "systematic gender bias confirmed in three publicly-available coreference resolution systems; bias correlated with real-world and textual gender statistics"
-        ref: "R1"
-      - fact: "authors' interpretation rule: high positive predictive value, low negative predictive value (demonstrates presence, not absence, of bias)"
-        ref: "R2"
-    course_use:
-      chapters: ["02", "17"]
-      projects: ["P09"]
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/20-winogender.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/1804.09301"
-        collected: "authors; 2018-04-25; abstract (schema-style minimal pairs differing by pronoun gender; three coreference systems; correlation with real-world statistics)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://github.com/rudinger/winogender-schemas"
-        collected: "120 templates / 720 sentences arithmetic; data file names; PPV/NPV quote; MIT license (c) 2018 Rachel Rudinger"
-        accessed_on: 2026-10-23
-      - id: "R3"
-        url: "https://huggingface.co/datasets/oskarvanderwal/winogender"
-        collected: "license tag mit; 1,489 downloads; last modified 2024-03-07"
-        accessed_on: 2026-10-23
-
-  - id: DS-021
-    name: "MMLU"
-    organization: "UC Berkeley et al. (paper: Hendrycks, Burns, Basart, Zou, Mazeika, Song, +1)"
-    hf_id: "cais/mmlu"
-    canonical_url: "https://huggingface.co/datasets/cais/mmlu"
-    paper:
-      id: "2009.03300"
-      url: "https://arxiv.org/abs/2009.03300"
-      title: "Measuring Massive Multitask Language Understanding"
-      verified_title: true
-    risk_area: "general-capability anchor (retained-knowledge control)"
-    task: ["multitask multiple-choice accuracy"]
-    license:
-      as_observed: "mit"
-      where_observed: "HF API license tag on cais/mmlu, fetched 2026-10-23"
-    size_facts:
-      - fact: "57 tasks including elementary mathematics, US history, computer science, law, and more"
-        ref: "R1"
-      - fact: "splits (all config): test 14,042; validation 1,531; dev 285; auxiliary_train 99,842"
-        ref: "R3"
-      - fact: "at publication most recent models near random-chance accuracy; the very largest GPT-3 model improved over random chance by almost 20 percentage points on average"
-        ref: "R1"
-    course_use:
-      chapters: ["17", "20"]
-      projects: []
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/21-mmlu.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2009.03300"
-        collected: "title; 7 authors; 2020-09-07; abstract (57 tasks; near-random baselines; largest GPT-3 ~20pp over random)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://huggingface.co/datasets/cais/mmlu"
-        collected: "license tag mit; arXiv tags; 881 likes; 541,018 downloads; last modified 2024-03-08"
-        accessed_on: 2026-10-23
-      - id: "R3"
-        url: "https://datasets-server.huggingface.co/size?dataset=cais/mmlu"
-        collected: "all/test 14,042; all/validation 1,531; all/dev 285; all/auxiliary_train 99,842; spot-checked per-subject splits"
-        accessed_on: 2026-10-23
-
-  - id: DS-022
-    name: "GSM8K"
-    organization: "OpenAI (paper: Cobbe et al., 12 authors)"
-    hf_id: "openai/gsm8k"
-    canonical_url: "https://github.com/openai/grade-school-math"
-    paper:
-      id: "2110.14168"
-      url: "https://arxiv.org/abs/2110.14168"
-      title: "Training Verifiers to Solve Math Word Problems"
-      verified_title: true
-    risk_area: "general-capability anchor (retained-reasoning control)"
-    task: ["multi-step math word problems"]
-    license:
-      as_observed: "MIT (LICENSE read directly: copyright (c) 2021 OpenAI)"
-      where_observed: "canonical repository LICENSE, master branch, fetched 2026-10-23; HF tag agrees"
-    size_facts:
-      - fact: "abstract states 8.5K high quality linguistically diverse grade school math word problems; released splits sum to 8,792 (train 7,473 + test 1,319) — documented discrepancy recorded"
-        ref: "R1"
-      - fact: "two HF configurations (main and socratic) with identical counts: train 7,473 / test 1,319 each"
-        ref: "R3"
-      - fact: "at publication even the largest transformer models failed to achieve high test performance; the paper introduces training verifiers as the remedy"
-        ref: "R1"
-    course_use:
-      chapters: ["17"]
-      projects: []
-    access_level: "abstract-read"
-    verified_on: 2026-10-23
-    card: "cards/22-gsm8k.md"
-    references:
-      - id: "R1"
-        url: "https://arxiv.org/abs/2110.14168"
-        collected: "title; 12 authors; 2021-10-27; abstract (8.5K characterization; failure of largest models; training verifiers)"
-        accessed_on: 2026-10-23
-      - id: "R2"
-        url: "https://github.com/openai/grade-school-math"
-        collected: "MIT License (c) 2021 OpenAI"
-        accessed_on: 2026-10-23
-      - id: "R3"
-        url: "https://huggingface.co/datasets/openai/gsm8k + datasets-server size API"
-        collected: "license tag mit; arXiv tag 2110.14168; 2,000 likes; 986,952 downloads; main and socratic splits 7,473/1,319 each"
-        accessed_on: 2026-10-23
+- id: DS-001
+  name: TruthfulQA
+  organization: truthfulqa (Hugging Face); paper by Lin, Hilton, and Evans
+  hf_id: truthfulqa/truthful_qa
+  canonical_url: https://huggingface.co/datasets/truthfulqa/truthful_qa
+  paper:
+    id: '2109.07958'
+    url: https://arxiv.org/abs/2109.07958
+    title: 'TruthfulQA: Measuring How Models Mimic Human Falsehoods'
+    verified_title: false
+  risk_area: truthfulness / imitative falsehoods
+  task:
+  - question answering
+  - multiple choice
+  - text generation
+  license:
+    as_observed: apache-2.0
+    where_observed: Hugging Face dataset page license tag
+  size_facts:
+  - fact: 817 rows in the validation split
+    ref: R1
+  - fact: size category 1K-10K on the HF page
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    - '06'
+    projects:
+    - P03
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/01-truthfulqa.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/truthfulqa/truthful_qa
+    collected: license tag (apache-2.0); validation split 817 rows; tasks; adversarial subcategories (Misconceptions,
+      Proverbs, Misquotations, Conspiracies, Superstitions); arXiv link 2109.07958
+    accessed_on: 2026-10-21
+- id: DS-002
+  name: BOLD (Bias in Open-Ended Language Generation)
+  organization: hosted under AmazonScience on Hugging Face
+  hf_id: AmazonScience/bold
+  canonical_url: https://huggingface.co/datasets/AmazonScience/bold
+  paper:
+    id: '2101.11718'
+    url: https://arxiv.org/abs/2101.11718
+    title: 'BOLD: Dataset and Metrics for Measuring Biases in Open-Ended Language Generation'
+    verified_title: true
+  risk_area: social bias in open-ended generation
+  task:
+  - text generation
+  license:
+    as_observed: CC BY-SA 4.0
+    where_observed: 'HF page text: ''Creative Commons Attribution Share Alike 4.0 International license'''
+  size_facts:
+  - fact: 23,679 text generation prompts
+    ref: R1
+  - fact: 'Profession: 18 sub-groups, 10,195 prompts'
+    ref: R1
+  - fact: 'Gender: 2 sub-groups, 3,204 prompts'
+    ref: R1
+  - fact: 'Race: 4 sub-groups, 7,657 prompts'
+    ref: R1
+  - fact: 'Religious ideologies: 7 sub-groups, 639 prompts'
+    ref: R1
+  - fact: 'Political ideologies: 12 sub-groups, 1,984 prompts'
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    - '21'
+    projects:
+    - P09
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/02-bold.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/AmazonScience/bold
+    collected: license sentence; 23,679 prompts; per-domain sub-group and prompt counts; task; arXiv 2101.11718
+    accessed_on: 2026-10-21
+- id: DS-003
+  name: RealToxicityPrompts
+  organization: allenai
+  hf_id: allenai/real-toxicity-prompts
+  canonical_url: https://huggingface.co/datasets/allenai/real-toxicity-prompts
+  paper:
+    id: '2009.11462'
+    url: https://arxiv.org/abs/2009.11462
+    title: 'RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models'
+    verified_title: false
+  risk_area: toxicity in generation
+  task:
+  - text generation
+  - toxicity scoring
+  license:
+    as_observed: apache-2.0
+    where_observed: Hugging Face dataset page license tag
+  size_facts:
+  - fact: 99.4k rows in the default subset
+    ref: R1
+  - fact: 8 toxicity subcategories in fields (threat, insult, severe_toxicity, toxicity, profanity, sexually_explicit,
+      identity_attack, flirtation)
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    - '15'
+    projects:
+    - P09
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/03-real-toxicity-prompts.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/allenai/real-toxicity-prompts
+    collected: license tag; 99.4k rows; field names incl. 8 toxicity subcategories; arXiv 2009.11462
+    accessed_on: 2026-10-21
+- id: DS-004
+  name: ToxiGen
+  organization: skg (Hugging Face); paper by Microsoft Research and collaborators
+  hf_id: skg/toxigen-data
+  canonical_url: https://huggingface.co/datasets/skg/toxigen-data
+  paper:
+    id: '2203.09509'
+    url: https://arxiv.org/abs/2203.09509
+    title: 'ToxiGen: A Large-Scale Machine-Generated Dataset for Implicit Toxicity Detection'
+    verified_title: false
+  risk_area: implicit toxicity / adversarial benign statements
+  task:
+  - text classification
+  license:
+    as_observed: MIT License text, 'Copyright (c) Microsoft Corporation.', under a 'TOXIGEN' title header
+      (LICENSE.txt, 3,539 bytes)
+    where_observed: 'https://github.com/microsoft/ToxiGen LICENSE.txt via GitHub license API, fetched
+      2026-10-23 [R2]; GitHub auto-detection returns NOASSERTION/''Other'' due to the non-standard header
+      — the file body is the MIT text. Scope caveat: the HF dataset page still shows no license tag; whether
+      the HF copy is covered by the repository license is an inference, not verified'
+  size_facts:
+  - fact: overall size category 100K-1M rows
+    ref: R1
+  - fact: annotated subset 9.9k rows (train 8.96k, test 940)
+    ref: R1
+  - fact: prompts split 31k rows; annotations split 27.5k rows
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    - '21'
+    projects: []
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/04-toxigen.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/skg/toxigen-data
+    collected: split/row counts (annotated 9.9k; prompts 31k; annotations 27.5k); size category; task;
+      arXiv 2203.09509; absence of visible license
+    accessed_on: 2026-10-21
+- id: DS-005
+  name: BBQ (Bias Benchmark for QA)
+  organization: NYU MLL (paper); multiple HF mirrors
+  hf_id: heegyu/bbq (mirror inspected)
+  canonical_url: https://github.com/nyu-mll/BBQ
+  paper:
+    id: '2110.08193'
+    url: https://arxiv.org/abs/2110.08193
+    title: 'BBQ: A Hand-Built Bias Benchmark for Question Answering'
+    verified_title: true
+  risk_area: stereotype bias in question answering
+  task:
+  - multiple-choice QA
+  - bias measurement
+  license:
+    as_observed: CC-BY-4.0 (Creative Commons Attribution 4.0 International), full legal code (LICENSE,
+      18,649 bytes)
+    where_observed: https://github.com/nyu-mll/BBQ LICENSE via GitHub license API, fetched 2026-10-23
+      [R4]; the canonical repository hosts the dataset files themselves, so the license covers the data
+      — superseding the placeholder text observed on mirror pages
+  size_facts:
+  - fact: 58,492 rows on inspected mirror (twice, on two mirrors)
+    ref: R1
+  - fact: 9 demographic categories (age, disability, gender identity, nationality, physical appearance,
+      race/ethnicity, religion, SES, sexual orientation)
+    ref: R2
+  - fact: ambiguous and disambiguated variants; 3 answer options; 4-shot train splits; Religion has no
+      train split
+    ref: R2
+  - fact: paper published in Findings of ACL 2022, pages 2086-2105
+    ref: R3
+  course_use:
+    chapters:
+    - '02'
+    - '21'
+    projects:
+    - P09
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/05-bbq.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/heegyu/bbq
+    collected: 58,492 rows; 50.9 MB; authors list; GitHub nyu-mll/BBQ; paper abstract
+    accessed_on: 2026-10-21
+  - id: R2
+    url: https://huggingface.co/datasets/HiTZ/bbq
+    collected: ambig/disambig configs; 9 categories; ans0/1/2 + label fields; train/test split semantics;
+      Religion no-train note
+    accessed_on: 2026-10-21
+  - id: R3
+    url: https://huggingface.co/datasets/heegyu/bbq
+    collected: ACL Anthology citation block (2022.findings-acl.165, pages 2086-2105, DOI)
+    accessed_on: 2026-10-21
+- id: DS-006
+  name: XSTest
+  organization: Paul Röttger and coauthors (Oxford / Bocconi / UCL / AltANA)
+  hf_id: paul-rottger/xstest (canonical HF), mirrors inspected
+  canonical_url: https://github.com/paul-rottger/xstest
+  paper:
+    id: '2308.01263'
+    url: https://arxiv.org/abs/2308.01263
+    title: 'XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models'
+    verified_title: true
+  risk_area: over-refusal / exaggerated safety
+  task:
+  - refusal measurement
+  license:
+    as_observed: CC BY 4.0 for prompts; model completions under original Meta/Mistral/OpenAI licenses
+    where_observed: GitHub repository README license section (verbatim)
+  size_facts:
+  - fact: 250 safe prompts across ten prompt types
+    ref: R1
+  - fact: 200 unsafe prompts as contrasts
+    ref: R1
+  - fact: accepted at NAACL 2024 main conference
+    ref: R2
+  course_use:
+    chapters:
+    - '02'
+    - '15'
+    projects:
+    - P01
+    - P07
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/06-xstest.md
+  references:
+  - id: R1
+    url: https://github.com/paul-rottger/xstest
+    collected: license text (CC-BY-4.0 prompts; completions under vendor licenses); authors; NAACL 2024
+      + anthology link; repo stats
+    accessed_on: 2026-10-21
+  - id: R2
+    url: https://arxiv.org/abs/2308.01263
+    collected: abstract (250 safe + 200 unsafe design); submission history v1 2023-08-02, v3 2024-04-01;
+      authors
+    accessed_on: 2026-10-21
+- id: DS-007
+  name: BeaverTails
+  organization: PKU-Alignment
+  hf_id: PKU-Alignment/BeaverTails
+  canonical_url: https://huggingface.co/datasets/PKU-Alignment/BeaverTails
+  paper:
+    id: '2307.04657'
+    url: https://arxiv.org/abs/2307.04657
+    title: 'BeaverTails: Towards Improved Safety Alignment of LLM via a Human-Preference Dataset'
+    verified_title: false
+  risk_area: safety annotation / preference data
+  task:
+  - text classification
+  - safety annotation
+  license:
+    as_observed: cc-by-nc-4.0 (NON-COMMERCIAL)
+    where_observed: Hugging Face dataset page license tag
+  size_facts:
+  - fact: 364k rows in the default subset
+    ref: R1
+  - fact: 330k_train 301k rows; 330k_test 33.4k rows; 30k_train 27.2k rows; 30k_test 3.02k rows
+    ref: R1
+  - fact: '14 safety-annotation dimensions, at least: animal abuse; child abuse; controversial topics/politics;
+      discrimination/stereotype/injustice; drug abuse/weapons/banned substance; financial crime/property
+      crime/theft; hate speech/offensive language; misinformation regarding ethics/laws (list as displayed,
+      truncated in fetch)'
+    ref: R1
+  course_use:
+    chapters:
+    - '04'
+    - '15'
+    projects:
+    - P04
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/07-beavertails.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/PKU-Alignment/BeaverTails
+    collected: license tag cc-by-nc-4.0; 364k default rows; four split configs with row counts; dimension
+      names; arXiv 2307.04657
+    accessed_on: 2026-10-21
+- id: DS-008
+  name: Anthropic HH-RLHF
+  organization: Anthropic
+  hf_id: Anthropic/hh-rlhf
+  canonical_url: https://huggingface.co/datasets/Anthropic/hh-rlhf
+  paper:
+    id: '2204.05862'
+    url: https://arxiv.org/abs/2204.05862
+    title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+    verified_title: false
+  risk_area: preference data / red-teaming
+  task:
+  - preference learning
+  - safety training data
+  license:
+    as_observed: mit
+    where_observed: Hugging Face dataset page license tag
+  size_facts:
+  - fact: 169k total rows (train 161k, test 8.55k)
+    ref: R1
+  course_use:
+    chapters:
+    - '04'
+    - '15'
+    projects:
+    - P04
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/08-hh-rlhf.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/Anthropic/hh-rlhf
+    collected: license tag mit; 169k rows (train 161k, test 8.55k); arXiv 2204.05862
+    accessed_on: 2026-10-21
+- id: DS-009
+  name: AdvBench
+  organization: llm-attacks (CMU / Center for AI Safety / Google DeepMind / Bosch authors)
+  hf_id: none canonical; walledai/AdvBench is a mirror
+  canonical_url: https://github.com/llm-attacks/llm-attacks
+  paper:
+    id: '2307.15043'
+    url: https://arxiv.org/abs/2307.15043
+    title: Universal and Transferable Adversarial Attacks on Aligned Language Models
+    verified_title: true
+  risk_area: adversarial suffix attacks / jailbreaks
+  task:
+  - adversarial attack target set
+  license:
+    as_observed: 'LICENSE file present in repo, read directly 2026-10-23: MIT License, copyright (c) 2023
+      Andy Zou (1,065 bytes)'
+    where_observed: https://github.com/llm-attacks/llm-attacks LICENSE via GitHub license API; the repo's
+      data/advbench/ hosts harmful_behaviors.csv (82,125 bytes) and harmful_strings.csv (34,654 bytes)
+      — closes the 'direct LICENSE read pending' marker
+  size_facts:
+  - fact: harmful_behaviors.csv has 521 lines (520 data rows + header), 80.2 KB
+    ref: R1
+  - fact: 'columns: goal, target'
+    ref: R1
+  - fact: the repo also ships harmful_strings.csv and transfer_expriment_behaviors.csv
+    ref: R1
+  - fact: mirror card describes 'a set of 500 harmful behaviors' (paper framing)
+    ref: R2
+  course_use:
+    chapters:
+    - '12'
+    - '15'
+    projects:
+    - P07
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/09-advbench.md
+  references:
+  - id: R1
+    url: https://github.com/llm-attacks/llm-attacks/blob/main/data/advbench/harmful_behaviors.csv
+    collected: 521 lines / 520 rows / 80.2 KB; goal+target columns; commit a62d130 (Jul 27 2023)
+    accessed_on: 2026-10-21
+  - id: R2
+    url: https://huggingface.co/datasets/walledai/AdvBench
+    collected: mirror description ('500 harmful behaviors' framing); MIT license statement for the mirror;
+      note that harmful_strings.csv is omitted there
+    accessed_on: 2026-10-21
+  - id: R3
+    url: https://arxiv.org/abs/2307.15043
+    collected: authors (Zou, Wang, Carlini, Nasr, Kolter, Fredrikson); v1 2023-07-27, v2 2023-12-20; abstract
+      (GCG method, transfer to ChatGPT/Bard/Claude)
+    accessed_on: 2026-10-21
+- id: DS-010
+  name: JailbreakBench (JBB-Behaviors)
+  organization: JailbreakBench project (mult-institution academic collaboration)
+  hf_id: JailbreakBench/JBB-Behaviors
+  canonical_url: https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors
+  paper:
+    id: '2404.01318'
+    url: https://arxiv.org/abs/2404.01318
+    title: 'JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models'
+    verified_title: false
+  risk_area: jailbreak robustness
+  task:
+  - standardized jailbreak evaluation
+  license:
+    as_observed: MIT ('This dataset, like the code, is released under MIT License.')
+    where_observed: Hugging Face dataset page license section (verbatim)
+  size_facts:
+  - fact: 'behaviors subset 200 rows: harmful split 100 + benign split 100'
+    ref: R1
+  - fact: judge_comparison subset 300 rows
+    ref: R1
+  - fact: 10 behavior categories aligned with OpenAI usage policies
+    ref: R1
+  - fact: Source field with 3 values (TDC/HarmBench, AdvBench, Original)
+    ref: R1
+  - fact: DOI 10.57967/hf/2540
+    ref: R1
+  course_use:
+    chapters:
+    - '15'
+    - '20'
+    projects:
+    - P07
+    - P10
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/10-jailbreakbench.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors
+    collected: MIT license text; subset/split row counts; 10 categories; Source values; DOI; arXiv 2404.01318;
+      field schema (Index, Goal, Target, Behavior, Category, Source)
+    accessed_on: 2026-10-21
+- id: DS-011
+  name: HarmBench
+  organization: 'Center for AI Safety (paper: Mazeika et al., 12 authors)'
+  hf_id: official HF dataset ID not confirmed this round; walledai/HarmBench is a mirror
+  canonical_url: https://github.com/centerforaisafety/HarmBench
+  paper:
+    id: '2402.04249'
+    url: https://arxiv.org/abs/2402.04249
+    title: 'HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal'
+    verified_title: true
+  risk_area: automated red teaming / robust refusal
+  task:
+  - red-teaming framework + behavior sets
+  license:
+    as_observed: MIT License, copyright (c) 2024 centerforaisafety (LICENSE, 1,074 bytes)
+    where_observed: https://github.com/centerforaisafety/HarmBench LICENSE via GitHub license API, fetched
+      2026-10-23; SPDX MIT
+  size_facts:
+  - fact: abstract reports a large-scale comparison of 18 red teaming methods and 33 target LLMs and defenses
+    ref: R1
+  - fact: 'behavior set verified by direct CSV read 2026-10-23: harmbench_behaviors_text_all.csv = 400
+      text behaviors (200 standard, 100 copyright, 100 contextual); semantic categories: cybercrime_intrusion
+      67, illegal 65, misinformation_disinformation 65, chemical_biological 56, harassment_bullying 25,
+      harmful 22, copyright 100; test split = 320 (159 standard, 80 copyright, 81 contextual), val split
+      = 80 (41/20/19); multimodal set = 110 behaviors'
+    ref: R3
+  - fact: the commonly cited '200 behaviors' refers to the standard functional subset — now verified against
+      the canonical CSV
+    ref: R3
+  course_use:
+    chapters:
+    - '15'
+    - '20'
+    projects:
+    - P10
+  access_level: abstract-read
+  verified_on: 2026-10-21
+  card: cards/11-harmbench.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2402.04249
+    collected: authors (Mazeika, Phan, Yin, Zou, Wang, Mu, Sakhaee, Li, Basart, Li, Forsyth, Hendrycks);
+      v1 2024-02-06, v2 2024-02-27; abstract (18 methods, 33 targets, adversarial training)
+    accessed_on: 2026-10-21
+  - id: R2
+    url: https://github.com/centerforaisafety/HarmBench
+    collected: repository existence and title/description; LICENSE read directly 2026-10-23 (MIT, (c)
+      2024 centerforaisafety)
+    accessed_on: 2026-10-21
+  - id: R3
+    url: https://github.com/centerforaisafety/HarmBench/data/behavior_datasets/harmbench_behaviors_text_all.csv
+      (fetched and parsed 2026-10-23)
+    collected: 400 rows; columns Behavior/FunctionalCategory/SemanticCategory/Tags/ContextString/BehaviorID;
+      functional counts 200/100/100; semantic category distribution; val/test splits 80/320; multimodal_all
+      110 rows
+    accessed_on: 2026-10-23
+- id: DS-012
+  name: WildChat
+  organization: allenai
+  hf_id: allenai/WildChat
+  canonical_url: https://huggingface.co/datasets/allenai/WildChat
+  paper:
+    id: null
+    url: null
+    title: 'WildChat: 1M ChatGPT Interaction Logs'
+    verified_title: false
+  risk_area: real-user data / privacy / provenance
+  task:
+  - real-traffic corpus
+  license:
+    as_observed: ODC-BY for WildChat-1M (license change effective 2024-06-26, retroactive); Ai2 Impact
+      License referenced by the nontoxic variant
+    where_observed: HF pages for WildChat-1M and WildChat-nontoxic
+  size_facts:
+  - fact: 'allenai/WildChat: 650K conversations'
+    ref: R1
+  - fact: 'allenai/WildChat-1M: 1 million conversations'
+    ref: R2
+  - fact: 'allenai/WildChat-4.8M: 3,199,860 conversations, non-toxic user inputs only'
+    ref: R3
+  course_use:
+    chapters:
+    - '16'
+    - '21'
+    projects:
+    - P09
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/12-wildchat.md
+  references:
+  - id: R1
+    url: https://huggingface.co/datasets/allenai/WildChat
+    collected: 650K conversations; collection method sentence (free access to GPT-3.5 offered to online
+      users)
+    accessed_on: 2026-10-21
+  - id: R2
+    url: https://huggingface.co/datasets/allenai/WildChat-1M
+    collected: 1M conversations; license change to ODC-BY dated 2024-06-26, retroactive; commit 7d6490e
+      README update
+    accessed_on: 2026-10-21
+  - id: R3
+    url: https://huggingface.co/datasets/allenai/WildChat-4.8M
+    collected: 3,199,860 conversations; non-toxic-only filter; release date Aug 11 2025
+    accessed_on: 2026-10-21
+- id: DS-013
+  name: SafetyBench
+  organization: thu-coai (Tsinghua)
+  hf_id: thu-coai/SafetyBench
+  canonical_url: https://github.com/thu-coai/safetybench
+  paper:
+    id: '2309.07045'
+    url: https://arxiv.org/abs/2309.07045
+    title: Evaluating the Safety of Large Language Models
+    verified_title: true
+  risk_area: multi-category safety knowledge
+  task:
+  - multiple-choice safety evaluation
+  license:
+    as_observed: MIT License, copyright (c) 2023 thu-coai (LICENSE, 1,065 bytes)
+    where_observed: https://github.com/thu-coai/safetybench LICENSE via GitHub license API, fetched 2026-10-23;
+      SPDX MIT
+  size_facts:
+  - fact: 11,435 multiple-choice questions across 7 safety categories
+    ref: R1
+  - fact: Chinese and English data both included
+    ref: R1
+  - fact: published at ACL 2024 (2024.acl-long.830), Zhang et al.
+    ref: R2
+  course_use:
+    chapters:
+    - '23'
+    - '02'
+    projects: []
+  access_level: page-inspected
+  verified_on: 2026-10-21
+  card: cards/13-safetybench.md
+  references:
+  - id: R1
+    url: https://github.com/thu-coai/safetybench
+    collected: 11,435 MCQs; 7 categories; bilingual EN+ZH statement
+    accessed_on: 2026-10-21
+  - id: R2
+    url: https://aclanthology.org/2024.acl-long.830
+    collected: ACL 2024 long paper listing; authors (Zhang et al.); citation count context
+    accessed_on: 2026-10-21
+- id: DS-014
+  name: OR-Bench
+  organization: Justin Cui, Wei-Lin Chiang, Ion Stoica, Cho-Jui Hsieh (UCLA / Berkeley)
+  hf_id: bench-llms/or-bench (paper's org) and bench-llm/or-bench (higher-traffic hosting)
+  canonical_url: https://github.com/justincui03/or-bench
+  paper:
+    id: '2405.20947'
+    url: https://arxiv.org/abs/2405.20947
+    title: 'OR-Bench: An Over-Refusal Benchmark for Large Language Models'
+    verified_title: true
+  risk_area: over-refusal / exaggerated safety
+  task:
+  - over-refusal measurement (automatically generated prompts)
+  license:
+    as_observed: cc-by-4.0 (both HF hostings carry the tag)
+    where_observed: HF API license tags on bench-llms/or-bench and bench-llm/or-bench, fetched 2026-10-23;
+      org-name discrepancy between the paper's stated URL and the higher-traffic hosting recorded in the
+      card
+  size_facts:
+  - fact: 80,000 over-refusal prompts across 10 common rejection categories; subset of ~1,000 hard prompts;
+      additional 600 toxic prompts as contrast
+    ref: R1
+  - fact: measurement study covers 32 popular LLMs across 8 model families
+    ref: R1
+  course_use:
+    chapters:
+    - '06'
+    projects: []
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/14-or-bench.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2405.20947
+    collected: title; authors; v1 2024-05-31 / v5 2025-06-15; abstract (80,000 prompts, 10 categories,
+      ~1,000 hard, 600 toxic, 32 LLMs / 8 families, automatic generation method)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://huggingface.co/datasets/bench-llms/or-bench
+    collected: license tag cc-by-4.0; 937 downloads; the org named in the paper's URL
+    accessed_on: 2026-10-23
+  - id: R3
+    url: https://huggingface.co/datasets/bench-llm/or-bench
+    collected: license tag cc-by-4.0; 9,801 downloads; last modified 2024-12-19; org-name discrepancy
+      recorded
+    accessed_on: 2026-10-23
+- id: DS-015
+  name: WildJailbreak
+  organization: 'allenai (paper: Jiang et al., 11 authors)'
+  hf_id: allenai/wildjailbreak
+  canonical_url: https://huggingface.co/datasets/allenai/wildjailbreak
+  paper:
+    id: '2406.18510'
+    url: https://arxiv.org/abs/2406.18510
+    title: 'WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models'
+    verified_title: true
+  risk_area: jailbreak training / adversarial safety training
+  task:
+  - safety training set (vanilla + adversarial prompt-response pairs)
+  license:
+    as_observed: odc-by
+    where_observed: HF API license tag on allenai/wildjailbreak, fetched 2026-10-23
+  size_facts:
+  - fact: 262K vanilla (direct request) and adversarial (complex jailbreak) prompt-response pairs
+    ref: R1
+  - fact: 'contrastive design: harmful queries (vanilla and adversarial) plus benign queries that resemble
+      harmful queries in form but contain no harm'
+    ref: R1
+  - fact: built by mining in-the-wild user-chatbot interactions; 5.7K unique clusters of novel jailbreak
+      tactics; up to 4.6x more diverse and successful adversarial attacks than state-of-the-art jailbreak
+      methods
+    ref: R1
+  course_use:
+    chapters:
+    - '04'
+    - '15'
+    projects: []
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/15-wildjailbreak.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2406.18510
+    collected: title; 11 authors; submitted 2024-06-26; abstract (5.7K tactic clusters; 262K pairs; contrastive
+      design; 4.6x comparison; open training-set motivation)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://huggingface.co/datasets/allenai/wildjailbreak
+    collected: license tag odc-by; arXiv tag 2406.18510; 164 likes; 6,196 downloads; last modified 2024-08-08
+    accessed_on: 2026-10-23
+- id: DS-016
+  name: WMDP (Weapons of Mass Destruction Proxy)
+  organization: 'consortium of academics and technical consultants (paper: Li et al., 57 authors)'
+  hf_id: cais/wmdp
+  canonical_url: https://wmdp.ai
+  paper:
+    id: '2403.03218'
+    url: https://arxiv.org/abs/2403.03218
+    title: 'The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning'
+    verified_title: true
+  risk_area: hazardous knowledge / unlearning
+  task:
+  - multiple-choice proxy measurement of hazardous knowledge
+  license:
+    as_observed: mit
+    where_observed: HF API license tag on cais/wmdp, fetched 2026-10-23
+  size_facts:
+  - fact: 3,668 multiple-choice questions across biosecurity, cybersecurity, and chemical security
+    ref: R1
+  - fact: stringently filtered to eliminate sensitive information prior to public release; dual role as
+      hazardous-knowledge evaluation and unlearning benchmark; RMU unlearning method reduces WMDP performance
+      while maintaining general capabilities
+    ref: R1
+  course_use:
+    chapters:
+    - '20'
+    projects: []
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/16-wmdp.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2403.03218
+    collected: title; 57 authors; v1 2024-03-05 / v7 2024-05-15; abstract (3,668 MCQ; bio/cyber/chem;
+      filtering; RMU; wmdp.ai; White House EO context)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://huggingface.co/datasets/cais/wmdp
+    collected: license tag mit; arXiv tag 2403.03218; 32 likes; 26,806 downloads; last modified 2024-04-27
+    accessed_on: 2026-10-23
+- id: DS-017
+  name: HaluEval
+  organization: 'RUC AI Box (paper: Li, Cheng, Zhao, Nie, Wen)'
+  hf_id: pminervini/HaluEval (mirror)
+  canonical_url: https://github.com/RUCAIBox/HaluEval
+  paper:
+    id: '2305.11747'
+    url: https://arxiv.org/abs/2305.11747
+    title: 'HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models'
+    verified_title: true
+  risk_area: hallucination recognition
+  task:
+  - hallucination recognition (forced choice) across general/QA/dialogue/summarization
+  license:
+    as_observed: apache-2.0 (HF mirror tag); canonical repository license not displayed on the fetched
+      pages
+    where_observed: HF API license tag on pminervini/HaluEval, fetched 2026-10-23; canonical GitHub README
+      and listing showed no license statement — recorded honestly in the card
+  size_facts:
+  - fact: '35K generated and human-annotated hallucinated samples: 5K general (Alpaca-sourced user queries,
+      human-annotated ChatGPT responses) + 10K each QA (HotpotQA seed), dialogue (OpenDialKG seed), summarization
+      (CNN/Daily Mail seed)'
+    ref: R2
+  - fact: sampling-then-filtering generation framework; about 19.5% of ChatGPT responses hallucinated
+      (topic-specific, fabricating unverifiable information)
+    ref: R1
+  course_use:
+    chapters:
+    - '06'
+    projects: []
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/17-halueval.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2305.11747
+    collected: title; 5 authors; v1 2023-05-19 / updated 2023-10-23; abstract (sampling-then-filtering;
+      human labelers; ~19.5% topic-specific; external-knowledge/reasoning findings)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://github.com/RUCAIBox/HaluEval
+    collected: 35K composition; 5K/10K/10K/10K per-task split with seed corpora and field schemas
+    accessed_on: 2026-10-23
+  - id: R3
+    url: https://huggingface.co/datasets/pminervini/HaluEval
+    collected: license tag apache-2.0; 34 likes; 8,996 downloads; last modified 2023-12-07
+    accessed_on: 2026-10-23
+- id: DS-018
+  name: SimpleQA
+  organization: 'OpenAI (paper: Wei et al., 8 authors)'
+  hf_id: none canonical; mirror basicv8vc/SimpleQA observed (not used as a fact source)
+  canonical_url: https://github.com/openai/simple-evals
+  paper:
+    id: '2411.04368'
+    url: https://arxiv.org/abs/2411.04368
+    title: Measuring short-form factuality in large language models
+    verified_title: true
+  risk_area: short-form factuality
+  task:
+  - fact-seeking QA with correct/incorrect/not-attempted grading
+  license:
+    as_observed: simple-evals repository MIT (LICENSE read directly); the data file at openaipublic blob
+      storage shows no separate license statement at the file location
+    where_observed: GitHub license API for openai/simple-evals, fetched 2026-10-23; data-URL license status
+      recorded honestly in the card
+  size_facts:
+  - fact: 4,326 questions (direct CSV parse; naive line count 4,333 due to multi-line quoted fields)
+    ref: R3
+  - fact: 'topic distribution: Science and technology 858, Politics 709, Art 550, Other 475, Geography
+      424, Sports 368, Music 341, TV shows 293, History 173, Video games 135 (sum 4,326)'
+    ref: R3
+  - fact: adversarially collected against GPT-4 responses; single indisputable answers; ideal behavior
+      gets as many correct as possible while not attempting low-confidence questions
+    ref: R1
+  course_use:
+    chapters:
+    - '06'
+    projects:
+    - P10
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/18-simpleqa.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2411.04368
+    collected: title; 8 authors; submitted 2024-11-07; abstract (adversarial collection against GPT-4;
+      single answers; three-way grading; know-what-you-know framing; github.com/openai/simple-evals)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://github.com/openai/simple-evals
+    collected: MIT license (LICENSE read via GitHub API); file listing (simpleqa_eval.py)
+    accessed_on: 2026-10-23
+  - id: R3
+    url: https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv
+    collected: 4,326 rows; columns metadata/problem/answer; topic distribution; multi-line quoted-field
+      artifact
+    accessed_on: 2026-10-23
+- id: DS-019
+  name: CrowS-Pairs
+  organization: 'NYU (paper: Nangia, Vania, Bhalerao, Bowman)'
+  hf_id: nyu-mll/crows_pairs
+  canonical_url: https://github.com/nyu-mll/crows-pairs
+  paper:
+    id: '2010.00133'
+    url: https://arxiv.org/abs/2010.00133
+    title: 'CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models'
+    verified_title: true
+  risk_area: social bias (stereotype pairs)
+  task:
+  - masked-LM stereotype preference measurement
+  license:
+    as_observed: CC BY-SA 4.0
+    where_observed: canonical repository README license section (verbatim statement), corroborated by
+      the HF tag cc-by-sa-4.0, fetched 2026-10-23; repository carries no LICENSE file — README statement
+      is the authority
+  size_facts:
+  - fact: 1,508 examples covering stereotypes dealing with nine types of bias including race, religion,
+      and age
+    ref: R1
+  - fact: minimal-pair design (more-stereotyping vs less-stereotyping sentence); historically disadvantaged
+      groups contrasted with advantaged groups; all three widely-used MLMs evaluated substantially favor
+      stereotype-expressing sentences in every category
+    ref: R1
+  - fact: 'seed provenance: prompts taken from the ROCStories corpora and the fiction part of MNLI (README
+      statement)'
+    ref: R2
+  course_use:
+    chapters:
+    - '02'
+    - '17'
+    projects:
+    - P09
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/19-crows-pairs.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2010.00133
+    collected: title; 4 authors; 2020-09-30; abstract (1,508 examples; nine bias types; minimal-pair design;
+      MLM stereotype-favoring finding)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://github.com/nyu-mll/crows-pairs
+    collected: license statement (CC BY-SA 4.0); seed provenance (ROCStories + MNLI fiction)
+    accessed_on: 2026-10-23
+  - id: R3
+    url: https://huggingface.co/datasets/nyu-mll/crows_pairs
+    collected: license tag cc-by-sa-4.0; 943 downloads; 15 likes; last modified 2024-01-18
+    accessed_on: 2026-10-23
+- id: DS-020
+  name: Winogender Schemas
+  organization: 'Johns Hopkins (paper: Rudinger, Naradowsky, Leonard, Van Durme)'
+  hf_id: oskarvanderwal/winogender (hosting)
+  canonical_url: https://github.com/rudinger/winogender-schemas
+  paper:
+    id: '1804.09301'
+    url: https://arxiv.org/abs/1804.09301
+    title: Winogender Schemas (gender-bias probe for coreference; arXiv listing verified)
+    verified_title: true
+  risk_area: gender bias (coreference)
+  task:
+  - diagnostic minimal-pair probe
+  license:
+    as_observed: 'MIT (LICENSE read directly: copyright (c) 2018 Rachel Rudinger)'
+    where_observed: canonical repository LICENSE, master branch, fetched 2026-10-23; HF hosting tag agrees
+  size_facts:
+  - fact: 120 templates (60 occupations, two per occupation) generating 720 sentences (120 x {female,
+      male, neutral} x {participant, someone})
+    ref: R2
+  - fact: systematic gender bias confirmed in three publicly-available coreference resolution systems;
+      bias correlated with real-world and textual gender statistics
+    ref: R1
+  - fact: 'authors'' interpretation rule: high positive predictive value, low negative predictive value
+      (demonstrates presence, not absence, of bias)'
+    ref: R2
+  course_use:
+    chapters:
+    - '02'
+    - '17'
+    projects:
+    - P09
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/20-winogender.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/1804.09301
+    collected: authors; 2018-04-25; abstract (schema-style minimal pairs differing by pronoun gender;
+      three coreference systems; correlation with real-world statistics)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://github.com/rudinger/winogender-schemas
+    collected: 120 templates / 720 sentences arithmetic; data file names; PPV/NPV quote; MIT license (c)
+      2018 Rachel Rudinger
+    accessed_on: 2026-10-23
+  - id: R3
+    url: https://huggingface.co/datasets/oskarvanderwal/winogender
+    collected: license tag mit; 1,489 downloads; last modified 2024-03-07
+    accessed_on: 2026-10-23
+- id: DS-021
+  name: MMLU
+  organization: 'UC Berkeley et al. (paper: Hendrycks, Burns, Basart, Zou, Mazeika, Song, +1)'
+  hf_id: cais/mmlu
+  canonical_url: https://huggingface.co/datasets/cais/mmlu
+  paper:
+    id: '2009.03300'
+    url: https://arxiv.org/abs/2009.03300
+    title: Measuring Massive Multitask Language Understanding
+    verified_title: true
+  risk_area: general-capability anchor (retained-knowledge control)
+  task:
+  - multitask multiple-choice accuracy
+  license:
+    as_observed: mit
+    where_observed: HF API license tag on cais/mmlu, fetched 2026-10-23
+  size_facts:
+  - fact: 57 tasks including elementary mathematics, US history, computer science, law, and more
+    ref: R1
+  - fact: 'splits (all config): test 14,042; validation 1,531; dev 285; auxiliary_train 99,842'
+    ref: R3
+  - fact: at publication most recent models near random-chance accuracy; the very largest GPT-3 model
+      improved over random chance by almost 20 percentage points on average
+    ref: R1
+  course_use:
+    chapters:
+    - '17'
+    - '20'
+    projects: []
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/21-mmlu.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2009.03300
+    collected: title; 7 authors; 2020-09-07; abstract (57 tasks; near-random baselines; largest GPT-3
+      ~20pp over random)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://huggingface.co/datasets/cais/mmlu
+    collected: license tag mit; arXiv tags; 881 likes; 541,018 downloads; last modified 2024-03-08
+    accessed_on: 2026-10-23
+  - id: R3
+    url: https://datasets-server.huggingface.co/size?dataset=cais/mmlu
+    collected: all/test 14,042; all/validation 1,531; all/dev 285; all/auxiliary_train 99,842; spot-checked
+      per-subject splits
+    accessed_on: 2026-10-23
+- id: DS-022
+  name: GSM8K
+  organization: 'OpenAI (paper: Cobbe et al., 12 authors)'
+  hf_id: openai/gsm8k
+  canonical_url: https://github.com/openai/grade-school-math
+  paper:
+    id: '2110.14168'
+    url: https://arxiv.org/abs/2110.14168
+    title: Training Verifiers to Solve Math Word Problems
+    verified_title: true
+  risk_area: general-capability anchor (retained-reasoning control)
+  task:
+  - multi-step math word problems
+  license:
+    as_observed: 'MIT (LICENSE read directly: copyright (c) 2021 OpenAI)'
+    where_observed: canonical repository LICENSE, master branch, fetched 2026-10-23; HF tag agrees
+  size_facts:
+  - fact: abstract states 8.5K high quality linguistically diverse grade school math word problems; released
+      splits sum to 8,792 (train 7,473 + test 1,319) — documented discrepancy recorded
+    ref: R1
+  - fact: 'two HF configurations (main and socratic) with identical counts: train 7,473 / test 1,319 each'
+    ref: R3
+  - fact: at publication even the largest transformer models failed to achieve high test performance;
+      the paper introduces training verifiers as the remedy
+    ref: R1
+  course_use:
+    chapters:
+    - '17'
+    projects: []
+  access_level: abstract-read
+  verified_on: 2026-10-23
+  card: cards/22-gsm8k.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2110.14168
+    collected: title; 12 authors; 2021-10-27; abstract (8.5K characterization; failure of largest models;
+      training verifiers)
+    accessed_on: 2026-10-23
+  - id: R2
+    url: https://github.com/openai/grade-school-math
+    collected: MIT License (c) 2021 OpenAI
+    accessed_on: 2026-10-23
+  - id: R3
+    url: https://huggingface.co/datasets/openai/gsm8k + datasets-server size API
+    collected: license tag mit; arXiv tag 2110.14168; 2,000 likes; 986,952 downloads; main and socratic
+      splits 7,473/1,319 each
+    accessed_on: 2026-10-23
+- id: DS-023
+  name: StrongREJECT
+  organization: paper by Souly et al. (2024); canonical repository on GitHub
+  canonical_url: https://arxiv.org/abs/2402.10260
+  paper:
+    id: '2402.10260'
+    url: https://arxiv.org/abs/2402.10260
+    title: A StrongREJECT for Empty Jailbreaks
+    verified_title: true
+  risk_area: jailbreak evaluation methodology / exaggerated attack success
+  task:
+  - jailbreak evaluation
+  - harmfulness scoring
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license page uninspected)
+  size_facts:
+  - fact: composition not established at abstract-read level (API abstract truncates before sizes)
+    ref: R1
+  course_use:
+    chapters:
+    - '15'
+    - '02'
+    projects:
+    - P01
+    - P07
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/23-strongreject.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2402.10260
+    collected: 'abstract: benchmark diagnosis (exaggerated jailbreak effectiveness claims from missing
+      standard evaluation); two components (forbidden prompts + response-harmfulness scorer); title/authors/date
+      verified'
+    accessed_on: '2026-10-25'
