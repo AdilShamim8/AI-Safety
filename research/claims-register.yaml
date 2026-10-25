@@ -2665,3 +2665,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0215
+  claim: 'The Trojan Detection Competition 2023 focused on identifying and evaluating trojan attacks on
+    LLMs; the paper''s insights center on the difficulty of distinguishing intended from unintended triggers
+    — which of a model''s trained regularities count as a backdoor — and the feasibility of reverse-engineering
+    trojans: the artifact-security question at LLM scale.'
+  source: SRC-PAPER-144
+  section_or_page: arXiv:2404.13660 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; competition focus
+    and the two insight axes stated, results body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

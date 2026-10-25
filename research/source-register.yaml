@@ -4461,3 +4461,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-144
+  title: 'Trojan Detection in Large Language Models: Insights from The Trojan Detection Challenge'
+  authors_or_organization: Narek Maloyan, Ekansh Verma, Bulat Nutfullin, Bislan Ashinov
+  url: https://arxiv.org/abs/2404.13660
+  source_type: paper
+  publication_date: '2024-04-21'
+  version: 2404.13660v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/69-trojan-detection-llms.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)
