@@ -2581,3 +2581,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0208
+  claim: Cooperative Inverse Reinforcement Learning formalizes the human-AI interaction as a two-player
+    Markov game with asymmetric reward knowledge — the human knows the reward, the robot must learn it
+    from observation — making objective uncertainty a first-class structural property of the agent's situation
+    rather than an estimation detail.
+  source: SRC-PAPER-137
+  section_or_page: arXiv:1606.03137 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; formalism and frame
+    established, theorems body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

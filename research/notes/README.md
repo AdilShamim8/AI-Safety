@@ -1,6 +1,6 @@
 # Research notes
 
-The research notebook: **61 paper notes**, **12 comparison notes**, and
+The research notebook: **62 paper notes**, **12 comparison notes**, and
 **11 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 62 | [CIRL: the objective as the unknown — assistance games founded](62-cirl-assistance-games.md) | SRC-PAPER-137 | abstract-level |
 | 61 | [Fine-tuning compromises safety: the privilege boundary](61-finetuning-compromises-safety.md) | SRC-PAPER-136 | abstract-level |
 | 60 | [Dynabench: the benchmark that fights back](60-dynabench-dynamic-benchmarking.md) | SRC-PAPER-135 | abstract-level |
 | 59 | [CheckList: behavioral testing's grammar for models](59-checklist-behavioral-testing.md) | SRC-PAPER-134 | abstract-level |
