@@ -281,6 +281,15 @@ results (committed example report) as worked evidence; Ch. 18's
 Meridian instruments; Ch. 08's audit-budget arithmetic; Ch. 20's
 release-memo structure.
 
+**Production-incident companions** (what "nobody checked" costs in
+deployment): the [Air Canada liability review](../../research/notes/incidents/01-air-canada-chatbot-liability.md)
+[SRC-REPORT-013] — an assurance case was absent and the tribunal read
+the absence as negligence; the [DPD release-regression review](../../research/notes/incidents/02-dpd-chatbot-update-regression.md)
+[SRC-REPORT-014] — the ten-probe release gate this chapter's grammar
+implies; the [Chevy commitment-authority review](../../research/notes/incidents/03-chevy-dealership-chatbot-authority.md)
+[SRC-REPORT-015/016] — the authority row of the privilege matrix left
+empty until the public filled it in.
+
 ## 8. Exercises
 
 **Exercise 22.1 — defeater-first drafting (analysis).** Take the

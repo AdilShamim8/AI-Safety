@@ -379,6 +379,19 @@ capability-separation design (design-direction references in section
 "prompt injection primer" series; the instruction-hierarchy follow-up
 evaluations under optimized attack.
 
+Production-incident companions (the chapter's classes, as they
+actually failed in deployment):
+
+- [Air Canada chatbot liability](../../research/notes/incidents/01-air-canada-chatbot-liability.md)
+  [SRC-REPORT-013] — the generation channel invented a financial
+  commitment; the tribunal held the deployer to it.
+- [DPD chatbot post-update regression](../../research/notes/incidents/02-dpd-chatbot-update-regression.md)
+  [SRC-REPORT-014] — no output boundary met a behavior-changing
+  release.
+- [Chevy dealership commitment authority](../../research/notes/incidents/03-chevy-dealership-chatbot-authority.md)
+  [SRC-REPORT-015/016] — a public channel with commitment authority
+  and no boundary, tested by the public within hours.
+
 ## 8. Exercises
 
 **Exercise 13.1 (analysis — complete the trust-boundary audit).** The
