@@ -193,9 +193,57 @@ def _test_count() -> int:
 
 
 def _note_counts() -> tuple[int, int]:
-    papers = list((REPO / "research/notes/papers").glob("*.md"))
-    comparisons = list((REPO / "research/notes/comparisons").glob("*.md"))
+    notes_dir = REPO / "research/notes"
+    papers = [p for p in notes_dir.glob("*.md") if re.match(r"\d{2}-", p.name)]
+    comparisons = list(notes_dir.glob("comparison-*.md"))
     return len(papers), len(comparisons)
+
+
+def _note_titles() -> list[dict[str, str]]:
+    """Title lines of the paper notes, for the notes widget."""
+    out = []
+    for p in sorted((REPO / "research/notes").glob("*.md")):
+        if not re.match(r"\d{2}-", p.name):
+            continue
+        first = p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")
+        out.append({"file": p.name, "title": first})
+    return out
+
+
+def _incidents() -> list[dict[str, str]]:
+    """Parse the incident index README table into cards."""
+    import re as _re
+
+    table = (REPO / "research/notes/incidents/README.md").read_text(encoding="utf-8")
+    rows = []
+    for line in table.splitlines():
+        m = _re.match(r"\| (\d\d) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \|", line)
+        if m:
+            rows.append(
+                {
+                    "no": m.group(1),
+                    "name": m.group(2),
+                    "class": m.group(3),
+                    "lesson": m.group(4),
+                    "note": (
+                        m.group(5).strip()[1:-1]
+                        if m.group(5).strip().startswith("[")
+                        else m.group(5)
+                    ),
+                }
+            )
+    return rows
+
+
+def _fs_track() -> list[dict[str, str]]:
+    """The from-scratch researcher track modules."""
+    out = []
+    for p in sorted((REPO / "research/ai-researcher-from-scratch").glob("*.md")):
+        if p.name == "README.md":
+            continue
+        first = p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")
+        out.append({"file": p.name, "title": first})
+    return out
 
 
 def _project_headlines() -> dict[str, str]:
@@ -315,6 +363,9 @@ def build_data() -> dict:
 
     commits_count, commits_shallow = _commit_count()
     papers, comparisons = _note_counts()
+    note_titles = _note_titles()
+    incidents = _incidents()
+    fs_track = _fs_track()
     # the from-scratch researcher track: tensors, neuron/activations,
     # network, attention, transformer, moe (7 modules)
     fs_modules = 7
@@ -328,6 +379,9 @@ def build_data() -> dict:
             "claims": len(claims),
             "datasets": len(datasets),
             "notes": papers + comparisons,
+            "paper_notes": papers,
+            "comparison_notes": comparisons,
+            "note_titles": note_titles,
             "fs_modules": fs_modules,
             "generated_on": datetime.now(UTC).date().isoformat(),
         },
@@ -336,6 +390,8 @@ def build_data() -> dict:
         "datasets": datasets,
         "sources": sources,
         "claims": claims,
+        "incidents": incidents,
+        "fs_track": fs_track,
         "careers": CAREERS,
         "quickstart": QUICKSTART,
     }

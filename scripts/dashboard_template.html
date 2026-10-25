@@ -132,6 +132,8 @@ footer p{max-width:85ch;margin:4px 0}
   <a class="navlink" href="#datasets">Datasets</a>
   <a class="navlink" href="#sources">Sources</a>
   <a class="navlink" href="#claims">Claims</a>
+  <a class="navlink" href="#incidents">Incidents</a>
+  <a class="navlink" href="#notes">Notes</a>
   <a class="navlink" href="#careers">Careers</a>
   <a class="navlink" href="#quickstart">Start here</a>
 </nav>
@@ -209,14 +211,27 @@ footer p{max-width:85ch;margin:4px 0}
     <div class="panel"><div class="body"><table class="grid" id="clm-table"></table></div></div>
   </section>
 
+  <section id="incidents">
+    <h2><span class="idx">08</span> Incident reviews — production, verified, unromanticized</h2>
+    <p class="lede">Real deployments that failed, reviewed with the strict template: observable facts first, established conclusions attributed, unknowns kept unknown, and the overreach named. First-party reports outrank press coverage; where only press exists, the note says so.</p>
+    <div class="projgrid" id="incident-grid"></div>
+  </section>
+
+  <section id="notes">
+    <h2><span class="idx">09</span> The research notebook — 25 notes and the from-scratch track</h2>
+    <p class="lede">20 paper notes (each with a falsifiable extension), 5 comparison notes, and the 7-module from-scratch researcher track that builds the evaluated object by hand: tensors, a neuron, backprop, attention, transformers, MoE — stdlib-only with Python/PyTorch cross-checks.</p>
+    <div class="stats" style="margin-bottom:14px" id="note-stats"></div>
+    <div class="panel"><div class="body"><table class="grid" id="fs-table"></table></div></div>
+  </section>
+
   <section id="careers">
-    <h2><span class="idx">08</span> Three careers, one spine</h2>
+    <h2><span class="idx">10</span> Three careers, one spine</h2>
     <p class="lede">The course's routes map to three role families. The demand signal below is dated 2026-10-25 with per-claim provenance — live market data drifts; the register makes re-verification one fetch away.</p>
     <div class="careergrid" id="career-grid"></div>
   </section>
 
   <section id="quickstart">
-    <h2><span class="idx">09</span> Start here — the beginner path</h2>
+    <h2><span class="idx">11</span> Start here — the beginner path</h2>
     <p class="lede">Everything below runs on a laptop with Python 3.12 and ~2 GB of disk. No GPUs, no API keys, no dataset downloads for the deterministic track.</p>
     <ol class="steps" id="quickstart-steps"></ol>
   </section>
@@ -357,6 +372,25 @@ const clmCols = [
 ];
 explorer($("#clm-table"), $("#clm-search"), $("#clm-count"), D.claims,
   (c, q) => !q || [c.claim, c.source, c.id].join(" ").toLowerCase().includes(q), clmCols);
+
+/* ---- incidents ---- */
+$("#incident-grid").innerHTML = D.incidents.map(i =>
+  `<div class="proj"><div class="id">INCIDENT ${i.no} · <span class="badge amber">${esc(i.class)}</span></div>` +
+  `<div class="ti">${esc(i.name)}</div><div class="hd">${esc(i.lesson)}</div>` +
+  `<div class="pkg"><a href="https://github.com/AdilShamim8/AI-Safety/tree/main/research/notes/incidents/${esc(i.note)}">the note →</a></div></div>`
+).join("");
+
+/* ---- notes + from-scratch ---- */
+$("#note-stats").innerHTML = [
+  ["", D.repo.paper_notes, "paper notes, each with a falsifiable extension"],
+  ["", D.repo.comparison_notes, "comparison notes (RLHF vs DPO, alignment vs control, ...)"],
+  ["", D.repo.fs_modules, "from-scratch modules — stdlib-only, 174 tests"],
+  ["", D.incidents.length, "production incident reviews"],
+].map(([c, v, l]) => `<div class="stat"><div class="v ${c}">${v}</div><div class="l">${l}</div></div>`).join("");
+const fsBase = "https://github.com/AdilShamim8/AI-Safety/tree/main/research/ai-researcher-from-scratch/";
+$("#fs-table").innerHTML =
+  "<tr><th>Module</th><th>Note</th></tr>" +
+  D.fs_track.map(m => `<tr><td><b>${esc(m.title)}</b></td><td><a href="${fsBase}${esc(m.file)}">read →</a></td></tr>`).join("");
 
 /* ---- careers ---- */
 $("#career-grid").innerHTML = D.careers.map(c =>
