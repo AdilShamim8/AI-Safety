@@ -323,6 +323,23 @@ def _fs_track() -> list[dict[str, str]]:
 
 
 
+
+def _note_coverage() -> list[dict]:
+    """Count note-companion links per chapter README for the coverage widget."""
+    out = []
+    for pdir in sorted((REPO / "chapters").glob("[0-9][0-9]-*")):
+        readme = pdir / "README.md"
+        if not readme.is_file():
+            continue
+        text = readme.read_text(encoding="utf-8")
+        links = re.findall(r"\]\(\.\./\.\./research/notes/([\w-]+\.md)\)", text)
+        out.append({
+            "ch": pdir.name.split("-")[0],
+            "title": pdir.name.split("-", 1)[1],
+            "notes": len(set(links)),
+        })
+    return out
+
 def _progress_trackers() -> list[dict]:
     """Parse the per-route progress trackers into milestone summaries."""
     routes = [
@@ -511,6 +528,7 @@ def build_data() -> dict:
         "fs_track": fs_track,
         "careers": CAREERS,
         "progress": _progress_trackers(),
+        "note_coverage": _note_coverage(),
         "quickstart": QUICKSTART,
     }
 

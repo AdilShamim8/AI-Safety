@@ -400,6 +400,8 @@ Farquhar, Coull, *GDM AI Control Roadmap* (arXiv:2607.13087) — a capability-ti
 internal-security blueprint showing how a frontier lab operationalizes this
 chapter's table.
 
+**Note companions:** [01 AI Control — the founding protocol paper](../../research/notes/01-ai-control.md)
+
 ## 8. Exercises
 
 **Exercise 8.1 (analysis — budget and frontier arithmetic).** You are handed the

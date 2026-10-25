@@ -280,6 +280,8 @@ Assigned-pending (never cited as verified): the moments accountant
 derivation; DP fine-tuning composition analyses; empirical model-hub
 compromise surveys; jurisdiction-specific license analyses.
 
+**Note companions:** [13 BadNets — the founding backdoor paper](../../research/notes/13-badnets.md)[14 Model extraction — stealing the function](../../research/notes/14-model-extraction.md)[15 Membership inference — the privacy audit instrument](../../research/notes/15-membership-inference.md)[56 The Secret Sharer — memorization measured first](../../research/notes/56-secret-sharer-memorization.md)[57 Training-data extraction — the artifact contains the corpus](../../research/notes/57-extracting-training-data.md)[58 Quantifying memorization — three log-linear laws](../../research/notes/58-quantifying-memorization.md)[69 Trojan detection in LLMs — the specification question](../../research/notes/69-trojan-detection-llms.md)
+
 ## 8. Exercises
 
 **Exercise 16.1 (analysis — audit the chain).** A team ships

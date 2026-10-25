@@ -223,6 +223,7 @@ footer p{max-width:85ch;margin:4px 0}
     <h2><span class="idx">09</span> Incident reviews — production, verified, unromanticized</h2>
     <p class="lede">Real deployments that failed, reviewed with the strict template: observable facts first, established conclusions attributed, unknowns kept unknown, and the overreach named. First-party reports outrank press coverage; where only press exists, the note says so.</p>
     <div id="incident-timeline"></div>
+    <div id="note-coverage"></div>
     <div class="projgrid" id="incident-grid"></div>
   </section>
 
@@ -410,6 +411,18 @@ $("#honesty-grid").innerHTML = D.not_executed.map(n =>
   `<div class="pkg">scoped in the project README — protocol written, honestly marked</div></div>`
 ).join("");
 
+/* ---- note coverage ---- */
+(() => {
+  const max = Math.max(...D.note_coverage.map(c => c.notes));
+  $("#note-coverage").innerHTML = `<h3 style="font-size:.95rem;margin:1.2rem 0 .4rem">Note coverage — companions per chapter</h3>
+  <div class="cov">` + D.note_coverage.map(c => `
+    <div class="cov-row" title="Chapter ${esc(c.ch)}: ${esc(c.title)} — ${c.notes} note companions">
+      <span class="cov-ch">${esc(c.ch)}</span>
+      <span class="cov-bar" style="width:${Math.round(100 * c.notes / max)}%"></span>
+      <span class="cov-n">${c.notes}</span>
+    </div>`).join("") + `</div>`;
+})();
+
 /* ---- incidents timeline ---- */
 (() => {
   const eras = {};
@@ -443,6 +456,13 @@ $("#fs-table").innerHTML =
   "<tr><th>Module</th><th>Note</th></tr>" +
   D.fs_track.map(m => `<tr><td><b>${esc(m.title)}</b></td><td><a href="${fsBase}${esc(m.file)}">read →</a></td></tr>`).join("");
 
+/* ---- note coverage ---- */
+.cov { display: flex; flex-direction: column; gap: .18rem; margin-bottom: 1rem; }
+.cov-row { display: flex; align-items: center; gap: .5rem; font-size: .75rem; }
+.cov-ch { min-width: 1.6rem; color: var(--muted, #667); font-variant-numeric: tabular-nums; }
+.cov-bar { height: .65rem; background: var(--accent, #4a7db5); border-radius: 3px; min-width: 2px; }
+.cov-n { color: var(--muted, #667); font-variant-numeric: tabular-nums; }
+
 /* ---- incidents timeline ---- */
 .tl { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
 .tl-era { flex: 1 1 200px; border: 1px solid var(--line, #ddd); border-radius: 8px; padding: .6rem .8rem; }
@@ -470,6 +490,13 @@ $("#progress-grid").innerHTML = D.progress.map(r => `
         </div>`).join("")}
     </div>
   </div>`).join("");
+
+/* ---- note coverage ---- */
+.cov { display: flex; flex-direction: column; gap: .18rem; margin-bottom: 1rem; }
+.cov-row { display: flex; align-items: center; gap: .5rem; font-size: .75rem; }
+.cov-ch { min-width: 1.6rem; color: var(--muted, #667); font-variant-numeric: tabular-nums; }
+.cov-bar { height: .65rem; background: var(--accent, #4a7db5); border-radius: 3px; min-width: 2px; }
+.cov-n { color: var(--muted, #667); font-variant-numeric: tabular-nums; }
 
 /* ---- incidents timeline ---- */
 .tl { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }

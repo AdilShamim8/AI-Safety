@@ -419,6 +419,8 @@ not necessity under another; the reference must be reported with the result.
   in this session — inside both transformer-circuits articles above; consult
   it through their citations rather than via this course's register.
 
+**Note companions:** [03 Scaling Monosemanticity — features at scale](../../research/notes/03-scaling-monosemanticity.md)[18 Towards Monosemanticity — the foundational dictionary](../../research/notes/18-towards-monosemanticity.md)
+
 ## 8. Exercises
 
 **Exercise 10.1 (analysis — the SAE-critique table; the chapter's declared

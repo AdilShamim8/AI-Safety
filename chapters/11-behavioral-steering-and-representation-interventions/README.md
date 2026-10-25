@@ -434,6 +434,8 @@ training-time counterpart, [Ch. 04](../04-preference-learning-and-post-training/
 readings; for causal-intervention foundations, the readings of
 `chapters/09-mechanistic-interpretability-foundations/`.
 
+**Note companions:** [52 ROME — the weight-tier editing anchor](../../research/notes/52-rome-factual-associations.md)
+
 ## 8. Exercises
 
 **Exercise 11.1 — the probe that knew too much (analysis).** A team trains a

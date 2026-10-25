@@ -252,6 +252,8 @@ lineage; Chapter 22's safety-case form; the dataset cards' honesty
 pattern; the wilson_interval machinery that recomputed every number
 in this book.
 
+**Note companions:** [24 Explore-Establish-Exploit — the research methodology](../../research/notes/24-explore-establish-exploit.md)
+
 ## 8. Exercises
 
 **Exercise 24.1 — scoping drill (analysis).** Take three vague

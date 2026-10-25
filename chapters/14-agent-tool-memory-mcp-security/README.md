@@ -583,6 +583,8 @@ memory-poisoning prevalence; MCP server ecosystem empirical surveys
 body beyond the abstract (per-task breakdowns, the exact solved-
 task counts behind 77%/84%).
 
+**Note companions:** [06 Greshake — the founding indirect-injection threat model](../../research/notes/06-greshake-indirect-injection.md)[21 CaMeL — defeating injections by design](../../research/notes/21-camel-defeating-injections-by-design.md)[22 AgentDojo — dynamic evaluation of attacks and defenses](../../research/notes/22-agentdojo-dynamic-evaluation.md)
+
 ## 8. Exercises
 
 **Exercise 14.1 (analysis — complete the Atlas audit).** The
