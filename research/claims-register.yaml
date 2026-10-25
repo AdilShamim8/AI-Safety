@@ -2446,3 +2446,14 @@ claims:
   counterevidence: none observed; Microsoft subsequently limited session lengths in press coverage (context,
     not a registered claim)
   date: '2026-10-25'
+- id: CLM-0197
+  claim: A classifier trained on an LLM's hidden-layer activations can output the probability that a statement
+    is truthful, covering both statements read by the model and statements the model itself generates
+    — establishing internal state as a truthfulness signal available where white-box access exists.
+  source: SRC-PAPER-126
+  section_or_page: arXiv:2304.13734 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; design established,
+    results truncated in the API record and left unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
