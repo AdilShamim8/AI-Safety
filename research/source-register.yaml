@@ -4001,3 +4001,39 @@ sources:
     with the injected payload quoted; the 'Slack do not yet understand the nature and severity' assessment
     is this author's judgment, attributed as such.
   license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-026
+  title: Samsung Bans Generative AI Use by Staff After ChatGPT Leak (2023-05-02)
+  authors_or_organization: Bloomberg
+  url: https://www.bloomberg.com/news/articles/2023-05-02/samsung-bans-chatgpt-and-other-generative-ai-use-by-staff-after-leak
+  source_type: report
+  publication_date: '2023-05-02'
+  version: article as indexed (paywalled; headline and core facts via search-result content)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (wire service)
+  supports:
+  - research/notes/incidents/08-samsung-chatgpt-pastes.md
+  limitations: 'Paywalled article: headline, date, and ban-after-leak core facts verified via search-result
+    content 2026-10-25; full text not fetched. Forbes and TechCrunch carried the same story the same day
+    citing Bloomberg (consistency corroboration).'
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-027
+  title: 'Samsung ChatGPT Source Code Leak 2023: Shadow AI (consolidated analysis with primary-source
+    list)'
+  authors_or_organization: NHI Management Group (Lalit Choda)
+  url: https://nhimg.org/samsung-chatgpt-source-code-leak-2023-shadow-ai
+  source_type: report
+  publication_date: null
+  version: analysis page as fetched (updated 2026-10-08)
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: synthesis
+  peer_review_status: not peer reviewed (vendor blog analysis citing press coverage)
+  supports:
+  - research/notes/incidents/08-samsung-chatgpt-pastes.md
+  limitations: Full page content retrieved 2026-10-25. Consolidates Economist Korea (2023-03-30), GIGAZINE,
+    TechCrunch, CSO Online — not independently fetched this session; its value is the consolidated detail
+    (the three paste contents, the memo language, the restriction scope) at page-inspected level. Commercial
+    motivation (security consultancy) recorded.
+  license: unknown (site terms)

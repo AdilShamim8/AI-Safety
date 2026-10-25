@@ -2385,3 +2385,20 @@ claims:
     during responsible disclosure
   counterevidence: none observed; Slack's initial response disputed severity framing, not the mechanics
   date: '2026-10-25'
+- id: CLM-0193
+  claim: In March 2023 three Samsung Semiconductor employees pasted confidential material into public
+    ChatGPT (full source code of a semiconductor equipment measurement program; source code from a yield
+    and defect analysis program; a recorded meeting transcript for minutes); effective 2023-05-01 Samsung
+    restricted generative AI tools on company devices and internal-network devices while developing security
+    measures, with staff told not to submit company or personal data to such tools elsewhere. There was
+    no attacker; the risk was that the data left Samsung's control and could not be retrieved or deleted,
+    and no misuse was reported.
+  source: SRC-REPORT-026
+  section_or_page: Bloomberg headline-facts + NHI consolidated analysis (full retrieval) citing Economist
+    Korea 2023-03-30 and GIGAZINE
+  evidence_strength: wire-record headline facts page-inspected; paste details via a consolidated vendor
+    analysis with named Korean primary sources (not independently fetched) — same tier as the Chevy incident's
+    consolidation
+  assumptions: the consolidation accurately reflects the Korean primary reporting it cites
+  counterevidence: none observed; no downstream misuse of the leaked data was reported
+  date: '2026-10-25'
