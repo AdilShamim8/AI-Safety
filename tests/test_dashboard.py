@@ -26,7 +26,12 @@ def test_build_data_counts_match_repo() -> None:
     assert len(data["projects"]) == 10
     assert all(p["status"] == "implemented" for p in data["projects"])
     assert data["repo"]["tests"] >= 500  # 586 at pin time
-    assert data["repo"]["commits"] >= 100
+    if data["repo"].get("shallow"):
+        # CI shallow clones (fetch-depth 1) carry no history: the count is
+        # legitimately unavailable, and the generator must say so.
+        assert data["repo"]["commits"] == 0
+    else:
+        assert data["repo"]["commits"] >= 100
 
 
 def test_every_source_has_required_fields() -> None:

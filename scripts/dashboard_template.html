@@ -237,7 +237,7 @@ const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&a
 
 /* ---- hero meta ---- */
 $("#hero-meta").innerHTML =
-  `<span>commits <b>${D.repo.commits}</b></span>` +
+  (D.repo.shallow ? "" : `<span>commits <b>${D.repo.commits}</b></span>`) +
   `<span>tests <b>${D.repo.tests}</b></span>` +
   `<span>sources <b>${D.repo.sources}</b></span>` +
   `<span>claims <b>${D.repo.claims}</b></span>` +
@@ -252,7 +252,7 @@ $("#stat-cards").innerHTML = [
   ["blue", D.repo.sources, "register sources"],
   ["blue", D.repo.claims, "registered claims"],
   ["", D.repo.tests, "deterministic tests, CI-green"],
-  ["", D.repo.commits, "commits since baseline"],
+  ...(D.repo.shallow ? [] : [["", D.repo.commits, "commits since baseline"]]),
   ["", D.repo.fs_modules, "from-scratch code modules"],
 ].map(([c, v, l]) => `<div class="stat"><div class="v ${c}">${v}</div><div class="l">${l}</div></div>`).join("");
 

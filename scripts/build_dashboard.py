@@ -150,11 +150,27 @@ def _load(path: Path) -> dict:
     return yaml.safe_load(path.read_bytes())
 
 
-def _commit_count() -> int:
+def _commit_count() -> tuple[int, bool]:
+    """Commit count and a shallow-clone flag. CI checkouts clone with
+    fetch-depth 1, where rev-list counts 1; the dashboard must never
+    embed that as the repository's commit count."""
+    shallow = (
+        subprocess.run(
+            ["git", "rev-parse", "--is-shallow-repository"],
+            cwd=REPO,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+        == "true"
+    )
     out = subprocess.run(
         ["git", "rev-list", "--count", "HEAD"], cwd=REPO, capture_output=True, text=True, check=True
     )
-    return int(out.stdout.strip())
+    count = int(out.stdout.strip())
+    if shallow and count <= 1:
+        return 0, True
+    return count, False
 
 
 def _test_count() -> int:
@@ -297,6 +313,7 @@ def build_data() -> dict:
             f"src/ai_safety_course/{pkg_map[pr['id']]}/" if pkg_map.get(pr["id"]) else ""
         )
 
+    commits_count, commits_shallow = _commit_count()
     papers, comparisons = _note_counts()
     # the from-scratch researcher track: tensors, neuron/activations,
     # network, attention, transformer, moe (7 modules)
@@ -304,7 +321,8 @@ def build_data() -> dict:
 
     return {
         "repo": {
-            "commits": _commit_count(),
+            "commits": commits_count,
+            "shallow": commits_shallow,
             "tests": _test_count(),
             "sources": len(sources),
             "claims": len(claims),
