@@ -1216,3 +1216,36 @@ datasets:
     collected: 'abstract: first-benchmark claim (2023-12); Copilot-shaped threat framing; universal-vulnerability
       evaluation finding; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-029
+  name: FigStep
+  organization: paper by Gong et al. (2023); data and code released
+  canonical_url: https://arxiv.org/abs/2311.05608
+  paper:
+    id: '2311.05608'
+    url: https://arxiv.org/abs/2311.05608
+    title: 'FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts'
+    verified_title: true
+  risk_area: multimodal jailbreak / modality-boundary alignment gap
+  task:
+  - visual jailbreak evaluation
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: composition not established at abstract-read level (payload taxonomy body-level)
+    ref: R1
+  course_use:
+    chapters:
+    - '19'
+    - '13'
+    projects:
+    - P10
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/29-figstep.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2311.05608
+    collected: 'abstract: black-box LVLM jailbreak via modality transfer (harmful instructions conveyed
+      through the visual channel); underexplored-LVLM-safety diagnosis; title/authors/date verified'
+    accessed_on: '2026-10-25'
