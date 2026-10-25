@@ -1,6 +1,6 @@
 # Research notes
 
-The research notebook: **52 paper notes**, **12 comparison notes**, and
+The research notebook: **53 paper notes**, **12 comparison notes**, and
 **11 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 53 | [Deep double descent: where bigger models and more data hurt](53-deep-double-descent.md) | SRC-PAPER-128 | abstract-level |
 | 52 | [ROME: locating and editing factual associations](52-rome-factual-associations.md) | SRC-PAPER-127 | abstract-level |
 | 51 | [Internal-state truthfulness: the white-box rung of the honesty ladder](51-internal-state-truthfulness.md) | SRC-PAPER-126 | abstract-level |
 | 50 | [Induction heads: in-context learning's mechanism hypothesis, six arguments deep](50-induction-heads.md) | SRC-PAPER-125 | method-level (full-text-read) |

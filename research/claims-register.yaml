@@ -2470,3 +2470,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0199
+  claim: Modern deep learning tasks exhibit double descent — performance worsens then improves as model
+    size increases, with the same non-monotonicity as a function of training epochs; the paper unifies
+    these under an effective-model-complexity measure with a generalized double descent conjecture, and
+    identifies regimes where increasing (even quadrupling) training samples hurts test performance.
+  source: SRC-PAPER-128
+  section_or_page: arXiv:1912.02292 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; phenomenon, both axes,
+    EMC conjecture, and more-data-hurts corollary stated in the abstract, no curves claimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
