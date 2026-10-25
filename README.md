@@ -14,6 +14,27 @@ and per-unit evidence: [`planning/STATUS.md`](planning/STATUS.md). The whole
 build is also navigable as a generated dashboard: **[index.html](index.html)**
 (open it in a browser — self-contained, no network needed).
 
+## The 60-second tour
+
+1. **Open [index.html](index.html)** — the whole build as one page:
+   what exists, how it was verified (the evidence ladder), the 24
+   chapters, the 10 projects, the dataset/source/claims explorers,
+   the honesty ledger of what was *not* run, the careers, and the
+   beginner path.
+2. **Read [START_HERE.md](START_HERE.md)** and take the
+   [diagnostic](prerequisites/diagnostic.md) — five tasks with worked
+   answers place your starting point.
+3. **Pick a route** — [alignment research](roadmaps/alignment-research.md),
+   [AI security engineering](roadmaps/ai-security-engineering.md),
+   [evaluations and assurance](roadmaps/evaluations-and-assurance.md),
+   or [audit-only](roadmaps/audit-only.md) — then make the first 90
+   days concrete: [roadmaps/first-90-days.md](roadmaps/first-90-days.md).
+4. **Run it**: `uv sync && uv run pytest` — 594 deterministic tests,
+   offline, no GPUs, no API keys.
+5. **Wonder about anything**: [FAQ.md](FAQ.md),
+   [AWESOME.md](AWESOME.md) (the annotated source map),
+   [MAINTENANCE.md](MAINTENANCE.md) (how the truth is kept).
+
 ## What this repository is
 
 1. An advanced, dependency-aware **learning roadmap** (three specializations
