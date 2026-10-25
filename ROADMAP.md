@@ -4,7 +4,9 @@ The dependency-aware path through the course. Three specializations share a
 common methodological spine; three schedules fit different lives; exit
 criteria are artifacts you can show, not weeks elapsed or pages read.
 
-Companion pages: route details in [roadmaps/](roadmaps/) · the 24-unit course
+Companion pages: route details in [roadmaps/](roadmaps/) · the three role
+families mapped to the job market in
+[roadmaps/careers-index.md](roadmaps/careers-index.md) · the 24-unit course
 catalog in [SYLLABUS.md](SYLLABUS.md) · what exists today in
 [planning/STATUS.md](planning/STATUS.md).
 
