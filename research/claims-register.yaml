@@ -2146,3 +2146,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0175
+  claim: Training RL policies against a learned reward model at increasing optimization pressure produces
+    monotonically rising proxy scores while gold (ground-truth) scores rise, peak, and fall; the paper
+    relates the overoptimization behavior to scale (reward model size, policy size, KL budget), framing
+    proxy divergence as a measurable scaling law rather than an anecdotal failure.
+  source: SRC-PAPER-112
+  section_or_page: arXiv:2210.10760v1 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; curve shape and scaling
+    framing stated in the abstract, no exponents claimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

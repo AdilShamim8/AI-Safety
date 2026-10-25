@@ -51,6 +51,7 @@ the chapter you are already reading.
 | 34 | [Emergent world representations: Othello-GPT's probe-plus-intervention pattern](34-emergent-world-representations.md) | SRC-PAPER-109 | abstract-level |
 | 35 | [Obfuscated gradients: attack failure is not defense success](35-obfuscated-gradients.md) | SRC-PAPER-110 | abstract-level |
 | 36 | [Adversarial examples are features: the non-robust-features thesis](36-adversarial-features-not-bugs.md) | SRC-PAPER-111 | abstract-level |
+| 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one
