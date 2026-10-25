@@ -137,15 +137,23 @@ None. (Environment note: token `GH_TOKEN` was exposed in chat before this
 build and must be rotated by the owner when convenient; pushes currently
 depend on it — flagged here so it is not forgotten.)
 
+## Session 2 (opened 2026-10-25, commit 151)
+
+The owner directed a second 150-commit session: judge the build, name
+what is missing, collect it with sources, and add the per-route progress
+tracking. The verdict lives in [SESSION2_JUDGE_AUDIT](SESSION2_JUDGE_AUDIT.md)
+(gap register G1–G7 + the 150-commit backlog with per-phase commit
+ranges). Execution order: notes 33–50, dataset cards 23–34, incidents
+04–11 (page-inspect-gated), progress trackers + dashboard widgets,
+comparisons 07–12, glossary growth, learner-surface refresh, closing
+full-gate pass. Target: 300 total commits, every one pushed and
+remote-verified.
+
 ## Next exact action
 
-The owner-directed 2026-10-25 deliverables are complete (audit,
-careers, dashboard, incidents, notes, learner surface). The standing
-next actions, in priority order: (1) the owner rotates the exposed
-GitHub token (it was provided in chat; every push used it
-transiently, never stored — rotation closes the loop); (2) if compute
-becomes available, the three not-executed experiment tiers (P03 ml
-tier, P06 real-model patching, P04 real-policy audit) each carry a
-written protocol and pinned expectations; (3) the registers re-verify
-on a schedule — market and standards sources drift, and
-prerequisites/verifying-sources.md documents the one-fetch re-check.
+Working the session-2 backlog in judged order. Current phase: B —
+notes 33–50 (Concrete Problems first, closing G1). After each unit:
+STATUS counters move in the same commit as the work. The standing
+actions from session 1 remain: rotate the exposed token when the
+session ends; the three not-executed experiment tiers stay honestly
+marked; registers re-verify on the MAINTENANCE schedule.
