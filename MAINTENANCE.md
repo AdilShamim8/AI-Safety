@@ -118,3 +118,30 @@ instead of making the test weaker. Keep that order of operations.
 - **Register growth**: every note/incident/dataset addition moves
   the counts the freshness test pins — run the full gate, not just
   the file you touched (the session's own lesson, twice).
+- **Count-drift instrument**: `tests/test_count_drift.py` recomputes
+  the corpus counts (registers, notebook directories, catalog,
+  glossary table, test suite) and requires every count-bearing prose
+  surface to carry them — README's structure table, FAQ's source
+  count, START_HERE's build state, CITATION.cff's abstract, both
+  notes front doors, AWESOME. When the corpus grows, this test
+  fails on purpose until the prose catches up: update the surfaces
+  in the same commit as the growth, and write counts in digits (a
+  number spelled out in words evades the check). Dated records
+  (STATUS, CHANGELOG, the judge audit) are deliberately exempt.
+  On first run it caught the drift this whole sweep exists for: the
+  suite grew with its own eight tests and README still said 594.
+- **Register re-check rotations**: URL liveness is sampled, not
+  continuous. Two rotations run so far (26 URLs total): rotation 1
+  sampled the early session-2 entries, rotation 2 the late ones
+  (accountability-era reports and the highest-numbered papers) and
+  caught one genuinely dead URL (the ACLU analysis behind incident
+  14 had moved sections — corrected in the register with the move
+  recorded in its limitations). The discipline for each rotation:
+  fetch server-side; a 403/401 from a known bot wall (EEOC,
+  Reuters) is alive-but-blocked — confirm via search-result text
+  before recording; a 404 is dead until a live replacement is
+  located, confirmed, and the register entry corrected in the same
+  commit. Next rotation: sample the middle register band
+  (SRC-PAPER-100..140, the notes 51-66 spine) plus any entry whose
+  limitations mention an unreachable page — re-attempt those first
+  (G7's rule: a soft-null stays null only if still unreachable).
