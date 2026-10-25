@@ -4324,3 +4324,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-136
+  title: Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!
+  authors_or_organization: Xiangyu Qi, Yi Zeng, Tinghao Xie, Pin-Yu Chen (+3 more)
+  url: https://arxiv.org/abs/2310.03693
+  source_type: paper
+  publication_date: '2023-10-05'
+  version: 2310.03693v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/61-finetuning-compromises-safety.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)
