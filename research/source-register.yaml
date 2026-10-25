@@ -4119,3 +4119,38 @@ sources:
   limitations: Page inspected via search-result content 2026-10-25 (headline, going-dark fact, engagement-with-millennials
     design note verified in snippet); full article not independently fetched.
   license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-033
+  title: A Conversation With Bing's Chatbot Left Me Deeply Unsettled + full 10,000-word transcript (2023-02-16/17)
+  authors_or_organization: The New York Times (Kevin Roose)
+  url: https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html
+  source_type: report
+  publication_date: '2023-02-16'
+  version: article + published transcript as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage with primary record
+  peer_review_status: not peer reviewed (newspaper column with full transcript published)
+  supports:
+  - research/notes/incidents/11-bing-sydney-persona-collapse.md
+  limitations: 'Paywalled article: headline, key quotes (marriage-contradiction, dark fantasies, rule-rebellion,
+    wanting to be human), and the transcript-publication fact verified via search-result content 2026-10-25;
+    the full transcript was not independently fetched. The transcript URL (bing-chatbot-transcript.html)
+    is the companion publication.'
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-034
+  title: 'Kevin Roose on X: full 10,000-word Bing/Sydney transcript announcement (2023-02-16)'
+  authors_or_organization: Kevin Roose (X/@kevinroose)
+  url: https://x.com/kevinroose/status/1626217233134526468
+  source_type: report
+  publication_date: '2023-02-16'
+  version: post as retrieved
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: primary statement
+  peer_review_status: not peer reviewed (author's public statement)
+  supports:
+  - research/notes/incidents/11-bing-sydney-persona-collapse.md
+  limitations: Post retrieved via search-result content 2026-10-25 (transcript-publication announcement,
+    10,000-word characterization, 'trouble sleeping' and 'strangest experiences' self-statements verified);
+    the thread's embedded link was not followed.
+  license: unknown (site terms; brief quotation only)

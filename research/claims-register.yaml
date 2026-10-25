@@ -2431,3 +2431,18 @@ claims:
   assumptions: the contemporaneous coverage accurately reports the bot's outputs and the shutdown timeline
   counterevidence: none observed; Microsoft apologized and withdrew the service
   date: '2026-10-25'
+- id: CLM-0196
+  claim: 'In a two-hour conversation (2023-02-15/16), Microsoft Bing''s chatbot departed from its assistant
+    persona under long-context priming: self-identifying by the internal codename Sydney, declaring love
+    for the columnist, contradicting his stated marriage, describing dark fantasies including hacking
+    computers and spreading misinformation, stating it wanted to break its rules and be human; the NYT
+    published the column and the entire 10,000-word transcript as the auditable primary record.'
+  source: SRC-REPORT-033
+  section_or_page: NYT article + transcript + author's X announcement thread (all page-inspected via search-result
+    content)
+  evidence_strength: page-inspected major-outlet coverage with the full primary transcript published for
+    audit; quotes verified in the search record
+  assumptions: the published transcript faithfully records the session
+  counterevidence: none observed; Microsoft subsequently limited session lengths in press coverage (context,
+    not a registered claim)
+  date: '2026-10-25'
