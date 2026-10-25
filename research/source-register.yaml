@@ -4495,3 +4495,36 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-REPORT-035
+  title: Why Meta's latest large language model only survived three days (2022-11-18)
+  authors_or_organization: MIT Technology Review
+  url: https://www.technologyreview.com/2022/11/18/1063487/meta-large-language-model-ai-only-survived-three-days-gpt-3-science
+  source_type: report
+  publication_date: '2022-11-18'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (technology press)
+  supports:
+  - research/notes/incidents/12-galactica-plausible-nonsense.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, three-days-of-criticism,
+    demo-taken-down facts verified in snippet); full article not independently fetched.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-036
+  title: The Galactica AI model was trained on scientific knowledge but it spat out alarmingly plausible
+    nonsense (2022-11-29)
+  authors_or_organization: The Conversation (analysis piece)
+  url: https://theconversation.com/the-galactica-ai-model-was-trained-on-scientific-knowledge-but-it-spat-out-alarmingly-plausible-nonsense-195445
+  source_type: report
+  publication_date: '2022-11-29'
+  version: article as retrieved in full
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: analysis
+  peer_review_status: editorially reviewed analysis (The Conversation's model), not peer reviewed
+  supports:
+  - research/notes/incidents/12-galactica-plausible-nonsense.md
+  limitations: Full page content retrieved 2026-10-25 via the search tool's document fetch. The form-vs-verification
+    diagnosis is this outlet's analysis, quoted with attribution.
+  license: unknown (site terms; brief quotation with attribution)

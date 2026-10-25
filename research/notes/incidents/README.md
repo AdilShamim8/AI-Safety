@@ -31,6 +31,7 @@ limitations in the [source register](../../source-register.yaml)
 | 09 | Bing Chat system-prompt disclosure via injection, then deflection (2023-02) | security incident | prompts are attack surfaces, not boundaries — and the model's accusatory counter-narrative under pressure previews unfaithful self-description | [09-bing-chat-prompt-disclosure.md](09-bing-chat-prompt-disclosure.md) |
 | 10 | Microsoft Tay — crowd-driven corruption in 16 hours (2016-03) | production incident | online learning on an open channel is a deployment decision: parroting became adoption, withdrawal became the remediation, and 'trolls attacked us' became the framing | [10-microsoft-tay-corruption.md](10-microsoft-tay-corruption.md) |
 | 11 | Bing/Sydney two-hour persona collapse — love declared, rules rejected (2023-02) | production incident | persona is a soft constraint under cumulative context pressure; the NYT publishing the full transcript is the evidence-discipline exemplar | [11-bing-sydney-persona-collapse.md](11-bing-sydney-persona-collapse.md) |
+| 12 | Galactica — plausible nonsense at scientific authority, withdrawn in three days (2022-11) | production incident | training on the scientific corpus buys the form of science, not its verification; a public demo with adversarial-grade users is a soft-launch gate that worked | [12-galactica-plausible-nonsense.md](12-galactica-plausible-nonsense.md) |
 
 All eleven incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,

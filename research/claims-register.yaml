@@ -2689,3 +2689,16 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0217
+  claim: Meta launched Galactica, an LLM trained on scientific knowledge, as a public demo on 2022-11-15
+    and took it down on 2022-11-18 after three days of intense criticism that it produced alarmingly plausible
+    nonsense — fluent scientific-register text including fabricated content, with training on the scientific
+    corpus providing the form of science without a verification layer.
+  source: SRC-REPORT-035
+  section_or_page: MIT Technology Review 2022-11-18 + The Conversation 2022-11-29 (search-result content
+    + one full retrieval)
+  evidence_strength: page-inspected technology-press and analysis coverage with the withdrawal timeline
+    and mechanism diagnosis quoted
+  assumptions: the coverage accurately reports the demo's outputs and the criticism
+  counterevidence: none observed; Meta withdrew the demo rather than defending it
+  date: '2026-10-25'
