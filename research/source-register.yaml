@@ -4307,3 +4307,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-135
+  title: 'Dynabench: Rethinking Benchmarking in NLP'
+  authors_or_organization: Douwe Kiela, Max Bartolo, Yixin Nie, Divyansh Kaushik (+15 more)
+  url: https://arxiv.org/abs/2104.14337
+  source_type: paper
+  publication_date: '2021-04-07'
+  version: 2104.14337v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/60-dynabench-dynamic-benchmarking.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)

@@ -2557,3 +2557,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0206
+  claim: Dynabench is an open-source platform for dynamic dataset creation and model benchmarking with
+    human-and-model-in-the-loop annotation — annotators create examples that a target model misclassifies
+    but another person will not — addressing the gap between outstanding static benchmark performance
+    and failure on simple challenge examples and real-world scenarios.
+  source: SRC-PAPER-135
+  section_or_page: arXiv:2104.14337 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; platform design, adversarial-annotation
+    rule, and diagnosis stated in the abstract, round results unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
