@@ -117,3 +117,16 @@ the register's access level, exactly like paper notes.
 | C12 | [Model-written vs human-curated evaluation supply](comparison-12-evaluation-supply-strategies.md) — where the blind spot lives and who can see it |
 | C11 | [Situational awareness vs persona drift](comparison-11-situational-awareness-vs-persona-drift.md) — two drift phenomena, two monitoring budgets |
 | C10 | [Incident-response postures](comparison-10-incident-response-postures.md) — time-to-honest-characterization is the variable that sorts the eleven |
+## The honest access-level distribution (session-2 audited)
+
+Of the 74 paper notes: method-level (full-text-read sources) remain
+the minority by design — the register records exactly which (the
+AI Control line, refusal direction, monosemanticity pair, spotlighting,
+instruction hierarchy, sleeper agents, transformer-circuits' induction
+heads, Anthropic's many-shot page); the rest are abstract-level with
+their API-record truncations **printed in the note** where the record
+cuts. The 14 incident reviews are page-inspected (search-result
+content or full retrieval, per entry). The 12 comparisons are the
+course's own syntheses, each carrying a falsifiable resolution. No
+note claims beyond its register entry's access level — that is the
+whole system, and the audit machine-checks it every commit.
