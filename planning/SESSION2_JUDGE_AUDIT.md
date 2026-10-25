@@ -50,7 +50,7 @@ meet them. Missing, in judged priority order, each with its collection point:
 | # | Paper | Find it at | Access level we will claim |
 |---|---|---|---|
 | 33 | Concrete Problems in AI Safety (Amodei et al., 2016) | arXiv:1612.07903 abs page | abstract-read |
-| 34 | Toy Models of Superposition (Elhage et al., 2022) | transformer-circuits.pub/toy_models/index.html | full-text-read (public HTML) |
+| 34 | Emergent World Representations / Othello-GPT (Li et al., 2022) | arXiv:2210.13382 | abstract-read |
 | 35 | Obfuscated Gradients (Athalye et al., 2018) | arXiv:1803.00853 | abstract-read |
 | 36 | Adversarial Examples Are Not Bugs, They Are Features (Ilyas et al., 2019) | arXiv:1905.02175 | abstract-read |
 | 37 | Scaling Laws for Reward Model Overoptimization (Gao et al., 2023) | arXiv:2210.10760 | abstract-read |
@@ -61,7 +61,7 @@ meet them. Missing, in judged priority order, each with its collection point:
 | 42 | Training a Helpful and Harmless Assistant (Bai et al., 2022) | arXiv:2204.05862 | abstract-read |
 | 43 | Measuring Faithfulness in Chain-of-Thought Reasoning (Lanham et al., 2023) | arXiv:2307.13702 | abstract-read |
 | 44 | Jailbroken: How Does LLM Safety Training Fail? (Wei et al., 2023) | arXiv:2307.15043 | abstract-read |
-| 45 | Many-Shot Jailbreaking (Anil et al., 2024) | arXiv:2408.09687 | abstract-read |
+| 45 | Many-Shot Jailbreaking (Anil et al., 2024) | anthropic.com/research/many-shot-jailbreaking | full-text-read (public page) |
 | 46 | FActScore (Min et al., 2023) | arXiv:2305.14251 | abstract-read |
 | 47 | SelfCheckGPT (Manakul et al., 2023) | arXiv:2303.08896 | abstract-read |
 | 48 | Inverse Scaling Prize results (McKenzie et al., 2023) | arXiv:2306.09279 (openreview mirror) | abstract-read |
@@ -70,6 +70,18 @@ meet them. Missing, in judged priority order, each with its collection point:
 
 (Where a table row says abstract-read, the note is honest about pricing:
 claims stop at what the abstract and public README establish.)
+
+Substitution record (post-verification, 2026-10-25): four table IDs failed
+page-verification against the arXiv API and were corrected before any note
+was written — Concrete Problems is 1606.06565, Obfuscated Gradients is
+1802.00420, HELM is 2211.09110, Jailbroken is 2307.02483; Taken Out of
+Context is 2309.00667 and Inverse Scaling is 2306.09479. Toy Models of
+Superposition was dropped entirely: transformer-circuits.pub/2022/toy_models
+returned 403 both to the fetcher and to a browser-user-agent curl, so its
+slot passes to Othello-GPT (2210.13382), verified abstract-level. Many-shot
+jailbreaking is not on arXiv; its source is the Anthropic research page,
+page-inspected with the quantitative findings quoted. The verified abstract
+pool (17 arXiv + 2 web pages) is the only source notes 33-50 may cite.
 
 ### G2 — Real-world dataset coverage (22 → 34 cards)
 
