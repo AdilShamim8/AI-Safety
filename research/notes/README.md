@@ -8,7 +8,7 @@ written at the level the register's access supports (method-level for
 full-text-read sources; abstract-level entries say so, per the
 [paper-note template](../../templates/paper-note.md)'s rule); every
 note ends in a falsifiable extension runnable at the course's
-deterministic tier. Comparison notes (C01–C08) settle practitioner
+deterministic tier. Comparison notes (C01–C09) settle practitioner
 decisions that single papers leave open. Chapters name their note
 companions in their readings sections — the fastest way in is through
 the chapter you are already reading.
@@ -89,3 +89,4 @@ the register's access level, exactly like paper notes.
 | C05 | [Static benchmarks vs adaptive evaluation](comparison-05-static-benchmarks-vs-adaptive-evaluation.md) | SRC-PAPER-004/045/046/047/048/055/056/058/059/061 | abstract-read (all ten) |
 | C07 | [Reference-anchored vs consistency-based factuality](comparison-07-reference-vs-consistency-factuality.md) — disjoint blind spots, domain-then-budget choice |
 | C08 | [Competing objectives vs mismatched generalization — two modes, two defense families](comparison-08-jailbreak-modes-defense-families.md) — the one-bit plain-restatement diagnostic |
+| C09 | [KL budgets vs held-out gold gates](comparison-09-kl-budgets-vs-gold-gates.md) — drift-side and score-side governance of the Goodhart curve |
