@@ -2854,3 +2854,46 @@ sources:
       AI Security Architect) are observed claims from the page, not verified
       against the underlying postings.
     license: "unknown (SANS site terms; registration may gate the full PDF)"
+
+  - id: SRC-REPORT-013
+    title: "BC Tribunal Confirms Companies Remain Liable for Information Provided by AI Chatbot (Moffatt v. Air Canada, 2024 BCCRT 149)"
+    authors_or_organization: "American Bar Association, Business Law Today"
+    url: "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot"
+    source_type: report
+    publication_date: 2024-02-29
+    version: "as published"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: observation
+    peer_review_status: "professional-bar analysis of a tribunal decision"
+    supports:
+      - "research/notes/incidents/01-air-canada-chatbot-liability.md"
+      - "Ch.13 output-handling accountability; Ch.22 assurance/legal endpoints"
+    limitations: >-
+      Second-hand legal analysis of the CRT decision; the primary decision page
+      (decisions.civilresolutionbc.ca, 2024 BCCRT 149) returned an HTML
+      conversion error at fetch time and was NOT directly read this session —
+      the ruling's details (the separate-legal-entity argument, the duty-of-care
+      finding, ~CAD 650 damages plus interest and fees) are as summarized by
+      the ABA article, not read from the decision text itself.
+    license: "unknown (ABA site terms)"
+
+  - id: SRC-REPORT-014
+    title: "DPD error caused chatbot to swear at customer"
+    authors_or_organization: "BBC News (Tom Gerken, technology reporter)"
+    url: "https://www.bbc.com/news/technology-68025677"
+    source_type: report
+    publication_date: 2024-01-19
+    version: "as published"
+    accessed_on: 2026-10-25
+    access_level: page-inspected
+    evidence_class: observation
+    peer_review_status: "not peer reviewed (news reporting with quoted company statement)"
+    supports:
+      - "research/notes/incidents/02-dpd-chatbot-update-regression.md"
+    limitations: >-
+      News coverage relying on customer-posted screenshots; DPD's own statement
+      ("an error occurred after a system update") is quoted but the update's
+      content and the vendor/model behind the AI element were never named.
+      No independent technical postmortem exists in the public record.
+    license: "unknown (BBC terms; brief quotation only)"

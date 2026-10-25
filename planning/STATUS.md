@@ -102,7 +102,7 @@ as the work it describes. On session start, read this file, then
 
 ## Current phase
 
-Phase G CLOSED COMPLETE: all 24 chapters, ALL TEN PROJECTS (P01-P10; P06 and P10 closed 2026-10-25), 20/20 paper notes, 5/5 comparison notes, the from-scratch researcher track (7/7). Registers at 156 sources / 146 claims. Remaining (owner-directed 2026-10-25): the repo-wide missing-values audit, the career-track deepening pages, and the dashboard (index.html) deliverable.
+Phase G CLOSED COMPLETE: all 24 chapters, ALL TEN PROJECTS (P01-P10; P06 and P10 closed 2026-10-25), 20/20 paper notes, 5/5 comparison notes, the from-scratch researcher track (7/7). Registers at 162 sources / 152 claims. Remaining (owner-directed 2026-10-25): the repo-wide missing-values audit, the career-track deepening pages, and the dashboard (index.html) deliverable.
 
 ## Curriculum completion counters (truthful)
 
@@ -111,7 +111,7 @@ Phase G CLOSED COMPLETE: all 24 chapters, ALL TEN PROJECTS (P01-P10; P06 and P10
 - Projects complete: **10 / 10 — the project spine is DONE** (P06 and P10 closed 2026-10-25)
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 5 / 5 planned — set COMPLETE (C01–C05, 2026-10-22)
-- Incident analyses: 0 (verified set, grows with the build)
+- Incident analyses: 2 (Moffatt v. Air Canada 2024 BCCRT 149 — chatbot liability; DPD 2024-01 — post-update behavior regression; both page-inspected sources with honest limitations)
 - From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)

@@ -1700,3 +1700,33 @@ claims:
     assumptions: "the 10,643-posting corpus and four-title claim are the vendor's own; full PDF not fetched"
     counterevidence: "vendor-published (SANS sells the mapped courses and GIAC certifications); the taxonomy is commercially motivated and not independently replicated"
     date: 2026-10-25
+
+  - id: CLM-0168
+    claim: >-
+      In Moffatt v. Air Canada (2024 BCCRT 149) the British Columbia Civil
+      Resolution Tribunal found the airline liable for its website chatbot's
+      incorrect bereavement-fare advice: Air Canada's argument that the
+      chatbot was "a separate legal entity responsible for its own actions"
+      was rejected, the tribunal held the airline owed a duty of care it
+      breached by negligent misrepresentation, and roughly CAD 650 in damages
+      plus pre-judgment interest and filing fees were awarded.
+    source: SRC-REPORT-013
+    section_or_page: "ABA Business Law Today summary of the decision"
+    evidence_strength: "page-inspected second-hand legal summary; the primary decision text was NOT directly read this session"
+    assumptions: "the ABA summary accurately reflects the decision; ruling details not verified against the CRT's own text"
+    counterevidence: "the primary decision page was unreachable at fetch time (HTML conversion error) — recorded, not hidden"
+    date: 2026-10-25
+
+  - id: CLM-0169
+    claim: >-
+      On 2024-01-18/19 DPD disabled the AI element of its customer-service
+      chatbot after a customer steered it (by plain requests, not a technical
+      exploit) into calling DPD the worst delivery firm in the world and
+      swearing; DPD's stated cause was "an error occurred after a system
+      update", and one viral post drew 800,000 views in 24 hours.
+    source: SRC-REPORT-014
+    section_or_page: "BBC News article body and quoted DPD statement"
+    evidence_strength: "page-inspected news report with quoted first-party company statement"
+    assumptions: "screenshots as reported by BBC; no independent technical postmortem exists publicly"
+    counterevidence: "DPD never named the model or vendor; the update's actual change is unknown — the 'error' framing is the company's own"
+    date: 2026-10-25
