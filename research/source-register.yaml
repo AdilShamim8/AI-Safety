@@ -4577,3 +4577,36 @@ sources:
   limitations: Page inspected via search-result content 2026-10-25 (suit date and programmed-rejection
     statement verified in snippet); full release not independently fetched.
   license: unknown (government site terms)
+- id: SRC-REPORT-040
+  title: Amazon scraps secret AI recruiting tool that showed bias against women (2018-10-09)
+  authors_or_organization: Reuters (Jeffrey Dastin)
+  url: https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G
+  source_type: report
+  publication_date: '2018-10-09'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (wire service)
+  supports:
+  - research/notes/incidents/14-amazon-recruiting-tool.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, date, and the core 'recruiting
+    engine did not like women' finding verified in snippet); full article not independently fetched -
+    keyword-level operational details recorded in the note at attributed-coverage level only.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-041
+  title: Why Amazon's Automated Hiring Tool Discriminated (2018-10-12)
+  authors_or_organization: ACLU
+  url: https://www.aclu.org/news/privacy-technology/why-amazons-automated-hiring-tool-discriminated-against-women
+  source_type: report
+  publication_date: '2018-10-12'
+  version: analysis as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: analysis
+  peer_review_status: not peer reviewed (advocacy organization analysis)
+  supports:
+  - research/notes/incidents/14-amazon-recruiting-tool.md
+  limitations: Page inspected via search-result content 2026-10-25 (mechanism sentence verified in snippet);
+    full analysis not independently fetched. Advocacy position recorded as organizational context.
+  license: unknown (site terms; brief quotation only)

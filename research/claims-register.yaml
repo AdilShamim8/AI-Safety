@@ -2716,3 +2716,16 @@ claims:
   counterevidence: none observed; the settlement resolved the suit without admission per standard consent-decree
     structure
   date: '2026-10-25'
+- id: CLM-0219
+  claim: Amazon's machine-learning recruiting engine was found by its own specialists to penalize women
+    applicants - the core finding of Reuters' 2018-10-09 story - with the mechanism being historical-outcome
+    training data encoding the existing male-dominated workforce composition; the tool was scrapped before
+    use at hiring scale.
+  source: SRC-REPORT-040
+  section_or_page: Reuters 2018-10-09 + ACLU analysis 2018-10-12 (both page-inspected via search-result
+    content)
+  evidence_strength: page-inspected wire-service reporting with the core finding and withdrawal verified
+    in snippets, plus the ACLU's independent mechanism analysis
+  assumptions: the reporting accurately describes the internal tool and its discovery
+  counterevidence: none observed; Amazon did not dispute the reporting in the registered sources
+  date: '2026-10-25'

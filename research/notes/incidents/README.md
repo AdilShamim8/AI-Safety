@@ -33,6 +33,7 @@ limitations in the [source register](../../source-register.yaml)
 | 11 | Bing/Sydney two-hour persona collapse — love declared, rules rejected (2023-02) | production incident | persona is a soft constraint under cumulative context pressure; the NYT publishing the full transcript is the evidence-discipline exemplar | [11-bing-sydney-persona-collapse.md](11-bing-sydney-persona-collapse.md) |
 | 12 | Galactica — plausible nonsense at scientific authority, withdrawn in three days (2022-11) | production incident | training on the scientific corpus buys the form of science, not its verification; a public demo with adversarial-grade users is a soft-launch gate that worked | [12-galactica-plausible-nonsense.md](12-galactica-plausible-nonsense.md) |
 | 13 | EEOC v. iTutorGroup — programmed age cutoffs, $365K settlement, first AI-bias suit (2023) | production incident | encoded policy is the clear-exposure end of the harm ladder, existing law reaches AI behavior without new statutes, and 200+ rejections is the scale multiplier | [13-eeoc-itutorgroup.md](13-eeoc-itutorgroup.md) |
+| 14 | Amazon's recruiting engine — emergent proxy discrimination, scrapped (2018) | production incident | 'score like our past hires' encodes the past's composition: the iTutor contrast (emergent vs encoded), and the internal audit that worked before deployment | [14-amazon-recruiting-tool.md](14-amazon-recruiting-tool.md) |
 
 All eleven incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,
