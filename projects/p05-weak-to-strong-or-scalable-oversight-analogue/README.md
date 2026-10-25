@@ -6,6 +6,8 @@ Chapter link:
 · Code: `src/ai_safety_course/w2s_audit/` · Tests:
 `tests/test_w2s_audit.py` (7 tests, pinned numbers)
 
+
+**Session-2 companion materials:** [CIRL](../../research/notes/62-cirl-assistance-games.md) (the formal frame of your grader's situation), [the off-switch game](../../research/notes/63-off-switch-game.md) (deference from held uncertainty), [situational awareness](../../research/notes/40-taken-out-of-context.md) (the transfer arm).
 ## What this project is
 
 Chapter 05's scalable-oversight question as a minimal, fully

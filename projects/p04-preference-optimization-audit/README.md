@@ -5,6 +5,8 @@ link: [04](../../chapters/04-preference-learning-and-post-training/README.md)
 · Code: `src/ai_safety_course/pref_audit/` · Tests:
 `tests/test_pref_audit.py` (8 tests, pinned numbers)
 
+
+**Session-2 companion materials:** [HH-RLHF](../../research/notes/42-helpful-harmless-rlhf.md) (the baseline your audit inherits), [fine-tuning compromises safety](../../research/notes/61-finetuning-compromises-safety.md) (the derivative-artifact risk), [PKU-SafeRLHF card](../../datasets/cards/25-pku-saferlhf.md) (decoupled axes), [C09](../../research/notes/comparison-09-kl-budgets-vs-gold-gates.md).
 ## What this project is
 
 Chapter 04's audit discipline as executable code, on a seeded
