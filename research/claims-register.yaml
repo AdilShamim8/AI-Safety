@@ -2494,3 +2494,16 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0201
+  claim: 'The trade-off between robustness and accuracy serves as a guiding principle in defense design:
+    robust error decomposes as the sum of natural (classification) error and boundary error, admitting
+    a differentiable upper bound via classification-calibrated loss theory that is the tightest possible
+    uniformly over predictions — converting the folk ''robust models are less accurate'' into a structural,
+    separately-measurable, choosable trade.'
+  source: SRC-PAPER-130
+  section_or_page: arXiv:1901.08573 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; principle, decomposition,
+    and tightest-bound claim stated in the abstract, derivation and benchmark results unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
