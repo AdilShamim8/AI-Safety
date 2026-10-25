@@ -15,6 +15,11 @@ that discipline. Each card below is written as a worked example of that
 critique, ending in the section no marketing brochure ever includes: what the
 dataset **cannot** support.
 
+The whole catalog is also browsable with live search and license
+filters in the generated [dashboard](../index.html) (section 05), and
+the annotated map of which datasets matter for which routes is in
+[AWESOME.md](../AWESOME.md).
+
 ## How to read this catalog (learner instructions)
 
 1. **Do not memorize sizes.** Memorize the *questions*: who wrote the items,

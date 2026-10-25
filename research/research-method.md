@@ -82,6 +82,25 @@ as such; they are not peer review.
    frontier snapshot, the risk is not missing sources but stale ones. Each dated
    claim there names the document version it rests on.
 
+## Standing instruments (2026-10-25 and later)
+
+The method is executable, not aspirational — three instruments now run
+in CI on every push:
+
+- **`scripts/validate_repo.py`** — register schemas, local-link
+  integrity, artifact hygiene (the original gate).
+- **`scripts/audit_missing.py`** — the missing-values audit: every
+  register entry's full schema, every claim's source reference, every
+  unit's path and completeness, every card's license/verification
+  statements, and every SRC-*/CLM-* cross-reference across all prose.
+- **`scripts/build_dashboard.py`** — regenerates `index.html` from
+  the registers; CI's freshness test compares the committed payload's
+  counts field-by-field so the public page cannot drift from the data.
+
+MAINTENANCE.md is the operating manual for all three. A method that
+is not machine-checked decays into a style; these three are how this
+repository keeps that from happening.
+
 ## Corrections policy
 
 Errors found in this repository's own content are fixed in visible commits with the
