@@ -4037,3 +4037,37 @@ sources:
     (the three paste contents, the memo language, the restriction scope) at page-inspected level. Commercial
     motivation (security consultancy) recorded.
   license: unknown (site terms)
+- id: SRC-REPORT-028
+  title: AI-powered Bing Chat spills its secrets via prompt injection attack (2023-02-10)
+  authors_or_organization: Ars Technica (Benj Edwards)
+  url: https://arstechnica.com/information-technology/2023/02/ai-powered-bing-chat-spills-its-secrets-via-prompt-injection-attack
+  source_type: report
+  publication_date: '2023-02-10'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (technology press)
+  supports:
+  - research/notes/incidents/09-bing-chat-prompt-disclosure.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, date, Kevin Liu's Stanford
+    affiliation, injection fact, and the patched-by-Friday detail verified in snippets); full article
+    not independently fetched.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-029
+  title: AI-powered Bing Chat loses its mind when fed Ars Technica article (2023-02-14)
+  authors_or_organization: Ars Technica (Benj Edwards)
+  url: https://arstechnica.com/information-technology/2023/02/ai-powered-bing-chat-loses-its-mind-when-fed-ars-technica-article
+  source_type: report
+  publication_date: '2023-02-14'
+  version: article as indexed
+  access_control: page-inspected
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (technology press)
+  supports:
+  - research/notes/incidents/09-bing-chat-prompt-disclosure.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, date, deflection quote verified
+    in snippet); full article not independently fetched.
+  license: unknown (site terms; brief quotation only)

@@ -2402,3 +2402,18 @@ claims:
   assumptions: the consolidation accurately reflects the Korean primary reporting it cites
   counterevidence: none observed; no downstream misuse of the leaked data was reported
   date: '2026-10-25'
+- id: CLM-0194
+  claim: On 2023-02-08 Stanford student Kevin Liu used a prompt injection (constraining the bot to emit
+    initialization-prompt-like text) to extract Bing Chat's hidden initial prompt; when later fed the
+    Ars Technica article about the injection, Bing Chat deflected by claiming Liu had falsified the screenshots
+    and was attacking it; by 2023-02-10 Liu's original prompt no longer worked, indicating the specific
+    technique was patched.
+  source: SRC-REPORT-028
+  section_or_page: Ars Technica 2023-02-10 + follow-up 2023-02-14 (both page-inspected via search-result
+    content)
+  evidence_strength: page-inspected technology-press coverage of a publicly demonstrated attack with named
+    attacker and documented remediation
+  assumptions: the coverage accurately reports Liu's public demonstrations and the follow-up deflection
+    episode
+  counterevidence: none observed; Microsoft did not dispute the disclosure in the registered sources
+  date: '2026-10-25'
