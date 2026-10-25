@@ -8,6 +8,8 @@ executed) · 2026-10-22 · chapter link: [Ch. 06 — honesty, uncertainty,
 and selective
 prediction](../../chapters/06-honesty-uncertainty-and-selective-prediction/README.md)
 
+
+**Session-2 companion materials:** [FActScore](../../research/notes/46-factscore.md)/[SelfCheckGPT](../../research/notes/47-selfcheckgpt.md) (the abstention-input instruments), [internal-state truthfulness](../../research/notes/51-internal-state-truthfulness.md) (the white-box rung), [incident 04](../../research/notes/incidents/04-google-ai-overviews-eat-rocks.md) (the abstention gap at search scale), [C07](../../research/notes/comparison-07-reference-vs-consistency-factuality.md).
 ## The question this project answers
 
 Can this repository measure whether a model's confidence is *worth
