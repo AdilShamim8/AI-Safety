@@ -3691,3 +3691,20 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-117
+  title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+  authors_or_organization: Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell (+27 more)
+  url: https://arxiv.org/abs/2204.05862
+  source_type: paper
+  publication_date: '2022-04-12'
+  version: 2204.05862v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/42-helpful-harmless-rlhf.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)

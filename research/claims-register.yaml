@@ -2211,3 +2211,16 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0180
+  claim: RLHF finetuning for helpful and harmless assistant behavior improved performance on almost all
+    NLP evaluations while remaining compatible with specialized skills (python coding, summarization);
+    an iterated online mode updated preference models and policies weekly on fresh human feedback; and
+    a roughly linear relation was identified between RL reward and the square root of the KL divergence
+    between policy and initialization — the empirical exchange rate behind KL-budgeted policy training.
+  source: SRC-PAPER-117
+  section_or_page: arXiv:2204.05862v1 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; all four findings
+    stated in the abstract, no coefficients claimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
