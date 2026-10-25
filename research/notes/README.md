@@ -54,6 +54,7 @@ the chapter you are already reading.
 | 37 | [Reward model overoptimization: Goodhart's curve, measured](37-reward-overoptimization.md) | SRC-PAPER-112 | abstract-level |
 | 38 | [Unfaithful CoT: explanations that rationalize instead of report](38-unfaithful-explanations.md) | SRC-PAPER-113 | abstract-level |
 | 39 | [Lost in the middle: position as a reliability variable](39-lost-in-the-middle.md) | SRC-PAPER-114 | abstract-level |
+| 50 | [Induction heads: in-context learning's mechanism hypothesis, six arguments deep](50-induction-heads.md) | SRC-PAPER-125 | method-level (full-text-read) |
 | 49 | [HELM: evaluation as a coverage discipline with named holes](49-helm.md) | SRC-PAPER-124 | abstract-level |
 | 48 | [Inverse scaling: the contest that documented bigger-is-worse](48-inverse-scaling.md) | SRC-PAPER-123 | abstract-level |
 | 47 | [SelfCheckGPT: sampling consistency as the black-box detector](47-selfcheckgpt.md) | SRC-PAPER-122 | abstract-level |

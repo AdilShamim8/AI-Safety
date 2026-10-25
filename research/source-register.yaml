@@ -3827,3 +3827,19 @@ sources:
     record). The body, its full experimental detail, and its limitations sections are unread; the note
     prices its claims accordingly.
   license: unknown (arXiv distribution terms; no separate license stated in the API record)
+- id: SRC-PAPER-125
+  title: In-context Learning and Induction Heads
+  authors_or_organization: Catherine Olsson, Nelson Elhage, Neel Nanda, et al.
+  url: https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html
+  source_type: paper
+  publication_date: '2022-03-08'
+  version: page as fetched
+  accessed_on: '2026-10-25'
+  access_level: full-text-read
+  evidence_class: empirical
+  peer_review_status: lab research report (not a journal venue)
+  supports:
+  - research/notes/50-induction-heads.md
+  limitations: Full text read from the public page 2026-10-25 via page inspection; quantitative findings
+    quoted from the page.
+  license: unknown (site terms; brief quotation only)

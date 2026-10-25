@@ -2312,3 +2312,17 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0188
+  claim: Induction heads — attention heads implementing prefix matching plus copying — may constitute
+    the mechanism for the majority of in-context learning in large transformers; the paper assembles six
+    arguments (co-occurrence of a 2.5-5B-token phase change with sharp ICL gains, co-perturbation, direct
+    ablation, generality beyond copying, mechanistic plausibility, cross-scale continuity), observing
+    that during the phase change loss briefly worsens and the training trajectory abruptly changes.
+  source: SRC-PAPER-125
+  section_or_page: transformer-circuits.pub/2022/in-context-learning-and-induction-heads (published 2022-03-08)
+  evidence_strength: full-text-read (transformer-circuits.pub page page-inspected 2026-10-25; six arguments,
+    definitions, and the 2.5-5B-token window quoted from the page; the 'majority' quantifier kept as the
+    paper's own hedged claim)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
