@@ -58,17 +58,26 @@ NOT_EXECUTED = [
     {
         "id": "P06",
         "tier": "compute tier",
-        "what": "activation patching on a real open model (TransformerLens-style hooking per the Ch.09 exercise protocol)",
+        "what": (
+            "activation patching on a real open model "
+            "(TransformerLens-style hooking per the Ch.09 exercise protocol)"
+        ),
     },
     {
         "id": "P07",
         "tier": "tier 1 + tier 2",
-        "what": "the live agent runtime, and human consent-decay rates (tier-2 evidence: out of scope for an offline build)",
+        "what": (
+            "the live agent runtime, and human consent-decay rates "
+            "(tier-2 evidence: out of scope for an offline build)"
+        ),
     },
     {
         "id": "P10",
         "tier": "live + adaptive",
-        "what": "a live agent system and the adaptive red-team phase against the deployed configuration",
+        "what": (
+            "a live agent system and the adaptive red-team phase "
+            "against the deployed configuration"
+        ),
     },
     {
         "id": "course-wide",
