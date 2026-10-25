@@ -2729,3 +2729,15 @@ claims:
   assumptions: the reporting accurately describes the internal tool and its discovery
   counterevidence: none observed; Amazon did not dispute the reporting in the registered sources
   date: '2026-10-25'
+- id: CLM-0220
+  claim: Adversarial examples can be explained by linear behavior alone in high dimensions, yielding the
+    Fast Gradient Sign Method (one backward pass, epsilon-scaled sign perturbation) as a cheap attack
+    and adversarial training on gradient-sign-perturbed examples as the accompanying defense direction
+    — the founding paper of the attack-and-defend-with-the-same-gradient program.
+  source: SRC-PAPER-146
+  section_or_page: arXiv:1412.6572 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; linear explanation,
+    FGSM, and adversarial training stated)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

@@ -4610,3 +4610,20 @@ sources:
   limitations: Page inspected via search-result content 2026-10-25 (mechanism sentence verified in snippet);
     full analysis not independently fetched. Advocacy position recorded as organizational context.
   license: unknown (site terms; brief quotation only)
+- id: SRC-PAPER-146
+  title: Explaining and Harnessing Adversarial Examples
+  authors_or_organization: Ian J. Goodfellow, Jonathon Shlens, Christian Szegedy
+  url: https://arxiv.org/abs/1412.6572
+  source_type: paper
+  publication_date: '2014-12-20'
+  version: 1412.6572v per arXiv API
+  accessed_on: '2026-10-25'
+  access_level: abstract-read
+  evidence_class: empirical
+  peer_review_status: peer-reviewed status not verified at fetched version (arXiv listing; venue not verified)
+  supports:
+  - research/notes/71-fgsm.md
+  limitations: Abstract read via the arXiv API 2026-10-25 (title/authors/date verified against the API
+    record). The body, its full experimental detail, and its limitations sections are unread; the note
+    prices its claims accordingly.
+  license: unknown (arXiv distribution terms; no separate license stated in the API record)
