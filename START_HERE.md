@@ -88,6 +88,12 @@ compute-tier experiments and the human-subject tiers). Where a project marks
 a tier as not-executed, the README says so and the protocol for running it
 is written; nothing is claimed that was not run.
 
+## The questions everyone asks next
+
+Compute expectations, route choice, citing the numbers, where datasets
+come from, what index.html is — answered with links in
+[FAQ.md](FAQ.md).
+
 ## Asking questions and reporting problems
 
 - Content errors or citation problems: open an issue (see

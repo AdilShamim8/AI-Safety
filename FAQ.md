@@ -1,0 +1,105 @@
+# FAQ — the questions beginners actually ask
+
+Answered with links into the repository, not generic advice. If your
+question is not here, the [START_HERE](START_HERE.md) map or the
+[dashboard](index.html) is the next stop.
+
+## Getting started
+
+**Do I need a GPU, an API key, or paid anything?**
+No. The core path is free and CPU-only: every project runs
+deterministically on a laptop (`uv sync && uv run pytest` is the whole
+setup). The optional compute tiers (local small models for P03/P04/P06
+model paths) use open models; the course never requires a paid API —
+where a commercial model would be interesting, the evaluation is
+designed so a small local model demonstrates the same methodology.
+
+**How long does this take?**
+The honest arithmetic lives in [ROADMAP.md](ROADMAP.md) and
+[roadmaps/study-schedules.md](roadmaps/study-schedules.md): ~120 h
+focused (a selection), ~170 h part-time (one specialization),
+~400+ h the full curriculum. If you want the first steps concrete
+instead of arithmetic: [roadmaps/first-90-days.md](roadmaps/first-90-days.md),
+an artifact every Friday.
+
+**Which route should I pick?**
+Take the [diagnostic](prerequisites/diagnostic.md) first — it maps
+your gaps to chapters. Then pick by the work you want to do, not the
+title you want to hold: [alignment research](roadmaps/alignment-research.md)
+(investigate failures), [AI security engineering](roadmaps/ai-security-engineering.md)
+(bound them), [evaluations and assurance](roadmaps/evaluations-and-assurance.md)
+(test and argue them), or [audit-only](roadmaps/audit-only.md) (read
+and judge, no PyTorch). The job-market mapping is in
+[roadmaps/careers-index.md](roadmaps/careers-index.md).
+
+**I'm not "experienced" — is this for me?**
+The advanced chapters assume Python, linear algebra, probability,
+gradient basics, and transformer/RL familiarity (the diagnostic's
+R1–R5). If some are shaky, [targeted refreshers](prerequisites/targeted-refreshers.md)
+tell you exactly what to study and which chapters will hurt without
+it. Total beginners to Python should build that base elsewhere first —
+this is deliberately not a first programming course.
+
+## Using the course
+
+**What does "verified reading" actually mean?**
+Every external fact traces to a register entry with one of five access
+levels — full-text-read, abstract-read, page-inspected, metadata-only,
+unavailable — and a date. The method is the course's spine; the
+learner version (with a five-minute drill you can do right now) is
+[prerequisites/verifying-sources.md](prerequisites/verifying-sources.md),
+and the live state of all 164 sources is the
+[evidence ladder](index.html).
+
+**Can I cite the numbers in the chapters?**
+Cite the primary sources (every number's register ID is in the prose),
+and cite this repository for the curriculum itself
+([CITATION.cff](CITATION.cff)). Market numbers (job counts, salaries)
+are dated snapshots: re-verify before you rely on them — that is not a
+disclaimer, it is the method.
+
+**Where do the datasets come from? Are they included?**
+22 real-world safety datasets, each with a deep card
+([datasets/catalog.yaml](datasets/catalog.yaml)): composition facts
+traced to the URLs they were collected from, licenses as observed,
+contamination status. The repository **never redistributes dataset
+content** — you download from the canonical sources under their terms.
+
+**What are the "incident reviews"?**
+Production failures (Air Canada's chatbot liability, DPD's post-update
+regression, the Chevy dealership's $1 Tahoe), reviewed under a strict
+template: observable facts, attributed conclusions, named unknowns,
+and a mandatory "what this does NOT demonstrate" section.
+[Read them](research/notes/incidents/README.md) — they are the fastest
+way to see the course's discipline applied to events you may already
+know from the news.
+
+**What is index.html?**
+The whole build as one generated web page: counters, the evidence
+ladder, chapter map, project cards, dataset/source/claims explorers
+with live search, the career tracks, and the beginner quickstart. It
+is generated from the repository's own data
+(`scripts/build_dashboard.py`), works offline, and is regenerated in
+the same commit as any data change — the page cannot silently drift
+from the repo (CI checks).
+
+## Going deeper
+
+**Can I contribute?**
+Yes — start at [CONTRIBUTING.md](CONTRIBUTING.md); the three rules
+that matter most are there, and [MAINTENANCE.md](MAINTENANCE.md) is
+the operating manual for the living parts (registers, catalog,
+dashboard). The bar for prose is the honesty infrastructure: no claim
+without a source at a stated access level.
+
+**What do I do if a number or link looks wrong?**
+Open an issue — a wrong number that traces to no register entry is a
+bug, and the repo's own audit exists to catch exactly that. If you can
+fetch the primary source yourself, you already know the method: record
+what you actually saw, at what access level, on what date.
+
+**Is there a certificate?**
+No. The exit criteria are artifacts — a falsified hypothesis, a threat
+model, a safety case, a deployability dossier — because that is what
+interviewers at every organization in the
+[careers index](roadmaps/careers-index.md) actually probe.
