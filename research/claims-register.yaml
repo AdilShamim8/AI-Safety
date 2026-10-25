@@ -2616,3 +2616,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0211
+  claim: 'Llama Guard is an openly released LLM-based input-output safeguard for human-AI conversation:
+    a safety risk taxonomy, prompt and response classification on both sides of the channel, and a Llama2-7b
+    instruction-tuned on a meticulously gathered low-volume high-quality dataset — the guard-is-a-model
+    pattern that production stacks deploy.'
+  source: SRC-PAPER-140
+  section_or_page: arXiv:2312.06674 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; artifact shape, taxonomy
+    principle, and data qualifier stated, performance numbers body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
