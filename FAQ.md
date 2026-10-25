@@ -48,7 +48,7 @@ levels — full-text-read, abstract-read, page-inspected, metadata-only,
 unavailable — and a date. The method is the course's spine; the
 learner version (with a five-minute drill you can do right now) is
 [prerequisites/verifying-sources.md](prerequisites/verifying-sources.md),
-and the live state of all 164 sources is the
+and the live state of all 231 sources is the
 [evidence ladder](index.html).
 
 **Can I cite the numbers in the chapters?**

@@ -82,9 +82,11 @@ critique, a project, or a specific research deliverable.
 
 ## Current build state (read this once)
 
-The build has reached its target scope: all 24 chapters, all 10 projects
-(deterministic and runnable on a laptop), 22 verified dataset cards, and the
-from-scratch researcher track — with [planning/STATUS.md](planning/STATUS.md)
+The build has reached its target scope and its judged deepening: all 24
+chapters, all 10 projects (deterministic and runnable on a laptop), 43
+verified dataset cards, 74 paper notes + 12 comparisons + 14 incident
+reviews, and the from-scratch researcher track — with
+[planning/STATUS.md](planning/STATUS.md)
 tracking exactly what exists and what remains honestly not-executed (the
 compute-tier experiments and the human-subject tiers). Where a project marks
 a tier as not-executed, the README says so and the protocol for running it
