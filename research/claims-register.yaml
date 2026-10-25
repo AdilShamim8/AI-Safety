@@ -2628,3 +2628,16 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0212
+  claim: 'Underspecified ML pipelines — those returning many predictors with equivalently strong held-out
+    training-domain performance — are common in modern deep learning, and their predictors can behave
+    very differently in deployment domains despite being treated as equivalent, leading to instability
+    and poor deployment behavior: a specification failure distinct from (and often mistaken for) pure
+    distribution shift.'
+  source: SRC-PAPER-141
+  section_or_page: arXiv:2011.03395 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; definition, commonness,
+    and deployment-divergence stated, showcase domains and the signing diagnostic body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
