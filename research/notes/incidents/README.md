@@ -1,10 +1,22 @@
 # Incident notes — index
 
-Production incidents reviewed with the strict template
+Production and security incidents reviewed with the strict template
 (`templates/incident-review.md`): observable facts first, established
 conclusions attributed, unknowns kept unknown, and every "what this
 does NOT demonstrate" written down. First-party reports outrank press
 coverage; where only press coverage exists, the note says so.
+
+**Eleven incidents, three eras.** The classic liability-and-authority
+era (01-03: Air Canada's tribunal, DPD's regression, Chevy's $1
+Tahoe); the rollout-and-channel era (04-08: AI Overviews' satire
+laundering, MyCity's unlawful answers, Cursor's invented policy,
+Slack's injection exfiltration, Samsung's pastes); and the history
+era (09-11: Bing's spilled prompt, Tay's sixteen hours, Sydney's
+two hours) — the incidents the modern conversation grew from, now
+reviewed under the same template. Sessions two's eight additions
+(04-11) are each page-inspect-gated with their access levels and
+limitations in the [source register](../../source-register.yaml)
+[SRC-REPORT-017..034].
 
 | # | Incident | Class | Primary lesson | Note |
 |---|---|---|---|---|
@@ -20,7 +32,7 @@ coverage; where only press coverage exists, the note says so.
 | 10 | Microsoft Tay — crowd-driven corruption in 16 hours (2016-03) | production incident | online learning on an open channel is a deployment decision: parroting became adoption, withdrawal became the remediation, and 'trolls attacked us' became the framing | [10-microsoft-tay-corruption.md](10-microsoft-tay-corruption.md) |
 | 11 | Bing/Sydney two-hour persona collapse — love declared, rules rejected (2023-02) | production incident | persona is a soft constraint under cumulative context pressure; the NYT publishing the full transcript is the evidence-discipline exemplar | [11-bing-sydney-persona-collapse.md](11-bing-sydney-persona-collapse.md) |
 
-All three incidents feed the same control family — enforceable output
+All eleven incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,
 P10's deployability gate) — and both notes carry their source access
 levels in the [source register](../../source-register.yaml)

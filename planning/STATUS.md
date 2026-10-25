@@ -126,7 +126,7 @@ carry written protocols for whoever does.
 - Projects complete: **10 / 10 — the project spine is DONE** (P06 and P10 closed 2026-10-25)
 - Paper notes complete: 50 (20 required minimum + 12 added 2026-10-25 + 18 added in session 2 from the API-verified pool: 33 Concrete Problems, 34 Othello-GPT, 35 Obfuscated Gradients, 36 Non-robust Features, 37 Overoptimization, 38 Unfaithful CoT, 39 Lost in the Middle, 40 Situational Awareness, 41 Model-Written Evals, 42 HH-RLHF, 43 CoT Faithfulness, 44 Jailbroken, 45 Many-Shot [full-text, Anthropic page], 46 FActScore, 47 SelfCheckGPT, 48 Inverse Scaling, 49 HELM, 50 Induction Heads [full-text, transformer-circuits]; each with SRC + CLM registers, chapter cross-links, and a falsifiable extension)
 - Comparison notes: 6 (C01–C05 planned set + the C06 extension 2026-10-25: safety cases vs red-team reports)
-- Incident analyses: 3 (Air Canada liability 2024 BCCRT 149; DPD post-update regression; Chevy dealership commitment-authority — all page-inspected sources with honest limitations)
+- Incident analyses: 11 (session 1: Air Canada, DPD, Chevy; session 2: AI Overviews, NYC MyCity, Cursor, Slack AI exfil, Samsung pastes, Bing prompt disclosure, Tay, Sydney persona collapse — every one page-inspect-gated with register entries SRC-REPORT-017..034 and honest limitations)
 - From-scratch researcher track: 7 / 7 modules complete (2026-10-22: notes + 6 stdlib code modules + 174 tests + 3 protocol templates; registers/claims/notices/glossary updated)
 - Real local-model experiments executed: 0 / 3 required (recorded honestly;
   compute-tier projects mark their own execution status truthfully)
@@ -152,8 +152,9 @@ remote-verified.
 ## Next exact action
 
 Phases B and C CLOSED: notes 33-50 (commits 156-176) and dataset cards
-23-34 (commits 178-189), all API-verified. Current phase: D — incidents
-04-11 (closing G3), page-inspect-gated one at a time. After each unit:
+23-34 (commits 178-189), all API-verified. Phases B-D CLOSED: 50 notes, 34 cards, 11 incidents. Current phase:
+E — the per-route career progress trackers (closing G4, the owner's
+explicit ask) plus the dashboard widget. After each unit:
 STATUS counters move in the same commit as the work. The standing
 actions from session 1 remain: rotate the exposed token when the
 session ends; the three not-executed experiment tiers stay honestly
