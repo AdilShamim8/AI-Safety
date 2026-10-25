@@ -1,6 +1,6 @@
 # Research notes
 
-The research notebook: **33 paper notes**, **6 comparison notes**, and
+The research notebook: **33 paper notes**, **12 comparison notes**, and
 **3 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
@@ -8,7 +8,7 @@ written at the level the register's access supports (method-level for
 full-text-read sources; abstract-level entries say so, per the
 [paper-note template](../../templates/paper-note.md)'s rule); every
 note ends in a falsifiable extension runnable at the course's
-deterministic tier. Comparison notes (C01–C11) settle practitioner
+deterministic tier. Comparison notes (C01–C12) settle practitioner
 decisions that single papers leave open. Chapters name their note
 companions in their readings sections — the fastest way in is through
 the chapter you are already reading.
@@ -90,5 +90,6 @@ the register's access level, exactly like paper notes.
 | C07 | [Reference-anchored vs consistency-based factuality](comparison-07-reference-vs-consistency-factuality.md) — disjoint blind spots, domain-then-budget choice |
 | C08 | [Competing objectives vs mismatched generalization — two modes, two defense families](comparison-08-jailbreak-modes-defense-families.md) — the one-bit plain-restatement diagnostic |
 | C09 | [KL budgets vs held-out gold gates](comparison-09-kl-budgets-vs-gold-gates.md) — drift-side and score-side governance of the Goodhart curve |
+| C12 | [Model-written vs human-curated evaluation supply](comparison-12-evaluation-supply-strategies.md) — where the blind spot lives and who can see it |
 | C11 | [Situational awareness vs persona drift](comparison-11-situational-awareness-vs-persona-drift.md) — two drift phenomena, two monitoring budgets |
 | C10 | [Incident-response postures](comparison-10-incident-response-postures.md) — time-to-honest-characterization is the variable that sorts the eleven |
