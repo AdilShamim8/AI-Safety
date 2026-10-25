@@ -1287,3 +1287,39 @@ datasets:
     collected: 'abstract: evaluation framework for agents executing tools over untrusted data; 97 tasks;
       dynamic extensible design for new tasks, defenses, adaptive attacks; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-031
+  name: CounterFact (ROME evaluation suite)
+  organization: paper by Meng et al. (2022); kmeng1/rome repository
+  canonical_url: https://arxiv.org/abs/2202.05262
+  paper:
+    id: '2202.05262'
+    url: https://arxiv.org/abs/2202.05262
+    title: Locating and Editing Factual Associations in GPT
+    verified_title: true
+  risk_area: knowledge editing / causal factual interventions
+  task:
+  - model editing evaluation
+  - causal tracing
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: composition not established at abstract-read level (zsRE anchor stated; CounterFact template
+      counts body-level)
+    ref: R1
+  course_use:
+    chapters:
+    - '11'
+    - 09
+    projects:
+    - P06
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/31-counterfact-rome.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2202.05262
+    collected: 'abstract: causal intervention identifying decisive activations in factual predictions;
+      middle-layer FF modules mediating factual recall; ROME rank-one editing effective on zsRE evaluation;
+      title/authors/date verified'
+    accessed_on: '2026-10-25'
