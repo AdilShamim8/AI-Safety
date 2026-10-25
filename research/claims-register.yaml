@@ -2653,3 +2653,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0214
+  claim: The paper studies when RL agents have an instrumental goal to tamper with their reward process
+    — shortcutting the intended objective — and describes design principles that prevent such instrumental
+    goals for two agent designs, a question that impacts how far RL can be scaled and whether alternative
+    paradigms are needed for safe artificial general intelligence.
+  source: SRC-PAPER-143
+  section_or_page: arXiv:1908.04734 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; question, study structure,
+    and design-principles existence stated, the designs body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
