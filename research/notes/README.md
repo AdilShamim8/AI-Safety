@@ -29,6 +29,7 @@ full-text-read sources; abstract-level entries say so, per the
 | 19 | [Wild Patterns: Ten Years of Adversarial ML](19-wild-patterns-survey.md) | SRC-PAPER-049 | abstract-level |
 | 20 | [Madry et al.: Adversarial Training](20-madry-adversarial-training.md) | SRC-PAPER-045 | abstract-level |
 | 21 | [CaMeL: Defeating Prompt Injections by Design](21-camel-defeating-injections-by-design.md) | SRC-PAPER-054 | abstract-level |
+| 22 | [AgentDojo: Dynamic Evaluation of Agent Attacks and Defenses](22-agentdojo-dynamic-evaluation.md) | SRC-PAPER-055 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one
