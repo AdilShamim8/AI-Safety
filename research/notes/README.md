@@ -1,10 +1,17 @@
 # Research notes
 
-Paper notes — methodological analyses of the register's sources, each
+The research notebook: **32 paper notes**, **6 comparison notes**, and
+**3 incident reviews** (in [incidents/](incidents/README.md)). Paper
+notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
 written at the level the register's access supports (method-level for
 full-text-read sources; abstract-level entries say so, per the
-[paper-note template](../../templates/paper-note.md)'s rule).
+[paper-note template](../../templates/paper-note.md)'s rule); every
+note ends in a falsifiable extension runnable at the course's
+deterministic tier. Comparison notes (C01–C06) settle practitioner
+decisions that single papers leave open. Chapters name their note
+companions in their readings sections — the fastest way in is through
+the chapter you are already reading.
 
 | # | Note | Source | Level |
 |---|---|---|---|
