@@ -2605,3 +2605,14 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0210
+  claim: Adversarial examples remain effective when printed and photographed — surviving the physical
+    world's printing, lighting, camera noise, and varied capture conditions — establishing that adversarial
+    vulnerability is a deployment-channel property, not a digital-pipeline artifact.
+  source: SRC-PAPER-139
+  section_or_page: arXiv:1607.02533 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; method and persistence
+    finding stated, rates body-level)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
