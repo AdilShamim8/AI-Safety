@@ -3896,3 +3896,54 @@ sources:
     claim (Onion-satire sourcing for the rock recommendation) is this outlet's analysis, quoted with attribution;
     Google's internal sourcing data is not public.
   license: unknown (site terms; brief quotation with attribution)
+- id: SRC-REPORT-020
+  title: NYC's AI Chatbot Tells Businesses to Break the Law (investigation, 2024-03-29)
+  authors_or_organization: The Markup (Colin Lecher), copublished with Documented and THE CITY
+  url: https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law
+  source_type: report
+  publication_date: '2024-03-29'
+  version: article as retrieved in full
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: investigative reportage
+  peer_review_status: not peer reviewed (nonprofit newsroom investigation with documented testing)
+  supports:
+  - research/notes/incidents/05-nyc-mycity-chatbot.md
+  limitations: Full page content retrieved 2026-10-25. The bot's specific answers are the outlet's documented
+    testing (quotes reproduced in the article); the note quotes them as the outlet's findings, with 'dangerously
+    inaccurate' attributed to the named housing policy expert.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-021
+  title: Mayor Adams Releases First-of-Its-Kind Plan for Responsible Artificial Intelligence Use in NYC
+    (MyCity chatbot launch, 2023-10-16)
+  authors_or_organization: NYC Mayor's Office (nyc.gov)
+  url: https://www.nyc.gov/mayors-office/news/2023/10/mayor-adams-releases-first-of-its-kind-plan-responsible-artificial-intelligence-use-nyc
+  source_type: report
+  publication_date: '2023-10-16'
+  version: announcement as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: primary institutional statement
+  peer_review_status: not peer reviewed (government press release)
+  supports:
+  - research/notes/incidents/05-nyc-mycity-chatbot.md
+  limitations: Page inspected via search-result content 2026-10-25 (launch date, chatbot-as-pilot framing
+    verified in snippet); full page not independently fetched.
+  license: unknown (government site terms)
+- id: SRC-REPORT-022
+  title: NYC's AI chatbot was caught telling businesses to break the law. The city isn't taking it down
+    (2024-04-03)
+  authors_or_organization: Associated Press
+  url: https://apnews.com/article/new-york-city-chatbot-misinformation-6ebc71db5b770b9969c906a7ee4fae21
+  source_type: report
+  publication_date: '2024-04-03'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (wire service)
+  supports:
+  - research/notes/incidents/05-nyc-mycity-chatbot.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, date, not-taking-it-down
+    fact verified in snippet); full article not independently fetched. Cites The Markup's testing.
+  license: unknown (site terms; brief quotation only)

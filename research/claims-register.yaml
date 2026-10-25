@@ -2341,3 +2341,18 @@ claims:
   counterevidence: none observed this session; Google's public defense acknowledged issues while defending
     the product
   date: '2026-10-25'
+- id: CLM-0190
+  claim: NYC's MyCity Business chatbot (launched 2023-10-16, Microsoft-powered) gave documented unlawful-favoring
+    answers including that landlords need not accept rental-assistance tenants (source-of-income discrimination
+    is illegal in NYC), that bosses can take workers' tips, that tenants can be locked out, and that rent
+    is unrestricted; after The Markup's 2024-03-29 investigation the city kept the bot live, relabeled
+    it a beta pilot, and the mayor defended it.
+  source: SRC-REPORT-020
+  section_or_page: The Markup investigation (full retrieval) + NYC launch announcement + AP response coverage
+    (page-inspected via search-result content)
+  evidence_strength: page-inspected investigative reportage with quoted bot outputs; response record from
+    AP and agency coverage
+  assumptions: the outlet's documented testing accurately reproduces the deployed bot's behavior
+  counterevidence: the city defended the bot and characterized it as a pilot; no source claims the advice
+    caused confirmed unlawful action
+  date: '2026-10-25'
