@@ -94,3 +94,14 @@ fetch away.
    The diagnostic's task B is the test; if it took under an hour with
    clean answers, skip — otherwise the spine is exactly what your
    route's weeks will quietly assume.
+
+## Session-2 additions to the Friday artifacts (2026-10-25)
+
+The tracker files ([roadmaps/progress/](progress/README.md)) now carry
+the expanded per-route checklists — wire your 90 days through them:
+every Friday artifact in the plans below corresponds to a checkbox
+in your route's tracker, and the tracker's self-audit questions are
+the retrospective questions the original plan asks you to answer.
+Where the plans name a paper to skim, the note set now has it at a
+stated access level — skim the note first, then the source, and the
+access level tells you what you are allowed to claim afterward.
