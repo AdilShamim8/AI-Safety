@@ -2482,3 +2482,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0200
+  claim: Randomized smoothing turns any classifier that performs well under Gaussian noise into a new
+    classifier certifiably robust to l2-norm adversarial perturbations, with a tight l2 guarantee for
+    Gaussian smoothing; the demonstration is an ImageNet classifier with 49% certified top-1 accuracy
+    under perturbations with l2 norm less than 0.5 (127/255), which no prior certified defense had reached.
+  source: SRC-PAPER-129
+  section_or_page: arXiv:1902.02918 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; construction, tightness
+    claim, and the 49%-at-0.5 number stated in the abstract)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
