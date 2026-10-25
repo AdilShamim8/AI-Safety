@@ -6,6 +6,22 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-25 — P06 causal interpretability study)
+
+- `src/ai_safety_course/patch_audit/`: the causal-interpretability
+  discipline of Ch. 09–11 as a deterministic two-branch model organism —
+  shortcut-learning readout pinned (w_b 2.661 > w_a 2.247), linear
+  probes that favor the spurious site (0.915 vs 0.825), an
+  activation-patching grid under two topic-matched contrasts with
+  Wilson intervals, exact binomial tests and Holm correction, the
+  trivial-band pinning (s0/s3 restore everything; ends of flow
+  localize nothing), random-patch and matched-magnitude controls, and
+  the deployment-flip intervention that rejects the vendor-shaped
+  claim (flip-slice 0.335 -> b-ablated 0.770, McNemar 102 vs 15,
+  p = 2.2e-17) with the in-distribution two-sided ledger priced
+  (0.915 vs 0.805). 14 pinned tests; compute tier honestly marked
+  not-executed.
+
 ### Added (2026-10-23 — P08 control protocol; the build's 100th commit)
 
 - `src/ai_safety_course/control_protocol/`: the Ch. 08 frontier as

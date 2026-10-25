@@ -645,21 +645,23 @@ projects:
   title: Causal interpretability study
   path: projects/p06-causal-interpretability-study/
   phase: E
-  maturity: planned
+  maturity: complete
   chapter_links:
   - 09
   - '10'
   - '11'
   artifacts:
-  - small open model
-  - activation patching or justified intervention
-  - clean/corrupted inputs
-  - random/control interventions
-  - held-out prompts
-  - numerical sanity checks
-  - optional SAE extension
-  status: protocol-only
-  verified_on: null
+  - deterministic two-branch model organism with known ground truth (noisy core channel, clean spurious channel, topic nuisance; s0 embedding, s1/s2 branches with 3% cross-leak, s3 mixer)
+  - shortcut-learning readout fit (w_b > w_a pinned) with linear probes at both sites (spurious site reads out better: 0.915 vs 0.825)
+  - activation-patching grid under two topic-matched contrasts (label-flip, b-isolate) in gap and decision form with Wilson intervals, exact binomial tests, and Holm-Bonferroni correction over the site grid
+  - trivial-band pinning (s0/s3 restore 166/166: ends of flow localize nothing) and the 0/166 core-site restoration (patching measures reliance, not truth)
+  - random-patch and matched-magnitude controls per site (clean-donor effect far outside its control band)
+  - deployment-flip intervention with neutral b-ablation (0.335 -> 0.770, McNemar 102 vs 15, p = 2.2e-17) and the in-distribution two-sided ledger (0.915 vs 0.805)
+  - pre-registered protocol H1-H3 with falsifier and disconfirming criteria
+  - numerical sanity checks (14 pinned tests)
+  - optional SAE extension (exercise)
+  status: implemented
+  verified_on: '2026-10-25'
 - id: P07
   title: Injection defense as a capability audit (paired policy harness)
   path: projects/p07-injection-defense/

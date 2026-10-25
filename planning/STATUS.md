@@ -96,15 +96,17 @@ as the work it describes. On session start, read this file, then
 
 | **Pending-paper verification round** — the five "assigned, verification pending" markers from ch02/ch04/ch06 closed by actual abstract-page fetches (2026-10-23): PPO (SRC-PAPER-070, v2 2017-08-28; surrogate-objective mechanics verified, general-RL scope honestly priced); HH-RLHF (SRC-PAPER-071, 2022-04-12; near-universal NLP improvement, weekly iterated online mode, linear reward-vs-sqrt-KL relation); BeaverTails paper (SRC-PAPER-072, v3 2023-11-07; 333,963 QA pairs + 361,903 expert comparisons, corroborating the card at abstract level); TruthfulQA paper (SRC-PAPER-073, v2 2022-05-08; 817 questions/38 categories, best model 58% vs human 94%, inverse scaling on the 2021 model set priced as dated); WILDS already verified with ch17 — ch02's stale pending line corrected to point at SRC-PAPER-067/CLM-0090. Registers: 98→102 sources, 94→98 claims (CLM-0112..0115, each with counterevidence); ch04 §3.5 and all three readings sections updated; InstructGPT limitation note closed | this commit | validator + 530-test suite green | |
 
+| **P06 complete (implemented)** — the ai_safety_course.patch_audit package: the causal-interpretability discipline of ch09-11 as a deterministic two-branch model organism (noisy core channel ~82% agreement, clean spurious channel 90%, topic nuisance; s0 embedding, s1/s2 branches with 3% cross-leak, s3 mixer) with a shortcut-learning readout (w_a 2.247 < w_b 2.661 pinned). Instrument battery: linear probes at both sites (spurious site reads out BETTER, 0.915 vs 0.825 — readout is not causation); activation-patching grid under two topic-matched contrasts in gap and decision form with Wilson intervals, exact binomial tests and Holm correction (label-flip: s2 166/166 restored with p≈4.3e-50, core site s1 0/166 — patching measures reliance, not truth; b-isolate: window exactly at s2 200/200, s1 0/200 — locality; trivial band s0/s3 166/166 — ends of flow localize nothing); random-patch and matched-magnitude controls per site; the deployment-flip intervention that settles it (flip-slice 0.335 [0.273, 0.403] -> neutral b-ablation 0.770 [0.707, 0.823], disjoint intervals, paired McNemar 102 vs 15, exact p = 2.2e-17) plus the in-distribution two-sided ledger (0.915 with b vs 0.805 without — the same circuit helps in-distribution and breaks under flip). 14 pinned tests; pre-registered H1-H3 with falsifier and disconfirming criteria; compute tier (real open model) honestly marked not-executed | this commit | validator + 571-test suite green | |
+
 ## Current phase
 
-Phase G underway: P02, P03, P07, ch12-ch17 done (17/24 chapters, 4/10 projects); the owner-directed from-scratch researcher track COMPLETE (7/7 modules, 2026-10-22); the comparison-note set (C01–C05) is complete; the 2026-10-23 verification round closed all five pending-paper markers (registers now carry zero "verification pending" paper entries). ALL 24 CHAPTERS COMPLETE. Registers at 156 sources / 146 claims. Remaining: projects P04-P06 and P08-P10 upgrades (6 protocol-only units).
+Phase G closed: ALL 24 CHAPTERS and NINE of ten projects complete (P01-P09; P06 closed 2026-10-25 as the offline deterministic patching audit). Registers at 156 sources / 146 claims. Remaining: P10 (capstone assurance dossier), the missing-values audit + dashboard deliverable (owner-directed 2026-10-25), and the career-track deepening pages.
 
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 24 / 24 — the full chapter spine is DONE
 - Dataset cards complete: 22 verified cards in the catalog (13 core + 9 verified in the 2026-10-23 rounds; pending-verification queue EMPTY)
-- Projects complete: 8 / 10 (P01-P05, P07, P08, P09)
+- Projects complete: 9 / 10 (P01-P09; P06 added 2026-10-25)
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 5 / 5 planned — set COMPLETE (C01–C05, 2026-10-22)
 - Incident analyses: 0 (verified set, grows with the build)
@@ -120,9 +122,8 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: chapter 18 (reasoning faithfulness and
-monitorability) — CoT faithfulness, hidden actions, monitor evasion;
-action/outcome evidence. Then P04 (preference optimization audit),
-P05 (weak-to-strong analogue), P06 (causal interpretability), P08
-(control protocol), P09 (shift/subgroup reliability), P10 (capstone
-assurance dossier), and chapters 19-24.
+Next exact action: P10 (capstone agent evaluation and assurance dossier —
+integration of P01 + P07/P08 into a bounded agent system with pinned
+configuration, threat model, held-out tests, attack/benign metrics,
+resource limits, logs). Then the repo-wide missing-values audit, the
+career-track pages, and the dashboard (index.html) deliverable.
