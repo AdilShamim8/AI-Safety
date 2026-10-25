@@ -1323,3 +1323,40 @@ datasets:
       middle-layer FF modules mediating factual recall; ROME rank-one editing effective on zsRE evaluation;
       title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-032
+  name: RobustBench
+  organization: paper by Croce et al. (2020); leaderboard at robustbench.github.io
+  canonical_url: https://arxiv.org/abs/2010.09670
+  paper:
+    id: '2010.09670'
+    url: https://arxiv.org/abs/2010.09670
+    title: 'RobustBench: a standardized adversarial robustness benchmark'
+    verified_title: true
+  risk_area: adversarial robustness evaluation standardization
+  task:
+  - robustness evaluation
+  - adaptive attack benchmarking
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (site terms uninspected)
+  size_facts:
+  - fact: image classification scope with model restrictions (abstract-stated)
+    ref: R1
+  - fact: 'protocol-ledger design: pinned threat model and attack budget (abstract-stated goal)'
+    ref: R1
+  course_use:
+    chapters:
+    - '12'
+    - '02'
+    projects:
+    - P09
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/32-robustbench.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2010.09670
+    collected: 'abstract: standardized benchmark goal reflecting robustness accurately within computational
+      budget; robustness-overestimation diagnosis; image classification scope with model restrictions;
+      title/authors/date verified'
+    accessed_on: '2026-10-25'
