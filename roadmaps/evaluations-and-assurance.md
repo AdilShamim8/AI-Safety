@@ -11,6 +11,9 @@ refresher R3 first — this route is where R3's habits become professional
 practice.
 
 ## Sequence
+[**Track your progress:**](progress/evaluations-and-assurance.md) the engineer route's expanded milestone checklist (M0–M5, price tags on every control).
+
+
 
 | Step | Unit | ≈ hours | Evidence produced |
 |---|---|---|---|

@@ -11,6 +11,9 @@ engineer who needs R5. The route deliberately teaches both languages; the
 diagnostic tells you which side to refresh.
 
 ## Sequence
+[**Track your progress:**](progress/ai-security-engineering.md) the security route's expanded milestone checklist (M0–M6, paired ledgers enforced).
+
+
 
 | Step | Unit | ≈ hours | Evidence produced |
 |---|---|---|---|

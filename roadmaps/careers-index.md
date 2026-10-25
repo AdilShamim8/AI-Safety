@@ -128,7 +128,13 @@ skipping the spine).
 Track progress in artifacts, not hours. Each rung below is complete
 only when the artifact exists and is auditable (a repo, a report, a
 published note). Copy this into your own tracker; the checkboxes are
-the course's honest definition of "done."
+the course's honest definition of "done." The expanded per-route
+versions — with per-milestone evidence and self-audit questions —
+live in [roadmaps/progress/](progress/README.md): pick yours
+([researcher](progress/alignment-research.md),
+[security](progress/ai-security-engineering.md),
+[engineer](progress/evaluations-and-assurance.md),
+[auditor](progress/audit-only.md)) and fork it.
 
 ### Rung 0 — orientation (both roles, ~1 week)
 

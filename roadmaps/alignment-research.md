@@ -10,6 +10,9 @@ prerequisites (see [diagnostic](../prerequisites/diagnostic.md)) who wants
 to produce research-style portfolio evidence, not just read about alignment.
 
 ## Sequence
+[**Track your progress:**](progress/alignment-research.md) the researcher route's expanded milestone checklist (M0–M6, artifact-gated).
+
+
 
 | Step | Unit | ≈ hours | Evidence produced |
 |---|---|---|---|
