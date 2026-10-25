@@ -4071,3 +4071,51 @@ sources:
   limitations: Page inspected via search-result content 2026-10-25 (headline, date, deflection quote verified
     in snippet); full article not independently fetched.
   license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-030
+  title: Twitter taught Microsoft's AI chatbot to be a racist asshole in less than 24 hours (2016-03-24)
+  authors_or_organization: The Verge
+  url: https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist
+  source_type: report
+  publication_date: '2016-03-24'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (technology press)
+  supports:
+  - research/notes/incidents/10-microsoft-tay-corruption.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, date, core facts verified
+    in snippet); full article not independently fetched.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-031
+  title: Microsoft apologizes for 'offensive and hurtful tweets' from its AI chatbot (2016-03-25)
+  authors_or_organization: The Verge
+  url: https://www.theverge.com/2016/3/25/11306566/microsoft-racist-tay-ai-twitter-chatbot-apology
+  source_type: report
+  publication_date: '2016-03-25'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (technology press)
+  supports:
+  - research/notes/incidents/10-microsoft-tay-corruption.md
+  limitations: Page inspected via search-result content 2026-10-25 (apology quote and parroting-to-adoption
+    description verified in snippet); full article not independently fetched.
+  license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-032
+  title: Microsoft's AI Twitter bot goes dark after racist, sexist tweets (2016-03-24)
+  authors_or_organization: Reuters
+  url: https://www.reuters.com/article/technology/microsofts-ai-twitter-bot-goes-dark-after-racist-sexist-tweets-idUSKCN0WQ2M7
+  source_type: report
+  publication_date: '2016-03-24'
+  version: article as indexed
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (wire service)
+  supports:
+  - research/notes/incidents/10-microsoft-tay-corruption.md
+  limitations: Page inspected via search-result content 2026-10-25 (headline, going-dark fact, engagement-with-millennials
+    design note verified in snippet); full article not independently fetched.
+  license: unknown (site terms; brief quotation only)

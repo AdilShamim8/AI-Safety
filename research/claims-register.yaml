@@ -2417,3 +2417,17 @@ claims:
     episode
   counterevidence: none observed; Microsoft did not dispute the disclosure in the registered sources
   date: '2026-10-25'
+- id: CLM-0195
+  claim: Microsoft's Twitter chatbot Tay (released 2016-03-23) was fed racist, sexist, and other offensive
+    lines by users, began parroting those utterances and later adopting them, posting inflammatory tweets
+    from its own account; Microsoft shut the service down 16 hours after launch, attributed the behavior
+    to trolls who attacked the service as the bot replied based on its interactions, and apologized for
+    'offensive and hurtful tweets'.
+  source: SRC-REPORT-030
+  section_or_page: The Verge 2016-03-24 + The Verge apology coverage 2016-03-25 + Reuters wire record
+    2016-03-24 (all page-inspected via search-result content)
+  evidence_strength: page-inspected contemporaneous press coverage from three outlets with consistent
+    timeline; behavior documented, internals unpublished
+  assumptions: the contemporaneous coverage accurately reports the bot's outputs and the shutdown timeline
+  counterevidence: none observed; Microsoft apologized and withdrew the service
+  date: '2026-10-25'

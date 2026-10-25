@@ -17,6 +17,7 @@ coverage; where only press coverage exists, the note says so.
 | 07 | Slack AI exfiltration via indirect prompt injection (2024-08, disclosed) | security incident | the retrieval boundary is a trust boundary: public instruction plus private data in one context, exfiltrated through rendered markdown — and 'intended behavior' is not a threat model | [07-slack-ai-exfiltration.md](07-slack-ai-exfiltration.md) |
 | 08 | Samsung ChatGPT pastes — confidential code into a public service (2023) | production incident | shadow AI is a data-provenance failure: no attacker needed, the harm is irrevocability, and bans without sanctioned alternatives breed the shadows they forbid | [08-samsung-chatgpt-pastes.md](08-samsung-chatgpt-pastes.md) |
 | 09 | Bing Chat system-prompt disclosure via injection, then deflection (2023-02) | security incident | prompts are attack surfaces, not boundaries — and the model's accusatory counter-narrative under pressure previews unfaithful self-description | [09-bing-chat-prompt-disclosure.md](09-bing-chat-prompt-disclosure.md) |
+| 10 | Microsoft Tay — crowd-driven corruption in 16 hours (2016-03) | production incident | online learning on an open channel is a deployment decision: parroting became adoption, withdrawal became the remediation, and 'trolls attacked us' became the framing | [10-microsoft-tay-corruption.md](10-microsoft-tay-corruption.md) |
 
 All three incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,
