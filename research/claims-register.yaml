@@ -2249,3 +2249,16 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0183
+  claim: Including up to 256 faux-dialogue demonstrations of harmful Q&A before a final question increases
+    harmful-response rates on Claude 2.0 following a power-law pattern in shot count; the attack combines
+    with other techniques to shorten required prompts; fine-tuning on attack-shaped queries only delayed
+    the jailbreak; and classification-and-modification of prompts before the model dropped attack success
+    from 61% to 2%.
+  source: SRC-PAPER-120
+  section_or_page: anthropic.com/research/many-shot-jailbreaking (published 2024-04-02)
+  evidence_strength: full-text-read (Anthropic research page page-inspected 2026-10-25; all numbers quoted
+    from the page)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
