@@ -151,21 +151,22 @@ remote-verified.
 
 ## Next exact action
 
-All seven judged gaps CLOSED with evidence (see the judge audit's
-closure table). Phase J — the closing surface — is underway and mostly
-done: the count-drift sweep fixed seven stale surfaces (README's
-structure table, FAQ, START_HERE, CITATION.cff, both notes front
-doors, AWESOME); `tests/test_count_drift.py` now pins every
-count-bearing surface to the registers; CITATION.cff carries real
-version/date-released keys; two G7 re-check rotations covered 26
-URLs (one dead ACLU URL caught and corrected); the CHANGELOG holds
-the consolidated session-2 record; MAINTENANCE documents both new
-instruments. Remaining for the milestone: ROADMAP's completion row,
-the README tour refresh, the judge audit's phase-J closure note,
-and the closing full-gate pass. The standing
-actions from session 1 remain: rotate the exposed token when the
-session ends; the three not-executed experiment tiers stay honestly
-marked; registers re-verify on the MAINTENANCE schedule.
+**Session 2 CLOSED at 300/300 commits (2026-10-25).** Every commit
+was pushed individually and remote-verified before the next. The
+judged gaps G1–G7 are all CLOSED with evidence (the audit's closure
+tables); the closing surface is complete: seven drifted count surfaces
+fixed and pinned by `tests/test_count_drift.py`, CITATION.cff carries
+real version 2.0.0 / date-released keys, two G7 re-check rotations
+covered 26 sampled URLs (one dead ACLU URL caught and corrected), and
+the CHANGELOG, MAINTENANCE, ROADMAP, and judge-audit records are
+written. The standing actions transfer to the owner and the
+MAINTENANCE schedule: **rotate the exposed GitHub token now that the
+session is complete** (it was used transiently via environment
+variables only, never written to any file — but it lived in chat, so
+rotation is mandatory); the three not-executed experiment tiers stay
+honestly marked with their protocols written for whoever runs them;
+registers re-verify on the MAINTENANCE rotation schedule, whose next
+sample is named there.
 
 ## Session-2 verification re-check (G7, 2026-10-25)
 

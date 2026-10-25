@@ -59,6 +59,12 @@ Unreleased until a tagged release exists.
   refreshed abstract, and two G7 re-check rotations over 26 sampled
   register URLs — one genuinely dead ACLU URL caught, corrected, and
   recorded in the entry's limitations.
+- **The session closed at its 300-commit target** (300/300, every commit
+  pushed individually and remote-verified; 603-test suite green at close;
+  231 sources / 206 claims / 74 paper notes + 12 comparisons + 14 incident
+  reviews / 43 dataset cards / 296 glossary terms). Final state recorded
+  in `planning/STATUS.md`; the owner's standing action on session end is
+  to rotate the exposed push token.
 ### Added (2026-10-25 — the milestone build: incidents, notes, learner surface)
 
 - Three production incident reviews (`research/notes/incidents/`):

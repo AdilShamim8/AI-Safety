@@ -134,9 +134,10 @@ exemplar. The map's shape is unchanged — the spine was complete at
 incidents, 12 comparisons) and added the tracking layer the owner
 asked for, without moving a single chapter.
 
-The judged gaps G1–G7 are all CLOSED (the closure table lives in the
-audit), the closing surface is swept — seven drifted count surfaces
-fixed and now pinned by a standing test — and the corpus is citable
+The session closed at its 300-commit target with the judged gaps
+G1–G7 all CLOSED (the closure table lives in the
+audit), the closing surface swept — seven drifted count surfaces
+fixed and now pinned by a standing test — and the corpus citable
 as version 2.0.0. What did NOT change: the not-executed tiers stay
 not-executed in writing, and the token the owner supplied for
 pushes stays to-be-rotated — both recorded in planning/STATUS.md.
