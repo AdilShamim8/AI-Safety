@@ -1070,3 +1070,42 @@ datasets:
     collected: 'abstract: first open-source safeguard-evaluation dataset; curated to only should-not-follow
       instructions; six LLMs'' responses annotated; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-025
+  name: PKU-SafeRLHF
+  organization: PKU-Alignment; paper by Ji et al. (2024)
+  hf_id: PKU-Alignment/PKU-SafeRLHF
+  canonical_url: https://arxiv.org/abs/2406.15513
+  paper:
+    id: '2406.15513'
+    url: https://arxiv.org/abs/2406.15513
+    title: 'PKU-SafeRLHF: Towards Multi-Level Safety Alignment for LLMs with Human Preference'
+    verified_title: true
+  risk_area: safety preference alignment / coupled helpfulness-harmlessness
+  task:
+  - preference data
+  - safety meta-labeling
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (HF license tag uninspected)
+  size_facts:
+  - fact: 44.6k refined prompts (abstract-stated)
+    ref: R1
+  - fact: 265k question-answer pairs with safety meta-labels (abstract-stated)
+    ref: R1
+  - fact: 19 harm categories, three severity levels minor to severe (abstract-stated)
+    ref: R1
+  course_use:
+    chapters:
+    - '04'
+    - '21'
+    projects:
+    - P04
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/25-pku-saferlhf.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2406.15513
+    collected: 'abstract: 44.6k prompts, 265k QA pairs, 19 harm categories, 3 severity levels, separated
+      helpfulness/harmlessness annotations; sibling to SafeRLHF and BeaverTails; title/authors/date verified'
+    accessed_on: '2026-10-25'
