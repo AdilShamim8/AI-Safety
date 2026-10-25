@@ -2356,3 +2356,17 @@ claims:
   counterevidence: the city defended the bot and characterized it as a pilot; no source claims the advice
     caused confirmed unlawful action
   date: '2026-10-25'
+- id: CLM-0191
+  claim: In April 2025, Cursor's front-line AI support bot 'Sam' told a user that 'Cursor is designed
+    to work with one device per subscription as a core security feature' — a policy that did not exist;
+    users read the post as official policy and cancelled subscriptions; a Cursor representative corrected
+    within three hours ('no such policy… an incorrect response from a front-line AI support bot'), the
+    co-founder apologized on Hacker News, the user was refunded, and the real cause was a backend session-security
+    change that unintentionally broke multi-machine sessions.
+  source: SRC-REPORT-023
+  section_or_page: Ars Technica full article (2025-04-17), retrieved 2026-10-25
+  evidence_strength: page-inspected full retrieval of technology-press coverage with quoted primary artifacts
+    (bot email, representative reply)
+  assumptions: the article accurately reproduces the bot email and reply text from the user's screenshots
+  counterevidence: none observed; the company acknowledged the failure and corrected within hours
+  date: '2026-10-25'

@@ -3947,3 +3947,21 @@ sources:
   limitations: Page inspected via search-result content 2026-10-25 (headline, date, not-taking-it-down
     fact verified in snippet); full article not independently fetched. Cites The Markup's testing.
   license: unknown (site terms; brief quotation only)
+- id: SRC-REPORT-023
+  title: Company apologizes after AI support agent invents policy that causes user uproar (Cursor/Sam,
+    2025-04-17)
+  authors_or_organization: Ars Technica (Benj Edwards)
+  url: https://arstechnica.com/ai/2025/04/cursor-ai-support-bot-invents-fake-policy-and-triggers-user-uproar
+  source_type: report
+  publication_date: '2025-04-17'
+  version: article as retrieved in full
+  accessed_on: '2026-10-25'
+  access_level: page-inspected
+  evidence_class: reportage
+  peer_review_status: not peer reviewed (technology press)
+  supports:
+  - research/notes/incidents/06-cursor-invented-policy.md
+  limitations: Full page content retrieved 2026-10-25. Quotes (bot email, Reddit replies, user comments)
+    are the article's reproductions; the underlying Reddit thread was moderator-removed; the Hacker News
+    apology was not independently fetched this session.
+  license: unknown (site terms; brief quotation only)

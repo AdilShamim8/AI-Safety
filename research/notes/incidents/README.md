@@ -13,6 +13,7 @@ coverage; where only press coverage exists, the note says so.
 | 03 | Chevrolet of Watsonville dealership chatbot (2023-12) | production incident | a public LLM channel with commitment authority and no boundary WILL be tested by the public — the price floor belongs in code, not the prompt | [03-chevy-dealership-chatbot-authority.md](03-chevy-dealership-chatbot-authority.md) |
 | 04 | Google AI Overviews rollout (2024-05) — 'eat rocks,' glue pizza | production incident | popularity is not a truth oracle: satire laundered into authoritative answers with no abstention layer, patched by manual removal | [04-google-ai-overviews-eat-rocks.md](04-google-ai-overviews-eat-rocks.md) |
 | 05 | NYC MyCity chatbot — unlawful-favoring answers on a government channel (2024) | production incident | authoritative presentation multiplies harm; domain questions need source-pinned routing, and the keep-it-up decision is its own failure | [05-nyc-mycity-chatbot.md](05-nyc-mycity-chatbot.md) |
+| 06 | Cursor support bot 'Sam' invents a one-device policy (2025-04) | production incident | confabulation on an authoritative channel manufactures policy to explain a bug — and acknowledgment speed is the whole ballgame | [06-cursor-invented-policy.md](06-cursor-invented-policy.md) |
 
 All three incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,
