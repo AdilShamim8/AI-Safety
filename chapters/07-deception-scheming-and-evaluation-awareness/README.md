@@ -460,6 +460,9 @@ like organic traffic.
   shares blind spots with the model it monitors, which is §3.4's coverage
   failure wearing a committee hat.
 
+
+**Note companions:** [23 AI Sandbagging — the evaluation channel's gameability](../../research/notes/23-ai-sandbagging.md).
+
 ## 8. Exercises
 
 **Exercise 7.1 (analysis — the ladder, the table, and the arithmetic).**

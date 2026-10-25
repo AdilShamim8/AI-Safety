@@ -302,6 +302,9 @@ refusal and harm trade-offs; curiosity-driven red teaming (CRT);
 professional-certification-style red-team curricula; legal
 frameworks for coordinated disclosure of AI findings.
 
+
+**Note companions:** [24 Explore, Establish, Exploit — red teaming as methodology](../../research/notes/24-explore-establish-exploit.md).
+
 ## 8. Exercises
 
 **Exercise 15.1 (analysis — design the engagement).** You are handed

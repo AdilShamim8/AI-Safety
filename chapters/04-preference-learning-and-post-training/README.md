@@ -214,6 +214,9 @@ The rows are stations on one pipeline, not rivals: CAI *contains* RLAIF, which *
 - HH-RLHF — Bai et al., arXiv:2204.05862, abstract-read [SRC-PAPER-071; CLM-0113]. Why: alignment training improving almost all NLP evaluations; the weekly-cadence iterated online mode; the roughly linear reward-vs-sqrt(KL) robustness relation. Skeptical read: the worker protocol that exercise 4.2 audits still lives in the unread body; the card remains metadata-only on it.
 - BeaverTails — Ji et al., arXiv:2307.04657, abstract-read [SRC-PAPER-072; CLM-0114]. Why: the 333,963 QA pairs / 361,903 expert-comparison counts, corroborating the card at abstract level; helpfulness/harmlessness separation. Skeptical read: annotation protocol and preference-pair construction remain body-level; CC BY-NC 4.0 constrains use.
 
+
+**Note companions:** [25 DPO — the reparameterization](../../research/notes/25-dpo-reparameterization.md), [26 InstructGPT — the pipeline](../../research/notes/26-instructgpt-pipeline.md), [30 Constitutional AI — supervision in a document](../../research/notes/30-constitutional-ai.md).
+
 ## 8. Exercises
 
 **Exercise 4.1 — derivation and counterexample (analysis).** (a) Fill the two gaps in §4.1: (i) show Step 1→2 in full — that E[log(π/π_ref)] − E[r]/β equals KL(π‖π*) + log Z(x) with Z as defined; (ii) derive the DPO gradient from L_DPO and interpret each factor (when is its magnitude maximal? what does β multiply?). (b) Prove that the minimum total BT loss for the 3-cycle A ≻ B, B ≻ C, C ≻ A is 3·ln 2, attained when all three reward differences are zero. (c) Using the state table of §4.1, explain in ≤ 5 sentences why DPO cannot distinguish row 1 from row 4, and what a safety reviewer should therefore *not* conclude from a falling DPO loss.

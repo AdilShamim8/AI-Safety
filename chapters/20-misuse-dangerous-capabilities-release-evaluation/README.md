@@ -308,6 +308,9 @@ sandbagging [Ch. 07's register]; XSTest/HaluEval [cards 06, 17] as
 over-refusal/hallucination instruments on the safety side of the
 gate.
 
+
+**Note companions:** [29 The Mirage — metric choice manufacturing thresholds](../../research/notes/29-emergent-abilities-mirage.md).
+
 ## 8. Exercises
 
 **Exercise 20.1 — lower-bound grammar (analysis).** Rewrite each

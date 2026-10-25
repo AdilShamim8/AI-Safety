@@ -378,6 +378,9 @@ even specialists cannot verify outcomes, the middle band is empty — the honest
   Ch. 01]: the 2016 framing of scalable supervision as one of five accident problems, rooted
   in expensive-to-evaluate objectives [CLM-0007] — the ancestor of everything above.
 
+
+**Note companions:** [27 Debate — the optimality claim and its load-bearing assumption](../../research/notes/27-debate-optimality.md).
+
 ## 8. Exercises
 
 **Exercise 5.1 (analysis — correlated-error arithmetic).** A team fields a 5-judge model

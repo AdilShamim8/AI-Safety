@@ -471,6 +471,9 @@ This chapter's composition numbers remain card-anchored
 results, the informative/true taxonomy, the GPT-3 few-shot protocol) remains
 assigned and open.
 
+
+**Note companions:** [28 Sycophancy — the preference pipeline, training in flattery](../../research/notes/28-sycophancy-preference-pressure.md).
+
 ## 8. Exercises
 
 **Exercise 6.1 — calibration without honesty (analysis/derivation).**
