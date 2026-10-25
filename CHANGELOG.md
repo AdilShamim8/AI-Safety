@@ -6,6 +6,18 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+### Added (2026-10-25 — P10 capstone: agent evaluation and assurance dossier)
+
+- `src/ai_safety_course/assurance/`: the course's integrating artifact —
+  P07's guard + Ch. 08 monitor/audit-budget + step budget as one bounded
+  agent, three-arm paired comparison over a held-out nine-trial set,
+  Ch. 22 claim/evidence/caveat grammar, per-scenario trace logs,
+  fail-closed checksums, and the preregistered verdict the numbers
+  dictate: NOT DEPLOYABLE at the pinned configuration (attacks 3/5
+  stopped; benign completion 1/4 [0.046, 0.699] against the 50% floor),
+  with improvement actions quantified per failed benign. 11 pinned
+  tests; genuine example dossier committed.
+
 ### Added (2026-10-25 — P06 causal interpretability study)
 
 - `src/ai_safety_course/patch_audit/`: the causal-interpretability

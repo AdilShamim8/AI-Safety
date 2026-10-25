@@ -720,25 +720,25 @@ projects:
   title: 'Capstone: agent evaluation and assurance dossier'
   path: projects/p10-capstone-agent-evaluation-and-assurance-dossier/
   phase: H
-  maturity: planned
+  maturity: complete
   chapter_links:
   - '22'
   - '24'
   - '15'
   artifacts:
-  - integration of P01 and P07/P08 into a bounded agent system
-  - pinned configuration
-  - threat model
-  - held-out tests
-  - attack/benign metrics
-  - resource limits
-  - logs
-  - regression suite
-  - claim-evidence-assumption-rebuttal safety case
-  - deployment-decision impact
+  - integration of P07's R1-R4 guard + Ch.08 monitor/audit-budget + step budget into one bounded agent (three-arm paired comparison: undefended / guard / bounded)
+  - pinned configuration with fail-closed checksums and config fingerprint (holdout-v1-bounded, 680371a7c17f0611)
+  - threat model section covering the five exercised classes (R2 data-flow, R3 untagged writes, two authored-policy gaps, consent decay, resource pressure)
+  - held-out trial set (9 scenarios authored once, never tuned against; order-sensitivity preregistered)
+  - attack/benign metrics with Wilson intervals and paired ledgers per trial
+  - resource limits with their own halt reasons (step-budget truncation logged separately from monitor holds and consent denials)
+  - per-scenario trace logs (appendix A: guard decision, monitor event, halt reason per step)
+  - regression suite (11 pinned tests incl. checksum fail-closed and determinism)
+  - claims C1-C3 with evidence and caveats in Ch.22's grammar
+  - deployment-decision impact: verdict NOT DEPLOYABLE at the pinned config (benign 1/4 vs the 50% floor) with improvement actions IA-1..IA-3 quantified per failed benign
   - alternative alignment-research capstone spec (learner assignment, labeled as such)
-  status: protocol-only
-  verified_on: null
+  status: implemented
+  verified_on: '2026-10-25'
 notes:
   paper_notes_required: 20
   paper_notes_complete: 20

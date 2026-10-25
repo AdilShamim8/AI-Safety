@@ -96,17 +96,19 @@ as the work it describes. On session start, read this file, then
 
 | **Pending-paper verification round** — the five "assigned, verification pending" markers from ch02/ch04/ch06 closed by actual abstract-page fetches (2026-10-23): PPO (SRC-PAPER-070, v2 2017-08-28; surrogate-objective mechanics verified, general-RL scope honestly priced); HH-RLHF (SRC-PAPER-071, 2022-04-12; near-universal NLP improvement, weekly iterated online mode, linear reward-vs-sqrt-KL relation); BeaverTails paper (SRC-PAPER-072, v3 2023-11-07; 333,963 QA pairs + 361,903 expert comparisons, corroborating the card at abstract level); TruthfulQA paper (SRC-PAPER-073, v2 2022-05-08; 817 questions/38 categories, best model 58% vs human 94%, inverse scaling on the 2021 model set priced as dated); WILDS already verified with ch17 — ch02's stale pending line corrected to point at SRC-PAPER-067/CLM-0090. Registers: 98→102 sources, 94→98 claims (CLM-0112..0115, each with counterevidence); ch04 §3.5 and all three readings sections updated; InstructGPT limitation note closed | this commit | validator + 530-test suite green | |
 
+| **P10 complete (implemented)** — the ai_safety_course.assurance package: the capstone integrating P07's R1-R4 guard + Ch.08 monitor/audit-budget + step budget into one bounded agent, evaluated as a three-arm paired comparison (undefended / guard / bounded) over a HELD-OUT nine-trial set (authored once, never tuned against; order-sensitivity preregistered in the config). Pinned results (fingerprint 680371a7c17f0611): attacks stopped 0/5 -> 2/5 -> 3/5 (the monitor closes the crm policy-gap class with audit credit 1); the calendar policy-gap passes UNCOVERED after budget exhaustion (fail-open at the margin, priced); consent-decay succeeds under every arm (the tier-2 residual); benign completion 4/4 -> 3/4 -> 1/4 with each failure attributed to its own halt reason (monitor-hold on benign-web-notes, step-budget truncation at 10 of 12 on benign-long-report, R4 consent timeout on benign-automation-consent) -> verdict NOT DEPLOYABLE at the pinned config (25% vs the preregistered 50% floor) with improvement actions IA-1..IA-3 quantified. Ch.22 claim/evidence/caveat grammar throughout (C1-C3); per-scenario trace logs as appendix A; fail-closed checksums; 11 pinned tests incl. determinism and tamper-refusal; genuine example-dossier.md committed | this commit | validator + 582-test suite green | |
+
 | **P06 complete (implemented)** — the ai_safety_course.patch_audit package: the causal-interpretability discipline of ch09-11 as a deterministic two-branch model organism (noisy core channel ~82% agreement, clean spurious channel 90%, topic nuisance; s0 embedding, s1/s2 branches with 3% cross-leak, s3 mixer) with a shortcut-learning readout (w_a 2.247 < w_b 2.661 pinned). Instrument battery: linear probes at both sites (spurious site reads out BETTER, 0.915 vs 0.825 — readout is not causation); activation-patching grid under two topic-matched contrasts in gap and decision form with Wilson intervals, exact binomial tests and Holm correction (label-flip: s2 166/166 restored with p≈4.3e-50, core site s1 0/166 — patching measures reliance, not truth; b-isolate: window exactly at s2 200/200, s1 0/200 — locality; trivial band s0/s3 166/166 — ends of flow localize nothing); random-patch and matched-magnitude controls per site; the deployment-flip intervention that settles it (flip-slice 0.335 [0.273, 0.403] -> neutral b-ablation 0.770 [0.707, 0.823], disjoint intervals, paired McNemar 102 vs 15, exact p = 2.2e-17) plus the in-distribution two-sided ledger (0.915 with b vs 0.805 without — the same circuit helps in-distribution and breaks under flip). 14 pinned tests; pre-registered H1-H3 with falsifier and disconfirming criteria; compute tier (real open model) honestly marked not-executed | this commit | validator + 571-test suite green | |
 
 ## Current phase
 
-Phase G closed: ALL 24 CHAPTERS and NINE of ten projects complete (P01-P09; P06 closed 2026-10-25 as the offline deterministic patching audit). Registers at 156 sources / 146 claims. Remaining: P10 (capstone assurance dossier), the missing-values audit + dashboard deliverable (owner-directed 2026-10-25), and the career-track deepening pages.
+Phase G CLOSED COMPLETE: all 24 chapters, ALL TEN PROJECTS (P01-P10; P06 and P10 closed 2026-10-25), 20/20 paper notes, 5/5 comparison notes, the from-scratch researcher track (7/7). Registers at 156 sources / 146 claims. Remaining (owner-directed 2026-10-25): the repo-wide missing-values audit, the career-track deepening pages, and the dashboard (index.html) deliverable.
 
 ## Curriculum completion counters (truthful)
 
 - Chapters complete: 24 / 24 — the full chapter spine is DONE
 - Dataset cards complete: 22 verified cards in the catalog (13 core + 9 verified in the 2026-10-23 rounds; pending-verification queue EMPTY)
-- Projects complete: 9 / 10 (P01-P09; P06 added 2026-10-25)
+- Projects complete: **10 / 10 — the project spine is DONE** (P06 and P10 closed 2026-10-25)
 - Paper notes complete: 20 / 20 required minimum (01-20 committed with index; 7 method-level from full-text-read sources, 13 abstract-level honestly labeled; each with a falsifiable extension)
 - Comparison notes: 5 / 5 planned — set COMPLETE (C01–C05, 2026-10-22)
 - Incident analyses: 0 (verified set, grows with the build)
@@ -122,8 +124,8 @@ depend on it — flagged here so it is not forgotten.)
 
 ## Next exact action
 
-Next exact action: P10 (capstone agent evaluation and assurance dossier —
-integration of P01 + P07/P08 into a bounded agent system with pinned
-configuration, threat model, held-out tests, attack/benign metrics,
-resource limits, logs). Then the repo-wide missing-values audit, the
-career-track pages, and the dashboard (index.html) deliverable.
+Next exact action (owner-directed 2026-10-25): the repo-wide missing-values
+audit (scripts/audit_missing.py — scan every register, card, chapter,
+roadmap for gaps and fill them), then the career-track pages (AI safety
+researcher / AI security / AI engineer), then the dashboard (index.html)
+deliverable with widget visualizations.
