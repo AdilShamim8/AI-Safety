@@ -51,7 +51,14 @@ basics (Ch.12).
 Full tasks with worked answers: [prerequisites/diagnostic.md](prerequisites/diagnostic.md).
 Targeted refreshers: [prerequisites/targeted-refreshers.md](prerequisites/targeted-refreshers.md).
 
-## The three schedules
+## The three schedules (plus the reviewer's fourth)
+
+Schedules A–C below are the hour-accurate paths for producers of
+artifacts. Two newer companions: the
+[audit-only route](roadmaps/audit-only.md) for readers and judges
+(~120 h, no PyTorch), and [first-90-days.md](roadmaps/first-90-days.md)
+— the concrete week-by-week opening for any route, an artifact gating
+every Friday.
 
 ### A. Focused 12 weeks (~10 h/week, ~120 h total) — a deliberate selection
 
@@ -93,6 +100,7 @@ or explicitly switch to schedule A/B.
 | Alignment research | a replication with ablation, a critical research memo, and a falsifiable extension proposal (P04–P06 + capstone variant) |
 | AI security engineering | a threat model, an isolated attack/defense evaluation with a regression suite, and a remediation report (P07 + Ch.14/15 artifacts) |
 | Evaluations and assurance | a dataset card, validated scorers with uncertainty analysis, a monitoring study, and an evidence-backed safety case (P03/P09 + Ch.22 artifacts) |
+| Audit-only (the reviewer's route) | the ability to name any safety report's weakest link, audit a citation one fetch from its primary source, and write the one-page structured critique — reading competence, priced at ≈120 h with no PyTorch ([route page](roadmaps/audit-only.md)) |
 
 Each chapter's own completion criteria (listed in the chapter) are the
 intermediate gates; these are the route-level exits.
