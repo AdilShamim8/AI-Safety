@@ -82,7 +82,10 @@ NOT_EXECUTED = [
     {
         "id": "course-wide",
         "tier": "real local-model experiments",
-        "what": "0 of the 3 required compute-tier executions (recorded honestly in planning/STATUS.md)",
+        "what": (
+            "0 of the 3 required compute-tier executions "
+            "(recorded honestly in planning/STATUS.md)"
+        ),
     },
 ]
 
