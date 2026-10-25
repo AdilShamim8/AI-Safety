@@ -37,6 +37,16 @@ must keep a CPU smoke mode that runs on the core tier.
 
 - `python scripts/validate_repo.py .` passes (register schemas, internal
   links, no oversize artifacts).
+- `python scripts/audit_missing.py` reports **0 hard findings** (register
+  schemas, claims cross-references, unit paths, card license/verification
+  statements, SRC-*/CLM-* existence across all prose).
+- If you changed anything the dashboard displays (registers, catalog,
+  matrix, incidents, notes): `python scripts/build_dashboard.py` was run
+  and the regenerated `index.html` is in your commit. The page is
+  generated output — hand-edits will fail CI's freshness test.
+- The operating manual for all of this is [`MAINTENANCE.md`](MAINTENANCE.md)
+  (the five commands, the change-X→must-also-do-Y table, how to add a
+  source the honest way).
 - Tests that cover the code you touched pass; the full suite if you touched
   shared code.
 - Markdown renders sensibly (headings in hierarchy, tables well-formed).

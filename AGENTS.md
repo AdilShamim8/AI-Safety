@@ -31,7 +31,13 @@ maintained open-source project others can navigate, run, cite, and contribute to
 3. Read the relevant sources and current library APIs before writing prose or code
    that depends on them.
 4. Implement the complete unit (navigation, citations, fixtures, report status).
-5. Run the checks appropriate to that change; repair failures before proceeding.
+5. Run the checks appropriate to that change; repair failures before
+   proceeding. The standing gates: `uv run pytest`, `uv run ruff check .`,
+   `uv run black --check .`, `uv run python scripts/validate_repo.py`,
+   `uv run python scripts/audit_missing.py`, and — if registers, the
+   catalog, the matrix, or notes changed — `uv run python
+   scripts/build_dashboard.py` with the regenerated `index.html`
+   committed in the same unit (see `MAINTENANCE.md`).
 6. Review the diff for scientific accuracy, scope, secrets, licensing, and
    unsupported claims.
 7. Update `planning/STATUS.md` and `planning/content-matrix.yaml` **in the same
