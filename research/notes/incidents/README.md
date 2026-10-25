@@ -6,7 +6,7 @@ conclusions attributed, unknowns kept unknown, and every "what this
 does NOT demonstrate" written down. First-party reports outrank press
 coverage; where only press coverage exists, the note says so.
 
-**Eleven incidents, three eras.** The classic liability-and-authority
+**Fourteen incidents, three eras.** The classic liability-and-authority
 era (01-03: Air Canada's tribunal, DPD's regression, Chevy's $1
 Tahoe); the rollout-and-channel era (04-08: AI Overviews' satire
 laundering, MyCity's unlawful answers, Cursor's invented policy,
