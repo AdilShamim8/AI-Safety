@@ -2286,3 +2286,16 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0186
+  claim: Language models may show inverse scaling — worse task performance with increased scale due to
+    flaws in the training objective and data — evidenced by 11 datasets collected via the public Inverse
+    Scaling Prize, with four identified potential causes including preference for repeating memorized
+    sequences over in-context instructions, imitation of undesirable training-data patterns, and easy
+    distractor tasks.
+  source: SRC-PAPER-123
+  section_or_page: arXiv:2306.09479v2 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; phenomenon, contest,
+    11-dataset yield, and causes (i)-(iii) stated in the abstract; cause (iv) truncates and is left unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
