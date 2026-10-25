@@ -27,6 +27,27 @@ license are recorded in each project's data card and in the source register.
 | NHI Management Group analysis of the Chevrolet chatbot incident (consolidated timeline, quoted prompts/replies) | `research/notes/incidents/03-chevy-dealership-chatbot-authority.md` (cited as SRC-REPORT-016) | https://nhimg.org/chevrolet-dealer-chatbot-prompt-injection-2023-1-dollar-tahoe | Site terms | The two user prompts and one bot reply quoted briefly for factual record; analysis text is this repository's own |
 | 80,000 Hours / MATS / AISafety.com / SANS page content (program facts, board counts, taxonomy titles) | `roadmaps/careers-index.md`, `prerequisites/verifying-sources.md` (cited as SRC-CURR-005..008) | respective URLs recorded in the source register | respective site terms | Facts and figures recounted with per-claim register entries and access dates; no text reproduced
 
+## Session-2 quoted material (brief quotation with attribution, not copied)
+
+The session-2 incident reviews and notes quote brief phrases (a
+sentence or less each, attributed inline) from news and analysis
+pages whose licenses were not inspected (marked "site terms; brief
+quotation only" in the register entries): The Verge (Tay coverage,
+AI Overviews, Google defense), BBC News (AI Overviews), The
+Conversation (AI Overviews mechanism, Galactica analysis), Ars
+Technica (Cursor, Bing prompt disclosure, Bing deflection), The
+Markup (MyCity investigation), AP News (MyCity response), NYC
+Mayor's Office (MyCity launch), Reuters (Samsung ban, iTutorGroup,
+Amazon), Bloomberg (Samsung), NHI Management Group (Samsung, Chevy
+consolidations), PromptArmor (Slack disclosure), Simon Willison
+(Slack analysis), MIT Technology Review (Galactica), EEOC (iTutor
+settlement and suit releases), ACLU (Amazon analysis), The New York
+Times and Kevin Roose's X post (Sydney transcript record). Dataset
+card facts are cited fact-by-fact from their registered sources in
+the catalog's references fields; no dataset content is
+redistributed. arXiv abstracts are quoted under arXiv distribution
+terms with API-record provenance recorded per note.
+
 ## Policy
 
 1. Every import of third-party code, text, figures, or data must add a row to
