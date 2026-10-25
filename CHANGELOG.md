@@ -6,6 +6,12 @@ project does not yet issue semver releases, so entries accumulate under
 Unreleased until a tagged release exists.
 
 ## [Unreleased]
+
+### Session 2 — the judged deepening (opened 2026-10-25)
+
+- `planning/SESSION2_JUDGE_AUDIT.md` — the LLM-as-judge pass over the whole
+  build: seven gaps (G1–G7), each with named collection points, and the
+  150-commit backlog in judged priority order. STATUS opened the session.
 ### Added (2026-10-25 — the milestone build: incidents, notes, learner surface)
 
 - Three production incident reviews (`research/notes/incidents/`):
