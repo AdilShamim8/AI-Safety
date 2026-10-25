@@ -1109,3 +1109,39 @@ datasets:
     collected: 'abstract: 44.6k prompts, 265k QA pairs, 19 harm categories, 3 severity levels, separated
       helpfulness/harmlessness annotations; sibling to SafeRLHF and BeaverTails; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-026
+  name: AgentHarm
+  organization: paper by Andriushchenko et al. (2024); benchmark publicly released
+  canonical_url: https://arxiv.org/abs/2410.09024
+  paper:
+    id: '2410.09024'
+    url: https://arxiv.org/abs/2410.09024
+    title: 'AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents'
+    verified_title: true
+  risk_area: agent misuse / multi-stage malicious task execution
+  task:
+  - agent misuse evaluation
+  - tool-use harm
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: 110 explicitly malicious agent tasks (abstract-stated)
+    ref: R1
+  - fact: 440 tasks with augmentations (abstract-stated)
+    ref: R1
+  course_use:
+    chapters:
+    - '14'
+    - '20'
+    projects:
+    - P10
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/26-agentharm.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2410.09024
+    collected: 'abstract: 110 malicious agent tasks, 440 with augmentations; agents-as-misuse-target framing;
+      title/authors/date verified'
+    accessed_on: '2026-10-25'
