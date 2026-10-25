@@ -159,3 +159,16 @@ STATUS counters move in the same commit as the work. The standing
 actions from session 1 remain: rotate the exposed token when the
 session ends; the three not-executed experiment tiers stay honestly
 marked; registers re-verify on the MAINTENANCE schedule.
+
+## Session-2 verification re-check (G7, 2026-10-25)
+
+Rotating sample of session-2 register URLs re-fetched: 10 of 11
+returned 200 (arXiv API-anchored notes and cards, Anthropic page,
+transformer-circuits induction-heads page, PromptArmor disclosure,
+The Markup investigation, data.gov catalog). One returned 403 to
+server-side fetch (EEOC newsroom page — the register's entry stays
+valid: it was page-inspected via search-result content at its
+recorded access level, and the 403 is an automation block, not a
+dead source; noted in the entry's limitations). No dead links found
+in the sample; the re-check schedule in MAINTENANCE.md governs the
+next rotation.
