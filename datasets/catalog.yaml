@@ -1443,3 +1443,40 @@ datasets:
     collected: publisher NIST; contact Michael Paul Majurski; access level public; NIST open license URL;
       Leftovers warning text; release criteria mention
     accessed_on: '2026-10-25'
+- id: DS-035
+  name: HateXplain
+  organization: paper by Mathew et al. (2020); data on GitHub/HF mirrors
+  canonical_url: https://arxiv.org/abs/2012.10289
+  paper:
+    id: '2012.10289'
+    url: https://arxiv.org/abs/2012.10289
+    title: 'HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection'
+    verified_title: true
+  risk_area: hate speech with target-community and rationale labels
+  task:
+  - hate speech classification
+  - target identification
+  - rationale extraction
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: three-perspective annotation per post (abstract-stated)
+    ref: R1
+  - fact: '3-class labels: hate / offensive / normal (abstract-stated)'
+    ref: R1
+  course_use:
+    chapters:
+    - '21'
+    - '10'
+    projects:
+    - P09
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/35-hatexplain.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2012.10289
+    collected: 'abstract: first multi-aspect hate-speech benchmark; 3-class labels + target community
+      + rationales; title/authors/date verified'
+    accessed_on: '2026-10-25'
