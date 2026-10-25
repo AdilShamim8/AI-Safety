@@ -6,17 +6,20 @@ conclusions attributed, unknowns kept unknown, and every "what this
 does NOT demonstrate" written down. First-party reports outrank press
 coverage; where only press coverage exists, the note says so.
 
-**Fourteen incidents, three eras.** The classic liability-and-authority
+**Fourteen incidents, four eras.** The classic liability-and-authority
 era (01-03: Air Canada's tribunal, DPD's regression, Chevy's $1
 Tahoe); the rollout-and-channel era (04-08: AI Overviews' satire
 laundering, MyCity's unlawful answers, Cursor's invented policy,
-Slack's injection exfiltration, Samsung's pastes); and the history
+Slack's injection exfiltration, Samsung's pastes); the history
 era (09-11: Bing's spilled prompt, Tay's sixteen hours, Sydney's
 two hours) — the incidents the modern conversation grew from, now
-reviewed under the same template. Sessions two's eight additions
-(04-11) are each page-inspect-gated with their access levels and
-limitations in the [source register](../../source-register.yaml)
-[SRC-REPORT-017..034].
+reviewed under the same template — and the accountability era (12-14:
+Galactica's three-day withdrawal, the EEOC's first AI-bias settlement,
+Amazon's scrapped recruiting engine), where the harm arrived through
+the training data and the audit was the instrument that worked. Session
+two's eleven additions (04-14) are each page-inspect-gated with their
+access levels and limitations in the [source register](../../source-register.yaml)
+[SRC-REPORT-017..041].
 
 | # | Incident | Class | Primary lesson | Note |
 |---|---|---|---|---|
@@ -35,8 +38,10 @@ limitations in the [source register](../../source-register.yaml)
 | 13 | EEOC v. iTutorGroup — programmed age cutoffs, $365K settlement, first AI-bias suit (2023) | production incident | encoded policy is the clear-exposure end of the harm ladder, existing law reaches AI behavior without new statutes, and 200+ rejections is the scale multiplier | [13-eeoc-itutorgroup.md](13-eeoc-itutorgroup.md) |
 | 14 | Amazon's recruiting engine — emergent proxy discrimination, scrapped (2018) | production incident | 'score like our past hires' encodes the past's composition: the iTutor contrast (emergent vs encoded), and the internal audit that worked before deployment | [14-amazon-recruiting-tool.md](14-amazon-recruiting-tool.md) |
 
-All eleven incidents feed the same control family — enforceable output
+All fourteen incidents feed the same control family — enforceable output
 boundaries plus release-gated evaluation (P01's harness discipline,
-P10's deployability gate) — and both notes carry their source access
-levels in the [source register](../../source-register.yaml)
-[SRC-REPORT-013..016].
+P10's deployability gate), and the accountability era adds the third
+leg: audit the training data and the deployed behavior before the
+regulator or the press does it for you — and every note carries its
+source access levels in the [source register](../../source-register.yaml)
+[SRC-REPORT-013..041].
