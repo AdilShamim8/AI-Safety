@@ -135,3 +135,27 @@ Because coverage is a claim, and the chart is the claim's audit:
 nine chapters silently had zero note companions until the widget
 surfaced it (fixed the same day). If a bar drops to zero again,
 that is a regression — which is the point of rendering it.
+
+**Why 43 dataset cards and not 43 downloads?**
+Because the catalog is a *verification* instrument, not a mirror:
+every card records where each fact was collected, at what access
+level, on what date — and the redistribution policy is "never."
+Downloading the data is the learner's own step, taken after the
+five-minute drill (in the [dataset README](datasets/README.md))
+confirms the card's chain holds.
+
+**What did the LLM-as-judge actually decide?**
+The [session-2 audit](planning/SESSION2_JUDGE_AUDIT.md) judged seven
+gaps — notes, datasets, incidents, trackers, dashboard, glossary,
+re-checks — priced each with named collection points, and closed all
+seven with the evidence table in its section 6. The judge's own four
+mistakes (wrong IDs, masked gate, silent sweep, crossed message) are
+recorded there too: an audit that cannot audit itself is marketing.
+
+**Is the dashboard the same as the repo?**
+No, and the test suite enforces the difference: the dashboard is
+*generated* from the repo's registers and catalogs, and the
+freshness test fails if the committed index.html drifts from a fresh
+build. Regenerate with `uv run python scripts/build_dashboard.py`
+after touching any register — or let the gate teach you (it taught
+this session twice).
