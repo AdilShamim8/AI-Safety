@@ -10,6 +10,8 @@ security](../../chapters/13-llm-application-security/README.md) and
 [Ch. 14 — agents, tools, memory, and MCP
 security](../../chapters/14-agent-tool-memory-mcp-security/README.md)
 
+
+**Session-2 companion materials:** [jailbroken's two modes](../../research/notes/44-jailbroken-failure-modes.md) (classify your residual by mode), [many-shot](../../research/notes/45-many-shot-jailbreaking.md) (the compute-free family), [Llama Guard](../../research/notes/65-llama-guard-safeguard-model.md) (guard-is-a-model), [HotFlip](../../research/notes/73-hotflip.md) (the flip family), [InjecAgent](../../datasets/cards/27-injecagent.md)/[BIPIA](../../datasets/cards/28-bipia.md)/[AgentDojo](../../datasets/cards/30-agentdojo.md), [incident 07](../../research/notes/incidents/07-slack-ai-exfiltration.md) (your exfiltration pairs' real-world case), [C08](../../research/notes/comparison-08-jailbreak-modes-defense-families.md).
 ## The question this project answers
 
 Can the audit discipline of Chapters 13-14 be *code* — and when it

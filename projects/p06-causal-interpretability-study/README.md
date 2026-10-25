@@ -8,6 +8,8 @@ Chapter links:
 `src/ai_safety_course/patch_audit/` · Tests: `tests/test_patch_audit.py`
 (14 tests, pinned numbers)
 
+
+**Session-2 companion materials:** [Othello-GPT](../../research/notes/34-emergent-world-representations.md) (the probe-plus-intervention pattern your battery implements), [induction heads](../../research/notes/50-induction-heads.md) (the six-argument ladder), [ROME](../../research/notes/52-rome-factual-associations.md) (the weight-tier edit your rank-one extension mirrors), [CounterFact card](../../datasets/cards/31-counterfact-rome.md).
 ## What this project is
 
 The causal-interpretability discipline of Chapters 09–11 as executable
