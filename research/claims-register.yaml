@@ -2122,3 +2122,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0173
+  claim: 'Obfuscated gradients (a form of gradient masking) gave a false sense of security in adversarial-example
+    defenses: among 9 non-certified white-box-secure defenses at ICLR 2018, 7 relied on obfuscated gradients,
+    and attack techniques designed to overcome each of the three identified masking types circumvented
+    6 completely and 1 partially within each paper''s original threat model.'
+  source: SRC-PAPER-110
+  section_or_page: arXiv:1802.00420v4 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; the 7-of-9 and 6+1
+    counts are stated in the abstract)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'

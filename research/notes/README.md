@@ -49,6 +49,7 @@ the chapter you are already reading.
 | 32 | [Verbalized confidence: the channel the model can be taught to fake](32-verbalized-confidence.md) | SRC-PAPER-017 | abstract-level |
 | 33 | [Concrete Problems in AI Safety: the founding taxonomy](33-concrete-problems.md) | SRC-PAPER-108 | abstract-level |
 | 34 | [Emergent world representations: Othello-GPT's probe-plus-intervention pattern](34-emergent-world-representations.md) | SRC-PAPER-109 | abstract-level |
+| 35 | [Obfuscated gradients: attack failure is not defense success](35-obfuscated-gradients.md) | SRC-PAPER-110 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one
