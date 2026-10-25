@@ -2274,3 +2274,15 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0185
+  claim: SelfCheckGPT fact-checks black-box model responses in a zero-resource fashion by sampling the
+    same prompt multiple times and measuring consistency — exploiting that hallucinated content varies
+    across samples while grounded content is reproduced — providing a detection signal available at API
+    tier without probabilities or external databases.
+  source: SRC-PAPER-122
+  section_or_page: arXiv:2303.08896v3 abstract (API-verified 2026-10-25)
+  evidence_strength: abstract-level (arXiv API record, title/authors/date verified; design and black-box
+    constraint stated in the abstract, accuracy numbers unclaimed)
+  assumptions: the arXiv API abstract record accurately reflects the paper's claims
+  counterevidence: none observed this session
+  date: '2026-10-25'
