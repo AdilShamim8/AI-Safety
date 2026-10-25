@@ -1519,3 +1519,39 @@ datasets:
     collected: 'abstract: human-and-model-in-the-loop four-round generation; ~40k entries, ~15k perturbations,
       fine-grained type/target labels, 54% hateful; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-037
+  name: StereoSet
+  organization: paper by Nadeem et al. (2020)
+  canonical_url: https://arxiv.org/abs/2004.09456
+  paper:
+    id: '2004.09456'
+    url: https://arxiv.org/abs/2004.09456
+    title: 'StereoSet: Measuring stereotypical bias in pretrained language models'
+    verified_title: true
+  risk_area: stereotypical bias in pretrained LMs
+  task:
+  - bias measurement
+  - association testing
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: crowdsourced intrasentence and intersentence probes (design at abstract level)
+    ref: R1
+  - fact: sizes and categories body-level, unclaimed (API truncation recorded)
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    - '21'
+    projects:
+    - P09
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/37-stereoset.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2004.09456
+    collected: 'abstract: quantifying stereotypical bias captured by pretrained LMs; probe-based design
+      replacing small artificial sets; title/authors/date verified'
+    accessed_on: '2026-10-25'
