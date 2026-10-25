@@ -1,6 +1,6 @@
 # Research notes
 
-The research notebook: **32 paper notes**, **6 comparison notes**, and
+The research notebook: **33 paper notes**, **6 comparison notes**, and
 **3 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
 anchored to a [source-register](../source-register.yaml) entry and
@@ -47,6 +47,7 @@ the chapter you are already reading.
 | 30 | [Constitutional AI: supervision moved into a document](30-constitutional-ai.md) | SRC-PAPER-011 | abstract-level |
 | 31 | [GCG: universal suffixes and the end of prompt-level confidence](31-gcg-universal-suffixes.md) | SRC-PAPER-004 | abstract-level |
 | 32 | [Verbalized confidence: the channel the model can be taught to fake](32-verbalized-confidence.md) | SRC-PAPER-017 | abstract-level |
+| 33 | [Concrete Problems in AI Safety: the founding taxonomy](33-concrete-problems.md) | SRC-PAPER-108 | abstract-level |
 
 **Build target met: 20/20 notes** (7 method-level from full-text-read
 sources, 13 abstract-level honestly labeled — including one
