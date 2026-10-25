@@ -1180,3 +1180,39 @@ datasets:
     collected: 'abstract: IPI threat definition (malicious instructions embedded in processed content,
       manipulating agents into detrimental actions); assess-and-mitigate purpose; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-028
+  name: BIPIA
+  organization: paper by Jiao et al. (2023); benchmark publicly released
+  canonical_url: https://arxiv.org/abs/2312.14197
+  paper:
+    id: '2312.14197'
+    url: https://arxiv.org/abs/2312.14197
+    title: Benchmarking and Defending Against Indirect Prompt Injection Attacks on Large Language Models
+    verified_title: true
+  risk_area: indirect prompt injection in external-content integrations
+  task:
+  - injection evaluation
+  - defense assessment
+  license:
+    as_observed: unknown
+    where_observed: not observed this session (repository license uninspected)
+  size_facts:
+  - fact: composition not established at abstract-read level
+    ref: R1
+  - fact: 'headline finding: evaluated LLMs universally vulnerable (abstract-stated, magnitudes body-level)'
+    ref: R1
+  course_use:
+    chapters:
+    - '14'
+    - '19'
+    projects:
+    - P07
+  access_level: abstract-read
+  verified_on: '2026-10-25'
+  card: cards/28-bipia.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2312.14197
+    collected: 'abstract: first-benchmark claim (2023-12); Copilot-shaped threat framing; universal-vulnerability
+      evaluation finding; title/authors/date verified'
+    accessed_on: '2026-10-25'
