@@ -51,7 +51,7 @@ decision worth noticing:
 | [Lecture 2 — AI Fundamentals](https://www.youtube.com/watch?v=tWV3wdY2870) | 52:04 | [lecture-02-ai-fundamentals.md](lecture-02-ai-fundamentals.md) |
 | [Lecture 3 — Single Agent Safety](https://www.youtube.com/watch?v=FWrICi4GZ_c) | 33:26 | [lecture-03-single-agent-safety.md](lecture-03-single-agent-safety.md) |
 | [Lecture 4 — Safety Engineering](https://www.youtube.com/watch?v=R7sazz_MtP8) | 51:33 | [lecture-04-safety-engineering.md](lecture-04-safety-engineering.md) |
-| [Lecture 5 — Complex Systems](https://www.youtube.com/watch?v=HioFwi96leY) | 49:03 | `lecture-05-complex-systems.md` |
+| [Lecture 5 — Complex Systems](https://www.youtube.com/watch?v=HioFwi96leY) | 49:03 | [lecture-05-complex-systems.md](lecture-05-complex-systems.md) |
 | [Lecture 6 — Beneficial AI and Machine Ethics](https://www.youtube.com/watch?v=HSH8bmL4nPg) | 52:09 | `lecture-06-beneficial-ai-machine-ethics.md` |
 | [Lecture 7 — Collective Action Problems](https://www.youtube.com/watch?v=yww1xY-DeMo) | 1:04:18 | `lecture-07-collective-action-problems.md` |
 | [Lecture 8 — Governance](https://www.youtube.com/watch?v=opTzMG_ut_o) | 58:07 | `lecture-08-governance.md` |
