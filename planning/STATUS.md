@@ -149,6 +149,23 @@ comparisons 07–12, glossary growth, learner-surface refresh, closing
 full-gate pass. Target: 300 total commits, every one pushed and
 remote-verified.
 
+
+## Session 3 — the lecture-library build (opened 2026-10-27)
+
+Owner directive (2026-10-27): transcribe the four shared course
+playlists into the repository — Harvard CS 2881 (Boaz Barak), the
+Google DeepMind AGI Safety Course, the Center for AI Safety's
+AI Safety, Ethics & Society course, and Safeshield Training's AI
+Governance series — as companion notes, video indexes, and reading
+maps, integrated with the 24 chapters. Work lands one coherent unit
+per commit, pushed and remote-verified one at a time.
+
+<!-- SESSION3_UNITS -->
+
+| Unit | Commit | Evidence |
+|---|---|---|
+| 3-01 — the lecture-library index: four courses, method, note discipline, chapter mapping | (pending) | courses/README.md; playlist structure verified via YouTube API 2026-10-27; Harvard course page read in full |
+
 ## Next exact action
 
 **Session 2 CLOSED at 300/300 commits (2026-10-25)**, plus one
