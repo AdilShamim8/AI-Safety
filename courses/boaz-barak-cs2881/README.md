@@ -104,6 +104,8 @@ publishing is intended "to the extent technically possible").
 
 ## How the course organizes knowledge
 
+*The deep-dive version of this section is [pedagogy.md](pedagogy.md).*
+
 Barak's course is organized as a **weekly research seminar with an
 evidence discipline**. Each lecture is one topic, prepared by required
 readings discussed in advance on Perusall (an annotation forum where
