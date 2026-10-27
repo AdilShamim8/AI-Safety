@@ -215,3 +215,12 @@ publishing the vendor's suite only (the audit's independence is the
 point — the Croce–Hein lesson [SRC-PAPER-047]); forgetting that the
 3/3 outcome says nothing about rates *above* the observed regime
 (lower bound only).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) — watch before working the attack-budget exercises.

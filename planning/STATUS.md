@@ -309,7 +309,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-142 — the watching-pointer block for chapter 08's solutions: 1 pre-exercise viewing(s) | 2a55d0c (pushed) | chapters/08-ai-control-and-monitoring/solutions.md; links to committed course notes only |
 | 3-143 — the watching-pointer block for chapter 09's solutions: 1 pre-exercise viewing(s) | 39c760b (pushed) | chapters/09-mechanistic-interpretability-foundations/solutions.md; links to committed course notes only |
 | 3-144 — the watching-pointer block for chapter 10's solutions: 1 pre-exercise viewing(s) | 2e55346 (pushed) | chapters/10-sparse-features-circuits-and-interpretability-evaluation/solutions.md; links to committed course notes only |
-| 3-145 — the watching-pointer block for chapter 11's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/11-behavioral-steering-and-representation-interventions/solutions.md; links to committed course notes only |
+| 3-145 — the watching-pointer block for chapter 11's solutions: 1 pre-exercise viewing(s) | 5dc8838 (pushed) | chapters/11-behavioral-steering-and-representation-interventions/solutions.md; links to committed course notes only |
+| 3-146 — the watching-pointer block for chapter 12's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/12-adversarial-ml-and-robustness/solutions.md; links to committed course notes only |
 
 ## Next exact action
 
