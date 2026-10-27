@@ -174,7 +174,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-08 — the pedagogy synthesis (four knowledge architectures, what the repo adopted from each) + CHANGELOG session-3 opening | 8f10294 (pushed) | courses/how-courses-organize.md; CHANGELOG.md entry; the owner-directed pedagogy analysis |
 | 3-09 — the Lecture 1 companion note (announced scope, published reading list, core ideas, chapter through-lines) | a824be5 (pushed) | courses/boaz-barak-cs2881/lecture-01-introduction.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-10 — the Lecture 2 companion note (announced scope, published reading list, core ideas, chapter through-lines) | 4968072 (pushed) | courses/boaz-barak-cs2881/lecture-02-modern-llm-training.md; course-page readings reproduced as attribution; register IDs cited where held |
-| 3-11 — the Lecture 3 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-11 — the Lecture 3 companion note (announced scope, published reading list, core ideas, chapter through-lines) | 79b450a (pushed) | courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-12 — the Lecture 4 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/lecture-04-model-specifications.md; course-page readings reproduced as attribution; register IDs cited where held |
 
 ## Next exact action
 
