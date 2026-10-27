@@ -507,3 +507,16 @@ the cited cards in [datasets/README.md](../../datasets/README.md).
 Chapter 05 sets the ceiling conversation for everything that supervises: from here on, "we
 check it with X" without X's error rate, correlation structure, and floor is treated as an
 error, not a style choice.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [part-02-02-amplified-oversight](../../courses/google-deepmind-agi-safety/part-02-02-amplified-oversight.md) | DeepMind AGI Safety | the mechanism compressed: supervision that scales with the system |
+| [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the oversight failure modes that motivate the research program |
