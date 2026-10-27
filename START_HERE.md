@@ -13,8 +13,6 @@ source and claims registers (searchable), the three career tracks, and the
 beginner quickstart. It is one self-contained file: it works offline, and
 every number on it is generated from the repository's own data.
 
-## Step 1 — Diagnose honestly (60–90 minutes)
-
 ## Step 0.5 — Watch the primer (90 minutes, optional but recommended)
 
 Before the diagnostic, watch the
@@ -26,6 +24,8 @@ every chapter's opening section land faster. The full
 seminar, the CAIS textbook course, and the Safeshield governance
 series — schedules itself against the chapters in
 [courses/study-plans.md](courses/study-plans.md).
+
+## Step 1 — Diagnose honestly (60–90 minutes)
 
 Work the five tasks in [prerequisites/diagnostic.md](prerequisites/diagnostic.md)
 **before** looking at the worked answers. They cover the five capabilities the
