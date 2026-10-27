@@ -589,3 +589,25 @@ brief dated 2026-10-20 (research baseline 2026-10-20; build execution began
   streams mid-commit). P01 and P02's own lines landed correctly in the
   two commits prior. Recorded rather than force-pushed — history stays
   append-only; messages get caught by honesty.
+
+### Session 3 closed — the lecture library complete (2026-10-27)
+
+Two hundred units, one commit and one push at a time, each pushed
+and remote-verified individually: the four-course companion layer
+(4 course pages, 61 notes, 5 pedagogy/study-plan pages, 4
+self-assessments, 3 framework crosswalks, 3 cross-course
+comparisons, 2 exercise walkthroughs, 4 reading maps, 1 honesty
+ledger), 10 register entries with live-verified URLs (rotation 4),
+4 verified real-world dataset cards (GDPval, RE-Bench, METR
+time-horizons, Canaries — catalog at 47), 14 new glossary terms
+(325 total), watching companions in all 24 chapter READMEs and
+watching pointers in all 24 solutions files, progress-ladder
+checkpoints on all four routes, the AWESOME full-courses track,
+the lecture-library structure test (suite 607 → 611), ADR-0003,
+and the session's own protocol lessons in AGENTS.md. The count
+instrument was hardened three times in public (units 3-03, 3-131
+through 3-134): line-wrapped numbers, internally-wrapped phrases,
+and phrase variants — each caught red by the drift tests before CI,
+each fixed forward, each recorded. The token rule held: credentials
+only ever transient; the owner rotates the exposed token after
+this session.
