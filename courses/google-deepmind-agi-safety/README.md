@@ -63,6 +63,8 @@ matters.
 
 ## How the course organizes knowledge
 
+*The deep-dive version of this section is [pedagogy.md](pedagogy.md).*
+
 The course teaches in **claims, not chapters**. Each video is one named
 mechanism or one named risk, stated at whiteboard speed, with the exercises
 placed exactly where a misunderstanding would compound (after instrumental

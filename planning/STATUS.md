@@ -229,7 +229,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-63 — the Module 12 companion note | 17ef419 (pushed) | courses/safeshield-governance/module-12-lifecycle-governance.md; note row linked per unit by the driver |
 | 3-64 — the Module 13 companion note | 1d93dfa (pushed) | courses/safeshield-governance/module-13-policies-documentation.md; note row linked per unit by the driver |
 | 3-65 — the Module 14 companion note | b04e6d9 (pushed) | courses/safeshield-governance/module-14-monitoring-auditing-compliance.md; note row linked per unit by the driver |
-| 3-66 — the CS 2881 pedagogy note: four-part session architecture, information-gathering model, what the repo adopted | (pending) | courses/boaz-barak-cs2881/pedagogy.md; README linked |
+| 3-66 — the CS 2881 pedagogy note: four-part session architecture, information-gathering model, what the repo adopted | cf26aea (pushed) | courses/boaz-barak-cs2881/pedagogy.md; README linked |
+| 3-67 — the DeepMind course pedagogy note: the single-claim unit, exercises as integrity checks, a lab's curriculum as primary source | (pending) | courses/google-deepmind-agi-safety/pedagogy.md; README linked |
 
 ## Next exact action
 
