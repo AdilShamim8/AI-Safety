@@ -7,16 +7,18 @@ was fetched, when, and how far into it this course actually read. The
 [evidence ladder](index.html) shows the whole corpus at a glance.
 
 And every line now carries its live link, verified — not
-assumed. On 2026-10-25 [scripts/verify_links.py](scripts/verify_links.py)
-fetched all 91 URLs cited on this page: the arXiv spine
-title-matched against the arXiv API, the course video against
-YouTube's oEmbed endpoint, the rest fetched server-side. All
-91 live — three hosts (OWASP, the American Bar Association,
+assumed. Across its rotations — 3 (2026-10-25) and 4 (2026-10-27,
+the lecture-library opening) —
+[scripts/verify_links.py](scripts/verify_links.py) fetched all 93
+URLs cited on this page: the arXiv spine title-matched against the
+arXiv API, the course videos and playlists against YouTube's oEmbed
+and playlist endpoints, the rest fetched server-side. All
+93 live — three hosts (OWASP, the American Bar Association,
 ACM) bot-block datacenter clients while remaining real pages the
 register corroborates, and exactly one URL is deliberately not
 linked: the OpenAI Preparedness announcement, whose canonical 404
-is recorded in the register. The run is rotation 3 in
-[MAINTENANCE.md](MAINTENANCE.md).
+is recorded in the register. The runs are recorded as rotations 3
+and 4 in [MAINTENANCE.md](MAINTENANCE.md).
 
 How to read the annotations: each line says what the source is FOR —
 the load-bearing idea a chapter or project takes from it — not a
@@ -88,6 +90,18 @@ Four tracks, each with a job:
     priced exactly like the
     [RSP](https://www.anthropic.com/news/anthropics-responsible-scaling-policy)
     [SRC-REPORT-008].
+
+- **Full courses — the structured programs** (the
+  [lecture library](courses/README.md)'s deep end):
+  - **[Harvard CS 2881 — the AI Safety lecture playlist](https://www.youtube.com/playlist?list=PL_b4B2IWlal3j01Rbj5ebT663E7x4bl_W)**
+    [SRC-VIDEO-011] — Boaz Barak's graduate research seminar (Fall 2025
+    and Fall 2026 iterations), 19 recorded lectures, each built on
+    primary-source readings, a working guest, and a live student
+    experiment. The course's own schedule pages
+    ([SRC-CURR-012]) were read in full and registered; the companion
+    ([courses/boaz-barak-cs2881/](courses/boaz-barak-cs2881/)) carries
+    the complete video index, all 18 lecture companion notes, and the
+    course's published reading lists reproduced as attribution.
 
 ## Blogs and ongoing commentary
 
