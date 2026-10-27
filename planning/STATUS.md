@@ -355,7 +355,9 @@ per commit, pushed and remote-verified one at a time.
 | 3-188 — README status line: updated date, 611-test suite, the lecture-library clause | 710bcbf (pushed) | README.md; counts re-synced |
 | 3-189 — START_HERE: the lecture-library build-state block | b6fa807 (pushed) | START_HERE.md |
 | 3-190 — rotation 5 run record (the real verify_links run, results appended) | a7ccefd (pushed) | MAINTENANCE.md record |
-| 3-191 — closure gate record (all five gates, real runs) | (pending) | planning/STATUS.md record |
+| 3-191 — closure gate record (all five gates, real runs) | fd27e00 (pushed) | planning/STATUS.md record |
+| 3-192 — CI verification record | (pending) | planning/STATUS.md record |
+| 3-192 — CI verification record | (pending) | planning/STATUS.md record |
 
 ## Next exact action
 
