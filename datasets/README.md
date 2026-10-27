@@ -253,3 +253,15 @@ For any of the 43 cards, re-walk the chain in five minutes:
 5. Read "where this course uses it." If your use case is not listed,
    the card has not vetted your use case — start from provenance, not
    from the card's optimism.
+
+## The lecture-library cards (2026-10-27)
+
+Four cards entered the catalog with the lecture library, all verified
+before landing: [GDPval](cards/44-gdpval.md) (DS-044, arXiv
+2510.04374 title-verified), [METR RE-Bench](cards/45-metr-re-bench.md)
+(DS-045, repository-verified, MIT, archived noted), the [METR
+time-horizon measurements](cards/46-metr-time-horizons.md) (DS-046,
+7-month doubling, page-verified), and the [Canaries employment
+evidence](cards/47-canaries.md) (DS-047, Stanford lab page verified,
+no replication files — priced honestly). The full catalog now counts
+47 cards.

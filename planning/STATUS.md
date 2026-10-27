@@ -347,7 +347,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-180 — the alignment route's watching checkpoints | b4b7bbc (pushed) | roadmaps/progress/alignment-research.md |
 | 3-181 — the security route's watching checkpoints | 5ed7cda (pushed) | roadmaps/progress/ai-security-engineering.md |
 | 3-182 — the evaluations route's watching checkpoints | 5a909d9 (pushed) | roadmaps/progress/evaluations-and-assurance.md |
-| 3-183 — the audit route's watching checkpoints | (pending) | roadmaps/progress/audit-only.md |
+| 3-183 — the audit route's watching checkpoints | 0a8e6d2 (pushed) | roadmaps/progress/audit-only.md |
+| 3-184 — datasets/README.md: the new-cards section with verification provenance | (pending) | datasets/README.md |
 
 ## Next exact action
 
