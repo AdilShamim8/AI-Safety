@@ -67,6 +67,17 @@ on.
    evidence, assumptions, rebuttals, and residual risk, tied to one
    deployment decision.
 
+### The lecture-library pairing
+
+This route's chapters pair with the video layer as follows (full
+mapping in [courses/study-plans.md](../courses/study-plans.md) and
+each chapter's watching-companions block):
+- CS 2881's lab-vs-field lecture (METR's Joel Becker) with the
+  evaluation chapters (Ch. 02, 20).
+- The DeepMind dangerous-capability-evaluations video with Ch. 20.
+- The CAIS safety-engineering lecture and Safeshield's assurance-side
+  modules (M7, M13, M14) with Ch. 22.
+
 ## Pitfalls this route is designed to prevent
 
 - Single-number "safety scores" merging unrelated dimensions (Ch.02/22 keep

@@ -271,7 +271,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-104 — README.md: tour step 6 (watch alongside) + courses/ structure-table row | 0bdb058 (pushed) | README.md edits; counts re-synced |
 | 3-105 — START_HERE.md: the primer step linking the DeepMind course and the library | f9d048b (pushed) | START_HERE.md section |
 | 3-106 — alignment-research.md: the lecture-library pairing block | 2246e97 (pushed) | roadmaps/alignment-research.md section |
-| 3-107 — ai-security-engineering.md: the lecture-library pairing block | (pending) | roadmaps/ai-security-engineering.md section |
+| 3-107 — ai-security-engineering.md: the lecture-library pairing block | f3f3e34 (pushed) | roadmaps/ai-security-engineering.md section |
+| 3-108 — evaluations-and-assurance.md: the lecture-library pairing block | (pending) | roadmaps/evaluations-and-assurance.md section |
 
 ## Next exact action
 
