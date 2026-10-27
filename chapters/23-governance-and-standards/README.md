@@ -319,3 +319,18 @@ the OWASP vocabulary in use is
 framework-audit questions are
 [Chapter 20](../20-misuse-dangerous-capabilities-release-evaluation/README.md)'s;
 capstone execution is Chapter 24's (planned).
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-08-governance](../../courses/cais-ethics-society/lecture-08-governance.md) | CAIS Ethics & Society | the instrument panel: hard law, standards, soft commitments |
+| [module-09-iso-42001](../../courses/safeshield-governance/module-09-iso-42001.md) | Safeshield Governance | the AI management system as certifiable object |
+| [module-10-nist-ai-rmf](../../courses/safeshield-governance/module-10-nist-ai-rmf.md) | Safeshield Governance | govern-map-measure-manage, taught as practice |
+| [module-11-eu-ai-act](../../courses/safeshield-governance/module-11-eu-ai-act.md) | Safeshield Governance | the risk pyramid and the first comprehensive statute |
