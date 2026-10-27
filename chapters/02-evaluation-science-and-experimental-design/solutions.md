@@ -243,3 +243,13 @@ cannot remove."
 | Discipline matches | temporal / named-config / grouped-by-prompt | "random is fine" |
 | Residual risk honest | a risk the discipline does NOT remove | claims the fix is complete |
 | Report sentence | reader-visible, specific | boilerplate disclaimer |
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-07-lab-vs-field](../../courses/boaz-barak-cs2881/lecture-07-lab-vs-field.md) — watch before working the measurement-design exercises.
+- **DeepMind course**, [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) — watch before working the construct-validity exercises.
