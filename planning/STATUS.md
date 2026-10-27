@@ -283,7 +283,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-116 — the Safeshield self-assessment (12 practitioner questions) | 309146c (pushed) | courses/safeshield-governance/self-assessment.md |
 | 3-117 — the ISO/NIST crosswalk | 10341f0 (pushed) | courses/safeshield-governance/crosswalk-iso-nist.md |
 | 3-118 — the NIST/EU crosswalk | 5cf93c5 (pushed) | courses/safeshield-governance/crosswalk-nist-eu.md |
-| 3-119 — the ISO/EU crosswalk | (pending) | courses/safeshield-governance/crosswalk-iso-eu.md |
+| 3-119 — the ISO/EU crosswalk | 7fec909 (pushed) | courses/safeshield-governance/crosswalk-iso-eu.md |
+| 3-120 — the consensus comparison (five shared claims) | (pending) | courses/comparisons-where-courses-agree.md |
 
 ## Next exact action
 
