@@ -206,7 +206,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-40 — the Part 3.1 companion note | dfd64c6 (pushed) | courses/google-deepmind-agi-safety/part-03-01-institutional-approaches.md |
 | 3-41 — the Part 3.2 companion note | 276a17c (pushed) | courses/google-deepmind-agi-safety/part-03-02-frontier-safety-practices.md |
 | 3-42 — the Part 3.3 companion note | fbf1710 (pushed) | courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md |
-| 3-43 — fix-forward: units 3-09..3-41 red-in-the-middle CI explained and closed; driver links note rows per unit and verifies committed-tree links before push | (pending) | CHANGELOG.md entry; CI Actions record preserved as the honest trace; defect class eliminated for all remaining units |
+| 3-43 — fix-forward: units 3-09..3-41 red-in-the-middle CI explained and closed; driver links note rows per unit and verifies committed-tree links before push | cee2637 (pushed) | CHANGELOG.md entry; CI Actions record preserved as the honest trace; defect class eliminated for all remaining units |
+| 3-44 — the Lecture 1 companion note | (pending) | courses/cais-ethics-society/lecture-01-introduction-ai-risks.md; note row linked per unit by the driver |
 
 ## Next exact action
 
