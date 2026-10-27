@@ -9,11 +9,11 @@ was fetched, when, and how far into it this course actually read. The
 And every line now carries its live link, verified — not
 assumed. Across its rotations — 3 (2026-10-25) and 4 (2026-10-27,
 the lecture-library opening) —
-[scripts/verify_links.py](scripts/verify_links.py) fetched all 93
+[scripts/verify_links.py](scripts/verify_links.py) fetched all 94
 URLs cited on this page: the arXiv spine title-matched against the
 arXiv API, the course videos and playlists against YouTube's oEmbed
 and playlist endpoints, the rest fetched server-side. All
-93 live — three hosts (OWASP, the American Bar Association,
+94 live — three hosts (OWASP, the American Bar Association,
 ACM) bot-block datacenter clients while remaining real pages the
 register corroborates, and exactly one URL is deliberately not
 linked: the OpenAI Preparedness announcement, whose canonical 404
@@ -102,6 +102,15 @@ Four tracks, each with a job:
     ([courses/boaz-barak-cs2881/](courses/boaz-barak-cs2881/)) carries
     the complete video index, all 18 lecture companion notes, and the
     course's published reading lists reproduced as attribution.
+
+  - **[The Google DeepMind AGI Safety Course](https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW)**
+    [SRC-VIDEO-013] — the frontier lab's own ~85-minute statement of
+    the alignment problem and its candidate answers: 16 parts in three
+    bands (risk model with exercises; the alignment research program;
+    institutions), verified via the playlist API and priced as a lab's
+    self-description. The companion
+    ([courses/google-deepmind-agi-safety/](courses/google-deepmind-agi-safety/))
+    carries all 16 part notes and the pedagogy analysis.
 
 ## Blogs and ongoing commentary
 

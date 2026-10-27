@@ -234,8 +234,9 @@ per commit, pushed and remote-verified one at a time.
 | 3-68 — the CAIS pedagogy note: circles-of-scope layering, the published-textbook anchor, society-scale topics as first-class content | e6c472a (pushed) | courses/cais-ethics-society/pedagogy.md; README linked |
 | 3-69 — the Safeshield pedagogy note: the three-band structure, law-and-standards as primary sources, the terminal audit loop | 3970262 (pushed) | courses/safeshield-governance/pedagogy.md; README linked |
 | 3-70 — the study plans: three-route integration tables, pacing arithmetic (85 min / 4-6 h / 12.5 h), the primary-source rule | fee1e89 (pushed) | courses/study-plans.md |
+| 3-71 — AWESOME video library: the full-courses track opens with Harvard CS 2881; intro rewritten for rotation 4 | c4be0e5 (pushed) | AWESOME.md block + intro; verify_links rotation 4 ran on SRC-VIDEO-011/012 + SRC-CURR-012 (all live); counts synced |
 | 3-71 — AWESOME video library: the full-courses track opens with Harvard CS 2881; intro rewritten for rotation 4 | (pending) | AWESOME.md block + intro; verify_links rotation 4 ran on SRC-VIDEO-011/012 + SRC-CURR-012 (all live); counts synced |
-| 3-71 — AWESOME video library: the full-courses track opens with Harvard CS 2881; intro rewritten for rotation 4 | (pending) | AWESOME.md block + intro; verify_links rotation 4 ran on SRC-VIDEO-011/012 + SRC-CURR-012 (all live); counts synced |
+| 3-72 — AWESOME video library: the DeepMind course block (SRC-VIDEO-013/014 cited) | (pending) | AWESOME.md block; rotation-4 verified URLs; counts synced |
 
 ## Next exact action
 
