@@ -153,3 +153,12 @@ priced with its canary-scale non-claim; and the subset-conditional
 MI argument with threshold-sweep and precision framing. Deduct for
 treating any interval overlap or zero-count as "no effect / no
 leak."
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **Safeshield**, [module-06-privacy-data-protection](../../courses/safeshield-governance/module-06-privacy-data-protection.md) — watch before working the provenance exercises.
