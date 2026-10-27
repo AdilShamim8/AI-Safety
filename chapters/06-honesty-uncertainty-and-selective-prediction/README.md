@@ -622,3 +622,17 @@ card-verified n = 817; the reproduction script ships with the solutions pass.
 From here on, "the model knows what it knows" is treated as a *measurement
 claim* — it needs an instrument, a denominator, an interval, and a
 failure-mode section, exactly like every other claim in this course.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | CoT monitoring and honesty signals from the internals |
+| [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | the internal channel as an honesty instrument |
+| [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the CoT-scratchpad experiment: is the trace load-bearing? |
