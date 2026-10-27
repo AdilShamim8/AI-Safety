@@ -303,7 +303,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-136 — the watching-pointer block for chapter 02's solutions: 2 pre-exercise viewing(s) | 510a524 (pushed) | chapters/02-evaluation-science-and-experimental-design/solutions.md; links to committed course notes only |
 | 3-137 — the watching-pointer block for chapter 03's solutions: 2 pre-exercise viewing(s) | 0509437 (pushed) | chapters/03-specification-reward-hacking-and-goal-misgeneralization/solutions.md; links to committed course notes only |
 | 3-138 — the watching-pointer block for chapter 04's solutions: 1 pre-exercise viewing(s) | 400bebb (pushed) | chapters/04-preference-learning-and-post-training/solutions.md; links to committed course notes only |
-| 3-139 — the watching-pointer block for chapter 05's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/05-scalable-oversight/solutions.md; links to committed course notes only |
+| 3-139 — the watching-pointer block for chapter 05's solutions: 1 pre-exercise viewing(s) | 78be3b1 (pushed) | chapters/05-scalable-oversight/solutions.md; links to committed course notes only |
+| 3-140 — the watching-pointer block for chapter 06's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/06-honesty-uncertainty-and-selective-prediction/solutions.md; links to committed course notes only |
 
 ## Next exact action
 

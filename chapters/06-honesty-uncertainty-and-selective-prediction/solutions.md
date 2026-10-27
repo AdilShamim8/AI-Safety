@@ -387,3 +387,12 @@ mechanizes — the inverted signal (AURC ≥ full-coverage risk) and the
 laundering signature (ECE down, AURC unchanged) — and the decision rule binds
 both ledgers' bounds simultaneously (selective risk *and* false abstention),
 not one at a time.
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) — watch before working the honesty-signal exercises.
