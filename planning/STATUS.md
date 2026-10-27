@@ -190,7 +190,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-24 — the Fall 2026 Lecture 5 companion note (announced scope, published reading list, core ideas, chapter through-lines) | 3adea03 (pushed) | courses/boaz-barak-cs2881/f26-lecture-05-economic-impact.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-25 — the Fall 2026 Lecture 8 companion note (announced scope, published reading list, core ideas, chapter through-lines) | d6072e8 (pushed) | courses/boaz-barak-cs2881/f26-lecture-08-open-language-models.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-26 — the Fall 2026 final session companion note (announced scope, published reading list, core ideas, chapter through-lines) | 7805005 (pushed) | courses/boaz-barak-cs2881/f26-oral-presentations.md; course-page readings reproduced as attribution; register IDs cited where held |
-| 3-27 — the Part 0 companion note | (pending) | courses/google-deepmind-agi-safety/part-00-introduction.md |
+| 3-27 — the Part 0 companion note | b40e9cb (pushed) | courses/google-deepmind-agi-safety/part-00-introduction.md |
+| 3-28 — the Part 1.1 companion note | (pending) | courses/google-deepmind-agi-safety/part-01-01-path-to-superhuman.md |
 
 ## Next exact action
 
