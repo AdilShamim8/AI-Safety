@@ -383,3 +383,16 @@ Cross-links: the injection surfaces being attacked are
 paired-harness implementation pattern is P07; the capstone engagement
 is P10; evaluation-awareness (judges being gamed) is
 [Chapter 07](../07-deception-scheming-and-evaluation-awareness/README.md).
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the red/blue experiment: many-shot attacks vs reasoning effort |
+| [part-02-07-alignment-stress-tests](../../courses/google-deepmind-agi-safety/part-02-07-alignment-stress-tests.md) | DeepMind AGI Safety | red-teaming the alignment program itself |
