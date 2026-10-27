@@ -276,7 +276,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-109 — audit-only.md: the lecture-library pairing block (Safeshield as second spine) | 2cded54 (pushed) | roadmaps/audit-only.md section |
 | 3-110 — study-schedules.md: the video-layer integration rules | 1004ba7 (pushed) | roadmaps/study-schedules.md section |
 | 3-111 — ROADMAP.md: the session-3 layer section | 9e5df31 (pushed) | ROADMAP.md section |
-| 3-112 — CHANGELOG.md: 102/200 checkpoint entry (61 notes, 10 register entries, tests 611, all chapters integrated) | (pending) | CHANGELOG.md entry |
+| 3-112 — CHANGELOG.md: 102/200 checkpoint entry (61 notes, 10 register entries, tests 611, all chapters integrated) | e7b1ce2 (pushed) | CHANGELOG.md entry |
+| 3-113 — the CS 2881 self-assessment (20 questions, diagnostic pointers) | (pending) | courses/boaz-barak-cs2881/self-assessment.md |
 
 ## Next exact action
 
