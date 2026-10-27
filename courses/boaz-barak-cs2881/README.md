@@ -66,10 +66,10 @@ listed in the schedule below as **announced, not yet in the playlist**
 | L7 | [Lab vs Field — capabilities vs. safety (Joel Becker, METR)](https://www.youtube.com/watch?v=fuRmxFZ-umE) | 2:01:36 | [lecture-07-lab-vs-field.md](lecture-07-lab-vs-field.md) |
 | L8 | [Scheming — reward hacking and deception](https://www.youtube.com/watch?v=8NL1NAMrJxY) | 10:18 | [lecture-08-scheming.md](lecture-08-scheming.md) |
 | L8 | [Experiment: Under Pressure — coding agents under impossible tasks](https://www.youtube.com/watch?v=JXvHJheHE10) | 33:52 | [lecture-08-experiment-under-pressure.md](lecture-08-experiment-under-pressure.md) |
-| L9 | [Economic Impacts of AI](https://www.youtube.com/watch?v=4vQSMijp_M8) | 2:32:33 | `lecture-09-economic-impacts.md` |
-| L10 | [Mechanistic Interpretability](https://www.youtube.com/watch?v=79otWC2FQlE) | 2:30:24 | `lecture-10-mechanistic-interpretability.md` |
-| L11 | [Mental Health and Emotional Attachment](https://www.youtube.com/watch?v=GNvEjP1DfIs) | 1:13:23 | `lecture-11-mental-health.md` |
-| L12 | [AI in 2035 and GDPval](https://www.youtube.com/watch?v=BNSHJLLpsGM) | 1:47:41 | `lecture-12-ai-2035-and-gdpval.md` |
+| L9 | [Economic Impacts of AI](https://www.youtube.com/watch?v=4vQSMijp_M8) | 2:32:33 | [lecture-09-economic-impacts.md](lecture-09-economic-impacts.md) |
+| L10 | [Mechanistic Interpretability](https://www.youtube.com/watch?v=79otWC2FQlE) | 2:30:24 | [lecture-10-mechanistic-interpretability.md](lecture-10-mechanistic-interpretability.md) |
+| L11 | [Mental Health and Emotional Attachment](https://www.youtube.com/watch?v=GNvEjP1DfIs) | 1:13:23 | [lecture-11-mental-health.md](lecture-11-mental-health.md) |
+| L12 | [AI in 2035 and GDPval](https://www.youtube.com/watch?v=BNSHJLLpsGM) | 1:47:41 | [lecture-12-ai-2035-and-gdpval.md](lecture-12-ai-2035-and-gdpval.md) |
 
 The Fall 2025 archive page also records a short course clip —
 ["When the earth dies (codex clip)"](https://www.youtube.com/watch?v=4JqWA2sgStc) (3:04)
