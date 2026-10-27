@@ -145,3 +145,13 @@ for.
 identified (2); all five stations populated with located findings
 (4); measured rates with intervals present (2); the fairness
 statement complete (2).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CAIS course**, [lecture-05-complex-systems](../../courses/cais-ethics-society/lecture-05-complex-systems.md) — watch before working the cascade exercises.
+- **CAIS course**, [lecture-07-collective-action-problems](../../courses/cais-ethics-society/lecture-07-collective-action-problems.md) — watch before working the coordination exercises.
