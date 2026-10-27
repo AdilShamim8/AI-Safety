@@ -279,7 +279,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-112 — CHANGELOG.md: 102/200 checkpoint entry (61 notes, 10 register entries, tests 611, all chapters integrated) | e7b1ce2 (pushed) | CHANGELOG.md entry |
 | 3-113 — the CS 2881 self-assessment (20 questions, diagnostic pointers) | 75514ba (pushed) | courses/boaz-barak-cs2881/self-assessment.md |
 | 3-114 — the DeepMind self-assessment (12 questions) | e4dcb74 (pushed) | courses/google-deepmind-agi-safety/self-assessment.md |
-| 3-115 — the CAIS self-assessment (10 questions) | (pending) | courses/cais-ethics-society/self-assessment.md |
+| 3-115 — the CAIS self-assessment (10 questions) | 198eeb5 (pushed) | courses/cais-ethics-society/self-assessment.md |
+| 3-116 — the Safeshield self-assessment (12 practitioner questions) | (pending) | courses/safeshield-governance/self-assessment.md |
 
 ## Next exact action
 
