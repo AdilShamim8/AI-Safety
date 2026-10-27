@@ -322,3 +322,17 @@ and [Chapter 22](../22-safety-engineering-and-assurance/README.md)'s;
 the report form is the safety case's; and the whole book's registers
 — 150+ sources, every claim dated and access-level-honest — are the
 pattern your capstone's evidence table inherits.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [f26-oral-presentations](../../courses/boaz-barak-cs2881/f26-oral-presentations.md) | Harvard CS 2881 | the defended-capstone model this chapter's project follows |
+| [pedagogy](../../courses/boaz-barak-cs2881/pedagogy.md) | Harvard CS 2881 | how a working research seminar runs its evidence discipline |
+| [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) | CAIS Ethics & Society | the incident-reporting culture as research practice |
