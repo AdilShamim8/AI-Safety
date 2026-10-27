@@ -281,7 +281,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-114 — the DeepMind self-assessment (12 questions) | e4dcb74 (pushed) | courses/google-deepmind-agi-safety/self-assessment.md |
 | 3-115 — the CAIS self-assessment (10 questions) | 198eeb5 (pushed) | courses/cais-ethics-society/self-assessment.md |
 | 3-116 — the Safeshield self-assessment (12 practitioner questions) | 309146c (pushed) | courses/safeshield-governance/self-assessment.md |
-| 3-117 — the ISO/NIST crosswalk | (pending) | courses/safeshield-governance/crosswalk-iso-nist.md |
+| 3-117 — the ISO/NIST crosswalk | 10341f0 (pushed) | courses/safeshield-governance/crosswalk-iso-nist.md |
+| 3-118 — the NIST/EU crosswalk | (pending) | courses/safeshield-governance/crosswalk-nist-eu.md |
 
 ## Next exact action
 
