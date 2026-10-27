@@ -147,3 +147,5 @@ watching companions in all 24 chapters and watching pointers in all
 `verify_links.py` before it landed; the runs are recorded as
 rotation 4 in MAINTENANCE.md. The structure is pinned by
 `tests/test_courses_integrity.py`.
+
+See also: [honesty-ledger.md](honesty-ledger.md) — what this library did NOT do.
