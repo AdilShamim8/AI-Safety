@@ -9,11 +9,11 @@ was fetched, when, and how far into it this course actually read. The
 And every line now carries its live link, verified — not
 assumed. Across its rotations — 3 (2026-10-25) and 4 (2026-10-27,
 the lecture-library opening) —
-[scripts/verify_links.py](scripts/verify_links.py) fetched all 94
+[scripts/verify_links.py](scripts/verify_links.py) fetched all 96
 URLs cited on this page: the arXiv spine title-matched against the
 arXiv API, the course videos and playlists against YouTube's oEmbed
 and playlist endpoints, the rest fetched server-side. All
-94 live — three hosts (OWASP, the American Bar Association,
+96 live — three hosts (OWASP, the American Bar Association,
 ACM) bot-block datacenter clients while remaining real pages the
 register corroborates, and exactly one URL is deliberately not
 linked: the OpenAI Preparedness announcement, whose canonical 404
@@ -111,6 +111,17 @@ Four tracks, each with a job:
     self-description. The companion
     ([courses/google-deepmind-agi-safety/](courses/google-deepmind-agi-safety/))
     carries all 16 part notes and the pedagogy analysis.
+
+  - **[AI Safety, Ethics, & Society — the CAIS course playlist](https://www.youtube.com/playlist?list=PLXSn3Zz2ayT7ab7I12PBYVt0244369S1q)**
+    [SRC-VIDEO-015] — the non-technical university course (8 lectures,
+    ~7 hours) tracking Dan Hendrycks's published textbook (registered
+    as [SRC-CURR-013]): risks, fundamentals, single-agent safety,
+    safety engineering, complex systems, ethics, collective action,
+    governance. The companion
+    ([courses/cais-ethics-society/](courses/cais-ethics-society/))
+    carries all 8 lecture notes — and it is the only source in this
+    index that teaches collective-action problems as a first-class
+    unit.
 
 ## Blogs and ongoing commentary
 
