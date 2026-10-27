@@ -122,6 +122,16 @@ No certification, no expertise guarantee, no career promise. The course
 builds demonstrable skills and evidence; what that becomes is up to you and
 your reviewers.
 
+## The session-3 layer (2026-10-27): the lecture library
+
+The [lecture library](courses/README.md) added the video-course
+companions: four courses, 57 verified videos, 61 companion notes, per-
+course pedagogy analyses, and study plans scheduling the watching
+against the chapter sequence. Chapters now carry watching-companions
+blocks; the AWESOME index carries the full-courses track; and the
+link instrument's rotation 4 (2026-10-27) verified every new URL
+live before it landed.
+
 ## The session-2 layer (2026-10-25)
 
 Every route now carries: its [progress tracker](roadmaps/progress/README.md)
