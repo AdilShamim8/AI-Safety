@@ -338,3 +338,16 @@ the calibration machinery is
 and P03's; adversaries *inducing* concept shift is
 [Chapter 12](../12-adversarial-ml-and-robustness/README.md)'s;
 faithfulness of deployed reasoning continues in Chapter 18.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) | DeepMind AGI Safety | training-time robustness plus deployment-time monitoring |
+| [module-12-lifecycle-governance](../../courses/safeshield-governance/module-12-lifecycle-governance.md) | Safeshield Governance | change management and the gates that keep deployed systems true |
