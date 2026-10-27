@@ -370,3 +370,16 @@ sensor shift is
 with an actuator attached; monitoring actions over words is
 [Chapter 18](../18-reasoning-faithfulness-and-monitorability/README.md)'s;
 release evaluation of the resulting systems is Chapter 20's.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-02-ai-fundamentals](../../courses/cais-ethics-society/lecture-02-ai-fundamentals.md) | CAIS Ethics & Society | the correlational/opaque/brittle properties across modalities |
+| [module-04-transparency-explainability](../../courses/safeshield-governance/module-04-transparency-explainability.md) | Safeshield Governance | disclosure obligations for systems users cannot inspect |
