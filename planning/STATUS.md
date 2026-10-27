@@ -311,7 +311,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-144 — the watching-pointer block for chapter 10's solutions: 1 pre-exercise viewing(s) | 2e55346 (pushed) | chapters/10-sparse-features-circuits-and-interpretability-evaluation/solutions.md; links to committed course notes only |
 | 3-145 — the watching-pointer block for chapter 11's solutions: 1 pre-exercise viewing(s) | 5dc8838 (pushed) | chapters/11-behavioral-steering-and-representation-interventions/solutions.md; links to committed course notes only |
 | 3-146 — the watching-pointer block for chapter 12's solutions: 1 pre-exercise viewing(s) | 06a4036 (pushed) | chapters/12-adversarial-ml-and-robustness/solutions.md; links to committed course notes only |
-| 3-147 — the watching-pointer block for chapter 13's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/13-llm-application-security/solutions.md; links to committed course notes only |
+| 3-147 — the watching-pointer block for chapter 13's solutions: 1 pre-exercise viewing(s) | 8462528 (pushed) | chapters/13-llm-application-security/solutions.md; links to committed course notes only |
+| 3-148 — the watching-pointer block for chapter 14's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/14-agent-tool-memory-mcp-security/solutions.md; links to committed course notes only |
 
 ## Next exact action
 

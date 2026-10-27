@@ -228,3 +228,12 @@ by 68.8% into a deployed-incidence number — the 68.8% is the
 emulator's *validity* rate over identified failures
 [SRC-PAPER-056], not a prevalence factor, and its own denominator
 is not stated in the abstract.
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-02-06-safer-design-patterns](../../courses/google-deepmind-agi-safety/part-02-06-safer-design-patterns.md) — watch before working the privilege-boundary exercises.
