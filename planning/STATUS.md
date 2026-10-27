@@ -319,7 +319,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-152 — the watching-pointer block for chapter 18's solutions: 1 pre-exercise viewing(s) | aa47515 (pushed) | chapters/18-reasoning-faithfulness-and-monitorability/solutions.md; links to committed course notes only |
 | 3-153 — the watching-pointer block for chapter 19's solutions: 1 pre-exercise viewing(s) | c9bc48c (pushed) | chapters/19-multimodal-and-embodied-safety/solutions.md; links to committed course notes only |
 | 3-154 — the watching-pointer block for chapter 20's solutions: 1 pre-exercise viewing(s) | ca93c62 (pushed) | chapters/20-misuse-dangerous-capabilities-release-evaluation/solutions.md; links to committed course notes only |
-| 3-155 — the watching-pointer block for chapter 21's solutions: 2 pre-exercise viewing(s) | (pending) | chapters/21-sociotechnical-and-systemic-risk/solutions.md; links to committed course notes only |
+| 3-155 — the watching-pointer block for chapter 21's solutions: 2 pre-exercise viewing(s) | ed8077f (pushed) | chapters/21-sociotechnical-and-systemic-risk/solutions.md; links to committed course notes only |
+| 3-156 — the watching-pointer block for chapter 22's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/22-safety-engineering-and-assurance/solutions.md; links to committed course notes only |
 
 ## Next exact action
 

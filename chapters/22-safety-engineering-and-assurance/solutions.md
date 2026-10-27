@@ -137,3 +137,12 @@ declines (Ch. 18's obfuscation signature), new tool registrations
 evidence table with all dimensions (3); defeaters with honest
 classification (3); residual risk both forms (2); re-audit triggers
 (2).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CAIS course**, [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) — watch before working the safety-case exercises.
