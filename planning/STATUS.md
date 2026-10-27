@@ -515,3 +515,46 @@ lessons (committed-tree gates, wrap-tolerant sync, per-unit
 generators).
 
 **Session-3 final remote verification (2026-10-27):** remote HEAD == local HEAD (e607f3d8a6); repository at 504 commits (304 at session open + 200 session-3 units).
+
+## Session 4 — the final double-check sweep (2026-10-27)
+
+The owner's closing request: double-check everything, and organize it
+so any beginner can follow easily. Eight units, each committed and
+pushed one at a time with remote verification:
+
+- **F-01** START_HERE step order — Step 0.5 (the primer) was filed
+  between Step 1's heading and its body; the sequence now reads
+  0 → 0.5 → 1 → 2 → 3 as the numbers promise.
+- **F-02** README 60-second tour — step 5 ended mid-sentence and the
+  AWESOME/MAINTENANCE pointers dangled inside step 6; the tour is six
+  complete steps.
+- **F-03** FAQ dataset counts — "22 real-world safety datasets" and
+  "43 dataset cards" both outlived their sessions; both now state 47,
+  dashboard regenerated in the same commit.
+- **F-04** courses/README — a build-in-progress parenthetical and an
+  is-being-built section contradicted the complete-library statement
+  below them; the layer now states its completion once.
+- **F-05** count-drift instrument — the FAQ was pinned for sources
+  but not cards, the suite total but not its split (the parenthetical
+  said 32 repo-instrument tests against a real 36→38); two new tests
+  close both holes. Suite 611 → 613 (401 package + 174 from-scratch
+  + 38 repo-instrument).
+- **F-06** dashboard quickstart — now opens with the primer step
+  START_HERE recommends, so both beginner surfaces tell the same
+  story in the same order.
+- **F-07** MAINTENANCE rotation 6 — the final full-register link
+  pass after the fixes: 261/261 live, zero state changes.
+- **F-08** these closure records.
+
+**Verification held throughout:** validator green on every unit;
+613/613 tests; ruff/black clean; structural sweep (heading order,
+list sequence, empty-body doubles) clean across 19 entry documents;
+rotation 6 full-register pass; committed-tree links clean.
+
+**Session-4 final remote verification (2026-10-27):** remote HEAD ==
+local HEAD at each of the eight pushes; repository closed at 516
+commits (508 at session open + 8 final-sweep units).
+
+Standing actions unchanged: the session token remains exposed in
+chat history and must be rotated by the owner (three tokens across
+sessions, all exposed); SECURITY.md's reporting path governs.

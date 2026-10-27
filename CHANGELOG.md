@@ -7,6 +7,32 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The final double-check sweep (2026-10-27)
+
+- The owner's closing request — double-check everything, organize for
+  beginners — earned eight one-at-a-time units (F-01..F-08), each
+  pushed and remote-verified, plus a sixth full-register link
+  rotation (261/261 live, zero state changes since the closing
+  sweep). Four defects a beginner would have felt were found and
+  fixed: the START_HERE step sequence read out of order (Step 0.5
+  filed inside Step 1), the README's 60-second tour had step 5 ending
+  mid-sentence with its tail welded into step 6, the FAQ still said
+  "22 datasets" and "43 cards" against the catalog's real 47, and the
+  courses index contradicted itself (build-in-progress language above
+  a complete-library statement).
+- The count-drift instrument learned both lessons: the FAQ is now
+  pinned for dataset cards as well as sources (every mention must
+  agree, not just one), and the README's suite-size parenthetical is
+  pinned to the collected three-way split (the stale "32
+  repo-instrument" was real 36, then 38 after the new pins). Suite
+  611 → 613: 401 package + 174 from-scratch + 38 repo-instrument.
+- The dashboard quickstart now opens with the 90-minute DeepMind
+  primer START_HERE recommends before the diagnostic, so the two
+  beginner surfaces tell the same story in the same order; a
+  structural sweep (heading order, list sequences, empty-body
+  heading doubles) now guards all 19 entry documents and found
+  nothing further.
+
 ### The lecture library (2026-10-27)
 - Mid-session checkpoint (102/200 units): the lecture library's core
   is complete and integrated — 4 course pages, 61 companion notes
