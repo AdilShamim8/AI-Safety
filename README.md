@@ -104,7 +104,7 @@ arithmetic: [ROADMAP.md](ROADMAP.md).
 | `projects/` | 10 runnable research learning units | **implemented** (10/10) — deterministic, pinned numbers, honest tiers |
 | `research/` | Method, article map, source + claims registers, notes (74 paper + 12 comparison + 14 incident reviews) | **complete** — 261 sources / 206 claims, audit-clean |
 | `research/ai-researcher-from-scratch/` | The from-scratch researcher track (stdlib-only modules) | **complete** (7/7) — 174 tests |
-| `datasets/` | 43 verified real-world dataset cards + machine-readable catalog | **complete** — queue empty |
+| `datasets/` | 47 verified real-world dataset cards + machine-readable catalog | **complete** — queue empty |
 | `planning/` | Build plan, status, content matrix, ADRs | **exists** — the build's durable record |
 | `templates/` | Chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review templates | **complete** (8) |
 | `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 611-test suite (401 package + 174 from-scratch + 32 repo-instrument) |
