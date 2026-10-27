@@ -570,3 +570,16 @@ Chapter 10 sets the evidence standard for every mechanistic claim the course
 meets later: from here on, "we found the feature for X" without
 dictionary-version, controls, denominators, and a graded completeness number
 is treated as an error, not a style choice.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | the SAE program and its stress tests (AxBench, persona vectors) |
+| [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | the evaluation problem for interpretability itself |
