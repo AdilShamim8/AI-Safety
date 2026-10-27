@@ -565,3 +565,18 @@ preferences, Ch. 05's oversight channels, Ch. 07's mesa-optimization —
 inherits this chapter's rule: *the specification and the intent are two
 objects, and only a measured intended objective can tell you how far apart
 they are.*
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-04-model-specifications](../../courses/boaz-barak-cs2881/lecture-04-model-specifications.md) | Harvard CS 2881 | can behavior be specified? the legal-realist treatment |
+| [part-01-04-misaligned-goals](../../courses/google-deepmind-agi-safety/part-01-04-misaligned-goals.md) | DeepMind AGI Safety | the genesis taxonomy this chapter expands |
+| [part-01-05-exercise-classification](../../courses/google-deepmind-agi-safety/part-01-05-exercise-classification.md) | DeepMind AGI Safety | the classification drill for the same failure families |
+| [lecture-03-single-agent-safety](../../courses/cais-ethics-society/lecture-03-single-agent-safety.md) | CAIS Ethics & Society | the specification problem for a non-technical audience |
