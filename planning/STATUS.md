@@ -336,7 +336,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-169 — the CS 2881 reading-list × register crosswalk (carried / carded / not-carried) | ea28f0a (pushed) | courses/boaz-barak-cs2881/reading-map.md |
 | 3-170 — the DeepMind course × chapter crosswalk table | a904692 (pushed) | courses/google-deepmind-agi-safety/reading-map.md |
 | 3-171 — the CAIS course × chapter crosswalk | 05d5e59 (pushed) | courses/cais-ethics-society/reading-map.md |
-| 3-172 — the Safeshield series × chapter crosswalk | (pending) | courses/safeshield-governance/reading-map.md |
+| 3-172 — the Safeshield series × chapter crosswalk | 55d6cd3 (pushed) | courses/safeshield-governance/reading-map.md |
+| 3-173 — the honesty ledger (no videos watched, no transcripts, perishable structure, unverified reading URLs) | (pending) | courses/honesty-ledger.md |
 
 ## Next exact action
 
