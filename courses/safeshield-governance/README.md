@@ -55,7 +55,7 @@ professional curriculum in about 12.5 hours.
 | [Overview of the European Union AI Act (EU AI Act)](https://www.youtube.com/watch?v=h45xol68U1M) | 52:20 | [module-11-eu-ai-act.md](module-11-eu-ai-act.md) |
 | [AI System Lifecycle Governance](https://www.youtube.com/watch?v=X3LPcQzCSpo) | 50:38 | [module-12-lifecycle-governance.md](module-12-lifecycle-governance.md) |
 | [AI Governance Policies and Documentation](https://www.youtube.com/watch?v=mgrAVpMNXmA) | 1:00:20 | [module-13-policies-documentation.md](module-13-policies-documentation.md) |
-| [AI Monitoring, Auditing, and Compliance](https://www.youtube.com/watch?v=ZxxQg1Lcf_w) | 50:33 | `module-14-monitoring-auditing-compliance.md` |
+| [AI Monitoring, Auditing, and Compliance](https://www.youtube.com/watch?v=ZxxQg1Lcf_w) | 50:33 | [module-14-monitoring-auditing-compliance.md](module-14-monitoring-auditing-compliance.md) |
 
 ## How the course organizes knowledge
 
