@@ -328,7 +328,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-161 — AGENTS.md: three session-3 lessons (committed-tree gates, wrap-tolerant sync, per-unit generation) | 5f13c6f (pushed) | AGENTS.md section |
 | 3-162 — ADR-0003: companion-notes-not-transcripts, register-before-link, chapter integration, honest limits | d9f1d16 (pushed) | planning/decisions/0003-lecture-library-layer.md |
 | 3-163 — the CS 2881 companion-set completion section (18 notes + pedagogy + self-assessment) | d9f89ad (pushed) | courses/boaz-barak-cs2881/README.md |
-| 3-164 — the DeepMind companion-set completion section | (pending) | courses/google-deepmind-agi-safety/README.md |
+| 3-164 — the DeepMind companion-set completion section | c207112 (pushed) | courses/google-deepmind-agi-safety/README.md |
+| 3-165 — the CAIS companion-set completion section | (pending) | courses/cais-ethics-society/README.md |
 
 ## Next exact action
 

@@ -95,3 +95,14 @@ uses; learning it here is learning the lingua franca.
 No video was watched; no spoken content is transcribed or quoted. The
 companion notes are original explanations of each lecture's announced topic;
 the textbook's own text is linked, never reproduced.
+
+## The companion set (complete)
+
+All 8 lectures are covered, plus the pedagogy analysis and the
+self-assessment. The textbook's own chapter pages (preface, 2.1,
+8.1 inspected at fetch) are registered as SRC-CURR-013 — the book
+is linked, never reproduced.
+
+Also in this directory: [pedagogy.md](pedagogy.md) (scope circles
+and the textbook spine) and [self-assessment.md](self-assessment.md)
+(ten judgment questions with pointers).
