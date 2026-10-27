@@ -177,7 +177,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-11 — the Lecture 3 companion note (announced scope, published reading list, core ideas, chapter through-lines) | 79b450a (pushed) | courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-12 — the Lecture 4 companion note (announced scope, published reading list, core ideas, chapter through-lines) | ac0e4e9 (pushed) | courses/boaz-barak-cs2881/lecture-04-model-specifications.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-13 — the Lecture 5 session companion note (announced scope, published reading list, core ideas, chapter through-lines) | 827e262 (pushed) | courses/boaz-barak-cs2881/lecture-05-experiment-policy-compliance.md; course-page readings reproduced as attribution; register IDs cited where held |
-| 3-14 — the Lecture 6 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/lecture-06-recursive-self-improvement.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-14 — the Lecture 6 companion note (announced scope, published reading list, core ideas, chapter through-lines) | 3623253 (pushed) | courses/boaz-barak-cs2881/lecture-06-recursive-self-improvement.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-15 — the Lecture 7 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/lecture-07-lab-vs-field.md; course-page readings reproduced as attribution; register IDs cited where held |
 
 ## Next exact action
 
