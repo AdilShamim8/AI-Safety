@@ -280,7 +280,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-113 — the CS 2881 self-assessment (20 questions, diagnostic pointers) | 75514ba (pushed) | courses/boaz-barak-cs2881/self-assessment.md |
 | 3-114 — the DeepMind self-assessment (12 questions) | e4dcb74 (pushed) | courses/google-deepmind-agi-safety/self-assessment.md |
 | 3-115 — the CAIS self-assessment (10 questions) | 198eeb5 (pushed) | courses/cais-ethics-society/self-assessment.md |
-| 3-116 — the Safeshield self-assessment (12 practitioner questions) | (pending) | courses/safeshield-governance/self-assessment.md |
+| 3-116 — the Safeshield self-assessment (12 practitioner questions) | 309146c (pushed) | courses/safeshield-governance/self-assessment.md |
+| 3-117 — the ISO/NIST crosswalk | (pending) | courses/safeshield-governance/crosswalk-iso-nist.md |
 
 ## Next exact action
 
