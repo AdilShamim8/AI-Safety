@@ -8,6 +8,23 @@ Unreleased until a tagged release exists.
 ## [Unreleased]
 
 ### The lecture library (2026-10-27)
+- **Fix-forward: the batch-linking CI defect (caught by CI, fixed in
+  the driver).** Units 3-09 through 3-41 earned red CI runs in a
+  characteristic pattern — every unit green at its batch's end, red in
+  the middle. Cause: the note generators linked ALL of a course
+  README's note rows upfront, while each unit commits only its own
+  note file — so an intermediate commit's README pointed at note files
+  that existed only in the working tree, and a fresh CI checkout
+  (which sees the commit, not the working tree) failed
+  `validate_repo.py`'s local-link check. The working-tree gate could
+  not catch it by construction. Two fixes landed: note rows are now
+  linked by the driver **per unit** (the commit that adds a note is
+  the commit that links it), and the driver now runs a
+  committed-tree link check after every commit and before every push
+  — `git show HEAD:<file>` over the unit's files, resolving every
+  local markdown link against the commit itself. The historical red
+  runs stay in the Actions record as the honest trace; the tree at
+  every batch boundary and at HEAD is green.
 
 - Opened `courses/` — the video-course companions layer for the four
   courses the owner selected: Harvard CS 2881 (Boaz Barak), the Google
