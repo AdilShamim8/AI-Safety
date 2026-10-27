@@ -290,7 +290,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-123 — the GDPval dataset card + catalog entry (DS-044, arXiv 2510.04374 title-verified) | 726c627 (pushed) | datasets/cards/44-gdpval.md; catalog DS-044; counts synced |
 | 3-124 — the RE-Bench card + catalog entry (DS-045, MIT, 7 tasks, archived noted) | 9c76857 (pushed) | datasets/cards/45-metr-re-bench.md; catalog DS-045; counts synced |
 | 3-125 — the time-horizons card + catalog entry (DS-046, 7-month doubling, page-verified) | 0859b16 (pushed) | datasets/cards/46-metr-time-horizons.md; catalog DS-046; counts synced |
-| 3-126 — the Canaries card + catalog entry (DS-047, Stanford lab page verified, no replication files noted) | (pending) | datasets/cards/47-canaries.md; catalog DS-047; counts synced |
+| 3-126 — the Canaries card + catalog entry (DS-047, Stanford lab page verified, no replication files noted) | ef37cce (pushed) | datasets/cards/47-canaries.md; catalog DS-047; counts synced |
+| 3-127 — glossary batch 1: five course-grounded terms (amplified oversight, alignment stress test, model spec, takeoff speed, intelligence explosion types) | (pending) | GLOSSARY.md rows; CITATION glossary count synced |
 
 ## Next exact action
 
