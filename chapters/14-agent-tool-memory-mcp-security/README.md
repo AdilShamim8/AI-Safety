@@ -685,3 +685,16 @@ injection mechanics feeding station 1 are
 evaluation discipline for red-teaming this architecture arrives with
 Chapter 15 (red teaming and adversarial evaluation, planned); P07
 implements the audit as code.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [part-02-06-safer-design-patterns](../../courses/google-deepmind-agi-safety/part-02-06-safer-design-patterns.md) | DeepMind AGI Safety | architecture as a safety decision — the CaMeL lineage |
+| [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the agent-framework injection surface |

@@ -255,7 +255,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-88 — the watching-companions block for chapter 10: 2 lecture pairings with reasons | 2c987e4 (pushed) | chapters/10-sparse-features-circuits-and-interpretability-evaluation/README.md; links to committed course notes only |
 | 3-89 — the watching-companions block for chapter 11: 2 lecture pairings with reasons | d496a33 (pushed) | chapters/11-behavioral-steering-and-representation-interventions/README.md; links to committed course notes only |
 | 3-90 — the watching-companions block for chapter 12: 2 lecture pairings with reasons | b7bc1ca (pushed) | chapters/12-adversarial-ml-and-robustness/README.md; links to committed course notes only |
-| 3-91 — the watching-companions block for chapter 13: 2 lecture pairings with reasons | (pending) | chapters/13-llm-application-security/README.md; links to committed course notes only |
+| 3-91 — the watching-companions block for chapter 13: 2 lecture pairings with reasons | fcd5cc7 (pushed) | chapters/13-llm-application-security/README.md; links to committed course notes only |
+| 3-92 — the watching-companions block for chapter 14: 2 lecture pairings with reasons | (pending) | chapters/14-agent-tool-memory-mcp-security/README.md; links to committed course notes only |
 
 ## Next exact action
 
