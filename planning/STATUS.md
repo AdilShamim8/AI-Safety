@@ -213,7 +213,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-47 — the Lecture 4 companion note | cd019db (pushed) | courses/cais-ethics-society/lecture-04-safety-engineering.md; note row linked per unit by the driver |
 | 3-48 — the Lecture 5 companion note | 3c2a0c9 (pushed) | courses/cais-ethics-society/lecture-05-complex-systems.md; note row linked per unit by the driver |
 | 3-49 — the Lecture 6 companion note | a98c0b4 (pushed) | courses/cais-ethics-society/lecture-06-beneficial-ai-machine-ethics.md; note row linked per unit by the driver |
-| 3-50 — the Lecture 7 companion note | (pending) | courses/cais-ethics-society/lecture-07-collective-action-problems.md; note row linked per unit by the driver |
+| 3-50 — the Lecture 7 companion note | 28e81f4 (pushed) | courses/cais-ethics-society/lecture-07-collective-action-problems.md; note row linked per unit by the driver |
+| 3-51 — the Lecture 8 companion note | (pending) | courses/cais-ethics-society/lecture-08-governance.md; note row linked per unit by the driver |
 
 ## Next exact action
 
