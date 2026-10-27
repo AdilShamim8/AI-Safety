@@ -116,3 +116,11 @@ come from, what index.html is — answered with links in
   [CONTRIBUTING.md](CONTRIBUTING.md) for what to include).
 - Security issues: [SECURITY.md](SECURITY.md) — not public issues.
 - Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+**The lecture library (2026-10-27):** four external courses — Harvard
+CS 2881, the Google DeepMind AGI Safety Course, the CAIS Ethics &
+Society course, and the Safeshield governance series — are now
+companion-noted end to end: 57 verified videos, 61 notes, study
+plans, self-assessments, and reading maps, with watching companions
+in every chapter and watching pointers in every solutions file.
+Start from [courses/README.md](courses/README.md).
