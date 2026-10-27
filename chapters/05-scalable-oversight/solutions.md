@@ -363,3 +363,12 @@ design, not evidence about superhuman supervision.
 | Correlation audit | 2×2 → ρ̂; third checker for q̂; pair-only limit named | "we will measure correlation" |
 | Preregistration | context-form claim, ≥ 3 weakening observations, split discipline | a goal, nothing testable |
 | Scope statement | ≥ 3 honest cannot-tells | "this will show weak-to-strong works" |
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-02-02-amplified-oversight](../../courses/google-deepmind-agi-safety/part-02-02-amplified-oversight.md) — watch before working the decomposition/debate exercises.
