@@ -158,6 +158,17 @@ CAREERS = [
 
 QUICKSTART = [
     {
+        "title": "Watch the primer, optional (90 min)",
+        "body": (
+            "Before the diagnostic, watch the Google DeepMind AGI Safety "
+            "Course straight through — sixteen short parts, no mathematics, "
+            "the field's own compressed statement of the problem. It will "
+            "make every chapter's opening section land faster. The full "
+            "lecture library (four courses, 61 companion notes) schedules "
+            "itself against the chapters."
+        ),
+    },
+    {
         "title": "Take the diagnostic (30 min)",
         "body": (
             "Read <code>START_HERE.md</code> (and <code>FAQ.md</code> for the questions "
