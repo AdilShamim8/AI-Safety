@@ -611,3 +611,5 @@ and phrase variants — each caught red by the drift tests before CI,
 each fixed forward, each recorded. The token rule held: credentials
 only ever transient; the owner rotates the exposed token after
 this session.
+
+- Closed at 200/200: the last unit's STATUS row filled by this commit; the session's record is append-only and complete.
