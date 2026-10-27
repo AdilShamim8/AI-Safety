@@ -204,7 +204,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-38 — the Part 2.6 companion note | 7fc1c9c (pushed) | courses/google-deepmind-agi-safety/part-02-06-safer-design-patterns.md |
 | 3-39 — the Part 2.7 companion note | 6dd5ad9 (pushed) | courses/google-deepmind-agi-safety/part-02-07-alignment-stress-tests.md |
 | 3-40 — the Part 3.1 companion note | dfd64c6 (pushed) | courses/google-deepmind-agi-safety/part-03-01-institutional-approaches.md |
-| 3-41 — the Part 3.2 companion note | (pending) | courses/google-deepmind-agi-safety/part-03-02-frontier-safety-practices.md |
+| 3-41 — the Part 3.2 companion note | 276a17c (pushed) | courses/google-deepmind-agi-safety/part-03-02-frontier-safety-practices.md |
+| 3-42 — the Part 3.3 companion note | (pending) | courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md |
 
 ## Next exact action
 
