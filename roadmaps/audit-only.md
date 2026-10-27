@@ -67,6 +67,19 @@ is, at its core, an audit of claims. See
 lands professionally — governance and policy roles filter strongly on
 exactly this reading competence.
 
+### The lecture-library pairing
+
+This route's chapters pair with the video layer as follows (full
+mapping in [courses/study-plans.md](../courses/study-plans.md) and
+each chapter's watching-companions block):
+- The Safeshield series as a second spine: modules 1–2 with Ch. 01,
+  module 8 with the risk chapters, modules 9–11 with Ch. 23, and
+  modules 12–14 with Ch. 22 and the audit practice.
+- The CAIS course (Lectures 1, 4, 7, 8) for the society-scale
+  framing regulators actually use.
+- The DeepMind Part 3 videos for the frontier-evaluation connection
+  auditors will increasingly be asked to check.
+
 ## Pitfalls this route is designed to prevent
 
 1. **Credential worship.** The route never asks whether the author is
