@@ -239,7 +239,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-72 — AWESOME video library: the DeepMind course block (SRC-VIDEO-013/014 cited) | c6f60f7 (pushed) | AWESOME.md block; rotation-4 verified URLs; counts synced |
 | 3-73 — AWESOME video library: the CAIS block (SRC-VIDEO-015/016 + SRC-CURR-013 cited) | d14734e (pushed) | AWESOME.md block; rotation-4 verified URLs; counts synced |
 | 3-74 — AWESOME video library: the Safeshield block (SRC-VIDEO-017/018 cited) | e3bbb73 (pushed) | AWESOME.md block; rotation-4 verified URLs; counts synced |
-| 3-75 — AWESOME courses section: the lecture-library entry linking courses/ and its index | (pending) | AWESOME.md courses-section entry; counts synced |
+| 3-75 — AWESOME courses section: the lecture-library entry linking courses/ and its index | 0332dae (pushed) | AWESOME.md courses-section entry; counts synced |
+| 3-76 — MAINTENANCE.md: rotation 4 record (10/10 live; YouTube JS-pages live-no-title, course page domain-match) | (pending) | MAINTENANCE.md entry; matches the AWESOME intro's rotation-4 claim |
 
 ## Next exact action
 

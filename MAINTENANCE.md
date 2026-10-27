@@ -176,3 +176,18 @@ instead of making the test weaker. Keep that order of operations.
   Next rotation: the planned middle register band
   (SRC-PAPER-100..140) plus the full-register sweep --all as the
   link layer's first annual re-check.
+
+### Re-check rotation 4 (2026-10-27) — the lecture-library opening
+
+Ten new sources entered the register with the lecture library:
+SRC-VIDEO-011..018 (the four course playlists and their channels)
+and SRC-CURR-012..013 (the Harvard course pages, full-text-read;
+the CAIS textbook site). All ten were run through
+`verify_links.py --ids` before any AWESOME.md link landed: the
+YouTube playlist and channel URLs returned live with no
+title-extractable page (JS-rendered; the register's limitations
+fields carry the API corroboration), the Harvard course page
+returned LIVE with a domain match, and the CAIS textbook site
+returned live. 10/10 live; zero dead; zero wrong pages. The
+AWESOME.md intro's verified-count claim is recomputed from the
+file's own ID set by the same sync that regenerated the dashboard.
