@@ -266,7 +266,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-99 — the watching-companions block for chapter 21: 4 lecture pairings with reasons | e16bd33 (pushed) | chapters/21-sociotechnical-and-systemic-risk/README.md; links to committed course notes only |
 | 3-100 — the watching-companions block for chapter 22: 3 lecture pairings with reasons | cc1469d (pushed) | chapters/22-safety-engineering-and-assurance/README.md; links to committed course notes only |
 | 3-101 — the watching-companions block for chapter 23: 4 lecture pairings with reasons | dae0212 (pushed) | chapters/23-governance-and-standards/README.md; links to committed course notes only |
-| 3-102 — the watching-companions block for chapter 24: 3 lecture pairings with reasons | (pending) | chapters/24-research-practice-and-capstone-execution/README.md; links to committed course notes only |
+| 3-102 — the watching-companions block for chapter 24: 3 lecture pairings with reasons | 84b8eda (pushed) | chapters/24-research-practice-and-capstone-execution/README.md; links to committed course notes only |
+| 3-103 — SYLLABUS.md: the watching-track section (primer/alongside/operator passes) | (pending) | SYLLABUS.md section; local links validated |
 
 ## Next exact action
 

@@ -42,6 +42,21 @@ verification discipline every reading assumes
 | 23 | Governance and standards — NIST AI RMF, NIST AML taxonomy, MITRE ATLAS, OWASP GenAI, GPAI guidance, responsible scaling; guidance vs obligation vs proposal | 22 | standards mapping with versions | — |
 | 24 | Research practice and capstone execution — scoping, baselines, falsifiability, preregistration, ablations, negative results, ethical release | 02, 22 | research proposal + capstone report | P10 |
 
+## The watching track (2026-10-27)
+
+The [lecture library](courses/README.md) adds a video layer to this
+syllabus: four external courses — Harvard CS 2881, the Google
+DeepMind AGI Safety Course, the CAIS Ethics & Society course, and the
+Safeshield governance series — each with a course page, verified
+video index, and one companion note per lecture. The library does not
+change the chapter sequence; it schedules watching against it (see
+[courses/study-plans.md](courses/study-plans.md)): the DeepMind
+course as the 90-minute primer before Chapter 01, the alongside pass
+paired chapter-cluster by chapter-cluster, and the Safeshield series
+as the operator spine for the assurance-oriented routes. Each
+chapter's README carries its own "watching companions" block with the
+specific pairings and the reason for each.
+
 ## How chapters are assessed
 
 Each chapter carries: two demanding exercises (one analysis/derivation, one
