@@ -112,3 +112,12 @@ guarantee. The market-signal sources
 tracker's promise is narrower and real: **every ticked box is an
 artifact a stranger can audit**, which is the only progress that
 counts in this field.
+
+### Watching checkpoints (alignment route)
+
+- [ ] Primer: DeepMind course end-to-end (85 min) — before Ch. 01
+- [ ] Alongside: CS 2881 L1 (both iterations) with Ch. 01–02
+- [ ] Alongside: CS 2881 L2/L4 + DeepMind P2.1 with Ch. 03–04
+- [ ] Alongside: CS 2881 L8 + Under Pressure with Ch. 07–08
+- [ ] Alongside: CS 2881 L10 with Ch. 09–11
+- [ ] Self-check: the CS 2881 and DeepMind self-assessments

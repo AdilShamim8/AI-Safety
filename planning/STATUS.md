@@ -343,7 +343,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-176 — the library index links its honesty ledger | 177e039 (pushed) | courses/README.md |
 | 3-177 — glossary batch 5: eight course-grounded terms | 4489f1f (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
 | 3-178 — glossary batch 6: six terms (incl. the EU AI Act designation layer) | 333315c (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
-| 3-179 — the progress-ladder integration note (watched is not worked) | (pending) | roadmaps/progress/README.md |
+| 3-179 — the progress-ladder integration note (watched is not worked) | 45d0c80 (pushed) | roadmaps/progress/README.md |
+| 3-180 — the alignment route's watching checkpoints | (pending) | roadmaps/progress/alignment-research.md |
 
 ## Next exact action
 
