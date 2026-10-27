@@ -62,3 +62,19 @@ terms with API-record provenance recorded per note.
    before import.
 4. License texts reproduced in this repository (such as `LICENSE-DOCS`) are
    themselves licensed material and remain listed here.
+
+### The lecture library (courses/, opened 2026-10-27)
+
+The four course companions attribute and link their sources; they do
+not reproduce them. Harvard CS 2881's published reading lists are
+reproduced as **attribution lists** (titles, authors, and the course
+page as the linking source — SRC-CURR-012); the CAIS textbook's text
+is never reproduced (SRC-CURR-013); the three YouTube playlists and
+four channels (SRC-VIDEO-011..018) are linked, never re-hosted; no
+spoken video content is transcribed or quoted anywhere. Dataset cards
+added with the library (DS-044..047) carry their own license
+observations in `datasets/catalog.yaml`; none of their content is
+redistributed. The library's own prose (course pages, notes,
+pedagogy analyses, crosswalks, self-assessments) is original
+instructional prose under CC BY 4.0, same as the rest of the
+repository's documentation.
