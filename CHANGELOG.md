@@ -612,4 +612,4 @@ each fixed forward, each recorded. The token rule held: credentials
 only ever transient; the owner rotates the exposed token after
 this session.
 
-- Closed at 200/200: the last unit's STATUS row filled by this commit; the session's record is append-only and complete.
+- Closed at 200/200, plus the closure's earned fix-forward (the session-2 precedent): the 200th unit's STATUS row is filled by the commit AFTER it — the trailing-SHA pattern necessarily leaves the final row to its successor — and the session's record is append-only and complete.
