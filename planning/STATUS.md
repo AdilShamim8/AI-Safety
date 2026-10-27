@@ -184,7 +184,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-18 — the Lecture 9 companion note (announced scope, published reading list, core ideas, chapter through-lines) | 0d18a67 (pushed) | courses/boaz-barak-cs2881/lecture-09-economic-impacts.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-19 — the Lecture 10 companion note (announced scope, published reading list, core ideas, chapter through-lines) | a44a8c0 (pushed) | courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-20 — the Lecture 11 companion note (announced scope, published reading list, core ideas, chapter through-lines) | 070f95a (pushed) | courses/boaz-barak-cs2881/lecture-11-mental-health.md; course-page readings reproduced as attribution; register IDs cited where held |
-| 3-21 — the Lecture 12 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/lecture-12-ai-2035-and-gdpval.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-21 — the Lecture 12 companion note (announced scope, published reading list, core ideas, chapter through-lines) | a904d1f (pushed) | courses/boaz-barak-cs2881/lecture-12-ai-2035-and-gdpval.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-22 — the Fall 2026 Lecture 1 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/f26-lecture-01-introduction.md; course-page readings reproduced as attribution; register IDs cited where held |
 
 ## Next exact action
 

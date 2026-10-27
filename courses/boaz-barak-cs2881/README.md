@@ -83,11 +83,11 @@ library index holds).
 
 | Lecture | Video | Length | Companion note |
 |---|---|---|---|
-| L1 | [Introduction (Fall 2026)](https://www.youtube.com/watch?v=j4WSktB5Ni0) | 2:31:25 | `f26-lecture-01-introduction.md` |
-| L3 | [Modern LLM Training and Inference (Fall 2026)](https://www.youtube.com/watch?v=Lp_e8Ts5-nE) | 1:16:37 | `f26-lecture-03-modern-llm-training-inference.md` |
-| L5 | [Economic Impact of AI (Fall 2026)](https://www.youtube.com/watch?v=iezRKFkyjVY) | 2:25:27 | `f26-lecture-05-economic-impact.md` |
-| L8 | [Open Language Models (Nathan Lambert, Fall 2026)](https://www.youtube.com/watch?v=0L-DGRn52Q0) | 1:31:00 | `f26-lecture-08-open-language-models.md` |
-| projects | [Oral presentations of student projects (Fall 2026)](https://www.youtube.com/watch?v=Xr9FNl0S66Q) | 1:15:41 | `f26-oral-presentations.md` |
+| L1 | [Introduction (Fall 2026)](https://www.youtube.com/watch?v=j4WSktB5Ni0) | 2:31:25 | [f26-lecture-01-introduction.md](f26-lecture-01-introduction.md) |
+| L3 | [Modern LLM Training and Inference (Fall 2026)](https://www.youtube.com/watch?v=Lp_e8Ts5-nE) | 1:16:37 | [f26-lecture-03-modern-llm-training-inference.md](f26-lecture-03-modern-llm-training-inference.md) |
+| L5 | [Economic Impact of AI (Fall 2026)](https://www.youtube.com/watch?v=iezRKFkyjVY) | 2:25:27 | [f26-lecture-05-economic-impact.md](f26-lecture-05-economic-impact.md) |
+| L8 | [Open Language Models (Nathan Lambert, Fall 2026)](https://www.youtube.com/watch?v=0L-DGRn52Q0) | 1:31:00 | [f26-lecture-08-open-language-models.md](f26-lecture-08-open-language-models.md) |
+| projects | [Oral presentations of student projects (Fall 2026)](https://www.youtube.com/watch?v=Xr9FNl0S66Q) | 1:15:41 | [f26-oral-presentations.md](f26-oral-presentations.md) |
 
 Announced on the Fall 2026 course page but not yet in the playlist:
 Cyber Capabilities (Nicholas Carlini, Anthropic); Recursive
