@@ -127,3 +127,13 @@ phase-in dates, unwritten levels, unpinned versions.
 evidence cells with intervals where they exist (3); cited-vs-actual
 on every row (3); the protocol applied to a real or constructed
 claim with findings (3).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **Safeshield**, [module-11-eu-ai-act](../../courses/safeshield-governance/module-11-eu-ai-act.md) — watch before working the obligation-mapping exercises.
+- **Safeshield**, [module-10-nist-ai-rmf](../../courses/safeshield-governance/module-10-nist-ai-rmf.md) — watch before working the framework-function exercises.
