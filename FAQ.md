@@ -159,3 +159,27 @@ freshness test fails if the committed index.html drifts from a fresh
 build. Regenerate with `uv run python scripts/build_dashboard.py`
 after touching any register — or let the gate teach you (it taught
 this session twice).
+
+## The lecture library (the video-course companions)
+
+**What is `courses/`?** The four external courses the owner selected —
+Harvard CS 2881, the Google DeepMind AGI Safety Course, the CAIS
+Ethics & Society course, and the Safeshield governance series —
+turned into companion notes: a course page with the complete verified
+video index per course, one note per lecture, per-course pedagogy
+analyses, and study plans that schedule the watching against the 24
+chapters.
+
+**Are the notes transcripts?** No. The playlist structures were
+verified (via YouTube's playlist API), the Harvard course pages were
+read in full, and the notes are original explanations of each
+lecture's announced topics and published readings. No video was
+watched; no spoken content is transcribed or quoted anywhere in this
+repository — the same rule the video library has always held. See
+[courses/README.md](courses/README.md) for the full note discipline.
+
+**Where do I start?** The [watch guide](courses/README.md#how-to-watch-the-guide):
+90 minutes (the DeepMind course) before Chapter 01; the alongside
+pass (~4–6 hours across the whole program) paired by chapter; the
+operator pass (12.5 hours, Safeshield) for audit and governance
+routes.
