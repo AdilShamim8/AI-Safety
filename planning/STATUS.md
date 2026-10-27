@@ -295,7 +295,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-128 — glossary batch 2: five terms (GDPval, centaur evaluation, lab-vs-field gap, gradient of release, on-policy distillation) | 1f58a53 (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
 | 3-129 — glossary batch 3: four terms (collective action problem, corrigibility, risk taxonomy, normal accidents) | 9a55e49 (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
 | 3-130 — glossary batch 4: five terms (AIMS, conformity assessment, notified body, RSP, task horizon) | 7f92b2a (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
-| 3-131 — fix-forward for 3-130: CITATION glossary count corrected (296 to 315 terms) across the line wrap | (pending) | test_count_drift red on 3-130; wrap-tolerant regex applied; drift green after |
+| 3-131 — fix-forward for 3-130: CITATION glossary count corrected (296 to 315 terms) across the line wrap | c92a755 (pushed) | test_count_drift red on 3-130; wrap-tolerant regex applied; drift green after |
+| 3-132 — fix-forward for 3-131: phrase-internal wraps now matched generically (verified dataset cards, and every other multi-word pinned phrase) | (pending) | test_count_drift red on 3-131 (cards phrase); generic _phrase_re fix; drift green after |
 
 ## Next exact action
 
