@@ -446,3 +446,17 @@ You have completed this chapter when you can:
 Chapter 02 gates every later chapter: from here on, "we measured X"
 without construct, provenance, denominators, and intervals is treated as
 an error, not a style choice.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-07-lab-vs-field](../../courses/boaz-barak-cs2881/lecture-07-lab-vs-field.md) | Harvard CS 2881 | lab evaluations vs field performance — the chapter's central distinction, taught by METR's own |
+| [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) | DeepMind AGI Safety | what an evaluation can and cannot establish |
+| [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the UK AISI model-hacking report as evaluation-gaming evidence |
