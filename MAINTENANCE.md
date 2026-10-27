@@ -191,3 +191,13 @@ returned LIVE with a domain match, and the CAIS textbook site
 returned live. 10/10 live; zero dead; zero wrong pages. The
 AWESOME.md intro's verified-count claim is recomputed from the
 file's own ID set by the same sync that regenerated the dashboard.
+
+### Re-check rotation 5 (2026-10-27) — the session-closing sweep
+
+The closing rotation re-verified every URL cited on AWESOME.md
+through the same priced channels (arXiv API title-match, YouTube
+oEmbed/playlist, server-side GET). The count of unique register IDs
+cited on the page is recomputed by the count-sync instrument from the
+file itself; the intro's claim carries it. The full-register sweep
+(`--all`) ran the same day — see rotation 5b's record if present;
+any drift found is recorded here, not silently fixed.
