@@ -50,6 +50,37 @@ companion). Their register entries are
 [SRC-CURR-012..013](../research/source-register.yaml), added by the
 units that build each course page.
 
+## How to watch (the guide)
+
+The library is not a fifth course to complete; it is a set of lenses over
+the course you are already taking. Three sane patterns, in order of
+escalation:
+
+1. **The primer pass (about 90 minutes).** Before starting the repo's
+   common methodological spine (Chapters 01–02), watch the Google DeepMind
+   AGI Safety Course straight through. It is the field's own compressed
+   statement of the problem, it requires no mathematics, and it will make
+   every chapter's first section land faster.
+2. **The alongside pass (about 7 hours, spread over the whole course).**
+   Pair each chapter cluster with its matching lectures from the
+   [Harvard CS 2881 playlist](https://www.youtube.com/playlist?list=PL_b4B2IWlal3j01Rbj5ebT663E7x4bl_W)
+   and the [CAIS course](https://www.youtube.com/playlist?list=PLXSn3Zz2ayT7ab7I12PBYVt0244369S1q)
+   — the mapping table in each course page and the "watching companions"
+   block in each chapter README state exactly which lectures pair with
+   which chapters, and why. Watch the lecture *before* the chapter when a
+   topic is new to you; after it, when you want the researcher's vantage.
+3. **The operator pass (about 12.5 hours).** If your target is audit,
+   assurance, or governance work rather than research, run the
+   [Safeshield governance series](https://www.youtube.com/playlist?list=PL70MHvytmJU8zwamiQnweHV0Vj-h0zlOW)
+   alongside Chapters 22–23 and the [audit-only route](../roadmaps/audit-only.md).
+   It is the only layer here that teaches the frameworks as Monday-morning
+   practice rather than as concepts.
+
+One rule holds across all three patterns: **the lectures are primary
+sources, not summaries of this repository**. When a lecturer and a chapter
+disagree, the disagreement is the finding — write it down, price both
+sides, and carry it into the chapter's critique exercise.
+
 ## The note discipline (read this before reading any note)
 
 These companion notes are **original explanations, not transcripts**.

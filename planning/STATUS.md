@@ -169,7 +169,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-03 — fix-forward for 3-02: line-wrapped counts (251 registered sources across a line break) synced; setnum instrument now wrap-tolerant | 19d4396 (pushed) | test_count_drift red on 3-02 caught the wrap; sync reruns wrap-tolerant; drift tests green after |
 | 3-04 — the DeepMind AGI Safety course page; register: playlist (SRC-VIDEO-013), channel (SRC-VIDEO-014) | b4393cd (pushed) | courses/google-deepmind-agi-safety/README.md; +2 register entries; counts synced; dashboard regenerated |
 | 3-05 — the CAIS course page; register: playlist (SRC-VIDEO-015), channel (SRC-VIDEO-016), textbook site (SRC-CURR-013) | f474dd6 (pushed) | courses/cais-ethics-society/README.md; +3 register entries; counts synced; dashboard regenerated |
-| 3-06 — the Safeshield governance series page; register: playlist (SRC-VIDEO-017), channel (SRC-VIDEO-018) | (pending) | courses/safeshield-governance/README.md; +2 register entries; counts synced; dashboard regenerated |
+| 3-06 — the Safeshield governance series page; register: playlist (SRC-VIDEO-017), channel (SRC-VIDEO-018) | 4539730 (pushed) | courses/safeshield-governance/README.md; +2 register entries; counts synced; dashboard regenerated |
+| 3-07 — the how-to-watch guide: primer pass (90 min), alongside pass (7 h), operator pass (12.5 h) | (pending) | courses/README.md watch-guide section; all four course rows now linked |
 
 ## Next exact action
 
