@@ -172,7 +172,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-06 — the Safeshield governance series page; register: playlist (SRC-VIDEO-017), channel (SRC-VIDEO-018) | 4539730 (pushed) | courses/safeshield-governance/README.md; +2 register entries; counts synced; dashboard regenerated |
 | 3-07 — the how-to-watch guide: primer pass (90 min), alongside pass (7 h), operator pass (12.5 h) | 491b338 (pushed) | courses/README.md watch-guide section; all four course rows now linked |
 | 3-08 — the pedagogy synthesis (four knowledge architectures, what the repo adopted from each) + CHANGELOG session-3 opening | 8f10294 (pushed) | courses/how-courses-organize.md; CHANGELOG.md entry; the owner-directed pedagogy analysis |
-| 3-09 — the Lecture 1 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/lecture-01-introduction.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-09 — the Lecture 1 companion note (announced scope, published reading list, core ideas, chapter through-lines) | a824be5 (pushed) | courses/boaz-barak-cs2881/lecture-01-introduction.md; course-page readings reproduced as attribution; register IDs cited where held |
+| 3-10 — the Lecture 2 companion note (announced scope, published reading list, core ideas, chapter through-lines) | (pending) | courses/boaz-barak-cs2881/lecture-02-modern-llm-training.md; course-page readings reproduced as attribution; register IDs cited where held |
 
 ## Next exact action
 
