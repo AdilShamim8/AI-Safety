@@ -107,3 +107,16 @@ Errors found in this repository's own content are fixed in visible commits with 
 reason stated in the message. Errors found in cited sources are recorded in the
 source register's `limitations` field for that source. If you find an error, the
 contribution path is `CONTRIBUTING.md`.
+
+### The lecture library as a method case (2026-10-27)
+
+The four-course build (see
+[courses/how-courses-organize.md](../courses/how-courses-organize.md))
+is itself a worked example of this method: sources registered with
+honest access levels before use; structure verified through the
+platform's own API rather than screenshots; reading lists reproduced
+as attribution, never as content; per-unit commits with committed-
+tree link verification; and pinned counts recomputed from the
+repository's own data — with three fix-forwards (recorded in
+AGENTS.md's session-3 lessons) as the visible cost of learning the
+instruments properly.

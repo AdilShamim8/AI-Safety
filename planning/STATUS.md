@@ -348,7 +348,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-181 — the security route's watching checkpoints | 5ed7cda (pushed) | roadmaps/progress/ai-security-engineering.md |
 | 3-182 — the evaluations route's watching checkpoints | 5a909d9 (pushed) | roadmaps/progress/evaluations-and-assurance.md |
 | 3-183 — the audit route's watching checkpoints | 0a8e6d2 (pushed) | roadmaps/progress/audit-only.md |
-| 3-184 — datasets/README.md: the new-cards section with verification provenance | (pending) | datasets/README.md |
+| 3-184 — datasets/README.md: the new-cards section with verification provenance | 22431a3 (pushed) | datasets/README.md |
+| 3-185 — research-method.md: the four-course build as a method case (register-first, per-unit, fix-forward) | (pending) | research/research-method.md |
 
 ## Next exact action
 
