@@ -362,7 +362,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-194 — committed-tree sweep record (real run over all committed .md files) | 7be66e7 (pushed) | planning/STATUS.md record |
 | 3-195 — CITATION.cff version bump (minor) | bcf6a3f (pushed) | CITATION.cff |
 | 3-196 — CHANGELOG session-3 closure entry | f054155 (pushed) | CHANGELOG.md |
-| 3-197 — rotation 5b record (verify_links --all, real run) | (pending) | MAINTENANCE.md record |
+| 3-197 — rotation 5b record (verify_links --all, real run) | 1744eda (pushed) | MAINTENANCE.md record |
+| 3-198 — STATUS session-3 closure section | (pending) | planning/STATUS.md |
 
 ## Next exact action
 
@@ -493,3 +494,20 @@ remains exposed in chat history and must be rotated by the owner.
 **Session-3 dashboard regeneration (2026-10-27):** index.html regenerated from the registers at closure; commit count, sources, cards, glossary, and tests all current.
 
 **Session-3 committed-tree sweep (2026-10-27):** all 355 committed markdown files swept for local links against HEAD; no dead links.
+
+## Session 3 closed (2026-10-27) — 200/200 units
+
+The lecture-library build is complete: every unit pushed one at a
+time and remote-verified; CI green from unit 3-43 (the batch-linking
+fix) through closure, with the earlier red streak (3-09..3-41)
+preserved in the Actions record and explained in CHANGELOG. Final
+state: 4 course companions · 57 verified videos · 61 notes · 10
+register entries (261 sources total) · 4 dataset cards (47 total) ·
+14 glossary terms (325 total) · 24 chapters + 24 solutions
+integrated · 611 tests · dashboard regenerated through the sync
+instrument at every register-affecting unit.
+
+Next exact action: none — session closed. The next session starts
+from this file's resume protocol as amended by the session-3
+lessons (committed-tree gates, wrap-tolerant sync, per-unit
+generators).
