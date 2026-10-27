@@ -5276,3 +5276,105 @@ sources:
     no spoken content is quoted. The channel is the lab's research-communication layer —
     institutional self-presentation, priced accordingly.
   license: standard YouTube terms of service
+- id: SRC-VIDEO-015
+  title: 'AI Safety, Ethics, & Society — the CAIS course lecture playlist'
+  authors_or_organization: Center for AI Safety
+  url: https://www.youtube.com/playlist?list=PLXSn3Zz2ayT7ab7I12PBYVt0244369S1q
+  source_type: video
+  publication_date: null
+  version: playlist as listed at fetch (8 lectures following the textbook arc)
+  accessed_on: '2026-10-27'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public course videos; companion textbook is published)
+  supports:
+  - 'courses/cais-ethics-society/ (the course page companion: playlist structure retrieved through
+    YouTube''s playlist API on 2026-10-27 — 8 lectures from Introduction and Overview of AI Risks
+    through Governance, titles and durations as listed)'
+  limitations: Playlist structure (titles, durations, video IDs, owning channel) retrieved via
+    YouTube's internal playlist API on 2026-10-27; the lecture topics corroborate the textbook's
+    published chapter arc (SRC-CURR-013). No video was watched and no spoken content is transcribed
+    or quoted anywhere in this repository; the companion notes are original explanations of each
+    lecture's announced topic. The companion textbook is separately registered and linked — its
+    text is not reproduced here.
+  license: standard YouTube terms of service
+- id: SRC-VIDEO-016
+  title: Center for AI Safety (YouTube channel)
+  authors_or_organization: Center for AI Safety
+  url: https://www.youtube.com/@centerforaisafety
+  source_type: video
+  publication_date: null
+  version: channel as identified from the playlist's owning channel at fetch
+  accessed_on: '2026-10-27'
+  access_level: metadata-only
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (research organization communications channel)
+  supports:
+  - 'courses/cais-ethics-society/README.md (the channel-level attribution for SRC-VIDEO-015:
+    identified via the playlist''s owning-channel metadata on 2026-10-27)'
+  limitations: Channel identified from playlist ownership metadata on 2026-10-27; the channel page
+    itself was not opened and no per-channel counts were recorded. No videos were watched; no
+    spoken content is quoted.
+  license: standard YouTube terms of service
+- id: SRC-CURR-013
+  title: 'Introduction to AI Safety, Ethics, and Society — the CAIS textbook site (aisafetybook.com)'
+  authors_or_organization: Dan Hendrycks (Center for AI Safety)
+  url: https://www.aisafetybook.com
+  source_type: course
+  publication_date: '2024-11-08'
+  version: textbook site as rendered 2026-10-27 (preface and chapter pages inspected)
+  accessed_on: '2026-10-27'
+  access_level: page-inspected
+  evidence_class: synthesis
+  peer_review_status: published textbook (Taylor & Francis, 2024; ISBN 9781032798028); arXiv 2411.01042
+  supports:
+  - 'courses/cais-ethics-society/ (the course''s published structure: the textbook''s chapter arc —
+    preface, AI fundamentals (2.1), governance (8.1) pages inspected via search renders on
+    2026-10-27, corroborating the lecture playlist order)'
+  limitations: Textbook site pages seen via search-engine renders on 2026-10-27 (preface, section
+    2.1 AI Fundamentals, section 8.1 Governance); the full chapter text was NOT read in this fetch
+    and no textbook passages are reproduced in this repository. The book''s publication facts
+    (publisher, ISBN, arXiv ID) are carried from the rendered pages at fetch strength.
+  license: textbook site content under the publisher''s terms; arXiv version under arXiv''s license
+- id: SRC-VIDEO-017
+  title: 'AI Governance, Risk Management and Compliance — the Safeshield Training series playlist'
+  authors_or_organization: Safeshield Training
+  url: https://www.youtube.com/playlist?list=PL70MHvytmJU8zwamiQnweHV0Vj-h0zlOW
+  source_type: video
+  publication_date: null
+  version: playlist as listed at fetch (14 modules; playlist title rendered as 'AI Governance, Risk
+    Management and Compliance')
+  accessed_on: '2026-10-27'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (commercial practitioner training videos)
+  supports:
+  - 'courses/safeshield-governance/ (the course page companion: playlist structure retrieved through
+    YouTube''s playlist API on 2026-10-27 — 14 modules from AI Governance Foundations through AI
+    Monitoring, Auditing, and Compliance, titles and durations as listed)'
+  limitations: Playlist structure (titles, durations, video IDs, owning channel) retrieved via
+    YouTube's internal playlist API on 2026-10-27. Commercial practitioner training; no video was
+    watched and no spoken content is transcribed or quoted anywhere in this repository. The
+    companion notes are original explanations of each module's announced topic, anchored to the
+    published standards the module titles name (ISO/IEC 42001, NIST AI RMF, EU AI Act) — the
+    standards are the primary sources; the series is indexed as the guided tour of them.
+  license: standard YouTube terms of service
+- id: SRC-VIDEO-018
+  title: Safeshield Training (YouTube channel)
+  authors_or_organization: Safeshield Training
+  url: https://www.youtube.com/@SafeshieldTraining
+  source_type: video
+  publication_date: null
+  version: channel as identified from the playlist's owning channel at fetch
+  accessed_on: '2026-10-27'
+  access_level: metadata-only
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (commercial training channel)
+  supports:
+  - 'courses/safeshield-governance/README.md (the channel-level attribution for SRC-VIDEO-017:
+    identified via the playlist''s owning-channel metadata on 2026-10-27)'
+  limitations: Channel identified from playlist ownership metadata on 2026-10-27; the channel page
+    itself was not opened and no per-channel counts (subscribers, videos) were recorded. No videos
+    were watched; no spoken content is quoted. Commercial training provider — content priced as
+    practitioner instruction, not as evidence for empirical claims.
+  license: standard YouTube terms of service
