@@ -249,7 +249,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-82 — the watching-companions block for chapter 04: 3 lecture pairings with reasons | ea37fb6 (pushed) | chapters/04-preference-learning-and-post-training/README.md; links to committed course notes only |
 | 3-83 — the watching-companions block for chapter 05: 2 lecture pairings with reasons | a9bfdeb (pushed) | chapters/05-scalable-oversight/README.md; links to committed course notes only |
 | 3-84 — the watching-companions block for chapter 06: 3 lecture pairings with reasons | 2381ee8 (pushed) | chapters/06-honesty-uncertainty-and-selective-prediction/README.md; links to committed course notes only |
-| 3-85 — the watching-companions block for chapter 07: 3 lecture pairings with reasons | (pending) | chapters/07-deception-scheming-and-evaluation-awareness/README.md; links to committed course notes only |
+| 3-85 — the watching-companions block for chapter 07: 3 lecture pairings with reasons | 7d23e60 (pushed) | chapters/07-deception-scheming-and-evaluation-awareness/README.md; links to committed course notes only |
+| 3-86 — the watching-companions block for chapter 08: 2 lecture pairings with reasons | (pending) | chapters/08-ai-control-and-monitoring/README.md; links to committed course notes only |
 
 ## Next exact action
 

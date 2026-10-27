@@ -554,3 +554,16 @@ Chapter 08 sets the terms for every later safety mechanism that *checks* a syste
 from here on, "we monitor it with X" without X's trust assumption, failure
 condition, budget, and adversarial evaluation is treated as an error, not a style
 choice.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [part-02-04-security-and-control](../../courses/google-deepmind-agi-safety/part-02-04-security-and-control.md) | DeepMind AGI Safety | the control paradigm in compressed form |
+| [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the control safety-case sketches on the reading list |
