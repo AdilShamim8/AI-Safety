@@ -58,6 +58,8 @@ decision worth noticing:
 
 ## How the course organizes knowledge
 
+*The deep-dive version of this section is [pedagogy.md](pedagogy.md).*
+
 The textbook-and-lecture pair teaches in **layers of scope** (agent →
 engineering → systems → society), each layer introducing the failure modes
 that only exist at that scale. It is also the only course in this library
