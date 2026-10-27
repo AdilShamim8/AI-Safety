@@ -21,7 +21,7 @@ def test_build_data_counts_match_repo() -> None:
     data = build_dashboard.build_data()
     assert len(data["sources"]) >= 160
     assert len(data["claims"]) >= 150
-    assert len(data["datasets"]) == 43
+    assert len(data["datasets"]) >= 47  # grew with the lecture-library cards (DS-044..047)
     assert len(data["chapters"]) == 24
     assert len(data["projects"]) == 10
     assert all(p["status"] == "implemented" for p in data["projects"])
