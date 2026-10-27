@@ -293,7 +293,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-126 — the Canaries card + catalog entry (DS-047, Stanford lab page verified, no replication files noted) | ef37cce (pushed) | datasets/cards/47-canaries.md; catalog DS-047; counts synced |
 | 3-127 — glossary batch 1: five course-grounded terms (amplified oversight, alignment stress test, model spec, takeoff speed, intelligence explosion types) | 308b505 (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
 | 3-128 — glossary batch 2: five terms (GDPval, centaur evaluation, lab-vs-field gap, gradient of release, on-policy distillation) | 1f58a53 (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
-| 3-129 — glossary batch 3: four terms (collective action problem, corrigibility, risk taxonomy, normal accidents) | (pending) | GLOSSARY.md rows; CITATION glossary count synced |
+| 3-129 — glossary batch 3: four terms (collective action problem, corrigibility, risk taxonomy, normal accidents) | 9a55e49 (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
+| 3-130 — glossary batch 4: five terms (AIMS, conformity assessment, notified body, RSP, task horizon) | (pending) | GLOSSARY.md rows; CITATION glossary count synced |
 
 ## Next exact action
 
