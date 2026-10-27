@@ -33,14 +33,13 @@ build is also navigable as a generated dashboard: **[index.html](index.html)**
 4. **Run it**: `uv sync && uv run pytest` — 611 deterministic tests,
    offline, no GPUs, no API keys.
 5. **Wonder about anything**: [FAQ.md](FAQ.md),
-
+   [AWESOME.md](AWESOME.md) (the annotated source map),
+   [MAINTENANCE.md](MAINTENANCE.md) (how the truth is kept).
 6. **Watch alongside**: the [lecture library](courses/README.md) —
    four courses (Harvard CS 2881, DeepMind's AGI Safety Course, the
    CAIS Ethics & Society course, Safeshield's governance series),
    57 verified videos with 61 companion notes, scheduled against the
    chapters in [courses/study-plans.md](courses/study-plans.md).
-   [AWESOME.md](AWESOME.md) (the annotated source map),
-   [MAINTENANCE.md](MAINTENANCE.md) (how the truth is kept).
 
 ## What this repository is
 
