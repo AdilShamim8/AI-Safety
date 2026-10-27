@@ -196,3 +196,12 @@ without the unseen-attack stratum (which tests the actual claim);
 forgetting that a two-interval verdict is still attack-set-relative —
 the adaptive caveat is not optional boilerplate, it is the claim's
 honest scope.
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) — watch before working the injection exercises.
