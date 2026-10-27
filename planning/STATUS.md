@@ -352,7 +352,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-185 — research-method.md: the four-course build as a method case (register-first, per-unit, fix-forward) | cd2f3eb (pushed) | research/research-method.md |
 | 3-186 — the refreshers' watching-companions note | a17b808 (pushed) | prerequisites/targeted-refreshers.md |
 | 3-187 — MAINTENANCE.md: rotation 5 record (the closing re-verification) | b826e29 (pushed) | MAINTENANCE.md entry |
-| 3-188 — README status line: updated date, 611-test suite, the lecture-library clause | (pending) | README.md; counts re-synced |
+| 3-188 — README status line: updated date, 611-test suite, the lecture-library clause | 710bcbf (pushed) | README.md; counts re-synced |
+| 3-189 — START_HERE: the lecture-library build-state block | (pending) | START_HERE.md |
 
 ## Next exact action
 
