@@ -471,3 +471,16 @@ The next chapter (14 — agents, tools, memory, and MCP security,
 planned) extends the trust-boundary discipline to systems where the
 model acts across time: capability-based access, delegation, and
 isolation.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | prompt injection as the era's SQL injection; defense in depth |
+| [lecture-05-experiment-policy-compliance](../../courses/boaz-barak-cs2881/lecture-05-experiment-policy-compliance.md) | Harvard CS 2881 | does the policy layer hold under adversarial pressure? |
