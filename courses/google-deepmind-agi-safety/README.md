@@ -44,12 +44,12 @@ matters.
 
 | Video | Length | Companion note |
 |---|---|---|
-| [Part 0: Introduction](https://www.youtube.com/watch?v=F_q9XsN54c4) | 3:40 | `part-00-introduction.md` |
-| [Part 1: 1. We are on a path to superhuman capabilities](https://www.youtube.com/watch?v=EnxCLOoO3XY) | 4:24 | `part-01-01-path-to-superhuman.md` |
-| [Part 1: 2. Risks from deliberate planning and instrumental subgoals](https://www.youtube.com/watch?v=DKAS2V-kbhI) | 6:41 | `part-01-02-deliberate-planning.md` |
-| [Part 1: 3. Exercise 1: Instrumental subgoals](https://www.youtube.com/watch?v=fynl-QPNAhE) | 2:44 | `part-01-03-exercise-instrumental-subgoals.md` |
-| [Part 1: 4. Where can misaligned goals come from?](https://www.youtube.com/watch?v=KKMETIVEzXA) | 9:00 | `part-01-04-misaligned-goals.md` |
-| [Part 1: 5. Exercise 2: Classification quiz for alignment failures](https://www.youtube.com/watch?v=h95RgGPs-ss) | 2:25 | `part-01-05-exercise-classification.md` |
+| [Part 0: Introduction](https://www.youtube.com/watch?v=F_q9XsN54c4) | 3:40 | [part-00-introduction.md](part-00-introduction.md) |
+| [Part 1: 1. We are on a path to superhuman capabilities](https://www.youtube.com/watch?v=EnxCLOoO3XY) | 4:24 | [part-01-01-path-to-superhuman.md](part-01-01-path-to-superhuman.md) |
+| [Part 1: 2. Risks from deliberate planning and instrumental subgoals](https://www.youtube.com/watch?v=DKAS2V-kbhI) | 6:41 | [part-01-02-deliberate-planning.md](part-01-02-deliberate-planning.md) |
+| [Part 1: 3. Exercise 1: Instrumental subgoals](https://www.youtube.com/watch?v=fynl-QPNAhE) | 2:44 | [part-01-03-exercise-instrumental-subgoals.md](part-01-03-exercise-instrumental-subgoals.md) |
+| [Part 1: 4. Where can misaligned goals come from?](https://www.youtube.com/watch?v=KKMETIVEzXA) | 9:00 | [part-01-04-misaligned-goals.md](part-01-04-misaligned-goals.md) |
+| [Part 1: 5. Exercise 2: Classification quiz for alignment failures](https://www.youtube.com/watch?v=h95RgGPs-ss) | 2:25 | [part-01-05-exercise-classification.md](part-01-05-exercise-classification.md) |
 | [Part 2: 1. Alignment approach](https://www.youtube.com/watch?v=RGh8wP9PjJw) | 3:44 | `part-02-01-alignment-approach.md` |
 | [Part 2: 2. Amplified oversight](https://www.youtube.com/watch?v=E9nBGNi6jQA) | 6:18 | `part-02-02-amplified-oversight.md` |
 | [Part 2: 3. Robust training & monitoring](https://www.youtube.com/watch?v=xhXYgIWFGkc) | 6:07 | `part-02-03-robust-training-monitoring.md` |
