@@ -540,3 +540,16 @@ Chapter 11 closes the interpretability arc's intervention leg: from here on,
 "we steered behavior with a direction" without its five assumptions, its
 controls, its three ledgers, and its stated transfer limits is treated as an
 error, not a style choice.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | steering from representation-level signals; evaluation-aware models |
+| [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | interpretability turned into monitoring and control |
