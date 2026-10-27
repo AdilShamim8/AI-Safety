@@ -87,6 +87,17 @@ curriculum, that is schedule C, and its 350–500 h estimate is for a learner
 already past the prerequisites — add refresher hours on top if the diagnostic
 found gaps.
 
+## The video layer (added 2026-10-27)
+
+Every schedule above can carry the [lecture library](../courses/README.md)
+without changing its hour budget by cutting the equivalent reading
+time; the recommended integration is the primer pass (85 minutes,
+DeepMind course, before week 1) plus the alongside pass (one or two
+lectures per chapter-cluster, ~4–6 hours total across the program).
+The Safeshield operator pass (12.5 hours) is best added only on the
+audit and assurance routes, replacing equivalent reading. The full
+pairing tables live in [courses/study-plans.md](../courses/study-plans.md).
+
 ## Where schedules meet careers
 
 Every schedule ends somewhere; [careers-index.md](careers-index.md)

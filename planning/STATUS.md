@@ -273,7 +273,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-106 — alignment-research.md: the lecture-library pairing block | 2246e97 (pushed) | roadmaps/alignment-research.md section |
 | 3-107 — ai-security-engineering.md: the lecture-library pairing block | f3f3e34 (pushed) | roadmaps/ai-security-engineering.md section |
 | 3-108 — evaluations-and-assurance.md: the lecture-library pairing block | 75e268a (pushed) | roadmaps/evaluations-and-assurance.md section |
-| 3-109 — audit-only.md: the lecture-library pairing block (Safeshield as second spine) | (pending) | roadmaps/audit-only.md section |
+| 3-109 — audit-only.md: the lecture-library pairing block (Safeshield as second spine) | 2cded54 (pushed) | roadmaps/audit-only.md section |
+| 3-110 — study-schedules.md: the video-layer integration rules | (pending) | roadmaps/study-schedules.md section |
 
 ## Next exact action
 
