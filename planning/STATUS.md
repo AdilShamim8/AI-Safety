@@ -331,7 +331,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-164 — the DeepMind companion-set completion section | c207112 (pushed) | courses/google-deepmind-agi-safety/README.md |
 | 3-165 — the CAIS companion-set completion section | f610312 (pushed) | courses/cais-ethics-society/README.md |
 | 3-166 — the Safeshield companion-set completion section (with crosswalk links) | eceead0 (pushed) | courses/safeshield-governance/README.md |
-| 3-167 — the library's final state section (counts, tests, rotation record) | (pending) | courses/README.md |
+| 3-167 — the library's final state section (counts, tests, rotation record) | bce3906 (pushed) | courses/README.md |
+| 3-168 — the worked answers for the course's two checkpoint exercises (our answers, grounded in the repo's literature) | (pending) | courses/google-deepmind-agi-safety/exercises-worked.md |
 
 ## Next exact action
 
