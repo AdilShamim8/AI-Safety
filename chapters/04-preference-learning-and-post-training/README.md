@@ -265,3 +265,17 @@ You have completed this chapter when you can:
 | Δ_w, Δ_l | log-ratios log(π_θ(y_w\|x)/π_ref(y_w\|x)), likewise y_l | §4.1 |
 | ẑ | DPO margin β(Δ_w − Δ_l): the implicit reward difference | §4.1 |
 | p̂, n, z | observed rate, denominator, normal quantile (Wilson, Ch. 02) | §4.2 |
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-02-modern-llm-training](../../courses/boaz-barak-cs2881/lecture-02-modern-llm-training.md) | Harvard CS 2881 | the full training stack with safety at every stage |
+| [f26-lecture-03-modern-llm-training-inference](../../courses/boaz-barak-cs2881/f26-lecture-03-modern-llm-training-inference.md) | Harvard CS 2881 | the 2026 refresh: RLVR, reasoning models, on-policy distillation as the transfer vehicle |
+| [part-02-01-alignment-approach](../../courses/google-deepmind-agi-safety/part-02-01-alignment-approach.md) | DeepMind AGI Safety | what 'aligned' can operationally mean |
