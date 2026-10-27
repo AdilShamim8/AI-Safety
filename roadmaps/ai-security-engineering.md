@@ -68,6 +68,17 @@ synthetic targets only** (see [RESPONSIBLE_RESEARCH.md](../RESPONSIBLE_RESEARCH.
 4. **A remediation report:** what was found, what was fixed, what residual
    risk remains, with evidence for each claim.
 
+### The lecture-library pairing
+
+This route's chapters pair with the video layer as follows (full
+mapping in [courses/study-plans.md](../courses/study-plans.md) and
+each chapter's watching-companions block):
+- CS 2881's robustness lecture (Carlini and Warr as guests) with the
+  adversarial and application-security chapters (Ch. 12–15).
+- The DeepMind design-patterns video with agent security (Ch. 14).
+- The Safeshield privacy and lifecycle modules with the deployment
+  chapters (Ch. 16–17).
+
 ## Pitfalls this route is designed to prevent
 
 - Treating all attacks as equivalent (Ch.12 separates threat models:
