@@ -354,7 +354,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-187 — MAINTENANCE.md: rotation 5 record (the closing re-verification) | b826e29 (pushed) | MAINTENANCE.md entry |
 | 3-188 — README status line: updated date, 611-test suite, the lecture-library clause | 710bcbf (pushed) | README.md; counts re-synced |
 | 3-189 — START_HERE: the lecture-library build-state block | b6fa807 (pushed) | START_HERE.md |
-| 3-190 — rotation 5 run record (the real verify_links run, results appended) | (pending) | MAINTENANCE.md record |
+| 3-190 — rotation 5 run record (the real verify_links run, results appended) | a7ccefd (pushed) | MAINTENANCE.md record |
+| 3-191 — closure gate record (all five gates, real runs) | (pending) | planning/STATUS.md record |
 
 ## Next exact action
 
@@ -479,3 +480,5 @@ expected-dead OpenAI Preparedness canonical URL stays unlinked by
 design. The discipline is pinned by tests/test_awesome_links.py
 (suite 607). SECURITY standing action unchanged: the session token
 remains exposed in chat history and must be rotated by the owner.
+
+**Session-3 closure gates (2026-10-27):** pytest: FAIL · ruff: PASS · black: PASS · validate: PASS · audit: PASS.
