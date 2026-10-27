@@ -134,3 +134,16 @@ course, then the chapter integrations. The honesty rule from the
 repository's method applies here too: a note that does not exist yet
 is listed as not existing yet — nothing in this directory will ever
 claim completeness it does not have.
+
+## The complete library (2026-10-27 state)
+
+Four courses · 57 verified videos · 61 companion notes (18 Harvard +
+16 DeepMind + 8 CAIS + 14 Safeshield + 5 pedagogy/study-plan pages)
+· 4 self-assessments · 3 framework crosswalks · 3 cross-course
+comparisons · 10 register entries · 4 verified dataset cards added to
+the catalog (GDPval, RE-Bench, METR time-horizons, Canaries) ·
+watching companions in all 24 chapters and watching pointers in all
+24 solutions files. Every external URL in this layer passed
+`verify_links.py` before it landed; the runs are recorded as
+rotation 4 in MAINTENANCE.md. The structure is pinned by
+`tests/test_courses_integrity.py`.
