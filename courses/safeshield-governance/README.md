@@ -50,7 +50,7 @@ professional curriculum in about 12.5 hours.
 | [Privacy and Data Protection in AI Systems](https://www.youtube.com/watch?v=3vgHshL9m94) | 49:32 | [module-06-privacy-data-protection.md](module-06-privacy-data-protection.md) |
 | [Safety, Security, and Resilience in AI Systems](https://www.youtube.com/watch?v=EEdL-HSvHkk) | 40:49 | [module-07-safety-security-resilience.md](module-07-safety-security-resilience.md) |
 | [AI Risk Management](https://www.youtube.com/watch?v=iIsfDIQ8Vt0) | 49:37 | [module-08-risk-management.md](module-08-risk-management.md) |
-| [ISO/IEC 42001 — AIMS Implementation and Audit](https://www.youtube.com/watch?v=8UBlTZRYBmQ) | 55:03 | `module-09-iso-42001.md` |
+| [ISO/IEC 42001 — AIMS Implementation and Audit](https://www.youtube.com/watch?v=8UBlTZRYBmQ) | 55:03 | [module-09-iso-42001.md](module-09-iso-42001.md) |
 | [The NIST AI Risk Management Framework (NIST AI RMF)](https://www.youtube.com/watch?v=rbFt34UmngY) | 58:42 | `module-10-nist-ai-rmf.md` |
 | [Overview of the European Union AI Act (EU AI Act)](https://www.youtube.com/watch?v=h45xol68U1M) | 52:20 | `module-11-eu-ai-act.md` |
 | [AI System Lifecycle Governance](https://www.youtube.com/watch?v=X3LPcQzCSpo) | 50:38 | `module-12-lifecycle-governance.md` |

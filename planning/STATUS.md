@@ -222,7 +222,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-56 — the Module 5 companion note | e31bd84 (pushed) | courses/safeshield-governance/module-05-fairness-non-discrimination.md; note row linked per unit by the driver |
 | 3-57 — the Module 6 companion note | 03925bc (pushed) | courses/safeshield-governance/module-06-privacy-data-protection.md; note row linked per unit by the driver |
 | 3-58 — the Module 7 companion note | 0821a89 (pushed) | courses/safeshield-governance/module-07-safety-security-resilience.md; note row linked per unit by the driver |
-| 3-59 — the Module 8 companion note | (pending) | courses/safeshield-governance/module-08-risk-management.md; note row linked per unit by the driver |
+| 3-59 — the Module 8 companion note | fdb0bb3 (pushed) | courses/safeshield-governance/module-08-risk-management.md; note row linked per unit by the driver |
+| 3-60 — the Module 9 companion note | (pending) | courses/safeshield-governance/module-09-iso-42001.md; note row linked per unit by the driver |
 
 ## Next exact action
 
