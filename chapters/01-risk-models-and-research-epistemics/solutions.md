@@ -143,3 +143,12 @@ denominator that includes the unaffected strata; a *baseline* from before
 the worry's mechanism existed; at least one leading weakening observation;
 uncertainty kinds separated with reduction plans; explicit statement that
 intervention design is out of scope for the artifact.
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-01-01-path-to-superhuman](../../courses/google-deepmind-agi-safety/part-01-01-path-to-superhuman.md) — watch before working the threat-hypothesis exercises.
