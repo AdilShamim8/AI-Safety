@@ -300,7 +300,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-133 — the applied fix: the generic _phrase_re sync (spaces become \s+) ran and corrected the wrapped cards phrase; 3-132 landed the intent, this lands the bytes | a8997fb (pushed) | test_count_drift green after this unit; driver sync generic |
 | 3-134 — fix-forward: the structure-table cards phrase includes real-world; the sync now covers the variant on every pinned surface | bb95500 (pushed) | test_count_drift green after; all cards mentions agree at 47 |
 | 3-135 — the watching-pointer block for chapter 01's solutions: 1 pre-exercise viewing(s) | 3210629 (pushed) | chapters/01-risk-models-and-research-epistemics/solutions.md; links to committed course notes only |
-| 3-136 — the watching-pointer block for chapter 02's solutions: 2 pre-exercise viewing(s) | (pending) | chapters/02-evaluation-science-and-experimental-design/solutions.md; links to committed course notes only |
+| 3-136 — the watching-pointer block for chapter 02's solutions: 2 pre-exercise viewing(s) | 510a524 (pushed) | chapters/02-evaluation-science-and-experimental-design/solutions.md; links to committed course notes only |
+| 3-137 — the watching-pointer block for chapter 03's solutions: 2 pre-exercise viewing(s) | (pending) | chapters/03-specification-reward-hacking-and-goal-misgeneralization/solutions.md; links to committed course notes only |
 
 ## Next exact action
 

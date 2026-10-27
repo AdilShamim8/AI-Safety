@@ -507,3 +507,13 @@ passing α stays safe outside the tested region.
   §4's blindness legible is then missing.
 - A claim with no region sentence: every gate verdict silently read as
   "safe at all pressures and distributions."
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-01-04-misaligned-goals](../../courses/google-deepmind-agi-safety/part-01-04-misaligned-goals.md) — watch before working the specification-gaming exercises.
+- **CS 2881**, [lecture-04-model-specifications](../../courses/boaz-barak-cs2881/lecture-04-model-specifications.md) — watch before working the spec-drafting exercise.
