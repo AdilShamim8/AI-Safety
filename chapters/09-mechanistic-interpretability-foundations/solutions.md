@@ -293,3 +293,12 @@ unmeasurable inside this design.
 | Off-distribution | Paraphrase + cross-type transfer AND α-sweep with collateral ledger |
 | Claim discipline | The model claim sentence is fully fenced (model, prompts, corruption, intervals, transfer limits) |
 | Self-critique | Two *protocol-level* misleading modes, not generic "could be wrong" |
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) — watch before working the residual-stream exercises.
