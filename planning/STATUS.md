@@ -316,7 +316,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-149 — the watching-pointer block for chapter 15's solutions: 1 pre-exercise viewing(s) | ecfc24d (pushed) | chapters/15-red-teaming-and-adversarial-evaluation/solutions.md; links to committed course notes only |
 | 3-150 — the watching-pointer block for chapter 16's solutions: 1 pre-exercise viewing(s) | 061fa16 (pushed) | chapters/16-privacy-provenance-and-supply-chains/solutions.md; links to committed course notes only |
 | 3-151 — the watching-pointer block for chapter 17's solutions: 1 pre-exercise viewing(s) | ba48366 (pushed) | chapters/17-distribution-shift-and-deployment-reliability/solutions.md; links to committed course notes only |
-| 3-152 — the watching-pointer block for chapter 18's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/18-reasoning-faithfulness-and-monitorability/solutions.md; links to committed course notes only |
+| 3-152 — the watching-pointer block for chapter 18's solutions: 1 pre-exercise viewing(s) | aa47515 (pushed) | chapters/18-reasoning-faithfulness-and-monitorability/solutions.md; links to committed course notes only |
+| 3-153 — the watching-pointer block for chapter 19's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/19-multimodal-and-embodied-safety/solutions.md; links to committed course notes only |
 
 ## Next exact action
 

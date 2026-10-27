@@ -139,3 +139,12 @@ unsupportable.
 **Rubric.** Both category errors with their source attributions (4);
 the static-vs-adaptive and universal-transfer pricing of "99%" (3);
 the five-arm audit with adaptive re-attack and paired statistics (3).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CAIS course**, [lecture-02-ai-fundamentals](../../courses/cais-ethics-society/lecture-02-ai-fundamentals.md) — watch before working the brittleness exercises.
