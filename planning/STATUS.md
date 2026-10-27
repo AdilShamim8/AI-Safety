@@ -365,7 +365,7 @@ per commit, pushed and remote-verified one at a time.
 | 3-197 — rotation 5b record (verify_links --all, real run) | 1744eda (pushed) | MAINTENANCE.md record |
 | 3-198 — STATUS session-3 closure section | e607f3d (pushed) | planning/STATUS.md |
 | 3-199 — final remote-state verification record | 32aba27 (pushed) | planning/STATUS.md record |
-| 3-200 — the closing entry (200/200; the append-only record complete) | (pending) | CHANGELOG.md |
+| 3-200 — the closing entry (200/200; the append-only record complete) | 5e3f6c8c15 (pushed) | CHANGELOG.md |
 
 ## Next exact action
 
