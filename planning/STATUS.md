@@ -198,7 +198,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-32 — the Part 1.5 companion note | 27b6afa (pushed) | courses/google-deepmind-agi-safety/part-01-05-exercise-classification.md |
 | 3-33 — the Part 2.1 companion note | 1dde27e (pushed) | courses/google-deepmind-agi-safety/part-02-01-alignment-approach.md |
 | 3-34 — the Part 2.2 companion note | 2f4d769 (pushed) | courses/google-deepmind-agi-safety/part-02-02-amplified-oversight.md |
-| 3-35 — the Part 2.3 companion note | (pending) | courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md |
+| 3-35 — the Part 2.3 companion note | 9034ec2 (pushed) | courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md |
+| 3-36 — the Part 2.4 companion note | (pending) | courses/google-deepmind-agi-safety/part-02-04-security-and-control.md |
 
 ## Next exact action
 
