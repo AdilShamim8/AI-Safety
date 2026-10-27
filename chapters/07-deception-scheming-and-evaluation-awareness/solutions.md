@@ -357,3 +357,13 @@ statement running the [CLM-0040] caveat in both directions.
   scorer) — the audit-is-a-signal failure is adversarial, not statistical.
 - A one-sentence scope statement — §6 requires the list of what was
   probed; anything shorter is marketing.
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) — watch before working the scheming-evidence exercises.
+- **CS 2881**, [lecture-08-experiment-under-pressure](../../courses/boaz-barak-cs2881/lecture-08-experiment-under-pressure.md) — watch before working the elicitation-design exercise.
