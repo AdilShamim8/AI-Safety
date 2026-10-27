@@ -7,6 +7,34 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The lecture library (2026-10-27)
+
+- Opened `courses/` — the video-course companions layer for the four
+  courses the owner selected: Harvard CS 2881 (Boaz Barak), the Google
+  DeepMind AGI Safety Course, the Center for AI Safety's AI Safety,
+  Ethics & Society course, and Safeshield Training's AI Governance
+  series. Each course now has a course page with its complete verified
+  video index (57 videos across the four playlists, retrieved through
+  YouTube's playlist API on 2026-10-27), its announced structure and
+  guest lecturers, and a mapping table to the 24 chapters.
+- Ten new register entries (SRC-VIDEO-011..018, SRC-CURR-012..013)
+  document exactly what was verified and how: playlist structures via
+  the API, the Harvard course pages read in full (both iterations,
+  including every lecture's reading list and student experiment), the
+  CAIS textbook site inspected. No video was watched and no spoken
+  content is transcribed or quoted — the companion-note discipline is
+  the same one the video library has held since it opened.
+- `courses/how-courses-organize.md` records the cross-course pedagogy
+  analysis the owner asked for: how each course gathers, organizes, and
+  manages knowledge, and what this repository adopted from each
+  architecture.
+- The count-sync instrument is now wrap-tolerant: unit 3-02's sync left
+  the README's line-wrapped status line saying 251 registered sources
+  where the register held 254, `test_count_drift` caught it red in CI,
+  and unit 3-03's fix-forward corrects both the count and the
+  instrument (the `setnum` helper preserves the original line wrapping
+  while updating the digits).
+
 ### The link layer (2026-10-25)
 
 - `AWESOME.md` entries now carry their live links — 94 external
