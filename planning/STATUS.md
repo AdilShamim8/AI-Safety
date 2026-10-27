@@ -164,7 +164,8 @@ per commit, pushed and remote-verified one at a time.
 
 | Unit | Commit | Evidence |
 |---|---|---|
-| 3-01 — the lecture-library index: four courses, method, note discipline, chapter mapping | (pending) | courses/README.md; playlist structure verified via YouTube API 2026-10-27; Harvard course page read in full |
+| 3-01 — the lecture-library index: four courses, method, note discipline, chapter mapping | bf2c588 (pushed) | courses/README.md; playlist structure verified via YouTube API 2026-10-27; Harvard course page read in full |
+| 3-02 — the CS 2881 course page; register: playlist (SRC-VIDEO-011), channel (SRC-VIDEO-012), course pages (SRC-CURR-012, full-text-read) | (pending) | courses/boaz-barak-cs2881/README.md; +3 register entries; counts synced; dashboard regenerated |
 
 ## Next exact action
 

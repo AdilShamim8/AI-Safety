@@ -31,7 +31,7 @@ priced as one in the notes.
 
 | Course | What it is | Videos | Companion |
 |---|---|---|---|
-| [Harvard CS 2881 — AI Safety](https://www.youtube.com/playlist?list=PL_b4B2IWlal3j01Rbj5ebT663E7x4bl_W) (Boaz Barak) | Graduate research seminar; measurement and scale as the two organizing axes; student experiments presented in every lecture | 19 | `boaz-barak-cs2881/` |
+| [Harvard CS 2881 — AI Safety](https://www.youtube.com/playlist?list=PL_b4B2IWlal3j01Rbj5ebT663E7x4bl_W) (Boaz Barak) | Graduate research seminar; measurement and scale as the two organizing axes; student experiments presented in every lecture | 19 | [boaz-barak-cs2881/](boaz-barak-cs2881/) |
 | [Google DeepMind AGI Safety Course](https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW) | The frontier lab's own ~90-minute statement of the alignment problem and its candidate answers, in three parts with exercises | 16 | `google-deepmind-agi-safety/` |
 | [AI Safety, Ethics, & Society](https://www.youtube.com/playlist?list=PLXSn3Zz2ayT7ab7I12PBYVt0244369S1q) (Center for AI Safety) | The non-technical university course: risks, fundamentals, single-agent safety, safety engineering, complex systems, ethics, collective action, governance | 8 | `cais-ethics-society/` |
 | [AI Governance series](https://www.youtube.com/playlist?list=PL70MHvytmJU8zwamiQnweHV0Vj-h0zlOW) (Safeshield Training) | Practitioner training in the governance layer: principles, risk management, ISO/IEC 42001, NIST AI RMF, the EU AI Act, audit practice | 14 | `safeshield-governance/` |

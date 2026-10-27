@@ -5167,3 +5167,69 @@ sources:
     consensus curriculum; priced as practitioner guidance.
   license: Alignment Forum post under the author's chosen license; companion pages under the
     author's stated terms; no open license observed at fetch
+- id: SRC-VIDEO-011
+  title: 'AI Safety — the CS 2881 lecture playlist (Harvard, Boaz Barak)'
+  authors_or_organization: Boaz Barak (Harvard University)
+  url: https://www.youtube.com/playlist?list=PL_b4B2IWlal3j01Rbj5ebT663E7x4bl_W
+  source_type: video
+  publication_date: null
+  version: playlist as listed at fetch (19 videos across the Fall 2025 and Fall 2026 iterations)
+  accessed_on: '2026-10-27'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public university course recordings)
+  supports:
+  - 'courses/boaz-barak-cs2881/ (the course page companion: playlist structure retrieved through
+    YouTube''s playlist API on 2026-10-27 — 19 videos, titles and durations as listed, owning
+    channel verified)'
+  limitations: Playlist structure (titles, durations, video IDs, owning channel) retrieved via
+    YouTube's internal playlist API on 2026-10-27; the course's own schedule pages (SRC-CURR-012)
+    were read in full the same day and corroborate the lecture topics, guest lecturers, and student
+    experiments. No video was watched and no spoken content is transcribed or quoted anywhere in
+    this repository; the companion notes are original explanations of each lecture's announced
+    topics and published readings, never presented as transcripts. View counts are perishable
+    display values, not recorded here.
+  license: standard YouTube terms of service; lecture recordings published by the course
+- id: SRC-VIDEO-012
+  title: Boaz Barak (YouTube channel)
+  authors_or_organization: Boaz Barak
+  url: https://www.youtube.com/@boazbarak2878
+  source_type: video
+  publication_date: null
+  version: channel as identified from the playlist's owning channel at fetch
+  accessed_on: '2026-10-27'
+  access_level: metadata-only
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (public educational channel)
+  supports:
+  - 'courses/boaz-barak-cs2881/README.md (the channel-level attribution for SRC-VIDEO-011: identified
+    via the playlist''s owning-channel metadata and the videos'' oEmbed author field on 2026-10-27)'
+  limitations: Channel identified from playlist ownership metadata and oEmbed author URLs on
+    2026-10-27; the channel page itself was not opened and no per-channel counts (subscribers,
+    videos) were recorded. No videos were watched; no spoken content is quoted. Instructor
+    biography carried at course-page strength from SRC-CURR-012, not from the channel page.
+  license: standard YouTube terms of service; no Creative Commons license displayed at channel level
+- id: SRC-CURR-012
+  title: 'Harvard CS 2881 / CS 2881R — AI Safety course pages (Fall 2026 schedule and Fall 2025 archive)'
+  authors_or_organization: Boaz Barak (Harvard University)
+  url: https://boazbk.github.io/mltheoryseminar
+  source_type: course
+  publication_date: null
+  version: pages as served on 2026-10-27 (Fall 2026 schedule through December 3; Fall 2025 archive complete)
+  accessed_on: '2026-10-27'
+  access_level: full-text-read
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (university course page)
+  supports:
+  - 'courses/boaz-barak-cs2881/ (the course''s own structure: lecture schedule, guest lecturers,
+    required and optional readings, student experiment descriptions, mini-syllabus, prerequisites,
+    and the conflict-of-interest note — read in full across both the Fall 2026 page and the Fall
+    2025 archive)'
+  limitations: Both schedule pages read end-to-end on 2026-10-27, including every lecture's reading
+    list and experiment description; the linked reading materials themselves were NOT read in this
+    fetch (they are cited in the companion notes only where this repository already registers
+    them, or attributed to the course page otherwise). Fall 2026 lectures after October 22 were
+    read as announcements, not as delivered lectures — recordings had not published at fetch time.
+    The course's Perusall forum, Canvas, and Homework Zero repository are registration-gated and
+    were not accessed.
+  license: public course page (GitHub Pages); readings linked from it remain under their own terms
