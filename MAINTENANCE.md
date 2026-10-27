@@ -219,3 +219,16 @@ expected-dead URL (OpenAI Preparedness canonical 404) passes on its
 recorded death. Results recorded below at run time.
 
 **Run record:** exit 0; report tail: `261/261 live; 0 hard failures`.
+
+### Re-check rotation 6 (2026-10-27) — the final double-check sweep
+
+The user's closing request ("double-check everything") earned a sixth
+full-register pass after the beginner-organization fixes landed:
+`verify_links.py --all` over all 261 sources, exit 0. The YouTube
+channel pages (SRC-VIDEO-013..018) report LIVE-NO-TITLE as in every
+rotation — JS-rendered pages the register corroborates at page level;
+the standing bot-blocked hosts behave identically to rotation 5b; the
+one expected-dead URL passes on its recorded death. No register URL
+changed state between the session-closing sweep and this one.
+
+**Run record:** exit 0; report tail: `261/261 live; 0 hard failures`.
