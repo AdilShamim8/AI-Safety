@@ -98,3 +98,12 @@ Do it just-in-time, not all upfront: run R3 before chapter 02, R4 before
 chapter 03, and so on, per the skip guidance in
 [diagnostic.md](diagnostic.md). Each refresher's "check you're ready" is the
 actual re-test — if you can pass it, stop; do not gold-plate.
+
+## Watching companions for the refreshers
+
+The lecture library's accessible layer can substitute for a refresher
+session when reading stamina runs out: the CAIS fundamentals lecture
+(52 minutes, no math) covers the same ground as R2's model-behavior
+refresher in a different register, and the DeepMind course's Part 1
+makes a good pre-diagnostic warm-up. Watch, then return to the
+written refresher — the diagnostic still requires the written form.

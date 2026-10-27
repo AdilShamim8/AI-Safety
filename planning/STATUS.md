@@ -349,7 +349,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-182 — the evaluations route's watching checkpoints | 5a909d9 (pushed) | roadmaps/progress/evaluations-and-assurance.md |
 | 3-183 — the audit route's watching checkpoints | 0a8e6d2 (pushed) | roadmaps/progress/audit-only.md |
 | 3-184 — datasets/README.md: the new-cards section with verification provenance | 22431a3 (pushed) | datasets/README.md |
-| 3-185 — research-method.md: the four-course build as a method case (register-first, per-unit, fix-forward) | (pending) | research/research-method.md |
+| 3-185 — research-method.md: the four-course build as a method case (register-first, per-unit, fix-forward) | cd2f3eb (pushed) | research/research-method.md |
+| 3-186 — the refreshers' watching-companions note | (pending) | prerequisites/targeted-refreshers.md |
 
 ## Next exact action
 
