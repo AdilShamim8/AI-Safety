@@ -301,3 +301,12 @@ direction). The asymmetry is deliberate and stated.
 | Ledgers | Four ledgers incl. tool-behavior; intervals + z-tests + controls throughout |
 | Frontier rule | Smallest-α-meeting-G1-with-G2/G3; explicit no-satisfying-α outcome path |
 | Dual-use | Names ablation as the mirrored hazard; states what is not published |
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) — watch before working the steering exercises.
