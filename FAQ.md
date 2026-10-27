@@ -59,7 +59,7 @@ are dated snapshots: re-verify before you rely on them — that is not a
 disclaimer, it is the method.
 
 **Where do the datasets come from? Are they included?**
-22 real-world safety datasets, each with a deep card
+47 real-world safety datasets, each with a deep card
 ([datasets/catalog.yaml](datasets/catalog.yaml)): composition facts
 traced to the URLs they were collected from, licenses as observed,
 contamination status. The repository **never redistributes dataset
@@ -136,7 +136,7 @@ nine chapters silently had zero note companions until the widget
 surfaced it (fixed the same day). If a bar drops to zero again,
 that is a regression — which is the point of rendering it.
 
-**Why 43 dataset cards and not 43 downloads?**
+**Why 47 dataset cards and not 47 downloads?**
 Because the catalog is a *verification* instrument, not a mirror:
 every card records where each fact was collected, at what access
 level, on what date — and the redistribution policy is "never."
