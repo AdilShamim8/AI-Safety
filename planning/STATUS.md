@@ -337,7 +337,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-170 — the DeepMind course × chapter crosswalk table | a904692 (pushed) | courses/google-deepmind-agi-safety/reading-map.md |
 | 3-171 — the CAIS course × chapter crosswalk | 05d5e59 (pushed) | courses/cais-ethics-society/reading-map.md |
 | 3-172 — the Safeshield series × chapter crosswalk | 55d6cd3 (pushed) | courses/safeshield-governance/reading-map.md |
-| 3-173 — the honesty ledger (no videos watched, no transcripts, perishable structure, unverified reading URLs) | (pending) | courses/honesty-ledger.md |
+| 3-173 — the honesty ledger (no videos watched, no transcripts, perishable structure, unverified reading URLs) | 5646e0d (pushed) | courses/honesty-ledger.md |
+| 3-174 — FAQ: the lecture-note contribution entry | (pending) | FAQ.md |
 
 ## Next exact action
 

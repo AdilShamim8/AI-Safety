@@ -183,3 +183,17 @@ repository — the same rule the video library has always held. See
 pass (~4–6 hours across the whole program) paired by chapter; the
 operator pass (12.5 hours, Safeshield) for audit and governance
 routes.
+
+**Can I contribute a lecture note?** Yes — follow
+[CONTRIBUTING.md](CONTRIBUTING.md)'s lecture-library section: register
+the source first, verify its URL through the link instrument, write
+an original companion to the announced scope, and link the course
+README's row in the same commit that adds the note. Never transcribe
+or quote spoken content; never reproduce textbook text.
+
+**Why do some counts in the README keep changing?** Because
+the repository recomputes them from its own data — the registers, the
+catalog, the test suite — and fails loudly (via the count-drift
+tests) whenever a pinned surface drifts. If you see numbers move
+after a pull, the instruments are working; the CHANGELOG records
+what moved and why.
