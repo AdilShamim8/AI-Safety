@@ -103,3 +103,12 @@ audit it in ten minutes?
 No cert-mill claims: the checkbox trail is the portfolio. The market
 snapshot in the [careers index](../careers-index.md) is dated —
 re-check the primary sources before quoting them in an interview.
+
+### Watching checkpoints (security route)
+
+- [ ] Primer: DeepMind course end-to-end (85 min) — before Ch. 01
+- [ ] Alongside: CS 2881 L3 (Carlini/Warr) with Ch. 12–13
+- [ ] Alongside: DeepMind P2.6 with Ch. 14
+- [ ] Alongside: CS 2881 L5 experiment + P2.7 with Ch. 15
+- [ ] Alongside: Safeshield M6/M12 with Ch. 16–17
+- [ ] Self-check: the Safeshield self-assessment (modules 3–8)
