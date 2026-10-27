@@ -225,7 +225,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-59 — the Module 8 companion note | fdb0bb3 (pushed) | courses/safeshield-governance/module-08-risk-management.md; note row linked per unit by the driver |
 | 3-60 — the Module 9 companion note | e8a2ed8 (pushed) | courses/safeshield-governance/module-09-iso-42001.md; note row linked per unit by the driver |
 | 3-61 — the Module 10 companion note | 1f0ab41 (pushed) | courses/safeshield-governance/module-10-nist-ai-rmf.md; note row linked per unit by the driver |
-| 3-62 — the Module 11 companion note | (pending) | courses/safeshield-governance/module-11-eu-ai-act.md; note row linked per unit by the driver |
+| 3-62 — the Module 11 companion note | 67887f0 (pushed) | courses/safeshield-governance/module-11-eu-ai-act.md; note row linked per unit by the driver |
+| 3-63 — the Module 12 companion note | (pending) | courses/safeshield-governance/module-12-lifecycle-governance.md; note row linked per unit by the driver |
 
 ## Next exact action
 
