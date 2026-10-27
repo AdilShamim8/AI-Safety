@@ -587,3 +587,17 @@ Chapter 07 sets the evidence standard for every scary claim that follows:
 from here on, "the model deceived the eval" without construction, rung,
 conditions, denominators, and coverage is treated as an error, not a style
 choice.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the scheming lecture proper: definitions, evidence, stress tests |
+| [lecture-08-experiment-under-pressure](../../courses/boaz-barak-cs2881/lecture-08-experiment-under-pressure.md) | Harvard CS 2881 | evaluation gaming elicited by task structure — the chapter's core phenomenon |
+| [part-01-02-deliberate-planning](../../courses/google-deepmind-agi-safety/part-01-02-deliberate-planning.md) | DeepMind AGI Safety | the instrumental-subgoal mechanism behind strategic deception |
