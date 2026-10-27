@@ -383,3 +383,17 @@ sandbagging is
 the sociotechnical categories this chapter waives are Chapter 21's
 (planned); the assurance-case form the release memo takes is Chapter
 22's (planned).
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) | DeepMind AGI Safety | uplift measurement and what evals can establish |
+| [part-03-02-frontier-safety-practices](../../courses/google-deepmind-agi-safety/part-03-02-frontier-safety-practices.md) | DeepMind AGI Safety | the RSP family as lived process |
+| [f26-lecture-08-open-language-models](../../courses/boaz-barak-cs2881/f26-lecture-08-open-language-models.md) | Harvard CS 2881 | the release-gradient debate and open-weight governance |
