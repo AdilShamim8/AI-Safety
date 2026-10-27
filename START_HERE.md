@@ -15,6 +15,18 @@ every number on it is generated from the repository's own data.
 
 ## Step 1 — Diagnose honestly (60–90 minutes)
 
+## Step 0.5 — Watch the primer (90 minutes, optional but recommended)
+
+Before the diagnostic, watch the
+[Google DeepMind AGI Safety Course](courses/google-deepmind-agi-safety/README.md)
+straight through: sixteen short parts (~85 minutes), no mathematics,
+the field's own compressed statement of the problem. It will make
+every chapter's opening section land faster. The full
+[lecture library](courses/README.md) — including Harvard's graduate
+seminar, the CAIS textbook course, and the Safeshield governance
+series — schedules itself against the chapters in
+[courses/study-plans.md](courses/study-plans.md).
+
 Work the five tasks in [prerequisites/diagnostic.md](prerequisites/diagnostic.md)
 **before** looking at the worked answers. They cover the five capabilities the
 course assumes: a cross-entropy gradient and a transformer activation
