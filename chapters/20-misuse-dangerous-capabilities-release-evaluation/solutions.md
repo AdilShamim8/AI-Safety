@@ -151,3 +151,12 @@ condition, not held fixed.
 **Rubric.** All four areas with constructs/instruments/arms (4);
 open-weights ladder logic correct (2); mirage check included (1);
 gate rules pre-stated with numbers (2); waived categories stated (1).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) — watch before working the uplift-framing exercises.
