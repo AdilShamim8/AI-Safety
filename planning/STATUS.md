@@ -321,7 +321,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-154 — the watching-pointer block for chapter 20's solutions: 1 pre-exercise viewing(s) | ca93c62 (pushed) | chapters/20-misuse-dangerous-capabilities-release-evaluation/solutions.md; links to committed course notes only |
 | 3-155 — the watching-pointer block for chapter 21's solutions: 2 pre-exercise viewing(s) | ed8077f (pushed) | chapters/21-sociotechnical-and-systemic-risk/solutions.md; links to committed course notes only |
 | 3-156 — the watching-pointer block for chapter 22's solutions: 1 pre-exercise viewing(s) | 3a95a8f (pushed) | chapters/22-safety-engineering-and-assurance/solutions.md; links to committed course notes only |
-| 3-157 — the watching-pointer block for chapter 23's solutions: 2 pre-exercise viewing(s) | (pending) | chapters/23-governance-and-standards/solutions.md; links to committed course notes only |
+| 3-157 — the watching-pointer block for chapter 23's solutions: 2 pre-exercise viewing(s) | ccd9e46 (pushed) | chapters/23-governance-and-standards/solutions.md; links to committed course notes only |
+| 3-158 — the watching-pointer block for chapter 24's solutions: 1 pre-exercise viewing(s) | (pending) | chapters/24-research-practice-and-capstone-execution/solutions.md; links to committed course notes only |
 
 ## Next exact action
 

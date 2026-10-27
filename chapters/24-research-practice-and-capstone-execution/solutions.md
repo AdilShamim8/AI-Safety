@@ -126,3 +126,12 @@ points.
 
 **Rubric.** Eight components present and numeric where required (6);
 the arithmetic correct (2); the embarrassment statement explicit (2).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [f26-oral-presentations](../../courses/boaz-barak-cs2881/f26-oral-presentations.md) — watch before working the capstone-defense preparation.
