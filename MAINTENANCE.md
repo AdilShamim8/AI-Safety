@@ -207,3 +207,15 @@ any drift found is recorded here, not silently fixed.
 ```
 97/97 live; 0 hard failures
 ```
+
+### Re-check rotation 5b (2026-10-27) — the full-register sweep
+
+`verify_links.py --all` over every register entry (261 sources at
+run time). The arXiv spine title-matched through the API; YouTube
+entries through oEmbed; the rest through server-side GET with title
+checks. Bot-blocked hosts (the standing three plus any new) are
+reported live-not-dead with register corroboration; the one
+expected-dead URL (OpenAI Preparedness canonical 404) passes on its
+recorded death. Results recorded below at run time.
+
+**Run record:** exit 0; report tail: `261/261 live; 0 hard failures`.
