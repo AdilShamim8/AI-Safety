@@ -275,7 +275,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-108 — evaluations-and-assurance.md: the lecture-library pairing block | 75e268a (pushed) | roadmaps/evaluations-and-assurance.md section |
 | 3-109 — audit-only.md: the lecture-library pairing block (Safeshield as second spine) | 2cded54 (pushed) | roadmaps/audit-only.md section |
 | 3-110 — study-schedules.md: the video-layer integration rules | 1004ba7 (pushed) | roadmaps/study-schedules.md section |
-| 3-111 — ROADMAP.md: the session-3 layer section | (pending) | ROADMAP.md section |
+| 3-111 — ROADMAP.md: the session-3 layer section | 9e5df31 (pushed) | ROADMAP.md section |
+| 3-112 — CHANGELOG.md: 102/200 checkpoint entry (61 notes, 10 register entries, tests 611, all chapters integrated) | (pending) | CHANGELOG.md entry |
 
 ## Next exact action
 

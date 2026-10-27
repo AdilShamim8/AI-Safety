@@ -8,6 +8,16 @@ Unreleased until a tagged release exists.
 ## [Unreleased]
 
 ### The lecture library (2026-10-27)
+- Mid-session checkpoint (102/200 units): the lecture library's core
+  is complete and integrated — 4 course pages, 61 companion notes
+  (18 Harvard, 16 DeepMind, 8 CAIS, 14 Safeshield, plus 5 pedagogy
+  and study-plan pages), 10 register entries, the AWESOME
+  full-courses track with rotation-4 link verification, the
+  lecture-library structure test (suite 607 → 611), and all 24
+  chapters' watching-companions blocks. CI green on every unit since
+  the batch-linking fix (3-43); the committed-tree link check now
+  runs before every push.
+
 - **Fix-forward: the batch-linking CI defect (caught by CI, fixed in
   the driver).** Units 3-09 through 3-41 earned red CI runs in a
   characteristic pattern — every unit green at its batch's end, red in
