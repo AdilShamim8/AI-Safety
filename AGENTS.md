@@ -127,3 +127,36 @@ exactly that purpose — future agents inherit the hardened rules:
    interrupted loop committed P03's content under P02's title. The
    record stays append-only; the mislabel is corrected in writing
    (CHANGELOG), never by force-push.
+
+## Session-3 protocol lessons (2026-10-27)
+
+Three catches this session, each caught by an instrument that existed
+for exactly this purpose:
+
+1. **The working tree is not the committed tree.** Units 3-09..3-41
+   went red in CI in a pattern — green at every batch's end, red in
+   the middle — because the note generators linked ALL of a course
+   README's rows upfront while each unit committed only its own note.
+   The local working-tree gate passed by construction: the future
+   units' files were sitting right there. The fix is now structural:
+   note rows are linked by the driver PER UNIT, and every commit is
+   followed by a committed-tree link check (`git show HEAD:<file>`
+   resolving every local markdown link against the commit itself)
+   before the push is allowed. Lesson: gates must run against the
+   artifact that ships, not the directory you happen to be standing
+   in.
+2. **Pinned-count phrases wrap, and phrases have variants.** The
+   count-sync instrument failed three separate ways before it was
+   honest: a number at a line break ("251\nregistered sources"), a
+   phrase wrapped internally ("296-term\nglossary", "verified
+   dataset\ncards"), and a variant phrase the tests pin separately
+   ("verified real-world dataset cards"). The instrument now treats
+   every internal space as `\s+` and covers the variant on every
+   pinned surface. Lesson: when a test squashes whitespace, the
+   writer of any sync instrument must too — three fix-forwards is
+   the tax for learning it once.
+3. **Generators must be per-unit, not per-batch.** Any generator
+   that mutates a shared surface (a README table, an index) must be
+   invocable per unit; batch-mode generation silently batches the
+   commits' content too. All session-3 generators after the fix use
+   step dispatch.
