@@ -13,7 +13,7 @@ message: >-
 type: software
 repository-code: "https://github.com/AdilShamim8/AI-Safety"
 title: AI Safety
-version: "2.0.0"
+version: "2.1.0"
 date-released: "2026-10-25"
 abstract: >-
   An open-source research curriculum and working project repository covering

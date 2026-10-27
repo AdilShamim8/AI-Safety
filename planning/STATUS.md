@@ -359,7 +359,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-192 — CI verification record | 42add33 (pushed) | planning/STATUS.md record |
 | 3-192 — CI verification record | (pending) | planning/STATUS.md record |
 | 3-193 — the dashboard test's dataset pin updated to >= 47 (the four lecture-library cards, caught by the closure gates); index.html regenerated from the final registers | 8226f7c (pushed) | pytest green after (611 tests); dashboard regenerated; counts current |
-| 3-194 — committed-tree sweep record (real run over all committed .md files) | (pending) | planning/STATUS.md record |
+| 3-194 — committed-tree sweep record (real run over all committed .md files) | 7be66e7 (pushed) | planning/STATUS.md record |
+| 3-195 — CITATION.cff version bump (minor) | (pending) | CITATION.cff |
 
 ## Next exact action
 
