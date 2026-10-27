@@ -363,7 +363,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-195 — CITATION.cff version bump (minor) | bcf6a3f (pushed) | CITATION.cff |
 | 3-196 — CHANGELOG session-3 closure entry | f054155 (pushed) | CHANGELOG.md |
 | 3-197 — rotation 5b record (verify_links --all, real run) | 1744eda (pushed) | MAINTENANCE.md record |
-| 3-198 — STATUS session-3 closure section | (pending) | planning/STATUS.md |
+| 3-198 — STATUS session-3 closure section | e607f3d (pushed) | planning/STATUS.md |
+| 3-199 — final remote-state verification record | (pending) | planning/STATUS.md record |
 
 ## Next exact action
 
@@ -511,3 +512,5 @@ Next exact action: none — session closed. The next session starts
 from this file's resume protocol as amended by the session-3
 lessons (committed-tree gates, wrap-tolerant sync, per-unit
 generators).
+
+**Session-3 final remote verification (2026-10-27):** remote HEAD == local HEAD (e607f3d8a6); repository at 504 commits (304 at session open + 200 session-3 units).
