@@ -36,10 +36,6 @@ priced as one in the notes.
 | [AI Safety, Ethics, & Society](https://www.youtube.com/playlist?list=PLXSn3Zz2ayT7ab7I12PBYVt0244369S1q) (Center for AI Safety) | The non-technical university course: risks, fundamentals, single-agent safety, safety engineering, complex systems, ethics, collective action, governance | 8 | [cais-ethics-society/](cais-ethics-society/) |
 | [AI Governance series](https://www.youtube.com/playlist?list=PL70MHvytmJU8zwamiQnweHV0Vj-h0zlOW) (Safeshield Training) | Practitioner training in the governance layer: principles, risk management, ISO/IEC 42001, NIST AI RMF, the EU AI Act, audit practice | 14 | [safeshield-governance/](safeshield-governance/) |
 
-(Companion directories land one course at a time this session; each
-row's link is added by the unit that completes it — the live record is
-[planning/STATUS.md](../planning/STATUS.md).)
-
 Every external link in the table was resolved on 2026-10-27: the
 four playlists through YouTube's playlist API (title, channel, video
 count, and the full per-video list with durations), and the Harvard
@@ -125,14 +121,14 @@ chapter's README (the "watching companions" block) and in each course
 page's own mapping table — both written so that either direction of
 lookup works.
 
-## Building status
+## Build status
 
-This layer is being built unit by unit in session 3 (see
-[planning/STATUS.md](../planning/STATUS.md) for the live record): the
-four course pages land first, then the companion notes course by
-course, then the chapter integrations. The honesty rule from the
-repository's method applies here too: a note that does not exist yet
-is listed as not existing yet — nothing in this directory will ever
+The layer is complete: all four course pages, all 61 companion notes,
+and all chapter integrations landed in session 3 (the unit-by-unit
+record is [planning/STATUS.md](../planning/STATUS.md), and the
+closing state is stated in the section below). The honesty rule from
+the repository's method applies here too: a note that does not exist
+is listed as not existing — nothing in this directory will ever
 claim completeness it does not have.
 
 ## The complete library (2026-10-27 state)
