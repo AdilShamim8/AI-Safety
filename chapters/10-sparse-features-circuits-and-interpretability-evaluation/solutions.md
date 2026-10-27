@@ -294,3 +294,12 @@ intervals overlap by 6+ points."
 | (c) | 33-point shortfall; 48.4% of circuit's effect; 36% unexplained |
 | (d) | −0.359pp; both readings (magnitude vs. paired-count dependence) present |
 | (e) | Independent-vs-paired distinction in ≤ 2 sentences, both technically correct |
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) — watch before working the SAE evaluation exercises.
