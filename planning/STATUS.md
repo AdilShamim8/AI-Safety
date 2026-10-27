@@ -269,7 +269,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-102 — the watching-companions block for chapter 24: 3 lecture pairings with reasons | 84b8eda (pushed) | chapters/24-research-practice-and-capstone-execution/README.md; links to committed course notes only |
 | 3-103 — SYLLABUS.md: the watching-track section (primer/alongside/operator passes) | f564370 (pushed) | SYLLABUS.md section; local links validated |
 | 3-104 — README.md: tour step 6 (watch alongside) + courses/ structure-table row | 0bdb058 (pushed) | README.md edits; counts re-synced |
-| 3-105 — START_HERE.md: the primer step linking the DeepMind course and the library | (pending) | START_HERE.md section |
+| 3-105 — START_HERE.md: the primer step linking the DeepMind course and the library | f9d048b (pushed) | START_HERE.md section |
+| 3-106 — alignment-research.md: the lecture-library pairing block | (pending) | roadmaps/alignment-research.md section |
 
 ## Next exact action
 

@@ -72,6 +72,20 @@ learner; projects scale with tier (smoke/pilot/full).
    the executable reference capstone is P10.
 - **P10 proper**, if you want the assurance-dossier experience instead.
 
+### The lecture-library pairing
+
+This route's chapters pair with the video layer as follows (full
+mapping in [courses/study-plans.md](../courses/study-plans.md) and
+each chapter's watching-companions block):
+- DeepMind Parts 1.1–1.5 and CS 2881's introduction lectures with the
+  common spine (Ch. 01–02).
+- CS 2881's Lecture 2 and Lecture 4 with the specification and
+  preference chapters (Ch. 03–04).
+- CS 2881's scheming lecture and the Under Pressure experiment with
+  Ch. 07; the DeepMind control video with Ch. 08.
+- CS 2881's interpretability lecture (four labs' guests) with the
+  interpretability arc (Ch. 09–11).
+
 ## Pitfalls this route is designed to prevent
 
 - Treating benchmark scores as alignment evidence (Ch.02 breaks this habit).
