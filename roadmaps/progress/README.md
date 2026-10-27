@@ -28,3 +28,13 @@ promises.
 questions out loud without notes. If you cannot, the reading did
 not take, and the honest move is to redo the artifact, not tick the
 box.
+
+## The lecture library in the progress ladder
+
+Every route's progress file gains one row type in 2026-10-27: the
+watching checkpoint — the primer pass (before Ch. 01), the
+alongside pass (per chapter-cluster, recorded in each chapter's
+watching-companions block), and, on audit and assurance routes, the
+operator pass (Safeshield, one module per session). Mark them in
+your copy as you would mark a chapter: watched is not worked —
+the self-assessments in each course companion are the check.
