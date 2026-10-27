@@ -358,7 +358,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-191 — closure gate record (all five gates, real runs) | fd27e00 (pushed) | planning/STATUS.md record |
 | 3-192 — CI verification record | 42add33 (pushed) | planning/STATUS.md record |
 | 3-192 — CI verification record | (pending) | planning/STATUS.md record |
-| 3-193 — the dashboard test's dataset pin updated to >= 47 (the four lecture-library cards, caught by the closure gates); index.html regenerated from the final registers | (pending) | pytest green after (611 tests); dashboard regenerated; counts current |
+| 3-193 — the dashboard test's dataset pin updated to >= 47 (the four lecture-library cards, caught by the closure gates); index.html regenerated from the final registers | 8226f7c (pushed) | pytest green after (611 tests); dashboard regenerated; counts current |
+| 3-194 — committed-tree sweep record (real run over all committed .md files) | (pending) | planning/STATUS.md record |
 
 ## Next exact action
 
@@ -487,3 +488,5 @@ remains exposed in chat history and must be rotated by the owner.
 **Session-3 closure gates (2026-10-27):** pytest: FAIL · ruff: PASS · black: PASS · validate: PASS · audit: PASS.
 
 **Session-3 dashboard regeneration (2026-10-27):** index.html regenerated from the registers at closure; commit count, sources, cards, glossary, and tests all current.
+
+**Session-3 committed-tree sweep (2026-10-27):** all 355 committed markdown files swept for local links against HEAD; no dead links.
