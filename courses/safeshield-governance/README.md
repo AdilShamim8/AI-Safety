@@ -48,7 +48,7 @@ professional curriculum in about 12.5 hours.
 | [Transparency and Explainability in AI Systems](https://www.youtube.com/watch?v=eJ3wJEk9Fbs) | 44:23 | [module-04-transparency-explainability.md](module-04-transparency-explainability.md) |
 | [Fairness and Non-Discrimination in AI Systems](https://www.youtube.com/watch?v=w3P6mTI8SkU) | 46:19 | [module-05-fairness-non-discrimination.md](module-05-fairness-non-discrimination.md) |
 | [Privacy and Data Protection in AI Systems](https://www.youtube.com/watch?v=3vgHshL9m94) | 49:32 | [module-06-privacy-data-protection.md](module-06-privacy-data-protection.md) |
-| [Safety, Security, and Resilience in AI Systems](https://www.youtube.com/watch?v=EEdL-HSvHkk) | 40:49 | `module-07-safety-security-resilience.md` |
+| [Safety, Security, and Resilience in AI Systems](https://www.youtube.com/watch?v=EEdL-HSvHkk) | 40:49 | [module-07-safety-security-resilience.md](module-07-safety-security-resilience.md) |
 | [AI Risk Management](https://www.youtube.com/watch?v=iIsfDIQ8Vt0) | 49:37 | `module-08-risk-management.md` |
 | [ISO/IEC 42001 — AIMS Implementation and Audit](https://www.youtube.com/watch?v=8UBlTZRYBmQ) | 55:03 | `module-09-iso-42001.md` |
 | [The NIST AI Risk Management Framework (NIST AI RMF)](https://www.youtube.com/watch?v=rbFt34UmngY) | 58:42 | `module-10-nist-ai-rmf.md` |
