@@ -99,3 +99,15 @@ No video was watched; no spoken content is transcribed or quoted. The
 companion notes are original explanations of each module's announced topic,
 anchored to the published standards the module titles name — standards this
 repository already registers where the chapters cite them.
+
+## The companion set (complete)
+
+All 14 modules are covered, plus the pedagogy analysis, the
+self-assessment, and the three framework crosswalks:
+[ISO × NIST](crosswalk-iso-nist.md),
+[NIST × EU](crosswalk-nist-eu.md), and
+[ISO × EU](crosswalk-iso-eu.md).
+
+Also in this directory: [pedagogy.md](pedagogy.md) (frameworks as
+curriculum) and [self-assessment.md](self-assessment.md) (twelve
+practitioner questions with pointers).
