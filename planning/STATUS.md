@@ -341,7 +341,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-174 — FAQ: the lecture-note contribution entry | 973ea3b (pushed) | FAQ.md |
 | 3-175 — FAQ: the count-drift explanation entry | 3237c2a (pushed) | FAQ.md |
 | 3-176 — the library index links its honesty ledger | 177e039 (pushed) | courses/README.md |
-| 3-177 — glossary batch 5: eight course-grounded terms | (pending) | GLOSSARY.md rows; CITATION glossary count synced |
+| 3-177 — glossary batch 5: eight course-grounded terms | 4489f1f (pushed) | GLOSSARY.md rows; CITATION glossary count synced |
+| 3-178 — glossary batch 6: six terms (incl. the EU AI Act designation layer) | (pending) | GLOSSARY.md rows; CITATION glossary count synced |
 
 ## Next exact action
 
