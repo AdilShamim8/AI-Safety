@@ -427,3 +427,12 @@ jamming [CLM-0043].
 validation's blind spot; the truncation reconciliation covering all five
 cells; noting 1 − 0.99²⁹⁹ = 0.9505 exactly and the general formula
 n = ln(1 − power)/ln(1 − γ).
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-02-04-security-and-control](../../courses/google-deepmind-agi-safety/part-02-04-security-and-control.md) — watch before working the protocol-design exercises.
