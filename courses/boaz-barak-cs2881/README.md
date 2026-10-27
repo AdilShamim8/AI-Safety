@@ -157,3 +157,16 @@ the connections into this repository's chapters and paper spine.
 No video was watched; no spoken content is transcribed or quoted. The
 companion notes are original explanations anchored to the verified
 structure above.
+
+## The companion set (complete)
+
+All 19 playlist videos are covered: 13 Fall 2025 lecture/experiment
+notes, 5 Fall 2026 notes, plus the pedagogy analysis, the
+self-assessment, and this index. The codex clip is indexed above and
+covered contextually inside the notes that use it. Fall 2026 lectures
+announced but not yet published as recordings are listed in the
+schedule section — the honest state of a course still being taught.
+
+Also in this directory: [pedagogy.md](pedagogy.md) (how the seminar
+organizes knowledge) and [self-assessment.md](self-assessment.md)
+(twenty questions with pointers).
