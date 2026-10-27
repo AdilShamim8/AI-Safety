@@ -59,6 +59,8 @@ professional curriculum in about 12.5 hours.
 
 ## How the course organizes knowledge
 
+*The deep-dive version of this section is [pedagogy.md](pedagogy.md).*
+
 The series teaches in **framework layers**: principles first (why), then
 risk management as the bridge (how, in the abstract), then the named
 frameworks (how, in enforceable detail), then the operational lifecycle

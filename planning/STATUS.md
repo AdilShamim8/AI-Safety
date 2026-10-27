@@ -231,7 +231,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-65 — the Module 14 companion note | b04e6d9 (pushed) | courses/safeshield-governance/module-14-monitoring-auditing-compliance.md; note row linked per unit by the driver |
 | 3-66 — the CS 2881 pedagogy note: four-part session architecture, information-gathering model, what the repo adopted | cf26aea (pushed) | courses/boaz-barak-cs2881/pedagogy.md; README linked |
 | 3-67 — the DeepMind course pedagogy note: the single-claim unit, exercises as integrity checks, a lab's curriculum as primary source | 7d920e5 (pushed) | courses/google-deepmind-agi-safety/pedagogy.md; README linked |
-| 3-68 — the CAIS pedagogy note: circles-of-scope layering, the published-textbook anchor, society-scale topics as first-class content | (pending) | courses/cais-ethics-society/pedagogy.md; README linked |
+| 3-68 — the CAIS pedagogy note: circles-of-scope layering, the published-textbook anchor, society-scale topics as first-class content | e6c472a (pushed) | courses/cais-ethics-society/pedagogy.md; README linked |
+| 3-69 — the Safeshield pedagogy note: the three-band structure, law-and-standards as primary sources, the terminal audit loop | (pending) | courses/safeshield-governance/pedagogy.md; README linked |
 
 ## Next exact action
 
