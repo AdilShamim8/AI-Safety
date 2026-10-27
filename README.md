@@ -7,7 +7,7 @@ or subscription is required for the core path.
 
 **Status (honest, updated 2026-10-25):** the build is complete at its target
 scope and deepened — 24 of 24 chapters, 10 of 10 projects implemented
-(deterministic, offline, stdlib-first), 43 verified dataset cards, 261
+(deterministic, offline, stdlib-first), 47 verified dataset cards, 261
 registered sources, 206 registered claims, 74 paper notes + 12 comparisons
 + 14 incident reviews, and a 611-test suite green in CI. Every project marks
 its honest not-executed tiers where compute was out of scope. Live counters

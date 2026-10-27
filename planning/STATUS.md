@@ -286,7 +286,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-119 — the ISO/EU crosswalk | 7fec909 (pushed) | courses/safeshield-governance/crosswalk-iso-eu.md |
 | 3-120 — the consensus comparison (five shared claims) | bf1b6d0 (pushed) | courses/comparisons-where-courses-agree.md |
 | 3-121 — the register comparison | dadccc6 (pushed) | courses/comparisons-two-registers.md |
-| 3-122 — the complement map (per-course unique value) | (pending) | courses/comparisons-complement-map.md |
+| 3-122 — the complement map (per-course unique value) | 3ba9490 (pushed) | courses/comparisons-complement-map.md |
+| 3-123 — the GDPval dataset card + catalog entry (DS-044, arXiv 2510.04374 title-verified) | (pending) | datasets/cards/44-gdpval.md; catalog DS-044; counts synced |
 
 ## Next exact action
 

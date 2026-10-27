@@ -1780,3 +1780,141 @@ datasets:
     collected: 'abstract: MLLMs compromised by query-relevant images as if the text query were malicious;
       comprehensive safety-critical framework; title/authors/date verified'
     accessed_on: '2026-10-25'
+- id: DS-044
+  name: GDPval
+  organization: OpenAI (Patwardhan, Dias, Proehl, Kim — arXiv-API verified)
+  canonical_url: https://github.com/openai/gdpval
+  paper:
+    id: '2510.04374'
+    url: https://arxiv.org/abs/2510.04374
+    title: 'GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Task'
+    verified_title: true
+  risk_area: economic capability measurement / release-relevant capability
+  task:
+  - economic-capability evaluation
+  - occupational task completion
+  license:
+    as_observed: unknown
+    where_observed: repository license not extracted from the JS-rendered page this session
+  size_facts:
+  - fact: occupational task samples weighted to GDP-relevant work (abstract-level; counts not extracted)
+    ref: R1
+  course_use:
+    chapters:
+    - '20'
+    - '21'
+    - '02'
+    projects: []
+  access_level: abstract-read
+  verified_on: '2026-10-27'
+  card: cards/44-gdpval.md
+  references:
+  - id: R1
+    url: https://arxiv.org/abs/2510.04374
+    collected: 'arXiv API title-match: title/authors/date verified 2026-10-27'
+    accessed_on: '2026-10-27'
+- id: DS-045
+  name: METR RE-Bench
+  organization: METR
+  canonical_url: https://github.com/METR/RE-Bench
+  paper:
+    id: '2411.15114'
+    url: https://arxiv.org/abs/2411.15114
+    title: 'RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts'
+    verified_title: true
+  risk_area: autonomy / AI-R&D capability evaluation
+  task:
+  - research-engineering benchmark
+  - expert-vs-agent comparison
+  license:
+    as_observed: MIT
+    where_observed: repository LICENSE inspected on the page render 2026-10-27
+  size_facts:
+  - fact: 7 tasks conforming to the METR Task Standard (repository-listed)
+    ref: R2
+  - fact: repository archived read-only since 2026-10-20
+    ref: R2
+  course_use:
+    chapters:
+    - '02'
+    - '20'
+    - '24'
+    projects: []
+  access_level: page-inspected
+  verified_on: '2026-10-27'
+  card: cards/45-metr-re-bench.md
+  references:
+  - id: R2
+    url: https://github.com/METR/RE-Bench
+    collected: 'full page render: description, task list, MIT license, archive note, paper link'
+    accessed_on: '2026-10-27'
+- id: DS-046
+  name: METR time-horizon measurements
+  organization: METR
+  canonical_url: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
+  paper:
+    id: null
+    url: null
+    title: 'Measuring AI Ability to Complete Long Software Tasks (blog publication)'
+    verified_title: true
+  risk_area: capability trajectory / autonomy measurement
+  task:
+  - task-horizon measurement
+  - reliability-conditioned capability trending
+  license:
+    as_observed: unknown
+    where_observed: no license statement on the inspected blog page
+  size_facts:
+  - fact: 50%-reliability task horizon doubling roughly every 7 months over ~6 years
+    ref: R1
+  - fact: analysis code, raw data, and a dedicated time-horizons page linked from the post
+    ref: R1
+  course_use:
+    chapters:
+    - '02'
+    - '01'
+    - '20'
+    projects: []
+  access_level: page-inspected
+  verified_on: '2026-10-27'
+  card: cards/46-metr-time-horizons.md
+  references:
+  - id: R1
+    url: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
+    collected: 'full page render: finding, doubling time, data links'
+    accessed_on: '2026-10-27'
+- id: DS-047
+  name: 'Canaries in the Coal Mine (employment-effects evidence)'
+  organization: Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)
+  canonical_url: https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/
+  paper:
+    id: null
+    url: null
+    title: 'Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence'
+    verified_title: true
+  risk_area: labor-market impact / sociotechnical risk evidence
+  task:
+  - employment-effects measurement
+  - exposure trending
+  license:
+    as_observed: unknown
+    where_observed: working paper; no replication files observed at fetch
+  size_facts:
+  - fact: young-worker (22-25) employment in AI-exposed occupations 19% below less-exposed peers
+    ref: R1
+  - fact: August 2026 update enlarges the dataset (page note)
+    ref: R1
+  course_use:
+    chapters:
+    - '21'
+    - '02'
+    - '01'
+    projects: []
+  access_level: page-inspected
+  verified_on: '2026-10-27'
+  card: cards/47-canaries.md
+  references:
+  - id: R1
+    url: https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/
+    collected: 'page render: authors, six-facts framing, 19% figure, update note'
+    accessed_on: '2026-10-27'
