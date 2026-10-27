@@ -242,7 +242,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-75 — AWESOME courses section: the lecture-library entry linking courses/ and its index | 0332dae (pushed) | AWESOME.md courses-section entry; counts synced |
 | 3-76 — MAINTENANCE.md: rotation 4 record (10/10 live; YouTube JS-pages live-no-title, course page domain-match) | 8aa393e (pushed) | MAINTENANCE.md entry; matches the AWESOME intro's rotation-4 claim |
 | 3-77 — tests/test_courses_integrity.py (4 tests): course dirs exist with full note sets, table rows link existing notes, playlist URLs match the register, index names all courses | 60323c3 (pushed) | tests/test_courses_integrity.py; suite grows 607 to 611; counts synced |
-| 3-78 — FAQ: the lecture-library block (note discipline, watch guide entry points) | (pending) | FAQ.md block; local links validated |
+| 3-78 — FAQ: the lecture-library block (note discipline, watch guide entry points) | dc971cb (pushed) | FAQ.md block; local links validated |
+| 3-79 — the watching-companions block for chapter 01: 4 lecture pairings with reasons | (pending) | chapters/01-risk-models-and-research-epistemics/README.md; links to committed course notes only |
 
 ## Next exact action
 

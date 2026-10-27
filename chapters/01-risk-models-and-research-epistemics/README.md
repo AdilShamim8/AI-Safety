@@ -411,3 +411,18 @@ claim-level records CLM-0006…0008 in
 **Notation used in this chapter:** `σ` system · `κ` deployment context ·
 `h` hazard · `p` causal pathway · `H(...)` threat hypothesis · `τ`
 harm threshold · `∧` conjunction (all links required) · `E` evidence set.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-01-introduction](../../courses/boaz-barak-cs2881/lecture-01-introduction.md) | Harvard CS 2881 | the risk landscape and the evidence discipline this chapter formalizes |
+| [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the incident-based reopening: post-mortems as the newest evidence class |
+| [part-01-01-path-to-superhuman](../../courses/google-deepmind-agi-safety/part-01-01-path-to-superhuman.md) | DeepMind AGI Safety | the capability-trajectory claim, priced as a trend not a date |
+| [lecture-01-introduction-ai-risks](../../courses/cais-ethics-society/lecture-01-introduction-ai-risks.md) | CAIS Ethics & Society | the misuse/accident/structural taxonomy in accessible register |
