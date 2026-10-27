@@ -262,7 +262,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-95 — the watching-companions block for chapter 17: 2 lecture pairings with reasons | ad075c8 (pushed) | chapters/17-distribution-shift-and-deployment-reliability/README.md; links to committed course notes only |
 | 3-96 — the watching-companions block for chapter 18: 2 lecture pairings with reasons | 9d24f66 (pushed) | chapters/18-reasoning-faithfulness-and-monitorability/README.md; links to committed course notes only |
 | 3-97 — the watching-companions block for chapter 19: 2 lecture pairings with reasons | 20cbe62 (pushed) | chapters/19-multimodal-and-embodied-safety/README.md; links to committed course notes only |
-| 3-98 — the watching-companions block for chapter 20: 3 lecture pairings with reasons | (pending) | chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md; links to committed course notes only |
+| 3-98 — the watching-companions block for chapter 20: 3 lecture pairings with reasons | 359c94b (pushed) | chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md; links to committed course notes only |
+| 3-99 — the watching-companions block for chapter 21: 4 lecture pairings with reasons | (pending) | chapters/21-sociotechnical-and-systemic-risk/README.md; links to committed course notes only |
 
 ## Next exact action
 

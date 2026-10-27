@@ -348,3 +348,18 @@ the release-memo form is
 [Chapter 20](../20-misuse-dangerous-capabilities-release-evaluation/README.md)'s;
 assurance-case form is Chapter 22's (planned); governance
 instruments are Chapter 23's (planned).
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-05-complex-systems](../../courses/cais-ethics-society/lecture-05-complex-systems.md) | CAIS Ethics & Society | risks that only exist between the parts |
+| [lecture-07-collective-action-problems](../../courses/cais-ethics-society/lecture-07-collective-action-problems.md) | CAIS Ethics & Society | the race dynamics and commons problems this chapter formalizes |
+| [lecture-09-economic-impacts](../../courses/boaz-barak-cs2881/lecture-09-economic-impacts.md) | Harvard CS 2881 | labor and growth as the measurable systemic layer |
+| [f26-lecture-05-economic-impact](../../courses/boaz-barak-cs2881/f26-lecture-05-economic-impact.md) | Harvard CS 2881 | the Turing Trap and the centaur standard |
