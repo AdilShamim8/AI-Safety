@@ -5233,3 +5233,46 @@ sources:
     The course's Perusall forum, Canvas, and Homework Zero repository are registration-gated and
     were not accessed.
   license: public course page (GitHub Pages); readings linked from it remain under their own terms
+- id: SRC-VIDEO-013
+  title: 'Google DeepMind AGI Safety Course — the video series playlist'
+  authors_or_organization: Google DeepMind Safety Research
+  url: https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW
+  source_type: video
+  publication_date: null
+  version: playlist as listed at fetch (16 videos in three parts plus two exercises)
+  accessed_on: '2026-10-27'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (frontier lab public course videos)
+  supports:
+  - 'courses/google-deepmind-agi-safety/ (the course page companion: playlist structure retrieved
+    through YouTube''s playlist API on 2026-10-27 — 16 videos across Part 0 introduction, Part 1
+    risk model with two exercises, Part 2 alignment research program, Part 3 institutional layer,
+    titles and durations as listed)'
+  limitations: Playlist structure (titles, durations, video IDs, owning channel) retrieved via
+    YouTube's internal playlist API on 2026-10-27. No video was watched and no spoken content is
+    transcribed or quoted anywhere in this repository; the companion notes are original
+    explanations of each part's announced topic as stated in its title, never presented as
+    transcripts. The series is a frontier lab's own pedagogical statement — used here as a primary
+    source for that lab's self-described risk model and research program, priced as
+    self-presentation rather than independent evidence for any empirical claim.
+  license: standard YouTube terms of service
+- id: SRC-VIDEO-014
+  title: Google DeepMind Safety Research (YouTube channel)
+  authors_or_organization: Google DeepMind
+  url: https://www.youtube.com/@GDMSafetyResearch
+  source_type: video
+  publication_date: null
+  version: channel as identified from the playlist's owning channel at fetch
+  accessed_on: '2026-10-27'
+  access_level: metadata-only
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (frontier lab communications channel)
+  supports:
+  - 'courses/google-deepmind-agi-safety/README.md (the channel-level attribution for
+    SRC-VIDEO-013: identified via the playlist''s owning-channel metadata on 2026-10-27)'
+  limitations: Channel identified from playlist ownership metadata on 2026-10-27; the channel
+    page itself was not opened and no per-channel counts were recorded. No videos were watched;
+    no spoken content is quoted. The channel is the lab's research-communication layer —
+    institutional self-presentation, priced accordingly.
+  license: standard YouTube terms of service
