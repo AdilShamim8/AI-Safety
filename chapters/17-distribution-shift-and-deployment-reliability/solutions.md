@@ -126,3 +126,12 @@ and the "reproduces half of it" consequence; and the validity-window
 statement with dated numbers, named triggers, and an explicit
 unwatched list. Deduct for presenting the retrained worst-group as
 a bare point estimate, or for any undated published number.
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) — watch before working the drift exercises.
