@@ -95,3 +95,12 @@ portfolio. Latency and false-positive budgets are stated per
 control or the control is not done. The market snapshot in the
 [careers index](../careers-index.md) is dated — re-check before
 quoting.
+
+### Watching checkpoints (evaluations route)
+
+- [ ] Primer: DeepMind course end-to-end (85 min) — before Ch. 01
+- [ ] Alongside: CS 2881 L7 (lab-vs-field) with Ch. 02
+- [ ] Alongside: DeepMind P3.2/P3.3 with Ch. 20
+- [ ] Alongside: CAIS L4 + Safeshield M7/M13/M14 with Ch. 22
+- [ ] Operator: Safeshield series as second spine (12.5 h)
+- [ ] Self-check: the Safeshield self-assessment (all twelve)
