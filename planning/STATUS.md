@@ -240,7 +240,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-73 — AWESOME video library: the CAIS block (SRC-VIDEO-015/016 + SRC-CURR-013 cited) | d14734e (pushed) | AWESOME.md block; rotation-4 verified URLs; counts synced |
 | 3-74 — AWESOME video library: the Safeshield block (SRC-VIDEO-017/018 cited) | e3bbb73 (pushed) | AWESOME.md block; rotation-4 verified URLs; counts synced |
 | 3-75 — AWESOME courses section: the lecture-library entry linking courses/ and its index | 0332dae (pushed) | AWESOME.md courses-section entry; counts synced |
-| 3-76 — MAINTENANCE.md: rotation 4 record (10/10 live; YouTube JS-pages live-no-title, course page domain-match) | (pending) | MAINTENANCE.md entry; matches the AWESOME intro's rotation-4 claim |
+| 3-76 — MAINTENANCE.md: rotation 4 record (10/10 live; YouTube JS-pages live-no-title, course page domain-match) | 8aa393e (pushed) | MAINTENANCE.md entry; matches the AWESOME intro's rotation-4 claim |
+| 3-77 — tests/test_courses_integrity.py (4 tests): course dirs exist with full note sets, table rows link existing notes, playlist URLs match the register, index names all courses | (pending) | tests/test_courses_integrity.py; suite grows 607 to 611; counts synced |
 
 ## Next exact action
 
