@@ -568,3 +568,16 @@ This chapter is complete when you can:
 The next chapter (13 — LLM application security, planned) applies this
 discipline where the input distribution is written by the adversary:
 injection attacks and trust boundaries.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the full adversarial surface: examples, jailbreaks, injection, weights |
+| [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) | DeepMind AGI Safety | robustness as a safety property that survives shift |
