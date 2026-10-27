@@ -46,7 +46,7 @@ professional curriculum in about 12.5 hours.
 | [AI Governance Principles](https://www.youtube.com/watch?v=UkeJG1o68c8) | 54:00 | [module-02-governance-principles.md](module-02-governance-principles.md) |
 | [Accountability and Traceability in AI Systems](https://www.youtube.com/watch?v=sgRDWssuPz0) | 51:53 | [module-03-accountability-traceability.md](module-03-accountability-traceability.md) |
 | [Transparency and Explainability in AI Systems](https://www.youtube.com/watch?v=eJ3wJEk9Fbs) | 44:23 | [module-04-transparency-explainability.md](module-04-transparency-explainability.md) |
-| [Fairness and Non-Discrimination in AI Systems](https://www.youtube.com/watch?v=w3P6mTI8SkU) | 46:19 | `module-05-fairness-non-discrimination.md` |
+| [Fairness and Non-Discrimination in AI Systems](https://www.youtube.com/watch?v=w3P6mTI8SkU) | 46:19 | [module-05-fairness-non-discrimination.md](module-05-fairness-non-discrimination.md) |
 | [Privacy and Data Protection in AI Systems](https://www.youtube.com/watch?v=3vgHshL9m94) | 49:32 | `module-06-privacy-data-protection.md` |
 | [Safety, Security, and Resilience in AI Systems](https://www.youtube.com/watch?v=EEdL-HSvHkk) | 40:49 | `module-07-safety-security-resilience.md` |
 | [AI Risk Management](https://www.youtube.com/watch?v=iIsfDIQ8Vt0) | 49:37 | `module-08-risk-management.md` |
