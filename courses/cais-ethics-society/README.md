@@ -48,7 +48,7 @@ decision worth noticing:
 | Lecture | Length | Companion note |
 |---|---|---|
 | [Lecture 1 — Introduction and Overview of AI Risks](https://www.youtube.com/watch?v=ixdfqY3Xyao) | 52:46 | [lecture-01-introduction-ai-risks.md](lecture-01-introduction-ai-risks.md) |
-| [Lecture 2 — AI Fundamentals](https://www.youtube.com/watch?v=tWV3wdY2870) | 52:04 | `lecture-02-ai-fundamentals.md` |
+| [Lecture 2 — AI Fundamentals](https://www.youtube.com/watch?v=tWV3wdY2870) | 52:04 | [lecture-02-ai-fundamentals.md](lecture-02-ai-fundamentals.md) |
 | [Lecture 3 — Single Agent Safety](https://www.youtube.com/watch?v=FWrICi4GZ_c) | 33:26 | `lecture-03-single-agent-safety.md` |
 | [Lecture 4 — Safety Engineering](https://www.youtube.com/watch?v=R7sazz_MtP8) | 51:33 | `lecture-04-safety-engineering.md` |
 | [Lecture 5 — Complex Systems](https://www.youtube.com/watch?v=HioFwi96leY) | 49:03 | `lecture-05-complex-systems.md` |
