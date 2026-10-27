@@ -201,3 +201,9 @@ cited on the page is recomputed by the count-sync instrument from the
 file itself; the intro's claim carries it. The full-register sweep
 (`--all`) ran the same day — see rotation 5b's record if present;
 any drift found is recorded here, not silently fixed.
+
+**Rotation 5 run record (2026-10-27):** `exit 0`. Tail of the instrument's report:
+
+```
+97/97 live; 0 hard failures
+```
