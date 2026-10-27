@@ -90,3 +90,31 @@ instead and it can be reimplemented.
 Maintainers review for: technical accuracy, honest status reporting,
 citation validity, licensing, and test coverage. Expect requests for evidence
 rather than opinions — that is the course's culture applied to itself.
+
+## Adding a course or lecture note to the lecture library
+
+The `courses/` layer follows the repository's evidence discipline with
+its own shape:
+
+1. **Register before you link.** Every playlist, channel, and course
+   page gets a source-register entry (13-field schema) with an honest
+   access level: `page-inspected` for playlist structure verified via
+   the API, `full-text-read` for course pages read end-to-end,
+   `metadata-only` for channels identified from ownership. Run
+   `scripts/verify_links.py --ids <NEW-IDS>` before any link lands in
+   AWESOME.md, and record the run in MAINTENANCE.md.
+2. **Notes are original companions, never transcripts.** No spoken
+   content is transcribed or quoted. A note anchors to what is
+   verifiable: the lecture's announced title and topic, the course
+   page's published readings and experiment descriptions, and the
+   literature this repository already registers (cite the SRC ID
+   where one exists).
+3. **One note, one commit, one row link.** The commit that adds a
+   note links its table row in the course README in the same commit —
+   never before (the committed tree must not carry dead links; the
+   driver's committed-tree check enforces this).
+4. **Honest in-progress states.** A note that does not exist yet is
+   a plain backticked filename in the table; it becomes a link when
+   it lands. Counters on pinned surfaces (README, CITATION,
+   AWESOME's intro) are recomputed by the sync instrument — run the
+   drift tests before pushing.
