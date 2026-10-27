@@ -364,3 +364,17 @@ monitoring-channel caveats are
 the release memo is
 [Chapter 20](../20-misuse-dangerous-capabilities-release-evaluation/README.md)'s;
 standards mapping is Chapter 23's (planned).
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) | CAIS Ethics & Society | what aviation and nuclear already learned, accessibly |
+| [module-07-safety-security-resilience](../../courses/safeshield-governance/module-07-safety-security-resilience.md) | Safeshield Governance | the S-word triad as governance obligations |
+| [module-13-policies-documentation](../../courses/safeshield-governance/module-13-policies-documentation.md) | Safeshield Governance | the documentation craft that holds assurance together |
