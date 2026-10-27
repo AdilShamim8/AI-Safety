@@ -57,10 +57,10 @@ listed in the schedule below as **announced, not yet in the playlist**
 
 | Lecture | Video | Length | Companion note |
 |---|---|---|---|
-| L1 | [Introduction — AI 2027, normal technology, and what this course asks](https://www.youtube.com/watch?v=-NCiWaRS6So) | 2:25:51 | `lecture-01-introduction.md` |
-| L2 | [Modern LLM training and safety training](https://www.youtube.com/watch?v=GXggPt_gqiI) | 2:23:02 | `lecture-02-modern-llm-training.md` |
-| L3 | [Robustness — adversarial examples, jailbreaks, prompt injection, weight security](https://www.youtube.com/watch?v=pfKO4MlvM-Y) | 1:36:26 | `lecture-03-adversarial-robustness.md` |
-| L4 | [Model Specs — specifications and compliance](https://www.youtube.com/watch?v=LQ0RRQKKluc) | 2:06:04 | `lecture-04-model-specifications.md` |
+| L1 | [Introduction — AI 2027, normal technology, and what this course asks](https://www.youtube.com/watch?v=-NCiWaRS6So) | 2:25:51 | [lecture-01-introduction.md](lecture-01-introduction.md) |
+| L2 | [Modern LLM training and safety training](https://www.youtube.com/watch?v=GXggPt_gqiI) | 2:23:02 | [lecture-02-modern-llm-training.md](lecture-02-modern-llm-training.md) |
+| L3 | [Robustness — adversarial examples, jailbreaks, prompt injection, weight security](https://www.youtube.com/watch?v=pfKO4MlvM-Y) | 1:36:26 | [lecture-03-adversarial-robustness.md](lecture-03-adversarial-robustness.md) |
+| L4 | [Model Specs — specifications and compliance](https://www.youtube.com/watch?v=LQ0RRQKKluc) | 2:06:04 | [lecture-04-model-specifications.md](lecture-04-model-specifications.md) |
 | L5 | [Experiment on policy compliance (student experiment session)](https://www.youtube.com/watch?v=HMcA4Gi6HFE) | 17:02 | `lecture-05-experiment-policy-compliance.md` |
 | L6 | [Recursive Self Improvement](https://www.youtube.com/watch?v=wzep3Rnv6iw) | 2:29:33 | `lecture-06-recursive-self-improvement.md` |
 | L7 | [Lab vs Field — capabilities vs. safety (Joel Becker, METR)](https://www.youtube.com/watch?v=fuRmxFZ-umE) | 2:01:36 | `lecture-07-lab-vs-field.md` |
