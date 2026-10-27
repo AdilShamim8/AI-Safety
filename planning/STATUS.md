@@ -192,7 +192,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-26 — the Fall 2026 final session companion note (announced scope, published reading list, core ideas, chapter through-lines) | 7805005 (pushed) | courses/boaz-barak-cs2881/f26-oral-presentations.md; course-page readings reproduced as attribution; register IDs cited where held |
 | 3-27 — the Part 0 companion note | b40e9cb (pushed) | courses/google-deepmind-agi-safety/part-00-introduction.md |
 | 3-28 — the Part 1.1 companion note | 63386f0 (pushed) | courses/google-deepmind-agi-safety/part-01-01-path-to-superhuman.md |
-| 3-29 — the Part 1.2 companion note | (pending) | courses/google-deepmind-agi-safety/part-01-02-deliberate-planning.md |
+| 3-29 — the Part 1.2 companion note | f6d7759 (pushed) | courses/google-deepmind-agi-safety/part-01-02-deliberate-planning.md |
+| 3-30 — the Part 1.3 companion note | (pending) | courses/google-deepmind-agi-safety/part-01-03-exercise-instrumental-subgoals.md |
 
 ## Next exact action
 
