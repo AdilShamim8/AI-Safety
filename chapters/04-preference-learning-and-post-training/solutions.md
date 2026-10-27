@@ -218,3 +218,12 @@ Biases 1–2 are the ones §3.6 names; 3 is §6.2's. No verified magnitude exist
 | Study design | denominators, Wilson, control arm, blinding | stratification + pinned judge/prompt/date | "ask some humans to check" |
 | Weakening numbers | concrete bounds that fire | stratum-level rule included | "if agreement is low" |
 | Limits | gold-standard-by-fiat + sampling named | policy-vs-labeler distinction drawn | absent |
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **CS 2881**, [lecture-02-modern-llm-training](../../courses/boaz-barak-cs2881/lecture-02-modern-llm-training.md) — watch before working the pipeline and sycophancy exercises.
