@@ -382,6 +382,15 @@ contamination status. Start with TruthfulQA [DS-001], AdvBench
 
 ## Courses, fellowships, and the from-scratch track
 
+- **The lecture library** ([courses/](courses/)) —
+  the four-course video-companion layer opened 2026-10-27: Harvard
+  CS 2881, the Google DeepMind AGI Safety Course, the CAIS Ethics &
+  Society course, and the Safeshield governance series — 57 verified
+  videos, 61 companion notes, reading lists reproduced as
+  attribution, and per-course pedagogy analyses. Start from
+  [courses/README.md](courses/README.md); the watch guide there
+  schedules the library against this course's chapters.
+
 - **[ARENA curriculum](https://www.arena.education/curriculum)**
   [SRC-CURR-001] — the ML-engineer-side safety curriculum this course's
   prerequisites are calibrated against.
