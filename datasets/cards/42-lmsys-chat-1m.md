@@ -1,12 +1,17 @@
 # Dataset card: LMSYS-Chat-1M
 
-LICENSE observed at the dataset's distribution terms as stated in the
-paper's release notes (ODC-BY family per the project's release
-information; **the license page itself uninspected this session —
-recorded honestly as paper-stated, pending page-inspect**) ·
-verification date 2026-10-25 (arXiv abstract verified via API;
-title/authors/date checked) · prepared by the course build · status:
-card at abstract-read level
+LICENSE observed at the live Hugging Face page on 2026-10-27: the
+dataset is **gated** behind a custom **LMSYS-Chat-1M Dataset License
+Agreement** (acceptance form with name/email/affiliation/country); the
+agreement grants a limited, non-exclusive, non-transferable,
+non-sublicensable license to use the dataset "for both research and
+commercial purposes," subject to restrictions including
+non-identification of individuals — **no ODC-BY statement appears
+anywhere on the page; the earlier "ODC-BY family" note was a
+paper-stated guess and is corrected here** · verification dates:
+arXiv abstract 2026-10-25 (API); license page 2026-10-27 (page
+inspected) · prepared by the course build · status: card at
+abstract-read + license-page-inspected level
 
 ## 1. Identity and provenance
 
@@ -59,7 +64,9 @@ card at abstract-read level
 
 ## 6. Honest limitations (this card)
 
-- Abstract-read: license page uninspected (paper-stated terms
-  recorded as such); language mix, category taxonomy, and the
-  redaction protocol body-level; no content quoted or
-  redistributed (the standing policy for all cards).
+- License page inspected 2026-10-27 (see header): gated custom
+  agreement, not ODC-BY. The raw README sits behind the gate, so the
+  agreement text was read from the rendered public page. Language
+  mix, category taxonomy, and the redaction protocol body-level; no
+  content quoted or redistributed (the standing policy for all
+  cards).
