@@ -362,3 +362,16 @@ untrusted artifact descriptions are
 tool-poisoning lesson generalized; the catalog's license flags are
 the in-repository worked instance; drift of artifacts in deployment
 continues in Chapter 17.
+
+## Watching companions (the lecture library)
+
+Video lectures that pair with this chapter, from the repository's
+[lecture library](../../courses/README.md). Each pairing says why it
+belongs here; the notes are original companions to the lectures'
+announced scopes, and the disagreement between a lecturer and a
+chapter is a finding to record, not a problem to resolve.
+
+| Companion note | Course | Why watch it here |
+|---|---|---|
+| [module-06-privacy-data-protection](../../courses/safeshield-governance/module-06-privacy-data-protection.md) | Safeshield Governance | the GDPR-class principles meeting ML, with the toolbox priced |
+| [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | training-data extraction: alignment does not imply privacy |
