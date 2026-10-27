@@ -346,7 +346,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-179 — the progress-ladder integration note (watched is not worked) | 45d0c80 (pushed) | roadmaps/progress/README.md |
 | 3-180 — the alignment route's watching checkpoints | b4b7bbc (pushed) | roadmaps/progress/alignment-research.md |
 | 3-181 — the security route's watching checkpoints | 5ed7cda (pushed) | roadmaps/progress/ai-security-engineering.md |
-| 3-182 — the evaluations route's watching checkpoints | (pending) | roadmaps/progress/evaluations-and-assurance.md |
+| 3-182 — the evaluations route's watching checkpoints | 5a909d9 (pushed) | roadmaps/progress/evaluations-and-assurance.md |
+| 3-183 — the audit route's watching checkpoints | (pending) | roadmaps/progress/audit-only.md |
 
 ## Next exact action
 

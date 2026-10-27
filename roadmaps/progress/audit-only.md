@@ -81,3 +81,13 @@ to those roles. But the field's bottleneck is honest readers: the
 person who can ask "what does this not establish?" in the room where
 the deployment decision happens. That is the whole of this tracker's
 promise, and it is enough.
+
+### Watching checkpoints (audit route)
+
+- [ ] Operator: Safeshield modules 1–2 with Ch. 01
+- [ ] Operator: Safeshield module 8 with the risk chapters
+- [ ] Operator: Safeshield modules 9–11 with Ch. 23
+- [ ] Operator: Safeshield modules 12–14 with Ch. 22
+- [ ] Alongside: CAIS L1/L4/L7/L8 for the society-scale framing
+- [ ] Alongside: DeepMind P3 for the frontier-evaluation connection
+- [ ] Self-check: the CAIS and Safeshield self-assessments
