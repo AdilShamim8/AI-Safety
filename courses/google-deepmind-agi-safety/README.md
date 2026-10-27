@@ -50,16 +50,16 @@ matters.
 | [Part 1: 3. Exercise 1: Instrumental subgoals](https://www.youtube.com/watch?v=fynl-QPNAhE) | 2:44 | [part-01-03-exercise-instrumental-subgoals.md](part-01-03-exercise-instrumental-subgoals.md) |
 | [Part 1: 4. Where can misaligned goals come from?](https://www.youtube.com/watch?v=KKMETIVEzXA) | 9:00 | [part-01-04-misaligned-goals.md](part-01-04-misaligned-goals.md) |
 | [Part 1: 5. Exercise 2: Classification quiz for alignment failures](https://www.youtube.com/watch?v=h95RgGPs-ss) | 2:25 | [part-01-05-exercise-classification.md](part-01-05-exercise-classification.md) |
-| [Part 2: 1. Alignment approach](https://www.youtube.com/watch?v=RGh8wP9PjJw) | 3:44 | `part-02-01-alignment-approach.md` |
-| [Part 2: 2. Amplified oversight](https://www.youtube.com/watch?v=E9nBGNi6jQA) | 6:18 | `part-02-02-amplified-oversight.md` |
-| [Part 2: 3. Robust training & monitoring](https://www.youtube.com/watch?v=xhXYgIWFGkc) | 6:07 | `part-02-03-robust-training-monitoring.md` |
-| [Part 2: 4. Security & control](https://www.youtube.com/watch?v=8wmZ0JK8kKM) | 5:11 | `part-02-04-security-and-control.md` |
-| [Part 2: 5. Interpretability](https://www.youtube.com/watch?v=G2AenEl9A4Y) | 4:35 | `part-02-05-interpretability.md` |
-| [Part 2: 6. Safer design patterns](https://www.youtube.com/watch?v=jWNPqYSH2_o) | 3:47 | `part-02-06-safer-design-patterns.md` |
-| [Part 2: 7. Alignment stress tests](https://www.youtube.com/watch?v=vswXc-_Chtg) | 3:44 | `part-02-07-alignment-stress-tests.md` |
-| [Part 3: 1. Institutional approaches to AI safety](https://www.youtube.com/watch?v=RsqKKuqgaMA) | 7:01 | `part-03-01-institutional-approaches.md` |
-| [Part 3: 2. Frontier safety practices](https://www.youtube.com/watch?v=EtQaN6Shi-E) | 3:51 | `part-03-02-frontier-safety-practices.md` |
-| [Part 3: 3. Dangerous capability evaluations](https://www.youtube.com/watch?v=00h9yaN5un4) | 6:26 | `part-03-03-dangerous-capability-evaluations.md` |
+| [Part 2: 1. Alignment approach](https://www.youtube.com/watch?v=RGh8wP9PjJw) | 3:44 | [part-02-01-alignment-approach.md](part-02-01-alignment-approach.md) |
+| [Part 2: 2. Amplified oversight](https://www.youtube.com/watch?v=E9nBGNi6jQA) | 6:18 | [part-02-02-amplified-oversight.md](part-02-02-amplified-oversight.md) |
+| [Part 2: 3. Robust training & monitoring](https://www.youtube.com/watch?v=xhXYgIWFGkc) | 6:07 | [part-02-03-robust-training-monitoring.md](part-02-03-robust-training-monitoring.md) |
+| [Part 2: 4. Security & control](https://www.youtube.com/watch?v=8wmZ0JK8kKM) | 5:11 | [part-02-04-security-and-control.md](part-02-04-security-and-control.md) |
+| [Part 2: 5. Interpretability](https://www.youtube.com/watch?v=G2AenEl9A4Y) | 4:35 | [part-02-05-interpretability.md](part-02-05-interpretability.md) |
+| [Part 2: 6. Safer design patterns](https://www.youtube.com/watch?v=jWNPqYSH2_o) | 3:47 | [part-02-06-safer-design-patterns.md](part-02-06-safer-design-patterns.md) |
+| [Part 2: 7. Alignment stress tests](https://www.youtube.com/watch?v=vswXc-_Chtg) | 3:44 | [part-02-07-alignment-stress-tests.md](part-02-07-alignment-stress-tests.md) |
+| [Part 3: 1. Institutional approaches to AI safety](https://www.youtube.com/watch?v=RsqKKuqgaMA) | 7:01 | [part-03-01-institutional-approaches.md](part-03-01-institutional-approaches.md) |
+| [Part 3: 2. Frontier safety practices](https://www.youtube.com/watch?v=EtQaN6Shi-E) | 3:51 | [part-03-02-frontier-safety-practices.md](part-03-02-frontier-safety-practices.md) |
+| [Part 3: 3. Dangerous capability evaluations](https://www.youtube.com/watch?v=00h9yaN5un4) | 6:26 | [part-03-03-dangerous-capability-evaluations.md](part-03-03-dangerous-capability-evaluations.md) |
 
 ## How the course organizes knowledge
 

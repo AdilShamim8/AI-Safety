@@ -195,7 +195,8 @@ per commit, pushed and remote-verified one at a time.
 | 3-29 — the Part 1.2 companion note | f6d7759 (pushed) | courses/google-deepmind-agi-safety/part-01-02-deliberate-planning.md |
 | 3-30 — the Part 1.3 companion note | 39bb6ce (pushed) | courses/google-deepmind-agi-safety/part-01-03-exercise-instrumental-subgoals.md |
 | 3-31 — the Part 1.4 companion note | 561285c (pushed) | courses/google-deepmind-agi-safety/part-01-04-misaligned-goals.md |
-| 3-32 — the Part 1.5 companion note | (pending) | courses/google-deepmind-agi-safety/part-01-05-exercise-classification.md |
+| 3-32 — the Part 1.5 companion note | 27b6afa (pushed) | courses/google-deepmind-agi-safety/part-01-05-exercise-classification.md |
+| 3-33 — the Part 2.1 companion note | (pending) | courses/google-deepmind-agi-safety/part-02-01-alignment-approach.md |
 
 ## Next exact action
 
