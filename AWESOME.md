@@ -9,11 +9,11 @@ was fetched, when, and how far into it this course actually read. The
 And every line now carries its live link, verified — not
 assumed. Across its rotations — 3 (2026-10-25) and 4 (2026-10-27,
 the lecture-library opening) —
-[scripts/verify_links.py](scripts/verify_links.py) fetched all 96
+[scripts/verify_links.py](scripts/verify_links.py) fetched all 97
 URLs cited on this page: the arXiv spine title-matched against the
 arXiv API, the course videos and playlists against YouTube's oEmbed
 and playlist endpoints, the rest fetched server-side. All
-96 live — three hosts (OWASP, the American Bar Association,
+97 live — three hosts (OWASP, the American Bar Association,
 ACM) bot-block datacenter clients while remaining real pages the
 register corroborates, and exactly one URL is deliberately not
 linked: the OpenAI Preparedness announcement, whose canonical 404
@@ -122,6 +122,15 @@ Four tracks, each with a job:
     carries all 8 lecture notes — and it is the only source in this
     index that teaches collective-action problems as a first-class
     unit.
+
+  - **[The Safeshield AI Governance series](https://www.youtube.com/playlist?list=PL70MHvytmJU8zwamiQnweHV0Vj-h0zlOW)**
+    [SRC-VIDEO-017] — practitioner training in the governance layer
+    (14 modules, ~12.5 hours): principles, risk management, ISO/IEC
+    42001, the NIST AI RMF, the EU AI Act, lifecycle operations, and
+    audit practice — the Monday-morning layer the technical courses do
+    not attempt. The companion
+    ([courses/safeshield-governance/](courses/safeshield-governance/))
+    carries all 14 module notes and the standards crosswalks.
 
 ## Blogs and ongoing commentary
 
