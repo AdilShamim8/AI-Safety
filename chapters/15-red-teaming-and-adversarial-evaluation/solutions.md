@@ -166,3 +166,12 @@ paired-vs-unpaired distinction drawn explicitly in (c) with the
 "cannot rule out ~5 points" conclusion, and a stopping rule whose
 *absence* has pre-declared consequences. Deduct for any conclusion
 of the form "overlapping intervals → no effect."
+
+## Watching pointers for the exercises
+
+The [lecture library](../../courses/README.md) pairs with this
+chapter's exercises: watch the listed companions first, and treat any
+disagreement between a lecturer's framing and an exercise's rubric as
+a finding to note in your solution.
+
+- **DeepMind course**, [part-02-07-alignment-stress-tests](../../courses/google-deepmind-agi-safety/part-02-07-alignment-stress-tests.md) — watch before working the adaptive-attack exercises.
