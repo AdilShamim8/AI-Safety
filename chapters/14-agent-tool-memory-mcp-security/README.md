@@ -1,5 +1,7 @@
 # Chapter 14 — Agents, tools, memory, and MCP security
 
+**Chapter nav:** [← Ch. 13](../13-llm-application-security/README.md) · [course map](../../SYLLABUS.md) · [Ch. 15 →](../15-red-teaming-and-adversarial-evaluation/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 14 — Agent, tool, memory, and MCP security: capability-based access, least privilege, delegation, authorization, isolation, dependency compromise |
@@ -698,3 +700,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-06-safer-design-patterns](../../courses/google-deepmind-agi-safety/part-02-06-safer-design-patterns.md) | DeepMind AGI Safety | architecture as a safety decision — the CaMeL lineage |
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the agent-framework injection surface |
+
+---
+
+**Next:** [Chapter 15 — Red teaming and adversarial evaluation →](../15-red-teaming-and-adversarial-evaluation/README.md)
