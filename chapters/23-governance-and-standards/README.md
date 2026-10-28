@@ -1,5 +1,7 @@
 # Chapter 23 — Governance and standards for researchers
 
+**Chapter nav:** [← Ch. 22](../22-safety-engineering-and-assurance/README.md) · [course map](../../SYLLABUS.md) · [Ch. 24 →](../24-research-practice-and-capstone-execution/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 23 — Governance and standards: the NIST AI RMF, the NIST adversarial-ML taxonomy, MITRE ATLAS, OWASP GenAI, the EU AI Act's obligations, corporate responsible-scaling frameworks — sorted by what they actually are: guidance, obligation, or proposal |
@@ -334,3 +336,7 @@ chapter is a finding to record, not a problem to resolve.
 | [module-09-iso-42001](../../courses/safeshield-governance/module-09-iso-42001.md) | Safeshield Governance | the AI management system as certifiable object |
 | [module-10-nist-ai-rmf](../../courses/safeshield-governance/module-10-nist-ai-rmf.md) | Safeshield Governance | govern-map-measure-manage, taught as practice |
 | [module-11-eu-ai-act](../../courses/safeshield-governance/module-11-eu-ai-act.md) | Safeshield Governance | the risk pyramid and the first comprehensive statute |
+
+---
+
+**Next:** [Chapter 24 — Research practice and capstone execution →](../24-research-practice-and-capstone-execution/README.md)
