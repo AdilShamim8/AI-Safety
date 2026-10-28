@@ -653,6 +653,9 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
   .searchbar input{padding:11px 14px}
   #topBtn{width:48px;height:48px}
 }
+/* ---------- skip link (session 5) ---------- */
+.skip{position:absolute;left:-9999px;top:0;background:var(--paper);padding:10px 16px;z-index:100;border:1px solid var(--accent);color:var(--accent);font-family:var(--sans);font-size:13px}
+.skip:focus{left:12px;top:12px}
 @media print{
   .topbar,.toc,.toc-toggle,.searchbar,.filters{display:none!important}
   body{background:#fff}
@@ -1951,6 +1954,13 @@ function esc(s){ return String(s == null ? "" : s); }
   var onUpdate = function(){ bar.classList.toggle("scrolled", window.scrollY > 8); };
   window.addEventListener("scroll", onUpdate, {passive:true});
   onUpdate();
+})();
+/* ---------- skip link (session 5) ---------- */
+(function(){
+  var a = document.createElement("a");
+  a.className = "skip"; a.href = "#overview";
+  a.textContent = "Skip to content";
+  document.body.prepend(a);
 })();
 /* s5-js-insert */
 })();
