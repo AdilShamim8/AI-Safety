@@ -1,5 +1,7 @@
 # Ch. 11 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt both exercises before reading past §9's hints. Every number in §4's
 tables is recomputed here — Wilson intervals at z = 1.96
 ([Ch. 02](../02-evaluation-science-and-experimental-design/README.md)
