@@ -149,3 +149,62 @@ def test_phone_topbar_targets_and_facts_grid() -> None:
     assert ".mast .facts .m{display:none}" in tpl
     html = _html()
     assert ".mast .facts{display:grid;grid-template-columns:1fr 1fr" in html
+
+
+# ------------------------------------------------------------------
+# session 6 (part 2) — the viewport guard. A real complaint screenshot
+# showed the page laid out at a ~980px desktop canvas on a phone: the
+# browser had ignored the viewport meta (desktop-mode request or an
+# in-app WebView), so every media query missed and the phone showed a
+# sliced desktop page — giant clipped headings, text cut at the right
+# edge, a sideways scrollbar. Media queries cannot fire in that state,
+# so the phone layout is ALSO driven by a class the head script sets
+# from the real constraints (coarse pointer, small physical screen,
+# clientWidth too wide for it), and the guard stylesheet is derived
+# mechanically from the template's own media blocks at build time.
+# ------------------------------------------------------------------
+
+
+def test_viewport_guard_script_present() -> None:
+    """The head script detects the meta-ignored state and marks <html>."""
+    tpl = _tpl()
+    assert 'classList.toggle("vw-guard"' in tpl
+    assert 'matchMedia("(pointer:coarse)")' in tpl
+    assert "screen.width" in tpl
+    assert "cw > 640" in tpl
+    html = _html()
+    assert 'classList.toggle("vw-guard"' in html
+
+
+def test_guard_layer_derived_into_page() -> None:
+    """The generated page carries the re-scoped phone layer."""
+    html = _html()
+    assert "s6 viewport-guard layer — DERIVED" in html
+    assert "html.vw-guard body{max-width:520px;margin-left:auto;margin-right:auto}" in html
+    assert "html.vw-guard .toc-toggle{display:flex" in html
+    assert "html.vw-guard .dtab td.hide-m{display:block}" in html
+    assert "@media (orientation:landscape){html.vw-guard .toc{max-height:56vh}}" in html
+
+
+def test_guard_layer_matches_derivation_exactly() -> None:
+    """No drift: the emitted layer is character-for-character the derivation."""
+    import sys
+
+    sys.path.insert(0, str(REPO_ROOT / "scripts"))
+    import build_dashboard  # noqa: E402
+
+    layer = build_dashboard._guard_layer(_tpl())
+    assert layer in _html(), "guard layer drifted from the media blocks"
+
+
+def test_guard_layer_excludes_print_and_stray_blocks() -> None:
+    """The single-line sticky-th stray must not swallow the print rules."""
+    import sys
+
+    sys.path.insert(0, str(REPO_ROOT / "scripts"))
+    import build_dashboard  # noqa: E402
+
+    layer = build_dashboard._guard_layer(_tpl())
+    assert "@page" not in layer
+    assert "page-break" not in layer
+    assert "top:41px" not in layer
