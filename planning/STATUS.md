@@ -602,4 +602,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-C01 | responsive contract tests + suite-count sync | 1810d7e |
 | S5-C02 | ADR-0004: the dashboard is a responsive artifact | 2518211 |
 | S5-D01 | chapter 01 README: nav line + closing next pointer | 82427a8 |
-| S5-D02 | chapter 02 README: nav line + closing next pointer | pending |
+| S5-D02 | chapter 02 README: nav line + closing next pointer | ff51c1c |
+| S5-D03 | chapter 03 README: nav line + closing next pointer | pending |

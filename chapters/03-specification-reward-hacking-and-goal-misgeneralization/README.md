@@ -1,5 +1,7 @@
 # Ch. 03 — Specification, reward hacking, and goal misgeneralization
 
+**Chapter nav:** [← Ch. 02](../02-evaluation-science-and-experimental-design/README.md) · [course map](../../SYLLABUS.md) · [Ch. 04 →](../04-preference-learning-and-post-training/README.md)
+
 > The chapter where the objective itself becomes the suspect. Ch. 01 gave you
 > risk models and Ch. 02 gave you measurement discipline; both assumed you can
 > state what you want. This chapter is about the failure family where the thing
@@ -580,3 +582,7 @@ chapter is a finding to record, not a problem to resolve.
 | [part-01-04-misaligned-goals](../../courses/google-deepmind-agi-safety/part-01-04-misaligned-goals.md) | DeepMind AGI Safety | the genesis taxonomy this chapter expands |
 | [part-01-05-exercise-classification](../../courses/google-deepmind-agi-safety/part-01-05-exercise-classification.md) | DeepMind AGI Safety | the classification drill for the same failure families |
 | [lecture-03-single-agent-safety](../../courses/cais-ethics-society/lecture-03-single-agent-safety.md) | CAIS Ethics & Society | the specification problem for a non-technical audience |
+
+---
+
+**Next:** [Ch. 04 — Preference learning and post-training →](../04-preference-learning-and-post-training/README.md)
