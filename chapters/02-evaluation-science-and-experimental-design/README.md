@@ -1,5 +1,7 @@
 # Ch. 02 — Evaluation science and experimental design
 
+**Chapter nav:** [← Ch. 01](../01-risk-models-and-research-epistemics/README.md) · [course map](../../SYLLABUS.md) · [Ch. 03 →](../03-specification-reward-hacking-and-goal-misgeneralization/README.md)
+
 > The chapter that makes every later chapter honest. Safety claims are
 > measurement claims, and measurement claims live or die on design choices
 > made *before* the first number is printed: what you measure, on what data,
@@ -460,3 +462,7 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-07-lab-vs-field](../../courses/boaz-barak-cs2881/lecture-07-lab-vs-field.md) | Harvard CS 2881 | lab evaluations vs field performance — the chapter's central distinction, taught by METR's own |
 | [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) | DeepMind AGI Safety | what an evaluation can and cannot establish |
 | [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the UK AISI model-hacking report as evaluation-gaming evidence |
+
+---
+
+**Next:** [Ch. 03 — Specification, reward hacking, and goal misgeneralization →](../03-specification-reward-hacking-and-goal-misgeneralization/README.md)
