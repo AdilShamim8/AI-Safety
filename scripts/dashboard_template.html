@@ -688,6 +688,15 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
 .topbar.scrolled{box-shadow:0 1px 0 var(--rule-2),0 6px 18px -12px rgba(33,29,22,.35)}
 /* ---------- scroll containment (session 5) ---------- */
 .tabwrap{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+/* s6: when a wrapper really does scroll sideways (tablets, where the
+   tables keep their columnar form), a right-edge fade says so — a
+   clipped column reads as "broken table", a fading one reads as
+   "more to the right". The class is toggled from JS only while
+   scrollWidth exceeds clientWidth, so fitting tables never fade. */
+.tabwrap.scrollable{
+  -webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 26px),transparent 100%);
+  mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 26px),transparent 100%);
+}
 /* ---------- touch targets (session 5) ---------- */
 @media (pointer:coarse){
   .toc a{padding:11px 4px 11px 10px}
@@ -1709,6 +1718,30 @@ function lbl(td, label){ td.setAttribute("data-label", label); return td; }
   }
   $("#clmSearch").addEventListener("input", function(){ state.q = this.value.trim().toLowerCase(); render(); });
   render();
+})();
+
+/* ---------- s6: scroll affordance for the table wrappers ----------
+   A horizontally-scrolling table with no signal looks broken, not
+   scrollable. This marks a .tabwrap as .scrollable only while it
+   truly overflows (tablets; phones restack to cards and never
+   qualify), and re-checks whenever a table re-renders — search and
+   the level filters change row counts, and a filtered table can
+   stop overflowing mid-interaction. */
+(function(){
+  function hint(){
+    document.querySelectorAll(".tabwrap").forEach(function(w){
+      w.classList.toggle("scrollable", w.scrollWidth - w.clientWidth > 4);
+    });
+  }
+  window.addEventListener("resize", hint);
+  window.addEventListener("load", hint);
+  if(window.MutationObserver){
+    var mo = new MutationObserver(function(){ setTimeout(hint, 0); });
+    document.querySelectorAll(".dtab tbody").forEach(function(tb){
+      mo.observe(tb, { childList: true });
+    });
+  }
+  setTimeout(hint, 0);
 })();
 
 /* ---------- §10 glossary ---------- */
