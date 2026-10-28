@@ -1,5 +1,7 @@
 # Chapter 18 — Reasoning faithfulness and monitorability
 
+**Chapter nav:** [← Ch. 17](../17-distribution-shift-and-deployment-reliability/README.md) · [course map](../../SYLLABUS.md) · [Ch. 19 →](../19-multimodal-and-embodied-safety/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 18 — Reasoning faithfulness and monitorability: CoT explanations as evidence; biased and unfaithful reasoning; obfuscation under optimization pressure; oversight-conditional behavior; the monitorability tax |
@@ -407,3 +409,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | the obfuscation trap: training against the CoT monitor |
 | [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) | DeepMind AGI Safety | monitoring as runtime evidence |
+
+---
+
+**Next:** [Chapter 19 — Multimodal and embodied safety →](../19-multimodal-and-embodied-safety/README.md)
