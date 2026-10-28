@@ -202,6 +202,23 @@ def test_viewport_guard_zoom_compensation() -> None:
     assert "html.vw-guard{zoom:var(--vgz,1)}" in html
 
 
+def test_phone_layer_breaks_slash_joined_tokens() -> None:
+    """s7: chapter descriptions carry slash-joined vocabulary runs that
+    the line breaker treats as one word; at 320px the first chapter's
+    run ("hazard/capability/propensity/exposure/severity", ~269px at
+    13px sans) alone pushed the layout viewport 15px past the screen.
+    The phone layer now wraps such tokens anywhere — in the media block
+    and in the guard layer derived from it."""
+    tpl = _tpl()
+    assert ".chap .cb .cd{overflow-wrap:anywhere}" in tpl
+    assert ".dtab td.clm{overflow-wrap:anywhere}" in tpl
+    assert ".awe{overflow-wrap:anywhere}" in tpl
+    assert ".note{overflow-wrap:anywhere}" in tpl
+    html = _html()
+    assert ".chap .cb .cd{overflow-wrap:anywhere}" in html
+    assert "html.vw-guard .chap .cb .cd{overflow-wrap:anywhere}" in html
+
+
 def test_guard_layer_derived_into_page() -> None:
     """The generated page carries the re-scoped phone layer."""
     html = _html()
