@@ -1,5 +1,7 @@
 # Diagnostic — are you ready for the advanced chapters?
 
+**Navigate:** [← START HERE](../START_HERE.md) · [targeted refreshers](targeted-refreshers.md) · [verifying sources](verifying-sources.md)
+
 Five tasks, 60–90 minutes. Work them **before** reading the worked answers;
 the value is in discovering your gaps, not in matching the answer key. Tasks
 map to refreshers R1–R6 in
