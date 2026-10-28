@@ -1,5 +1,7 @@
 # Chapter 12 — Adversarial ML and robustness
 
+**Chapter nav:** [← Ch. 11](../11-behavioral-steering-and-representation-interventions/README.md) · [course map](../../SYLLABUS.md) · [Ch. 13 →](../13-llm-application-security/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 12 — Adversarial ML and robustness: evasion, poisoning, backdoors, extraction, membership inference; attacker knowledge; adaptive evaluation |
@@ -581,3 +583,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the full adversarial surface: examples, jailbreaks, injection, weights |
 | [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) | DeepMind AGI Safety | robustness as a safety property that survives shift |
+
+---
+
+**Next:** [Chapter 13 — LLM application security →](../13-llm-application-security/README.md)
