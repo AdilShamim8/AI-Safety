@@ -519,7 +519,7 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
 /* ---------- reveal (subtle entrance) ---------- */
 .rv{opacity:0;transform:translateY(10px);transition:opacity .55s ease,transform .55s ease}
 .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}#topBtn{transition:none}}
 
 /* ---------- responsive ---------- */
 .toc-toggle{display:none}
