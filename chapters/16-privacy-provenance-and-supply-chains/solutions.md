@@ -1,5 +1,7 @@
 # Chapter 16 — Solutions and assessor rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Worked solutions for the two exercises in
 [README.md](README.md). Every rate carries its explicit denominator;
 every interval is a Wilson 95% at z = 1.95996 (recomputed with the
