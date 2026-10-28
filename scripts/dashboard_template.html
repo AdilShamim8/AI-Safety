@@ -642,6 +642,14 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
 .topbar.scrolled{box-shadow:0 1px 0 var(--rule-2),0 6px 18px -12px rgba(33,29,22,.35)}
 /* ---------- scroll containment (session 5) ---------- */
 .tabwrap{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+/* ---------- touch targets (session 5) ---------- */
+@media (pointer:coarse){
+  .toc a{padding:11px 4px 11px 10px}
+  .chip{padding:8px 14px}
+  details.fq summary{padding-top:15px;padding-bottom:14px}
+  .searchbar input{padding:11px 14px}
+  #topBtn{width:48px;height:48px}
+}
 @media print{
   .topbar,.toc,.toc-toggle,.searchbar,.filters{display:none!important}
   body{background:#fff}
