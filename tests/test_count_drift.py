@@ -39,6 +39,7 @@ INSTRUMENT_FILES = {
     "test_dashboard.py",
     "test_validate_repo.py",
     "test_responsive.py",
+    "test_site_navigation.py",
 }
 
 
