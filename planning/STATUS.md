@@ -580,4 +580,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-A07 | phone: stat ledger cells compact | 858dc5a |
 | S5-A08 | phone: project cards stack | cd656a7 |
 | S5-A09 | phone: career rungs stack | 2c3f9da |
-| S5-A10 | phone: honesty ledger rows stack | pending |
+| S5-A10 | phone: honesty ledger rows stack | d07a7cd |
+| S5-A11 | phone: data tables densify and pin the first column | pending |
