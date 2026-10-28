@@ -1,5 +1,7 @@
 # Ch. 11 — Behavioral steering and representation interventions
 
+**Chapter nav:** [← Ch. 10](../10-sparse-features-circuits-and-interpretability-evaluation/README.md) · [course map](../../SYLLABUS.md) · [Ch. 12 →](../12-adversarial-ml-and-robustness/README.md)
+
 > The chapter where the model's internals stop being a map and start being a
 > control surface. A direction a probe can *read* is a hypothesis; a direction
 > whose addition and ablation *move* behavior is an intervention — and an
@@ -553,3 +555,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | steering from representation-level signals; evaluation-aware models |
 | [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | interpretability turned into monitoring and control |
+
+---
+
+**Next:** [Chapter 12 — Adversarial ML and robustness →](../12-adversarial-ml-and-robustness/README.md)
