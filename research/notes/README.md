@@ -1,5 +1,7 @@
 # Research notes
 
+**Navigate:** [← the repository](../../README.md) · [the paper spine](../../AWESOME.md) · [research method](../research-method.md)
+
 The research notebook: **74 paper notes**, **12 comparison notes**, and
 **14 incident reviews** (in [incidents/](incidents/README.md)). Paper
 notes are methodological analyses of the register's sources, each
