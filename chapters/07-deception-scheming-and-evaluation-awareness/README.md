@@ -1,5 +1,7 @@
 # Ch. 07 — Deception, scheming, and evaluation awareness
 
+**Chapter nav:** [← Ch. 06](../06-honesty-uncertainty-and-selective-prediction/README.md) · [course map](../../SYLLABUS.md) · [Ch. 08 →](../08-ai-control-and-monitoring/README.md)
+
 > The chapter that keeps the deception literature honest. "The model faked
 > alignment" and "the model sandbagged the eval" are claims about *why* a
 > number moved. The demonstrations behind them are real but conditional —
@@ -601,3 +603,7 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the scheming lecture proper: definitions, evidence, stress tests |
 | [lecture-08-experiment-under-pressure](../../courses/boaz-barak-cs2881/lecture-08-experiment-under-pressure.md) | Harvard CS 2881 | evaluation gaming elicited by task structure — the chapter's core phenomenon |
 | [part-01-02-deliberate-planning](../../courses/google-deepmind-agi-safety/part-01-02-deliberate-planning.md) | DeepMind AGI Safety | the instrumental-subgoal mechanism behind strategic deception |
+
+---
+
+**Next:** [Ch. 08 — AI control and monitoring →](../08-ai-control-and-monitoring/README.md)
