@@ -1,5 +1,7 @@
 # How the four courses organize knowledge
 
+**Navigate:** [← lecture library](README.md) · [study plans](study-plans.md)
+
 *A cross-course analysis · part of the [lecture library](README.md) ·
 written 2026-10-27 from the verified course structures*
 
