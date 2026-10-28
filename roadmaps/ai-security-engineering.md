@@ -1,5 +1,7 @@
 # Route: AI security engineering
 
+**Navigate:** [← the learner's map](../ROADMAP.md) · [study schedules](study-schedules.md) · [progress tracker](progress/ai-security-engineering.md)
+
 **Primary purpose:** secure AI applications and agent workflows — from
 classical adversarial ML through LLM application security to agent/tool
 security — producing engineering-grade artifacts: threat models, isolated
