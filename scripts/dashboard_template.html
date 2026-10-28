@@ -638,6 +638,8 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
   .toc{padding:34px 22px 70px 30px}
   body{font-size:16.5px}
 }
+/* ---------- topbar scroll state (session 5) ---------- */
+.topbar.scrolled{box-shadow:0 1px 0 var(--rule-2),0 6px 18px -12px rgba(33,29,22,.35)}
 @media print{
   .topbar,.toc,.toc-toggle,.searchbar,.filters{display:none!important}
   body{background:#fff}
@@ -1928,6 +1930,14 @@ function esc(s){ return String(s == null ? "" : s); }
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     window.scrollTo({top:0, behavior: reduce ? "auto" : "smooth"});
   });
+})();
+/* ---------- topbar scroll state (session 5) ---------- */
+(function(){
+  var bar = document.querySelector(".topbar");
+  if(!bar) return;
+  var onUpdate = function(){ bar.classList.toggle("scrolled", window.scrollY > 8); };
+  window.addEventListener("scroll", onUpdate, {passive:true});
+  onUpdate();
 })();
 /* s5-js-insert */
 })();

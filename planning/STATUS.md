@@ -590,4 +590,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-A17 | phone: safe-area insets and landscape handling | 27a96ba |
 | S5-B01 | desktop+a11y: keyboard focus becomes visible | ae68aab |
 | S5-B02 | desktop+phone: a back-to-top control appears | e3af492 |
-| S5-B03 | desktop: a wide-screen breakpoint at 1600px | pending |
+| S5-B03 | desktop: a wide-screen breakpoint at 1600px | 4188aa7 |
+| S5-B04 | desktop+phone: the sticky topbar gains a scroll shadow | pending |
