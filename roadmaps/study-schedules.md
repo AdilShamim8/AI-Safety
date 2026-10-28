@@ -1,5 +1,7 @@
 # Study schedules
 
+**Navigate:** [← the learner's map](../ROADMAP.md) · [first 90 days](first-90-days.md)
+
 Three schedules over the same routes. Pick by hours-per-week you can actually
 sustain, not by ambition; the adaptation rules at the bottom tell you what to
 cut when life interferes. Route sequences live in the
