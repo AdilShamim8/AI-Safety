@@ -1,5 +1,7 @@
 # Chapter 15 — Red teaming and adversarial evaluation
 
+**Chapter nav:** [← Ch. 14](../14-agent-tool-memory-mcp-security/README.md) · [course map](../../SYLLABUS.md) · [Ch. 16 →](../16-privacy-provenance-and-supply-chains/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 15 — Red teaming and adversarial evaluation: coverage, adaptive attacks, benign controls, scoring with denominators, over-refusal, responsible reporting |
@@ -396,3 +398,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the red/blue experiment: many-shot attacks vs reasoning effort |
 | [part-02-07-alignment-stress-tests](../../courses/google-deepmind-agi-safety/part-02-07-alignment-stress-tests.md) | DeepMind AGI Safety | red-teaming the alignment program itself |
+
+---
+
+**Next:** [Chapter 16 — Privacy, provenance, and supply chains →](../16-privacy-provenance-and-supply-chains/README.md)
