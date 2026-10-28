@@ -1,5 +1,7 @@
 # Ch. 05 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt every exercise before reading past its hint (§9 of the [chapter README](README.md));
 rubrics grade the reasoning trail, not just the final number. All numbers were recomputed
 programmatically: committee tails as exact binomial sums (`math.comb`, no normal
