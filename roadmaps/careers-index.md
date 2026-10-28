@@ -1,5 +1,7 @@
 # Careers index — three roles, one methodological spine
 
+**Navigate:** [← the learner's map](../ROADMAP.md) · [first 90 days](first-90-days.md) · [progress trackers](progress/README.md)
+
 **What this page is:** the bridge from this course's routes to the job
 market — what the three role families actually are, what the live
 demand signal looks like (with sources and dates), and how to track
