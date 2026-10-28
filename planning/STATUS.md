@@ -670,4 +670,37 @@ phone layer starts by killing it. Unit ledger:
 | S5-F19 | hub nav: datasets/README.md | aa41b60 |
 | S5-F20 | hub nav: research/notes/README.md | 8731de2 |
 | S5-G01 | visual audit instrument committed | 5863996 |
-| S5-G02 | navigation contract tests + suite-count sync | pending |
+| S5-G02 | navigation contract tests + suite-count sync | a568780 |
+
+## Session 5 closed (2026-10-28) — 105/105 units
+
+Owner's brief: the dashboard must read well on a phone and a desktop;
+every commit under AdilShamim8 (verified at open — all 516 commits
+API-associated with the account, zero unattributed); at least 100 new
+pushes, one at a time. Delivered:
+
+- **The phone layer (S5-A01..A17).** Opening measurement: 303px of
+  horizontal overflow at 390px, one cause — AWESOME id chips appended
+  with no break opportunities. Fixed first, then a max-width:640px
+  layer unit by unit: frame, topbar, tap targets, masthead, chain,
+  ledger, cards, rungs, honesty rows, data tables (first column
+  pinned), search, steps, trackers, FAQ/AWESOME/colophon, type, and
+  safe-areas with landscape.
+- **Desktop and accessibility (S5-B01..B11).** Focus visibility,
+  back-to-top, the 1600px wide-screen frame, topbar scroll state,
+  contained table scrollers, coarse-pointer targets, the
+  reduced-motion scroll gate, text-size/tap-highlight ground rules,
+  the skip link, print catch-up, and the sticky-header offset fix.
+- **Contracts (S5-C01..C02, G01..G02).** tests/test_responsive.py
+  (10 tests) and tests/test_site_navigation.py (4 tests) pin the
+  promises; ADR-0004 records the decision; scripts/visual_audit.py
+  is the on-demand measuring instrument.
+- **Navigation (S5-D01..E24, F01..F20).** All 24 chapter READMEs
+  carry a chapter-nav line and a closing next pointer; all 24
+  solutions files carry their way back; 20 hub pages carry navigate
+  lines — every link resolving to a real file, pinned by test.
+
+Suite and repository counters: recomputed by the count instruments
+at every test-adding unit; the closing state is in the final
+verification below. Repository: 516 → 621 commits.
+
