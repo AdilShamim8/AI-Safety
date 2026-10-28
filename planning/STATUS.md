@@ -573,4 +573,5 @@ phone layer starts by killing it. Unit ledger:
 |---|---|---|
 | S5-A01 | phone: kill the 303px page overflow — id chips get break spaces | fa4cbcd |
 | S5-A02 | phone: open the max-width:640px layer — frame breathing room | 4513949 |
-| S5-A03 | phone: topbar and contents-toggle compaction | pending |
+| S5-A03 | phone: topbar and contents-toggle compaction | e73fb5d |
+| S5-A04 | phone: TOC tap targets sized for thumbs | pending |
