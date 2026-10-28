@@ -1,5 +1,7 @@
 # Progress trackers — the step-by-step index
 
+**Navigate:** [← the learner's map](../../ROADMAP.md) · [study schedules](../study-schedules.md)
+
 Four routes, four trackers, one discipline: **progress is an
 auditable artifact, not an hour count.** Every checkbox names its
 evidence; every milestone ends in self-audit questions; the honest
