@@ -1,5 +1,7 @@
 # Center for AI Safety — AI Safety, Ethics, & Society
 
+**Navigate:** [← lecture library](../README.md) · [study plans](../study-plans.md) · [previous: Google DeepMind](../google-deepmind-agi-safety/README.md) · [next: Safeshield governance →](../safeshield-governance/README.md)
+
 *The non-technical university course companion · [playlist](https://www.youtube.com/playlist?list=PLXSn3Zz2ayT7ab7I12PBYVt0244369S1q) ·
 [channel](https://www.youtube.com/@centerforaisafety) · [textbook](https://www.aisafetybook.com) · 8 lectures,
 about 7 hours total, verified via YouTube's playlist API on 2026-10-27*
