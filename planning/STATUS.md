@@ -596,4 +596,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-B06 | touch: coarse pointers get real targets | a787ff9 |
 | S5-B07 | a11y: reduced motion also gates smooth scrolling | fc803d1 |
 | S5-B08 | phone+a11y: text-size adjustment and tap highlight | 9cc0bc4 |
-| S5-B09 | a11y: a skip link for keyboard users | pending |
+| S5-B09 | a11y: a skip link for keyboard users | 6a38ea1 |
+| S5-B10 | print: tables and controls print honestly | pending |
