@@ -1,5 +1,7 @@
 # Chapter 18 — Solutions and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 ## Exercise 18.1 — probe design
 
 **Full-credit solution.**
