@@ -599,4 +599,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-B09 | a11y: a skip link for keyboard users | 6a38ea1 |
 | S5-B10 | print: tables and controls print honestly | 5022da8 |
 | S5-B11 | fix: sticky table headers align to the real topbar height | 3590665 |
-| S5-C01 | responsive contract tests + suite-count sync | pending |
+| S5-C01 | responsive contract tests + suite-count sync | 1810d7e |
+| S5-C02 | ADR-0004: the dashboard is a responsive artifact | pending |
