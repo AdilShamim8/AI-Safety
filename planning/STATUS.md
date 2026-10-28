@@ -658,4 +658,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-F07 | hub nav: courses/how-courses-organize.md | c9d71c7 |
 | S5-F08 | hub nav: roadmaps/alignment-research.md | 2f2bd08 |
 | S5-F09 | hub nav: roadmaps/ai-security-engineering.md | 7abe3ce |
-| S5-F10 | hub nav: roadmaps/evaluations-and-assurance.md | pending |
+| S5-F10 | hub nav: roadmaps/evaluations-and-assurance.md | b836da8 |
+| S5-F11 | hub nav: roadmaps/audit-only.md | pending |

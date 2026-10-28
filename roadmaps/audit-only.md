@@ -1,5 +1,7 @@
 # Route: audit-only — the spine without a specialization
 
+**Navigate:** [← the learner's map](../ROADMAP.md) · [study schedules](study-schedules.md) · [progress tracker](progress/audit-only.md)
+
 **Primary purpose:** learn to READ and JUDGE AI-safety evidence —
 evaluation designs, red-team reports, interpretability claims, safety
 cases — without producing research artifacts of your own. This is the
