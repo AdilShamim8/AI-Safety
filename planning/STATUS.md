@@ -768,3 +768,53 @@ screenshot review at 390px. Repository closed at 628 commits
 Standing actions unchanged: the session token (the fourth exposed
 across sessions) must be rotated by the owner; SECURITY.md's
 reporting path governs.
+
+---
+
+## Session 6 (part 2) — the viewport guard (2026-10-28)
+
+The owner's second complaint screenshot told a different story than the
+first: the page was laid out at a ~980px desktop canvas on a phone —
+kicker clipped mid-word, the masthead a wall of cropped letters, a
+sideways scrollbar. Reproduced and confirmed by structural comparison:
+the user's browser is ignoring the viewport meta ("request desktop
+site", or an in-app WebView), so EVERY media query misses and every
+breakpoint fix is invisible in that environment. Media queries cannot
+fire there, so the phone layout is now ALSO driven by a guard:
+
+- **S6-R01.** A head script detects the mismatch itself — coarse
+  pointer + physical screen no wider than 500px + a clientWidth over
+  640 — and marks html.vw-guard. build_dashboard.py then mechanically
+  re-scopes the template's own (max-width:960px) and (max-width:640px)
+  blocks under that class (regenerated on every build, so the guard
+  layer can never disagree with the media layers it mirrors), plus
+  one guard-only rule capping the body to a 520px centered column
+  inside the oversized canvas. Verified by four-environment
+  simulation: a desktop-mode phone and an 800px-layout WebView both
+  get the full phone layout (contents toggle, 56px masthead, card
+  tables, two-column facts, zero overflow), while a real 390px phone
+  and a 1440px desktop are untouched. One derivation bug was caught
+  by that simulation and fixed before commit: the single-line sticky-
+  th stray block lacked the newline close the extractor keys on and
+  swallowed the print rules (a display:none in there was killing the
+  contents toggle); the patterns now demand the full block shape.
+- **S6-R02.** Four pins in tests/test_responsive.py: the detection
+  script present, the derived layer's key rules present, a
+  character-for-character parity test rebuilding _guard_layer() and
+  demanding it verbatim in index.html, and the print-rule exclusion.
+  Suite 631 → 635 (401 package + 174 from-scratch + 60
+  repo-instrument); README resynced; dashboard regenerated at 635.
+- **S6-R03.** This record and the CHANGELOG entry.
+
+Residual honesty: a browser in explicit desktop mode renders the guard
+layout inside its wide canvas — a centered phone column — which is
+readable and complete, but the cleanest experience remains a normal
+mobile view; the owner should also check that "request desktop site"
+is off for the site and hard-refresh any cached copy. Verification at
+close: full suite 635/635; validator OK; ruff and black clean; visual
+audit passing at all four widths; guard simulation passing in all
+four environments. Repository closed at 631 commits.
+
+Standing actions unchanged: the session token (the fourth exposed
+across sessions) must be rotated by the owner; SECURITY.md's
+reporting path governs.

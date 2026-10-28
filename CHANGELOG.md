@@ -7,6 +7,33 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The viewport guard (2026-10-28)
+
+- The owner's second phone screenshot showed a state no media query
+  could fix: the page laid out on a ~980px desktop canvas — kicker
+  clipped mid-word, the masthead a wall of cropped letters, a sideways
+  scrollbar. Reproduced and confirmed structurally: the browser was
+  ignoring the viewport meta (a desktop-mode request or an in-app
+  WebView), so every breakpoint fix was invisible in that environment.
+- The phone layout is now also driven by a guard: a head script
+  detects the mismatch itself (coarse pointer, physical screen no
+  wider than 500px, clientWidth over 640) and marks html.vw-guard;
+  build_dashboard.py mechanically re-scopes the template's own 960px
+  and 640px blocks under that class on every build — derived, never
+  hand-maintained — plus one rule capping the body to a 520px centered
+  column inside the oversized canvas.
+- Verified by four-environment simulation: a desktop-mode phone and an
+  800px-layout WebView get the full phone layout (contents toggle,
+  56px masthead, card tables, two-column facts, zero overflow); a real
+  390px phone and a 1440px desktop are untouched. The simulation also
+  caught a derivation bug before it shipped: a single-line media
+  stray was swallowing the print rules into the guard layer.
+- Pinned four ways in tests/test_responsive.py (14 → 18 tests),
+  including a character-for-character parity test that rebuilds the
+  guard layer from the template and demands it verbatim in the
+  generated page. Suite 631 → 635 (401 package + 174 from-scratch +
+  60 repo-instrument), README resynced.
+
 ### The phone table pass (2026-10-28)
 
 - The owner's second read of the phone screen: the page *fit* 390px
