@@ -160,3 +160,19 @@ for exactly this purpose:
    invocable per unit; batch-mode generation silently batches the
    commits' content too. All session-3 generators after the fix use
    step dispatch.
+
+## Session-5 lessons (2026-10-28)
+
+- Responsive work opens with a measurement, not an opinion. The
+  303px phone overflow had one cause and one line; a screenshot
+  album would have argued about typography instead.
+- The template is the single hand-edited surface; the generated page
+  is a build artifact. Every CSS unit regenerated and committed the
+  page with its rule, and the freshness test held throughout.
+- One concern per unit kept 105 pushes each independently
+  revertible and bisectable; the manifest-driven driver (units5
+  manifest + exact-string ops with count assertions) caught anchor
+  drift before any commit rather than after.
+- Breakpoints and navigation are contracts: the two new test files
+  exist so the layers and the nav lines cannot silently disappear.
+
