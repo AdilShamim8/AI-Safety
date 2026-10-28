@@ -587,4 +587,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-A14 | phone: tracker labels yield, incidents compact | 7dd4f55 |
 | S5-A15 | phone: FAQ, AWESOME entries, and colophon compact | 10df2bc |
 | S5-A16 | phone: section headings and body notes scale | f257223 |
-| S5-A17 | phone: safe-area insets and landscape handling | pending |
+| S5-A17 | phone: safe-area insets and landscape handling | 27a96ba |
+| S5-B01 | desktop+a11y: keyboard focus becomes visible | pending |
