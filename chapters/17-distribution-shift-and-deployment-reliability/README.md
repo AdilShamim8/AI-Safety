@@ -1,5 +1,7 @@
 # Chapter 17 — Distribution shift and deployment reliability
 
+**Chapter nav:** [← Ch. 16](../16-privacy-provenance-and-supply-chains/README.md) · [course map](../../SYLLABUS.md) · [Ch. 18 →](../18-reasoning-faithfulness-and-monitorability/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 17 — Distribution shift and deployment reliability: OOD, worst-group, drift, uncertainty under shift; covariate vs label vs concept change |
@@ -351,3 +353,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) | DeepMind AGI Safety | training-time robustness plus deployment-time monitoring |
 | [module-12-lifecycle-governance](../../courses/safeshield-governance/module-12-lifecycle-governance.md) | Safeshield Governance | change management and the gates that keep deployed systems true |
+
+---
+
+**Next:** [Chapter 18 — Reasoning faithfulness and monitorability →](../18-reasoning-faithfulness-and-monitorability/README.md)
