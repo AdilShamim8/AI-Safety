@@ -1,5 +1,7 @@
 # Ch. 06 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt every exercise before reading past its hint (README §9). Rubrics grade
 the reasoning trail, not the final number. Wilson intervals use the Ch. 02
 formulation: z = 1.96 (z² = 3.8416), center = (p̂ + z²/2n)/(1 + z²/n),
