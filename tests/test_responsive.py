@@ -86,3 +86,66 @@ def test_skip_link_present() -> None:
     """The first Tab press offers to jump the contents rail."""
     assert 'a.className = "skip"' in _tpl()
     assert ".skip:focus" in _tpl()
+
+
+# ------------------------------------------------------------------
+# session 6 — the phone table pass. Session 5 made the page FIT a
+# 390px viewport; session 6 makes the register tables READ on one.
+# A 626px five-column table was never a phone layout: names wrapped
+# into jagged multi-line fragments and the sticky ID column spent
+# prime width on "DS-002". The pins below hold the card restack,
+# the field labels that name the restacked data, the scroll
+# affordance for viewports that keep the columnar form, and the
+# chrome ergonomics (thumb targets, facts grid).
+# ------------------------------------------------------------------
+
+
+def test_phone_table_cards_declared() -> None:
+    """S6: at 640px the three register tables restack as cards."""
+    tpl = _tpl()
+    assert "S6 phone layer" in tpl, "the s6 phone layer banner is gone"
+    assert tpl.count("@media (max-width:640px)") >= 2, "the s6 layer must be its own block"
+    assert ".dtab thead{display:none}" in tpl
+    assert ".dtab td.hide-m{display:block}" in tpl, "phones must re-show the 960px-hidden columns"
+    assert (
+        ".dtab td:not([data-label]):not(.idc):not(.ttl):not(.clm){display:none}" in tpl
+    ), "unlabeled redundant link cells must not render as empty card rows"
+
+
+def test_card_labels_stamp_every_field() -> None:
+    """The row builders stamp data-label so a restacked card names its data."""
+    tpl = _tpl()
+    assert 'function lbl(td, label)' in tpl
+    pinned_calls = (
+        'tr.appendChild(lbl(el("td", null, d.organization), "Organization"));',
+        'tr.appendChild(lbl(el("td", null, d.risk_area), "Risk area"));',
+        'tr.appendChild(lbl(el("td","hide-m mono", d.course_use), "Course use"));',
+        'tr.appendChild(lbl(el("td","hide-m", s.org), "Organization"));',
+        'tr.appendChild(lbl(el("td","hide-m mono", s.accessed_on), "Fetched"));',
+        'tr.appendChild(lbl(el("td","hide-m", c.evidence_strength), "Strength"));',
+        'tr.appendChild(lbl(el("td","hide-m mono", c.date), "Registered"));',
+    )
+    for call in pinned_calls:
+        assert call in tpl, f"row builder lost its label stamp: {call}"
+        assert call in _html(), f"generated page lost its label stamp: {call}"
+
+
+def test_table_scroll_affordance_declared() -> None:
+    """A sideways-scrolling wrapper wears a fade that says so."""
+    tpl = _tpl()
+    assert ".tabwrap.scrollable{" in tpl
+    assert "mask-image:linear-gradient(90deg" in tpl
+    assert "MutationObserver" in tpl, "the fade must re-check after every re-render"
+    html = _html()
+    assert ".tabwrap.scrollable{" in html
+    assert "MutationObserver" in html
+
+
+def test_phone_topbar_targets_and_facts_grid() -> None:
+    """Thumb-sized topbar links; the facts line restacks as a 2-col grid."""
+    tpl = _tpl()
+    assert ".topbar .acts a{display:inline-flex" in tpl
+    assert ".mast .facts{display:grid;grid-template-columns:1fr 1fr" in tpl
+    assert ".mast .facts .m{display:none}" in tpl
+    html = _html()
+    assert ".mast .facts{display:grid;grid-template-columns:1fr 1fr" in html
