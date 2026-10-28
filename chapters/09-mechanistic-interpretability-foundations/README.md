@@ -1,5 +1,7 @@
 # Ch. 09 — Mechanistic interpretability foundations
 
+**Chapter nav:** [← Ch. 08](../08-ai-control-and-monitoring/README.md) · [course map](../../SYLLABUS.md) · [Ch. 10 →](../10-sparse-features-circuits-and-interpretability-evaluation/README.md)
+
 > The chapter that turns "we looked inside the model" into a causal claim
 > you can defend. Every interpretability result — a heatmap, a "circuit",
 > an edited model — is either a controlled intervention with baselines,
@@ -493,3 +495,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | four labs' bets on opening the box — activations, SAEs, circuits |
 | [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | why the internal channel matters for safety claims |
+
+---
+
+**Next:** [Ch. 10 — Sparse features, circuits, and interpretability evaluation →](../10-sparse-features-circuits-and-interpretability-evaluation/README.md)
