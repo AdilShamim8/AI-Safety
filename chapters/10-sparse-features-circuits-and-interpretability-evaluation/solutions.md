@@ -1,5 +1,7 @@
 # Ch. 10 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt every exercise before reading past its hint (§9 of the
 [README](README.md)). Rubrics grade the reasoning trail — which evidence kind
 each number is, which control is missing — at least as heavily as arithmetic.
