@@ -1,5 +1,7 @@
 # Google DeepMind — the AGI Safety Course
 
+**Navigate:** [← lecture library](../README.md) · [study plans](../study-plans.md) · [previous: Harvard CS 2881](../boaz-barak-cs2881/README.md) · [next: CAIS Ethics & Society →](../cais-ethics-society/README.md)
+
 *The frontier lab's own course companion · [playlist](https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW) ·
 [channel](https://www.youtube.com/@GDMSafetyResearch) · 16 parts, about 85 minutes total, verified
 via YouTube's playlist API on 2026-10-27*
