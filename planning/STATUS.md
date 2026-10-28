@@ -558,3 +558,17 @@ commits (508 at session open + 8 final-sweep units).
 Standing actions unchanged: the session token remains exposed in
 chat history and must be rotated by the owner (three tokens across
 sessions, all exposed); SECURITY.md's reporting path governs.
+
+<!-- SESSION5_UNITS -->
+
+## Session 5 — the responsive site (2026-10-28)
+
+Owner's brief: the dashboard must read well on a phone and a desktop;
+every commit under AdilShamim8 (verified at open: 516/516 commits
+API-associated); at least 100 new pushes, one at a time. Opening
+measurement: 303px horizontal overflow at a 390px viewport — the
+phone layer starts by killing it. Unit ledger:
+
+| Unit | Change | SHA |
+|---|---|---|
+| S5-A01 | phone: kill the 303px page overflow — id chips get break spaces | pending |

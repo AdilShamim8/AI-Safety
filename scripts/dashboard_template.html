@@ -1759,9 +1759,9 @@ function esc(s){ return String(s == null ? "" : s); }
       b.innerHTML = e.name; /* markdown-linked titles since rotation 3 */
       row.appendChild(b);
       e.ids.forEach(function(id){
+        row.appendChild(document.createTextNode(" "));
         row.appendChild(el("span","srcid", id));
       });
-      row.appendChild(document.createTextNode(" "));
       var n2 = el("span","an2");
       n2.innerHTML = e.note;
       row.appendChild(n2);
