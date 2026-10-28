@@ -1,5 +1,7 @@
 # Chapter 24 — Solutions and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 ## Exercise 24.1 — scoping drill
 
 **Full-credit solution.**
