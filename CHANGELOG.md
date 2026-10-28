@@ -7,6 +7,40 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The zoom that sliced the phone (2026-10-28)
+
+- The owner reported the phone still broken after the s7 guard, with a
+  DevTools screenshot (Pixel 9 Pro, 427px): the kicker and the giant
+  serif title cut off at the right edge, text magnified ~2.3x. The
+  deployed page was verified current first (live HTML byte-identical
+  to origin/main); forcing the guard class with its frozen --vgz
+  reproduced the screenshot exactly — the root cause was the guard's
+  own zoom compensation, not a deployment gap.
+- `zoom:var(--vgz)` shrinks the layout viewport to the screen while
+  every guard rule was written for the oversized canvas, so the 520px
+  body cap and the px paddings overflowed the shrunken viewport: the
+  guard produced the very sliced page it existed to prevent, in both
+  its true-positive path (desktop-mode phone) and its false-positive
+  path (a late-applied emulated viewport, where the frozen first-run
+  verdict could never un-wrong itself).
+- The s8 guard removes the zoom and compensates with type: the head
+  script publishes `--vfs` (clientWidth over screen.width, clamped
+  1.05..3) and the derived layer scales every font-size through
+  `calc(*var(--vfs,2.2))`. Font sizes cannot change clientWidth, so
+  the verdict no longer freezes — it re-measures on every event plus
+  an 800ms late re-check and self-corrects. The derivation now
+  mirrors the whole cascade (the base tier's 114 font rules are
+  scaled too), the guard tail caps nothing (the full canvas at
+  scaled type is the phone column), long unbreakable tokens break
+  anywhere, and `overflow-x:clip` is the final insurance.
+- Verified across 15 device scenarios: the owner's exact DevTools
+  case and a load-at-980-then-resize-to-427 self-correction pin both
+  render the ordinary phone layout; six meta-ignored combinations
+  (320-600px screens over 800-1280px canvases) render guard mode
+  with body type at 16.0px physical and the maximum element
+  right-edge exactly equal to the canvas; 768-1920px untouched.
+  Suite 638 → 640, README resynced, dashboard regenerated at 640.
+
 ### The guard's blind spots and the physical scale (2026-10-28)
 
 - The owner reported the phone still unreadable after the guard shipped.

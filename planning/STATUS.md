@@ -878,3 +878,60 @@ session open + 3 session-7 units).
 Standing actions unchanged and now urgent: the session token (the
 fourth exposed across sessions) must be rotated by the owner;
 SECURITY.md's reporting path governs.
+
+## Session 8 — the zoom that sliced the phone (2026-10-28)
+
+The owner's third report, with a screenshot: DevTools Pixel 9 Pro
+(427px), the kicker "AN OPEN RES..." and a giant "AI S..." cut off at
+the right edge, text magnified ~2.3x. The deployed page was again
+verified current (live MD5 byte-identical to local, all s7 markers
+present), so this was a live rendering defect, not a deployment gap.
+Forcing the guard class with its frozen --vgz on the live page
+reproduced the owner's screenshot exactly (VLM: same failure, high
+confidence) — the root cause was the s7 guard's own zoom mechanic:
+zoom:var(--vgz) shrinks the layout viewport to the screen while every
+guard rule was written for the oversized canvas, so the 520px body cap
+and the px paddings overflowed the shrunken viewport and every line
+ran past the glass. The mechanic failed in BOTH paths — the true
+positive (a desktop-mode phone, canvas 980 on a 427px glass) and the
+false positive (a late-applied emulated viewport, where the frozen
+first-run verdict could never un-wrong itself). Closed in one unit:
+
+- **S8-P01.** The zoom is gone; type is scaled instead. The head
+  script publishes --vfs (clientWidth over screen.width, clamped
+  1.05..3) and the derived layer wraps every font-size it emits in
+  calc(*var(--vfs,2.2)) — font sizes cannot change clientWidth, so
+  there is nothing to freeze: detection re-measures on every
+  resize/orientationchange/load/pageshow plus an 800ms late re-check,
+  and a wrong verdict self-corrects. The derivation now mirrors the
+  whole cascade: the base tier's font rules are re-scoped and scaled
+  too (114 rules the media blocks never re-set — body type, the
+  wordmark, search inputs — no longer fall through to ~0.4x). The
+  guard tail caps nothing (the full canvas at scaled type IS the
+  phone column), breaks unbreakable tokens anywhere (a src/ path at
+  --vfs scale is wider than the column), and clips horizontal spill
+  with overflow-x:clip as insurance. Audited across 15 scenarios:
+  real phones 360/390/412 and the owner's 427 DevTools case (guard
+  off, zero overflow); a load-at-980-then-resize-to-427 self-
+  correction pin (the s7 freeze would have stayed broken); six
+  meta-ignored combos (320/390/427/540/600 screens over 800/980/1280
+  canvases — guard on, --vfs exact, max element right-edge equal to
+  the canvas, body type 16.0px physical); 768/1024/1440/1920
+  untouched. VLM reads both the guard column and the owner's case as
+  fully readable with nothing cut off. Suite 638 → 640 (401 package +
+  174 from-scratch + 65 repo-instrument), README resynced, dashboard
+  regenerated at 640.
+- **S8-P02.** This record and the CHANGELOG entry.
+
+Verification at close: full suite 640/640 green; validator OK; ruff
+and black clean; the 15-scenario device audit green (guard off where
+the meta is honored — including the owner's exact DevTools case and
+the resize self-correction; guard on with exact physical-size type
+and zero edge violation in every meta-ignored combination); VLM
+verdicts "PASS / acceptable, fully readable, nothing cut off" on both
+critical screenshots. Repository closed at 636 commits (634 at
+session open + 2 session-8 units).
+
+Standing actions unchanged and now urgent: the session token (the
+fourth exposed across sessions) must be rotated by the owner;
+SECURITY.md's reporting path governs.
