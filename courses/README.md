@@ -1,5 +1,7 @@
 # The lecture library — four courses, one method
 
+**Navigate:** [course map](../SYLLABUS.md) · [study plans](study-plans.md) · [how these courses organize](how-courses-organize.md) · [honesty ledger](honesty-ledger.md)
+
 *Part of [AI Safety](../README.md) · opened 2026-10-27 · the video-course
 companions layer of the [resource index](../AWESOME.md)*
 
