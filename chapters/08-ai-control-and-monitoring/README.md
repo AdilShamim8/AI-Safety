@@ -1,5 +1,7 @@
 # Ch. 08 — AI control and monitoring
 
+**Chapter nav:** [← Ch. 07](../07-deception-scheming-and-evaluation-awareness/README.md) · [course map](../../SYLLABUS.md) · [Ch. 09 →](../09-mechanistic-interpretability-foundations/README.md)
+
 > Ch. 05 measured the ceiling of honest-but-weak supervision. This chapter removes the
 > "honest": the system under supervision may be *trying* to subvert the checker, it may
 > know the checker's design, and your safety mechanisms are now the attack surface.
@@ -567,3 +569,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-04-security-and-control](../../courses/google-deepmind-agi-safety/part-02-04-security-and-control.md) | DeepMind AGI Safety | the control paradigm in compressed form |
 | [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the control safety-case sketches on the reading list |
+
+---
+
+**Next:** [Ch. 09 — Mechanistic interpretability foundations →](../09-mechanistic-interpretability-foundations/README.md)
