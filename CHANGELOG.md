@@ -7,6 +7,41 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The responsive site (2026-10-28)
+
+- The owner's brief — better on a phone screen and a desktop screen —
+  opened with a measurement: at a 390px viewport the dashboard carried
+  303px of horizontal overflow. The cause was one line of rendering
+  script: AWESOME id chips appended with no break opportunities, so a
+  bold title plus four nowrap chips formed a single unbreakable run.
+  Fixed first (S5-A01), then pinned so it cannot return.
+- The phone layer (max-width:640px) arrived as seventeen one-concern
+  units — frame breathing room, topbar compaction, thumb-sized TOC
+  targets, masthead type, a wrappable organizing chain, compacted
+  ledger and cards, stacked rungs and honesty rows, denser data
+  tables with the ID column pinned inside their scrollers, full-width
+  search, compact steps and schedules, tracker bars without label
+  noise, compact FAQ/AWESOME/colophon, scaled headings, and iOS
+  safe-areas with landscape handling.
+- Desktop and accessibility landed as eleven more: keyboard focus
+  visibility, a back-to-top control, a 1600px wide-screen frame, the
+  topbar scroll state, contained table scrollers, coarse-pointer hit
+  areas, the reduced-motion scroll gate (smooth scrolling had stayed
+  on for everyone), text-size/tap-highlight ground rules, a skip
+  link, print catch-up, and a sticky-header offset fix per
+  breakpoint.
+- Navigation became part of responsive reading: all 24 chapter READMEs
+  carry a chapter-nav line and a closing next pointer, all 24
+  solutions files carry their way back, and 20 hub pages carry
+  navigate lines — 68 surfaces in all, every link resolving, pinned
+  by tests/test_site_navigation.py.
+- The contracts: tests/test_responsive.py (10 tests) pins the
+  viewport, breakpoints, chip break-spaces, motion gating, focus
+  visibility, scrollers, touch targets, and the two controls;
+  ADR-0004 records the decision; scripts/visual_audit.py measures
+  the generated page at four widths on demand.
+
+
 ### The final double-check sweep (2026-10-27)
 
 - The owner's closing request — double-check everything, organize for
