@@ -1,5 +1,7 @@
 # Targeted refreshers
 
+**Navigate:** [← START HERE](../START_HERE.md) · [the diagnostic](diagnostic.md) · [verifying sources](verifying-sources.md)
+
 Six short, targeted refreshers (R1–R6), one per diagnostic failure mode. Each
 tells you what to rebuild, the fastest way to rebuild it, and which chapters
 assume it. The refreshers deliberately avoid linking to unverified web
