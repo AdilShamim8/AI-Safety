@@ -631,6 +631,13 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
 }
 #topBtn.show{opacity:1;pointer-events:auto}
 #topBtn:hover{color:var(--accent);border-color:var(--accent)}
+/* ---------- wide desktop (min-width:1600px, session 5) ---------- */
+@media (min-width:1600px){
+  .frame{grid-template-columns:260px minmax(0,1fr);max-width:1420px}
+  main{padding:0 48px 110px 52px}
+  .toc{padding:34px 22px 70px 30px}
+  body{font-size:16.5px}
+}
 @media print{
   .topbar,.toc,.toc-toggle,.searchbar,.filters{display:none!important}
   body{background:#fff}
