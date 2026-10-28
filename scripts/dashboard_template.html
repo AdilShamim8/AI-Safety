@@ -620,6 +620,49 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
   /* end s5-phone */
 }
 
+/* ============================================================
+   S6 phone layer (max-width:640px) — the register tables
+   become stacked cards. A 626px-wide five-column table was
+   never a phone layout: names wrapped into four jagged lines,
+   fields broke mid-word, and the sticky ID column spent prime
+   width on "DS-002". Each row now restacks vertically with a
+   field label stamped above it (data-label, set by the row
+   builders), and the columns the 960px layer had to hide
+   (organization, type, fetched, strength…) come back —
+   a phone shows MORE of the register than the tablet does.
+   ============================================================ */
+@media (max-width:640px){
+  .tabwrap{overflow-x:visible}
+  .dtab{display:block}
+  .dtab thead{display:none}
+  .dtab tbody{display:block}
+  .dtab tr{
+    display:block;margin:0 0 12px;padding:7px 0 5px;
+    border:1px solid var(--rule-2);border-left:3px solid var(--accent);
+    background:var(--paper);
+  }
+  .dtab tr:last-child{margin-bottom:0}
+  .dtab td{
+    display:block;border-bottom:none;padding:5px 15px 7px;
+    text-align:left;position:static;
+  }
+  .dtab td:first-child{position:static}
+  .dtab td.hide-m{display:block}
+  .dtab td:not([data-label]):not(.idc):not(.ttl):not(.clm){display:none}
+  .dtab td[data-label]::before{
+    content:attr(data-label);display:block;
+    font-family:var(--sans);font-size:9.5px;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+    margin:5px 0 2px;
+  }
+  .dtab td.idc{font-size:10px;padding-bottom:0}
+  .dtab td.ttl{padding-top:3px}
+  .dtab td.ttl .tt{font-size:14.5px;line-height:1.35}
+  .dtab td.clm{font-size:13.5px;line-height:1.55;color:var(--ink);padding-top:3px}
+  .dtab tr:hover td,.dtab tr:hover td:first-child{background:transparent}
+  .dtab tr:hover .tt{color:var(--accent)}
+}
+
 @media (max-width:640px) and (orientation:landscape){
   .toc{max-height:56vh}
 }
