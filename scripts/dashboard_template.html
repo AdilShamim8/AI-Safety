@@ -621,6 +621,16 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
   .toc{max-height:56vh}
 }
 
+/* ---------- back to top (session 5) ---------- */
+#topBtn{
+  position:fixed;right:18px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--rule-2);
+  background:var(--paper);color:var(--ink-2);font-family:var(--serif);font-size:18px;
+  cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s ease;
+  box-shadow:0 2px 10px rgba(33,29,22,.12);
+}
+#topBtn.show{opacity:1;pointer-events:auto}
+#topBtn:hover{color:var(--accent);border-color:var(--accent)}
 @media print{
   .topbar,.toc,.toc-toggle,.searchbar,.filters{display:none!important}
   body{background:#fff}
@@ -1894,6 +1904,25 @@ function esc(s){ return String(s == null ? "" : s); }
   }, {rootMargin:"0px 0px -8% 0px"});
   rvs.forEach(function(r){ io.observe(r); });
 })();
+/* ---------- back to top (session 5) ---------- */
+(function(){
+  var btn = document.createElement("button");
+  btn.id = "topBtn"; btn.type = "button";
+  btn.title = "Back to top";
+  btn.setAttribute("aria-label","Back to top");
+  btn.textContent = "\u2191";
+  document.body.appendChild(btn);
+  var onUpdate = function(){
+    btn.classList.toggle("show", window.scrollY > 600);
+  };
+  window.addEventListener("scroll", onUpdate, {passive:true});
+  onUpdate();
+  btn.addEventListener("click", function(){
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({top:0, behavior: reduce ? "auto" : "smooth"});
+  });
+})();
+/* s5-js-insert */
 })();
 </script>
 </body>
