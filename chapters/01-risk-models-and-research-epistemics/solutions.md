@@ -1,5 +1,7 @@
 # Ch. 01 — Exercises
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 (The prompts live in the chapter [README](README.md) §8; this file keeps the
 full worked solutions separate so the prompts stay uncontaminated for
 assessment use.)
