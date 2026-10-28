@@ -1,5 +1,7 @@
 # Harvard CS 2881 — AI Safety (Boaz Barak)
 
+**Navigate:** [← lecture library](../README.md) · [study plans](../study-plans.md) · [next course: Google DeepMind AGI Safety →](../google-deepmind-agi-safety/README.md)
+
 *The graduate-seminar course companion · [playlist](https://www.youtube.com/playlist?list=PL_b4B2IWlal3j01Rbj5ebT663E7x4bl_W) ·
 [channel](https://www.youtube.com/@boazbarak2878) · [course page](https://boazbk.github.io/mltheoryseminar)
 (read in full 2026-10-27)*
