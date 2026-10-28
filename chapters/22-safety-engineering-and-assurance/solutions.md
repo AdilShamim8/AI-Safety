@@ -1,5 +1,7 @@
 # Chapter 22 — Solutions and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 ## Exercise 22.1 — defeater-first drafting
 
 **Full-credit solution.**
