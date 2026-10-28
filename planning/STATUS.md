@@ -638,4 +638,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-E11 | chapter 11 solutions: back-nav line | 50f1898 |
 | S5-E12 | chapter 12 solutions: back-nav line | d4de990 |
 | S5-E13 | chapter 13 solutions: back-nav line | 9ac7c8d |
-| S5-E14 | chapter 14 solutions: back-nav line | pending |
+| S5-E14 | chapter 14 solutions: back-nav line | 0a1eb78 |
+| S5-E15 | chapter 15 solutions: back-nav line | pending |
