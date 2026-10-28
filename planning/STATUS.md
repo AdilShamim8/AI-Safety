@@ -818,3 +818,63 @@ four environments. Repository closed at 631 commits.
 Standing actions unchanged: the session token (the fourth exposed
 across sessions) must be rotated by the owner; SECURITY.md's
 reporting path governs.
+
+---
+
+## Session 7 — the guard's blind spots, the physical scale, and the last 15px (2026-10-28)
+
+The owner's report after the s6 guard shipped: the phone was STILL
+unreadable. The deployed page was first verified current (live HTML
+byte-identical to origin/main, Pages build at HEAD, viewport meta
+present) — so the gap was between what the guard did and what the
+owner's hand actually held. A live-page device audit — 13 scenarios
+with true isMobile emulation, a desktop-mode simulation (980px canvas
+with spoofed phone screen dimensions), and a physical-scale (DPR 0.4)
+screenshot read by VLM — found three defects and closed them:
+
+- **S7-P01.** Two intertwined guard defects. (a) The detection gate
+  stopped at screen.width <= 500, so the 540/600px CSS-width budget
+  Androids — everyday hardware — never got the guard at all: the
+  audit's 980-canvas / 540-screen scenario sat in sliced desktop
+  layout with the card tables off. The gate now reaches 620 (a real
+  tablet still never passes: with the meta honored its clientWidth
+  equals its screen.width under the 640 bar). (b) Even where the guard
+  fired, the meta-ignoring browser scales the ~980px canvas down to
+  the glass at ~0.4x, so the correct phone column read as ~6pt text —
+  the VLM's verdict on the physical-scale screenshot was "unusable…
+  requires constant pinch-to-zoom". The head script now freezes --vgz
+  (canvas width over screen width, clamped 1.2..3, computed once from
+  pre-zoom geometry so the verdict can never oscillate through resize
+  re-entry), and build_dashboard.py's derived layer gains
+  html.vw-guard{zoom:var(--vgz,1)}: the phone column returns to true
+  physical size. Audited: 980/390 → zoom 2.5128, 800/412 → 1.9417,
+  980/540 → 1.8148, zero overflow in every scenario, VLM reads the
+  compensated view as comfortably readable; every normal
+  phone/tablet/desktop scenario untouched at zoom 1. Two pins added
+  (the 620 gate; the --vgz/zoom pair). Suite 635 → 637, README
+  resynced, dashboard regenerated at 637.
+- **S7-P02.** The audit's smallest scenario (320px, iPhone SE class)
+  still carried 15px of horizontal scroll every other width had shed.
+  Bisection on the live page found the leaf: chapter descriptions
+  carry slash-joined vocabulary runs
+  ("hazard/capability/propensity/exposure/severity") that the line
+  breaker treats as one unbreakable word (~269px at 13px sans), so the
+  first chapter alone pushed the layout viewport to 335px. The 640px
+  phone layer now sets overflow-wrap:anywhere on the four long-text
+  containers (.chap .cb .cd, .dtab td.clm, .awe, .note); the guard
+  layer inherits the rule by derivation. One pin added. Suite
+  637 → 638, README resynced, dashboard regenerated at 638.
+- **S7-P03.** This record and the CHANGELOG entry.
+
+Verification at close: full suite 638/638 green; validator OK; device
+audit of the regenerated page green at 320 / 360 / 390 / 412 /
+844-landscape / 768 / 1024 / 1440 / 1920 and in all three guard
+scenarios (desktop-mode phone, 800px WebView, 540px-screen phone)
+with zoom ratios exactly canvas-over-screen and zero horizontal
+overflow; VLM reads the guard-mode physical view as readable and
+properly single-column. Repository closed at 634 commits (631 at
+session open + 3 session-7 units).
+
+Standing actions unchanged and now urgent: the session token (the
+fourth exposed across sessions) must be rotated by the owner;
+SECURITY.md's reporting path governs.

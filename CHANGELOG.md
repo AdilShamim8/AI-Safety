@@ -7,6 +7,44 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The guard's blind spots and the physical scale (2026-10-28)
+
+- The owner reported the phone still unreadable after the guard shipped.
+  The deployed page was verified current (live HTML byte-identical to
+  origin/main, Pages build at HEAD), so the gap was between what the
+  guard did and what the owner's hand actually held. A live-page device
+  audit — 13 scenarios with true isMobile emulation, a desktop-mode
+  simulation (980px canvas, spoofed phone screen dimensions), and a
+  physical-scale (DPR 0.4) screenshot read by VLM — found three defects.
+- Detection stopped at screen.width <= 500, so 540/600px CSS-width
+  budget Androids — everyday hardware — never got the guard at all: a
+  meta-ignoring browser on those screens still showed the sliced
+  desktop page with the card tables off. The gate now reaches 620; a
+  real tablet still never passes, because with the meta honored its
+  clientWidth equals its screen.width under the 640 bar.
+- A meta-ignoring browser does not merely lay the page out at ~980px —
+  it also scales that canvas down to the glass at ~0.4x, so even the
+  guard's correct phone column read as ~6pt text (the VLM's verdict on
+  the physical-scale screenshot: "unusable… requires constant
+  pinch-to-zoom"). The head script now freezes --vgz (canvas width
+  over screen width, clamped 1.2..3, computed once from pre-zoom
+  geometry so the verdict can never oscillate through resize
+  re-entry), and the derived layer gains
+  `html.vw-guard{zoom:var(--vgz,1)}`: the phone column returns to true
+  physical size — audited at 980/390 → zoom 2.5128, 800/412 → 1.9417,
+  980/540 → 1.8148, every normal phone/tablet/desktop untouched at 1,
+  and the VLM reads the compensated view as comfortably readable.
+- The last leak: slash-joined vocabulary runs in chapter descriptions
+  ("hazard/capability/propensity/exposure/severity") are one
+  unbreakable word to the line breaker — at 320px the first chapter
+  alone pushed the layout viewport 15px past the screen. The 640px
+  phone layer now sets `overflow-wrap:anywhere` on the four long-text
+  containers (chapter descriptions, claim text, evidence lines,
+  annotations); the guard layer inherits the rule by derivation.
+- Pinned three more ways in tests/test_responsive.py (18 → 21 tests);
+  suite 635 → 638 (401 package + 174 from-scratch + 63
+  repo-instrument); README resynced; dashboard regenerated at 638.
+
 ### The viewport guard (2026-10-28)
 
 - The owner's second phone screenshot showed a state no media query
