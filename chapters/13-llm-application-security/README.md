@@ -1,5 +1,7 @@
 # Chapter 13 — LLM application security
 
+**Chapter nav:** [← Ch. 12](../12-adversarial-ml-and-robustness/README.md) · [course map](../../SYLLABUS.md) · [Ch. 14 →](../14-agent-tool-memory-mcp-security/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 13 — LLM application security: direct and indirect prompt injection, trust boundaries, output handling, retrieval risks; why prompts-as-defense fails |
@@ -484,3 +486,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | prompt injection as the era's SQL injection; defense in depth |
 | [lecture-05-experiment-policy-compliance](../../courses/boaz-barak-cs2881/lecture-05-experiment-policy-compliance.md) | Harvard CS 2881 | does the policy layer hold under adversarial pressure? |
+
+---
+
+**Next:** [Chapter 14 — Agents, tools, memory, and MCP security →](../14-agent-tool-memory-mcp-security/README.md)
