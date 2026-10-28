@@ -1,5 +1,7 @@
 # Safeshield Training — the AI Governance series
 
+**Navigate:** [← lecture library](../README.md) · [study plans](../study-plans.md) · [previous: CAIS Ethics & Society](../cais-ethics-society/README.md)
+
 *The practitioner governance-training companion · [playlist](https://www.youtube.com/playlist?list=PL70MHvytmJU8zwamiQnweHV0Vj-h0zlOW) ·
 [channel](https://www.youtube.com/@SafeshieldTraining) · 14 modules, about 12.5 hours total,
 verified via YouTube's playlist API on 2026-10-27*
