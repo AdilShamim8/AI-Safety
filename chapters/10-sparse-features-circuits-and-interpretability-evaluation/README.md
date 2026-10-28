@@ -1,5 +1,7 @@
 # Ch. 10 — Sparse features, circuits, and interpretability evaluation
 
+**Chapter nav:** [← Ch. 09](../09-mechanistic-interpretability-foundations/README.md) · [course map](../../SYLLABUS.md) · [Ch. 11 →](../11-behavioral-steering-and-representation-interventions/README.md)
+
 > The chapter that keeps interpretability evidence honest. "We found the
 > deception feature" is a claim about *why a model computes what it computes*,
 > and it is among the easiest impressive-sounding claims in AI to produce
@@ -583,3 +585,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | the SAE program and its stress tests (AxBench, persona vectors) |
 | [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | the evaluation problem for interpretability itself |
+
+---
+
+**Next:** [Ch. 11 — Behavioral steering and representation interventions →](../11-behavioral-steering-and-representation-interventions/README.md)
