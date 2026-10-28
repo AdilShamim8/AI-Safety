@@ -1,5 +1,7 @@
 # Ch. 03 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt every exercise before reading past its hint. Rubrics grade the
 reasoning trail, not just the final number — an unsupported right answer
 scores below a well-argued approximate one. Every number in this file was
