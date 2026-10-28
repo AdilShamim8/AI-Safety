@@ -666,4 +666,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-F15 | hub nav: roadmaps/progress/README.md | 75bfc80 |
 | S5-F16 | hub nav: prerequisites/diagnostic.md | ddb390a |
 | S5-F17 | hub nav: prerequisites/targeted-refreshers.md | 6bc3229 |
-| S5-F18 | hub nav: prerequisites/verifying-sources.md | pending |
+| S5-F18 | hub nav: prerequisites/verifying-sources.md | a667047 |
+| S5-F19 | hub nav: datasets/README.md | pending |

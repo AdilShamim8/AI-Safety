@@ -1,5 +1,7 @@
 # Real-world dataset catalog — verified safety-evaluation datasets
 
+**Navigate:** [← the repository](../README.md) · [catalog](catalog.yaml) · [the annotated index](../AWESOME.md)
+
 This catalog is the course's bridge between **methodology chapters** and **real
 evaluation practice**. Every dataset here is a real, publicly documented
 benchmark used by working safety teams and researchers. Every card records,
