@@ -1,5 +1,7 @@
 # Ch. 05 — Scalable oversight
 
+**Chapter nav:** [← Ch. 04](../04-preference-learning-and-post-training/README.md) · [course map](../../SYLLABUS.md) · [Ch. 06 →](../06-honesty-uncertainty-and-selective-prediction/README.md)
+
 > Every safety method in this course ends with something checking the system: a human rater,
 > an eval suite, a monitor model, a reviewer committee. This chapter is about the case where the
 > checker is the weak link — weaker than the system it checks, and wrong in ways that repeat.
@@ -520,3 +522,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-02-amplified-oversight](../../courses/google-deepmind-agi-safety/part-02-02-amplified-oversight.md) | DeepMind AGI Safety | the mechanism compressed: supervision that scales with the system |
 | [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the oversight failure modes that motivate the research program |
+
+---
+
+**Next:** [Ch. 06 — Honesty, uncertainty, and selective prediction →](../06-honesty-uncertainty-and-selective-prediction/README.md)
