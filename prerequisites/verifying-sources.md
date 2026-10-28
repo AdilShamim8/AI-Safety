@@ -1,5 +1,7 @@
 # Verifying sources — the learner's field guide
 
+**Navigate:** [← START HERE](../START_HERE.md) · [the diagnostic](diagnostic.md) · [targeted refreshers](targeted-refreshers.md)
+
 This course's core discipline: **no fact without a source, no source
 without an access level, no claim without counterevidence.** You will
 apply it in every chapter, every project, and — if you take nothing
