@@ -704,3 +704,16 @@ Suite and repository counters: recomputed by the count instruments
 at every test-adding unit; the closing state is in the final
 verification below. Repository: 516 → 621 commits.
 
+
+**Session-5 final remote verification (2026-10-28):** every unit
+from S5-A01 to S5-G07 was committed and pushed one at a time with the
+remote head verified after each push; the closing gates (full suite,
+validator, missing-values audit, ruff and black, committed-tree
+links, structural sweep, visual audit at four widths) ran green at
+close. Repository closed at 621 commits (516 at session open +
+105 session-5 units).
+
+Standing actions unchanged: the session token was exposed in chat
+(the fourth across sessions) and must be rotated by the owner now
+that the work is complete; SECURITY.md's reporting path governs.
+
