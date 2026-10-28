@@ -1,5 +1,7 @@
 # Route: evaluations and assurance
 
+**Navigate:** [← the learner's map](../ROADMAP.md) · [study schedules](study-schedules.md) · [progress tracker](progress/evaluations-and-assurance.md)
+
 **Primary purpose:** design credible tests and contextual safety arguments —
 evaluation methodology, calibration and abstention, distribution shift,
 control protocols, and evidence-backed safety cases for real deployment
