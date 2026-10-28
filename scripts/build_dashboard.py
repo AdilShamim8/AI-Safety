@@ -951,12 +951,69 @@ def build_data() -> dict:
     }
 
 
+#: Media blocks the viewport-guard layer is mechanically derived from.
+#: Order matters: the 960px tablet rules must come out before the 640px
+#: phone rules so the guard cascade mirrors the real one exactly. The
+#: patterns demand a newline straight after the block's opening brace
+#: and a column-0 close, so single-line strays like the sticky-th
+#: offset block cannot swallow the print rules that follow them.
+_GUARD_SOURCE_BLOCKS = [
+    r"^@media \(max-width:960px\)\{\n(.*?)\n\}\n",
+    r"^@media \(max-width:640px\)\{\n(.*?)\n\}\n",
+]
+_GUARD_LANDSCAPE = r"^@media \(max-width:640px\) and \(orientation:landscape\)\{\n(.*?)\n\}\n"
+
+_GUARD_BANNER = """/* ============================================================
+   s6 viewport-guard layer — DERIVED, DO NOT HAND-EDIT.
+   Regenerated on every build by build_dashboard.py from the
+   template's own (max-width:960px) and (max-width:640px) blocks:
+   every rule re-scoped under html.vw-guard, which the head script
+   sets when a phone's browser ignored the viewport meta and laid
+   the page out at desktop width (desktop-mode browsers, several
+   in-app WebViews) — the state where every media query misses and
+   the phone would otherwise show a sliced desktop page. The one
+   guard-only rule at the end caps the body to a phone column
+   inside the oversized canvas.
+   ============================================================ */
+"""
+
+
+def _guard_prefix_rules(body: str) -> list[str]:
+    """Re-scope every plain rule in a media-block body under html.vw-guard."""
+    out: list[str] = []
+    for m in re.finditer(r"([^{}]+)\{([^{}]*)\}", body):
+        sel, props = m.group(1), m.group(2)
+        clean = re.sub(r"/\*.*?\*/", "", sel, flags=re.S).strip()
+        if not clean:
+            continue  # a comment chunk, not a rule
+        sels = [s.strip() for s in clean.split(",") if s.strip()]
+        if not sels:
+            continue
+        prefixed = ", ".join("html.vw-guard " + s for s in sels)
+        out.append(f"{prefixed}{{{props.strip()}}}")
+    return out
+
+
+def _guard_layer(template: str) -> str:
+    """Derive the html.vw-guard stylesheet from the template's own blocks."""
+    rules: list[str] = []
+    for pat in _GUARD_SOURCE_BLOCKS:
+        for m in re.finditer(pat, template, re.S | re.M):
+            rules.extend(_guard_prefix_rules(m.group(1)))
+    for m in re.finditer(_GUARD_LANDSCAPE, template, re.S | re.M):
+        for rule in _guard_prefix_rules(m.group(1)):
+            rules.append("@media (orientation:landscape){" + rule + "}")
+    rules.append("html.vw-guard body{max-width:520px;margin-left:auto;margin-right:auto}")
+    return _GUARD_BANNER + "\n".join(rules) + "\n"
+
+
 def render(data: dict) -> str:
     template = TEMPLATE.read_text(encoding="utf-8")
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     html = template.replace("/*__DATA__*/null", payload)
     if "__DATA__" in html:
         raise SystemExit("template placeholder not replaced correctly")
+    html = html.replace("</style>", _guard_layer(template) + "</style>", 1)
     return html
 
 

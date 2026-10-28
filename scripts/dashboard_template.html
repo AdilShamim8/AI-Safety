@@ -3,6 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* s6 viewport guard — some phones never honor the meta above. Desktop-
+   mode browsers ("request desktop site") and several in-app WebViews
+   lay the page out at a ~980px default width, where every media query
+   misses and the phone shows a sliced desktop page: giant clipped
+   headings, text cut at the right edge, a sideways scrollbar. This
+   page already requires JavaScript to render its registers, so the
+   phone layout can also be driven from here: when a coarse-pointer
+   device with a small physical screen reports a clientWidth too wide
+   for it, the meta was ignored — mark <html> so the derived guard
+   stylesheet (emitted by build_dashboard.py from the very same media
+   blocks) can lay the page out for a phone anyway. */
+(function(){
+  function apply(){
+    var de = document.documentElement;
+    var cw = de.clientWidth;
+    var coarse = window.matchMedia && matchMedia("(pointer:coarse)").matches;
+    var sw = screen && screen.width || 0;
+    de.classList.toggle("vw-guard", !!(coarse && sw > 0 && sw <= 500 && cw > 640));
+  }
+  apply();
+  window.addEventListener("resize", apply);
+  window.addEventListener("orientationchange", apply);
+  window.addEventListener("load", apply);
+})();
+</script>
 <title>AI Safety — the course, verified</title>
 <meta name="description" content="An open-source AI-safety research curriculum: 24 chapters, 10 runnable projects, verified datasets, and a source-verified claims register. Every number on this page is generated from the repository's own data.">
 <meta name="color-scheme" content="light">
