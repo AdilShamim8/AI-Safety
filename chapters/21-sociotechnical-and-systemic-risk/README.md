@@ -1,5 +1,7 @@
 # Chapter 21 — Sociotechnical and systemic risk
 
+**Chapter nav:** [← Ch. 20](../20-misuse-dangerous-capabilities-release-evaluation/README.md) · [course map](../../SYLLABUS.md) · [Ch. 22 →](../22-safety-engineering-and-assurance/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 21 — Sociotechnical and systemic risk: automation bias and overreliance; disparate impact and the fairness impossibility landscape; incentives and competitive pressure; stakeholder analysis; linguistic coverage; power and concentration |
@@ -363,3 +365,7 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-07-collective-action-problems](../../courses/cais-ethics-society/lecture-07-collective-action-problems.md) | CAIS Ethics & Society | the race dynamics and commons problems this chapter formalizes |
 | [lecture-09-economic-impacts](../../courses/boaz-barak-cs2881/lecture-09-economic-impacts.md) | Harvard CS 2881 | labor and growth as the measurable systemic layer |
 | [f26-lecture-05-economic-impact](../../courses/boaz-barak-cs2881/f26-lecture-05-economic-impact.md) | Harvard CS 2881 | the Turing Trap and the centaur standard |
+
+---
+
+**Next:** [Chapter 22 — Safety engineering and assurance →](../22-safety-engineering-and-assurance/README.md)
