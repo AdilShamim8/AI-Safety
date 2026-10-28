@@ -1,5 +1,7 @@
 # Ch. 09 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt every exercise before reading past its hint. Rubrics grade the reasoning
 trail — which controls fire, which claims get fenced — at least as heavily as
 the numbers. All arithmetic was recomputed programmatically with the repo's
