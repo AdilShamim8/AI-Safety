@@ -7,6 +7,39 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The phone table pass (2026-10-28)
+
+- The owner's second read of the phone screen: the page *fit* 390px
+  after session 5, but the register tables still didn't *read* —
+  dataset names wrapped into jagged four-line fragments, fields
+  broke mid-word, the sticky ID column spent prime width on
+  "DS-002", and nothing said the table scrolled. Six units, each
+  committed and pushed one at a time with its remote head verified.
+- The registers now restack as labeled cards on phones
+  (max-width:640px): every field cell carries a `data-label` the
+  row builders stamp at render time, so a card names its own data;
+  the columns the 960px layer had to hide (organization, type,
+  fetched, strength, registered…) come back — a phone reads MORE
+  of a register than a tablet does — and the horizontal scroller
+  disappears from the phone layout entirely.
+- Where tables stay columnar (measured 660px: the dataset table
+  overflows 80px), a right-edge fade — toggled only while
+  `scrollWidth` exceeds `clientWidth`, re-checked on resize and
+  after every re-render through a MutationObserver — signals
+  "more to the right" instead of reading as clipped.
+- Chrome ergonomics: topbar action links lift from 11.5px baseline
+  text to 35px-tall thumb targets, and the seven-item
+  standing-facts line restacks from a ragged dot-separated run
+  into a two-column grid.
+- Pinned: tests/test_responsive.py grows 10 → 14 tests holding the
+  card rules, the label stamps (template AND generated page), the
+  affordance fade, and the chrome. Suite 627 → 631 (401 package +
+  174 from-scratch + 56 repo-instrument), README resynced, the
+  dashboard regenerated with its own counter at 631. Visual audit
+  passes at all four widths with zero overflow; the card view was
+  additionally verified by rendered-DOM measurement and screenshot
+  review at 390px.
+
 ### The responsive site (2026-10-28)
 
 - The owner's brief — better on a phone screen and a desktop screen —

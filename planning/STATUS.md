@@ -717,3 +717,54 @@ Standing actions unchanged: the session token was exposed in chat
 (the fourth across sessions) and must be rotated by the owner now
 that the work is complete; SECURITY.md's reporting path governs.
 
+
+---
+
+## Session 6 — the phone table pass (2026-10-28)
+
+The owner's re-read of the phone screen: session 5 made the page
+*fit* 390px, but the three register tables still did not *read*
+there — a 626px five-column table inside a horizontal scroller
+wrapped dataset names into jagged four-line fragments, broke words
+mid-field, spent prime width pinning "DS-002", and offered no cue
+that it scrolled at all. Measured, then fixed as six units, each
+committed and pushed alone with its remote head verified:
+
+- **S6-P01.** The row builders in scripts/dashboard_template.html
+  stamp `data-label` on every field cell of all three registers
+  (235 dataset + 1044 source + 618 claim labels at runtime) and tag
+  the name cell `ttl` — the groundwork the card view reads back.
+- **S6-P02.** At max-width:640px each row restacks as a bordered
+  card: ID eyebrow, name as title, every field under its own
+  uppercase label; the columns the 960px layer hid (organization,
+  type, fetched, strength, registered…) return, so a phone now
+  shows MORE of a register than a tablet does; the horizontal
+  scroller disappears from the phone layout entirely.
+- **S6-P03.** Where tables keep their columnar form (measured
+  660px: the dataset table overflows 80px), a right-edge fade —
+  toggled only while `scrollWidth > clientWidth`, re-checked on
+  resize and after every re-render via MutationObserver — says
+  "more to the right" instead of looking clipped.
+- **S6-P04.** Chrome ergonomics: topbar action links lift to
+  35px-tall thumb targets; the seven-item standing-facts line
+  restacks as a two-column grid with the dot separators retired.
+- **S6-P05/P05b.** tests/test_responsive.py pins it all (10 → 14
+  tests): the card restack rules, the label stamps checked against
+  template AND generated page, the affordance fade with its
+  observer, and the target/grid chrome. Suite 627 → 631
+  (401 package + 174 from-scratch + 56 repo-instrument); README
+  breakdown resynced; dashboard regenerated so its own counter
+  says 631. Black pass folded in.
+- **S6-P06.** This record and the CHANGELOG entry.
+
+Verification at close: full suite 631/631 green; validator OK;
+missing-values audit 0 hard findings; ruff and black clean;
+visual audit (playwright) passing at 360 / 390 / 1440 / 1920 with
+zero horizontal overflow; the card view, affordance fade, and
+facts grid additionally verified by rendered-DOM measurement and
+screenshot review at 390px. Repository closed at 628 commits
+(621 at session open + 7 session-6 units).
+
+Standing actions unchanged: the session token (the fourth exposed
+across sessions) must be rotated by the owner; SECURITY.md's
+reporting path governs.
