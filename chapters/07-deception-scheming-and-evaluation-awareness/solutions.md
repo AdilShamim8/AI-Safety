@@ -1,5 +1,7 @@
 # Ch. 07 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt every exercise before reading past its hint. Rubrics grade the
 reasoning trail, not the final number. Every number below was recomputed
 with the repo's `.venv/bin/python` (stdlib only, z = 1.96, matching §4's
