@@ -571,4 +571,5 @@ phone layer starts by killing it. Unit ledger:
 
 | Unit | Change | SHA |
 |---|---|---|
-| S5-A01 | phone: kill the 303px page overflow — id chips get break spaces | pending |
+| S5-A01 | phone: kill the 303px page overflow — id chips get break spaces | fa4cbcd |
+| S5-A02 | phone: open the max-width:640px layer — frame breathing room | pending |
