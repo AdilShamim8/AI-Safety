@@ -1,5 +1,7 @@
 # Chapter 22 — Safety engineering and assurance
 
+**Chapter nav:** [← Ch. 21](../21-sociotechnical-and-systemic-risk/README.md) · [course map](../../SYLLABUS.md) · [Ch. 23 →](../23-governance-and-standards/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 22 — Safety engineering and assurance: hazard analysis (FMEA/STPA-style), safety requirements and their linking arguments, assurance claims with evidence and defeaters, evidence confidence, residual risk, and the safety case as the integrating artifact |
@@ -378,3 +380,7 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) | CAIS Ethics & Society | what aviation and nuclear already learned, accessibly |
 | [module-07-safety-security-resilience](../../courses/safeshield-governance/module-07-safety-security-resilience.md) | Safeshield Governance | the S-word triad as governance obligations |
 | [module-13-policies-documentation](../../courses/safeshield-governance/module-13-policies-documentation.md) | Safeshield Governance | the documentation craft that holds assurance together |
+
+---
+
+**Next:** [Chapter 23 — Governance and standards for researchers →](../23-governance-and-standards/README.md)
