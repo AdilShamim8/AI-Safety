@@ -640,6 +640,8 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
 }
 /* ---------- topbar scroll state (session 5) ---------- */
 .topbar.scrolled{box-shadow:0 1px 0 var(--rule-2),0 6px 18px -12px rgba(33,29,22,.35)}
+/* ---------- scroll containment (session 5) ---------- */
+.tabwrap{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 @media print{
   .topbar,.toc,.toc-toggle,.searchbar,.filters{display:none!important}
   body{background:#fff}
@@ -910,7 +912,7 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
       <input type="search" id="dsSearch" placeholder="Search datasets — name, organization, risk area, license…" aria-label="search datasets">
       <span class="count" id="dsCount"></span>
     </div>
-    <div style="overflow-x:auto">
+    <div class="tabwrap">
       <table class="dtab" id="dsTable">
         <thead><tr>
           <th>ID</th><th>Dataset</th><th>Organization</th><th>Risk area</th>
@@ -939,7 +941,7 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
       <input type="search" id="srcSearch" placeholder="Search sources — ID, title, organization, type…" aria-label="search sources">
       <span class="count" id="srcCount"></span>
     </div>
-    <div style="overflow-x:auto">
+    <div class="tabwrap">
       <table class="dtab" id="srcTable">
         <thead><tr>
           <th>ID</th><th>Source</th><th class="hide-m">Organization</th>
@@ -967,7 +969,7 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
       <input type="search" id="clmSearch" placeholder="Search claims — text, source ID, strength…" aria-label="search claims">
       <span class="count" id="clmCount"></span>
     </div>
-    <div style="overflow-x:auto">
+    <div class="tabwrap">
       <table class="dtab" id="clmTable">
         <thead><tr>
           <th>ID</th><th>Claim</th><th>Source</th><th class="hide-m">Strength</th><th class="hide-m">Registered</th>
