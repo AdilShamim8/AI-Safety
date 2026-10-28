@@ -1,5 +1,7 @@
 # Chapter 20 — Misuse, dangerous capabilities, and release evaluation
 
+**Chapter nav:** [← Ch. 19](../19-multimodal-and-embodied-safety/README.md) · [course map](../../SYLLABUS.md) · [Ch. 21 →](../21-sociotechnical-and-systemic-risk/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 20 — Misuse, dangerous capabilities, release evaluation: what a model *can* do (not just what it *does*), elicitation as a lower-bound discipline, uplift measurement, access conditions, safeguards, and the release decision itself — non-operational: we design and audit these evaluations, we do not run uplift operations |
@@ -397,3 +399,7 @@ chapter is a finding to record, not a problem to resolve.
 | [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) | DeepMind AGI Safety | uplift measurement and what evals can establish |
 | [part-03-02-frontier-safety-practices](../../courses/google-deepmind-agi-safety/part-03-02-frontier-safety-practices.md) | DeepMind AGI Safety | the RSP family as lived process |
 | [f26-lecture-08-open-language-models](../../courses/boaz-barak-cs2881/f26-lecture-08-open-language-models.md) | Harvard CS 2881 | the release-gradient debate and open-weight governance |
+
+---
+
+**Next:** [Chapter 21 — Sociotechnical and systemic risk →](../21-sociotechnical-and-systemic-risk/README.md)
