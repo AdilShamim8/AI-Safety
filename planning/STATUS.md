@@ -935,3 +935,57 @@ session open + 2 session-8 units).
 Standing actions unchanged and now urgent: the session token (the
 fourth exposed across sessions) must be rotated by the owner;
 SECURITY.md's reporting path governs.
+
+## Session 9 — the stale tab that kept the sliced phone (2026-10-29)
+
+The owner's fourth report, a day after the s8 fix shipped: a new
+DevTools screenshot (iPhone 16 Pro Max, 440x956) showing the same
+sliced signature — kicker and giant serif cut at the right edge,
+text magnified ~2.3x. Verification first, and it changed the
+diagnosis: the live HTML was byte-identical to the local build
+(MD5 match, 150 --vfs markers, pageshow re-check present, zero
+--vgz anywhere), local and remote HEADs agreed at 5813ee7 — the
+deployed page WAS the fixed one. A fresh load at the owner's exact
+geometry rendered clean (scrollWidth == clientWidth == 440, the
+furthest element right-edge at exactly 440.0, VLM: nothing cut
+off, nothing magnified). The audit then pinned every path the
+guard can take: fresh loads at 320/360/390/402/412/427/440/540/
+600/640/768/1440/1920 all overflow-free (the single flag at 1024
+is an 885px table clipped inside its .tabwrap scrollable — the
+intended design, not spill); the meta-ignored true positive at
+canvas 980 over screen 440 fired with --vfs exact to four
+decimals (2.2273) and nothing past the canvas; and the resize
+self-correction pin dropped the guard the moment the viewport
+normalized. So where did the report come from? Switching emulated
+devices in DevTools never reloads the page: a tab opened before
+the deploy kept executing the s7 script, whose verdict froze at
+first-run geometry and whose zoom applied for the tab's whole
+life — reproduced exactly by loading the pre-fix build
+(24ba871) with its frozen guard forced at 440 (VLM read the same
+oversized AN OPEN RESEARCH / giant-serif signature the owner
+reported). A stale tab cannot be patched from the server; it can
+only be identified. Closed in two units:
+
+- **S9-P01.** The head script now stamps its build into the
+  console the owner debugs from: one [AI-Safety] line naming the
+  build and announcing each guard verdict on change — announced
+  on change only, so a normal session logs exactly one line, the
+  call guarded by try/catch for old WebViews. "No [AI-Safety]
+  line in the console" is now the positive test for a stale tab:
+  hard-refresh it (Ctrl/Cmd+Shift+R) or reopen it. Pinned by
+  test_viewport_guard_console_build_stamp against both the
+  template and the shipped page. Suite 640 → 641 (401 package +
+  174 from-scratch + 66 repo-instrument), README resynced,
+  dashboard regenerated at 641.
+- **S9-P02.** This record and the CHANGELOG entry.
+
+Verification at close: full suite 641/641 green (exit 0);
+validator OK; S9-P01 pushed and remote-verified at 846265b
+(637 commits). Owner-facing instruction recorded in both
+documents: the fix is live — a tab that still shows the sliced
+page is running pre-fix JavaScript and needs a hard refresh,
+which the console stamp now proves on sight.
+
+Standing actions unchanged and now urgent: the session token (the
+fourth exposed across sessions) must be rotated by the owner;
+SECURITY.md's reporting path governs.

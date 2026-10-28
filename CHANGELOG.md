@@ -7,6 +7,39 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The stale tab that kept the sliced phone (2026-10-29)
+
+- The owner reported the phone still broken a day after the s8 fix
+  shipped, with a new DevTools screenshot (iPhone 16 Pro Max, 440px):
+  the same magnified, right-cut signature. Verification came first:
+  the live HTML was byte-identical to origin/main (all s8 markers
+  present, zero `--vgz` anywhere), so the deployed guard was the
+  fixed one — this report could not be the shipped code rendering
+  wrong.
+- A fresh load at the owner's exact geometry rendered clean: scrollWidth
+  equal to clientWidth, the furthest element right-edge at exactly
+  440.0, VLM reading nothing cut off and nothing magnified. The sweep
+  pinned fresh loads at 320/360/390/402/412/427/440/540/600/640/768/
+  1440/1920 all overflow-free (one flag at 1024 — an 885px table —
+  sits inside its `.tabwrap` scrollable: the intended clip, not
+  spill); the guard's true-positive path at canvas 980 over screen
+  440 fired with `--vfs` exact to four decimals and nothing past the
+  canvas; the resize self-correction pin dropped the guard the moment
+  the viewport normalized.
+- The report's actual source: switching emulated devices in DevTools
+  never reloads the page, so a tab opened before the deploy kept
+  executing the s7 script — its verdict frozen at first-run geometry,
+  its zoom applied for the tab's whole life. Loading the pre-fix
+  build with its frozen guard forced at 440 reproduced the owner's
+  screenshot exactly (VLM read the same oversized signature). A stale
+  tab cannot be patched from the server; it can only be identified.
+- The head script now stamps its build into the console: one
+  `[AI-Safety]` line naming the build and announcing each guard
+  verdict on change (try/catch-guarded for old WebViews), so "no
+  stamp in the console" is the positive test for a stale tab —
+  hard-refresh it. Suite 640 → 641 (401 package + 174 from-scratch +
+  66 repo-instrument), README resynced, dashboard regenerated at 641.
+
 ### The zoom that sliced the phone (2026-10-28)
 
 - The owner reported the phone still broken after the s7 guard, with a
