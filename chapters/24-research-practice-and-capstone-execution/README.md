@@ -1,5 +1,7 @@
 # Chapter 24 — Research practice and capstone execution
 
+**Chapter nav:** [← Ch. 23](../23-governance-and-standards/README.md) · [course map](../../SYLLABUS.md) · [course complete — pick a route →](../../ROADMAP.md)
+
 | | |
 |---|---|
 | **Chapter** | 24 — Research practice and capstone execution: scoping a question until it is falsifiable, baselines that can win, preregistration, ablations, the benchmark lottery, negative results, and ethical release — the course's methodology, assembled into the capstone |
@@ -336,3 +338,7 @@ chapter is a finding to record, not a problem to resolve.
 | [f26-oral-presentations](../../courses/boaz-barak-cs2881/f26-oral-presentations.md) | Harvard CS 2881 | the defended-capstone model this chapter's project follows |
 | [pedagogy](../../courses/boaz-barak-cs2881/pedagogy.md) | Harvard CS 2881 | how a working research seminar runs its evidence discipline |
 | [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) | CAIS Ethics & Society | the incident-reporting culture as research practice |
+
+---
+
+**Course complete.** [Pick your route →](../../ROADMAP.md) or [watch the lecture library →](../../courses/README.md).
