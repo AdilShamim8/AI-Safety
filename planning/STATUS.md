@@ -600,4 +600,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-B10 | print: tables and controls print honestly | 5022da8 |
 | S5-B11 | fix: sticky table headers align to the real topbar height | 3590665 |
 | S5-C01 | responsive contract tests + suite-count sync | 1810d7e |
-| S5-C02 | ADR-0004: the dashboard is a responsive artifact | pending |
+| S5-C02 | ADR-0004: the dashboard is a responsive artifact | 2518211 |
+| S5-D01 | chapter 01 README: nav line + closing next pointer | pending |

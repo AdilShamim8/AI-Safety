@@ -1,5 +1,7 @@
 # Ch. 01 — Risk models and research epistemics
 
+**Chapter nav:** [course map](../../SYLLABUS.md) · [Ch. 02 →](../02-evaluation-science-and-experimental-design/README.md)
+
 *Part of [AI Safety](../../README.md) · the first chapter of the common
 methodological spine · next: Ch. 02 Evaluation science and experimental
 design*
@@ -426,3 +428,7 @@ chapter is a finding to record, not a problem to resolve.
 | [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the incident-based reopening: post-mortems as the newest evidence class |
 | [part-01-01-path-to-superhuman](../../courses/google-deepmind-agi-safety/part-01-01-path-to-superhuman.md) | DeepMind AGI Safety | the capability-trajectory claim, priced as a trend not a date |
 | [lecture-01-introduction-ai-risks](../../courses/cais-ethics-society/lecture-01-introduction-ai-risks.md) | CAIS Ethics & Society | the misuse/accident/structural taxonomy in accessible register |
+
+---
+
+**Next:** [Ch. 02 — Evaluation science and experimental design →](../02-evaluation-science-and-experimental-design/README.md)
