@@ -594,4 +594,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-B04 | desktop+phone: the sticky topbar gains a scroll shadow | 27b3d77 |
 | S5-B05 | phone: table scrollers contain their overscroll | 1506327 |
 | S5-B06 | touch: coarse pointers get real targets | a787ff9 |
-| S5-B07 | a11y: reduced motion also gates smooth scrolling | pending |
+| S5-B07 | a11y: reduced motion also gates smooth scrolling | fc803d1 |
+| S5-B08 | phone+a11y: text-size adjustment and tap highlight | pending |
