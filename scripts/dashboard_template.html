@@ -656,6 +656,8 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
 /* ---------- skip link (session 5) ---------- */
 .skip{position:absolute;left:-9999px;top:0;background:var(--paper);padding:10px 16px;z-index:100;border:1px solid var(--accent);color:var(--accent);font-family:var(--sans);font-size:13px}
 .skip:focus{left:12px;top:12px}
+/* ---------- sticky th offset per breakpoint (session 5) ---------- */
+@media (max-width:960px){.dtab th{top:41px}}
 @media print{
   .topbar,.toc,.toc-toggle,.searchbar,.filters{display:none!important}
   body{background:#fff}
