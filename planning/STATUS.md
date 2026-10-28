@@ -578,4 +578,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-A05 | phone: masthead type and facts row scaled | 672ba60 |
 | S5-A06 | phone: the organizing chain can wrap | 02936e6 |
 | S5-A07 | phone: stat ledger cells compact | 858dc5a |
-| S5-A08 | phone: project cards stack | pending |
+| S5-A08 | phone: project cards stack | cd656a7 |
+| S5-A09 | phone: career rungs stack | pending |
