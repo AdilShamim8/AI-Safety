@@ -1,5 +1,7 @@
 # Study plans — using the lecture library with this course
 
+**Navigate:** [← lecture library](README.md) · [course map](../SYLLABUS.md)
+
 *Part of the [lecture library](README.md) · 2026-10-27*
 
 ## The three-route integration

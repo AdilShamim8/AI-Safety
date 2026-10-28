@@ -653,4 +653,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-F02 | hub nav: courses/boaz-barak-cs2881/README.md | b78e52b |
 | S5-F03 | hub nav: courses/google-deepmind-agi-safety/README.md | d4d19c8 |
 | S5-F04 | hub nav: courses/cais-ethics-society/README.md | 186aa3c |
-| S5-F05 | hub nav: courses/safeshield-governance/README.md | pending |
+| S5-F05 | hub nav: courses/safeshield-governance/README.md | 205bb49 |
+| S5-F06 | hub nav: courses/study-plans.md | pending |
