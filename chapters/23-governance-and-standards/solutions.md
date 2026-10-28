@@ -1,5 +1,7 @@
 # Chapter 23 — Solutions and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 ## Exercise 23.1 — genre sorting
 
 **Full-credit solution.**
