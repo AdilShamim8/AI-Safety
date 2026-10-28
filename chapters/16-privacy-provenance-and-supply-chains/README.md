@@ -1,5 +1,7 @@
 # Chapter 16 — Privacy, provenance, and supply chains
 
+**Chapter nav:** [← Ch. 15](../15-red-teaming-and-adversarial-evaluation/README.md) · [course map](../../SYLLABUS.md) · [Ch. 17 →](../17-distribution-shift-and-deployment-reliability/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 16 — Privacy, provenance, supply chains: memorization, privacy accounting concepts, model artifacts, licenses, dependency integrity |
@@ -375,3 +377,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [module-06-privacy-data-protection](../../courses/safeshield-governance/module-06-privacy-data-protection.md) | Safeshield Governance | the GDPR-class principles meeting ML, with the toolbox priced |
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | training-data extraction: alignment does not imply privacy |
+
+---
+
+**Next:** [Chapter 17 — Distribution shift and deployment reliability →](../17-distribution-shift-and-deployment-reliability/README.md)
