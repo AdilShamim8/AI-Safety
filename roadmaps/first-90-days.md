@@ -1,5 +1,7 @@
 # First 90 days — the concrete plans
 
+**Navigate:** [← the learner's map](../ROADMAP.md) · [careers index](careers-index.md) · [study schedules](study-schedules.md)
+
 The [careers index](careers-index.md) maps the roles and the market;
 this page makes the first 90 days concrete, week by week, for someone
 starting the course today. Assumptions: ~8 hours per week (the
