@@ -584,4 +584,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-A11 | phone: data tables densify and pin the first column | 5b3753c |
 | S5-A12 | phone: search inputs go full width | ba9bbdf |
 | S5-A13 | phone: quickstart steps and schedule rows compact | 2318268 |
-| S5-A14 | phone: tracker labels yield, incidents compact | pending |
+| S5-A14 | phone: tracker labels yield, incidents compact | 7dd4f55 |
+| S5-A15 | phone: FAQ, AWESOME entries, and colophon compact | pending |
