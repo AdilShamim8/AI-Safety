@@ -964,21 +964,50 @@ _GUARD_SOURCE_BLOCKS = [
 _GUARD_LANDSCAPE = r"^@media \(max-width:640px\) and \(orientation:landscape\)\{\n(.*?)\n\}\n"
 
 _GUARD_BANNER = """/* ============================================================
-   s6/s7 viewport-guard layer — DERIVED, DO NOT HAND-EDIT.
+   s6/s8 viewport-guard layer — DERIVED, DO NOT HAND-EDIT.
    Regenerated on every build by build_dashboard.py from the
-   template's own (max-width:960px) and (max-width:640px) blocks:
-   every rule re-scoped under html.vw-guard, which the head script
-   sets when a phone's browser ignored the viewport meta and laid
-   the page out at desktop width (desktop-mode browsers, several
-   in-app WebViews) — the state where every media query misses and
-   the phone would otherwise show a sliced desktop page. The two
-   guard-only rules at the end cap the body to a phone column
-   inside the oversized canvas and zoom that column by --vgz (the
-   canvas-to-screen ratio the head script froze), so text the
-   browser shrank to ~0.4x returns to true physical size on the
-   phone's glass.
+   template's own base tier and (max-width:960px)/(max-width:640px)
+   blocks: every rule re-scoped under html.vw-guard, which the head
+   script sets while a coarse-pointer phone's browser ignores the
+   viewport meta and lays the page out at desktop width (desktop-mode
+   browsers, several in-app WebViews) — the state where every media
+   query misses and the phone would otherwise show a sliced desktop
+   page. The head script also publishes --vfs, the canvas-over-screen
+   ratio the browser is shrinking that canvas by on the glass; every
+   font-size in this layer is scaled through calc(*--vfs) so the
+   guard column's type reads at the same physical size it has on a
+   real phone. s8: no zoom — the s7 zoom shrank the layout viewport
+   itself, so rules written for the oversized canvas (a 520px body
+   cap, px paddings) overflowed it and the page rendered magnified
+   past the right edge. Font sizes cannot resize the viewport, so the
+   verdict re-measures safely on every event. The tail caps nothing
+   (the full canvas at scaled type IS the phone column) and clips
+   horizontal spill as insurance.
    ============================================================ */
 """
+
+#: The scale every guard-layer font-size is multiplied by. --vfs is
+#: published by the head script as canvas width over screen width; the
+#: 2.2 fallback only ever applies if the class is set without the
+#: script, which cannot happen (same script sets both).
+_GUARD_FONT_SCALE = "var(--vfs,2.2)"
+
+
+def _scale_guard_fonts(props: str) -> str:
+    """Wrap every font-size declaration in calc(*--vfs).
+
+    On a guard canvas the browser shrinks everything to ~0.4x on the
+    glass; multiplying font sizes by the canvas-over-screen ratio
+    returns them to true physical size. Values may be px or clamp()
+    with vw terms — both multiply cleanly inside calc(). This is the
+    s8 replacement for the s7 zoom, which shrank the layout viewport
+    itself and overflowed it; font sizes cannot change clientWidth,
+    so scaling them can never re-trigger detection."""
+    return re.sub(
+        r"font-size:\s*([^;}\n]+)",
+        lambda m: f"font-size:calc({m.group(1).strip()}*{_GUARD_FONT_SCALE})",
+        props,
+    )
 
 
 def _guard_prefix_rules(body: str) -> list[str]:
@@ -993,21 +1022,76 @@ def _guard_prefix_rules(body: str) -> list[str]:
         if not sels:
             continue
         prefixed = ", ".join("html.vw-guard " + s for s in sels)
-        out.append(f"{prefixed}{{{props.strip()}}}")
+        out.append(f"{prefixed}{{{_scale_guard_fonts(props.strip())}}}")
+    return out
+
+
+def _guard_base_font_rules(template: str) -> list[str]:
+    """Re-scope the base tier's font rules under html.vw-guard.
+
+    The media blocks only re-set some of the document's font sizes;
+    the rest fall through to the base tier, which on a downscaled
+    guard canvas would read at ~0.4x physical. Scaling the base tier
+    as well makes the guard layer a complete mirror of the real
+    cascade — base, 960px, 640px, in that order — so every font size
+    arrives at the same physical size it has on a real phone. Only
+    the scaled font-size declarations are emitted: the base rules'
+    other properties already apply as-is through the normal
+    stylesheet."""
+    css = template[template.find("<style>") + 7 :]
+    css = css[: css.find("</style>")]
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    # Spans of every @-rule (media, keyframes, page): their inner
+    # rules belong to the blocks, not to the base tier.
+    spans = []
+    for m in re.finditer(r"@[a-zA-Z-]+[^{}]*\{", css):
+        depth, i = 1, m.end()
+        while depth and i < len(css):
+            if css[i] == "{":
+                depth += 1
+            elif css[i] == "}":
+                depth -= 1
+            i += 1
+        spans.append((m.start(), i))
+    out: list[str] = []
+    for m in re.finditer(r"([^{}]+)\{([^{}]*)\}", css):
+        sel, props = m.group(1), m.group(2)
+        clean = " ".join(sel.split())
+        if not clean or clean.startswith("@") or "%" in clean:
+            continue  # an at-rule header or a keyframes step, not a selector
+        decls = [d.strip() for d in props.split(";") if "font-size" in d]
+        if not decls:
+            continue
+        if any(s <= m.start() < e for s, e in spans):
+            continue
+        sels = [s.strip() for s in clean.split(",") if s.strip()]
+        prefixed = ", ".join("html.vw-guard " + s for s in sels)
+        scaled = ";".join(_scale_guard_fonts(d) for d in decls)
+        out.append(f"{prefixed}{{{scaled}}}")
     return out
 
 
 def _guard_layer(template: str) -> str:
-    """Derive the html.vw-guard stylesheet from the template's own blocks."""
+    """Derive the html.vw-guard stylesheet from the template's own CSS."""
     rules: list[str] = []
+    rules.extend(_guard_base_font_rules(template))
     for pat in _GUARD_SOURCE_BLOCKS:
         for m in re.finditer(pat, template, re.S | re.M):
             rules.extend(_guard_prefix_rules(m.group(1)))
     for m in re.finditer(_GUARD_LANDSCAPE, template, re.S | re.M):
         for rule in _guard_prefix_rules(m.group(1)):
             rules.append("@media (orientation:landscape){" + rule + "}")
-    rules.append("html.vw-guard{zoom:var(--vgz,1)}")
-    rules.append("html.vw-guard body{max-width:520px;margin-left:auto;margin-right:auto}")
+    rules.append(
+        # Inherited by every descendant: at --vfs font scale any long
+        # unbreakable token (a src/ path, a bare URL, a hyphen-free
+        # filename) is wider than the phone column, so the guard column
+        # breaks anywhere rather than slicing past the canvas edge.
+        "html.vw-guard body{overflow-wrap:anywhere}"
+    )
+    rules.append("html.vw-guard{overflow-x:clip}")
+    rules.append(
+        "html.vw-guard #topBtn{width:calc(48px*var(--vfs,2.2));" "height:calc(48px*var(--vfs,2.2))}"
+    )
     return _GUARD_BANNER + "\n".join(rules) + "\n"
 
 

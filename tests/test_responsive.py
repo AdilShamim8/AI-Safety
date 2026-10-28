@@ -189,17 +189,61 @@ def test_viewport_guard_reaches_540_and_600px_screens() -> None:
     assert "sw <= 620" in html
 
 
-def test_viewport_guard_zoom_compensation() -> None:
-    """s7: a meta-ignored phone also scales the ~980px canvas down to the
-    glass (~0.4x), so even a correct phone layout read as ~6pt text. The
-    head script freezes --vgz (canvas width over screen width, clamped
-    1.2..3, computed once from pre-zoom geometry so the verdict cannot
-    oscillate) and the derived layer zooms the phone column by it."""
+def test_viewport_guard_font_scale_compensation() -> None:
+    """s8: the s7 zoom compensation is gone — zoom shrank the layout
+    viewport itself, so the 520px body cap and px paddings written for
+    the oversized canvas overflowed it and the page rendered magnified
+    past the right edge (the owner's second complaint, reproduced at
+    427px in DevTools). The guard now scales type instead: the head
+    script publishes --vfs (canvas over screen, clamped 1.05..3) and
+    every font-size in the derived layer is wrapped in
+    calc(*var(--vfs,2.2)) — font sizes cannot change clientWidth, so
+    no freeze is needed and no oscillation is possible."""
     tpl = _tpl()
-    assert 'setProperty("--vgz"' in tpl
-    assert "Math.max(1.2, Math.min(3" in tpl
+    assert 'setProperty("--vfs"' in tpl
+    assert "Math.max(1.05, Math.min(3" in tpl
+    assert "--vgz" not in tpl
+    assert "hit === null" not in tpl
     html = _html()
-    assert "html.vw-guard{zoom:var(--vgz,1)}" in html
+    assert "--vgz" not in html
+    assert "zoom:var(" not in html
+    assert "max-width:520px" not in html
+    assert "html.vw-guard{overflow-x:clip}" in html
+    # the base tier is derived too, so body type reads at physical size
+    assert "html.vw-guard body{font-size:calc(16px*var(--vfs,2.2))}" in html
+
+
+def test_viewport_guard_remeasures_not_frozen() -> None:
+    """s8: the s7 verdict froze on first-run geometry, so a transiently
+    wrong first measurement stayed wrong for the page's life. The guard
+    now re-detects on every event (apply() calls detect() directly),
+    listens on pageshow for bfcache restores, and re-checks once more
+    800ms after load for late viewport changes — a false verdict
+    self-corrects instead of persisting."""
+    tpl = _tpl()
+    assert "var hit = detect();" in tpl  # re-detected on every apply()
+    assert 'classList.toggle("vw-guard", hit)' in tpl
+    assert 'addEventListener("pageshow"' in tpl
+    assert "setTimeout(apply, 800)" in tpl
+    html = _html()
+    assert "var hit = detect();" in html
+
+
+def test_guard_layer_scales_every_font_size() -> None:
+    """s8: the derivation must scale every font-size it emits — the
+    base tier included, so type the media blocks never re-set still
+    reads at physical size on the downscaled canvas — and must never
+    leave an unscaled one behind."""
+    import sys
+
+    sys.path.insert(0, str(REPO_ROOT / "scripts"))
+    import build_dashboard  # noqa: E402
+
+    layer = build_dashboard._guard_layer(_tpl())
+    total = layer.count("font-size:")
+    wrapped = layer.count("font-size:calc(")
+    assert total > 100  # the base tier alone carries ~114 font rules
+    assert total == wrapped, "a guard font-size escaped the --vfs scaling"
 
 
 def test_phone_layer_breaks_slash_joined_tokens() -> None:
@@ -222,8 +266,13 @@ def test_phone_layer_breaks_slash_joined_tokens() -> None:
 def test_guard_layer_derived_into_page() -> None:
     """The generated page carries the re-scoped phone layer."""
     html = _html()
-    assert "s6/s7 viewport-guard layer — DERIVED" in html
-    assert "html.vw-guard body{max-width:520px;margin-left:auto;margin-right:auto}" in html
+    assert "s6/s8 viewport-guard layer — DERIVED" in html
+    assert "html.vw-guard body{overflow-wrap:anywhere}" in html
+    assert "html.vw-guard{overflow-x:clip}" in html
+    assert (
+        "html.vw-guard #topBtn{width:calc(48px*var(--vfs,2.2));"
+        "height:calc(48px*var(--vfs,2.2))}" in html
+    )
     assert "html.vw-guard .toc-toggle{display:flex" in html
     assert "html.vw-guard .dtab td.hide-m{display:block}" in html
     assert "@media (orientation:landscape){html.vw-guard .toc{max-height:56vh}}" in html

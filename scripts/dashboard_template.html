@@ -4,29 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-/* s6/s7 viewport guard — some phones never honor the meta above. Desktop-
-   mode browsers ("request desktop site") and several in-app WebViews
-   lay the page out at a ~980px default width, where every media query
-   misses and the phone shows a sliced desktop page: giant clipped
-   headings, text cut at the right edge, a sideways scrollbar. This
-   page already requires JavaScript to render its registers, so the
-   phone layout can also be driven from here: when a coarse-pointer
+/* s6/s8 viewport guard — some phones never honor the meta above.
+   Desktop-mode browsers ("request desktop site") and several in-app
+   WebViews lay the page out at a ~980px default width, where every
+   media query misses and the phone shows a sliced desktop page: giant
+   clipped headings, text cut at the right edge, a sideways scrollbar.
+   This page already requires JavaScript to render its registers, so the
+   phone layout can also be driven from here: while a coarse-pointer
    device with a small physical screen reports a clientWidth too wide
    for it, the meta was ignored — mark <html> so the derived guard
    stylesheet (emitted by build_dashboard.py from the very same media
-   blocks) can lay the page out for a phone anyway. The browser will
-   also be scaling that oversized canvas down to the phone's glass
-   (~0.4x), so the guard freezes a --vgz zoom ratio — canvas width
-   over screen width — and the guard stylesheet magnifies the phone
-   column by it, returning the text to true physical size: 15px set
-   reads as 15px on glass, not 6pt. */
+   blocks) can lay the page out for a phone anyway.
+   s8: the verdict is re-measured on every event and never frozen, and
+   there is no zoom compensation. The s7 design froze its verdict on
+   first-run geometry and magnified the page by a canvas-over-screen
+   zoom ratio — but zoom shrinks the layout viewport with it, so the
+   very rules meant for the oversized canvas (a 520px body cap, px
+   paddings) overflowed the shrunken viewport and the page rendered
+   magnified past the right edge: exactly the sliced page the guard
+   was built to prevent, reproduced from the owner's screenshot in
+   both the true-positive and false-positive paths. The guard layer
+   now compensates with --vfs instead: font-size values scaled by the
+   canvas-over-screen ratio through calc(), which cannot change
+   clientWidth — so detection re-measures safely on every event,
+   self-corrects a wrong verdict, and a false positive can only ever
+   render the ordinary phone layout at slightly larger type, never a
+   magnified one. */
 (function(){
-  /* s7: freeze the verdict on first run. The zoom below can change how
-     an engine re-reports clientWidth on the resize it itself caused;
-     recomputing from zoomed numbers could flip the class off, un-zoom,
-     re-fire resize, and oscillate. First-run geometry is pre-zoom by
-     construction — the only trustworthy measurement. */
-  var hit = null;
   function detect(){
     var de = document.documentElement;
     var cw = de.clientWidth;
@@ -40,14 +44,18 @@
   }
   function apply(){
     var de = document.documentElement;
-    if(hit === null){
-      hit = detect();
-      if(hit){
-        var cw = de.clientWidth;
-        var sw = screen && screen.width || 0;
-        var z = Math.max(1.2, Math.min(3, cw / sw));
-        de.style.setProperty("--vgz", String(Math.round(z * 10000) / 10000));
-      }
+    var hit = detect();
+    if(hit){
+      /* --vfs = canvas over screen, the exact ratio the browser is
+         scaling the page down by. Unlike the s7 zoom it cannot feed
+         back into clientWidth — font sizes never resize the viewport —
+         so re-measuring on every event is stable. */
+      var cw = de.clientWidth;
+      var sw = screen && screen.width || 0;
+      var k = sw > 0 ? Math.max(1.05, Math.min(3, cw / sw)) : 2.2;
+      de.style.setProperty("--vfs", String(Math.round(k * 10000) / 10000));
+    }else{
+      de.style.removeProperty("--vfs");
     }
     de.classList.toggle("vw-guard", hit);
   }
@@ -55,6 +63,8 @@
   window.addEventListener("resize", apply);
   window.addEventListener("orientationchange", apply);
   window.addEventListener("load", apply);
+  window.addEventListener("pageshow", apply);
+  window.setTimeout(apply, 800);
 })();
 </script>
 <title>AI Safety — the course, verified</title>
