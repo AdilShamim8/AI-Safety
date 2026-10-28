@@ -1,5 +1,7 @@
 # Ch. 04 — Exercises: hints, worked solutions, and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 Attempt every exercise before reading past its hint. Rubrics grade the reasoning trail, not just the final number — an unsupported right answer scores below a well-argued approximate one. Every figure below was recomputed with the repository Python (σ(z) = 1/(1+e^{−z}); Wilson z = 1.96, z² = 3.8416), inputs shown; where the README rounds, the recomputation says so. Audit outcome counts follow §4.2's convention — illustrative first-run values on card-verified denominators, because the cards publish no agreement statistics [cards/07; cards/08]. Notation is the README's table.
 
 ## Solution 4.1 — derivation and counterexample (analysis)
