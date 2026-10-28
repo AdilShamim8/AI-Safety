@@ -1,5 +1,7 @@
 # Chapter 19 — Multimodal and embodied safety
 
+**Chapter nav:** [← Ch. 18](../18-reasoning-faithfulness-and-monitorability/README.md) · [course map](../../SYLLABUS.md) · [Ch. 20 →](../20-misuse-dangerous-capabilities-release-evaluation/README.md)
+
 | | |
 |---|---|
 | **Chapter** | 19 — Multimodal and embodied safety: cross-modal injection, perceptual failure, sensor shift, sim-to-real limits; typography and query-relevant images as carriers; the embodied pipeline's multiplied attack surface |
@@ -383,3 +385,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-02-ai-fundamentals](../../courses/cais-ethics-society/lecture-02-ai-fundamentals.md) | CAIS Ethics & Society | the correlational/opaque/brittle properties across modalities |
 | [module-04-transparency-explainability](../../courses/safeshield-governance/module-04-transparency-explainability.md) | Safeshield Governance | disclosure obligations for systems users cannot inspect |
+
+---
+
+**Next:** [Chapter 20 — Misuse, dangerous capabilities, and release evaluation →](../20-misuse-dangerous-capabilities-release-evaluation/README.md)
