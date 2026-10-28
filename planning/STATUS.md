@@ -625,4 +625,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-D22 | chapter 22 README: nav line + closing next pointer | ada59f9 |
 | S5-D23 | chapter 23 README: nav line + closing next pointer | 6d83503 |
 | S5-D24 | chapter 24 README: nav line + closing next pointer | e22c9fc |
-| S5-E01 | chapter 01 solutions: back-nav line | pending |
+| S5-E01 | chapter 01 solutions: back-nav line | 8df6baa |
+| S5-E02 | chapter 02 solutions: back-nav line | pending |
