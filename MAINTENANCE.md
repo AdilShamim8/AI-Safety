@@ -232,3 +232,20 @@ one expected-dead URL passes on its recorded death. No register URL
 changed state between the session-closing sweep and this one.
 
 **Run record:** exit 0; report tail: `261/261 live; 0 hard failures`.
+
+### The responsive duty (2026-10-28)
+
+The dashboard's phone and desktop behavior is now instrumented twice.
+The machine contract is tests/test_responsive.py — it runs in CI with
+the suite and pins the viewport meta, both breakpoints, the chip
+break-spaces, the reduced-motion gate, focus visibility, the named
+table scrollers, the coarse-pointer block, and the two controls
+against the template, which remains the only hand-edited surface.
+The human instrument is scripts/visual_audit.py — playwright-based,
+optional-dependency, run on demand before and after any template
+change: it loads the generated page at 360/390/1440/1920 and fails
+on horizontal overflow, naming the widest unclipped element. The
+standing rule is unchanged in spirit: a template change regenerates
+index.html in the same commit (the freshness test enforces it), and
+now also answers the audit before it lands.
+
