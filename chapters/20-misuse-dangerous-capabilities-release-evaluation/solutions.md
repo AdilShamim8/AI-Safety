@@ -1,5 +1,7 @@
 # Chapter 20 — Solutions and rubrics
 
+**Navigate:** [chapter README](README.md) · [course map](../../SYLLABUS.md) · [all chapters](../README.md)
+
 ## Exercise 20.1 — lower-bound grammar
 
 **Full-credit solution.**
