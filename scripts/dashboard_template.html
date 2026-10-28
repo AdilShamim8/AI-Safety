@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-/* s6 viewport guard — some phones never honor the meta above. Desktop-
+/* s6/s7 viewport guard — some phones never honor the meta above. Desktop-
    mode browsers ("request desktop site") and several in-app WebViews
    lay the page out at a ~980px default width, where every media query
    misses and the phone shows a sliced desktop page: giant clipped
@@ -14,14 +14,42 @@
    device with a small physical screen reports a clientWidth too wide
    for it, the meta was ignored — mark <html> so the derived guard
    stylesheet (emitted by build_dashboard.py from the very same media
-   blocks) can lay the page out for a phone anyway. */
+   blocks) can lay the page out for a phone anyway. The browser will
+   also be scaling that oversized canvas down to the phone's glass
+   (~0.4x), so the guard freezes a --vgz zoom ratio — canvas width
+   over screen width — and the guard stylesheet magnifies the phone
+   column by it, returning the text to true physical size: 15px set
+   reads as 15px on glass, not 6pt. */
 (function(){
-  function apply(){
+  /* s7: freeze the verdict on first run. The zoom below can change how
+     an engine re-reports clientWidth on the resize it itself caused;
+     recomputing from zoomed numbers could flip the class off, un-zoom,
+     re-fire resize, and oscillate. First-run geometry is pre-zoom by
+     construction — the only trustworthy measurement. */
+  var hit = null;
+  function detect(){
     var de = document.documentElement;
     var cw = de.clientWidth;
     var coarse = window.matchMedia && matchMedia("(pointer:coarse)").matches;
     var sw = screen && screen.width || 0;
-    de.classList.toggle("vw-guard", !!(coarse && sw > 0 && sw <= 500 && cw > 640));
+    /* sw <= 620 reaches every phone CSS width, including the 540/600px
+       budget screens the first guard missed; a real tablet never passes
+       both tests, because with the meta honored its clientWidth equals
+       its screen.width and stays under the 640 gate. */
+    return !!(coarse && sw > 0 && sw <= 620 && cw > 640);
+  }
+  function apply(){
+    var de = document.documentElement;
+    if(hit === null){
+      hit = detect();
+      if(hit){
+        var cw = de.clientWidth;
+        var sw = screen && screen.width || 0;
+        var z = Math.max(1.2, Math.min(3, cw / sw));
+        de.style.setProperty("--vgz", String(Math.round(z * 10000) / 10000));
+      }
+    }
+    de.classList.toggle("vw-guard", hit);
   }
   apply();
   window.addEventListener("resize", apply);

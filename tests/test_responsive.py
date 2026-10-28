@@ -176,10 +176,36 @@ def test_viewport_guard_script_present() -> None:
     assert 'classList.toggle("vw-guard"' in html
 
 
+def test_viewport_guard_reaches_540_and_600px_screens() -> None:
+    """s7: the first guard gated at screen.width <= 500 and missed the
+    540/600px CSS-width budget phones entirely — a meta-ignoring browser
+    on those screens still showed the sliced desktop page. The gate now
+    reaches 620; a real tablet still never passes, because with the meta
+    honored its clientWidth equals its screen.width under the 640 bar."""
+    tpl = _tpl()
+    assert "sw <= 620" in tpl
+    assert "sw <= 500" not in tpl
+    html = _html()
+    assert "sw <= 620" in html
+
+
+def test_viewport_guard_zoom_compensation() -> None:
+    """s7: a meta-ignored phone also scales the ~980px canvas down to the
+    glass (~0.4x), so even a correct phone layout read as ~6pt text. The
+    head script freezes --vgz (canvas width over screen width, clamped
+    1.2..3, computed once from pre-zoom geometry so the verdict cannot
+    oscillate) and the derived layer zooms the phone column by it."""
+    tpl = _tpl()
+    assert 'setProperty("--vgz"' in tpl
+    assert "Math.max(1.2, Math.min(3" in tpl
+    html = _html()
+    assert "html.vw-guard{zoom:var(--vgz,1)}" in html
+
+
 def test_guard_layer_derived_into_page() -> None:
     """The generated page carries the re-scoped phone layer."""
     html = _html()
-    assert "s6 viewport-guard layer — DERIVED" in html
+    assert "s6/s7 viewport-guard layer — DERIVED" in html
     assert "html.vw-guard body{max-width:520px;margin-left:auto;margin-right:auto}" in html
     assert "html.vw-guard .toc-toggle{display:flex" in html
     assert "html.vw-guard .dtab td.hide-m{display:block}" in html

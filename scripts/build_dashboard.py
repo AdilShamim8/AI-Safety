@@ -964,16 +964,19 @@ _GUARD_SOURCE_BLOCKS = [
 _GUARD_LANDSCAPE = r"^@media \(max-width:640px\) and \(orientation:landscape\)\{\n(.*?)\n\}\n"
 
 _GUARD_BANNER = """/* ============================================================
-   s6 viewport-guard layer — DERIVED, DO NOT HAND-EDIT.
+   s6/s7 viewport-guard layer — DERIVED, DO NOT HAND-EDIT.
    Regenerated on every build by build_dashboard.py from the
    template's own (max-width:960px) and (max-width:640px) blocks:
    every rule re-scoped under html.vw-guard, which the head script
    sets when a phone's browser ignored the viewport meta and laid
    the page out at desktop width (desktop-mode browsers, several
    in-app WebViews) — the state where every media query misses and
-   the phone would otherwise show a sliced desktop page. The one
-   guard-only rule at the end caps the body to a phone column
-   inside the oversized canvas.
+   the phone would otherwise show a sliced desktop page. The two
+   guard-only rules at the end cap the body to a phone column
+   inside the oversized canvas and zoom that column by --vgz (the
+   canvas-to-screen ratio the head script froze), so text the
+   browser shrank to ~0.4x returns to true physical size on the
+   phone's glass.
    ============================================================ */
 """
 
@@ -1003,6 +1006,7 @@ def _guard_layer(template: str) -> str:
     for m in re.finditer(_GUARD_LANDSCAPE, template, re.S | re.M):
         for rule in _guard_prefix_rules(m.group(1)):
             rules.append("@media (orientation:landscape){" + rule + "}")
+    rules.append("html.vw-guard{zoom:var(--vgz,1)}")
     rules.append("html.vw-guard body{max-width:520px;margin-left:auto;margin-right:auto}")
     return _GUARD_BANNER + "\n".join(rules) + "\n"
 
