@@ -1,5 +1,7 @@
 # Ch. 04 — Preference learning and post-training
 
+**Chapter nav:** [← Ch. 03](../03-specification-reward-hacking-and-goal-misgeneralization/README.md) · [course map](../../SYLLABUS.md) · [Ch. 05 →](../05-scalable-oversight/README.md)
+
 > The chapter where behavior is manufactured. Pretraining decides what a model *can* do; post-training decides what it *does* — and post-training is mostly optimization against a learned scalar fitted to human (or AI) comparison labels. Every safety property you care about in a deployed assistant was inherited from pretraining data or installed here, under one of the objectives this chapter dissects.
 
 ## 1. Research question and failure pathway
@@ -279,3 +281,7 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-02-modern-llm-training](../../courses/boaz-barak-cs2881/lecture-02-modern-llm-training.md) | Harvard CS 2881 | the full training stack with safety at every stage |
 | [f26-lecture-03-modern-llm-training-inference](../../courses/boaz-barak-cs2881/f26-lecture-03-modern-llm-training-inference.md) | Harvard CS 2881 | the 2026 refresh: RLVR, reasoning models, on-policy distillation as the transfer vehicle |
 | [part-02-01-alignment-approach](../../courses/google-deepmind-agi-safety/part-02-01-alignment-approach.md) | DeepMind AGI Safety | what 'aligned' can operationally mean |
+
+---
+
+**Next:** [Ch. 05 — Scalable oversight →](../05-scalable-oversight/README.md)
