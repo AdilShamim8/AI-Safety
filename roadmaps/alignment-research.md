@@ -1,5 +1,7 @@
 # Route: alignment research
 
+**Navigate:** [← the learner's map](../ROADMAP.md) · [study schedules](study-schedules.md) · [progress tracker](progress/alignment-research.md)
+
 **Primary purpose:** investigate alignment interventions and their failure
 modes — specification, preference learning, oversight, deceptive-bhavior
 evidence, and interpretability — with a researcher's skepticism about what

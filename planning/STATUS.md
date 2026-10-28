@@ -655,4 +655,5 @@ phone layer starts by killing it. Unit ledger:
 | S5-F04 | hub nav: courses/cais-ethics-society/README.md | 186aa3c |
 | S5-F05 | hub nav: courses/safeshield-governance/README.md | 205bb49 |
 | S5-F06 | hub nav: courses/study-plans.md | 5ea08fa |
-| S5-F07 | hub nav: courses/how-courses-organize.md | pending |
+| S5-F07 | hub nav: courses/how-courses-organize.md | c9d71c7 |
+| S5-F08 | hub nav: roadmaps/alignment-research.md | pending |
