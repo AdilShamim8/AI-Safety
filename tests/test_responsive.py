@@ -115,7 +115,7 @@ def test_phone_table_cards_declared() -> None:
 def test_card_labels_stamp_every_field() -> None:
     """The row builders stamp data-label so a restacked card names its data."""
     tpl = _tpl()
-    assert 'function lbl(td, label)' in tpl
+    assert "function lbl(td, label)" in tpl
     pinned_calls = (
         'tr.appendChild(lbl(el("td", null, d.organization), "Organization"));',
         'tr.appendChild(lbl(el("td", null, d.risk_area), "Risk area"));',
