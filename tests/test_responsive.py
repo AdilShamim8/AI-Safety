@@ -229,6 +229,27 @@ def test_viewport_guard_remeasures_not_frozen() -> None:
     assert "var hit = detect();" in html
 
 
+def test_viewport_guard_console_build_stamp() -> None:
+    """s9: the owner's third report arrived with the s8 fix already live —
+    a long-lived DevTools tab (switching emulated devices never reloads
+    the page) was still executing the pre-fix JavaScript, where the frozen
+    s7 verdict and its zoom live on for the tab's whole life, so the tab
+    kept rendering the sliced page regardless of what was deployed. A
+    stale tab cannot be patched from the server; it can only be
+    identified. The head script now stamps its build into the console and
+    announces each guard verdict on change (one line in a normal session,
+    the call guarded by try/catch for old WebViews), so "no [AI-Safety]
+    line in the console" means "this tab predates the fix — hard-refresh
+    it"."""
+    tpl = _tpl()
+    assert 'console.info("[AI-Safety] build s9' in tpl
+    assert "stamped !== hit" in tpl  # announce verdict changes, not every apply()
+    assert "}catch(e){}" in tpl  # the stamp must survive consoles old WebViews lack
+    html = _html()
+    assert 'console.info("[AI-Safety] build s9' in html
+    assert "stamped !== hit" in html
+
+
 def test_guard_layer_scales_every_font_size() -> None:
     """s8: the derivation must scale every font-size it emits — the
     base tier included, so type the media blocks never re-set still

@@ -29,7 +29,9 @@
    clientWidth — so detection re-measures safely on every event,
    self-corrects a wrong verdict, and a false positive can only ever
    render the ordinary phone layout at slightly larger type, never a
-   magnified one. */
+   magnified one. s9: the script also stamps its build into the console
+     and announces each guard verdict there — see the stamp note inside
+     apply() for why a stale tab can only be identified, never patched. */
 (function(){
   function detect(){
     var de = document.documentElement;
@@ -42,6 +44,7 @@
        its screen.width and stays under the 640 gate. */
     return !!(coarse && sw > 0 && sw <= 620 && cw > 640);
   }
+  var stamped = null;
   function apply(){
     var de = document.documentElement;
     var hit = detect();
@@ -58,6 +61,21 @@
       de.style.removeProperty("--vfs");
     }
     de.classList.toggle("vw-guard", hit);
+    /* s9: a console build stamp. The owner's third report arrived with
+       the s8 fix already live: a long-lived DevTools tab (device switches
+       never reload the page) was still executing the pre-fix JavaScript,
+       where the frozen s7 verdict and its zoom live on for the tab's whole
+       life — the sliced page kept rendering no matter what was deployed,
+       because a stale tab cannot be patched from the server. It can only
+       be identified: the stamp names the build in the console the owner
+       debugs from and announces every verdict change, so "no [AI-Safety]
+       line in the console" means "this tab predates the fix — hard-refresh
+       it". The verdict is announced on change only, so a normal session
+       logs exactly one line. */
+    if(stamped !== hit){
+      stamped = hit;
+      try{ console.info("[AI-Safety] build s9 — viewport guard " + (hit ? "on" : "off")); }catch(e){}
+    }
   }
   apply();
   window.addEventListener("resize", apply);
