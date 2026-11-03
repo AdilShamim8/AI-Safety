@@ -16,6 +16,9 @@ written for someone doing it for the first time.
 
 ## 1. Where each kind of information actually lives
 
+Worked case (2026-11-03): the DataCamp registration is this page's rules in action — a public catalog page at page-inspected, an account-walled course page at metadata-only with its 302 redirect recorded (SRC-CURR-014/015 in the [source register](../research/source-register.yaml)).
+
+
 | You need | The primary source | Never trust |
 |---|---|---|
 | A paper's claim | the arXiv **abstract page** (fetch it), then the PDF if the claim is in the body | a blog's summary of the paper, your memory of "having read it" |

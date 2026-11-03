@@ -11,6 +11,9 @@ once knew the material.
 
 ## R1 — Probability and linear algebra for ML (~4–8 h)
 
+Beginner note (2026-11-03): the DataCamp companion's 44 worked examples are the plainest walk-throughs of these same concepts — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
+
+
 **Rebuild:** conditional expectation and variance; law of total expectation;
 common discrete distributions (binomial, categorical) and what "n independent
 trials" actually buys you; the Central Limit Theorem's conditions and its
