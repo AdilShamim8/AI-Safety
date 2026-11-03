@@ -17,6 +17,10 @@ The five groups sort cleanly on two axes: WHAT the attack targets (decisions, le
 
 Poisoning versus adversarial input (both manipulate data; the phase differs), and inversion versus theft (inversion reconstructs the training data; theft copies the model — the exercise treats them as one group with two aims, exactly as the video does).
 
+## Worked example (beginner walk-through)
+
+Five stems, sorted on two axes. *"A sticker on a traffic sign makes the classifier read 85."* — inference-time manipulation of a decision: adversarial input. *"A vendor's review-import feed turns out to contain manufactured praise."* — training-time corruption of learning: poisoning. *"Querying the model lets an attacker extract verbatim training records."* — reconstruction of the training data: inversion (the theft-and-inversion group, aimed at the data). *"The endpoint is overwhelmed by coordinated requests."* — the target is hosting: infrastructure. *"A popular dependency is found to have a backdoor."* — the target is the component: supply chain. The two confusions the exercise plants are the phase pair (poisoning versus adversarial — training versus inference) and the data pair (inversion reconstructs the data; theft copies the model). Sort by target and phase, and both confusions dissolve.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 12](../../chapters/12-adversarial-ml-and-robustness/README.md) — the inference-phase attack surface.
