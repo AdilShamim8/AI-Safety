@@ -17,6 +17,10 @@ Conferences (the field's state of the art, in person); security researchers' wor
 
 The video's cost list, as the exercise's wrong-answer engine: outdated defenses are more vulnerable to attacks, data breaches, and compliance issues — eroding trust, costing money, hindering innovation. Any stem where an organization stops updating and expects security to hold is the marked failure.
 
+## Worked example (beginner walk-through)
+
+Four needs, four channels. *"Earliest possible signal on a new attack pattern."* — security researchers' work: the warnings arrive before the publications do. *"A structured, curated record of the field."* — the relevant publications: slow, reliable, citable. *"A read on where the practice is heading this year."* — industry conferences: the state of the art, in person. *"Is anyone else seeing what we are seeing?"* — the community and the online forums: verification by peers. The wrong-answer engine is stagnation: outdated defenses are more vulnerable to attacks, data breaches, and compliance issues — eroding trust, costing money, hindering innovation — and any stem where an organization stops updating and expects security to hold is the marked failure. The maintenance posture is a habit, not a purchase; that is what this exercise drills.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — continuous improvement as discipline.
