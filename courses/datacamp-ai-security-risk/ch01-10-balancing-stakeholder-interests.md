@@ -17,6 +17,10 @@ The recurring pairs from the video: precision versus privacy (data scientist ver
 
 A balancing answer states both interests, the trade-off accepted, and the mitigation for the interest that lost ground ('we adopt the tool, and we add the audit that answers the legal concern'). Single-interest answers read as advocacy, not analysis — the exact failure mode the repo's governance chapter calls governance theater.
 
+## Worked example (beginner walk-through)
+
+The tension: the data science team wants to log every candidate interaction for training data; legal says retention itself is a privacy risk. The balanced answer follows a fixed shape. *State both interests:* richer training data improves the model; stored personal data creates exposure the company would have to answer for. *Name the trade-off accepted:* say the company keeps the data — then it must say what it now owes. *State the mitigation for the side that lost ground:* minimize what is stored (keep features, drop identifiers), bound the retention period, and log the decision. Single-interest answers read as advocacy, not analysis — which is exactly what this exercise marks wrong. The pattern is the everyday version of what [Ch. 23](../../chapters/23-governance-and-standards/README.md) institutionalizes as governance instruments.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — instruments that institutionalize the balancing.
