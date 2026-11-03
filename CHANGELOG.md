@@ -7,6 +7,37 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The CampusX guardrails course (2026-11-03)
+
+- The sixth lecture-library course: CampusX's *AI Security &
+  Guardrails* (14 lessons, 13 published totaling 330.47 minutes, one
+  announced; the platform marks the outline TENTATIVE), turned into
+  the library's standard companion set — a course page, fourteen
+  lesson notes, reading map, pedagogy, self-assessment, and two
+  crosswalks. The honesty basis: the public course page read in full
+  (SRC-CURR-016, page-inspected); no video watched, nothing behind
+  the paywall reproduced, the unpaid lesson's status carried in the
+  note.
+- The gap the course closed: the guardrails engineering family as
+  first-class terms — fourteen glossary rows (guardrails, input and
+  output guardrails, guard model, PII masking, pre-retrieval
+  metadata filtering, delimiter defense, Data Flow Diagram,
+  capability table, trust boundary, jailbreak gate, shared memory,
+  multimodal attack surface, Promptfoo).
+- The course integrated everywhere: watching rows and exercise
+  pointers in sixteen chapters, build blocks and honest pairings
+  across the full chapter spine (saying where the course does NOT
+  reach, with the same honesty), two project companions, the
+  practitioner pass in the study plans, the library at six courses,
+  the AWESOME entry with its access terms in place, and the front
+  doors and prerequisites.
+- Fourteen original worked examples (one per lesson, applied note by
+  note through an idempotent applier) — the practitioner
+  walk-through layer.
+- Tests: two new files and six extended suites; suite 668 to 675
+  (416 package + 176 from-scratch + 83 repo-instrument), green end
+  to end; the SYLLABUS watching track caught late and fixed forward.
+
 ### The worked-example layer (2026-11-03)
 
 - All 44 DataCamp companion notes gained an original worked example —
