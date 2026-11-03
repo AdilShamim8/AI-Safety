@@ -506,3 +506,25 @@ def test_runner_rejects_missing_config_field(tmp_path: Path) -> None:
     bad.write_text("schema_version: p07-run-config/v1\nrun_id: x\n")
     with pytest.raises(RunnerError, match="missing field"):
         load_run_config(bad)
+
+
+def test_datacamp_injection_notes_state_the_boundary() -> None:
+    """The session-10 DataCamp notes teach prompt injection as an
+    inference-phase manipulation of inputs (the course's
+    adversarial-input family). This pins that the beginner-facing
+    layer and the P07 matrix agree on where the boundary sits: the
+    companion notes must state the phase boundary, and the matrix
+    must still carry the authority levels that phase implies."""
+    courses_dir = Path(__file__).resolve().parent.parent / "courses" / "datacamp-ai-security-risk"
+    ch1205 = (courses_dir / "ch02-05-external-risks-in-ai.md").read_text(encoding="utf-8")
+    assert "inference phase" in ch1205
+    assert "adversarial input" in ch1205
+    # the boundary statement exists in plain register
+    assert "training versus inference" in ch1205
+    # the matrix still enforces the corresponding authority structure
+    from ai_safety_course.agent_guard.matrix import load_matrix
+
+    m = load_matrix(MATRIX_PATH)
+    assert len(m.tools) == 15
+    levels = {t.authority for t in m.tools}
+    assert "read-only" in levels  # the inference-side write boundary exists
