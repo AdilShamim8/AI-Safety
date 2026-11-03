@@ -17,6 +17,10 @@ The winning procedure: prioritize by severity times likelihood under the budget;
 
 Not the plan's cleverness but its alignment: every round scores whether the chosen action serves Landora's stated goals at its stated appetite — the chapter's title claim (strategic INTEGRATION) made playable. A brilliant action misaligned with the strategy loses to a modest action aligned with it.
 
+## Worked example (beginner walk-through)
+
+Landora's first wave, sequenced. The game hands you findings and a budget; the implementor's sequence that wins: (1) take the low-hanging fruit first — the quick wins that show progress and boost morale; (2) price the expensive items by cost versus expected loss; (3) reconcile the stakeholder interests in the plan's wording — security's list, legal's list, the executive's ROI question, collected and reconciled, not competed; (4) publish the multi-level plan, strategic level down to implementation detail. What the game actually grades is alignment, not cleverness: every round scores whether the chosen action serves Landora's stated goals at its stated appetite. A brilliant action misaligned with the strategy loses to a modest action aligned with it — the chapter's title claim (strategic *integration*) made playable.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — the assurance view of sequencing.
