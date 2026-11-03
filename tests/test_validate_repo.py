@@ -38,6 +38,30 @@ def _make_git_repo(tmp_path: Path) -> Path:
     return tmp_path
 
 
+def test_datacamp_companion_survives_validation():
+    """The generated fifth-course layer must pass the link-integrity
+    check: every relative link in the 44 notes and the analysis pages
+    resolves on disk (the through-lines, the crosswalk references, and
+    the navigate lines)."""
+    import re
+
+    base = REPO_ROOT / "courses" / "datacamp-ai-security-risk"
+    md_files = sorted(base.glob("*.md"))
+    assert len(md_files) == 50, f"expected 50 files, found {len(md_files)}"
+    link_re = validate_repo.LINK_RE
+    checked = 0
+    for f in md_files:
+        text = f.read_text(encoding="utf-8")
+        for m in link_re.finditer(text):
+            target = m.group(1)
+            if target.startswith(("http://", "https://", "#", "mailto:")):
+                continue
+            resolved = (f.parent / target.split("#")[0]).resolve()
+            assert resolved.exists(), f"{f.name}: broken local link {target}"
+            checked += 1
+    assert checked >= 150, f"suspiciously few links checked: {checked}"
+
+
 def test_repo_itself_passes_validation():
     errors = (
         validate_repo.check_yaml(REPO_ROOT)
