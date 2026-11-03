@@ -403,3 +403,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 16 — Privacy, provenance, and supply chains →](../16-privacy-provenance-and-supply-chains/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter teaches red-teaming as methodology; the course runs it
+as a build gate. The Promptfoo pass on the secured stack — attack
+prompts as cases, the layers as the system under test, the per-layer
+report as the finding — is this chapter's method with a harness
+attached. Pair the methodology with the [worked red-team example](../../courses/campusx-ai-security-guardrails/m3-06-red-teaming-our-rag-application.md).
