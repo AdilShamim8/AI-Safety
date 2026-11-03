@@ -2777,3 +2777,92 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
+- id: CLM-0207
+  claim: 'The DataCamp course "AI Security and Risk Management" is a beginner-level,
+    no-prerequisites, 3-chapter course with 44 lessons totaling 2750 XP (700 in chapter
+    1, 1000 in chapter 2, 1050 in chapter 3), published 2026-05-04, placed in the AI
+    Leadership and Responsible AI Foundations tracks, rated 4.8 from 1636 reviews with
+    11919 historical enrollments.'
+  source: SRC-CURR-014
+  section_or_page: catalog page structured data and FAQ as rendered
+  evidence_strength: direct page inspection, single fetch session
+  assumptions: the catalog page reflects the current course structure; XP values are
+    platform-assigned and stable
+  counterevidence: the schema lists a 2-hour course duration while the FAQ states a
+    median completion of about 1 hour; both figures are carried as stated, and the
+    per-lesson durations were not published for this course
+  date: 2026-11-03
+- id: CLM-0208
+  claim: 'The course is instructed by Angeline Corvaglia (digital transformation
+    specialist, founder of Data Girl and Friends) with collaborators Joe Franklin
+    and Jordan Beecher, and its three chapters are "AI''s Security Landscape" (11
+    lessons), "Risk Management Fundamentals" (16 lessons), and "Strategic Integration
+    of AI Security" (17 lessons including the wrap-up), all at 100% completion as
+    supplied by the owner.'
+  source: SRC-CURR-015
+  section_or_page: course page (owner-supplied synopsis and completion state, 2026-11-03)
+  evidence_strength: owner-supplied account-accessed statement; lesson structure
+    corroborated by SRC-CURR-014
+  assumptions: the owner's synopsis accurately reflects the course page; chapter
+    completion percentage is the platform's display value
+  counterevidence: chapter percentage displays are perishable platform values and
+    are not recorded as repository claims about the course content
+  date: 2026-11-03
+- id: CLM-0209
+  claim: 'The course teaches ten named gamified scenario exercises — Dinner at Riskland
+    Junction, Security Catalyst Station, Ecosystem Nexus, Model Risk Abyss, Perimeter
+    Peril Point, Fortified Code Forge, Assessment Framework Enclave, General Landora
+    Implementor, Alignment Avenue, and Throne of Stagnation — each at 100 XP, and 12
+    short videos whose synopses the owner supplied on 2026-11-03.'
+  source: SRC-CURR-015
+  section_or_page: course page lesson list (owner-supplied, 2026-11-03)
+  evidence_strength: owner-supplied account-accessed statement; lesson titles and XP
+    corroborated by SRC-CURR-014
+  assumptions: the owner's lesson list is complete and ordered as the platform presents it
+  counterevidence: none observed this session; the catalog page's schema positions agree
+    with the supplied order for all 44 lessons
+  date: 2026-11-03
+- id: CLM-0210
+  claim: 'The video synopses the companion notes rely on state, among the course''s
+    core positions: the five AI-specific risks (bias, hallucination, data poisoning,
+    adversarial attacks, sensitive data exposure); the four security-operations tool
+    families (anomaly detection/UEBA, TIPs, SOAR, AI-powered SIEM with the bank
+    wire-transfer example); the seven model risks (transparency/interpretability, bias,
+    hallucination, drift, overfitting, underfitting, data leakage); the five external-attack
+    groups; the four data-protection practices; the EU AI Act''s four risk tiers
+    (adopted March 2024); the strategic toolkit (threat prioritization, risk appetite,
+    the innovation-security spectrum, cost-versus-benefit, low-hanging fruits); the
+    start-up-versus-bank contrast; the eight-role security-aware culture map; and the
+    forward-looking set (regulation, synthetic data, AGI, explainability, adaptive
+    leadership).'
+  source: SRC-CURR-015
+  section_or_page: video synopses supplied by the owner, 2026-11-03
+  evidence_strength: owner-supplied account-accessed statement of each video's announced
+    scope; treated as announced scope, never as transcribed content
+  assumptions: the synopses accurately summarize each video's announced content
+  counterevidence: the repository never streamed any video and cannot verify the
+    synopses against the spoken content; the notes are honest about this strength
+  date: 2026-11-03
+- id: CLM-0211
+  claim: 'The wrap-up video names the instructor''s recommended follow-ons
+    — AI Ethics, Artificial Intelligence (AI) Strategy, Explainable Artificial
+    Intelligence (XAI) Concepts, and Introduction to Data Security — and invites
+    learners to the Data Girl and Friends initiative (LinkedIn).'
+  source: SRC-CURR-015
+  section_or_page: wrap-up video synopsis supplied by the owner, 2026-11-03
+  evidence_strength: owner-supplied account-accessed statement
+  assumptions: the synopsis reflects the wrap-up video's announced recommendations
+  counterevidence: none observed this session; no follow-on course page was opened
+  date: 2026-11-03
+- id: CLM-0212
+  claim: 'The unauthenticated course URL https://app.datacamp.com/learn/courses/
+    ai-security-and-risk-management redirects to the platform sign-in page (302),
+    so the interactive lesson content is account-walled and unverifiable without
+    an account.'
+  source: SRC-CURR-014
+  section_or_page: fetch behavior of both URLs, 2026-11-03
+  evidence_strength: direct observation of the redirect during the register fetch
+  assumptions: the redirect behavior is stable for unauthenticated requests
+  counterevidence: none observed this session; the public catalog page remains reachable
+    without an account and carries the full lesson structure
+  date: 2026-11-03

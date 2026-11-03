@@ -5378,3 +5378,58 @@ sources:
     were watched; no spoken content is quoted. Commercial training provider — content priced as
     practitioner instruction, not as evidence for empirical claims.
   license: standard YouTube terms of service
+- id: SRC-CURR-014
+  title: 'AI Security and Risk Management (DataCamp public catalog page)'
+  authors_or_organization: 'DataCamp; Angeline Corvaglia (instructor; Digital Transformation
+    Specialist, founder of Data Girl and Friends); collaborators Joe Franklin and Jordan
+    Beecher (per page schema)'
+  url: https://www.datacamp.com/courses/ai-security-and-risk-management
+  source_type: course
+  publication_date: '2026-05-04'
+  version: catalog page as rendered 2026-11-03 (title, description, chapters and lessons
+    with XP, schema durations and positions, rating and enrollment counts, tracks)
+  accessed_on: '2026-11-03'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (commercial interactive course platform)
+  supports:
+  - 'courses/datacamp-ai-security-risk/ (the course page companion: chapter titles and
+    purposes, the 44-lesson structure with types and XP, the beginner-no-prerequisites
+    level, median completion time about 1 hour, 4.8 stars from 1636 reviews, 11919 historical
+    enrollments, and the AI Leadership / Responsible AI Foundations track placements, all
+    as rendered on the public catalog page)'
+  limitations: Public catalog page inspected 2026-11-03 without an account; the interactive
+    lesson content itself (exercises, gamified scenarios, video players) is account-walled
+    and was never opened by this repository. The page's structured data supplied chapter
+    positions and lesson lists; lesson titles, order, and XP are corroborated by the
+    owner-supplied course synopsis (SRC-CURR-015). Per-lesson durations were not published
+    for this course; the schema lists a 2-hour course duration (PT120M) while the FAQ
+    states a median completion of about 1 hour over 3 chapters and 44 exercises — both
+    figures are carried as stated. No video was streamed and no exercise content is
+    reproduced anywhere in this repository.
+  license: standard DataCamp terms of service (catalog page publicly reachable)
+- id: SRC-CURR-015
+  title: 'AI Security and Risk Management (DataCamp course page, account-walled)'
+  authors_or_organization: 'DataCamp; Angeline Corvaglia (instructor)'
+  url: https://app.datacamp.com/learn/courses/ai-security-and-risk-management
+  source_type: course
+  publication_date: '2026-05-04'
+  version: course page as announced by the owner 2026-11-03 (unauthenticated fetch redirects
+    to sign-in; the lesson-level structure supplied by the owner from account access)
+  accessed_on: '2026-11-03'
+  access_level: metadata-only
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (commercial interactive course platform)
+  supports:
+  - 'courses/datacamp-ai-security-risk/ (the lesson-level structure — 44 lessons, their
+    titles, order, and XP values — and the video synopses used as the announced scopes
+    of the companion notes)'
+  limitations: The direct URL redirects unauthenticated requests to the platform sign-in
+    page (verified 2026-11-03); no account content was opened by this repository. The
+    owner supplied the lesson list and the per-video synopses on 2026-11-03; the lesson
+    list is corroborated by the public catalog page''s structured data (SRC-CURR-014),
+    including all 44 titles, their XP values, and the four-lesson review blocks. The
+    video synopses are carried as the owner''s account-accessed statement of each
+    video''s announced scope; no video was streamed by this repository, no spoken content
+    is transcribed or quoted, and no interactive exercise content is reproduced.
+  license: standard DataCamp terms of service
