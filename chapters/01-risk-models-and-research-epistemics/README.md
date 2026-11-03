@@ -435,3 +435,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 02 — Evaluation science and experimental design →](../02-evaluation-science-and-experimental-design/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter formalizes exposure and pathway; the course counts them
+per component before anything is built — every retriever, tool, and
+input channel added without thinking about security is a new way in,
+and the counting is the framework's first step. The practitioner's
+statement of this chapter is the [why-study note](../../courses/campusx-ai-security-guardrails/m1-01-why-study-ai-security.md).
