@@ -25,6 +25,10 @@ The counting rule the course teaches: attack surface grows with every retriever,
 
 The closing move of the opening: security is designed in, not patched on. The course promises a repeatable step-by-step threat-modelling framework applied end to end to two production-grade case studies — a RAG application for a bank and a doctor-booking agent — each component getting its own security layer. That ground-up promise is what distinguishes this course from the four video courses in this repository's lecture library, which teach the concepts at research level without building the layers.
 
+## Worked example (practitioner walk-through)
+
+Take a support RAG you have actually shipped and count its ways in. The channel list: a public chat box (anyone, any phrasing), a retriever over your document store, an LLM, and an answer box. Now the honest question, one component at a time: who can reach the chat box? (anyone — the default you accepted). What does the retriever hold? (every document you indexed, whatever its sensitivity). What can the LLM do with a crafted message? (whatever your system prompt fails to forbid). What does the answer box leak? (whatever the model generates, unchecked). That count is the lesson: four components, four entry points, zero guards — and each one you add later (a tool, a file upload) appends to the same list. The course's position, and this repository's [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) formalization of it: exposure is a quantity you can count before you build, and counting it after is the expensive way.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — the application-security chapter this course works at production level.
