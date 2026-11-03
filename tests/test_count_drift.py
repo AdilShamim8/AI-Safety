@@ -73,13 +73,13 @@ def _truth() -> dict[str, int]:
 def test_truth_is_the_expected_corpus() -> None:
     """Guard the extraction itself: the corpus must be at least this deep."""
     t = _truth()
-    assert t["sources"] >= 263
-    assert t["claims"] >= 212
+    assert t["sources"] >= 264
+    assert t["claims"] >= 218
     assert t["cards"] >= 43
     assert t["paper_notes"] >= 74
     assert t["comparison_notes"] >= 12
     assert t["incidents"] >= 14
-    assert t["glossary"] >= 349
+    assert t["glossary"] >= 363
     assert t["tests"] >= 644
 
 
