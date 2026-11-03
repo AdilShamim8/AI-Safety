@@ -75,6 +75,10 @@ it with the chapters it implements:
 - **Practitioner pass:** the CampusX course alongside the Ch. 13–16
   block — about 5.5 hours published, best taken one module per study
   session with the case studies running beside the chapters.
+- **Alongside-pass additions:** the CampusX modules ride the existing
+  pairings — module 2 with the framework chapters, module 3 with the
+  deployment chapters, module 4 with the agent chapters; roughly 5.5
+  hours spread across the block, or 8 hours with every listed lesson.
 - **Alongside pass:** 3–5 videos per chapter-cluster — roughly 4–6
   hours across the whole course if you take only the primary pairings
   above; 12–15 hours if you watch every listed lecture.
