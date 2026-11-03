@@ -21,6 +21,10 @@ Beyond data: secure coding practices (regular code reviews, vulnerability scanni
 
 The video's closing move: business leaders fund the security tools and training; legal experts check that practices respect user privacy; regulators define additional checks and balances. The teamwork is what makes the systems not only secure but trusted and reliable — the same four-pillar logic as chapter 1, now applied to the development lifecycle.
 
+## Worked example (beginner walk-through)
+
+A loan-approval model's data pipeline, walked through the four practices in order. *Provenance and traceability:* every field carries its origin — which bureau, which upload, which consent — so when poisoned or corrupt data is found, it can be pinpointed and removed. *Validation:* at ingestion, the data is checked and cleaned — accurate, relevant, untampered — before it ever reaches training. *Minimization:* the pipeline asks of every field "do we need this?" and drops what it does not — every uncollected datum is a breach that cannot happen. *Encryption and anonymization:* what remains is transformed for storage and stripped of identifiers where possible — the last line against model inversion. Then the non-data practices around it: secure coding (reviews, scanning, standards), access management (only trusted, verified parties may modify the model or its data), and secure infrastructure (firewalls, intrusion detection, secure cloud). The video's closing move is the beginner's headline: security is built by the teams that create the system, and it is not the tech team's job alone.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 16](../../chapters/16-privacy-provenance-and-supply-chains/README.md) — provenance, minimization, anonymization — the deep treatment.
