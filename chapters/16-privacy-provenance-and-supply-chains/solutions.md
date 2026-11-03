@@ -164,3 +164,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **Safeshield**, [module-06-privacy-data-protection](../../courses/safeshield-governance/module-06-privacy-data-protection.md) — watch before working the provenance exercises.
+- **DataCamp**, [ch02-09-secure-development-practices](../../courses/datacamp-ai-security-risk/ch02-09-secure-development-practices.md) — watch before the provenance exercises — the four practices are the defense menu the exercises choose from.

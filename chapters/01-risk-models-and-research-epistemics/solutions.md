@@ -154,3 +154,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **DeepMind course**, [part-01-01-path-to-superhuman](../../courses/google-deepmind-agi-safety/part-01-01-path-to-superhuman.md) — watch before working the threat-hypothesis exercises.
+- **DataCamp**, [ch01-03-dinner-at-riskland-junction](../../courses/datacamp-ai-security-risk/ch01-03-dinner-at-riskland-junction.md) — watch before the threat-hypothesis exercises — the game is the same classification discipline the rubric grades.

@@ -148,3 +148,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **CAIS course**, [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) — watch before working the safety-case exercises.
+- **DataCamp**, [ch03-01-from-insights-to-action](../../courses/datacamp-ai-security-risk/ch03-01-from-insights-to-action.md) — watch before the assurance-plan exercises — the strategic toolkit is the resource-allocation layer the plans must show.

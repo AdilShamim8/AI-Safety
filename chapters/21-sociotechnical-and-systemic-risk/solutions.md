@@ -157,3 +157,4 @@ a finding to note in your solution.
 
 - **CAIS course**, [lecture-05-complex-systems](../../courses/cais-ethics-society/lecture-05-complex-systems.md) — watch before working the cascade exercises.
 - **CAIS course**, [lecture-07-collective-action-problems](../../courses/cais-ethics-society/lecture-07-collective-action-problems.md) — watch before working the coordination exercises.
+- **DataCamp**, [ch01-09-the-importance-of-multiple-viewpoints](../../courses/datacamp-ai-security-risk/ch01-09-the-importance-of-multiple-viewpoints.md) — watch before the stakeholder exercises — perspective attribution is the skill the rubric grades.

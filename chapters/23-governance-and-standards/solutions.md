@@ -139,3 +139,4 @@ a finding to note in your solution.
 
 - **Safeshield**, [module-11-eu-ai-act](../../courses/safeshield-governance/module-11-eu-ai-act.md) — watch before working the obligation-mapping exercises.
 - **Safeshield**, [module-10-nist-ai-rmf](../../courses/safeshield-governance/module-10-nist-ai-rmf.md) — watch before working the framework-function exercises.
+- **DataCamp**, [ch02-14-the-eu-ai-act](../../courses/datacamp-ai-security-risk/ch02-14-the-eu-ai-act.md) — watch before the tier exercises — the use-not-capability rule is the classification the obligations follow.

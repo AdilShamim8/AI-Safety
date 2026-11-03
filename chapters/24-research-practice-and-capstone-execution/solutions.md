@@ -137,3 +137,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **CS 2881**, [f26-oral-presentations](../../courses/boaz-barak-cs2881/f26-oral-presentations.md) — watch before working the capstone-defense preparation.
+- **DataCamp**, [ch03-17-wrap-up-ai-security-and-risk-management](../../courses/datacamp-ai-security-risk/ch03-17-wrap-up-ai-security-and-risk-management.md) — watch before the capstone — the course's closing map is the survey-level version of your dossier's context chapter.

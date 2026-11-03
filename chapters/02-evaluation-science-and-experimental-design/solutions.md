@@ -255,3 +255,4 @@ a finding to note in your solution.
 
 - **CS 2881**, [lecture-07-lab-vs-field](../../courses/boaz-barak-cs2881/lecture-07-lab-vs-field.md) — watch before working the measurement-design exercises.
 - **DeepMind course**, [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) — watch before working the construct-validity exercises.
+- **DataCamp**, [ch02-02-common-risks-of-ai-models](../../courses/datacamp-ai-security-risk/ch02-02-common-risks-of-ai-models.md) — watch before the leakage and contamination exercises — the drill is the symptom-level version of the same discriminations.

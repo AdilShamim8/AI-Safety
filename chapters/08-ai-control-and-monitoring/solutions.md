@@ -438,3 +438,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **DeepMind course**, [part-02-04-security-and-control](../../courses/google-deepmind-agi-safety/part-02-04-security-and-control.md) — watch before working the protocol-design exercises.
+- **DataCamp**, [ch01-05-enhancing-security-operations-with-ai](../../courses/datacamp-ai-security-risk/ch01-05-enhancing-security-operations-with-ai.md) — watch before the monitor-choice exercises — the tool-family matching is the same function-versus-object reasoning.

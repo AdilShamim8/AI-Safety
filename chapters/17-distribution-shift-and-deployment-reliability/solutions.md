@@ -137,3 +137,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **DeepMind course**, [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) — watch before working the drift exercises.
+- **DataCamp**, [ch02-03-continuous-monitoring](../../courses/datacamp-ai-security-risk/ch02-03-continuous-monitoring.md) — watch before the drift-detection exercises — the monitoring drill is the cadence-and-threshold structure the rubrics require.

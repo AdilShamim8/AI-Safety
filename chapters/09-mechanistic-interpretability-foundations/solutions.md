@@ -304,3 +304,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **CS 2881**, [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) — watch before working the residual-stream exercises.
+- **DataCamp**, [ch02-01-model-risks](../../courses/datacamp-ai-security-risk/ch02-01-model-risks.md) — watch before the interpretability exercises — the transparency/interpretability gap is what the probes are for.
