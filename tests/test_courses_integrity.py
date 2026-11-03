@@ -88,6 +88,10 @@ def test_datacamp_lesson_count_matches_register() -> None:
     assert sum(ls["xp"] for ls in ALL_LESSONS) == 2750
     notes = sorted(p.name for p in (COURSES / "datacamp-ai-security-risk").glob("ch*.md"))
     assert len(notes) == 44, f"note count drifted: {len(notes)}"
+    # the worked-example layer: every note carries the beginner walk-through
+    for n in notes:
+        text = (COURSES / "datacamp-ai-security-risk" / n).read_text(encoding="utf-8")
+        assert "## Worked example (beginner walk-through)" in text, n
     slugs = {ls["slug"] + ".md" for ls in ALL_LESSONS}
     assert set(notes) == slugs, "note files and content modules disagree"
 
