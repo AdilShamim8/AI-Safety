@@ -69,3 +69,7 @@ for r in frontier(seed=9):
 
 The [lecture library](../../courses/README.md) pairs with this project: [the CampusX lesson](../../courses/campusx-ai-security-guardrails/m4-01-threat-modelling-our-agentic-application.md) — the agent case study as the practitioner twin of this project's control-and-monitoring design.
 - **CampusX**, [m4-01-threat-modelling-our-agentic-application](../../courses/campusx-ai-security-guardrails/m4-01-threat-modelling-our-agentic-application.md) — watch before the control-design exercises — the capability table read honestly.
+
+## The CampusX build of this project (2026-11-03)
+
+The agent case study is this project's design made production: the gate on the conversation, the guard on every tool and MCP result, the judge on every memory write, and the output guardrails are the control-and-monitoring protocol this project specifies — implemented on a system with write and delete capabilities, where the wrong-answer-versus-wrong-action distinction is the whole design pressure. Run this project's protocol beside the [agent case study](../../courses/campusx-ai-security-guardrails/m4-01-threat-modelling-our-agentic-application.md).
