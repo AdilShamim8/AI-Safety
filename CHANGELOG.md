@@ -7,6 +7,22 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The worked-example layer (2026-11-03)
+
+- All 44 DataCamp companion notes gained an original worked example —
+  a beginner walk-through of the lesson's concepts through one
+  concrete scenario (the retailer chatbot, the churn model, Landora's
+  first wave, the auto-reject decision), landed between the beats and
+  the through-lines so the reading order is concepts, case, chapter
+  connections, angle, honesty note. Generated from three content
+  modules through an idempotent per-note applier, committed one note
+  per unit, and pinned by three tests (coverage, integrity, and
+  flowing-prose for the phone layer).
+- The companion is now integrated into chapters 03/05/06/10/13
+  (watching rows plus exercise pointers), six roadmap pages, all three
+  prerequisite pages, both front doors, the cross-course comparison,
+  and the honesty ledger.
+
 ### The DataCamp companion and the beginner gloss (2026-11-03)
 
 - The fifth lecture-library course: DataCamp's *AI Security and Risk
