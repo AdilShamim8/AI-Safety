@@ -7,6 +7,46 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### The DataCamp companion and the beginner gloss (2026-11-03)
+
+- The fifth lecture-library course: DataCamp's *AI Security and Risk
+  Management* (Angeline Corvaglia; 44 graded lessons, about an hour,
+  beginner with no prerequisites), verified on the public catalog
+  page and turned into the library's standard companion set — a course
+  page, one note per lesson (44), reading map, pedagogy analysis,
+  self-assessment, and two crosswalks. The honesty basis for an
+  interactive course: the catalog page is page-inspected
+  (SRC-CURR-014), the account-walled course page is metadata-only with
+  its 302 sign-in redirect recorded (SRC-CURR-015), video synopses
+  were owner-supplied, no video was streamed, and no exercise content
+  is reproduced anywhere.
+- The gap analysis found the course teaching three families of
+  concepts this repository's working surfaces never stated; all
+  twenty terms now carry glossary rows: the security-operations tool
+  families (SIEM, SOAR, UEBA, TIPs), the lifecycle fit-and-fidelity
+  pair (underfitting, data leakage), the data-protection practices
+  (validation, minimization, anonymization, provenance), the
+  transparency family (model transparency, interpretability, XAI),
+  continuous monitoring, the attack pairs (model inversion, supply
+  chain), the strategic layer (threat prioritization, low-hanging
+  fruit, security-aware culture), and synthetic data.
+- The course is integrated everywhere the four video courses are:
+  25 watching-companion rows across eleven chapter READMEs, 11
+  watching pointers in the solutions files, roadmap pairings on two
+  routes, the library index and study plans resynced to five courses
+  with a new beginner pass (the DataCamp course as the graded primer
+  before Ch. 01), the FAQ and SYLLABUS watching track, the honesty
+  ledger's account-wall record, MAINTENANCE rotation 5, and an
+  AWESOME full-courses entry with the verified-link count resynced.
+- Tests: two new files (test_datacamp_companion.py, the extended
+  integrity contract) and eight extended suites (drift floors, audit,
+  validator, awesome-links, p07, responsive, fs-tensors, dashboard);
+  the count instruments caught every stale surface on the way,
+  including a suite breakdown that took three resyncs as the test
+  files landed. Suite 641 to 656 (407 package + 175 from-scratch + 74
+  repo-instrument); glossary 329 to 349; sources 261 to 263; claims
+  206 to 212.
+
 ### The stale tab that kept the sliced phone (2026-10-29)
 
 - The owner reported the phone still broken a day after the s8 fix

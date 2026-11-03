@@ -1036,3 +1036,67 @@ changes and committed in the same unit.
 
 | Unit | Commit | Evidence |
 |---|---|---|
+
+| S10-P01 — session plan: directive, verified course metadata, gap analysis, unit plan | 948cb4c (pushed) | planning/STATUS.md session-10 header; catalog page verified 2026-11-03 |
+| S10-P02 — the chapter-1 content module (11 lessons, beats, through-lines, angles) | c3bbbd8 (pushed) | scripts/datacamp_content.py |
+| S10-P03 — the chapter-2 content module (16 lessons: model risks, external attacks, practices, assessment) | 53f39e0 (pushed) | scripts/datacamp_content2.py |
+| S10-P04 — the chapter-3 content module (17 lessons: strategy, culture, the future set) | 001bcd1 (pushed) | scripts/datacamp_content3.py |
+| S10-P05 — the idempotent companion generator with self-checks | f34ff43 (pushed) | scripts/gen_datacamp_companion.py |
+| S10-P06 — the companion layer: course page + 44 notes + 5 analyses (50 files) | 1434f2d (pushed) | courses/datacamp-ai-security-risk/; XP corrected to the true 2750 |
+| S10-P07 — the register entries: SRC-CURR-014/015, claims CLM-0207..0212 | 34f4261 (pushed) | research/source-register.yaml + claims-register.yaml |
+| S10-P08 — the twenty glossary terms (SIEM/SOAR/UEBA/TIP, underfitting, leakage, practices, strategy, synthetic data) | 5604296 (pushed) | GLOSSARY.md at 349 terms |
+| S10-P09 — watching companions: 25 rows across eleven chapter READMEs | 3946699 (pushed) | chapters/{01,02,08,09,12,16,17,21,22,23,24}/README.md |
+| S10-P10 — watching pointers: eleven solutions files | 7f30be4 (pushed) | chapters/*/solutions.md |
+| S10-P11 — roadmap pairings (alignment + security-engineering routes) | 593579e (pushed) | roadmaps/alignment-research.md + ai-security-engineering.md |
+| S10-P12 — the library index resynced to five courses + beginner pass | 758e97c (pushed) | courses/README.md + study-plans.md + how-courses-organize.md |
+| S10-P13 — integration surfaces: nav hubs, honesty ledger, rotation 5, FAQ, SYLLABUS, templates row | 8ba6261 (pushed) | 7 files across the repo |
+| S10-P14 — integrity test extended (count/register-URL/table coverage) + Navigate lines regenerated | 9e3caa7 (pushed) | tests/test_courses_integrity.py |
+| S10-P15 — count-drift floors raised; every stale count caught and resynced | 1377343 (pushed) | tests/test_count_drift.py + README/FAQ/CITATION |
+| S10-P16 — the audit-clean test for the new register entries | 0a68345 (pushed) | tests/test_audit_missing.py |
+| S10-P17 — the validator link-integrity test (150+ links across 50 files) | 6fb12a6 (pushed) | tests/test_validate_repo.py |
+| S10-P18 — AWESOME entry + register limitations carrying both fetch observations | 72c235b (pushed) | AWESOME.md + source-register.yaml |
+| S10-P19 — the awesome-links test for the fifth course's entry | 9fdcc01 (pushed) | tests/test_awesome_links.py |
+| S10-P20 — the p07 phase-boundary agreement test | d576f35 (pushed) | tests/test_p07_agent_guard.py |
+| S10-P21 — the responsive pin for the five-column lesson table | 4160682 (pushed) | tests/test_responsive.py |
+| S10-P22 — the fs leakage-agreement test (Tensor.rand determinism) | 6cd5e70 (pushed) | tests/test_fs_tensors.py |
+| S10-P23 — dashboard floors + primer widget resynced to five courses | f733233 (pushed) | tests/test_dashboard.py + build_dashboard.py + index.html |
+| S10-P24 — the second new test file: the companion's own contract | 25569a1 (pushed) | tests/test_datacamp_companion.py |
+| S10-P25 — suite-size resync to 656 (407+175+74) + dashboard regenerated | a97e45d (pushed) | README.md + index.html |
+
+
+### Session 10 closed (2026-11-03) — 25/25 units, 26 commits
+
+What landed, in one pass each: the fifth lecture-library course as a
+complete companion layer (a course page, 44 lesson notes, reading
+map, pedagogy, self-assessment, two crosswalks — 50 generated files
+from three content modules and an idempotent generator with
+self-checks); the honest register basis (two source entries with
+both fetch observations recorded — the rendered catalog page and
+the 302 sign-in redirect — and six claims pinning the verifiable
+numbers); twenty glossary terms closing every concept family the
+gap analysis found absent (SIEM/SOAR/UEBA/TIPs, underfitting, data
+leakage, the data-protection practices, the transparency family,
+the strategic layer, synthetic data); 25 watching rows and 11
+watching pointers integrating the course into the chapter spine;
+the library index, study plans, roadmaps, FAQ, SYLLABUS, honesty
+ledger, MAINTENANCE rotation 5, and AWESOME entry all resynced to
+five courses; two new test files plus eight extended ones; and the
+count instruments doing their job loudly — the drift tests went
+red on every stale surface until each was corrected, including a
+glossary count hidden across a line wrap and a suite breakdown
+that took three resyncs as the test files themselves landed.
+
+Suite 641 to 656 (407 package + 175 from-scratch + 74
+repo-instrument); glossary 329 to 349; sources 261 to 263; claims
+206 to 212; the dashboard regenerated at 656 tests. The full suite
+reruns green end to end; the repository closes at 663 commits.
+
+The gap the owner asked about is closed in the register's sense:
+every concept family the course teaches now has a working
+definition somewhere in the repository, and the beginner who wants
+every concept graded as it lands has their on-ramp — the DataCamp
+course as the primer pass, scheduled against the 24 chapters.
+
+Standing actions unchanged and still urgent: the session token
+(the fifth exposed across sessions) must be rotated by the owner;
+SECURITY.md's reporting path governs.
