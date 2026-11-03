@@ -21,6 +21,10 @@ As the description states: using Data Flow Diagrams, entry and exit points, trus
 
 From the description's own list, the layers that follow one per lesson: the vector database (PII leakage), the retriever (authentication and authorization), the user query and LLM (jailbreak and prompt injection), and the output (guardrails) — each mapped as a weak point before it is closed.
 
+## Worked example (practitioner walk-through)
+
+The bank's version of the same five steps, with the bank's constraints. Diagram: the public chat box (anyone, no login — the standing condition), the retriever over the policy corpus, the LLM, the answer box. Boundaries: everything the user touches is untrusted; the corpus is internal but was written by many hands over years; the LLM's context is a blending zone where untrusted and internal meet. Capability table — the honest rows: the retriever can read every document including the restricted ones; the LLM can be instructed by anything that reaches its context, including the retrieved documents; the answer box can emit anything the model generates, including a customer's records if a path exists. Weak points, found in order: the store holds PII (leakage at rest and at retrieval), the retriever serves restricted documents to anyone (authorization gap), the query and the documents share one context (injection), the answer ships unchecked (the last crossing). Four weak points, four lessons, four layers — the case study's shape from the start.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — the RAG surface at chapter depth.
