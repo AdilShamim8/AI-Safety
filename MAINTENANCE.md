@@ -272,3 +272,7 @@ outline in a second session. The curriculum data supplied the 14
 lessons with durations that CLM-0213..0218 pin; the platform's own
 TENTATIVE marking on the outline is carried in the register entry's
 limitations.
+
+### The CampusX worked-example layer (2026-11-03)
+
+The 14 practitioner walk-throughs were applied note by note through the idempotent applier (scripts/apply_campusx_example.py); their content lives in three modules beside the generator, so the layer regenerates deterministically. No external URL was added; the register basis is unchanged from rotation 6.
