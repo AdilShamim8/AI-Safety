@@ -353,6 +353,8 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) | DeepMind AGI Safety | training-time robustness plus deployment-time monitoring |
 | [module-12-lifecycle-governance](../../courses/safeshield-governance/module-12-lifecycle-governance.md) | Safeshield Governance | change management and the gates that keep deployed systems true |
+| [ch02-01-model-risks](../../courses/datacamp-ai-security-risk/ch02-01-model-risks.md) | DataCamp AI Security & RM | drift over the lifecycle with the spam-filter example — this chapter's subject at beginner level |
+| [ch02-03-continuous-monitoring](../../courses/datacamp-ai-security-risk/ch02-03-continuous-monitoring.md) | DataCamp AI Security & RM | the post-deployment watch as a graded skill: baselines, thresholds, named owners |
 
 ---
 

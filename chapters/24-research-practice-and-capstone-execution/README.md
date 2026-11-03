@@ -338,6 +338,7 @@ chapter is a finding to record, not a problem to resolve.
 | [f26-oral-presentations](../../courses/boaz-barak-cs2881/f26-oral-presentations.md) | Harvard CS 2881 | the defended-capstone model this chapter's project follows |
 | [pedagogy](../../courses/boaz-barak-cs2881/pedagogy.md) | Harvard CS 2881 | how a working research seminar runs its evidence discipline |
 | [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) | CAIS Ethics & Society | the incident-reporting culture as research practice |
+| [ch03-17-wrap-up-ai-security-and-risk-management](../../courses/datacamp-ai-security-risk/ch03-17-wrap-up-ai-security-and-risk-management.md) | DataCamp AI Security & RM | the course's own closing map — the follow-on survey courses and where the capstone sends you next |
 
 ---
 

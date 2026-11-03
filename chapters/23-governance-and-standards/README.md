@@ -336,6 +336,9 @@ chapter is a finding to record, not a problem to resolve.
 | [module-09-iso-42001](../../courses/safeshield-governance/module-09-iso-42001.md) | Safeshield Governance | the AI management system as certifiable object |
 | [module-10-nist-ai-rmf](../../courses/safeshield-governance/module-10-nist-ai-rmf.md) | Safeshield Governance | govern-map-measure-manage, taught as practice |
 | [module-11-eu-ai-act](../../courses/safeshield-governance/module-11-eu-ai-act.md) | Safeshield Governance | the risk pyramid and the first comprehensive statute |
+| [ch02-13-ai-risk-assessment-frameworks](../../courses/datacamp-ai-security-risk/ch02-13-ai-risk-assessment-frameworks.md) | DataCamp AI Security & RM | the EU AI Act's four risk tiers (adopted March 2024) with high-risk duties — this chapter's regulatory spine at beginner level |
+| [ch02-14-the-eu-ai-act](../../courses/datacamp-ai-security-risk/ch02-14-the-eu-ai-act.md) | DataCamp AI Security & RM | graded tier classification: use, not capability, decides the tier |
+| [ch03-02-risk-appetite](../../courses/datacamp-ai-security-risk/ch03-02-risk-appetite.md) | DataCamp AI Security & RM | risk appetite with its four determinants — the instrument this chapter writes for organizations |
 
 ---
 

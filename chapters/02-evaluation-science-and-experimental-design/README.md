@@ -462,6 +462,8 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-07-lab-vs-field](../../courses/boaz-barak-cs2881/lecture-07-lab-vs-field.md) | Harvard CS 2881 | lab evaluations vs field performance — the chapter's central distinction, taught by METR's own |
 | [part-03-03-dangerous-capability-evaluations](../../courses/google-deepmind-agi-safety/part-03-03-dangerous-capability-evaluations.md) | DeepMind AGI Safety | what an evaluation can and cannot establish |
 | [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the UK AISI model-hacking report as evaluation-gaming evidence |
+| [ch02-01-model-risks](../../courses/datacamp-ai-security-risk/ch02-01-model-risks.md) | DataCamp AI Security & RM | the seven model risks at beginner level — the leakage and overfitting entries this chapter treats with grouped splits and contamination checks |
+| [ch02-02-common-risks-of-ai-models](../../courses/datacamp-ai-security-risk/ch02-02-common-risks-of-ai-models.md) | DataCamp AI Security & RM | graded symptom diagnosis; the overfit/underfit/leakage discriminations are this chapter's material in exercise form |
 
 ---
 

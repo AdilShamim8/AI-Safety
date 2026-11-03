@@ -365,6 +365,9 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-07-collective-action-problems](../../courses/cais-ethics-society/lecture-07-collective-action-problems.md) | CAIS Ethics & Society | the race dynamics and commons problems this chapter formalizes |
 | [lecture-09-economic-impacts](../../courses/boaz-barak-cs2881/lecture-09-economic-impacts.md) | Harvard CS 2881 | labor and growth as the measurable systemic layer |
 | [f26-lecture-05-economic-impact](../../courses/boaz-barak-cs2881/f26-lecture-05-economic-impact.md) | Harvard CS 2881 | the Turing Trap and the centaur standard |
+| [ch01-08-the-ai-security-ecosystem](../../courses/datacamp-ai-security-risk/ch01-08-the-ai-security-ecosystem.md) | DataCamp AI Security & RM | the four-pillar ecosystem — people, legal, technology, processes — the systemic frame this chapter formalizes |
+| [ch01-09-the-importance-of-multiple-viewpoints](../../courses/datacamp-ai-security-risk/ch01-09-the-importance-of-multiple-viewpoints.md) | DataCamp AI Security & RM | graded perspective attribution; disagreement recorded, not averaged away |
+| [ch03-09-a-security-aware-culture](../../courses/datacamp-ai-security-risk/ch03-09-a-security-aware-culture.md) | DataCamp AI Security & RM | the eight-role culture map — the organization chart of the systemic layer |
 
 ---
 

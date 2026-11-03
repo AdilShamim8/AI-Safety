@@ -380,6 +380,9 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-04-safety-engineering](../../courses/cais-ethics-society/lecture-04-safety-engineering.md) | CAIS Ethics & Society | what aviation and nuclear already learned, accessibly |
 | [module-07-safety-security-resilience](../../courses/safeshield-governance/module-07-safety-security-resilience.md) | Safeshield Governance | the S-word triad as governance obligations |
 | [module-13-policies-documentation](../../courses/safeshield-governance/module-13-policies-documentation.md) | Safeshield Governance | the documentation craft that holds assurance together |
+| [ch02-13-ai-risk-assessment-frameworks](../../courses/datacamp-ai-security-risk/ch02-13-ai-risk-assessment-frameworks.md) | DataCamp AI Security & RM | the formal-plus-continuous assessment posture — the two-pronged approach this chapter builds into assurance documents |
+| [ch03-01-from-insights-to-action](../../courses/datacamp-ai-security-risk/ch03-01-from-insights-to-action.md) | DataCamp AI Security & RM | threat prioritization, cost versus benefit, low-hanging fruit — the resource-allocation layer of assurance work |
+| [ch03-13-ai-security-for-the-future](../../courses/datacamp-ai-security-risk/ch03-13-ai-security-for-the-future.md) | DataCamp AI Security & RM | continuous improvement and adaptive leadership — the culture half of the assurance posture |
 
 ---
 

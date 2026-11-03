@@ -428,6 +428,8 @@ chapter is a finding to record, not a problem to resolve.
 | [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the incident-based reopening: post-mortems as the newest evidence class |
 | [part-01-01-path-to-superhuman](../../courses/google-deepmind-agi-safety/part-01-01-path-to-superhuman.md) | DeepMind AGI Safety | the capability-trajectory claim, priced as a trend not a date |
 | [lecture-01-introduction-ai-risks](../../courses/cais-ethics-society/lecture-01-introduction-ai-risks.md) | CAIS Ethics & Society | the misuse/accident/structural taxonomy in accessible register |
+| [ch01-01-security-risks-specific-to-ai](../../courses/datacamp-ai-security-risk/ch01-01-security-risks-specific-to-ai.md) | DataCamp AI Security & RM | the five-risk taxonomy stated accessibly, with the hiring-system and shopping-platform worked stories — the register this chapter formalizes |
+| [ch01-02-ai-risk-awareness](../../courses/datacamp-ai-security-risk/ch01-02-ai-risk-awareness.md) | DataCamp AI Security & RM | graded discrimination of the five risks by phase — the mechanism-first discipline this chapter's threat hypotheses demand |
 
 ---
 

@@ -495,6 +495,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | four labs' bets on opening the box — activations, SAEs, circuits |
 | [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | why the internal channel matters for safety claims |
+| [ch02-01-model-risks](../../courses/datacamp-ai-security-risk/ch02-01-model-risks.md) | DataCamp AI Security & RM | transparency and interpretability as model risks over the lifecycle — the beginner statement of this chapter's program; XAI as the management technique |
 
 ---
 

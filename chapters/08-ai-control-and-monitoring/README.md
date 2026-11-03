@@ -569,6 +569,8 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-04-security-and-control](../../courses/google-deepmind-agi-safety/part-02-04-security-and-control.md) | DeepMind AGI Safety | the control paradigm in compressed form |
 | [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the control safety-case sketches on the reading list |
+| [ch01-04-ai-as-a-change-agent-for-security](../../courses/datacamp-ai-security-risk/ch01-04-ai-as-a-change-agent-for-security.md) | DataCamp AI Security & RM | the four security-operations tool families (anomaly detection/UEBA, TIPs, SOAR, AI SIEM) — the monitoring-pipeline context this chapter designs for |
+| [ch01-05-enhancing-security-operations-with-ai](../../courses/datacamp-ai-security-risk/ch01-05-enhancing-security-operations-with-ai.md) | DataCamp AI Security & RM | function-matching drills for the tool families — which monitor watches which object |
 
 ---
 

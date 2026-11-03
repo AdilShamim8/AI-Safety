@@ -377,6 +377,9 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [module-06-privacy-data-protection](../../courses/safeshield-governance/module-06-privacy-data-protection.md) | Safeshield Governance | the GDPR-class principles meeting ML, with the toolbox priced |
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | training-data extraction: alignment does not imply privacy |
+| [ch02-05-external-risks-in-ai](../../courses/datacamp-ai-security-risk/ch02-05-external-risks-in-ai.md) | DataCamp AI Security & RM | model inversion and supply-chain attacks by name — this chapter's subjects at beginner level |
+| [ch02-09-secure-development-practices](../../courses/datacamp-ai-security-risk/ch02-09-secure-development-practices.md) | DataCamp AI Security & RM | the four data-protection practices (provenance, validation, minimization, encryption/anonymization) — this chapter's practice menu in plain register |
+| [ch03-13-ai-security-for-the-future](../../courses/datacamp-ai-security-risk/ch03-13-ai-security-for-the-future.md) | DataCamp AI Security & RM | synthetic data as an emerging trend with its integrity challenges |
 
 ---
 

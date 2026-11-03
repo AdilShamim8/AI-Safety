@@ -583,6 +583,9 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the full adversarial surface: examples, jailbreaks, injection, weights |
 | [part-02-03-robust-training-monitoring](../../courses/google-deepmind-agi-safety/part-02-03-robust-training-monitoring.md) | DeepMind AGI Safety | robustness as a safety property that survives shift |
+| [ch01-01-security-risks-specific-to-ai](../../courses/datacamp-ai-security-risk/ch01-01-security-risks-specific-to-ai.md) | DataCamp AI Security & RM | the five risks at beginner level, with the poisoning-versus-adversarial phase boundary drawn in plain words |
+| [ch02-05-external-risks-in-ai](../../courses/datacamp-ai-security-risk/ch02-05-external-risks-in-ai.md) | DataCamp AI Security & RM | the five external-attack groups by target — the inference-phase family is this chapter's subject, stated accessibly |
+| [ch02-06-types-of-external-risks](../../courses/datacamp-ai-security-risk/ch02-06-types-of-external-risks.md) | DataCamp AI Security & RM | graded two-axis classification: attack target times phase |
 
 ---
 
