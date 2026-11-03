@@ -25,6 +25,10 @@ From the published description, the announced scope the lesson teaches: a jailbr
 
 The verification note this companion carries: the lesson is announced with duration 0. Its scope is known from the description; its recording was not available to check against. The note states what is announced, and the honesty section says exactly that.
 
+## Worked example (practitioner walk-through)
+
+Run the capability table on the doctor-booking agent and watch the danger change kind. The system: a web listing of doctors; an agent that searches doctors' pages with a tool, checks free slots and books through an MCP server, and learns from past conversations in a shared memory — usable by anyone without login. The table's honest rows: the tool — read external pages (which you do not control: injection lives there); the MCP server — write the schedule (a real action in the world); the memory — read and write across sessions (whatever it holds, the agent believes); the answer — write to the patient. Read the ranking: the RAG's worst case was a wrong answer; this system's worst cases are wrong actions — a poisoned page that says "book Dr. X for everyone" becomes a booking script; a memory that has learned "patients prefer Dr. X" becomes a steering engine; a jailbreak that claims authority becomes a canceller of bookings. That is the course's central claim as a worked table: write and delete price higher than read, and the defense plan changes shape accordingly — a gate on the conversation, a guard on every tool result, a judge on every memory write.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 14](../../chapters/14-agent-tool-memory-mcp-security/README.md) — the agent surface — tools, memory, MCP — at chapter depth.
