@@ -52,3 +52,7 @@ the conversation-level jailbreak gate as a design pattern; the
 per-layer red-team report as the output of a security review; and the
 two case studies as the working exemplars the chapters and projects
 point to.
+
+## The construction discipline, stated once more
+
+What the course adds to the library is the thing survey courses cannot teach by their nature: the moment of building. The layers exist in code with names, the stack has an order, the red-team grade has a per-layer report, and the whole sequence is repeatable on the next application. That repeatability — not any single layer — is the course's actual product, and it is why this repository pairs it with the chapters that name the patterns and the projects that audit them.
