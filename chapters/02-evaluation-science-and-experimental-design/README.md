@@ -464,6 +464,7 @@ chapter is a finding to record, not a problem to resolve.
 | [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the UK AISI model-hacking report as evaluation-gaming evidence |
 | [ch02-01-model-risks](../../courses/datacamp-ai-security-risk/ch02-01-model-risks.md) | DataCamp AI Security & RM | the seven model risks at beginner level — the leakage and overfitting entries this chapter treats with grouped splits and contamination checks |
 | [ch02-02-common-risks-of-ai-models](../../courses/datacamp-ai-security-risk/ch02-02-common-risks-of-ai-models.md) | DataCamp AI Security & RM | graded symptom diagnosis; the overfit/underfit/leakage discriminations are this chapter's material in exercise form |
+| [m3-06-red-teaming-our-rag-application](../../courses/campusx-ai-security-guardrails/m3-06-red-teaming-our-rag-application.md) | CampusX AI Security & Guardrails | the per-layer report as a measurement — the same discipline this chapter builds |
 
 ---
 
