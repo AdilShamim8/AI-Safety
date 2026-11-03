@@ -21,6 +21,10 @@ The cleanest discriminator is WHERE the error lives: overfitting's error concent
 
 Leakage almost always presents as an evaluation surprise, not a behavior surprise: metrics that cannot be reproduced by an independent evaluator. The repo's evaluation-science chapter builds its grouped splits and contamination checks on exactly this observation.
 
+## Worked example (beginner walk-through)
+
+Five complaints, five diagnoses. *"Great in training, disappointing in production."* — the error lives on unseen data: overfitting. *"Poor everywhere, even on the data it trained on."* — underfitting; adding data will not fix a capacity problem. *"Validation accuracy nobody outside the team can reproduce."* — the evaluation was contaminated: data leakage. *"It was accurate last quarter and it is degrading now."* — the world moved: drift. *"Right on average, wrong for one group."* — bias. The exercise's stems are rotations of these five sentences with the industries swapped; the discrimination is always *where the error lives* — training set, held-out data, live traffic, or across groups. Locate the error first; the risk's name follows, and so does the fix.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 02](../../chapters/02-evaluation-science-and-experimental-design/README.md) — the evaluation discipline that catches leakage and overfitting.
