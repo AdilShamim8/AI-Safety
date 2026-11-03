@@ -591,3 +591,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 11 — Behavioral steering and representation interventions →](../11-behavioral-steering-and-representation-interventions/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+Interpretability at circuit level is this chapter's program; the
+course contributes the practitioner's half — output checking as a
+construction layer, per answer, because outputs are non-deterministic
+and the check cannot be per-release. The built version is the
+[output-guardrails note](../../courses/campusx-ai-security-guardrails/m3-05-securing-output-output-guardrails.md).
