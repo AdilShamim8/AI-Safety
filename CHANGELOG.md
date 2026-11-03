@@ -59,7 +59,7 @@ Unreleased until a tagged release exists.
   validator, awesome-links, p07, responsive, fs-tensors, dashboard);
   the count instruments caught every stale surface on the way,
   including a suite breakdown that took three resyncs as the test
-  files landed. Suite 641 to 656 (407 package + 175 from-scratch + 74
+  files landed. Suite 641 to 658 (408 package + 175 from-scratch + 75
   repo-instrument); glossary 329 to 349; sources 261 to 263; claims
   206 to 212.
 
