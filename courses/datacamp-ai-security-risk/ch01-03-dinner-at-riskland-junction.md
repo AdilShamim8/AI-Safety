@@ -17,6 +17,10 @@ For each story beat the exercise serves, the reliable procedure is: first name t
 
 Every wrong classification in this game would, in a real organization, buy the wrong defense: calling poisoning 'bias' sends you scrubbing labels instead of auditing the data supply chain; calling an adversarial attack 'hallucination' sends you retraining instead of hardening inputs. The game makes that cost felt — the repo's phrase for the same lesson is 'each family implies different interventions, and misclassifying a risk buys the wrong defense'.
 
+## Worked example (beginner walk-through)
+
+One round of the game, played slowly. The story beat: "After the update, diners at the Junction started receiving dessert recommendations for a bakery that paid for placement — the regulars stopped trusting the menu." The harm word is *deceived*, which tempts you toward "hallucination." Run the two-step instead. First, the phase: did the fault enter through training data, run-time input, generation, or data handling? The recommendations changed after the update, following planted signals in the interaction data — training time. Second, the family: training-data manipulation by an interested party is **data poisoning**. The cost of a misread is real: call it hallucination and you retrain the model; call it poisoning and you audit the data supply chain — only one of those fixes the actual hole.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) — the risk taxonomy with the full classification discipline.
