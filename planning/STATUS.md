@@ -1063,6 +1063,20 @@ changes and committed in the same unit.
 | S10-P24 — the second new test file: the companion's own contract | 25569a1 (pushed) | tests/test_datacamp_companion.py |
 | S10-P25 — suite-size resync to 656 (407+175+74) + dashboard regenerated | a97e45d (pushed) | README.md + index.html |
 
+| S10-P27 — the chapter-1 worked-examples module (11 beginner walk-throughs) | 65bab4d (pushed) | scripts/datacamp_examples.py |
+| S10-P28 — the chapter-2 module (16 walk-throughs: risks, attacks, practices, assessment) | 2dea9bf (pushed) | scripts/datacamp_examples2.py |
+| S10-P29 — the chapter-3 module (17 walk-throughs: strategy, culture, the future set) | 03d763a (pushed) | scripts/datacamp_examples3.py |
+| S10-P30 — the idempotent per-note example applier | e56053b (pushed) | scripts/apply_datacamp_example.py |
+| S10-P31..P74 — one worked example per lesson, committed note by note (44 units) | 4fb0acc..dbf0817 (pushed) | every ch note carries the beginner walk-through |
+| S10-P75 — the worked-example coverage test (44/44, 300+ chars each) | c4518dc (pushed) | tests/test_datacamp_companion.py |
+| S10-P76 — the integrity contract extended to the examples layer | 13e40bf (pushed) | tests/test_courses_integrity.py |
+| S10-P77 — the examples pinned as flowing prose for the phone layer | 651d93b (pushed) | tests/test_responsive.py |
+| S10-P78..P82 — the DataCamp companion integrated into chapters 03/05/06/10/13 (watching rows + exercise pointers) | e61ae20..69ca29a (pushed) | five chapter READMEs + five solutions files |
+| S10-P83..P88 — the beginner on-ramp added to six roadmap pages | 806b204..fa295dd (pushed) | first-90-days, study-schedules, careers-index, audit-only, evaluations-and-assurance, progress index |
+| S10-P89..P90 — the DataCamp pairing added to the three prerequisite pages (diagnostic, refreshers, verifying-sources as a worked case) | 5f1a9aa + 7dfc22c (pushed) | prerequisites/ |
+| S10-P91 — the beginner on-ramp on the two front doors (START_HERE, ROADMAP) | 348f594 (pushed) | START_HERE.md + ROADMAP.md |
+| S10-P92 — the fifth course's agreements + the worked-examples honesty record | 084f9ac (pushed) | comparisons-where-courses-agree.md + honesty-ledger.md |
+
 
 ### Session 10 closed (2026-11-03) — 25/25 units, 26 commits
 
@@ -1100,3 +1114,20 @@ course as the primer pass, scheduled against the 24 chapters.
 Standing actions unchanged and still urgent: the session token
 (the fifth exposed across sessions) must be rotated by the owner;
 SECURITY.md's reporting path governs.
+
+### Session 10 extended (2026-11-03) — 92/100+ units: the worked-example layer
+
+The extension answered the owner's second directive in the only way
+that produces real beginner value: one original worked example per
+lesson, all 44, committed note by note, generated from three content
+modules through an idempotent applier — a concrete scenario a
+beginner can follow before attempting the graded lesson itself. The
+layer is integrated and pinned: coverage, integrity, and
+flowing-prose tests on the examples; watching rows and exercise
+pointers in chapters 03/05/06/10/13 (whose blocks were created where
+the chapters carried none, matching the library's header); the
+beginner on-ramp on six roadmap pages and all three prerequisite
+pages (verifying-sources carrying the registration as a worked case
+of the access-level rules); the two front doors; the cross-course
+comparison; and the honesty ledger's record that all 44 examples
+are original.
