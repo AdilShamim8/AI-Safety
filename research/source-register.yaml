@@ -5398,15 +5398,19 @@ sources:
     level, median completion time about 1 hour, 4.8 stars from 1636 reviews, 11919 historical
     enrollments, and the AI Leadership / Responsible AI Foundations track placements, all
     as rendered on the public catalog page)'
-  limitations: Public catalog page inspected 2026-11-03 without an account; the interactive
-    lesson content itself (exercises, gamified scenarios, video players) is account-walled
-    and was never opened by this repository. The page's structured data supplied chapter
-    positions and lesson lists; lesson titles, order, and XP are corroborated by the
-    owner-supplied course synopsis (SRC-CURR-015). Per-lesson durations were not published
-    for this course; the schema lists a 2-hour course duration (PT120M) while the FAQ
-    states a median completion of about 1 hour over 3 chapters and 44 exercises — both
-    figures are carried as stated. No video was streamed and no exercise content is
-    reproduced anywhere in this repository.
+  limitations: Public catalog page inspected 2026-11-03 without an account (a
+    browser-context fetch returned the full rendered page — title, description, chapter
+    and lesson lists with XP, FAQ); the same URL returned LIVE-BOT-BLOCKED to a plain
+    GET in the same session's link-verification rotation (MAINTENANCE rotation 5) — both
+    observations are recorded, the access level rests on the successful rendered fetch.
+    The interactive lesson content itself (exercises, gamified scenarios, video players)
+    is account-walled and was never opened by this repository. The page's structured data
+    supplied chapter positions and lesson lists; lesson titles, order, and XP are
+    corroborated by the owner-supplied course synopsis (SRC-CURR-015). Per-lesson
+    durations were not published for this course; the schema lists a 2-hour course
+    duration (PT120M) while the FAQ states a median completion of about 1 hour over
+    3 chapters and 44 exercises — both figures are carried as stated. No video was
+    streamed and no exercise content is reproduced anywhere in this repository.
   license: standard DataCamp terms of service (catalog page publicly reachable)
 - id: SRC-CURR-015
   title: 'AI Security and Risk Management (DataCamp course page, account-walled)'
@@ -5425,7 +5429,9 @@ sources:
     titles, order, and XP values — and the video synopses used as the announced scopes
     of the companion notes)'
   limitations: The direct URL redirects unauthenticated requests to the platform sign-in
-    page (verified 2026-11-03); no account content was opened by this repository. The
+    page (verified 2026-11-03; the link verifier reports the same URL as LIVE-BOT-BLOCKED
+    on a plain GET — the recorded 302 sign-in redirect is the access observation); no
+    account content was opened by this repository. The
     owner supplied the lesson list and the per-video synopses on 2026-11-03; the lesson
     list is corroborated by the public catalog page''s structured data (SRC-CURR-014),
     including all 44 titles, their XP values, and the four-lesson review blocks. The

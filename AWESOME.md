@@ -9,7 +9,7 @@ was fetched, when, and how far into it this course actually read. The
 And every line now carries its live link, verified — not
 assumed. Across its rotations — 3 (2026-10-25) and 4 (2026-10-27,
 the lecture-library opening) —
-[scripts/verify_links.py](scripts/verify_links.py) fetched all 97
+[scripts/verify_links.py](scripts/verify_links.py) fetched all 99
 URLs cited on this page: the arXiv spine title-matched against the
 arXiv API, the course videos and playlists against YouTube's oEmbed
 and playlist endpoints, the rest fetched server-side. All
@@ -131,6 +131,19 @@ Four tracks, each with a job:
     not attempt. The companion
     ([courses/safeshield-governance/](courses/safeshield-governance/))
     carries all 14 module notes and the standards crosswalks.
+
+  - **[AI Security and Risk Management — the DataCamp course](https://www.datacamp.com/courses/ai-security-and-risk-management)**
+    [SRC-CURR-014] — the interactive-exercise course (44 graded
+    lessons, ~1 hour, beginner with no prerequisites): the five
+    AI-specific risks, the security-operations tool families (UEBA,
+    TIPs, SOAR, AI SIEM), the seven model risks, the EU AI Act's
+    risk tiers, and the strategic-integration layer — every concept
+    introduced in a short video and then immediately graded, ten of
+    the lessons as named scenario games. The companion
+    ([courses/datacamp-ai-security-risk/](courses/datacamp-ai-security-risk/))
+    carries all 44 lesson notes, the pedagogy analysis, and the
+    two crosswalks; the account-walled course page is registered as
+    [SRC-CURR-015] with its access level stated.
 
 ## Blogs and ongoing commentary
 
