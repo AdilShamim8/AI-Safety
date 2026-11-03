@@ -142,7 +142,8 @@ Four tracks, each with a job:
     doctor-booking agent secured with a jailbreak gate, a guard model
     on every tool and MCP result, memory protection with a judge on
     writes, and output guardrails — closed by a Promptfoo red-team
-    pass that grades the layers. The companion
+    pass that grades the layers — the paid status and the TENTATIVE
+    outline stated in the entry itself. The companion
     ([courses/campusx-ai-security-guardrails/](courses/campusx-ai-security-guardrails/))
     carries all 14 lesson notes and the two crosswalks.
 
