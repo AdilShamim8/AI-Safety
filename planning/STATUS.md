@@ -1076,6 +1076,11 @@ changes and committed in the same unit.
 | S10-P89..P90 — the DataCamp pairing added to the three prerequisite pages (diagnostic, refreshers, verifying-sources as a worked case) | 5f1a9aa + 7dfc22c (pushed) | prerequisites/ |
 | S10-P91 — the beginner on-ramp on the two front doors (START_HERE, ROADMAP) | 348f594 (pushed) | START_HERE.md + ROADMAP.md |
 | S10-P92 — the fifth course's agreements + the worked-examples honesty record | 084f9ac (pushed) | comparisons-where-courses-agree.md + honesty-ledger.md |
+| S10-P93 — the extension backfill: unit rows for the whole worked-example layer | 47cbffd (pushed) | planning/STATUS.md |
+| S10-P94 — the CHANGELOG entry for the worked-example layer | d940c12 (pushed) | CHANGELOG.md |
+| S10-P95 — suite resync (first pass at 659, corrected forward) | f6e2ae0 (pushed) | README.md + index.html |
+| S10-P96 — the breakdown corrected to the collected truth: 658 (408+175+75) | 77051dc (pushed) | README.md + index.html |
+| S10-P97 — the FAQ beginner answer + the MAINTENANCE extension record | f4fa521 (pushed) | FAQ.md + MAINTENANCE.md |
 
 
 ### Session 10 closed (2026-11-03) — 25/25 units, 26 commits
@@ -1131,3 +1136,21 @@ pages (verifying-sources carrying the registration as a worked case
 of the access-level rules); the two front doors; the cross-course
 comparison; and the honesty ledger's record that all 44 examples
 are original.
+
+### Session 10 final state (2026-11-03) — 100 units, repository at 738 commits
+
+The session delivered 100 pushed units in three waves: the companion
+layer (a course page, 44 lesson notes, and five analyses — 50 files
+generated from three content modules), the glossary-and-integration
+wave (20 glossary terms closing every concept family the gap analysis
+found absent; watching rows and pointers across sixteen chapters; the
+beginner on-ramp on six roadmaps, three prerequisite pages, and both
+front doors), and the worked-example wave (44 original beginner
+walk-throughs, committed note by note). Every unit was pushed and
+remote-verified individually; the count instruments caught each stale
+surface on the way (three suite resyncs, a wrap-hidden glossary count,
+and a bucket boundary corrected twice). Final state: suite 658
+(408 package + 175 from-scratch + 75 repo-instrument) green end to
+end; audit 0 hard findings; validator OK; dashboard regenerated at
+658 tests; the live site verified. Standing action: the session token
+(the fifth exposed across sessions) must be rotated by the owner.
