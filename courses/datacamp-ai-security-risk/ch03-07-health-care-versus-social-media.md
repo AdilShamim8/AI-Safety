@@ -17,6 +17,10 @@ Health care: sensitive personal data, safety-critical decisions, heavy regulatio
 
 The point of the pairing: once you can run profile-to-posture in two opposite sectors, you can run it in any sector — the exercise's later stems bring new industries, and the procedure (data sensitivity, decision criticality, regulatory weight, strategy) still answers them.
 
+## Worked example (beginner walk-through)
+
+Two sectors, two postures, one procedure. *Health care:* sensitive personal data, safety-critical decisions, heavy regulation — the posture is conservative: minimization on what is collected, strict access, transparency about decisions, security as the foundation of trust. *Social media:* growth and engagement are the strategy, the data volume is the asset, regulation is lighter — the posture leans innovative: rapid iteration, monitoring over gates, higher accepted risk. The procedure that transfers: data sensitivity, decision criticality, regulatory weight, strategy — score any new sector on the four and the posture follows. The exercise brings new industries in later stems; the beginner who can run the scoring can run any sector, which is the point of pairing two opposites first.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 16](../../chapters/16-privacy-provenance-and-supply-chains/README.md) — the data-protection weight the health-care side carries.
