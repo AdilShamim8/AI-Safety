@@ -587,3 +587,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 04 — Preference learning and post-training →](../04-preference-learning-and-post-training/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Specification and reward hacking are this chapter's depth; the
+course's honest relationship to it: the guardrails are the channel
+boundary the specification argued for — the delimiter defense is
+literally the spec made structural (retrieved documents are data,
+never instructions). The pairing is the [query-and-LLM note](../../courses/campusx-ai-security-guardrails/m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection.md).
