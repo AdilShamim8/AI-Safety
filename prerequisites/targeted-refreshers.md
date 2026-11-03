@@ -112,3 +112,5 @@ session when reading stamina runs out: the CAIS fundamentals lecture
 refresher in a different register, and the DeepMind course's Part 1
 makes a good pre-diagnostic warm-up. Watch, then return to the
 written refresher — the diagnostic still requires the written form.
+
+Practitioner note (2026-11-03): the CampusX companion's 14 worked examples are the construction-level walk-throughs of these same defenses — see [the CampusX companion](../courses/campusx-ai-security-guardrails/README.md).

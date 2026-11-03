@@ -127,3 +127,5 @@ questions." Now:
 - The [dashboard](../index.html)'s evidence ladder is the live state
   of all of it — every source the course uses, bucketed by the
   strength of your own two eyes.
+
+Worked case (2026-11-03): the CampusX registration is this page's rules on a paid course — page-inspected from the public page, the TENTATIVE outline marking and the one duration-0 lesson carried in the register's limitations (SRC-CURR-016 in the [source register](../research/source-register.yaml)).

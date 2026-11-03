@@ -210,3 +210,5 @@ controls. Chapter 09 turns this from folklore into causal methodology.
 
 Partial passes are normal: most security engineers fail C, most ML engineers
 fail D. The refreshers are targeted precisely for that.
+
+Practitioner note (2026-11-03): the CampusX guardrails course pairs with the diagnostic's security questions — see [the CampusX companion](../courses/campusx-ai-security-guardrails/README.md).
