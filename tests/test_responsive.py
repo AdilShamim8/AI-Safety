@@ -356,3 +356,12 @@ def test_datacamp_worked_examples_render_as_prose() -> None:
         section = text.split("## Worked example (beginner walk-through)")[1].split("## Through-lines")[0]
         assert "<table" not in section and "```" not in section, p.name
         assert section.count("\n\n") <= 2, f"{p.name}: expected one flowing paragraph"
+
+
+def test_campusx_lesson_table_fits_phones() -> None:
+    """The sixth course's index table has four columns (number, lesson,
+    duration, note) — the rows stay short for the phone layer's
+    scroll-container pattern."""
+    page = (REPO_ROOT / "courses" / "campusx-ai-security-guardrails" / "README.md").read_text(encoding="utf-8")
+    assert "| # | Lesson | Duration | Companion note |" in page
+    assert page.count("| [m") == 14  # every lesson row links its note
