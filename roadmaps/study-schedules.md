@@ -15,6 +15,9 @@ how much); "done" is defined by artifacts, never by weeks elapsed.
 
 ## Schedule A — focused 12 weeks (~10 h/week, ~120 h)
 
+Beginner note (2026-11-03): pair the beginner pass with any schedule — the DataCamp course first (~1 hour), then the chapter clusters; see [the study plans](../courses/study-plans.md).
+
+
 A deliberate **selection**: the spine, one route's first four chapters, two
 projects, and a mini-capstone. It covers 7–8 of 24 chapters and does not
 pretend otherwise. Security-route layout (others substitute per their page):
