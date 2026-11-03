@@ -93,6 +93,10 @@ def test_datacamp_lesson_count_matches_register() -> None:
     for n in notes:
         text = (COURSES / "datacamp-ai-security-risk" / n).read_text(encoding="utf-8")
         assert "## Worked example (beginner walk-through)" in text, n
+    cx = sorted(p.name for p in (COURSES / "campusx-ai-security-guardrails").glob("m*-*.md"))
+    for n in cx:
+        text = (COURSES / "campusx-ai-security-guardrails" / n).read_text(encoding="utf-8")
+        assert "## Worked example (practitioner walk-through)" in text, n
     slugs = {ls["slug"] + ".md" for ls in ALL_LESSONS}
     assert set(notes) == slugs, "note files and content modules disagree"
 

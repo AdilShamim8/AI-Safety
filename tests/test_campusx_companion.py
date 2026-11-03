@@ -87,3 +87,24 @@ def test_register_claims_pin_the_pinned_numbers() -> None:
     assert "NeMo Guardrails" in clm["CLM-0216"]["claim"]
     assert "jailbreak gate" in clm["CLM-0217"]["claim"]
     assert "write and delete" in clm["CLM-0218"]["claim"]
+
+
+def test_every_note_carries_a_worked_example() -> None:
+    """The session-11 worked-example layer: all 14 notes carry the
+    practitioner walk-through, each substantial."""
+    notes = sorted(CX.glob("m*-*.md"))
+    assert len(notes) == 14
+    for p in notes:
+        text = p.read_text(encoding="utf-8")
+        assert "## Worked example (practitioner walk-through)" in text, p.name
+        section = text.split("## Worked example (practitioner walk-through)")[1].split("## Through-lines")[0]
+        assert len(section) > 300, p.name
+
+
+def test_worked_examples_render_as_prose() -> None:
+    """The 14 example sections flow as single paragraphs — no tables
+    or code fences for the phone layer to wrap."""
+    for p in sorted(CX.glob("m*-*.md")):
+        text = p.read_text(encoding="utf-8")
+        section = text.split("## Worked example (practitioner walk-through)")[1].split("## Through-lines")[0]
+        assert "<table" not in section and "```" not in section, p.name
