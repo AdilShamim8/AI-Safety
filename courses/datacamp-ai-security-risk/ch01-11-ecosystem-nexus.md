@@ -17,6 +17,10 @@ For each decision the game presents: people (which stakeholders' concerns are en
 
 The game's title is its thesis: at the nexus, decisions are not technical or legal or social — they are all three, and the effective ones are made by teams that can hear all three registers. That is the course's strategic claim, and the repository's sociotechnical chapter is its formal treatment.
 
+## Worked example (beginner walk-through)
+
+One decision, all four pillars. The scenario: "The company will let the hiring tool auto-reject the bottom decile." *People:* recruiters gain speed; rejected candidates lose a human reader — whose concerns are engaged? *Legal:* automated adverse decisions are exactly what regulators watch — which expectations apply? *Technology:* can the system explain each rejection, and is the infrastructure protected from tampering with the model? *Processes:* is there a bias test on a cadence, an incident plan, and monitoring for drift? The game scores whether you touched every pillar your decision implicates — a choice that engages three pillars and answers one is the losing move. The nexus lesson in one line: at the center, decisions are never only technical, only legal, or only social; they are all three at once.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 21](../../chapters/21-sociotechnical-and-systemic-risk/README.md) — the formal sociotechnical treatment.
