@@ -527,3 +527,10 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 06 — Honesty, uncertainty, and selective prediction →](../06-honesty-uncertainty-and-selective-prediction/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Scalable oversight is this chapter's subject; the course's guard
+model on every tool result is the pattern at production scale — an
+independent reader that the overseen system cannot persuade. The
+built version is the [agent note](../../courses/campusx-ai-security-guardrails/m4-01-threat-modelling-our-agentic-application.md).
