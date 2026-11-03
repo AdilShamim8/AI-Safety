@@ -341,3 +341,18 @@ def test_datacamp_notes_table_fits_phones() -> None:
     )
     assert "| # | Lesson | Type | XP | Companion note |" in page
     assert page.count("| [ch") == 44  # every lesson row links its note
+
+
+def test_datacamp_worked_examples_render_as_prose() -> None:
+    """The 44 worked examples are long single-paragraph prose blocks.
+    On a phone they must flow, not overflow: they contain no wide
+    pre-formatted tables or code, and every long line is ordinary
+    markdown prose the base layer wraps."""
+    dc = REPO_ROOT / "courses" / "datacamp-ai-security-risk"
+    notes = sorted(dc.glob("ch*.md"))
+    assert len(notes) == 44
+    for p in notes:
+        text = p.read_text(encoding="utf-8")
+        section = text.split("## Worked example (beginner walk-through)")[1].split("## Through-lines")[0]
+        assert "<table" not in section and "```" not in section, p.name
+        assert section.count("\n\n") <= 2, f"{p.name}: expected one flowing paragraph"
