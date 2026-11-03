@@ -259,3 +259,6 @@ standing rule is unchanged in spirit: a template change regenerates
 index.html in the same commit (the freshness test enforces it), and
 now also answers the audit before it lands.
 
+### The worked-example layer (2026-11-03)
+
+The 44 worked examples were applied note by note through the idempotent applier; their content lives in three modules beside the generator, so the layer regenerates deterministically. No external URL was added by the extension; the register basis is unchanged from rotation 5.

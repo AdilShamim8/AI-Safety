@@ -179,7 +179,7 @@ watched; no spoken content is transcribed or quoted anywhere in this
 repository — the same rule the video library has always held. See
 [courses/README.md](courses/README.md) for the full note discipline.
 
-**Where do I start?** The [watch guide](courses/README.md#how-to-watch-the-guide):
+**Where do I start?** If you are starting from zero, the DataCamp course first (about an hour, graded, no prerequisites) — every concept graded as it lands, one worked example per lesson in its companion. Then the [watch guide](courses/README.md#how-to-watch-the-guide):
 90 minutes (the DeepMind course) before Chapter 01 — or the DataCamp
 course first (about an hour, graded, no prerequisites) if you are a
 complete beginner; the alongside
