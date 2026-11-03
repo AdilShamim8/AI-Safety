@@ -80,6 +80,9 @@ each chapter's watching-companions block):
 - The DeepMind design-patterns video with agent security (Ch. 14).
 - The Safeshield privacy and lifecycle modules with the deployment
   chapters (Ch. 16–17).
+- The DataCamp course's security-operations and external-risk
+  chapters with the attack-surface block (Ch. 12, 16) — see
+  [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
 
 ## Pitfalls this route is designed to prevent
 

@@ -87,6 +87,9 @@ each chapter's watching-companions block):
   Ch. 07; the DeepMind control video with Ch. 08.
 - CS 2881's interpretability lecture (four labs' guests) with the
   interpretability arc (Ch. 09–11).
+- The DataCamp course as the graded first 90 minutes for beginners
+  (its five-risk and assessment chapters before Ch. 01–02) — see
+  [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
 
 ## Pitfalls this route is designed to prevent
 
