@@ -591,3 +591,12 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 13 — LLM application security →](../13-llm-application-security/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter carries the attack families at research depth; the
+course runs them at production. Its demo method — every attack shown
+working on the unsecured application before the layer that closes it
+is built — is this chapter's taxonomy made observable, and its
+red-team close is the chapter's evaluation discipline on a live
+stack. Pair the chapter's readings with the [CampusX companion](../../courses/campusx-ai-security-guardrails/README.md).
