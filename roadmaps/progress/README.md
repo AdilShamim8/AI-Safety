@@ -33,6 +33,9 @@ box.
 
 ## The lecture library in the progress ladder
 
+Beginner note (2026-11-03): the DataCamp course pairs with the trackers as the graded primer before rung one — see [the DataCamp companion](../../courses/datacamp-ai-security-risk/README.md).
+
+
 Every route's progress file gains one row type in 2026-10-27: the
 watching checkpoint — the primer pass (before Ch. 01), the
 alongside pass (per chapter-cluster, recorded in each chapter's
