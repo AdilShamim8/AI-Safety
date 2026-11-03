@@ -17,6 +17,10 @@ Companies tending toward the innovation end accept and manage risk differently f
 
 The video is explicit: there is ALWAYS a compromise between pursuing innovation and ensuring security. Exercise answers claiming a position escapes the compromise (innovation with no security cost, security with no agility cost) are the marked-wrong ones — the honest answer names both prices.
 
+## Worked example (beginner walk-through)
+
+The inference runs both ways. *From position to practice:* a company on the innovation end runs agile threat modeling, ships weekly, accepts higher risk, and its security work is built to keep up; a company on the security end runs strict protocols, slower releases, and its security work is built to hold the line. *From practice back to position:* if you observe a company retraining its models on a whim and shipping unreviewed changes, you can infer its position without reading a strategy slide — and predict how it will handle the next identified risk. The rule that survives every stem: there is ALWAYS a compromise between pursuing innovation and ensuring security, and an answer claiming a position escapes the compromise — innovation with no security cost, security with no agility cost — is the marked-wrong one.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — the trade-off at engineering depth.
