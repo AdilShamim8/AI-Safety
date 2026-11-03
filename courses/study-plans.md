@@ -53,6 +53,7 @@ hour). For a complete beginner the fastest integration is:
 | Before Ch. 01 | DataCamp chapters 1–2 (the five risks, model risks, external risks) | every concept arrives graded, in plain register |
 | With Ch. 01–02 | the course's assessment-frameworks chapter (2.13–2.16) | the EU AI Act tiers meet the repo's risk-model discipline |
 | With Ch. 22–23 | DataCamp chapter 3 (strategy, culture, the future set) | the strategic layer the technical courses skip |
+| Anytime | the 44 worked examples in [the DataCamp companion](datacamp-ai-security-risk/README.md) | one concrete beginner walk-through per lesson, beside the graded exercise it prepares for |
 
 ## The pacing arithmetic
 
