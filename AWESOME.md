@@ -9,7 +9,7 @@ was fetched, when, and how far into it this course actually read. The
 And every line now carries its live link, verified — not
 assumed. Across its rotations — 3 (2026-10-25) and 4 (2026-10-27,
 the lecture-library opening) —
-[scripts/verify_links.py](scripts/verify_links.py) fetched all 101
+[scripts/verify_links.py](scripts/verify_links.py) fetched all 100
 URLs cited on this page: the arXiv spine title-matched against the
 arXiv API, the course videos and playlists against YouTube's oEmbed
 and playlist endpoints, the rest fetched server-side. All
