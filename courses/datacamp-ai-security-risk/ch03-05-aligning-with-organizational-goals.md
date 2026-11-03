@@ -25,6 +25,10 @@ The start-up: innovation is the lifeblood and competitive edge, so security meas
 
 The start-up sees AI security as ENABLING innovation, willing to navigate higher risks for speed and market capture; the bank sees it as a critical FOUNDATION of trust and regulatory compliance, prioritizing robustness and reliability even if innovation slows. The rule: start from a clear understanding of the goals (innovation? speed to market? customer trust? compliance?), let security strategy support those objectives by balancing risk, innovation, and responsibility — and never treat security as a stand-alone item; it is an integral part of how the organization does business.
 
+## Worked example (beginner walk-through)
+
+One decision, both faces. The measure: advanced encryption on customer data. *Face one:* it creates strong safeguards for customer information, supporting a goal of market leadership in customer trust — and it satisfies regulators. *Face two:* the same decision can limit the agility of the AI systems and slow innovation — the agility the strategy also wanted. The video's rule: see both faces BEFORE choosing, because the choice is not "encrypt or not" but "which goal buys the other." The start-up reads the pair one way (open-source tools, flexible, higher accepted risk, security helping rather than hindering innovation); the bank reads it the other way (strict protocols, comprehensive threat modeling, cautious innovation, trust and compliance above speed). Neither reading is wrong; the failure is choosing without seeing the second face.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — strategy as the governance frame.
