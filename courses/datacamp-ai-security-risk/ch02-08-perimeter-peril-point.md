@@ -17,6 +17,10 @@ The winning procedure is the drill's two-step with a response bolted on: name th
 
 Every losing move in the game is a misread of the phase — responding to a poisoning incident with input filters, or to a flood with model retraining. The game makes the cost of the misread immediate, which is the point of grading it.
 
+## Worked example (beginner walk-through)
+
+The incident: "Order recommendations across the platform turned strange overnight — the system began pushing a product no genuine user had rated." The triage, under pressure: classify first, then counter by group. The fault entered through the training data (the interaction stream was seeded), which makes it **poisoning** — so the response is on the data side: freeze the suspect feed, audit provenance, retrain from a verified baseline. Responding with input filters would be the misread: filters guard inference, and this attack never touched inference. The game's losing moves are always phase misreads — retraining for a flood, filtering for a poisoning, absorbing an adversarial input with more capacity. The peril in the title is exactly that misread, priced immediately.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — incident triage on the application surface.
