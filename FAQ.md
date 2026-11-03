@@ -162,11 +162,11 @@ this session twice).
 
 ## The lecture library (the video-course companions)
 
-**What is `courses/`?** The five external courses the owner selected —
+**What is `courses/`?** The six external courses the owner selected —
 Harvard CS 2881, the Google DeepMind AGI Safety Course, the CAIS
-Ethics & Society course, the Safeshield governance series, and the
-DataCamp AI Security and Risk Management course — turned into
-companion notes: a course page with the complete verified
+Ethics & Society course, the Safeshield governance series, the
+DataCamp AI Security and Risk Management course, and the CampusX
+AI Security & Guardrails course — turned into companion notes: a course page with the complete verified
 video index per course, one note per lecture, per-course pedagogy
 analyses, and study plans that schedule the watching against the 24
 chapters.

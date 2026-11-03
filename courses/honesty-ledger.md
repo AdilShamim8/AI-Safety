@@ -37,3 +37,11 @@ What this library did NOT do, stated as plainly as what it did:
   reconstruct the concepts the exercises test from the neighboring
   videos' announced scopes — stated as that, never as more.
 - **The 44 worked examples are original.** Each is this repository's own beginner walk-through of the lesson's announced concepts (2026-11-03); none reproduces exercise content, quotes a video, or paraphrases account-walled material.
+- **No CampusX video was watched.** The sixth course (added 2026-11-03)
+  is paid and its videos sit behind a paywall; the public course page
+  was fetched and read in full (SRC-CURR-016, page-inspected, two
+  sessions), the platform marks the outline TENTATIVE itself, one
+  lesson is listed with duration 0 — announced, not published, its
+  note carries that status — and the companion notes ground in the
+  page's published description. Nothing behind the paywall is
+  reproduced anywhere.

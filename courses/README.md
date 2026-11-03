@@ -1,4 +1,4 @@
-# The lecture library — five courses, one method
+# The lecture library — six courses, one method
 
 **Navigate:** [course map](../SYLLABUS.md) · [study plans](study-plans.md) · [how these courses organize](how-courses-organize.md) · [honesty ledger](honesty-ledger.md)
 
@@ -9,7 +9,8 @@ companions layer of the [resource index](../AWESOME.md)*
 
 The repository's spine is its own 24-chapter course. This directory adds
 the external courses the owner selected (four video courses on
-2026-10-27, plus the DataCamp interactive course on 2026-11-03), each
+2026-10-27, plus the DataCamp interactive course and the CampusX
+practitioner course on 2026-11-03), each
 turned into the same three artifacts: a **course page** (identity,
 structure, and the complete lesson index with verified links),
 **companion notes** for every lesson, and — where the course publishes
@@ -29,7 +30,7 @@ the point: where the courses overlap, the idea is probably load-bearing;
 where only one course teaches something, that is a bet, and it is
 priced as one in the notes.
 
-## The five courses
+## The six courses
 
 | Course | What it is | Videos | Companion |
 |---|---|---|---|
@@ -38,11 +39,14 @@ priced as one in the notes.
 | [AI Safety, Ethics, & Society](https://www.youtube.com/playlist?list=PLXSn3Zz2ayT7ab7I12PBYVt0244369S1q) (Center for AI Safety) | The non-technical university course: risks, fundamentals, single-agent safety, safety engineering, complex systems, ethics, collective action, governance | 8 | [cais-ethics-society/](cais-ethics-society/) |
 | [AI Governance series](https://www.youtube.com/playlist?list=PL70MHvytmJU8zwamiQnweHV0Vj-h0zlOW) (Safeshield Training) | Practitioner training in the governance layer: principles, risk management, ISO/IEC 42001, NIST AI RMF, the EU AI Act, audit practice | 14 | [safeshield-governance/](safeshield-governance/) |
 | [AI Security and Risk Management](https://www.datacamp.com/courses/ai-security-and-risk-management) (DataCamp, Angeline Corvaglia) | The interactive-exercise course: the five AI-specific risks, security-operations tool families, the seven model risks, the EU AI Act tiers, strategic integration, security-aware culture | 44 | [datacamp-ai-security-risk/](datacamp-ai-security-risk/) |
+| [AI Security & Guardrails](https://learnwith.campusx.in/courses/AI-Security--Guardrails-6ad0c6fb17f468ce3c894053) (CampusX) | The guardrails-engineering course: the five-step threat-modelling framework on two production case studies (a bank RAG; a doctor-booking agent), every layer built and red-teamed with Promptfoo | 14 | [campusx-ai-security-guardrails/](campusx-ai-security-guardrails/) |
 
 The four video-course links were resolved on 2026-10-27; the DataCamp
-catalog page was resolved on 2026-11-03 (its lesson-level structure is
-carried by the owner-supplied synopsis, SRC-CURR-015, corroborated by
-the catalog page's schema, SRC-CURR-014). Every external link: the
+catalog page and the CampusX course page were resolved on 2026-11-03
+(the DataCamp lesson-level structure is carried by the owner-supplied
+synopsis, SRC-CURR-015, corroborated by the catalog page's schema;
+the CampusX page is registered as SRC-CURR-016 with the platform's
+own TENTATIVE outline marking). Every external link: the
 four playlists through YouTube's playlist API (title, channel, video
 count, and the full per-video list with durations), and the Harvard
 course's own schedule page was read in full, both the Fall 2026 page and
@@ -132,7 +136,7 @@ lookup works.
 
 ## Build status
 
-The layer is complete: all five course pages, all 105 companion notes,
+The layer is complete: all six course pages, all 119 companion notes,
 and all chapter integrations landed in session 3 (the unit-by-unit
 record is [planning/STATUS.md](../planning/STATUS.md), and the
 closing state is stated in the section below). The honesty rule from
@@ -140,14 +144,15 @@ the repository's method applies here too: a note that does not exist
 is listed as not existing — nothing in this directory will ever
 claim completeness it does not have.
 
-## The complete library (2026-11-03 state)
+## The complete library (2026-11-03 state, second opening)
 
-Five courses · 57 verified videos + 44 verified interactive lessons ·
-105 companion notes (18 Harvard + 16 DeepMind + 8 CAIS + 14 Safeshield
-+ 44 DataCamp + 5 pedagogy/study-plan pages) · 5 self-assessments ·
-3 framework crosswalks + 2 DataCamp crosswalks · 3 cross-course
-comparisons · 12 register entries · 4 verified dataset cards added to
-the catalog (GDPval, RE-Bench, METR time-horizons, Canaries) ·
+Six courses · 57 verified videos + 44 verified interactive lessons + 13
+published CampusX videos (1 announced) · 119 companion notes (18 Harvard
++ 16 DeepMind + 8 CAIS + 14 Safeshield + 44 DataCamp + 14 CampusX + 5
+pedagogy/study-plan pages) · 6 self-assessments · 3 framework crosswalks
++ 4 course crosswalks · 3 cross-course comparisons · 13 register entries
+· 4 verified dataset cards added to the catalog (GDPval, RE-Bench, METR
+time-horizons, Canaries) ·
 watching companions in all 24 chapters and watching pointers in all
 24 solutions files. Every external URL in this layer passed
 `verify_links.py` before it landed; the runs are recorded as

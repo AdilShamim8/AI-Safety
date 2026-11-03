@@ -55,11 +55,26 @@ hour). For a complete beginner the fastest integration is:
 | With Ch. 22–23 | DataCamp chapter 3 (strategy, culture, the future set) | the strategic layer the technical courses skip |
 | Anytime | the 44 worked examples in [the DataCamp companion](datacamp-ai-security-risk/README.md) | one concrete beginner walk-through per lesson, beside the graded exercise it prepares for |
 
+## The practitioner pass (2026-11-03, second opening)
+
+The sixth course is the build layer: CampusX's *AI Security &
+Guardrails* (14 lessons, ~5.5 hours published, Hinglish, paid). Pair
+it with the chapters it implements:
+
+| When | What | Why |
+|---|---|---|
+| With Ch. 13 | modules 1–2 (the thesis, the toolbox, the framework) | the application-security chapter, built |
+| With Ch. 16 + P07 | module 3 (the NovaBank RAG case study) | the data protections and injection defenses, layer by layer |
+| With Ch. 14 + P08 | module 4 (the doctor-booking agent) | tools, MCP, shared memory — the agent case study |
+
 ## The pacing arithmetic
 
 - **Primer pass:** DeepMind course end-to-end — 85 minutes, once,
   before Ch. 01; or the DataCamp course end-to-end — about 60 minutes,
   for absolute beginners (graded, no prerequisites).
+- **Practitioner pass:** the CampusX course alongside the Ch. 13–16
+  block — about 5.5 hours published, best taken one module per study
+  session with the case studies running beside the chapters.
 - **Alongside pass:** 3–5 videos per chapter-cluster — roughly 4–6
   hours across the whole course if you take only the primary pairings
   above; 12–15 hours if you watch every listed lecture.

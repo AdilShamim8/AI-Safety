@@ -262,3 +262,13 @@ now also answers the audit before it lands.
 ### The worked-example layer (2026-11-03)
 
 The 44 worked examples were applied note by note through the idempotent applier; their content lives in three modules beside the generator, so the layer regenerates deterministically. No external URL was added by the extension; the register basis is unchanged from rotation 5.
+
+### Re-check rotation 6 (2026-11-03) — the CampusX opening
+
+SRC-CURR-016's URL was verified before linking: the course page
+resolved LIVE to the platform's rendered page (title corroborating
+the register entry), and the preview URL resolved LIVE to the same
+outline in a second session. The curriculum data supplied the 14
+lessons with durations that CLM-0213..0218 pin; the platform's own
+TENTATIVE marking on the outline is carried in the register entry's
+limitations.
