@@ -99,3 +99,21 @@ def test_link_instrument_is_runnable_and_documented() -> None:
     assert EXPECTED_DEAD in doc
     awesome = _squash(_read("AWESOME.md"))
     assert "verify_links.py --ids" in awesome
+
+
+def test_datacamp_entry_links_register_urls() -> None:
+    """The fifth course's AWESOME entry must link both register URLs
+    exactly as the register carries them (the catalog page as the
+    entry's primary link; the account-walled course page named with
+    its access level), and the entry's companion link must resolve."""
+    reg = _register()
+    text = _read("AWESOME.md")
+    for sid in ("SRC-CURR-014", "SRC-CURR-015"):
+        assert sid in text, f"{sid} not cited in AWESOME.md"
+        url = reg[sid]["url"]
+        assert f"]({url})" in text or f"[{sid}]" in text, f"{sid} URL not linked"
+    assert "courses/datacamp-ai-security-risk/" in text
+    assert (REPO_ROOT / "courses" / "datacamp-ai-security-risk" / "README.md").exists()
+    # the entry must state the access level of the account-walled page
+    squashed = _squash(text)
+    assert "account-walled course page is registered as [SRC-CURR-015]" in squashed
