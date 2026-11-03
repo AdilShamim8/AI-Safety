@@ -39,3 +39,5 @@ either-direction lookup.*
 |---|---|
 | 1. Threat Modelling our Agentic Application | [Ch. 14](../../chapters/14-agent-tool-memory-mcp-security/README.md), [the P08 project](../../projects/p08-control-and-monitoring-protocol/README.md), [Ch. 08](../../chapters/08-ai-control-and-monitoring/README.md) |
 | 2. Securing from Jailbreak Attacks | [Ch. 14](../../chapters/14-agent-tool-memory-mcp-security/README.md), [Ch. 12](../../chapters/12-adversarial-ml-and-robustness/README.md), [Ch. 15](../../chapters/15-red-teaming-and-adversarial-evaluation/README.md) |
+
+Pairs across the library: module 2's framework pairs with the repository's threat-model template and Ch. 13's discipline; module 3's layers pair with Ch. 16's data protections and the P07 project's audit; module 4's agent pairs with Ch. 14 and the P08 protocol; and the red-team close pairs with Ch. 15 and the evaluation-science method behind the per-layer report.
