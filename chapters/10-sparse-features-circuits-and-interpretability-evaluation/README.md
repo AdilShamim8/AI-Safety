@@ -585,6 +585,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | the SAE program and its stress tests (AxBench, persona vectors) |
 | [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | the evaluation problem for interpretability itself |
+| [ch02-01-model-risks](../../courses/datacamp-ai-security-risk/ch02-01-model-risks.md) | DataCamp AI Security & RM | transparency, interpretability, and XAI as the management technique — the tools this chapter studies at circuit level |
 
 ---
 
