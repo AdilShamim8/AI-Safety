@@ -29,6 +29,10 @@ Targets the physical and virtual environments hosting AI systems — the support
 
 Attacks on the components and libraries used in development — a vulnerability injected into a widely used AI library is present in every system built on that library. The defense set the video names: regular security audits; data validation and sanitization to guard the integrity of training and inference data; strong access controls restricting system access; encryption of sensitive information and anonymization where possible; continuous monitoring for immediate response; a more secure supply chain via trusted development tools, updated regularly; and ongoing education and training for staff. Risks evolve quickly — new threats emerge as AI advances, so continuous learning, proactive risk management, and vigilance are a must.
 
+## Worked example (beginner walk-through)
+
+One company, five attack surfaces. *Adversarial input:* a driver-assistance camera sees a modified stop sign and misclassifies it — the decision was manipulated at inference time. *Corruption and poisoning:* fake five-star reviews steer a recommender — the learning itself was corrupted at training time. *Theft and inversion:* researchers reconstruct training images from a facial-recognition model's outputs — the target is the training data, not the outputs and not the learning. *Infrastructure:* a flood of requests from many sources makes the service unavailable — the target is the hosting. *Supply chain:* a vulnerability planted in a widely used library ships inside every system built on it — the target is the development dependency. The taxonomy sorts by target and phase; learn the five targets and you can place any attack you read about, which is precisely how [Ch. 12](../../chapters/12-adversarial-ml-and-robustness/README.md) and [Ch. 16](../../chapters/16-privacy-provenance-and-supply-chains/README.md) organize their chapters.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 12](../../chapters/12-adversarial-ml-and-robustness/README.md) — adversarial inputs and robustness at full depth.
