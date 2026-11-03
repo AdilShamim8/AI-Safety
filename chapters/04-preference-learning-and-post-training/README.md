@@ -285,3 +285,13 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 05 — Scalable oversight →](../05-scalable-oversight/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+This chapter is the preference-learning depth; the course does not
+build this layer, and the honest pairing says so: the course's
+guardrails are input-output controls around an application, not
+value learning — what they share is the specification problem at the
+boundaries (what the system may do at each channel). The pairing
+note is in the [glossary crosswalk](../../courses/campusx-ai-security-guardrails/crosswalk-glossary.md)'s
+pairs section.
