@@ -29,6 +29,10 @@ The remaining definitions, compressed: hallucination is the AI generating incorr
 
 The video closes its argument: recognizing these risks is the first crucial step toward managing them, and it is what lets you avoid the damages — financial losses, reputational damage, wrong AI-powered decisions, regulatory penalties. Because the AI risk landscape constantly changes, proactive risk management is essential: knowledge of the AI security ecosystem, foresight to future-proof the approach, and the wisdom to build a security-aware culture — the three things the rest of the course teaches.
 
+## Worked example (beginner walk-through)
+
+A small retailer launches an AI support chatbot. Walk the five risks past it, one by one, by asking where the fault would enter. **Bias**: the bot was trained on two years of resolved tickets; if past agents escalated certain customer names slowly, the bot learns that pattern — the fault entered through the training data. **Hallucination**: it confidently cites a return policy clause that does not exist — the fault is in generation, with no attacker and no bad data. **Data poisoning**: a competitor files fake tickets praising a rival product until the bot recommends it — the fault entered through training data an attacker controlled. **Adversarial input**: a user crafts a message that makes the bot override its guidelines — the fault entered at run time. **Sensitive data exposure**: the bot repeats a customer's card details back into a shared transcript — the fault is in data handling. The retailer's first lesson is the one this repository's [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) formalizes: name the phase before naming the risk, because each phase implies a different fix.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) — the repo's own risk vocabulary (hazard, exposure, pathway, propensity) is the disciplined version of this video's five-risk list.
