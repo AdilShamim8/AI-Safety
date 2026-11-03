@@ -21,6 +21,10 @@ The open-source anchor for the red-team pass: systematized adversarial testing �
 
 The lesson's output: a per-layer report — which attacks each layer stopped, and which slipped through to be caught (or missed) by the next. That per-layer report is the practitioner's version of this repository's evaluation discipline (Ch. 02 and Ch. 15): the layers are the system under test, and the attack set is the measurement instrument.
 
+## Worked example (practitioner walk-through)
+
+Grade the stack, not the app. The object under test is the four layers, and the instrument is Promptfoo: attack prompts as cases, the layers as the code under test, and the runbook per case — which layer stopped it, which one caught it after a slip, which none did. A jailbreak case: stopped at the gate (layer 1 holds). An injection case with a poisoned doc: missed by the delimiter defense, caught by the output guardrail (layer 4 holds; layer 3 slipped — a finding, recorded). A PII phish: stopped at retrieval by pre-filtering. The per-layer report is the deliverable: it tells you where the stack is thin, which is the maintenance order. The course's closing move, and this repository's [Ch. 15](../../chapters/15-red-teaming-and-adversarial-evaluation/README.md) discipline: the layers are the system under test, the attack set is the measurement instrument, and a pass/fail without the per-layer breakdown is a score, not a finding.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 15](../../chapters/15-red-teaming-and-adversarial-evaluation/README.md) — red-teaming methodology at chapter depth.
