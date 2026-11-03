@@ -26,3 +26,5 @@ terms the course prompted, each now carried as a row in
 The glossary rows carry the full definitions with aliases,
 common confusions, and chapter mappings; this table is the
 course-to-glossary index.
+
+Pairs across the library: guardrails (the layers) pair with prompt injection and jailbreaking (the attacks they close); PII masking pairs with data minimization and anonymization (session 10's rows); the guard model pairs with safeguard models (the research-side term); pre-retrieval filtering pairs with authorization itself; the capability table pairs with threat modelling (the discipline); and the per-layer red-team report pairs with red teaming and evaluation science. Each pair is the practitioner term and the research term for the same object.
