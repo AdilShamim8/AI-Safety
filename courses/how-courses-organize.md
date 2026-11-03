@@ -1,9 +1,11 @@
-# How the four courses organize knowledge
+# How the five courses organize knowledge
 
 **Navigate:** [← lecture library](README.md) · [study plans](study-plans.md)
 
 *A cross-course analysis · part of the [lecture library](README.md) ·
-written 2026-10-27 from the verified course structures*
+written 2026-10-27 from the verified course structures; the fifth
+course (DataCamp, 2026-11-03) is analyzed in its own companion's
+pedagogy note*
 
 ## The question this note answers
 

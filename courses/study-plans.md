@@ -42,10 +42,23 @@ society-scale framing, and the DeepMind P3 videos for the frontier-
 evaluation connection. The audit-only route's
 [own page](../roadmaps/audit-only.md) carries the week-by-week plan.
 
+## The beginner pass (new, 2026-11-03)
+
+The library gained a fifth course with no prerequisites: the DataCamp
+*AI Security and Risk Management* course (44 graded lessons, about one
+hour). For a complete beginner the fastest integration is:
+
+| When | What | Why |
+|---|---|---|
+| Before Ch. 01 | DataCamp chapters 1–2 (the five risks, model risks, external risks) | every concept arrives graded, in plain register |
+| With Ch. 01–02 | the course's assessment-frameworks chapter (2.13–2.16) | the EU AI Act tiers meet the repo's risk-model discipline |
+| With Ch. 22–23 | DataCamp chapter 3 (strategy, culture, the future set) | the strategic layer the technical courses skip |
+
 ## The pacing arithmetic
 
 - **Primer pass:** DeepMind course end-to-end — 85 minutes, once,
-  before Ch. 01.
+  before Ch. 01; or the DataCamp course end-to-end — about 60 minutes,
+  for absolute beginners (graded, no prerequisites).
 - **Alongside pass:** 3–5 videos per chapter-cluster — roughly 4–6
   hours across the whole course if you take only the primary pairings
   above; 12–15 hours if you watch every listed lecture.
