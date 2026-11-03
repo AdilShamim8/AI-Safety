@@ -31,3 +31,8 @@ Where only one course teaches something, that something is a bet:
 Harvard's student experiments, DeepMind's self-description, CAIS's
 collective action, Safeshield's Monday-morning practice. The library
 prices each accordingly.
+
+## The fifth course's agreements
+
+The fifth course's agreements (2026-11-03): the DataCamp course agrees on the load-bearing ideas — the phase boundary, the lifecycle watch, assessment-before-deployment — stated at beginner level; the per-lesson mapping is in [the DataCamp companion](datacamp-ai-security-risk/README.md).
+

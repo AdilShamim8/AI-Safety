@@ -36,3 +36,4 @@ What this library did NOT do, stated as plainly as what it did:
   streamed; no exercise content is reproduced; the exercise notes
   reconstruct the concepts the exercises test from the neighboring
   videos' announced scopes — stated as that, never as more.
+- **The 44 worked examples are original.** Each is this repository's own beginner walk-through of the lesson's announced concepts (2026-11-03); none reproduces exercise content, quotes a video, or paraphrases account-walled material.
