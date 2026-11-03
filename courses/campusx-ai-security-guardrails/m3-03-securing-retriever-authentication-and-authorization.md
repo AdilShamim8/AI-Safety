@@ -21,6 +21,10 @@ The course's named instrument: restricted documents are blocked BEFORE the searc
 
 The course's phrase is authentication and authorization AT PRODUCTION LEVEL — the rules attach to the retrieval path as code, not as a policy document. This repository's Ch. 14 carries the same rule for agents and tools; the case study applies it to the retriever.
 
+## Worked example (practitioner walk-through)
+
+Feel the difference between the two filterings with one query. Query: "show me the internal fraud-refund thresholds." *Post-retrieval filtering:* the search runs over the whole corpus, the restricted doc ranks first, the filter then removes it from the results. What leaked: the ranking signal (the restricted doc was the best match — visible in latency and in what else came back), and the fact that it exists. *Pre-retrieval metadata filtering:* the ACL is attached to the query before the search; the search's universe never contains the restricted doc; it is never read, never ranked, never removed. Same user, same query, different leak profile — and the bank context cares exactly about the difference. The layer also carries the course's order rule: authenticate first (who is asking), authorize second (what may that identity retrieve), enforce at the retrieval path as code, not as a policy document.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — authorization on the retrieval path.
