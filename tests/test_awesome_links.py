@@ -117,3 +117,17 @@ def test_datacamp_entry_links_register_urls() -> None:
     # the entry must state the access level of the account-walled page
     squashed = _squash(text)
     assert "account-walled course page is registered as [SRC-CURR-015]" in squashed
+
+
+def test_campusx_entry_links_register_url() -> None:
+    """The sixth course's AWESOME entry must cite SRC-CURR-016, link
+    the register URL exactly as carried, and resolve its companion."""
+    reg = _register()
+    text = _read("AWESOME.md")
+    assert "SRC-CURR-016" in text, "SRC-CURR-016 not cited in AWESOME.md"
+    url = reg["SRC-CURR-016"]["url"]
+    assert f"]({url})" in text, "SRC-CURR-016 URL not linked as registered"
+    assert "courses/campusx-ai-security-guardrails/" in text
+    assert (REPO_ROOT / "courses" / "campusx-ai-security-guardrails" / "README.md").exists()
+    squashed = _squash(text)
+    assert "paid status and TENTATIVE outline stated in the entry" in squashed
