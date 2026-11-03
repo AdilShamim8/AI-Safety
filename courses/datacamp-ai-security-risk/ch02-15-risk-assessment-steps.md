@@ -17,6 +17,10 @@ Identify → the list of possible risks (privacy issues, biases, security vulner
 
 Each step's output is the next step's input: evaluation without analysis has no likelihoods; strategy without evaluation spends on the wrong risks. The video's own framing — assessments must be combined with checks set FROM their results — requires the sequence to have run once, correctly, before anything downstream can be set.
 
+## Worked example (beginner walk-through)
+
+The four steps, with the right output at each. *Identify:* the list — privacy issues, biases, security vulnerabilities, named one by one. *Analyze:* likelihood and impact per risk, each with its evidence. *Evaluate:* the ranking, against seriousness and the organization's tolerance — this is where the prioritization is born. *Strategize:* the plan — manage, reduce, or eliminate, with owners and dates. The exercise grades the ORDER and the output type per step, and the classic wrong answers are outputs arriving early: a strategy at the analyze step (spending before ranking), an evaluation with no likelihoods (a ranking with nothing under it). Why order matters: each step's output is the next step's input, and the video's two-pronged approach requires the sequence to have run once, correctly, before anything downstream can be set from its results.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) — the analysis method the steps assume.
