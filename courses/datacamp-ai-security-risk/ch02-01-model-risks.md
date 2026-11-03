@@ -29,6 +29,10 @@ The learning-quality triple: overfitting is learning the details and noise of th
 
 The video's closing tool: Explainable AI (XAI), a set of methods that make models more understandable and transparent to humans by providing clear explanations of the reasoning behind outputs. It builds trust and aids identifying and correcting errors or biases within the model. Controlled across the lifecycle, these risks decide whether AI applications succeed; the repo's interpretability arc is the deep version.
 
+## Worked example (beginner walk-through)
+
+A churn-prediction model, three months live. Watch the seven risks introduce themselves by symptom. *Drift*: the market shifted and the model's accuracy decays — the data it sees now does not follow the patterns it learned, the spam-filter story. *Overfitting*: it was excellent on training data and immediately mediocre in the world. *Underfitting*: it was mediocre everywhere from day one, including the training set — the model was too simple to hold the pattern. *Leakage*: validation looked too good to be true, and an independent evaluator cannot reproduce the numbers — outside information was in the training set. *Bias*: right on average, skewed across groups. *Hallucination* (for a generative component): confident fabrications. *Transparency gap*: predictions are fine and nobody can say why. Each symptom is a different failure with a different fix — which is the whole point of holding the seven apart, and the reason [Ch. 02](../../chapters/02-evaluation-science-and-experimental-design/README.md) and [Ch. 17](../../chapters/17-distribution-shift-and-deployment-reliability/README.md) give them their own chapters.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 02](../../chapters/02-evaluation-science-and-experimental-design/README.md) — leakage and overfitting as evaluation-science subjects (grouped splits, contamination).
