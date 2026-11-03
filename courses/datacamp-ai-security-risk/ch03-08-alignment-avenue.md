@@ -17,6 +17,10 @@ The game's rule: a measure is right when it fits the organization's goals and ap
 
 The title's claim: alignment is a road you stay ON, not a destination — the game's final round tests whether, under a strategy shift mid-game, the security posture shifts with it. Rigidity is the last failure mode.
 
+## Worked example (beginner walk-through)
+
+The game's hardest round is the last one: mid-game, the strategy shifts — the growth-first company lands an enterprise contract and must now look like the trust-first company. The losing move is rigidity: keeping the old posture because it won the early rounds. The winning move shifts the security posture with the strategy — stricter protocols, deeper threat modeling, slower releases — and says so in the plan. The avenue is a road you stay ON, not a destination: alignment is a property of the relationship between security and strategy, and when one side moves, the other must move with it. The game's title is its thesis, and its final round grades exactly the move most organizations fail in real life.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — strategy-following as governance.
