@@ -388,3 +388,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 23 — Governance and standards for researchers →](../23-governance-and-standards/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter builds assurance as documents; the course runs the
+five-step framework as the working version of the same discipline —
+map, boundaries, capability, weak points, layers — repeated on any
+application. The procedure beside the document set is the
+[framework note](../../courses/campusx-ai-security-guardrails/m2-04-threat-modelling-framework.md).
