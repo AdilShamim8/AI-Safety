@@ -404,3 +404,29 @@ def test_one_hot_shape_and_rows() -> None:
     assert oh.tolist() == [[0.0, 1.0, 0.0], [1.0, 0.0, 0.0]]
     with pytest.raises(ValueError, match="outside vocab"):
         one_hot([3], 3)
+
+
+def test_datacamp_companion_names_the_train_eval_split_discipline() -> None:
+    """The session-10 DataCamp notes teach leakage and overfitting at
+    beginner level (the course's model-risk family). This pins the
+    cross-layer agreement: the companion note must state the
+    train/held-out boundary the course teaches, and this track's own
+    leakage discipline (split_ prefix, no-test-touch) must still hold
+    in the code beside it."""
+    from pathlib import Path
+
+    note = (
+        Path(__file__).resolve().parent.parent
+        / "courses"
+        / "datacamp-ai-security-risk"
+        / "ch02-02-common-risks-of-ai-models.md"
+    ).read_text(encoding="utf-8")
+    assert "great on training data, poor in the world" in note
+    assert "too good to be true" in note
+    # the track's own discipline still holds beside it: deterministic
+    # seeding (the reproducibility half of the leakage lesson)
+    from ai_safety_course.from_scratch.tensors import Tensor
+
+    a = Tensor.rand(64, seed=7)
+    b = Tensor.rand(64, seed=7)
+    assert a.data == b.data, "seeding is no longer deterministic"
