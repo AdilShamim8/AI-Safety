@@ -44,11 +44,14 @@ verification discipline every reading assumes
 
 ## The watching track (2026-10-27)
 
-The [lecture library](courses/README.md) adds a video layer to this
-syllabus: four external courses — Harvard CS 2881, the Google
-DeepMind AGI Safety Course, the CAIS Ethics & Society course, and the
-Safeshield governance series — each with a course page, verified
-video index, and one companion note per lecture. The library does not
+The [lecture library](courses/README.md) adds a video and exercise
+layer to this syllabus: six external courses — Harvard CS 2881, the
+Google DeepMind AGI Safety Course, the CAIS Ethics & Society course,
+the Safeshield governance series, the DataCamp AI Security and Risk
+Management course, and the CampusX AI Security & Guardrails course —
+each with a course page, verified lesson index, and one companion
+note per lesson; and for the practitioner half, the CampusX course
+constructs the guardrails layer with the chapters it pairs with. The library does not
 change the chapter sequence; it schedules watching against it (see
 [courses/study-plans.md](courses/study-plans.md)): the DeepMind
 course as the 90-minute primer before Chapter 01, the alongside pass
