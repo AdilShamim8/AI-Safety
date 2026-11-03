@@ -144,3 +144,4 @@ exactly where the residual CRM attack walks through.
 ## Watching companion (the lecture library)
 
 The [lecture library](../../courses/README.md) pairs with this project: [the CampusX lesson](../../courses/campusx-ai-security-guardrails/m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection.md) — the injection defenses built at production level on the same attack family this project audits.
+- **CampusX**, [m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection](../../courses/campusx-ai-security-guardrails/m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection.md) — watch before working the injection exercises — both channel defenses built in one pass.
