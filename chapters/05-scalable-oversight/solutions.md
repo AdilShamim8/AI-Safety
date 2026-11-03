@@ -374,3 +374,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **DeepMind course**, [part-02-02-amplified-oversight](../../courses/google-deepmind-agi-safety/part-02-02-amplified-oversight.md) — watch before working the decomposition/debate exercises.
+- **DataCamp**, [ch01-04-ai-as-a-change-agent-for-security](../../courses/datacamp-ai-security-risk/ch01-04-ai-as-a-change-agent-for-security.md) — watch before working this chapter's exercises.

@@ -522,6 +522,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-02-amplified-oversight](../../courses/google-deepmind-agi-safety/part-02-02-amplified-oversight.md) | DeepMind AGI Safety | the mechanism compressed: supervision that scales with the system |
 | [lecture-08-scheming](../../courses/boaz-barak-cs2881/lecture-08-scheming.md) | Harvard CS 2881 | the oversight failure modes that motivate the research program |
+| [ch01-04-ai-as-a-change-agent-for-security](../../courses/datacamp-ai-security-risk/ch01-04-ai-as-a-change-agent-for-security.md) | DataCamp AI Security & RM | the bank SIEM case is the oversight pattern: AI flags, humans investigate — the division this chapter designs for |
 
 ---
 
