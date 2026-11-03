@@ -25,6 +25,10 @@ Regulators are scrambling to catch up with AI's advances, so the regulatory land
 
 The technology pillar is the security features within AI systems, the infrastructure they run on, and the networks they interact with — resilient against hacking, data breaches, unauthorized access, yet agile enough to adapt to emerging challenges. The processes pillar is regular security assessments, incident response planning, and continuous monitoring — what keeps security practices consistent and effective over time. The closing statement: effective security is not only technology; it is people, laws, ethics, and procedures working together.
 
+## Worked example (beginner walk-through)
+
+A company launches an AI hiring-assist tool. Watch each pillar raise its requirement. *People:* recruiters want speed; the data scientist asks whether the model is precise enough; legal asks what the model's decisions mean for candidate privacy; the executive asks about return and reputation — the video's three perspectives, needing reconciliation, not a winner. *Legal:* regulators are scrambling; meeting today's rules is insufficient, so the company commits to fairness, accountability, and transparency ahead of mandate — the emerging trend the video names. *Technology:* the model serves from cloud infrastructure that must resist hacking and unauthorized access while staying agile. *Processes:* bias testing on a cadence, incident response planned, continuous monitoring — the practices that keep security consistent over time. The lesson a beginner should keep: the tool is one pillar of four, and the launch fails if any pillar is a blank.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 21](../../chapters/21-sociotechnical-and-systemic-risk/README.md) — the systemic layer: stakeholders and dynamics, formally.
