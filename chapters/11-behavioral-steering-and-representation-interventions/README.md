@@ -559,3 +559,10 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 12 — Adversarial ML and robustness →](../12-adversarial-ml-and-robustness/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Behavioral steering is this chapter's subject; the course's layers
+are its channel-level cousin — not steering representations, but
+gating channels. The honest pairing records the difference: the
+course controls flows, this chapter controls features.
