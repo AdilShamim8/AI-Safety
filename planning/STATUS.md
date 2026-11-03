@@ -989,3 +989,50 @@ which the console stamp now proves on sight.
 Standing actions unchanged and now urgent: the session token (the
 fourth exposed across sessions) must be rotated by the owner;
 SECURITY.md's reporting path governs.
+
+## Session 10 — the DataCamp companion and the beginner gloss (opened 2026-11-03)
+
+Owner directive (2026-11-03): first check the DataCamp course *AI
+Security and Risk Management* (Angeline Corvaglia; 3 chapters, 44
+exercises, ~1 hour median completion, verified on the public catalog
+page 2026-11-03), then check the repository for what is missing and
+add it — with beginner learners explicitly in mind: everything that
+helps a beginner learn and understand better. At least 100 new
+commits, each pushed and remote-verified one at a time.
+
+The gap analysis (chapter-and-exercise index vs the 24 chapters,
+registers, and glossary) found three families of gaps:
+
+1. **The course is absent entirely** — the lecture library holds four
+   courses; this fifth one (the owner's first interactive-exercise
+   course, and the only beginner-no-prerequisites one) has no course
+   page, no register entry, no companion notes.
+2. **Whole concept families the course teaches that the repo's
+   working surfaces never state** — AI-for-security operations
+   (SIEM, SOAR, UEBA, TIPs), lifecycle fit-and-fidelity terms
+   (underfitting, data leakage), data-protection practice
+   (anonymization, data minimization), strategic-risk vocabulary
+   (threat prioritization, cost-vs-benefit, low-hanging fruit),
+   forward-looking topics (synthetic data, AGI security), and the
+   beginner gloss the repo's expert register lacks.
+3. **No beginner on-ramp through the lecture library** — the watch
+   guide schedules the four video courses against the 24 chapters,
+   but nothing pairs a beginner with the DataCamp course as the
+   first 90 minutes.
+
+The build closes all three: one course companion set in
+courses/datacamp-ai-security-risk/ (course page + 44 companion notes,
+one per named exercise, + pedagogy + reading map + self-assessment +
+2 crosswalks), 20 glossary terms, 4 register entries, 6 claims, 8
+integrations into existing chapter and route surfaces, 4 navigation
+entries, a study-plan integration row, honesty-ledger update,
+MAINTENANCE rotation record, FAQ row, 2 new tests + 8 extended ones,
+the README count resync, and the dashboard regeneration. One coherent
+unit per commit; every commit runs the validator and the quick-test
+gate before push; the dashboard is regenerated whenever its data
+changes and committed in the same unit.
+
+<!-- SESSION10_UNITS -->
+
+| Unit | Commit | Evidence |
+|---|---|---|
