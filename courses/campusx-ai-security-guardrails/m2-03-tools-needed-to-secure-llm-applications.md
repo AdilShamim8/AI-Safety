@@ -21,6 +21,10 @@ The organizing rule: no tool without an attack it closes. Masking answers PII le
 
 The course builds its output guardrails with NVIDIA NeMo Guardrails and red-teams with Promptfoo — the two open-source anchors of the practitioner layer, both now carried as glossary rows in this repository.
 
+## Worked example (practitioner walk-through)
+
+Assign every tool to its attack, and notice what has no tool. Masking → PII leakage at ingestion. Pre-retrieval filtering → unauthorized retrieval. Input guardrails → jailbreaks on the query. Delimiters and the data-not-instructions prompt → injection from retrieved documents. A guard model on tool results → injection hidden in external content. Output guardrails → manipulated or leaking answers. Promptfoo → the whole stack, tested. What has no tool: a user who is legitimately authorized and legitimately malicious, and a model that is wrong without being attacked. The honest toolbox answer names those two residuals and routes them to policy and to evaluation — which is why the course closes with red-teaming rather than with the toolbox.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — the defense layer at chapter depth.
