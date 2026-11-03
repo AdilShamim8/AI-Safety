@@ -40,3 +40,5 @@ repository layer that deepens it.
 Scoring: eight or more with the lens or the layer named — you carried
 the method. Fewer — re-run the case studies' lessons; the notes are
 the map back.
+
+The grading register: questions 1–3 test the framework (diagram, boundaries, capability); 4–7 the RAG layers; 8–9 the agent's danger and its gate; 10 the red-team grade. If you missed the framework questions, re-run module 2; the layers, module 3; the agent, module 4; the grade, the red-team lesson — the notes are the map back.
