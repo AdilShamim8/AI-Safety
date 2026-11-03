@@ -26,6 +26,9 @@ done at repo scale.
 
 ## The sequence (≈120 h)
 
+Beginner note (2026-11-03): the DataCamp assessment chapters (2.13–2.16) are the graded on-ramp to audit work — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
+
+
 [**Track your progress:**](progress/audit-only.md) the auditor route's milestone checklist (M0–M4, written challenges as the artifacts).
 
 | Step | Unit | ≈ hours | What you can judge afterward |
