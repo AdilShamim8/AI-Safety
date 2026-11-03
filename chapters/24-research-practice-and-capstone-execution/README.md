@@ -344,3 +344,10 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Course complete.** [Pick your route →](../../ROADMAP.md) or [watch the lecture library →](../../courses/README.md).
+
+## The CampusX build of this chapter (2026-11-03)
+
+For the capstone: the course's close is the exemplar — the gate, the
+guards, the judge, then the red-team grade — and its repeatability is
+the lesson this chapter's dossier asks you to demonstrate. Pair the
+capstone with the [jailbreak-gate note](../../courses/campusx-ai-security-guardrails/m4-02-securing-from-jailbreak-attacks.md).
