@@ -643,3 +643,10 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 07 — Deception, scheming, and evaluation awareness →](../07-deception-scheming-and-evaluation-awareness/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Honesty as designed behavior is this chapter's program; the course's
+output guardrails are the honesty layer's practitioner half — every
+answer checked for wrong facts before it reaches the user. The built
+version is the [output note](../../courses/campusx-ai-security-guardrails/m3-05-securing-output-output-guardrails.md).
