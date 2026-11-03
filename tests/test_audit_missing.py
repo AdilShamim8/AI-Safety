@@ -36,6 +36,24 @@ def test_covers_every_instrument() -> None:
     assert not audit_missing.HARD
 
 
+def test_datacamp_register_entries_audit_clean() -> None:
+    """The session-10 register additions must survive the audit with
+    their full fourteen-field schema and their access levels inside
+    the vocabulary (page-inspected for the catalog page,
+    metadata-only for the account-walled course page)."""
+    audit_missing.HARD.clear()
+    audit_missing.SOFT.clear()
+    source_ids = audit_missing.audit_source_register()
+    for sid in ("SRC-CURR-014", "SRC-CURR-015"):
+        assert sid in source_ids, f"{sid} missing from the audited register"
+    claim_ids = audit_missing.audit_claims_register(source_ids)
+    for cid in ("CLM-0207", "CLM-0208", "CLM-0209", "CLM-0210", "CLM-0211", "CLM-0212"):
+        assert cid in claim_ids, f"{cid} missing from the audited claims"
+    assert not audit_missing.HARD, f"register audit went red: {audit_missing.HARD}"
+    audit_missing.audit_cross_references(source_ids, claim_ids)
+    assert not audit_missing.HARD, "cross-reference audit went red"
+
+
 def test_hard_finding_on_missing_source_field() -> None:
     """A register entry missing a field must be caught (hard)."""
     audit_missing.HARD.clear()
