@@ -383,6 +383,7 @@ chapter is a finding to record, not a problem to resolve.
 | [ch02-13-ai-risk-assessment-frameworks](../../courses/datacamp-ai-security-risk/ch02-13-ai-risk-assessment-frameworks.md) | DataCamp AI Security & RM | the formal-plus-continuous assessment posture — the two-pronged approach this chapter builds into assurance documents |
 | [ch03-01-from-insights-to-action](../../courses/datacamp-ai-security-risk/ch03-01-from-insights-to-action.md) | DataCamp AI Security & RM | threat prioritization, cost versus benefit, low-hanging fruit — the resource-allocation layer of assurance work |
 | [ch03-13-ai-security-for-the-future](../../courses/datacamp-ai-security-risk/ch03-13-ai-security-for-the-future.md) | DataCamp AI Security & RM | continuous improvement and adaptive leadership — the culture half of the assurance posture |
+| [m2-04-threat-modelling-framework](../../courses/campusx-ai-security-guardrails/m2-04-threat-modelling-framework.md) | CampusX AI Security & Guardrails | the five-step framework as an assurance procedure — the working version of this chapter's document set |
 
 ---
 
