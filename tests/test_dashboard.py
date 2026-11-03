@@ -19,13 +19,13 @@ import build_dashboard  # noqa: E402
 
 def test_build_data_counts_match_repo() -> None:
     data = build_dashboard.build_data()
-    assert len(data["sources"]) >= 263  # grew with the DataCamp course (SRC-CURR-014/015)
-    assert len(data["claims"]) >= 212  # grew with CLM-0207..0212
+    assert len(data["sources"]) >= 264  # grew with the DataCamp (SRC-CURR-014/015) and CampusX (SRC-CURR-016) courses
+    assert len(data["claims"]) >= 218  # grew with CLM-0207..0212 and CLM-0213..0218
     assert len(data["datasets"]) >= 47  # grew with the lecture-library cards (DS-044..047)
     assert len(data["chapters"]) == 24
     assert len(data["projects"]) == 10
     assert all(p["status"] == "implemented" for p in data["projects"])
-    assert data["repo"]["tests"] >= 644  # 644 at session-10 pin time
+    assert data["repo"]["tests"] >= 668  # 668 at session-11 regeneration time
     if data["repo"].get("shallow"):
         # CI shallow clones (fetch-depth 1) carry no history: the count is
         # legitimately unavailable, and the generator must say so.
@@ -172,8 +172,8 @@ def test_datacamp_course_counts_reach_the_page() -> None:
     assert {"SRC-CURR-014", "SRC-CURR-015"} <= ids
     clm = {c["id"] for c in data["claims"]}
     assert {"CLM-0207", "CLM-0208", "CLM-0209", "CLM-0210", "CLM-0211", "CLM-0212"} <= clm
-    # the primer-pass widget states five courses, not four
+    # the primer-pass widget states six courses, not five
     import inspect
 
     src = inspect.getsource(build_dashboard)
-    assert "five courses" in src, "primer-pass widget not resynced to five courses"
+    assert "six courses" in src, "primer-pass widget not resynced to six courses"

@@ -164,8 +164,10 @@ QUICKSTART = [
             "Course straight through — sixteen short parts, no mathematics — "
             "or, if you are a complete beginner, run the DataCamp AI Security "
             "and Risk Management course first (about an hour, graded, no "
-            "prerequisites). It will make every chapter's opening section "
-            "land faster. The full lecture library (five courses, 105 "
+            "prerequisites). For the practitioner half, the CampusX AI "
+            "Security & Guardrails course builds the guardrails layer with "
+            "the chapters. It will make every chapter's opening section "
+            "land faster. The full lecture library (six courses, 119 "
             "companion notes) schedules itself against the chapters."
         ),
     },
