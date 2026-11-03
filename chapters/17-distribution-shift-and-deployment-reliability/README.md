@@ -359,3 +359,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 18 — Reasoning faithfulness and monitorability →](../18-reasoning-faithfulness-and-monitorability/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+Drift is this chapter's subject; the course's contribution is the
+per-answer check as the drift-visible layer — every output checked
+against the current documents, so degradation shows up as wrong
+facts on the answer channel. The built version is the
+[output-guardrails note](../../courses/campusx-ai-security-guardrails/m3-05-securing-output-output-guardrails.md).
