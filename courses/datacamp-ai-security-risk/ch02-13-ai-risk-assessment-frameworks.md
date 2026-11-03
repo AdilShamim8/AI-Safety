@@ -25,6 +25,10 @@ The other prong: continuous monitoring to catch emerging risks or unexpected mod
 
 The video's closing argument: formal assessments provide the path for responsible development; internal checks are the guardrails that keep you on it. Effective AI risk management is a culture of continuous vigilance supported by formal controls — compliance with current regulation such as the EU AI Act, adaptability to emerging challenges, and the combination of formal assessment with day-to-day monitoring that builds resilient, trustworthy AI applications.
 
+## Worked example (beginner walk-through)
+
+One system, through both prongs. *The system:* an AI tool that screens job applications. *The formal prong:* identify the risks (bias in decisions, privacy in the data, opacity in the reasoning); analyze likelihood and impact; evaluate against the organization's tolerance; strategize — and classify the tier: screening job applicants sits in the EU AI Act's high-risk band, so a documented risk assessment and risk management system are required, not optional. *The continuous prong:* from the assessment's results, set the ongoing checks — regular bias testing on the live decisions, monitoring for unexpected behavior, drift watching — the early-warning system that catches what the formal pass could not see. The video's closing rule is the beginner's headline: this is not ticking boxes; it is a culture of continuous vigilance supported by formal controls, and neither prong works alone.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — the EU AI Act from unacceptable to minimal risk, obligation by obligation.
