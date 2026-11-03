@@ -17,6 +17,10 @@ The game presents a budget and a threat profile; the winning play covers the hig
 
 The title's claim: security is built, not bought — the practices are the blacksmith's anvil, and the game grades whether you can forge the right four bars for the door that is actually under attack, not the door you wish were under attack.
 
+## Worked example (beginner walk-through)
+
+The forge hands you a budget and a threat profile. Say the profile is: a recommender fed by user-generated content (poisoning risk high), a public API (adversarial inputs possible), and a small trust team (insider risk low, fatigue risk high). The winning allocation: provenance on the content feed first (cheapest effective counter to the highest-probability group), input validation at the API second, minimization on the profile store third (the data is sensitive), and access control on the training pipeline fourth. What the game grades is the *sequencing under constraint* — severity times likelihood under budget — which is chapter 3's threat prioritization arriving early as play. The forge's lesson: security is built, not bought, and the right four bars go on the door that is actually under attack.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — the engineering trade-offs at full depth.
