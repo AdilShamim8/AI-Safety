@@ -385,3 +385,13 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 17 — Distribution shift and deployment reliability →](../17-distribution-shift-and-deployment-reliability/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter carries the data protections at policy depth; the
+course builds them at the pipeline: PII detection and masking at
+ingestion (the vector store never holds the identifiers),
+pre-retrieval metadata filtering at the search (the restricted
+document is never read), and the per-answer output check as the last
+line. The masking layer is this chapter's minimization principle with
+an implementation — see the [CampusX companion](../../courses/campusx-ai-security-guardrails/README.md).
