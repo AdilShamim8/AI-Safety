@@ -500,3 +500,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 10 — Sparse features, circuits, and interpretability evaluation →](../10-sparse-features-circuits-and-interpretability-evaluation/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Mechanistic interpretability is this chapter's research program; the
+course contributes the practitioner's transparency instruments — the
+guard model as an independent reader, the per-answer check, and XAI
+as the management technique. The chapter keeps the depth; the course
+keeps the build.
