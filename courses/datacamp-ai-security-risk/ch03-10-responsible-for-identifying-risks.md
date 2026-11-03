@@ -17,6 +17,10 @@ The mapping: drift and unreliable outputs → Data Science; inadequate protectio
 
 The video's thesis is the exercise's trap: unified culture means every risk has a named catcher, and stems describing a risk nobody claims are the ones the exercise marks wrong — the culture failure is the answer's content.
 
+## Worked example (beginner walk-through)
+
+Route five risks to their catchers. *"The model's error rate is creeping up month over month."* — Data Science: drift is their line. *"We are not sure we comply with the new data rules."* — Compliance/Legal. *"The AI project duplicates a system we already run."* — Senior leadership: a strategic-risk call about alignment with goals. *"Support tickets mention the assistant making things up."* — Operations and Customer Service jointly: the live-output watchers. *"A library we depend on shipped a suspicious update."* — the vendors under agreed standards, with IT/Security beside them. The exercise's real lesson is the negative space: a risk nobody claims is the culture failure, and the marked-wrong answers are exactly the stems where the risk falls between two chairs.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — safety culture as engineering.
