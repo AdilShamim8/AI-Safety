@@ -15,6 +15,9 @@ how much); "done" is defined by artifacts, never by weeks elapsed.
 
 ## Schedule A — focused 12 weeks (~10 h/week, ~120 h)
 
+Practitioner note (2026-11-03): pair the CampusX course with the Ch. 13–16 block, one module per study session — see [the study plans](../courses/study-plans.md).
+
+
 Beginner note (2026-11-03): pair the beginner pass with any schedule — the DataCamp course first (~1 hour), then the chapter clusters; see [the study plans](../courses/study-plans.md).
 
 

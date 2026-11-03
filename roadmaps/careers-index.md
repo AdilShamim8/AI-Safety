@@ -17,6 +17,9 @@ traces to a register entry you can audit
 
 ## The three roles at a glance
 
+Practitioner note (2026-11-03): the CampusX guardrails course is the build layer for the security-engineering route — see [the CampusX companion](../courses/campusx-ai-security-guardrails/README.md).
+
+
 Beginner note (2026-11-03): starting from zero, the DataCamp course (~1 hour, graded) is the primer before any route's first rung — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
 
 
