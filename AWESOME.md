@@ -132,6 +132,20 @@ Four tracks, each with a job:
     ([courses/safeshield-governance/](courses/safeshield-governance/))
     carries all 14 module notes and the standards crosswalks.
 
+  - **[AI Security & Guardrails — the CampusX course](https://learnwith.campusx.in/courses/AI-Security--Guardrails-6ad0c6fb17f468ce3c894053)**
+    [SRC-CURR-016] — the practitioner course (14 lessons, ~5.5 hours
+    published, Hinglish, paid; the platform marks the outline
+    TENTATIVE): the five-step threat-modelling framework on two
+    production case studies — a bank RAG secured with PII masking,
+    pre-retrieval metadata filtering, input guardrails, the delimiter
+    defense, and NeMo Guardrails output guardrails; and a
+    doctor-booking agent secured with a jailbreak gate, a guard model
+    on every tool and MCP result, memory protection with a judge on
+    writes, and output guardrails — closed by a Promptfoo red-team
+    pass that grades the layers. The companion
+    ([courses/campusx-ai-security-guardrails/](courses/campusx-ai-security-guardrails/))
+    carries all 14 lesson notes and the two crosswalks.
+
   - **[AI Security and Risk Management — the DataCamp course](https://www.datacamp.com/courses/ai-security-and-risk-management)**
     [SRC-CURR-014] — the interactive-exercise course (44 graded
     lessons, ~1 hour, beginner with no prerequisites): the five
