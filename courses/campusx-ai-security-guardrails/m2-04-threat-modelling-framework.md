@@ -21,6 +21,10 @@ The course's signature instrument: for each component, ask what it can read, wri
 
 The course's argument: security work without the framework is anecdote-driven — you fix the attack you happened to see. The framework makes the search systematic: every component visited, every capability priced, every weak point closed with a named layer. This repository's threat-model template and Ch. 13's discipline are the same argument at chapter depth.
 
+## Worked example (practitioner walk-through)
+
+Run the five steps on a two-component app, slowly. The app: a chat box, a retriever over a document store, an LLM, an answer box. (1) *Diagram it:* four boxes, five flows — user→query, query→retriever, retriever→LLM, LLM→answer, answer→user; the store feeds the retriever. Entry points: the chat box. Exit points: the answer box. (2) *Boundaries:* the user side of the chat box is untrusted; the store side of the retriever is semi-trusted (your documents, but writeable by whom?); the LLM sees everything and trusts nothing. (3) *Capability table:* the retriever — read the store, reach nothing else; the LLM — read everything in context, write the answer; the answer box — write to the user. (4) *Weak points:* unguarded entry, unfiltered retrieval, undelimited context, unchecked output. (5) *Layers:* input guardrails, pre-retrieval filtering, delimiter defense, output guardrails. The procedure took six lines and produced the course's whole module 3 — which is the point: the framework is the case study, written once and repeated.
+
 ## Through-lines to this repository's chapters
 
 - [the threat-model template](../../templates/threat-model.md) — the repository's own form for the same discipline.
