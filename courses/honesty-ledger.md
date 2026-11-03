@@ -45,3 +45,4 @@ What this library did NOT do, stated as plainly as what it did:
   note carries that status — and the companion notes ground in the
   page's published description. Nothing behind the paywall is
   reproduced anywhere.
+- **The 14 CampusX worked examples are original.** Each is this repository's own practitioner walk-through of the lesson's announced concepts (2026-11-03); none reproduces paywalled content, quotes a video, or paraphrases anything behind the login.

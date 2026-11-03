@@ -36,3 +36,6 @@ prices each accordingly.
 
 The fifth course's agreements (2026-11-03): the DataCamp course agrees on the load-bearing ideas — the phase boundary, the lifecycle watch, assessment-before-deployment — stated at beginner level; the per-lesson mapping is in [the DataCamp companion](datacamp-ai-security-risk/README.md).
 
+## The sixth course's agreements (2026-11-03)
+
+The CampusX course agrees with the library on the load-bearing ideas — attacks by channel, defense in depth, red-team the result — and adds the construction layer on top; the per-lesson mapping is in [the CampusX companion](campusx-ai-security-guardrails/README.md).
