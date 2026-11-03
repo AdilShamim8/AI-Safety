@@ -705,3 +705,14 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 15 — Red teaming and adversarial evaluation →](../15-red-teaming-and-adversarial-evaluation/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+The agent case study is this chapter at production level: the
+doctor-booking agent's tools, MCP server, and shared memory run the
+capability table exactly as this chapter defines it — and the write
+and delete rows are why the defense plan has four layers instead of
+one. The gate, the guard on every tool result, the judge on every
+memory write, and the output guardrails are this chapter's
+control-and-monitoring patterns constructed — see the [CampusX
+companion](../../courses/campusx-ai-security-guardrails/README.md).
