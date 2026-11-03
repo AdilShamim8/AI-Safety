@@ -403,3 +403,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 21 — Sociotechnical and systemic risk →](../21-sociotechnical-and-systemic-risk/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Misuse evaluation is this chapter's depth; the course's red-team
+close is its production cousin — the attack set is the instrument,
+and the per-layer report is the uplift measurement's practitioner
+form: which attacks each layer stopped. The pairing is the
+[red-team note](../../courses/campusx-ai-security-guardrails/m3-06-red-teaming-our-rag-application.md).
