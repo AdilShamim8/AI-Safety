@@ -129,3 +129,6 @@ Start from [courses/README.md](courses/README.md).
 
 If you are starting from zero: the DataCamp *AI Security and Risk Management* course (44 graded lessons, about an hour, no prerequisites) is the library's on-ramp — every concept graded as it lands. Companion [here](courses/datacamp-ai-security-risk/README.md); the pairing is in [the study plans](courses/study-plans.md).
 
+## The practitioner build (2026-11-03)
+
+For the security half: the CampusX *AI Security & Guardrails* course (~5.5 hours published, Hinglish) builds the guardrails layer with the chapters — every layer constructed and red-teamed on two case studies. Its companion is [here](courses/campusx-ai-security-guardrails/README.md); the pairing is in [the study plans](courses/study-plans.md).

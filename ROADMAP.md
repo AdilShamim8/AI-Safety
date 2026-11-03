@@ -156,3 +156,6 @@ pushes stays to-be-rotated — both recorded in planning/STATUS.md.
 
 Beginner on-ramp (2026-11-03): the DataCamp course (~1 hour, graded, no prerequisites) is the fastest first step on any route — pairing in [the DataCamp companion](courses/datacamp-ai-security-risk/README.md).
 
+## Practitioner on-ramp (2026-11-03)
+
+The CampusX *AI Security & Guardrails* course is the build layer for the Ch. 13–16 block — pairing in [the CampusX companion](courses/campusx-ai-security-guardrails/README.md).
