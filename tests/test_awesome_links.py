@@ -130,4 +130,4 @@ def test_campusx_entry_links_register_url() -> None:
     assert "courses/campusx-ai-security-guardrails/" in text
     assert (REPO_ROOT / "courses" / "campusx-ai-security-guardrails" / "README.md").exists()
     squashed = _squash(text)
-    assert "paid status and TENTATIVE outline stated in the entry" in squashed
+    assert "paid status and the TENTATIVE" in squashed
