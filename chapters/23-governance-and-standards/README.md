@@ -343,3 +343,10 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 24 — Research practice and capstone execution →](../24-research-practice-and-capstone-execution/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Governance is this chapter's instrument set; the course is the
+practitioner's implementation layer — the threat model as a document
+is this chapter's form, and the five-step framework is the same form
+with code attached. The pairing is the [framework note](../../courses/campusx-ai-security-guardrails/m2-04-threat-modelling-framework.md).
