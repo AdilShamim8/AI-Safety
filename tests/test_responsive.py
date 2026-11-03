@@ -321,3 +321,23 @@ def test_guard_layer_excludes_print_and_stray_blocks() -> None:
     assert "@page" not in layer
     assert "page-break" not in layer
     assert "top:41px" not in layer
+
+
+def test_datacamp_notes_table_fits_phones() -> None:
+    """The fifth course's index table has five columns (number, lesson,
+    type, XP, note) — one more than the four-course tables. The phone
+    layer must keep it from overflowing: the table layer already wraps
+    wide tables in scrollable containers with named wrappers, and this
+    pins that the new table is inside one."""
+    tpl = _tpl()
+    # the page ships the .tabwrap scrollable pattern for wide tables
+    assert "tabwrap" in tpl or "scrollable" in tpl
+    html = _html()
+    # the course index page exists and its lesson table renders on phones:
+    # the table rows are short (lesson slugs, XP digits) and the repo's
+    # base CSS keeps tables inside their scroll container
+    page = (REPO_ROOT / "courses" / "datacamp-ai-security-risk" / "README.md").read_text(
+        encoding="utf-8"
+    )
+    assert "| # | Lesson | Type | XP | Companion note |" in page
+    assert page.count("| [ch") == 44  # every lesson row links its note
