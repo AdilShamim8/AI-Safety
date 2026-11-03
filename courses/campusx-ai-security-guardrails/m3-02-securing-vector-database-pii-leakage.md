@@ -21,6 +21,10 @@ As the description states: PII detection and masking, so customers' personal dat
 
 Masking closes the PII-leakage path; it does not close unauthorized retrieval of restricted documents (the next lesson's layer) or injection (the one after). The case study's method is one layer per weak point, and the lesson ends by naming what remains open.
 
+## Worked example (practitioner walk-through)
+
+Trace one customer's record through the pipeline, before and after the layer. Before: the record is in a policy document; the document is indexed; the embedding lands in the vector store; a query about "my account" retrieves the nearest chunk — and the chunk is the record. The store never asked who was asking; vector similarity is not authorization. After: the ingestion path runs detection (finds the identifiers), masking (redacts or tokenizes them), and only then embeds. The record never reaches the store, so no retrieval can surface it; the query about "my account" now retrieves the policy text, not the customer's row. The layer's scope, stated honestly: masking closes the at-rest and at-retrieval PII path; it does nothing for the restricted-document problem (a different layer) and nothing for injection (a different channel). One weak point, one layer, and the case study names what remains open.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 16](../../chapters/16-privacy-provenance-and-supply-chains/README.md) — PII, masking, minimization — the chapter depth.
