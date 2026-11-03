@@ -390,3 +390,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 20 — Misuse, dangerous capabilities, and release evaluation →](../20-misuse-dangerous-capabilities-release-evaluation/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+The multimodal half of this chapter — images, files, and non-text
+inputs as attack paths text-only defenses miss — is the course's
+module-1 demo set: every input channel added is a new way in, and
+the course counts them per component. Pair the chapter's treatments
+with the [practical-landscape note](../../courses/campusx-ai-security-guardrails/m1-02-why-ai-security-practical-landscape.md).
