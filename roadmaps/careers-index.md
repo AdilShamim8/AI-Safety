@@ -17,6 +17,9 @@ traces to a register entry you can audit
 
 ## The three roles at a glance
 
+Beginner note (2026-11-03): starting from zero, the DataCamp course (~1 hour, graded) is the primer before any route's first rung — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
+
+
 | | **AI safety researcher** | **AI security specialist** | **AI (safety) engineer** |
 |---|---|---|---|
 | Core question | *why* does the system fail, and what does that teach us about alignment? | *how* does an adversary break it, and what boundary stops them? | *what* do we ship, with which safeguards, at what utility price? |
