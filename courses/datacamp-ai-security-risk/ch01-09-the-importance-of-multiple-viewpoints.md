@@ -17,6 +17,10 @@ The exercise presents statements like 'the model is precise enough' (data scient
 
 The video's standard, applied here: perspectives must be acknowledged AND reconciled into balanced, comprehensive security decisions. Exercise answers that pick a winner between stakeholders are wrong by construction; the correct pattern preserves each legitimate concern in the decision record — the same move as the repo recording disagreement instead of averaging it away.
 
+## Worked example (beginner walk-through)
+
+Three quotes from one meeting. *"The model hits 94 percent precision on the test set."* — that is the data scientist; the claim is about the model. *"If it auto-rejects candidates, we are exposed under fairness law."* — legal; the claim is about the decisions' implications. *"What is the payback period, and what happens to our brand if this goes wrong?"* — the executive; the claim is about return and reputation. The exercise wants you to attribute the speaker BEFORE evaluating the claim, because an unattributed claim cannot be reconciled with the others — it just competes. And the deliverable, per the video, is the reconciliation: a decision record in which each legitimate concern survives. The repository's own rule for the same move is recorded in [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md): record disagreement; do not average it away.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 21](../../chapters/21-sociotechnical-and-systemic-risk/README.md) — stakeholder dynamics as a formal subject.
