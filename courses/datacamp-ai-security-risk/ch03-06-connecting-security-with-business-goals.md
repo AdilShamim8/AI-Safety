@@ -17,6 +17,10 @@ The mapping the exercise grades: encryption serves a trust or compliance goal (a
 
 The video's two-sides rule carries into the exercise: a mapping that states the benefit without the cost is incomplete. Full credit answers carry both — 'this measure advances that goal at this price'.
 
+## Worked example (beginner walk-through)
+
+Four mappings, direction enforced. *Encryption* serves the trust-and-compliance goal — and prices agility. *Agile threat modeling* serves the speed-to-market goal — and prices assurance depth. *Strict access protocols* serve the loyalty-and-regulation goal — and prices innovation speed. *Open-source flexibility* serves the growth goal — and prices control. The exercise's wrong answers reverse the direction: choosing a goal to fit a favorite measure, or mapping a measure to the goal it cannot reach (strict protocols do not create speed). Full credit carries both halves — this measure advances that goal at this price — because a mapping that states the benefit without the cost is a brochure, not an analysis.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — goal alignment as a governance discipline.
