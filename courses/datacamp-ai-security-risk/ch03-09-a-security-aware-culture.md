@@ -21,6 +21,10 @@ Operations: real-world feedback on AI system performance; they flag downtime or 
 
 AI security is not the job of the tech team alone. A unified culture built by diverse roles ensures constant monitoring and protection over time; everyone understands the unique value they bring, is empowered to play an active role, and the company stays resilient in a changing threat landscape — security functions preserved and enhanced over time.
 
+## Worked example (beginner walk-through)
+
+One incident, eight catchers. *The incident:* a deployed chatbot begins confidently describing a refund policy that does not exist. *Who catches what:* Operations first (they live in the day-to-day and see the outputs), Data Science next (model health is their duty — is this drift, or a hallucination baseline that was never measured?), Compliance/Legal on the exposure (did we make claims to customers that were false?), IT/Security on the infrastructure (was the model tampered with?), Customer Service on the trust damage (what did users hear, and what do we owe them), HR on the training gap (did the team know hallucination was reportable?), leadership on the tone (do we reward the reporting or shoot the messenger?), and the vendors on the supply-chain question (which dependency fed the bad behavior?). The unified-culture claim, made concrete: the incident is routed to its natural catchers, and nobody says "not my job" — because that phrase is the one failure the culture cannot survive.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — safety culture as an engineering discipline (the aviation/nuclear lineage).
