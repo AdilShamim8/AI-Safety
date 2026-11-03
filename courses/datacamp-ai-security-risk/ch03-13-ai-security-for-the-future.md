@@ -29,6 +29,10 @@ With developments like these, explainability and transparency become increasingl
 
 Not only threats change quickly — new developments can also IMPROVE a company's security position. Ways to stay up to date: attending industry conferences, following security researchers' work, subscribing to relevant publications, connecting with the broader AI security community, participating in online forums. As AI advances, organizations must cultivate a 'security in motion' mindset — staying informed and adaptable for secure AI development and risk management.
 
+## Worked example (beginner walk-through)
+
+Three future topics, one posture. *Regulation shifts:* new rules on data collection land — the adaptive organization has been watching both government and public sentiment, so the change is absorbed, not survived; the reactive organization treats the same rule as an ambush. *Synthetic data arrives:* artificial data sets that resemble real information without personal details ease the privacy concern — and immediately introduce their own integrity challenge: measures must be designed for the robustness of synthetic data, not just for its convenience. *AGI is debated:* the experts disagree about likelihood, and the course teaches the disagreement as the fact — awareness of the possibility, with robust security considerations built in from the beginning if it arrives. The posture that answers all three: explainability and transparency (quicker adaptation as threats arise), continuous improvement (outdated defenses are the vulnerability), and adaptive leadership (proactive strategy instead of reaction). The repo's [Ch. 23](../../chapters/23-governance-and-standards/README.md) is the regulation half at full depth.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — the regulation chapter — instruments and regimes.
