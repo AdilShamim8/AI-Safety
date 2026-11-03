@@ -17,6 +17,10 @@ Monitor model health and integrity so systems perform as expected without bias o
 
 Because the DS team owns the model lifecycle, it is the only role that can run the chapter-2 monitoring posture — bias testing, drift watching — inside the chapter-3 culture. The exercise is the join point of the two chapters.
 
+## Worked example (beginner walk-through)
+
+The DS team's three duties, separated from the neighbors. *Duty one:* monitor model health and integrity — performance without bias or error over time. *Duty two:* identify drift and unreliable outputs — the symptom-level watch. *Duty three:* identify and correct vulnerabilities in the algorithms that could be exploited. The discrimination drill: *"The API gateway is misconfigured."* — that is IT/Security, not DS: the line is the model and its algorithms. *"We might be non-compliant on retention."* — Compliance/Legal. *"The model is drifting and nobody measured the baseline."* — DS, twice over (the monitoring duty and the missing baseline). The course singles this role out because the DS team owns the model lifecycle — it is the only role that can run chapter 2's monitoring posture inside chapter 3's culture.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 17](../../chapters/17-distribution-shift-and-deployment-reliability/README.md) — the monitoring duties in depth.
