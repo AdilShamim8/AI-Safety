@@ -26,6 +26,9 @@ done at repo scale.
 
 ## The sequence (≈120 h)
 
+Practitioner note (2026-11-03): the CampusX red-team lesson (the per-layer report) is the graded on-ramp to audit work — see [the CampusX companion](../courses/campusx-ai-security-guardrails/README.md).
+
+
 Beginner note (2026-11-03): the DataCamp assessment chapters (2.13–2.16) are the graded on-ramp to audit work — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
 
 

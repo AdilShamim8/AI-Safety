@@ -29,6 +29,9 @@ read against [Cursor](../research/notes/incidents/06-cursor-invented-policy.md),
 
 ## Sequence
 
+Practitioner note (2026-11-03): the CampusX framework lesson is the assurance procedure at working level — see [the CampusX companion](../courses/campusx-ai-security-guardrails/README.md).
+
+
 Beginner note (2026-11-03): the DataCamp model-risk and assessment chapters are the graded on-ramp to evaluation work — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
 
 [**Track your progress:**](progress/evaluations-and-assurance.md) the engineer route's expanded milestone checklist (M0–M5, price tags on every control).

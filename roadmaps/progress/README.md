@@ -33,6 +33,9 @@ box.
 
 ## The lecture library in the progress ladder
 
+Practitioner note (2026-11-03): the CampusX course pairs with the trackers as the build layer — see [the CampusX companion](../../courses/campusx-ai-security-guardrails/README.md).
+
+
 Beginner note (2026-11-03): the DataCamp course pairs with the trackers as the graded primer before rung one — see [the DataCamp companion](../../courses/datacamp-ai-security-risk/README.md).
 
 
