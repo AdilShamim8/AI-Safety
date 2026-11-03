@@ -17,6 +17,10 @@ The game requires: the four steps in order (with stakeholder input), the EU tier
 
 An enclave is a protected space with a purpose — the game's claim is that assessment design is exactly that: a constructed, guarded procedure that produces trust as its output. The repo's assurance chapter is the formal version of the same claim.
 
+## Worked example (beginner walk-through)
+
+Design the assessment for a fictional insurer using AI claims triage. *Tier it first:* triaging insurance claims touches financial consequences for individuals — high-risk band, so the formal prong is mandatory. *Run the four steps with stakeholders in the room:* the adjusters, legal, the data science team, and an executive sponsor — the diverse perspectives the video requires for a comprehensive view. *Set the continuous checks from the results:* bias testing across claim types on a cadence, monitoring for drift in claim patterns, and a named owner for each threshold. *State the culture posture:* vigilance, not box-ticking — the enclave's output is trust, and trust is the thing being constructed. The game scores one of these per round; the full run is the chapter played end to end, and the repo's [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) is where each round gets its formal treatment.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — the governance frame the game teaches.
