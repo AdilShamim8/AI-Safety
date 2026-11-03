@@ -91,3 +91,14 @@ def test_self_assessment_names_lesson_and_chapter_pointers() -> None:
     questions = [ln for ln in sa.splitlines() if re.match(r"^\d+\. ", ln)]
     assert len(questions) == 10, f"expected 10 numbered questions, found {len(questions)}"
     assert sa.count("*(lesson") >= 10  # every question carries its pointers
+
+
+def test_every_note_carries_a_worked_example() -> None:
+    """The session-10 worked-example layer: all 44 notes carry the
+    beginner walk-through section, each with a concrete scenario."""
+    notes = sorted(DC.glob("ch*.md"))
+    assert len(notes) == 44
+    for p in notes:
+        text = p.read_text(encoding="utf-8")
+        assert "## Worked example (beginner walk-through)" in text, p.name
+        assert len(text.split("## Worked example (beginner walk-through)")[1].split("## Through-lines")[0]) > 300, p.name
