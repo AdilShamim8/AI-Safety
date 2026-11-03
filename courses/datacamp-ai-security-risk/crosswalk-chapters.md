@@ -1,5 +1,7 @@
 # The DataCamp lessons × this repository's chapters
 
+**Navigate:** [← the DataCamp companion](README.md) · [crosswalk: glossary](crosswalk-glossary.md)
+
 *Part of the [DataCamp companion](README.md) · 2026-11-03 · every
 through-line stated in a companion note, tabulated here for
 either-direction lookup.*

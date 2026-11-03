@@ -1,6 +1,6 @@
 # How the DataCamp course organizes knowledge
 
-**Navigate:** [← the DataCamp companion](README.md)
+**Navigate:** [← the DataCamp companion](README.md) · [reading map](reading-map.md) · [self-assessment](self-assessment.md)
 
 *A pedagogy analysis · part of the [DataCamp companion](README.md) ·
 written 2026-11-03 from the verified course structure*

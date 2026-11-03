@@ -1,5 +1,7 @@
 # The DataCamp course × this repository's spine
 
+**Navigate:** [← the DataCamp companion](README.md) · [pedagogy](pedagogy.md) · [self-assessment](self-assessment.md)
+
 *Part of the [DataCamp companion](README.md) · 2026-11-03*
 
 | Course chapter | The repo's depth layer |

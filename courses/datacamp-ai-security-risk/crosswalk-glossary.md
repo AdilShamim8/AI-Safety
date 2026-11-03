@@ -1,5 +1,7 @@
 # The DataCamp course × the glossary
 
+**Navigate:** [← the DataCamp companion](README.md) · [crosswalk: chapters](crosswalk-chapters.md)
+
 *Part of the [DataCamp companion](README.md) · 2026-11-03 · the 20
 terms the course prompted, each now carried as a row in
 [GLOSSARY.md](../../GLOSSARY.md) with the chapters that use it.*

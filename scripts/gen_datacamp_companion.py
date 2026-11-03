@@ -235,6 +235,8 @@ chapter spine.
 def reading_map() -> str:
     return f"""# The DataCamp course × this repository's spine
 
+**Navigate:** [← the DataCamp companion](README.md) · [pedagogy](pedagogy.md) · [self-assessment](self-assessment.md)
+
 *Part of the [DataCamp companion](README.md) · 2026-11-03*
 
 | Course chapter | The repo's depth layer |
@@ -253,7 +255,7 @@ per-lesson mapping is [crosswalk-chapters.md](crosswalk-chapters.md).
 def pedagogy() -> str:
     return """# How the DataCamp course organizes knowledge
 
-**Navigate:** [← the DataCamp companion](README.md)
+**Navigate:** [← the DataCamp companion](README.md) · [reading map](reading-map.md) · [self-assessment](self-assessment.md)
 
 *A pedagogy analysis · part of the [DataCamp companion](README.md) ·
 written 2026-11-03 from the verified course structure*
@@ -313,7 +315,7 @@ the pattern its capstone exercises approximate at greater depth.
 def self_assessment() -> str:
     return """# Self-assessment — the DataCamp course
 
-**Navigate:** [← the DataCamp companion](README.md)
+**Navigate:** [← the DataCamp companion](README.md) · [reading map](reading-map.md) · [pedagogy](pedagogy.md)
 
 Ten judgment questions. Answer from the course and its companion
 notes; every question names the lesson that teaches it and the
@@ -364,6 +366,8 @@ def crosswalk_chapters() -> str:
     lines = [
         "# The DataCamp lessons × this repository's chapters",
         "",
+        "**Navigate:** [← the DataCamp companion](README.md) · [crosswalk: glossary](crosswalk-glossary.md)",
+        "",
         "*Part of the [DataCamp companion](README.md) · 2026-11-03 · every",
         "through-line stated in a companion note, tabulated here for",
         "either-direction lookup.*",
@@ -372,8 +376,8 @@ def crosswalk_chapters() -> str:
     for ch in CHAPTERS:
         lines.append(f"## Chapter {ch['number']} — {ch['title']}")
         lines.append("")
-        lines.append("| Lesson | Repository chapters |
-|---|---|")
+        lines.append("| Lesson | Repository chapters |")
+        lines.append("|---|---|")
         for ls in ch["lessons"]:
             refs = ", ".join(
                 f"[{label}]({relpath})" for relpath, label, _ in ls["throughlines"]
@@ -409,6 +413,8 @@ def crosswalk_glossary() -> str:
     lines = [
         "# The DataCamp course × the glossary",
         "",
+        "**Navigate:** [← the DataCamp companion](README.md) · [crosswalk: chapters](crosswalk-chapters.md)",
+        "",
         "*Part of the [DataCamp companion](README.md) · 2026-11-03 · the 20",
         "terms the course prompted, each now carried as a row in",
         "[GLOSSARY.md](../../GLOSSARY.md) with the chapters that use it.*",
@@ -433,10 +439,12 @@ def main() -> None:
     # self-check: unique slugs, resolvable through-line targets
     slugs = [ls["slug"] for ls in ALL_LESSONS]
     assert len(slugs) == len(set(slugs)) == 44, "slug set is wrong"
-    assert sum(ls["xp"] for ls in ALL_LESSONS) == 2200, "XP total drifted"
+    assert sum(ls["xp"] for ls in ALL_LESSONS) == 2750, "XP total drifted"
     for ls in ALL_LESSONS:
         for relpath, _label, _why in ls["throughlines"]:
-            assert (REPO / relpath).exists(), f"{ls['slug']}: bad through-line {relpath}"
+            # through-lines are written from the notes' location (the course
+            # directory), and verified there
+            assert (OUT / relpath).exists(), f"{ls['slug']}: bad through-line {relpath}"
     written = []
     (OUT / "README.md").write_text(course_page(), encoding="utf-8")
     written.append("README.md")
