@@ -14,6 +14,9 @@ slow-motion version of exactly this common prefix.
 
 ## The shared spine (weeks 1–4, all roles)
 
+Beginner note (2026-11-03): the DataCamp *AI Security and Risk Management* course (44 graded lessons, ~1 hour, no prerequisites) is the fastest on-ramp to this page's material — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
+
+
 | Week | Do | Artifact by Friday |
 |---|---|---|
 | 1 | [START_HERE](../START_HERE.md) step 0–1: the dashboard, the diagnostic (grade yourself honestly), [verifying sources](../prerequisites/verifying-sources.md) | your diagnostic score sheet + one registered claim written the five-part way |
