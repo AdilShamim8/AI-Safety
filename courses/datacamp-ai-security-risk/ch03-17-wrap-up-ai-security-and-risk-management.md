@@ -17,6 +17,10 @@ Chapter 1: AI has its own unique set of security risks; due to AI's complexity a
 
 Staying up to date matters in a dynamic field. The recommended follow-ons: AI Ethics, Artificial Intelligence (AI) Strategy, Explainable Artificial Intelligence (XAI) Concepts, and the instructor's other course, Introduction to Data Security. The instructor also invites learners to the Data Girl and Friends initiative — empowering young people through activities supporting awareness and critical thinking in an AI-driven digital world.
 
+## Worked example (beginner walk-through)
+
+The exit, planned. The course's own recap: chapter 1 gave the five AI-specific risks and the ecosystem; chapter 2 the model risks, external threats, and assessment; chapter 3 the strategic integration — the start-up-versus-bank contrast as the emblem. The instructor's stated follow-ons: AI Ethics, AI Strategy, Explainable AI Concepts, and Introduction to Data Security. From here, the honest ladder into this repository: the survey courses open the vocabulary; [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) teaches the same taxonomy with the evidence discipline behind it; Ch. 02 turns leakage and overfitting into measurement; Ch. 12–16 take the attack surface to full depth; Ch. 22–23 build the assessment posture into documents and instruments; and the careers index maps the routes the follow-ons gesture at, with entry mechanisms and progress ladders. The survey is the invitation; the chapters are the work.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 24](../../chapters/24-research-practice-and-capstone-execution/README.md) — the repo's own capstone: where a beginner goes after the survey courses.
