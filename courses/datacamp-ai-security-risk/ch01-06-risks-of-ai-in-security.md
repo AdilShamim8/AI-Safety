@@ -21,6 +21,10 @@ Facial recognition in surveillance producing unfair results for specific groups 
 
 The closing principle the exercise wants applied to every stem: AI must be adopted carefully — know and mitigate the related risks BEFORE introducing AI into security operations. In exercise terms: any answer that deploys first and assesses later is wrong, which is the EU AI Act's own logic two chapters later.
 
+## Worked example (beginner walk-through)
+
+The model flags a transaction as fraudulent but cannot say why, and the analyst asks who owns the decision. The honest answer has two halves. *Accountability half:* responsibility follows the inspectable path — since it is difficult to understand how the system decided, it is hard to know who is responsible; that is the video's exact warning, and it is why the answer pattern is "whoever could foresee and mitigate," which requires the decision path to be reviewable. *Ethics half:* suppose the same bank adds face recognition to branch cameras. The security benefit is real, and so are the fairness and privacy costs the video names — unfair results for specific groups, privacy concerns. The answer that scores states BOTH sides before concluding; the answer that carries only one side is the marked-wrong one.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 19](../../chapters/19-multimodal-and-embodied-safety/README.md) — facial-recognition fairness at full depth.
