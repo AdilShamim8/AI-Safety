@@ -17,6 +17,10 @@ Regulation, synthetic data, and AGI each implicate the four pillars: people (who
 
 The title repeats the culture video's thesis in the future tense: staying current is a collective act — the channels in the previous exercise are people, and the exercise marks answers that assign the future to one team.
 
+## Worked example (beginner walk-through)
+
+Run each future topic through the four pillars. *Synthetic data:* people (who validates it?), legal (what may it claim to resemble?), technology (what does it change in the pipeline?), processes (what must be re-verified before training on it?). *A regulation shift:* people (who tracks it?), legal (what does it require?), technology (what must change?), processes (what updates and when?). *AGI debates:* people (whose judgment do we trust, and on what record?), legal (what would governance even require?), technology (what would robust-from-the-beginning mean?), processes (what would continuous improvement look like at that scale?). The exercise's rule: future topics are ecosystem topics — route each through the pillars rather than treating it as a technical curiosity, and never assign the future to one team. The village, in the future tense, is the same village.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 21](../../chapters/21-sociotechnical-and-systemic-risk/README.md) — the systemic frame for future topics.
