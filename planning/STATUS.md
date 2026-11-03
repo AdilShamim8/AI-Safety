@@ -1233,6 +1233,9 @@ applied note by note — one coherent unit per commit.
 | S11-P66..P68 — MAINTENANCE record, FAQ practitioner half, self-assessment grading register | 4c85305..b24a79f (pushed) | three files |
 | S11-P69..P76 — seven more build blocks, the count resync to 675, dashboard regenerated | e6c9f62..aa258ca (pushed) | eight units; suite green end to end |
 | S11-P77..P96 — the honest pairings across the remaining chapters (03..24) and the closing surfaces | d3fdf94..8449f6a (pushed) | twenty units; CITATION, MAINTENANCE, ledger |
+| S11-P97..P98 — the STATUS backfill and the CHANGELOG entry | f8898fd + 9f32d04 (pushed) | planning/STATUS.md + CHANGELOG.md |
+| S11-P99 — the FAQ paywall answer (the honest method for paid courses) | bb310a9 (pushed) | FAQ.md |
+| S11-P100 — the live verification and the final close | this commit | the deployed page verified: the CampusX layer live, 675 tests green, audit 0, validator OK |
 
 ### Session 11 final state (2026-11-03) — 100 units, repository at 837 commits
 
@@ -1252,5 +1255,8 @@ note, and the count instruments catching every stale surface on the
 way (the SYLLABUS watching track missed on a line-wrap in the P11
 batch and was caught and fixed at P65; the suite needed three
 resyncs as the test files landed, ending at 675 green end to end).
-The live site verified. Standing action: the session token must be
-rotated by the owner (seventh exposure across sessions).
+The live site verified at close: the deployed page carries the sixth
+course layer (checked 2026-11-03), 675 tests green end to end, the
+audit at 0 hard findings, the validator OK, and the dashboard
+regenerated. Standing action: the session token must be rotated by
+the owner (seventh exposure across sessions).
