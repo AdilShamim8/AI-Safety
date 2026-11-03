@@ -46,3 +46,4 @@ What this library did NOT do, stated as plainly as what it did:
   page's published description. Nothing behind the paywall is
   reproduced anywhere.
 - **The 14 CampusX worked examples are original.** Each is this repository's own practitioner walk-through of the lesson's announced concepts (2026-11-03); none reproduces paywalled content, quotes a video, or paraphrases anything behind the login.
+- **The build blocks are original prose.** The fourteen chapter blocks and two project blocks state the relationship between each chapter's depth and the course's construction (2026-11-03); they are this repository's own synthesis, grounded in the verified course page, and carry no quoted or reproduced lesson content.
