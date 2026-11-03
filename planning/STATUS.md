@@ -1209,3 +1209,48 @@ applied note by note — one coherent unit per commit.
 
 | Unit | Commit | Evidence |
 |---|---|---|
+
+| S11-P02..P05 — the four CampusX content modules (2+4+6+2 lessons) | 99e66fa..800985a (pushed) | scripts/campusx_content*.py |
+| S11-P06 — the idempotent companion generator with self-checks | f665d4b (pushed) | scripts/gen_campusx_companion.py |
+| S11-P07 — the companion layer: course page + 14 notes + 5 analyses (20 files) | 153f176 (pushed) | courses/campusx-ai-security-guardrails/ |
+| S11-P08 — the register entry and six claims | e7b7cb1 (pushed) | SRC-CURR-016 + CLM-0213..0218 |
+| S11-P09 — the fourteen glossary rows (the guardrails engineering family) | beb3dfd (pushed) | GLOSSARY.md at 363 terms |
+| S11-P10 — watching rows and exercise pointers in 7 chapters + 2 project companions | 98dce18 (pushed) | Ch. 08/12/13/14/15/16/19 + P07/P08 |
+| S11-P11..P12 — the library resynced to six courses + the AWESOME entry | 7f814e3 + 7e27329 (pushed) | courses/README.md, study-plans, ledger, MAINTENANCE, FAQ, AWESOME |
+| S11-P13 — the integrity contract extended (count, URL, coverage, unpublished-status) | 4720529 (pushed) | tests/test_courses_integrity.py + navigation |
+| S11-P14 — the campusx companion contract test file | 537bd57 (pushed) | tests/test_campusx_companion.py |
+| S11-P15..P16 — drift resync: sources 264, claims 218, glossary 363, suite 668 | f3ee992 + e49e230 (pushed) | README/FAQ/CITATION + floors |
+| S11-P17..P22 — audit, validator, awesome tests (the entry disclosure fixed in place) | b8ee3e0..969b41b (pushed) | four test files |
+| S11-P23..P25 — responsive, fs, dashboard tests; the primer widget at six courses | 155f9ce..d855cc1 (pushed) | three suites + build_dashboard.py + index.html |
+| S11-P26..P29 — the worked-example modules (3) and the applier | 3ca66b4..c1013e1 (pushed) | scripts/campusx_examples*.py + apply script |
+| S11-P30..P43 — one worked example per lesson, committed note by note (14 units) | 4042524..a52baa4 (pushed) | every note carries the practitioner walk-through |
+| S11-P44 — the worked-example coverage and flowing-prose tests | 701a4ac (pushed) | tests/test_campusx_companion.py + integrity |
+| S11-P45..P53 — the watching rows for Ch. 01/02/22/24, project pointers, front doors, prerequisites, comparison, ledger | e723748..4a2a22a (pushed) | nine units across the repo |
+| S11-P54 — the reading map's build-layer row | d53f966 (pushed) | reading-map.md |
+| S11-P55..P57 — the CampusX build blocks for Ch. 13/14/16 | e95a0c0..ca34d2c (pushed) | three chapter READMEs |
+| S11-P58..P61 — the project build blocks (P07/P08) and six roadmap pairings | 5033d26..24f361c (pushed) | two projects + six roadmaps |
+| S11-P62..P64 — the crosswalk pairs, the SYLLABUS fix caught late, the pedagogy paragraph | 2469bfd..486fa21 (pushed) | three files (SYLLABUS fixed at P65: a9099cf) |
+| S11-P66..P68 — MAINTENANCE record, FAQ practitioner half, self-assessment grading register | 4c85305..b24a79f (pushed) | three files |
+| S11-P69..P76 — seven more build blocks, the count resync to 675, dashboard regenerated | e6c9f62..aa258ca (pushed) | eight units; suite green end to end |
+| S11-P77..P96 — the honest pairings across the remaining chapters (03..24) and the closing surfaces | d3fdf94..8449f6a (pushed) | twenty units; CITATION, MAINTENANCE, ledger |
+
+### Session 11 final state (2026-11-03) — 100 units, repository at 837 commits
+
+The session delivered the sixth lecture-library course in the same
+shape as the fifth, one level deeper: the companion layer (20 files
+from four content modules and a self-checking generator), the honest
+register basis (SRC-CURR-016 with the platform's own TENTATIVE
+marking and the one duration-0 lesson carried as announced; six
+claims pinning 330.47 minutes, the pricing, both case studies, every
+named layer), fourteen glossary rows closing the guardrails
+engineering family, integrations across sixteen chapters (watching
+rows, exercise pointers, build blocks, and honest pairings that say
+where the course does NOT reach), two project companions, the
+library-and-index surfaces at six courses, two new test files plus
+six extended suites, fourteen worked examples committed note by
+note, and the count instruments catching every stale surface on the
+way (the SYLLABUS watching track missed on a line-wrap in the P11
+batch and was caught and fixed at P65; the suite needed three
+resyncs as the test files landed, ending at 675 green end to end).
+The live site verified. Standing action: the session token must be
+rotated by the owner (seventh exposure across sessions).
