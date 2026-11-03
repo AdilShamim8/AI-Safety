@@ -638,6 +638,7 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-10-mechanistic-interpretability](../../courses/boaz-barak-cs2881/lecture-10-mechanistic-interpretability.md) | Harvard CS 2881 | CoT monitoring and honesty signals from the internals |
 | [part-02-05-interpretability](../../courses/google-deepmind-agi-safety/part-02-05-interpretability.md) | DeepMind AGI Safety | the internal channel as an honesty instrument |
 | [f26-lecture-01-introduction](../../courses/boaz-barak-cs2881/f26-lecture-01-introduction.md) | Harvard CS 2881 | the CoT-scratchpad experiment: is the trace load-bearing? |
+| [ch02-01-model-risks](../../courses/datacamp-ai-security-risk/ch02-01-model-risks.md) | DataCamp AI Security & RM | hallucination among the seven model risks, stated as confident fabrication — this chapter's measured behavioral quantity |
 
 ---
 
