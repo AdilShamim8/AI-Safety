@@ -430,3 +430,23 @@ def test_datacamp_companion_names_the_train_eval_split_discipline() -> None:
     a = Tensor.rand(64, seed=7)
     b = Tensor.rand(64, seed=7)
     assert a.data == b.data, "seeding is no longer deterministic"
+
+
+def test_campusx_capability_lens_note_states_the_ranking() -> None:
+    """The CampusX capability-lens note must state the ranking rule —
+    write and delete price higher than read — and this track's own
+    reproducibility convention must still hold beside it."""
+    from pathlib import Path
+
+    note = (
+        Path(__file__).resolve().parent.parent
+        / "courses" / "campusx-ai-security-guardrails"
+        / "m4-01-threat-modelling-our-agentic-application.md"
+    ).read_text(encoding="utf-8")
+    assert "write and delete" in note
+    assert "more dangerous than a RAG" in note
+    from ai_safety_course.from_scratch.tensors import Tensor
+
+    a = Tensor.rand(32, seed=11)
+    b = Tensor.rand(32, seed=11)
+    assert a.data == b.data, "seeding is no longer deterministic"
