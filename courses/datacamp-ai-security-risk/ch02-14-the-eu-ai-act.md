@@ -17,6 +17,10 @@ The exercise gives system descriptions; the task is the tier, then the consequen
 
 Stems describing what a system CAN do are bait — the tier follows the USE and the riskiness of the deployment context, not the capability. An exercise answer that tiers a system on its model size or its cleverness is the distractor; the Act's logic (as the video states) puts risk assessment at the cornerstone for development AND deployment.
 
+## Worked example (beginner walk-through)
+
+Four systems, four tiers. *A social-scoring system ranking citizens* — unacceptable: banned. *An AI screener for job applications* — high risk: a documented risk assessment and risk management system are required. *A chatbot that must identify itself as AI* — limited risk: transparency duties. *A spam filter* — minimal risk: voluntary codes of conduct suffice. The exercise's trap is capability language: stems describing what a system *can* do are bait, because the tier follows the *use* and the riskiness of the deployment context, never the model's cleverness or size. A powerful model in a minimal-risk use is minimal risk; a modest model in a high-risk use is high risk. The Act's own logic, as the video states it: risk assessment at the cornerstone of regulating development AND deployment.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — the full tier table and provider duties.
