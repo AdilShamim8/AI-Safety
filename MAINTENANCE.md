@@ -94,6 +94,16 @@ page, edit `scripts/dashboard_template.html` — `index.html` itself is
 generated output, committed so the page is always browsable at the
 repo root and on GitHub Pages without a build step.
 
+### Re-check rotation 5 (2026-11-03) — the DataCamp companion opening
+
+The fifth course's two register URLs were verified before linking:
+SRC-CURR-014 (public catalog page) resolved LIVE with the title
+corroborating the register entry; SRC-CURR-015 (the course URL)
+resolved as the expected sign-in redirect (302) — recorded in the
+entry's limitations as the account-wall, not as a failure. The
+catalog-page fetch carried the chapter and lesson structure that
+CLM-0207..0212 pin.
+
 ## CI
 
 `.github/workflows/` runs the quality gates on every push to `main`,

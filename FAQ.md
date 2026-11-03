@@ -162,10 +162,11 @@ this session twice).
 
 ## The lecture library (the video-course companions)
 
-**What is `courses/`?** The four external courses the owner selected —
+**What is `courses/`?** The five external courses the owner selected —
 Harvard CS 2881, the Google DeepMind AGI Safety Course, the CAIS
-Ethics & Society course, and the Safeshield governance series —
-turned into companion notes: a course page with the complete verified
+Ethics & Society course, the Safeshield governance series, and the
+DataCamp AI Security and Risk Management course — turned into
+companion notes: a course page with the complete verified
 video index per course, one note per lecture, per-course pedagogy
 analyses, and study plans that schedule the watching against the 24
 chapters.
@@ -179,7 +180,9 @@ repository — the same rule the video library has always held. See
 [courses/README.md](courses/README.md) for the full note discipline.
 
 **Where do I start?** The [watch guide](courses/README.md#how-to-watch-the-guide):
-90 minutes (the DeepMind course) before Chapter 01; the alongside
+90 minutes (the DeepMind course) before Chapter 01 — or the DataCamp
+course first (about an hour, graded, no prerequisites) if you are a
+complete beginner; the alongside
 pass (~4–6 hours across the whole program) paired by chapter; the
 operator pass (12.5 hours, Safeshield) for audit and governance
 routes.

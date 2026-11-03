@@ -105,7 +105,7 @@ arithmetic: [ROADMAP.md](ROADMAP.md).
 | `research/ai-researcher-from-scratch/` | The from-scratch researcher track (stdlib-only modules) | **complete** (7/7) — 174 tests |
 | `datasets/` | 47 verified real-world dataset cards + machine-readable catalog | **complete** — queue empty |
 | `planning/` | Build plan, status, content matrix, ADRs | **exists** — the build's durable record |
-| `templates/` | Chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review templates | **complete** (8) |
+| `templates/` | Chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review templates | **complete** (8; the DataCamp layer adds two generated crosswalk types: per-lesson chapter maps and course-to-glossary maps) |
 | `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 641-test suite (401 package + 174 from-scratch + 66 repo-instrument) |
 | `scripts/` | Validator, missing-values audit, link verifier, dashboard generator | **exists** — all run in CI |
 
