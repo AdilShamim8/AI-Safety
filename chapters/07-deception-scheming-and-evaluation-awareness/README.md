@@ -607,3 +607,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 08 — AI control and monitoring →](../08-ai-control-and-monitoring/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Scheming and evaluation awareness are this chapter's subject; the
+course's contribution is the adversarial half of the environment —
+the jailbreak gate reading the conversation for authority claims is
+the defense against exactly the situational gaming this chapter
+measures. The channel version is the [gate note](../../courses/campusx-ai-security-guardrails/m4-02-securing-from-jailbreak-attacks.md).
