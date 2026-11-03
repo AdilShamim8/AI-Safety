@@ -17,6 +17,10 @@ The four data practices sort by what they are FOR: provenance/traceability answe
 
 Exercise stems that pair a practice with the WRONG purpose are the graded content: minimization does not detect tampering; validation does not remove identifiers; encryption does not tell you the data's origin. If the purpose sentence does not follow from the practice's mechanism, reject the pairing.
 
+## Worked example (beginner walk-through)
+
+Four needs, four practices, matched by purpose. *"Where did this data come from, and what happened to it?"* — provenance and traceability; the anti-poisoning record. *"Is this data accurate and untampered before training?"* — validation; the pre-ingestion gate. *"Do we need this much data at all?"* — minimization; the breach-surface reducer. *"What happens if the store leaks anyway?"* — encryption and anonymization; the last line. The distractor pairings are the graded content: minimization does not detect tampering; validation does not remove identifiers; encryption does not tell you the data's origin. If the purpose sentence does not follow from the practice's mechanism, reject the pairing — that is the whole exercise, and the whole discipline.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 16](../../chapters/16-privacy-provenance-and-supply-chains/README.md) — the full data-protection treatment.
