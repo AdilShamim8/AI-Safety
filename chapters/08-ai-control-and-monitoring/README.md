@@ -576,3 +576,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 09 — Mechanistic interpretability foundations →](../09-mechanistic-interpretability-foundations/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter designs control and monitoring; the course implements
+it at three checkpoints — the gate on the conversation, the guard on
+every tool and MCP result, and the per-answer output check. Checking
+every result is the pattern this chapter formalizes; the case study
+is the pattern with code. Pair the design with the [output-guardrails note](../../courses/campusx-ai-security-guardrails/m3-05-securing-output-output-guardrails.md).
