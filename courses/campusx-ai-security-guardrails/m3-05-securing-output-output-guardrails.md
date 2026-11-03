@@ -21,6 +21,10 @@ The course's open-source anchor for this layer: output guardrails built with NVI
 
 The course stacks the layers deliberately: masking at ingestion, filtering at retrieval, guardrails at input, delimiters in the prompt, guardrails at output. No single layer is trusted to catch everything; the output guardrail is the last check on the answer, and the red-team pass (the next lesson) tests whether the stack holds.
 
+## Worked example (practitioner walk-through)
+
+Stand at the answer box and list what can still be wrong. The four earlier layers are in; the model generates. *Private data:* an answer quoting a customer's records — the PII path that survived (or bypassed) masking. *Wrong facts:* an answer contradicting the retrieved documents — the grounding failure. *A manipulated response:* an answer shaped by an injection the delimiter defense missed. The output guardrail checks all three on the answer channel, per answer — because outputs are non-deterministic, the check cannot be per-release. Built with NVIDIA NeMo Guardrails in the course, the layer is the last check, and the course is honest about what it is not: it is not a substitute for the earlier layers, it is the reason the stack is called defense in depth — each layer exists because the one before it can be beaten.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — the output channel as an application surface.
