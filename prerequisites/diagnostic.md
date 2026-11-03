@@ -10,6 +10,9 @@ the refresher to run and the chapters that will hurt without it.
 
 ## Task A — ML mechanics (refreshers R1, R2)
 
+Before the diagnostic, consider the DataCamp *AI Security and Risk Management* course (44 graded lessons, ~1 hour, no prerequisites) — the beginner-graded primer of the [lecture library](../courses/README.md).
+
+
 **(a)** Derive, from the definitions, the gradient of the softmax
 cross-entropy loss with respect to the pre-softmax logits. You should end
 with a one-line closed form; show the intermediate steps.
