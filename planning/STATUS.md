@@ -1154,3 +1154,58 @@ and a bucket boundary corrected twice). Final state: suite 658
 end; audit 0 hard findings; validator OK; dashboard regenerated at
 658 tests; the live site verified. Standing action: the session token
 (the fifth exposed across sessions) must be rotated by the owner.
+
+## Session 11 — the CampusX guardrails course (opened 2026-11-03)
+
+Owner directive (2026-11-03): check the CampusX course *AI Security &
+Guardrails* (learnwith.campusx.in), match it against the repository
+and its four-course lecture library plus the DataCamp layer, and add
+whatever is missing; at least 100 new commits, each pushed and
+remote-verified one at a time. The DataCamp course was verified
+already integrated (its layer is live and pinned by its own tests);
+the new work is the CampusX course.
+
+Verification (2026-11-03, public pages, no login required): the course
+page exposes its full description, curriculum, and pricing — CampusX
+instructor, Hinglish, paid (₹1999 against an MRP of ₹�2499, 1095-day
+validity, sales-count 24), an outline the platform itself marks
+TENTATIVE, four module groups, and 14 lessons of which 13 carry
+durations totaling 330.47 minutes (one listed with duration 0). The
+description names the two case studies (NovaBank RAG; a doctor-booking
+agent with tool search, MCP booking, shared memory, and no login) and
+every security layer: PII detection and masking, pre-retrieval
+metadata filtering, input guardrails, delimiter defense, output
+guardrails built with NVIDIA NeMo Guardrails, a jailbreak gate, a
+guard model on every tool and MCP result, memory protection with a
+judge on writes, and Promptfoo red-teaming at the close.
+
+The gap analysis (course description + outline vs the glossary,
+chapters, and registers) found the same three families as session 10,
+one level deeper:
+
+1. **The course is absent** — no companion, no register entry, no
+   notes; the lecture library holds five courses, this is the sixth
+   and the only guardrails-engineering one.
+2. **The guardrails engineering family is missing as first-class
+   terms** — 14 glossary rows absent: the guardrails family (guardrails,
+   input guardrails, output guardrails, guard model), the data
+   protections (PII masking, pre-retrieval metadata filtering,
+   delimiter defense), the threat-modelling instruments (Data Flow
+   Diagram, entry and exit points, capability table, jailbreak gate),
+   the agent surfaces (shared memory, multimodal attack surface), and
+   Promptfoo.
+3. **No practitioner pairing** — nothing schedules this course
+   against Ch. 13–16 and the P07/P08 projects, where its material is
+   the working-level complement.
+
+The build: one course companion set (course page + 14 lesson notes +
+reading map + pedagogy + self-assessment + two crosswalks), the
+register entry and six claims, 14 glossary rows, integrations across
+chapters and projects, the beginner/practitioner surfaces, two new
+test files' worth of pins, the count resyncs, and 14 worked examples
+applied note by note — one coherent unit per commit.
+
+<!-- SESSION11_UNITS -->
+
+| Unit | Commit | Evidence |
+|---|---|---|
