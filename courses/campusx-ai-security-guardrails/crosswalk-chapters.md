@@ -1,5 +1,7 @@
 # The CampusX lessons × this repository's layers
 
+**Navigate:** [← the CampusX companion](README.md) · [crosswalk: glossary](crosswalk-glossary.md)
+
 *Part of the [CampusX companion](README.md) · 2026-11-03 · every
 through-line stated in a companion note, tabulated here for
 either-direction lookup.*

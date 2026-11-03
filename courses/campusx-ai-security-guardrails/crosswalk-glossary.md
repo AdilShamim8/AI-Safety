@@ -1,5 +1,7 @@
 # The CampusX course × the glossary
 
+**Navigate:** [← the CampusX companion](README.md) · [crosswalk: chapters](crosswalk-chapters.md)
+
 *Part of the [CampusX companion](README.md) · 2026-11-03 · the 14
 terms the course prompted, each now carried as a row in
 [GLOSSARY.md](../../GLOSSARY.md) with the chapters that use it.*

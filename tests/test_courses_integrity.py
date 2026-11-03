@@ -12,7 +12,7 @@ promises the library makes in its own index:
      exist (and every note file appears in exactly one table);
   2. every course page links its playlist, and that playlist URL is
      the one its register entries carry;
-  3. the library index names all five courses.
+  3. the library index names all six courses.
 
 If a note is removed or a table row is orphaned, this fails loudly.
 """
@@ -39,6 +39,7 @@ COURSE_DIRS = [
     "cais-ethics-society",
     "safeshield-governance",
     "datacamp-ai-security-risk",
+    "campusx-ai-security-guardrails",
 ]
 
 
@@ -114,3 +115,43 @@ def test_datacamp_note_rows_cover_every_lesson() -> None:
     linked = set(re.findall(r"\((ch\d{2}-\d{2}-[\w-]+\.md)\)", readme))
     notes = {p.name for p in (COURSES / "datacamp-ai-security-risk").glob("ch*.md")}
     assert linked == notes, f"table/notes drift: {linked ^ notes}"
+
+
+def test_campusx_lesson_count_and_durations_match_register() -> None:
+    """The course page promises 14 lessons, 13 with published durations
+    totaling 330.47 minutes and one announced (duration 0); the disk,
+    the content modules, and the register must agree."""
+    from gen_campusx_companion import ALL_LESSONS, PUBLISHED, TOTAL_MINUTES
+
+    assert len(ALL_LESSONS) == 14
+    assert len(PUBLISHED) == 13
+    assert abs(TOTAL_MINUTES - 330.47) < 0.02
+    notes = sorted(p.name for p in (COURSES / "campusx-ai-security-guardrails").glob("m*-*.md"))
+    assert len(notes) == 14, f"note count drifted: {len(notes)}"
+    slugs = {ls["slug"] + ".md" for ls in ALL_LESSONS}
+    assert set(notes) == slugs
+
+
+def test_campusx_register_url_linked_on_course_page() -> None:
+    """The registered course URL is linked exactly as the register
+    carries it."""
+    reg = _register()
+    readme = (COURSES / "campusx-ai-security-guardrails" / "README.md").read_text(encoding="utf-8")
+    url = reg["SRC-CURR-016"]["url"]
+    assert f"]({url})" in readme, "SRC-CURR-016 URL not linked as registered"
+
+
+def test_campusx_note_rows_cover_every_lesson() -> None:
+    """Every lesson-table row links its note; every note is a row."""
+    readme = (COURSES / "campusx-ai-security-guardrails" / "README.md").read_text(encoding="utf-8")
+    linked = set(re.findall(r"\((m\d-\d{2}-[\w-]+\.md)\)", readme))
+    notes = {p.name for p in (COURSES / "campusx-ai-security-guardrails").glob("m*-*.md")}
+    assert linked == notes, f"table/notes drift: {linked ^ notes}"
+
+
+def test_campusx_unpublished_lesson_carries_its_status() -> None:
+    """The one duration-0 lesson must state its announced status in
+    the note itself — the honesty rule the register records."""
+    note = (COURSES / "campusx-ai-security-guardrails" / "m4-01-threat-modelling-our-agentic-application.md").read_text(encoding="utf-8")
+    assert "not yet published" in note
+    assert "duration 0" in note

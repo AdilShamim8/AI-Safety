@@ -1,5 +1,7 @@
 # The CampusX course × this repository's spine
 
+**Navigate:** [← the CampusX companion](README.md) · [pedagogy](pedagogy.md) · [self-assessment](self-assessment.md)
+
 *Part of the [CampusX companion](README.md) · 2026-11-03*
 
 | Course module | The repo's depth layer |

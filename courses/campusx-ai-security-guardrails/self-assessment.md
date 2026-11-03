@@ -1,6 +1,6 @@
 # Self-assessment — the CampusX course
 
-**Navigate:** [← the CampusX companion](README.md)
+**Navigate:** [← the CampusX companion](README.md) · [reading map](reading-map.md) · [pedagogy](pedagogy.md)
 
 Ten judgment questions. Answer from the course and its companion
 notes; every question names the lesson that teaches it and the

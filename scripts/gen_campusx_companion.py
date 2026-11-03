@@ -214,6 +214,8 @@ honesty section.
 def reading_map() -> str:
     return f"""# The CampusX course × this repository's spine
 
+**Navigate:** [← the CampusX companion](README.md) · [pedagogy](pedagogy.md) · [self-assessment](self-assessment.md)
+
 *Part of the [CampusX companion](README.md) · 2026-11-03*
 
 | Course module | The repo's depth layer |
@@ -291,7 +293,7 @@ point to.
 def self_assessment() -> str:
     return """# Self-assessment — the CampusX course
 
-**Navigate:** [← the CampusX companion](README.md)
+**Navigate:** [← the CampusX companion](README.md) · [reading map](reading-map.md) · [pedagogy](pedagogy.md)
 
 Ten judgment questions. Answer from the course and its companion
 notes; every question names the lesson that teaches it and the
@@ -338,6 +340,8 @@ def crosswalk_chapters() -> str:
     lines = [
         "# The CampusX lessons × this repository's layers",
         "",
+        "**Navigate:** [← the CampusX companion](README.md) · [crosswalk: glossary](crosswalk-glossary.md)",
+        "",
         "*Part of the [CampusX companion](README.md) · 2026-11-03 · every",
         "through-line stated in a companion note, tabulated here for",
         "either-direction lookup.*",
@@ -374,6 +378,8 @@ def crosswalk_glossary() -> str:
     ]
     lines = [
         "# The CampusX course × the glossary",
+        "",
+        "**Navigate:** [← the CampusX companion](README.md) · [crosswalk: chapters](crosswalk-chapters.md)",
         "",
         "*Part of the [CampusX companion](README.md) · 2026-11-03 · the 14",
         "terms the course prompted, each now carried as a row in",
