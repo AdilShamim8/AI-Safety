@@ -17,6 +17,10 @@ Each round pairs a change (new regulation, new threat, new capability) with a re
 
 The title's warning: the throne is comfortable — stagnation feels like stability and prices like fragility. The game's final rounds make the accumulated cost visible at once, which is the argument the entire course has been building: constant change is the condition, not the exception.
 
+## Worked example (beginner walk-through)
+
+Score one hold against one adapt. *The change:* a new class of prompt-based attacks begins circulating. *The hold:* "our filters were fine last year" — and the game prices it: the accumulated costs arrive together (vulnerability, breach exposure, compliance drift, trust erosion), which is the argument the entire course has been building. *The adapt:* threat modeling updated this quarter, researchers' warnings in the weekly reading, filters revised, and the trade-off price stated honestly (some agility spent). The throne is the trap in the title: stagnation feels like stability — nothing changes, nothing breaks, nothing needs deciding — and it prices like fragility. The winning line is the video's closing claim made playable: adaptive leadership, proactive strategy, security in motion.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — continuous improvement as the counter-posture.
