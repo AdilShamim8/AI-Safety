@@ -17,6 +17,10 @@ Each round tests one wall: is the risk routed to its natural catcher? is the wor
 
 The losing rounds are culture failures: a risk everyone assumed someone else owned; a leadership tone that security is a tech-team matter; partners outside the agreed standards. The game's thesis is the video's: unified culture is the structure that keeps monitoring and protection running over time.
 
+## Worked example (beginner walk-through)
+
+The citadel's walls, one round each. *Round one — routing:* the hallucination reports reach the model team in days, not quarters, because Customer Service escalates and Operations corroborates. *Round two — training:* HR's onboarding taught the new analysts that reporting a strange output is a duty, not an alarm. *Round three — tone:* leadership funds the monitoring and rewards the finding, so the reports keep coming. *Round four — partners:* the vendors ship fixes under the agreed standards, and the supply chain holds. The game grades the routing, not the heroics — one role cannot hold the citadel, and the losing rounds are always culture failures: a risk everyone assumed someone else owned, a tone that treats security as a tech-team matter. The video's thesis, playable: unified culture is the structure that keeps monitoring and protection running over time.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — safety culture as the engineering inheritance.
