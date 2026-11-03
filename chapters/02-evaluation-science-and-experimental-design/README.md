@@ -469,3 +469,11 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Ch. 03 — Specification, reward hacking, and goal misgeneralization →](../03-specification-reward-hacking-and-goal-misgeneralization/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+The evaluation discipline this chapter builds is the course's
+red-team close: the layers as the system under test, the attack set
+as the measurement instrument, and the per-layer report as the
+finding — a pass/fail without the breakdown is a score, not a
+finding. The worked version is the [red-team note](../../courses/campusx-ai-security-guardrails/m3-06-red-teaming-our-rag-application.md).
