@@ -29,6 +29,10 @@ Look for actions implementable quickly that significantly reduce risk — the vi
 
 All steps combine into a plan with many levels: high-level strategic considerations down to detailed implementation plans for security initiatives. The high-level perspective is key to seeing how mitigation plans align with the organization's strategy.
 
+## Worked example (beginner walk-through)
+
+A findings list, prioritized honestly. Say the assessment produced: (a) the loan model leans on a single data point; (b) encryption on the data store is weak; (c) the bias test has never been run. *Threat prioritization:* rank by severity times likelihood — (a) is high-impact and already live, (b) is high-impact but requires an attacker, (c) is high-impact and certain to matter eventually. *Low-hanging fruit first:* (a) is the classic quick win — cheap to fix, visible immediately, and it shows progress, boosts morale, and builds the base for harder risks, exactly as the video argues. *Cost versus benefit* on the rest: security measures are worth it when the cost of reducing the risk is lower than the expected losses. The output is the multi-level plan: strategic considerations at the top, implementation detail at the bottom — never the other way around.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 22](../../chapters/22-safety-engineering-and-assurance/README.md) — prioritization under budget as an assurance problem.
