@@ -582,6 +582,7 @@ chapter is a finding to record, not a problem to resolve.
 | [part-01-04-misaligned-goals](../../courses/google-deepmind-agi-safety/part-01-04-misaligned-goals.md) | DeepMind AGI Safety | the genesis taxonomy this chapter expands |
 | [part-01-05-exercise-classification](../../courses/google-deepmind-agi-safety/part-01-05-exercise-classification.md) | DeepMind AGI Safety | the classification drill for the same failure families |
 | [lecture-03-single-agent-safety](../../courses/cais-ethics-society/lecture-03-single-agent-safety.md) | CAIS Ethics & Society | the specification problem for a non-technical audience |
+| [ch01-01-security-risks-specific-to-ai](../../courses/datacamp-ai-security-risk/ch01-01-security-risks-specific-to-ai.md) | DataCamp AI Security & RM | the hiring-bias worked story is the specification problem in plain register — what the data encodes becomes what the system optimizes for |
 
 ---
 

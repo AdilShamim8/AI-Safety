@@ -519,3 +519,4 @@ a finding to note in your solution.
 
 - **DeepMind course**, [part-01-04-misaligned-goals](../../courses/google-deepmind-agi-safety/part-01-04-misaligned-goals.md) — watch before working the specification-gaming exercises.
 - **CS 2881**, [lecture-04-model-specifications](../../courses/boaz-barak-cs2881/lecture-04-model-specifications.md) — watch before working the spec-drafting exercise.
+- **DataCamp**, [ch01-01-security-risks-specific-to-ai](../../courses/datacamp-ai-security-risk/ch01-01-security-risks-specific-to-ai.md) — watch before working this chapter's exercises.
