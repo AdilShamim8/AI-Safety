@@ -17,6 +17,10 @@ For each situation: (1) what is the object — behavior, adversary intelligence,
 
 The game's stakes are the operational ones: picking SOAR where SIEM was needed automates a process around undetected events; picking anomaly detection where threat intelligence was needed studies your own users while the adversary walks past. The repo's phrase for the underlying error: solving the problem one instrument down the chain from where it lives.
 
+## Worked example (beginner walk-through)
+
+The station hands you one situation: "The security team is drowning in alerts from forty systems; leadership wants fewer, better alerts, and the analysts want their weekends back." Run the four-step. (1) *Object:* events across systems — this is correlation, not behavior or adversary intelligence. (2) *Latency:* real-time flags, not hindsight. (3) *Explainability:* the flagged event must be reviewable by a human, or accountability dies. (4) *Weighing:* the benefit must survive the fairness and privacy costs of watching systems at all. The defensible answer is an AI-assisted **SIEM** for correlation, feeding a **SOAR** for the repetitive responses — freeing the analysts for the sophisticated threats, exactly the division the video draws. A wrong catalyst is not a small error: automating around undetected events, or studying your own users while the adversary walks past, is the failure mode the game prices.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 08](../../chapters/08-ai-control-and-monitoring/README.md) — choosing monitors under adversarial pressure.
