@@ -54,6 +54,23 @@ def test_datacamp_register_entries_audit_clean() -> None:
     assert not audit_missing.HARD, "cross-reference audit went red"
 
 
+def test_campusx_register_entries_audit_clean() -> None:
+    """The session-11 register additions must survive the audit with
+    the full fourteen-field schema (SRC-CURR-016, page-inspected) and
+    the six claims present and cross-referenced without a hard
+    finding."""
+    audit_missing.HARD.clear()
+    audit_missing.SOFT.clear()
+    source_ids = audit_missing.audit_source_register()
+    assert "SRC-CURR-016" in source_ids, "SRC-CURR-016 missing from the audited register"
+    claim_ids = audit_missing.audit_claims_register(source_ids)
+    for cid in ("CLM-0213", "CLM-0214", "CLM-0215", "CLM-0216", "CLM-0217", "CLM-0218"):
+        assert cid in claim_ids, f"{cid} missing from the audited claims"
+    assert not audit_missing.HARD, f"register audit went red: {audit_missing.HARD}"
+    audit_missing.audit_cross_references(source_ids, claim_ids)
+    assert not audit_missing.HARD, "cross-reference audit went red"
+
+
 def test_hard_finding_on_missing_source_field() -> None:
     """A register entry missing a field must be caught (hard)."""
     audit_missing.HARD.clear()
