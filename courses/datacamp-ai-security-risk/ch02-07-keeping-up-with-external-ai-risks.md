@@ -17,6 +17,10 @@ Audits → surface vulnerabilities across groups; validation and sanitization �
 
 Defense is layered because attacks are phased: no single practice covers two groups, and every answer that claims one practice closes the whole surface is the distractor. The repo's control chapter states the same as 'defense in depth against a phased adversary'.
 
+## Worked example (beginner walk-through)
+
+Map each practice to the group it counters. *Regular security audits* → surface vulnerabilities across groups. *Data validation and sanitization* → guard the integrity of training and inference data against poisoning and crafted inputs. *Strong access controls* → prevent unauthorized use: model theft, breaches. *Encryption and anonymization* → protect sensitive information even if it leaks: inversion, exposure. *Continuous monitoring* → catch emerging threats as they develop. *Trusted, regularly updated development tools* → secure the supply chain at the dependency level. *Ongoing education and training* → the human layer every group exploits first. The rule the exercise encodes: defense is layered because attacks are phased — no single practice covers two groups, and any answer claiming one practice closes the whole surface is the distractor.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 16](../../chapters/16-privacy-provenance-and-supply-chains/README.md) — the data-protection practices in depth.
