@@ -25,6 +25,10 @@ The lesson positions the course against the landscape of shipped LLM application
 
 The four video courses teach the risk landscape at survey level; this course is the practitioner layer — the same landscape with the defenses built. This repository's chapters 12 and 13 are the deep treatments of the two sides the lesson names: adversarial manipulation, and the application surface built around the model.
 
+## Worked example (practitioner walk-through)
+
+Run the three structural differences against a concrete feature request. The request: "add file upload so users can ask about their PDFs." *Non-deterministic outputs:* you cannot write a test that asserts the answer for a given file, so the output check must be per-answer, not per-release — a guard on the answer channel. *Natural-language inputs:* the file's text becomes instructions your model may obey, so the upload is not an input field with a validator; it is an attack surface with a parser you do not control. *Connectedness:* the moment the upload exists, your app touches the filesystem, the parser, and the vector store — three components you now defend or accept. The feature is two lines of code and six surfaces; that arithmetic is the lesson, and the demos the course runs (a RAG manipulated, an agent's tools turned against it, images opening paths text defenses miss) are the same arithmetic at full scale.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — the three structural differences at chapter depth.
