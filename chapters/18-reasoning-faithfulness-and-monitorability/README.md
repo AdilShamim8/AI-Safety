@@ -413,3 +413,10 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 19 — Multimodal and embodied safety →](../19-multimodal-and-embodied-safety/README.md)
+
+## The CampusX pairing (2026-11-03)
+
+Reasoning faithfulness is this chapter's subject; the course's
+contribution is the output channel's last check — the answer verified
+against the retrieved documents, which is grounding as a guardrail.
+The built version is the [output note](../../courses/campusx-ai-security-guardrails/m3-05-securing-output-output-guardrails.md).
