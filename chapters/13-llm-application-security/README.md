@@ -492,3 +492,14 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 14 — Agents, tools, memory, and MCP security →](../14-agent-tool-memory-mcp-security/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter names the injection surfaces and the defense patterns;
+the CampusX course constructs them. Reading the two together, layer
+by layer: the user-query channel gets the input guardrail (the
+jailbreak gate on the conversation), the retrieved-document channel
+gets the delimiter defense (data, never instructions), the output
+channel gets the NeMo Guardrails check. Every pattern this chapter
+describes at concept level exists in the course as built code with a
+red-team grade behind it — see the [CampusX companion](../../courses/campusx-ai-security-guardrails/README.md).
