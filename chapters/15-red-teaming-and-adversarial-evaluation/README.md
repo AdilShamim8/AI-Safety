@@ -398,6 +398,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the red/blue experiment: many-shot attacks vs reasoning effort |
 | [part-02-07-alignment-stress-tests](../../courses/google-deepmind-agi-safety/part-02-07-alignment-stress-tests.md) | DeepMind AGI Safety | red-teaming the alignment program itself |
+| [m3-06-red-teaming-our-rag-application](../../courses/campusx-ai-security-guardrails/m3-06-red-teaming-our-rag-application.md) | CampusX AI Security & Guardrails | the red-team pass on the secured stack — the per-layer report as the finding |
 
 ---
 

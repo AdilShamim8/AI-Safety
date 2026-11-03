@@ -64,3 +64,7 @@ for r in frontier(seed=9):
     print(f'{r.name:18} safety {r.safety:.3f} usefulness {r.usefulness:.3f} trusted {r.trusted_executions}')
 "
 ```
+
+## Watching companion (the lecture library)
+
+The [lecture library](../../courses/README.md) pairs with this project: [the CampusX lesson](../../courses/campusx-ai-security-guardrails/m4-01-threat-modelling-our-agentic-application.md) — the agent case study as the practitioner twin of this project's control-and-monitoring design.

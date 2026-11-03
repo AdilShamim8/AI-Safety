@@ -239,3 +239,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **DeepMind course**, [part-02-06-safer-design-patterns](../../courses/google-deepmind-agi-safety/part-02-06-safer-design-patterns.md) — watch before working the privilege-boundary exercises.
+- **CampusX**, [m4-01-threat-modelling-our-agentic-application](../../courses/campusx-ai-security-guardrails/m4-01-threat-modelling-our-agentic-application.md) — watch before working this chapter's exercises.

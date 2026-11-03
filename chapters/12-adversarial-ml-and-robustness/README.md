@@ -586,6 +586,7 @@ chapter is a finding to record, not a problem to resolve.
 | [ch01-01-security-risks-specific-to-ai](../../courses/datacamp-ai-security-risk/ch01-01-security-risks-specific-to-ai.md) | DataCamp AI Security & RM | the five risks at beginner level, with the poisoning-versus-adversarial phase boundary drawn in plain words |
 | [ch02-05-external-risks-in-ai](../../courses/datacamp-ai-security-risk/ch02-05-external-risks-in-ai.md) | DataCamp AI Security & RM | the five external-attack groups by target — the inference-phase family is this chapter's subject, stated accessibly |
 | [ch02-06-types-of-external-risks](../../courses/datacamp-ai-security-risk/ch02-06-types-of-external-risks.md) | DataCamp AI Security & RM | graded two-axis classification: attack target times phase |
+| [m2-02-adversarial-attacks-and-types](../../courses/campusx-ai-security-guardrails/m2-02-adversarial-attacks-and-types.md) | CampusX AI Security & Guardrails | the attack catalog as the case studies run it — each type paired with the component it attacks |
 
 ---
 

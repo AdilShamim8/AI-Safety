@@ -487,6 +487,7 @@ chapter is a finding to record, not a problem to resolve.
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | prompt injection as the era's SQL injection; defense in depth |
 | [lecture-05-experiment-policy-compliance](../../courses/boaz-barak-cs2881/lecture-05-experiment-policy-compliance.md) | Harvard CS 2881 | does the policy layer hold under adversarial pressure? |
 | [ch02-06-types-of-external-risks](../../courses/datacamp-ai-security-risk/ch02-06-types-of-external-risks.md) | DataCamp AI Security & RM | the adversarial-input family sorted by target and phase — this chapter's application surface at beginner level |
+| [m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection](../../courses/campusx-ai-security-guardrails/m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection.md) | CampusX AI Security & Guardrails | both channel defenses in one pass — the input gate and the data-not-instructions delimiter defense |
 
 ---
 

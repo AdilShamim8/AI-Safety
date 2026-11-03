@@ -150,3 +150,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **CAIS course**, [lecture-02-ai-fundamentals](../../courses/cais-ethics-society/lecture-02-ai-fundamentals.md) — watch before working the brittleness exercises.
+- **CampusX**, [m1-02-why-ai-security-practical-landscape](../../courses/campusx-ai-security-guardrails/m1-02-why-ai-security-practical-landscape.md) — watch before working this chapter's exercises.

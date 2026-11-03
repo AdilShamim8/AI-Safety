@@ -140,3 +140,7 @@ exactly where the residual CRM attack walks through.
   destinations?) — a behavioral experiment with IRB-level ethics
   review, far outside this repository's scope; the fixture models the
   mechanism, not the rate.
+
+## Watching companion (the lecture library)
+
+The [lecture library](../../courses/README.md) pairs with this project: [the CampusX lesson](../../courses/campusx-ai-security-guardrails/m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection.md) — the injection defenses built at production level on the same attack family this project audits.

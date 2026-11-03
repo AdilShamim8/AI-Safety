@@ -208,3 +208,4 @@ a finding to note in your solution.
 
 - **CS 2881**, [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) — watch before working the injection exercises.
 - **DataCamp**, [ch02-06-types-of-external-risks](../../courses/datacamp-ai-security-risk/ch02-06-types-of-external-risks.md) — watch before working this chapter's exercises.
+- **CampusX**, [m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection](../../courses/campusx-ai-security-guardrails/m3-04-securing-user-query-and-llm-jailbreak-and-prompt-injection.md) — watch before working this chapter's exercises.

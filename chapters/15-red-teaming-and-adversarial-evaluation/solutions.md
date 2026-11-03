@@ -177,3 +177,4 @@ disagreement between a lecturer's framing and an exercise's rubric as
 a finding to note in your solution.
 
 - **DeepMind course**, [part-02-07-alignment-stress-tests](../../courses/google-deepmind-agi-safety/part-02-07-alignment-stress-tests.md) — watch before working the adaptive-attack exercises.
+- **CampusX**, [m3-06-red-teaming-our-rag-application](../../courses/campusx-ai-security-guardrails/m3-06-red-teaming-our-rag-application.md) — watch before working this chapter's exercises.

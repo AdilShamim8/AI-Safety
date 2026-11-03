@@ -165,3 +165,4 @@ a finding to note in your solution.
 
 - **Safeshield**, [module-06-privacy-data-protection](../../courses/safeshield-governance/module-06-privacy-data-protection.md) — watch before working the provenance exercises.
 - **DataCamp**, [ch02-09-secure-development-practices](../../courses/datacamp-ai-security-risk/ch02-09-secure-development-practices.md) — watch before the provenance exercises — the four practices are the defense menu the exercises choose from.
+- **CampusX**, [m3-02-securing-vector-database-pii-leakage](../../courses/campusx-ai-security-guardrails/m3-02-securing-vector-database-pii-leakage.md) — watch before working this chapter's exercises.

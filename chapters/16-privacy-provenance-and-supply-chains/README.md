@@ -380,6 +380,7 @@ chapter is a finding to record, not a problem to resolve.
 | [ch02-05-external-risks-in-ai](../../courses/datacamp-ai-security-risk/ch02-05-external-risks-in-ai.md) | DataCamp AI Security & RM | model inversion and supply-chain attacks by name — this chapter's subjects at beginner level |
 | [ch02-09-secure-development-practices](../../courses/datacamp-ai-security-risk/ch02-09-secure-development-practices.md) | DataCamp AI Security & RM | the four data-protection practices (provenance, validation, minimization, encryption/anonymization) — this chapter's practice menu in plain register |
 | [ch03-13-ai-security-for-the-future](../../courses/datacamp-ai-security-risk/ch03-13-ai-security-for-the-future.md) | DataCamp AI Security & RM | synthetic data as an emerging trend with its integrity challenges |
+| [m3-02-securing-vector-database-pii-leakage](../../courses/campusx-ai-security-guardrails/m3-02-securing-vector-database-pii-leakage.md) | CampusX AI Security & Guardrails | the vector-store masking layer — the embedding store treated as the PII boundary |
 
 ---
 

@@ -385,6 +385,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [lecture-02-ai-fundamentals](../../courses/cais-ethics-society/lecture-02-ai-fundamentals.md) | CAIS Ethics & Society | the correlational/opaque/brittle properties across modalities |
 | [module-04-transparency-explainability](../../courses/safeshield-governance/module-04-transparency-explainability.md) | Safeshield Governance | disclosure obligations for systems users cannot inspect |
+| [m1-02-why-ai-security-practical-landscape](../../courses/campusx-ai-security-guardrails/m1-02-why-ai-security-practical-landscape.md) | CampusX AI Security & Guardrails | images, files, and non-text inputs as attack paths text-only defenses miss |
 
 ---
 

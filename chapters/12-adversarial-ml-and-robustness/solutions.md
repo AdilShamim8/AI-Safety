@@ -227,3 +227,4 @@ a finding to note in your solution.
 
 - **CS 2881**, [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) — watch before working the attack-budget exercises.
 - **DataCamp**, [ch02-06-types-of-external-risks](../../courses/datacamp-ai-security-risk/ch02-06-types-of-external-risks.md) — watch before the attack-surface exercises — the two-axis classification is the taxonomy the budget exercises assume.
+- **CampusX**, [m2-02-adversarial-attacks-and-types](../../courses/campusx-ai-security-guardrails/m2-02-adversarial-attacks-and-types.md) — watch before working this chapter's exercises.

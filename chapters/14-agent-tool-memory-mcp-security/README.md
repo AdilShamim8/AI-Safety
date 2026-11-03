@@ -700,6 +700,7 @@ chapter is a finding to record, not a problem to resolve.
 |---|---|---|
 | [part-02-06-safer-design-patterns](../../courses/google-deepmind-agi-safety/part-02-06-safer-design-patterns.md) | DeepMind AGI Safety | architecture as a safety decision — the CaMeL lineage |
 | [lecture-03-adversarial-robustness](../../courses/boaz-barak-cs2881/lecture-03-adversarial-robustness.md) | Harvard CS 2881 | the agent-framework injection surface |
+| [m4-01-threat-modelling-our-agentic-application](../../courses/campusx-ai-security-guardrails/m4-01-threat-modelling-our-agentic-application.md) | CampusX AI Security & Guardrails | the doctor-booking agent with tools, MCP booking, shared memory, and no login — the wrong-answer-versus-wrong-action distinction |
 
 ---
 
