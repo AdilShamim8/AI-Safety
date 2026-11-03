@@ -29,6 +29,10 @@ Security information and event management systems analyze real-time security eve
 
 The video is careful: the same tools raise ethical and accountability questions. Accountability for AI in security is hard — when it is difficult to understand how a system makes decisions, it is hard to know who is responsible for them. And the ethics can cut against the tool: facial recognition in surveillance can produce unfair results for specific groups and raise privacy concerns, so benefits must be weighed against drawbacks. Conclusion: AI in security must be adopted carefully — know and mitigate the related risks before introducing it.
 
+## Worked example (beginner walk-through)
+
+A mid-size bank wants machine help against wire fraud. Match by object, not by vendor. The object is *events* — thousands of transfers per day, each a record to correlate — so the first family is **SIEM**: it ingests the event stream and flags anomalies, like transfers to rarely used accounts in high-risk countries at unusual hours. Add **AI** and the SIEM learns from past fraud attempts: it can score each transfer in real time, faster than manual review, and hand the top suspects to a human investigator. If instead the bank's pain were *workflows* — analysts copy-pasting between five tools — the answer would be **SOAR**. If it were *behavior* — spotting a compromised account by how it acts — **UEBA**. If it were *adversary intelligence* — who attacks banks like this, and why — a **TIP**. The course's bank example is the SIEM path; your job in the exercise is to hear which object the stem describes and name the family.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 12](../../chapters/12-adversarial-ml-and-robustness/README.md) — the robustness side of detection under adversarial pressure.
