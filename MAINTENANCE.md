@@ -276,3 +276,7 @@ limitations.
 ### The CampusX worked-example layer (2026-11-03)
 
 The 14 practitioner walk-throughs were applied note by note through the idempotent applier (scripts/apply_campusx_example.py); their content lives in three modules beside the generator, so the layer regenerates deterministically. No external URL was added; the register basis is unchanged from rotation 6.
+
+### The build-block layer (2026-11-03)
+
+The fourteen chapter build blocks and the two project blocks were written directly into the chapter and project READMEs (the watching-companions rows carry the pairings; the build blocks carry the relationship in prose). No generated artifact is involved; the register basis is unchanged.
