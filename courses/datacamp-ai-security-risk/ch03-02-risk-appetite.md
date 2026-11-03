@@ -17,6 +17,10 @@ Industry, financial strength, strategic goals, and risk management capabilities 
 
 The graded insight: neither end of the spectrum is 'more correct' — the position follows from the organization's circumstances, and the exercise scores consistency between profile and position. The repo's glossary row on risk appetite is the same claim in expert register.
 
+## Worked example (beginner walk-through)
+
+Two organizations, one question. *The startup:* growth is the strategy, capital is thin, risk management is one person — it accepts more risk because its circumstances push it there, and the video says so plainly. *The bank:* strong finances and real risk-management capability, but the strategy is trustworthiness — so it accepts less risk, not because it is more virtuous but because its determinants point that way. The four determinants to cite in every answer: industry, financial strength, strategic goals, and risk management capabilities. The graded insight is that appetite is a *position, not a virtue* — neither end is more correct, and the exercise scores consistency between the profile and the position. [Ch. 23](../../chapters/23-governance-and-standards/README.md) is where the position gets written down as an instrument.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 23](../../chapters/23-governance-and-standards/README.md) — risk appetite as a governance instrument.
