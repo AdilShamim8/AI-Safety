@@ -21,6 +21,10 @@ The three structural reasons restated as the challenge list: outputs are non-det
 
 The lesson's closing job: naming the challenges precisely enough that the next lesson (adversarial attacks and types) and the one after (the threat-modelling framework) have something to organize. This repository's Ch. 13 is the chapter-length version of the same ground.
 
+## Worked example (practitioner walk-through)
+
+Define AI security for your own application in one sentence, then test the sentence. Bad sentence: "the model is aligned, so the app is safe" — it covers one component of six. Better: "every channel into and out of the model is guarded, and every component is priced by capability." Test it against the challenge list: outputs non-deterministic (does any layer check per-answer?), inputs natural language (does any gate read the query?), connected to tools and data (does the diagram exist?). The course's ten-minute job is to get you to the second sentence; the framework lesson then turns the sentence into a procedure.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 13](../../chapters/13-llm-application-security/README.md) — the application-security chapter at full depth.
