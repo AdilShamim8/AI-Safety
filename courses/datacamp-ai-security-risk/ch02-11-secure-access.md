@@ -17,6 +17,10 @@ The video's rule: limit who can interact with the system, and allow only trusted
 
 Access is granted by role and verification, not by convenience: any stem where access is granted because someone asked, is in a hurry, or is senior is the wrong answer. The repo's phrase: authorization follows verification; the course's phrase: trusted and verified — same rule, different register.
 
+## Worked example (beginner walk-through)
+
+One question, two sides. *Who may read?* — analysts, auditors, the monitoring system: read access follows role. *Who may modify?* — the model, its weights, its training data: write access follows verification, and this is the security-critical side, because every external attack group that targets learning or data is looking for a write path. The exercise's stems grant access because someone asked, is in a hurry, or is senior — each is the marked-wrong answer. The principle in one line, the video's own: only trusted, verified individuals or entities may modify the model or its data; authorization follows verification, never convenience. [Ch. 14](../../chapters/14-agent-tool-memory-mcp-security/README.md) is where the same rule meets AI agents that hold tools.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 14](../../chapters/14-agent-tool-memory-mcp-security/README.md) — access control for AI systems with tools.
