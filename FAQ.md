@@ -200,3 +200,14 @@ catalog, the test suite — and fails loudly (via the count-drift
 tests) whenever a pinned surface drifts. If you see numbers move
 after a pull, the instruments are working; the CHANGELOG records
 what moved and why.
+
+**How can you write notes for a paid course you did not buy?** The
+same way this repository treats any paywalled source: from the
+public page, honestly. The CampusX course page is public and carries
+the full description and curriculum; the notes ground in that
+published description (the announced scope), the register records the
+page-inspected access level with the platform's own TENTATIVE
+marking, the one lesson listed with duration 0 is carried as
+announced-not-published in its note, and nothing behind the paywall
+is reproduced anywhere. See [the honesty ledger](courses/honesty-ledger.md)
+for the full record.
