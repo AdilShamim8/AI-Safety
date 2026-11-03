@@ -2866,3 +2866,86 @@ claims:
   counterevidence: none observed this session; the public catalog page remains reachable
     without an account and carries the full lesson structure
   date: 2026-11-03
+- id: CLM-0213
+  claim: 'The CampusX course "AI Security & Guardrails" (learnwith.campusx.in) lists
+    a four-module outline marked TENTATIVE by the platform itself, with 14 lessons
+    of which 13 carry published durations totaling 330.47 minutes and one (module
+    4 lesson 1) is listed with duration 0 — announced, not yet published.'
+  source: SRC-CURR-016
+  section_or_page: course page curriculum data (preview and course URLs, both fetched)
+  evidence_strength: direct page inspection, two fetch sessions 2026-11-03
+  assumptions: the platform's curriculum data reflects the course's current structure;
+    the TENTATIVE marking is the platform's own label
+  counterevidence: none observed this session; both fetches returned the same curriculum
+    items and durations
+  date: 2026-11-03
+- id: CLM-0214
+  claim: 'The course is paid — priced at Rs. 1999 against an MRP of Rs. 2499 with
+    GST-inclusive pricing, a 1095-day validity, and a sales count of 24 — taught
+    in Hinglish, with the instructor credited on the page as CampusX.'
+  source: SRC-CURR-016
+  section_or_page: course page pricing block and instructor credit
+  evidence_strength: direct page inspection of the rendered pricing and metadata
+  assumptions: the rendered pricing reflects the current offer; sales count is the
+    platform's own counter
+  counterevidence: country pricing is keyed to IN in the page data; other markets
+    may differ and none were inspected
+  date: 2026-11-03
+- id: CLM-0215
+  claim: 'The published description names the course''s method (a step-by-step threat
+    modelling framework applied with Data Flow Diagrams, trust boundaries, and the
+    capability lens) and both case studies: a NovaBank RAG application and a doctor-booking
+    agent (tool search, MCP booking, shared memory, no login).'
+  source: SRC-CURR-016
+  section_or_page: course page description block
+  evidence_strength: direct page inspection, full description text
+  assumptions: the description reflects the course's actual content; it is treated
+    as the announced scope
+  counterevidence: none observed this session; the outline being TENTATIVE is carried
+    as the standing caveat on all description-derived claims
+  date: 2026-11-03
+- id: CLM-0216
+  claim: 'The published description names the RAG case study''s five security layers
+    — PII detection and masking; pre-retrieval metadata filtering (authentication
+    and authorization at production level); input guardrails against jailbreaks;
+    delimiters and a system prompt that treats retrieved documents as data; and
+    output guardrails built with NVIDIA NeMo Guardrails — plus Promptfoo red-teaming
+    at the close.'
+  source: SRC-CURR-016
+  section_or_page: course page description block
+  evidence_strength: direct page inspection, full description text
+  assumptions: the named tools (NVIDIA NeMo Guardrails, Promptfoo) are used as the
+    description states; tool usage was not observed behind the paywall
+  counterevidence: none observed this session
+  date: 2026-11-03
+- id: CLM-0217
+  claim: 'The published description names the agent case study''s four security
+    layers — a jailbreak gate (a separate guard model reading every message with
+    recent turns inside delimiters, blocking authority claims, other people''s data,
+    and rule-override attempts); a guard model on every tool and MCP result; memory
+    protection with custom instructions and a judge on every write; and output
+    guardrails against the platform''s policies (fee cap, no promised cures, no
+    links to other sites, no other patients'' data).'
+  source: SRC-CURR-016
+  section_or_page: course page description block
+  evidence_strength: direct page inspection, full description text
+  assumptions: the layers as described are what the course builds; the module 4
+    videos were not available to check against (one lesson still unpublished)
+  counterevidence: none observed this session; the TENTATIVE outline is the standing
+    caveat
+  date: 2026-11-03
+- id: CLM-0218
+  claim: 'The description states the course''s central security claim — that write
+    and delete capabilities make an agent more dangerous than a RAG: an attack no
+    longer just changes an answer, it makes the agent take real actions, such as
+    leaking patients'' details, steering patients to one doctor, or cancelling
+    bookings.'
+  source: SRC-CURR-016
+  section_or_page: course page description block
+  evidence_strength: direct page inspection, full description text
+  assumptions: the claim is the course''s stated position, not an independently
+    demonstrated result; the repository carries it as the course''s framing of the
+    capability lens
+  counterevidence: none observed this session; the repository''s Ch. 14 makes the
+    same argument from the control side
+  date: 2026-11-03

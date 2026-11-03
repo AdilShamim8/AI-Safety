@@ -5439,3 +5439,32 @@ sources:
     video''s announced scope; no video was streamed by this repository, no spoken content
     is transcribed or quoted, and no interactive exercise content is reproduced.
   license: standard DataCamp terms of service
+- id: SRC-CURR-016
+  title: 'AI Security & Guardrails (CampusX course page)'
+  authors_or_organization: 'CampusX (Dhaval Patel''s channel brand); instructor credited
+    on the page as CampusX'
+  url: https://learnwith.campusx.in/courses/AI-Security--Guardrails-6ad0c6fb17f468ce3c894053
+  source_type: course
+  publication_date: null
+  version: course page as rendered 2026-11-03 (title, instructor, language, pricing
+    with MRP, validity, sales count, the full published description, and the complete
+    curriculum data with per-lesson durations; outline marked TENTATIVE by the platform)
+  accessed_on: '2026-11-03'
+  access_level: page-inspected
+  evidence_class: pedagogical
+  peer_review_status: not peer reviewed (commercial practitioner course platform)
+  supports:
+  - 'courses/campusx-ai-security-guardrails/ (the sixth course companion: the four-module
+    outline, the two case studies and every named security layer as stated in the
+    published description, and the per-lesson durations)'
+  limitations: The page is public and was fetched and read in full without a login
+    on 2026-11-03; the same URL was also fetched as a signed-out preview page. The
+    platform marks the course outline TENTATIVE; one of the 14 lessons (module 4
+    lesson 1) is listed with duration 0 — announced, not yet published — and that
+    status is carried in the companion notes. The lesson videos sit behind the paywall
+    (Rs. 1999 against an MRP of Rs. 2499, 1095-day validity); no video was watched
+    by this repository and nothing behind the paywall is reproduced. The publication
+    date is not stated on the page and is recorded as null, never inferred. The
+    instructor is credited on the page as CampusX; no individual byline appears,
+    and none is invented here.
+  license: standard Graphy platform terms of service
