@@ -28,6 +28,9 @@ read against [Cursor](../research/notes/incidents/06-cursor-invented-policy.md),
 [Galactica](../research/notes/incidents/12-galactica-plausible-nonsense.md).
 
 ## Sequence
+
+Beginner note (2026-11-03): the DataCamp model-risk and assessment chapters are the graded on-ramp to evaluation work — see [the DataCamp companion](../courses/datacamp-ai-security-risk/README.md).
+
 [**Track your progress:**](progress/evaluations-and-assurance.md) the engineer route's expanded milestone checklist (M0–M5, price tags on every control).
 
 
