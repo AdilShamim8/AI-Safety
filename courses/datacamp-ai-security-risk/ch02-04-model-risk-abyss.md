@@ -17,6 +17,10 @@ The game serves narrative clues with distractors (deadlines, opinions, vendor pr
 
 The game's title names the real failure: models sink in the gap between deployment and the next audit. Every winning move in the game is some version of closing that gap — a baseline taken at launch, a threshold with an owner, a re-check cadence.
 
+## Worked example (beginner walk-through)
+
+One round, played slowly. The story: "Six months after launch, the fraud model's precision slipped from 91 to 84. The team retrained it twice; it did not help. Meanwhile a competitor launched a new product line that changed who shops when." First, cut the story noise (deadlines, opinions, the retraining attempts) and locate the error: it decayed over time in production — that is *drift*, and the retraining failed because the world changed again each time. The winning move in the game is closing the gap the title names: the abyss is the period between deployment and the next audit, so the fix is a baseline at launch, thresholds with an owner, and a re-check cadence — not another retrain. The game grades the diagnosis, and the diagnosis is the two-step: where does the error live, then which risk is it.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 17](../../chapters/17-distribution-shift-and-deployment-reliability/README.md) — the deployment-reliability treatment.
