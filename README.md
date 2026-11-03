@@ -7,9 +7,9 @@ or subscription is required for the core path.
 
 **Status (honest, updated 2026-10-28):** the build is complete at its target
 scope and deepened — 24 of 24 chapters, 10 of 10 projects implemented
-(deterministic, offline, stdlib-first), 47 verified dataset cards, 261
-registered sources, 206 registered claims, 74 paper notes + 12 comparisons
-+ 14 incident reviews, and a 641-test suite green in CI. Every project marks
+(deterministic, offline, stdlib-first), 47 verified dataset cards, 263
+registered sources, 212 registered claims, 74 paper notes + 12 comparisons
++ 14 incident reviews, and a 644-test suite green in CI. Every project marks
 its honest not-executed tiers where compute was out of scope. Live counters
 and per-unit evidence: [`planning/STATUS.md`](planning/STATUS.md). The whole
 build is also navigable as a generated dashboard: **[index.html](index.html)**
@@ -30,7 +30,7 @@ build is also navigable as a generated dashboard: **[index.html](index.html)**
    [evaluations and assurance](roadmaps/evaluations-and-assurance.md),
    or [audit-only](roadmaps/audit-only.md) — then make the first 90
    days concrete: [roadmaps/first-90-days.md](roadmaps/first-90-days.md).
-4. **Run it**: `uv sync && uv run pytest` — 641 deterministic tests,
+4. **Run it**: `uv sync && uv run pytest` — 644 deterministic tests,
    offline, no GPUs, no API keys.
 5. **Wonder about anything**: [FAQ.md](FAQ.md),
    [AWESOME.md](AWESOME.md) (the annotated source map),
@@ -101,12 +101,12 @@ arithmetic: [ROADMAP.md](ROADMAP.md).
 | `roadmaps/` | Route pages, study schedules, careers index with the progress ladder | **complete** |
 | `chapters/` | 24 chapter units (the course itself) | **complete** (24/24) — readings verified, solutions with rubrics |
 | `projects/` | 10 runnable research learning units | **implemented** (10/10) — deterministic, pinned numbers, honest tiers |
-| `research/` | Method, article map, source + claims registers, notes (74 paper + 12 comparison + 14 incident reviews) | **complete** — 261 sources / 206 claims, audit-clean |
+| `research/` | Method, article map, source + claims registers, notes (74 paper + 12 comparison + 14 incident reviews) | **complete** — 263 sources / 212 claims, audit-clean |
 | `research/ai-researcher-from-scratch/` | The from-scratch researcher track (stdlib-only modules) | **complete** (7/7) — 174 tests |
 | `datasets/` | 47 verified real-world dataset cards + machine-readable catalog | **complete** — queue empty |
 | `planning/` | Build plan, status, content matrix, ADRs | **exists** — the build's durable record |
 | `templates/` | Chapter, paper-note, experiment-report, threat-model, dataset-card, safety-case, research-proposal, incident-review templates | **complete** (8; the DataCamp layer adds two generated crosswalk types: per-lesson chapter maps and course-to-glossary maps) |
-| `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 641-test suite (401 package + 174 from-scratch + 66 repo-instrument) |
+| `src/ai_safety_course/` | Project packages (evaluation, reward_spec, calibration, pref_audit, w2s_audit, patch_audit, agent_guard, control_protocol, shift_audit, assurance) + from_scratch | **implemented** — 644-test suite (401 package + 174 from-scratch + 69 repo-instrument) |
 | `scripts/` | Validator, missing-values audit, link verifier, dashboard generator | **exists** — all run in CI |
 
 ## Getting started
