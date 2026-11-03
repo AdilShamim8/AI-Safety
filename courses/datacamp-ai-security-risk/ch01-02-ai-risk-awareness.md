@@ -21,6 +21,10 @@ The two confusions the exercise probes: data poisoning versus adversarial attack
 
 Re-state each risk in one sentence naming the phase: 'bias — the training data skews the learned behavior across groups'; 'poisoning — an attacker corrupts the training data'; 'adversarial — an attacker crafts run-time inputs'; 'hallucination — the model fabricates and asserts'; 'data exposure — the system leaks protected information'. If your sentence cannot name the phase, the exercise will find you.
 
+## Worked example (beginner walk-through)
+
+Three statements, sorted by phase. *Statement A:* "the model began recommending a product no genuine reviewer liked." Something in the training data was planted — data poisoning. *Statement B:* "the model confidently described a refund procedure that does not exist." No attacker needed; the model fabricated and asserted — hallucination. *Statement C:* "a carefully worded message made the assistant ignore its own rules." The model itself is unchanged; the input was crafted at run time — adversarial. The drill's trap is that all three end in "the bot did something wrong." The discriminating question is always the same one: *when and where did the fault enter?* Training data, generation, or run-time input. Answer that, and the family names itself — the same discipline [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) builds into threat hypotheses.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 01](../../chapters/01-risk-models-and-research-epistemics/README.md) — the threat-hypothesis form forces the same mechanism-first discipline.
