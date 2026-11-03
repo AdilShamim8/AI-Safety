@@ -151,3 +151,8 @@ fixed and now pinned by a standing test — and the corpus citable
 as version 2.0.0. What did NOT change: the not-executed tiers stay
 not-executed in writing, and the token the owner supplied for
 pushes stays to-be-rotated — both recorded in planning/STATUS.md.
+
+## Beginner on-ramp —
+
+Beginner on-ramp (2026-11-03): the DataCamp course (~1 hour, graded, no prerequisites) is the fastest first step on any route — pairing in [the DataCamp companion](courses/datacamp-ai-security-risk/README.md).
+

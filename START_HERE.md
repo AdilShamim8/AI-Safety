@@ -124,3 +124,8 @@ companion-noted end to end: 57 verified videos, 61 notes, study
 plans, self-assessments, and reading maps, with watching companions
 in every chapter and watching pointers in every solutions file.
 Start from [courses/README.md](courses/README.md).
+
+## If you are starting from zero
+
+If you are starting from zero: the DataCamp *AI Security and Risk Management* course (44 graded lessons, about an hour, no prerequisites) is the library's on-ramp — every concept graded as it lands. Companion [here](courses/datacamp-ai-security-risk/README.md); the pairing is in [the study plans](courses/study-plans.md).
+
