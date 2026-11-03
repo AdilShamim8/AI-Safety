@@ -372,3 +372,12 @@ chapter is a finding to record, not a problem to resolve.
 ---
 
 **Next:** [Chapter 22 — Safety engineering and assurance →](../22-safety-engineering-and-assurance/README.md)
+
+## The CampusX build of this chapter (2026-11-03)
+
+This chapter treats security as sociotechnical; the course agrees
+from the build side — its closing argument is that the repeatability
+of the framework, not any single layer, is the product, which is a
+claim about how organizations build, not only how engineers do. The
+construction-discipline paragraph is in the
+[pedagogy note](../../courses/campusx-ai-security-guardrails/pedagogy.md).
