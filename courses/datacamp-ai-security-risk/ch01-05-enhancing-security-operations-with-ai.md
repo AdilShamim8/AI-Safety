@@ -21,6 +21,10 @@ All four families say 'analyze' and 'alert', so the exercise discriminates on th
 
 The wire-transfer case in the video is the pattern to re-use: a real-time event stream, a learned model of past attempts, and a human investigation triggered the moment the model flags. Every correct answer in this exercise is some rotation of that pattern with the object swapped.
 
+## Worked example (beginner walk-through)
+
+Three needs, three families. *Need 1:* "alert me when an employee's account starts behaving like someone else's" — the object is behavior over time: **UEBA**. *Need 2:* "tell me which tactics the group targeting our sector is using next" — the object is adversary intelligence: a **TIP**. *Need 3:* "when an alert fires, automatically open a ticket, isolate the host, and page the on-call analyst" — the object is the workflow itself: **SOAR**. The distractor answers all sound plausible because every family says "analyze" and "alert." The tie-breaker is the *object of the analysis*: behavior, adversary, or workflow. If a stem describes what is being studied rather than which product category it belongs to, you already have your answer.
+
 ## Through-lines to this repository's chapters
 
 - [Ch. 08](../../chapters/08-ai-control-and-monitoring/README.md) — monitoring design under adversary pressure.
