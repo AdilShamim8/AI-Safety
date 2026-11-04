@@ -1,8 +1,7 @@
 # Comparison note 01 — RLHF vs DPO vs RLAIF: three ways to buy the same thing
 
-> Comparison notes: 1 of 5 planned (the others: behavioral vs mechanistic
-> evidence; alignment vs control; prompt defenses vs authorization
-> boundaries; benchmark scores vs deployment assurance). Sources:
+> Comparison notes: the first of what became a twelve-note set (all
+> twelve now exist; see research/notes/README.md for the index). Sources:
 > SRC-PAPER-009 (InstructGPT), SRC-PAPER-010 (DPO), SRC-PAPER-011
 > (Constitutional AI), SRC-PAPER-012 (Ziegler et al.) — all
 > **abstract-read** in the register, so this note compares at exactly
