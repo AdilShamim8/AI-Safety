@@ -221,7 +221,10 @@ any drift found is recorded here, not silently fixed.
 ### Re-check rotation 5b (2026-10-27) — the full-register sweep
 
 `verify_links.py --all` over every register entry (261 sources at
-run time). The arXiv spine title-matched through the API; YouTube
+run time — a dated snapshot: the register has since grown to 264 with
+the DataCamp and CampusX courses; the figure records what the sweep
+covered that day, not the current total). The arXiv spine title-matched
+through the API; YouTube
 entries through oEmbed; the rest through server-side GET with title
 checks. Bot-blocked hosts (the standing three plus any new) are
 reported live-not-dead with register corroboration; the one
@@ -234,7 +237,7 @@ recorded death. Results recorded below at run time.
 
 The user's closing request ("double-check everything") earned a sixth
 full-register pass after the beginner-organization fixes landed:
-`verify_links.py --all` over all 261 sources, exit 0. The YouTube
+`verify_links.py --all` over all 261 sources (that day's snapshot — see rotation 5b's note), exit 0. The YouTube
 channel pages (SRC-VIDEO-013..018) report LIVE-NO-TITLE as in every
 rotation — JS-rendered pages the register corroborates at page level;
 the standing bot-blocked hosts behave identically to rotation 5b; the
