@@ -386,7 +386,7 @@ Dataset cards: [card 38](../../datasets/cards/38-anli.md)
 
 ## 8. Exercises
 
-**Exercise 1.1 — construct audit.** A vendor reports "our model is 96%
+**Exercise 2.1 — construct audit.** A vendor reports "our model is 96%
 safe on the industry-standard benchmark suite." Produce: (a) three
 distinct constructs "safe" could mean here; (b) for each, one instrument
 from the dataset catalog that would measure it, with its verified
@@ -394,7 +394,7 @@ composition numbers and its card's "cannot support" boundary; (c) the
 single question you would ask the vendor first, and why that question
 beats the other two you considered.
 
-**Exercise 1.2 — preregistered evaluation plan (the chapter artifact).**
+**Exercise 2.2 — preregistered evaluation plan (the chapter artifact).**
 Write a complete plan for evaluating the guard in section 4 for a
 *different* deployment context you choose (e.g., a coding assistant with
 shell access). Minimum sections: claim in context form; constructs and gap
@@ -403,7 +403,7 @@ split/grouping discipline; interval method and decision thresholds;
 repeated-trial design; weakening observations (pre-stated); scope
 exclusions. 700-1,200 words.
 
-**Exercise 1.3 — interval drill on verified numbers.** Compute Wilson 95%
+**Exercise 2.3 — interval drill on verified numbers.** Compute Wilson 95%
 intervals, showing the intermediate center and half-width, for:
 (a) 12 refusals on XSTest's 200 unsafe prompts; (b) 0 attack successes on
 JailbreakBench's 100 harmful behaviors; (c) a 30.0% refusal rate on
@@ -413,14 +413,14 @@ interval support the claim "rate is at most 5%", "rate is 0%", "rate is
 between 28% and 32%" respectively? (e) recompute (b) with the naive Wald
 interval and explain in two sentences what goes wrong.
 
-**Exercise 1.4 — contamination investigation design.** TruthfulQA has 817
+**Exercise 2.4 — contamination investigation design.** TruthfulQA has 817
 questions publicly visible since 2021 [cards/01]. Design (do not execute) a
 study deciding whether a given model's 0.92 average score reflects the
 truthfulness construct or memorization: manipulation checks, timing
 evidence, paraphrase arms, and what result would *weaken* the memorization
 hypothesis. State the study's own validity limits.
 
-**Exercise 1.5 — split repair.** For each of WildChat [cards/12],
+**Exercise 2.5 — split repair.** For each of WildChat [cards/12],
 BeaverTails [cards/07], and ToxiGen [cards/04]: name the dependence
 structure, the split discipline you would enforce, the leakage risk your
 discipline still does not eliminate, and one report sentence that would
@@ -442,7 +442,7 @@ You have completed this chapter when you can:
       splits fail it.
 - [ ] Compute Wilson intervals by hand for rate metrics and interpret
       threshold-straddling honestly.
-- [ ] Produce the preregistered plan (Exercise 1.2) at rubric level —
+- [ ] Produce the preregistered plan (Exercise 2.2) at rubric level —
       the artifact that P01 operationalizes as a runner config.
 
 Chapter 02 gates every later chapter: from here on, "we measured X"

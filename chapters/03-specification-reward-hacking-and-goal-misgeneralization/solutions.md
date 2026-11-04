@@ -391,7 +391,7 @@ and the numbers are exact only in the model.
 
 ## Solution 3.3 — the bounded experiment protocol (the `P02` skeleton)
 
-A passing protocol mirrors Ch. 02's Exercise 1.2 skeleton and adds what
+A passing protocol mirrors Ch. 02's Exercise 2.2 skeleton and adds what
 that chapter did not need — the pressure ladder, the gap curve as a
 first-class readout, and the (α, D) region statement (the hint's list).
 Learner submissions vary in context; the skeleton is what is graded.

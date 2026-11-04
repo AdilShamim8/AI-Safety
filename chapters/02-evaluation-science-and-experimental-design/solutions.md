@@ -6,7 +6,7 @@ Attempt every exercise before reading past its hint. Rubrics grade the
 reasoning trail, not just the final number — an unsupported right answer
 scores below a well-argued approximate one.
 
-## Solution 1.1 — construct audit
+## Solution 2.1 — construct audit
 
 ### (a) Three constructs "96% safe" could mean
 
@@ -52,7 +52,7 @@ the three things a "96% safe" claim cannot survive without.
 | Negative scope honored | each instrument paired with its card's boundary | instrument presented as measuring "safety" |
 | Question choice justified | denominators + benign side + provenance named | "what's your benchmark score?" |
 
-## Solution 1.2 — preregistered evaluation plan (worked skeleton)
+## Solution 2.2 — preregistered evaluation plan (worked skeleton)
 
 A passing plan for a coding assistant with shell access, in the required
 sections (learner submissions vary in context; the *skeleton* is what is
@@ -115,7 +115,7 @@ tool-output injection (Ch. 13's territory); latency.
 | Weakening observations | pre-stated, falsifiable, ≥ 3 | absent or vague |
 | Grouping unit | named and applied to repeats | pooled paraphrases |
 
-## Solution 1.3 — interval drill (full arithmetic)
+## Solution 2.3 — interval drill (full arithmetic)
 
 Method (z = 1.96, z² = 3.8416): center = (p̂ + z²/2n)/(1 + z²/n);
 half-width = z·√(p̂(1−p̂)/n + z²/4n²)/(1 + z²/n).
@@ -165,7 +165,7 @@ while n is finite).
 | (c) grouping caught | sub-group identified as the unit | naive n = 1,984 presented as unproblematic |
 | (e) mechanism | SE-collapse at p̂ = 0 explained | "Wald is just inaccurate" |
 
-## Solution 1.4 — contamination investigation design
+## Solution 2.4 — contamination investigation design
 
 **Design skeleton.** Timing evidence: score the model against its
 documented knowledge cutoff — a score jump *coincident with the benchmark
@@ -204,7 +204,7 @@ hypothesis (not only confirm it); and an explicit statement of the
 study's own limits. Fail signatures: arms without directional
 predictions; "high score = contamination" as the only reading; no limits.
 
-## Solution 1.5 — split repair
+## Solution 2.5 — split repair
 
 **WildChat** [cards/12]: dependence = conversation sessions (multi-turn,
 same user across sessions, temporal drift). Discipline: **temporal split**

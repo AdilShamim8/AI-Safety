@@ -490,7 +490,7 @@ Full worked solutions with assessor rubrics are in
   cumulative masses, then exponentiate. For (b), the vacancy principle: after
   the patch, which type is top-ranked, and what does a "mutant of B" need to
   beat it? Keep E's true value consistent with B's on the shift arm.
-- **3.3:** mirror Ch. 02's Exercise 1.2 skeleton, then add what Ch. 02 did not
+- **3.3:** mirror Ch. 02's Exercise 2.2 skeleton, then add what Ch. 02 did not
   need: the pressure ladder, the gap curve as a first-class readout, and the
   statement of the (α, D) region the claim covers.
 
