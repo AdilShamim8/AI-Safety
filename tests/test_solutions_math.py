@@ -8,7 +8,10 @@ every number the text states in a machine-checkable shape:
   - division chains "a/b = c" (percent or plain, any precision the
     text uses, decimal operands included);
   - products "a × b = c" (comma thousands, percent-context cells);
-  - the Wilson-interval arithmetic chains "x = expr = v".
+  - the Wilson-interval arithmetic chains "x = expr = v";
+  - trade-off table rows "(S,U)→(S,U) | ΔU | ΔS | ΔU/ΔS" (S13-P03);
+  - binomial cells "k/n = p% [lo, hi]" whose interval is recomputed
+    as a true Wilson 95% interval from k and n (S13-P03).
 
 It found one real error on first run (ch05: 0.70 × 0.1492 stated as
 10.45% — the value is 10.44%), fixed in the same unit. Lines in
@@ -20,6 +23,7 @@ sqrt-chain rule where they appear in that shape.
 
 from __future__ import annotations
 
+import math
 import re
 from pathlib import Path
 
@@ -31,6 +35,21 @@ SOLUTIONS = sorted(REPO.glob("chapters/*/solutions.md"))
 DIVISION = re.compile(r"(\d+(?:\.\d+)?)/(\d+(?:\.\d+)?)\s*=\s*([\d.]+)%?")
 PRODUCT = re.compile(r"([\d.]+)\s*×\s*([\d.,]+)\s*=\s*([\d.,]+)")
 SQRT = re.compile(r"√\(([\d.]+)\)\s*=\s*([\d.]+)")
+DELTA_ROW = re.compile(
+    r"\((\d+),\s*(\d+)\)→\((\d+),\s*(\d+)\)\s*\|\s*(-?\d+)\s*\|\s*(-?\d+)\s*\|\s*\*{0,2}([\d.]+)\*{0,2}"
+)
+RATIO_CI = re.compile(r"(\d+)/(\d+)\s*=\s*([\d.]+)%\s*\[([\d.]+),\s*([\d.]+)\]")
+WILSON_INTERVAL = re.compile(r"Wilson 95% = \[([\d.]+)%?,\s*([\d.]+)%?\]")
+
+_Z = 1.959964  # the normal 97.5th percentile, three-decimal tradition
+
+
+def _wilson(k: int, n: int) -> tuple[float, float]:
+    p = k / n
+    denom = 1 + _Z * _Z / n
+    center = (p + _Z * _Z / (2 * n)) / denom
+    half = _Z * math.sqrt(p * (1 - p) / n + _Z * _Z / (4 * n * n)) / denom
+    return center - half, center + half
 
 
 def _num(s: str) -> float:
@@ -108,3 +127,54 @@ def test_the_ch05_false_rejection_mass_is_1044() -> None:
     assert "0.70 × 0.1492 = 10.44%" in text
     assert "(0.70% → 10.44%)" in text
     assert "10.45%" not in text
+
+
+@pytest.mark.parametrize("path", SOLUTIONS, ids=lambda p: p.parent.name[:2])
+def test_tradeoff_delta_rows(path: Path) -> None:
+    """The control/steering trade-off tables state each move's segment
+    endpoints, |ΔU|, |ΔS|, and the exchange ratio ΔU/ΔS. The stated
+    deltas must equal the coordinate differences (in absolute value —
+    the tables state magnitudes) and the ratio must equal |ΔU|/ΔS."""
+    text = path.read_text(encoding="utf-8")
+    for m in DELTA_ROW.finditer(text):
+        s1, u1, s2, u2 = (int(m.group(i)) for i in range(1, 5))
+        du_stated, ds_stated = int(m.group(5)), int(m.group(6))
+        ratio = float(m.group(7))
+        assert abs(s2 - s1) == abs(ds_stated) and abs(u1 - u2) == abs(du_stated), (
+            f"{path.parent.name}: {m.group(0)[:70]!r} — coordinate deltas say "
+            f"ΔS={s2-s1}, ΔU={u1-u2}"
+        )
+        if ds_stated == 0:
+            continue
+        real = abs(du_stated) / ds_stated
+        assert any(
+            abs(round(real, k) - ratio) < 10 ** -(k + 1) for k in (2, 3)
+        ), f"{path.parent.name}: {m.group(0)[:70]!r} — ratio is {real:.4f}"
+
+
+@pytest.mark.parametrize("path", SOLUTIONS, ids=lambda p: p.parent.name[:2])
+def test_binomial_cells_carry_true_wilson_intervals(path: Path) -> None:
+    """Every cell of the shape 'k/n = p% [lo, hi]' states a Wilson 95%
+    interval. Both bounds are recomputed from k and n; the point must
+    be the rounded proportion and the bounds must match the recomputed
+    Wilson interval at one decimal (18 such cells in ch11 alone; all
+    recomputed true on first run — pinned so that stays true)."""
+    text = path.read_text(encoding="utf-8")
+    for m in RATIO_CI.finditer(text):
+        k, n, p = int(m.group(1)), int(m.group(2)), float(m.group(3))
+        lo, hi = float(m.group(4)), float(m.group(5))
+        assert (
+            abs(round(k / n * 100, 1) - p) <= 0.051
+        ), f"{path.parent.name}: point {m.group(0)!r} — true {k/n*100:.2f}%"
+        wlo, whi = _wilson(k, n)
+        assert abs(round(wlo * 100, 1) - lo) <= 0.11 and abs(round(whi * 100, 1) - hi) <= 0.11, (
+            f"{path.parent.name}: {m.group(0)!r} — true Wilson " f"[{wlo*100:.2f}, {whi*100:.2f}]"
+        )
+
+
+@pytest.mark.parametrize("path", SOLUTIONS, ids=lambda p: p.parent.name[:2])
+def test_stated_wilson_intervals_are_ordered(path: Path) -> None:
+    text = path.read_text(encoding="utf-8")
+    for m in WILSON_INTERVAL.finditer(text):
+        lo, hi = float(m.group(1)), float(m.group(2))
+        assert lo < hi, f"{path.parent.name}: inverted interval {m.group(0)!r}"
