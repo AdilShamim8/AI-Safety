@@ -283,3 +283,45 @@ The 14 practitioner walk-throughs were applied note by note through the idempote
 ### The build-block layer (2026-11-03)
 
 The fourteen chapter build blocks and the two project blocks were written directly into the chapter and project READMEs (the watching-companions rows carry the pairings; the build blocks carry the relationship in prose). No generated artifact is involved; the register basis is unchanged.
+
+### Session 13 (2026-11-04) — the bug-hunt session: 31 units, commits 851 through 875
+
+The user's final-check report ("still bugs you did not fix") was taken
+as a re-diagnosis mandate, not a defense. Full re-audit across CI, the
+five local gates, the live page (console, interactions, anchors, dead
+links), and an axe pass found: the live page's two real defects were
+color-contrast (ink-3 at 2.8-3.3:1, 15 nodes) and heading-order (three
+h2→h4 skips because the group level was a styled div). Both fixed in
+P01; axe now reports zero violations.
+
+The deeper findings were data errors no prior session had a test for:
+ch05's false-rejection mass stated 10.45% (true 10.44); twelve course
+claims issued duplicate ids (CLM-0207..0218, colliding with paper
+claims) renumbered to CLM-0224..0235; chapter 02's exercises numbered
+in chapter 01's namespace; four dataset cards missing the honest-
+boundary section; SRC-PAPER-034's access_level field contradicting its
+own prose; SYLLABUS's projects column three cells stale; ROADMAP's
+route diagram missing P02; comparison-01's header still saying "1 of
+5 planned" with twelve on disk; and five stale count surfaces (FS
+track 174→176, p02 157→150, p03 98→87, p01 quickstart 78→876+, the
+content-matrix's 20/20-era notes section).
+
+Thirty units landed: P01 a11y, P02-P03 the solutions-math layers (74
+parametrized recomputations), P04 doc-count resync, P05 syllabus,
+P06 the glossary-ref grammar, P07 register-id uniqueness, P08 register
+supports-closure, P09 exercise alignment, P10 dataset cards, P11
+notes-closure, P12 the courses layer, P13 roadmaps arithmetic, P14
+the FS track, P15 the project-count surfaces, P16 built-page a11y
+structure, P17 planning matrix, P18 the chapter sweep, P19 AWESOME,
+P20 roadmap diagram, P21 z-convention agreement, P22 meta closures,
+P23 incidents, P24 comparisons, P25 ledger, P26 catalog, P27 the glossary columns pin, P28 FAQ, P29 course claims, P30 banner. Suite 832 to 922; every
+P30 banner. Suite 832→922; every
+count surface now recomputed from disk/collection on each CI run.
+
+P31 closed the session: CI had been red since P17 — the planning-
+layer test verifies STATUS rows against git objects, but the workflow
+cloned shallow (fetch-depth 1), so every pre-P17 sha failed cat-file
+on the runner while passing locally on full history. The checkout now
+fetches depth 0; the STATUS rows for all 31 units were appended in the
+same commit, and this record's own numbers were corrected (it first
+shipped saying 903→925 from a build line never re-checked).

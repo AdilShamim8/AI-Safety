@@ -1267,3 +1267,37 @@ The library page's "119 companion notes" was off by five: the real
 count is 114 notes + 5 pedagogy/study-plan pages (the session-10
 claim of 105 had folded the five analysis pages into the note count
 before the CampusX
+
+## Session 13 (2026-11-04) — the bug-hunt session
+
+| S13-P01 — live-page defects fixed (axe contrast + heading order) | b73fdd9 (pushed) | tests/ + docs |
+| S13-P02 — solutions-math verification layer I | 8247c58 (pushed) | tests/ + docs |
+| S13-P03 — solutions-math verification layer II | 66240dd (pushed) | tests/ + docs |
+| S13-P04 — doc-count resync discipline | adbf4e3 (pushed) | tests/ + docs |
+| S13-P05 — SYLLABUS attach-column staleness | aace2fc (pushed) | tests/ + docs |
+| S13-P06 — glossary chapter-mapping grammar | 41ee52d (pushed) | tests/ + docs |
+| S13-P07 — claims register duplicate-id renumbering | a2fa9b4 (pushed) | tests/ + docs |
+| S13-P08 — register supports closure | c865064 (pushed) | tests/ + docs |
+| S13-P09 — exercise alignment + ch02 renumbering | 7f11cb7 (pushed) | tests/ + docs |
+| S13-P10 — dataset cards boundary sections | 07e55af (pushed) | tests/ + docs |
+| S13-P11 — notes closure + SRC-034 access level | 8c6e5ae (pushed) | tests/ + docs |
+| S13-P12 — courses layer | 6886d78 (pushed) | tests/ + docs |
+| S13-P13 — roadmaps schedule arithmetic | 8400ab0 (pushed) | tests/ + docs |
+| S13-P14 — FS-track stale count | bb5d044 (pushed) | tests/ + docs |
+| S13-P15 — projects count surfaces | 0db8dd8 (pushed) | tests/ + docs |
+| S13-P16 — built-page a11y structure | b8b76eb (pushed) | tests/ + docs |
+| S13-P17 — planning matrix resync | 7cea0a5 (pushed) | tests/ + docs |
+| S13-P18 — chapters closure | 9b85b07 (pushed) | tests/ + docs |
+| S13-P19 — AWESOME live-link arithmetic | c836c61 (pushed) | tests/ + docs |
+| S13-P20 — ROADMAP diagram P02 | c2e7e00 (pushed) | tests/ + docs |
+| S13-P21 — z-convention agreement | 6b9bca3 (pushed) | tests/ + docs |
+| S13-P22 — CITATION/prerequisites/glossary parity | c365703 (pushed) | tests/ + docs |
+| S13-P23 — incidents template | ea6a33a (pushed) | tests/ + docs |
+| S13-P24 — comparison-01 header staleness | 79a1431 (pushed) | tests/ + docs |
+| S13-P25 — honesty ledger closure | b826760 (pushed) | tests/ + docs |
+| S13-P26 — catalog internal consistency | 5639277 (pushed) | tests/ + docs |
+| S13-P27 — glossary columns | d9c5905 (pushed) | tests/ + docs |
+| S13-P28 — FAQ layer | fb54b4f (pushed) | tests/ + docs |
+| S13-P29 — course video claims | b2ce5b0 (pushed) | tests/ + docs |
+| S13-P30 — dashboard banner | fd0961d (pushed) | tests/ + docs |
+| S13-P31 — CI shallow-clone fix + session STATUS rows | this-commit (pushed) | tests/ + docs |
