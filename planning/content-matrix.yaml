@@ -740,8 +740,8 @@ projects:
   status: implemented
   verified_on: '2026-10-25'
 notes:
-  paper_notes_required: 20
-  paper_notes_complete: 20
+  paper_notes_required: 74  # S13-P17 resync: the required-20 era ended with the chapter spine; 74 is the full corpus on disk
+  paper_notes_complete: 74
   correction_2026_10_22: counter was stale at 0 while research/notes/01-20 + README index were committed;
     corrected to match disk (20/20)
   comparison_notes_planned:
@@ -750,11 +750,11 @@ notes:
   - alignment vs control
   - prompt defenses vs authorization boundaries
   - benchmark scores vs deployment assurance
-  comparison_notes_complete: 2
+  comparison_notes_complete: 12  # S13-P17 resync: was 2 at the 10-22 correction; all twelve planned comparisons now exist on disk
   incident_analyses: small, carefully verified set; production incidents vs controlled demonstrations
     vs tabletop scenarios vs hypotheticals kept distinct
   glossary: notation, aliases, common confusions, source and chapter links; grows with chapters
-  dataset_catalog: datasets/ holds 13 verified real-world dataset cards (2026-10-21), each with per-fact
+  dataset_catalog: datasets/ holds 47 verified real-world dataset cards (resynced S13-P17; was 13 at the 2026-10-21 baseline), each with per-fact
     reference tables; chapters and projects cite catalog entries rather than re-verifying upstream pages
     independently. A pending-verification queue (~10 further datasets, metadata-only) is recorded in datasets/README.md
     and must not be cited as fact until inspected.
