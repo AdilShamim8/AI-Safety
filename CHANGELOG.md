@@ -7,6 +7,30 @@ Unreleased until a tagged release exists.
 
 ## [Unreleased]
 
+### Session 12 — CI repair, the double-check, the phone layout (2026-11-04)
+
+- **CI fixed and the root cause closed**: the red check was ruff (128
+  errors from the two sessions' payload modules and tests). The
+  payload/generator modules carry prose and templates, so they are
+  E501-exempt by a commented per-file-ignores; the generator output
+  was hard-verified byte-identical. The push tool now runs every CI
+  gate locally before any commit — the failure is unrepeatable.
+- **The double-check**: 2,683 links zero broken; counts reconciled
+  (the glossary figure survived as 363 under the counter's definition;
+  the companion-note count corrected 119 -> 117 by disk derivation —
+  DeepMind's exercises-worked and Safeshield's two non-framework
+  crosswalks are notes); a new drift test derives that count from the
+  tree on every run; the CampusX sales figure now carries a snapshot
+  note (it moved 24 -> 25 between fetches); the course data
+  re-verified against the live page.
+- **The phone layout fixed for real**: a headless-browser audit at
+  real viewports found the notes/sources search inputs at 41px/143px
+  (flex basis zero; width lost to basis) and the viewport guard's
+  620px cap missing foldables in desktop mode. Both fixed; a
+  two-state browser check (real phones + a forced meta-ignoring
+  state) verified zero overflow on the deployed page.
+- Suite 675 -> 678; every check green.
+
 ### The CampusX guardrails course (2026-11-03)
 
 - The sixth lecture-library course: CampusX's *AI Security &

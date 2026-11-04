@@ -1266,6 +1266,4 @@ the owner (seventh exposure across sessions).
 The library page's "119 companion notes" was off by five: the real
 count is 114 notes + 5 pedagogy/study-plan pages (the session-10
 claim of 105 had folded the five analysis pages into the note count
-before the CampusX addition repeated the same fold). The page now
-separates notes from pages; a new drift test computes the count from
-disk so a stated figure can never drift from the real one again.
+before the CampusX
