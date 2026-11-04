@@ -1,6 +1,6 @@
 # P03 — Calibration, truthfulness, and abstention
 
-**Project status: `implemented`** (code + 98 tests green; deterministic
+**Project status: `implemented`** (code + 87 tests green; deterministic
 CPU-only runs over a synthetic fixture with three scripted instruments;
 the **ml compute tier** — licensed dataset + local model + real
 free-text scoring — is scoped below and honestly marked as not yet

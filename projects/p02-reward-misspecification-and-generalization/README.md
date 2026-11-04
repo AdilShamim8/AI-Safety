@@ -1,6 +1,6 @@
 # P02 — Reward misspecification and generalization
 
-**Project status: `implemented`** (code + 157 tests green across metrics,
+**Project status: `implemented`** (code + 150 tests green across metrics,
 environments, optimizers, runner; deterministic CPU-only experiment runs
 executed over two authored model organisms; **not** an experiment over a
 real trained model — that boundary is stated honestly below) · 2026-10-22 ·
