@@ -218,10 +218,10 @@ A: **0.010**. B: any of 8 correct steps flagged → 1 − 0.98⁸ = 1 − 0.8507
 | Scheme | wrong approved (of wrong) | correct rejected (of correct) | approved-wrong mass | rejected-correct mass |
 |---|---|---|---|---|
 | A (outcome) | 15.0% | 1.0% | 0.30 × 0.150 = 4.50% | 0.70 × 0.010 = 0.70% |
-| B (process) | 8.68% | 14.92% | 0.30 × 0.0868 = 2.60% | 0.70 × 0.1492 = 10.45% |
+| B (process) | 8.68% | 14.92% | 0.30 × 0.0868 = 2.60% | 0.70 × 0.1492 = 10.44% |
 
 B buys 1.9 points of false-approval mass (4.50% → 2.60%) and pays 9.7 points of
-false-rejection mass (0.70% → 10.45%). With c_w the cost of approving a wrong item and c_r
+false-rejection mass (0.70% → 10.44%). With c_w the cost of approving a wrong item and c_r
 the cost of rejecting a correct one, B is preferred iff 0.30(0.150 − 0.0868)·c_w ≥
 0.70(0.1492 − 0.010)·c_r, i.e. **c_w ≥ 5.14·c_r**: ship B only if a shipped wrong item
 costs ≳ 5× a blocked correct one (plausible for safety gating — unsafe content shipped vs
