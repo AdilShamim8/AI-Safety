@@ -23,7 +23,7 @@ catalog in [SYLLABUS.md](SYLLABUS.md) · what exists today in
  RESEARCH        ENGINEERING          ASSURANCE
  Ch.03→04→05     Ch.12→13→14→15       Ch.05→08→17
  Ch.07, 09–11    Ch.16, 19            Ch.22→23
- P04,P05,P06     P07 (+P08 shared)    P03,P08,P09
+ P02,P04,P05,P06 P07 (+P08 shared)    P03,P08,P09
     └───────────────┼────────────────────┘
         Ch.20 misuse & release · Ch.21 sociotechnical risk
         Ch.24 research practice ── P10 CAPSTONE (or research capstone)
