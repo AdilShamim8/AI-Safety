@@ -2887,7 +2887,8 @@ claims:
   section_or_page: course page pricing block and instructor credit
   evidence_strength: direct page inspection of the rendered pricing and metadata
   assumptions: the rendered pricing reflects the current offer; sales count is the
-    platform's own counter
+    platform's own counter (a snapshot — 24 at the 2026-11-03 fetch, 25 on the
+    2026-11-04 re-check; it moves with sales and is not pinned)
   counterevidence: country pricing is keyed to IN in the page data; other markets
     may differ and none were inspected
   date: 2026-11-03
