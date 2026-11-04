@@ -54,3 +54,17 @@ Seven tasks conforming to the METR Task Standard:
   own description, 2026-10-27).
 - [R2] github.com/METR/RE-Bench (full page render: description, 7
   tasks, MIT license, archive status, 2026-10-27).
+
+## 6. What this dataset CANNOT support
+
+- No scoring or difficulty comparison across the seven domains: the
+  card records the task set and license at repository-verified level;
+  per-task success rates are unclaimed.
+- No claim that RE-bench scores predict real research output: the
+  card's "time horizon" framing is METR's construct, carried as their
+  claim, not validated here.
+- No automation-economics inference: nothing here supports "AI can do
+  research jobs" — the benchmark measures hours on scoped tasks, and
+  the card says so at page level only.
+- No redistribution: files were not downloaded; the catalog row cannot
+  support offline use.

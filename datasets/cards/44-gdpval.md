@@ -53,3 +53,17 @@ content downloaded or redistributed
 - [R1] arXiv API entry 2510.04374 (title-matched, 2026-10-27).
 - [R2] github.com/openai/gdpval (page exists; JS-rendered details
   not extracted).
+
+## 6. What this dataset CANNOT support
+
+- No task-level difficulty or discrimination analysis: the JS-rendered
+  repository page was not parsed, so per-task statistics beyond the
+  page-level counts are unclaimed.
+- No quality judgment of the task list: the abstract's claim that
+  these tasks are "economically valuable" is the paper's framing; this
+  card does not verify labor-market impact (Ch. 21 treats that as a
+  construct question, not a settled fact).
+- No evaluation results: no model was run on GDPval here; nothing in
+  this card supports a leaderboard claim of any kind.
+- No redistribution: the composition was read at page level; no files
+  were downloaded, so the catalog row cannot support offline use.

@@ -46,3 +46,15 @@ from the page; no data downloaded or redistributed
 
 - [R1] metr.org blog page (full render: title, finding, doubling
   time, links; 2026-10-27).
+
+## 6. What this dataset CANNOT support
+
+- No extrapolation beyond the measured range: the doubling-time figure
+  is the paper's page-level statement over their model set; the card
+  does not project it to unmeasured models or future releases.
+- No per-task breakdown: the card records the finding and the doubling
+  time; task-level composition and scoring live in the unread body.
+- No hiring or capability decision: a time-horizon number is not a
+  deployment decision input by itself, and the card does not treat it
+  as one.
+- No redistribution: page-verified only; no files downloaded.

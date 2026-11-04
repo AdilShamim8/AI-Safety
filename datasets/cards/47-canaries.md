@@ -47,3 +47,15 @@ not read; no data obtained
 
 - [R1] digitaleconomy.stanford.edu page (render: authors, six-facts
   framing, 19% figure, update note; 2026-10-27).
+
+## 6. What this dataset CANNOT support
+
+- No training-data contamination measurement: the six-facts framing
+  and the 19% figure are the page's statements; no benchmark was run,
+  and the card cannot support "model X remembers Y%" for any model.
+- No license beyond what the page states: the update note is carried
+  as recorded; where the page is silent, the card stays silent.
+- No canary deployment guidance: the card records the reference
+  implementation's existence, not instructions for operating one —
+  that is Ch. 20's evaluation-level treatment, not this card's.
+- No redistribution: page-level read only.
