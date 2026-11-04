@@ -1193,7 +1193,7 @@ sources:
   publication_date: 2020-04-07
   version: v3 per arXiv API record (fetched 2026-10-21)
   accessed_on: 2026-10-21
-  access_level: full-text-read
+  access_level: abstract-read
   evidence_class: theoretical
   peer_review_status: published at ACL 2020 per common citation; the fetched arXiv v3 API record lists
     no venue — venue recorded as commonly-cited, not independently verified this build
