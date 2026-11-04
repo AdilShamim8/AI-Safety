@@ -57,7 +57,7 @@ re-running the documented configs regenerates them byte-identically.
 
 ```bash
 uv sync --frozen                      # core deps only: pytest + PyYAML
-uv run pytest                         # 886 tests (815 repo + 71 P01)
+uv run pytest                         # 890 tests (819 repo + 71 P01)
 ```
 
 A run is one YAML config (schema `p01-run/v1`, fail-closed on anything else)
