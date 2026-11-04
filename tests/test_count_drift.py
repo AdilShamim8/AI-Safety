@@ -252,19 +252,7 @@ def test_companion_note_counts_computed_from_disk() -> None:
     from pathlib import Path
 
     repo = Path(__file__).resolve().parent.parent
-    per_course = {}
-    for course_dir in sorted((repo / "courses").iterdir()):
-        if not course_dir.is_dir():
-            continue
-        per_course[course_dir.name] = len(list(course_dir.glob("*.md")))
-    notes = sum(
-        n
-        for name, n in per_course.items()
-        # README + analysis pages are excluded by matching the note prefixes:
-        # campusx m*, datacamp ch*, others follow their own patterns; count
-        # note-shaped files only:
-    )
-    # count note-shaped files per course (exclude README and known analysis pages)
+    # count note-shaped files per course (exclude README and analysis pages)
     note_like = 0
     for course_dir in sorted((repo / "courses").iterdir()):
         if not course_dir.is_dir():
@@ -273,10 +261,16 @@ def test_companion_note_counts_computed_from_disk() -> None:
             if f.name == "README.md":
                 continue
             if f.stem in {
-                "reading-map", "pedagogy", "self-assessment",
-                "crosswalk-chapters", "crosswalk-glossary", "crosswalk-iso-eu",
-                "study-plans", "how-courses-organize",
-                "comparisons-where-courses-agree", "comparisons-two-registers",
+                "reading-map",
+                "pedagogy",
+                "self-assessment",
+                "crosswalk-chapters",
+                "crosswalk-glossary",
+                "crosswalk-iso-eu",
+                "study-plans",
+                "how-courses-organize",
+                "comparisons-where-courses-agree",
+                "comparisons-two-registers",
                 "comparisons-complement-map",
             }:
                 continue
