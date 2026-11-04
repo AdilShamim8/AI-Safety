@@ -41,8 +41,14 @@
     /* sw <= 620 reaches every phone CSS width, including the 540/600px
        budget screens the first guard missed; a real tablet never passes
        both tests, because with the meta honored its clientWidth equals
-       its screen.width and stays under the 640 gate. */
-    return !!(coarse && sw > 0 && sw <= 620 && cw > 640);
+       its screen.width and stays under the 640 gate.
+       s10: the second clause (cw > sw + 80) catches what the cap missed
+       — any device whose layout canvas is meaningfully wider than its
+       physical screen is ignoring the viewport meta, whatever its size:
+       foldables and large-CSS-px phones in desktop mode were over the
+       620 cap and sliced. A meta-honoring device has cw == sw, so the
+       clause never fires for it and tablets keep the 960 tier. */
+    return !!(coarse && sw > 0 && cw > 640 && (sw <= 620 || cw > sw + 80));
   }
   var stamped = null;
   function apply(){
@@ -677,7 +683,14 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
   .dtab th:first-child,.dtab td:first-child{position:sticky;left:0;background:var(--paper);z-index:4}
   .dtab th:first-child{z-index:6}
   .dtab tr:hover td:first-child{background:var(--paper-2)}
-  .searchbar input{min-width:0;width:100%;max-width:none}
+  /* s10: flex-basis:100% — the input was squeezed to 41px beside
+     its filter chips: flex:1 1 0% gives it a zero basis, so the
+     inflexible chips took the line first and the input grew only
+     into the leftover 41px. width:100% was already here but
+     flex-basis wins over width in flex layout, which is why the
+     squeeze survived the earlier fix; basis 100% puts the input on
+     its own full-width line and the chips wrap below it. */
+  .searchbar input{min-width:0;width:100%;max-width:none;flex-basis:100%}
   .searchbar .count{margin-left:0;width:100%}
   .step{grid-template-columns:40px minmax(0,1fr)}
   .step::before{font-size:21px}

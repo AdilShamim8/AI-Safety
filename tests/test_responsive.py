@@ -189,6 +189,33 @@ def test_viewport_guard_reaches_540_and_600px_screens() -> None:
     assert "sw <= 620" in html
 
 
+def test_viewport_guard_catches_page_wider_than_screen() -> None:
+    """s10: the 620 cap missed foldables and large-CSS-px phones in
+    desktop mode — over the cap, so the sliced desktop page survived.
+    The second clause fires on the signature of meta-ignoring itself
+    (layout canvas meaningfully wider than the physical screen),
+    whatever the device size; a meta-honoring device has cw == sw, so
+    tablets keep the 960 tier."""
+    tpl = _tpl()
+    assert "cw > sw + 80" in tpl
+    html = _html()
+    assert "cw > sw + 80" in html
+
+
+def test_search_inputs_own_their_line_at_phone_width() -> None:
+    """s10: at 390px the notes search input rendered 41px wide — flex
+    basis 0 let the inflexible filter chips take the line first, and
+    the width:100% override lost to flex-basis in flex layout. The
+    640 tier now sets basis 100% so the input takes a full-width line
+    and the chips wrap below; the guard layer derives the same rule."""
+    tpl = _tpl()
+    rule = "{min-width:0;width:100%;max-width:none;flex-basis:100%}"
+    tpl = _tpl()
+    assert f".searchbar input{rule}" in tpl
+    html = _html()
+    assert f"html.vw-guard .searchbar input{rule}" in html
+
+
 def test_viewport_guard_font_scale_compensation() -> None:
     """s8: the s7 zoom compensation is gone — zoom shrank the layout
     viewport itself, so the 520px body cap and px paddings written for
