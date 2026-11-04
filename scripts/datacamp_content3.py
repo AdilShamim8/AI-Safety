@@ -436,8 +436,7 @@ CH3 = {
                 (
                     "../../chapters/16-privacy-provenance-and-supply-chains/README.md",
                     "Ch. 16",
-                    "the data-protection weight the health-care side "
-                    "carries.",
+                    "the data-protection weight the health-care side " "carries.",
                 ),
                 (
                     "../../chapters/21-sociotechnical-and-systemic-risk/README.md",
@@ -1041,8 +1040,7 @@ CH3 = {
                 (
                     "../../chapters/24-research-practice-and-capstone-execution/README.md",
                     "Ch. 24",
-                    "the repo's own capstone: where a beginner goes after "
-                    "the survey courses.",
+                    "the repo's own capstone: where a beginner goes after " "the survey courses.",
                 ),
                 (
                     "../../roadmaps/careers-index.md",

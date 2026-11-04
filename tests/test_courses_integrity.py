@@ -156,6 +156,10 @@ def test_campusx_note_rows_cover_every_lesson() -> None:
 def test_campusx_unpublished_lesson_carries_its_status() -> None:
     """The one duration-0 lesson must state its announced status in
     the note itself — the honesty rule the register records."""
-    note = (COURSES / "campusx-ai-security-guardrails" / "m4-01-threat-modelling-our-agentic-application.md").read_text(encoding="utf-8")
+    note = (
+        COURSES
+        / "campusx-ai-security-guardrails"
+        / "m4-01-threat-modelling-our-agentic-application.md"
+    ).read_text(encoding="utf-8")
     assert "not yet published" in note
     assert "duration 0" in note

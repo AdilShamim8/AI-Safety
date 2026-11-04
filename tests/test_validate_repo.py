@@ -43,7 +43,6 @@ def test_datacamp_companion_survives_validation():
     check: every relative link in the 44 notes and the analysis pages
     resolves on disk (the through-lines, the crosswalk references, and
     the navigate lines)."""
-    import re
 
     base = REPO_ROOT / "courses" / "datacamp-ai-security-risk"
     md_files = sorted(base.glob("*.md"))
@@ -66,7 +65,6 @@ def test_campusx_companion_survives_validation():
     """The generated sixth-course layer must pass the link-integrity
     check: every relative link in the 14 notes and the five analysis
     pages resolves on disk."""
-    import re
 
     base = REPO_ROOT / "courses" / "campusx-ai-security-guardrails"
     md_files = sorted(base.glob("*.md"))

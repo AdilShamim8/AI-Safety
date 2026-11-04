@@ -80,14 +80,12 @@ CM4 = {
                 (
                     "../../chapters/14-agent-tool-memory-mcp-security/README.md",
                     "Ch. 14",
-                    "the agent surface — tools, memory, MCP — at chapter "
-                    "depth.",
+                    "the agent surface — tools, memory, MCP — at chapter " "depth.",
                 ),
                 (
                     "../../projects/p08-control-and-monitoring-protocol/README.md",
                     "the P08 project",
-                    "the repository's own control-and-monitoring exercise "
-                    "for agent systems.",
+                    "the repository's own control-and-monitoring exercise " "for agent systems.",
                 ),
                 (
                     "../../chapters/08-ai-control-and-monitoring/README.md",

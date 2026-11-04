@@ -101,4 +101,5 @@ def test_every_note_carries_a_worked_example() -> None:
     for p in notes:
         text = p.read_text(encoding="utf-8")
         assert "## Worked example (beginner walk-through)" in text, p.name
-        assert len(text.split("## Worked example (beginner walk-through)")[1].split("## Through-lines")[0]) > 300, p.name
+        body = text.split("## Worked example (beginner walk-through)")[1]
+        assert len(body.split("## Through-lines")[0]) > 300, p.name

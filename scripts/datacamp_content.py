@@ -128,8 +128,7 @@ CH1 = {
                 (
                     "../../chapters/21-sociotechnical-and-systemic-risk/README.md",
                     "Ch. 21",
-                    "bias and trust as sociotechnical, not merely technical, "
-                    "failures.",
+                    "bias and trust as sociotechnical, not merely technical, " "failures.",
                 ),
             ],
             "angle": (
@@ -194,8 +193,7 @@ CH1 = {
                 (
                     "../../chapters/01-risk-models-and-research-epistemics/README.md",
                     "Ch. 01",
-                    "the threat-hypothesis form forces the same "
-                    "mechanism-first discipline.",
+                    "the threat-hypothesis form forces the same " "mechanism-first discipline.",
                 ),
                 (
                     "../../chapters/12-adversarial-ml-and-robustness/README.md",
@@ -252,8 +250,7 @@ CH1 = {
                 (
                     "../../chapters/01-risk-models-and-research-epistemics/README.md",
                     "Ch. 01",
-                    "the risk taxonomy with the full classification "
-                    "discipline.",
+                    "the risk taxonomy with the full classification " "discipline.",
                 ),
                 (
                     "../../chapters/20-misuse-dangerous-capabilities-release-evaluation/README.md",
@@ -345,8 +342,7 @@ CH1 = {
                 (
                     "../../chapters/12-adversarial-ml-and-robustness/README.md",
                     "Ch. 12",
-                    "the robustness side of detection under adversarial "
-                    "pressure.",
+                    "the robustness side of detection under adversarial " "pressure.",
                 ),
                 (
                     "../../chapters/08-ai-control-and-monitoring/README.md",
@@ -363,8 +359,7 @@ CH1 = {
                 (
                     "../../chapters/19-multimodal-and-embodied-safety/README.md",
                     "Ch. 19",
-                    "the facial-recognition fairness and privacy concerns at "
-                    "full depth.",
+                    "the facial-recognition fairness and privacy concerns at " "full depth.",
                 ),
             ],
             "angle": (
@@ -490,8 +485,7 @@ CH1 = {
                 (
                     "../../chapters/18-reasoning-faithfulness-and-monitorability/README.md",
                     "Ch. 18",
-                    "why monitorability is the precondition for "
-                    "accountability.",
+                    "why monitorability is the precondition for " "accountability.",
                 ),
                 (
                     "../../chapters/23-governance-and-standards/README.md",
@@ -632,8 +626,7 @@ CH1 = {
                 (
                     "../../chapters/21-sociotechnical-and-systemic-risk/README.md",
                     "Ch. 21",
-                    "the systemic layer: stakeholders and dynamics, "
-                    "formally.",
+                    "the systemic layer: stakeholders and dynamics, " "formally.",
                 ),
                 (
                     "../../chapters/23-governance-and-standards/README.md",

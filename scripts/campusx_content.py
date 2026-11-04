@@ -83,8 +83,7 @@ CM1 = {
                 (
                     "../../chapters/13-llm-application-security/README.md",
                     "Ch. 13",
-                    "the application-security chapter this course works at "
-                    "production level.",
+                    "the application-security chapter this course works at " "production level.",
                 ),
                 (
                     "../../chapters/01-risk-models-and-research-epistemics/README.md",

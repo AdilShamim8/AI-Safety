@@ -49,6 +49,14 @@ target-version = "py312"
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
 
+[tool.ruff.lint.per-file-ignores]
+# Payload modules for the course companions: their long lines are prose
+# paragraphs and markdown templates (data carried to the generator, not
+# logic) — E501 measures code readability and adds nothing there. Every
+# code file stays under the limit.
+"scripts/*_examples*.py" = ["E501"]
+"scripts/gen_*_companion.py" = ["E501"]
+
 [tool.black]
 line-length = 100
 target-version = ["py312"]

@@ -133,10 +133,10 @@ def test_card_labels_stamp_every_field() -> None:
 def test_table_scroll_affordance_declared() -> None:
     """A sideways-scrolling wrapper wears a fade that says so."""
     tpl = _tpl()
+    html = _html()
     assert ".tabwrap.scrollable{" in tpl
     assert "mask-image:linear-gradient(90deg" in tpl
     assert "MutationObserver" in tpl, "the fade must re-check after every re-render"
-    html = _html()
     assert ".tabwrap.scrollable{" in html
     assert "MutationObserver" in html
 
@@ -332,7 +332,6 @@ def test_datacamp_notes_table_fits_phones() -> None:
     tpl = _tpl()
     # the page ships the .tabwrap scrollable pattern for wide tables
     assert "tabwrap" in tpl or "scrollable" in tpl
-    html = _html()
     # the course index page exists and its lesson table renders on phones:
     # the table rows are short (lesson slugs, XP digits) and the repo's
     # base CSS keeps tables inside their scroll container
@@ -353,7 +352,9 @@ def test_datacamp_worked_examples_render_as_prose() -> None:
     assert len(notes) == 44
     for p in notes:
         text = p.read_text(encoding="utf-8")
-        section = text.split("## Worked example (beginner walk-through)")[1].split("## Through-lines")[0]
+        section = text.split("## Worked example (beginner walk-through)")[1].split(
+            "## Through-lines"
+        )[0]
         assert "<table" not in section and "```" not in section, p.name
         assert section.count("\n\n") <= 2, f"{p.name}: expected one flowing paragraph"
 
@@ -362,6 +363,8 @@ def test_campusx_lesson_table_fits_phones() -> None:
     """The sixth course's index table has four columns (number, lesson,
     duration, note) — the rows stay short for the phone layer's
     scroll-container pattern."""
-    page = (REPO_ROOT / "courses" / "campusx-ai-security-guardrails" / "README.md").read_text(encoding="utf-8")
+    page = (REPO_ROOT / "courses" / "campusx-ai-security-guardrails" / "README.md").read_text(
+        encoding="utf-8"
+    )
     assert "| # | Lesson | Duration | Companion note |" in page
     assert page.count("| [m") == 14  # every lesson row links its note

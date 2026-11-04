@@ -19,7 +19,8 @@ import build_dashboard  # noqa: E402
 
 def test_build_data_counts_match_repo() -> None:
     data = build_dashboard.build_data()
-    assert len(data["sources"]) >= 264  # grew with the DataCamp (SRC-CURR-014/015) and CampusX (SRC-CURR-016) courses
+    assert len(data["sources"]) >= 264  # DataCamp (SRC-CURR-014/015)
+    # + CampusX (SRC-CURR-016)
     assert len(data["claims"]) >= 218  # grew with CLM-0207..0212 and CLM-0213..0218
     assert len(data["datasets"]) >= 47  # grew with the lecture-library cards (DS-044..047)
     assert len(data["chapters"]) == 24

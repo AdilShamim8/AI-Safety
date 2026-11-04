@@ -440,7 +440,8 @@ def test_campusx_capability_lens_note_states_the_ranking() -> None:
 
     note = (
         Path(__file__).resolve().parent.parent
-        / "courses" / "campusx-ai-security-guardrails"
+        / "courses"
+        / "campusx-ai-security-guardrails"
         / "m4-01-threat-modelling-our-agentic-application.md"
     ).read_text(encoding="utf-8")
     assert "write and delete" in note

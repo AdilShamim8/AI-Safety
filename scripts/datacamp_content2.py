@@ -108,8 +108,7 @@ CH2 = {
                 (
                     "../../chapters/09-mechanistic-interpretability-foundations/README.md",
                     "Ch. 09",
-                    "transparency and interpretability as research "
-                    "programs.",
+                    "transparency and interpretability as research " "programs.",
                 ),
                 (
                     "../../chapters/06-honesty-uncertainty-and-selective-prediction/README.md",
@@ -172,8 +171,7 @@ CH2 = {
                 (
                     "../../chapters/02-evaluation-science-and-experimental-design/README.md",
                     "Ch. 02",
-                    "the evaluation discipline that catches leakage and "
-                    "overfitting.",
+                    "the evaluation discipline that catches leakage and " "overfitting.",
                 ),
                 (
                     "../../chapters/17-distribution-shift-and-deployment-reliability/README.md",
@@ -225,8 +223,7 @@ CH2 = {
                 (
                     "../../chapters/17-distribution-shift-and-deployment-reliability/README.md",
                     "Ch. 17",
-                    "the monitoring chapter — dashboards, alerts, "
-                    "subgroup reliability.",
+                    "the monitoring chapter — dashboards, alerts, " "subgroup reliability.",
                 ),
                 (
                     "../../chapters/22-safety-engineering-and-assurance/README.md",
@@ -369,14 +366,12 @@ CH2 = {
                 (
                     "../../chapters/13-llm-application-security/README.md",
                     "Ch. 13",
-                    "the application-security surface (inference-time "
-                    "attacks).",
+                    "the application-security surface (inference-time " "attacks).",
                 ),
                 (
                     "../../chapters/16-privacy-provenance-and-supply-chains/README.md",
                     "Ch. 16",
-                    "model inversion, supply chain, and the "
-                    "data-protection practices.",
+                    "model inversion, supply chain, and the " "data-protection practices.",
                 ),
                 (
                     "../../chapters/14-agent-tool-memory-mcp-security/README.md",
@@ -608,8 +603,7 @@ CH2 = {
                 (
                     "../../chapters/16-privacy-provenance-and-supply-chains/README.md",
                     "Ch. 16",
-                    "provenance, minimization, anonymization — the deep "
-                    "treatment.",
+                    "provenance, minimization, anonymization — the deep " "treatment.",
                 ),
                 (
                     "../../chapters/13-llm-application-security/README.md",
@@ -859,8 +853,7 @@ CH2 = {
                 (
                     "../../chapters/23-governance-and-standards/README.md",
                     "Ch. 23",
-                    "the EU AI Act from unacceptable to minimal risk, "
-                    "obligation by obligation.",
+                    "the EU AI Act from unacceptable to minimal risk, " "obligation by obligation.",
                 ),
                 (
                     "../../chapters/22-safety-engineering-and-assurance/README.md",

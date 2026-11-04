@@ -97,7 +97,9 @@ def test_every_note_carries_a_worked_example() -> None:
     for p in notes:
         text = p.read_text(encoding="utf-8")
         assert "## Worked example (practitioner walk-through)" in text, p.name
-        section = text.split("## Worked example (practitioner walk-through)")[1].split("## Through-lines")[0]
+        section = text.split("## Worked example (practitioner walk-through)")[1].split(
+            "## Through-lines"
+        )[0]
         assert len(section) > 300, p.name
 
 
@@ -106,5 +108,7 @@ def test_worked_examples_render_as_prose() -> None:
     or code fences for the phone layer to wrap."""
     for p in sorted(CX.glob("m*-*.md")):
         text = p.read_text(encoding="utf-8")
-        section = text.split("## Worked example (practitioner walk-through)")[1].split("## Through-lines")[0]
+        section = text.split("## Worked example (practitioner walk-through)")[1].split(
+            "## Through-lines"
+        )[0]
         assert "<table" not in section and "```" not in section, p.name
