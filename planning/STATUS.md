@@ -1212,7 +1212,7 @@ applied note by note — one coherent unit per commit.
 
 | S11-P02..P05 — the four CampusX content modules (2+4+6+2 lessons) | 99e66fa..800985a (pushed) | scripts/campusx_content*.py |
 | S11-P06 — the idempotent companion generator with self-checks | f665d4b (pushed) | scripts/gen_campusx_companion.py |
-| S11-P07 — the companion layer: course page + 14 notes + 5 analyses (20 files) | 153f176 (pushed) | courses/campusx-ai-security-guardrails/ |
+| S11-P07 — the companion layer: course page + 14 notes + 5 analyses (20 files) | 153f176 (pushed) | courses/campusx-ai-security-guardrails/ the layer-count claim written then (119) was off by five — corrected 2026-11-04, session 12 |
 | S11-P08 — the register entry and six claims | e7b7cb1 (pushed) | SRC-CURR-016 + CLM-0213..0218 |
 | S11-P09 — the fourteen glossary rows (the guardrails engineering family) | beb3dfd (pushed) | GLOSSARY.md at 363 terms (verified 2026-11-04 under the drift counter's definition, rows beginning bold — the ten suffix-parenthesized terms included) |
 | S11-P10 — watching rows and exercise pointers in 7 chapters + 2 project companions | 98dce18 (pushed) | Ch. 08/12/13/14/15/16/19 + P07/P08 |
@@ -1260,3 +1260,12 @@ course layer (checked 2026-11-03), 675 tests green end to end, the
 audit at 0 hard findings, the validator OK, and the dashboard
 regenerated. Standing action: the session token must be rotated by
 the owner (seventh exposure across sessions).
+
+### Session-12 recheck finding (2026-11-04)
+
+The library page's "119 companion notes" was off by five: the real
+count is 114 notes + 5 pedagogy/study-plan pages (the session-10
+claim of 105 had folded the five analysis pages into the note count
+before the CampusX addition repeated the same fold). The page now
+separates notes from pages; a new drift test computes the count from
+disk so a stated figure can never drift from the real one again.

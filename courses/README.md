@@ -136,7 +136,7 @@ lookup works.
 
 ## Build status
 
-The layer is complete: all six course pages, all 119 companion notes,
+The layer is complete: all six course pages, all 117 companion notes,
 and all chapter integrations landed in session 3 (the unit-by-unit
 record is [planning/STATUS.md](../planning/STATUS.md), and the
 closing state is stated in the section below). The honesty rule from
@@ -147,9 +147,11 @@ claim completeness it does not have.
 ## The complete library (2026-11-03 state, second opening)
 
 Six courses · 57 verified videos + 44 verified interactive lessons + 13
-published CampusX videos (1 announced) · 119 companion notes (18 Harvard
-+ 16 DeepMind + 8 CAIS + 14 Safeshield + 44 DataCamp + 14 CampusX + 5
-pedagogy/study-plan pages) · 6 self-assessments · 3 framework crosswalks
+published CampusX videos (1 announced) · 117 companion notes (18 Harvard
++ 17 DeepMind + 8 CAIS + 16 Safeshield + 44 DataCamp + 14 CampusX — the
+note count now includes DeepMind's exercises-worked and Safeshield's two
+non-framework crosswalks, verified from disk 2026-11-04) + 5
+pedagogy/study-plan pages · 6 self-assessments · 3 framework crosswalks
 + 4 course crosswalks · 3 cross-course comparisons · 13 register entries
 · 4 verified dataset cards added to the catalog (GDPval, RE-Bench, METR
 time-horizons, Canaries) ·

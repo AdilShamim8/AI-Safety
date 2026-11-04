@@ -241,3 +241,48 @@ def test_awesome_counts() -> None:
     assert (f"{t['paper_notes']} paper notes and {t['comparison_notes']} comparison notes") in text
     assert f"{t['incidents']} incidents reviewed" in text
     assert f"{t['cards']} verified cards" in text
+
+
+def test_companion_note_counts_computed_from_disk() -> None:
+    """Session-12 finding: the library page had stated 119 companion
+    notes when the disk held 114 + 5 analysis pages — the figure had
+    been hand-carried, not computed. This test derives the count from
+    the tree so a stated number can never drift from the real one."""
+    import re
+    from pathlib import Path
+
+    repo = Path(__file__).resolve().parent.parent
+    per_course = {}
+    for course_dir in sorted((repo / "courses").iterdir()):
+        if not course_dir.is_dir():
+            continue
+        per_course[course_dir.name] = len(list(course_dir.glob("*.md")))
+    notes = sum(
+        n
+        for name, n in per_course.items()
+        # README + analysis pages are excluded by matching the note prefixes:
+        # campusx m*, datacamp ch*, others follow their own patterns; count
+        # note-shaped files only:
+    )
+    # count note-shaped files per course (exclude README and known analysis pages)
+    note_like = 0
+    for course_dir in sorted((repo / "courses").iterdir()):
+        if not course_dir.is_dir():
+            continue
+        for f in course_dir.glob("*.md"):
+            if f.name == "README.md":
+                continue
+            if f.stem in {
+                "reading-map", "pedagogy", "self-assessment",
+                "crosswalk-chapters", "crosswalk-glossary", "crosswalk-iso-eu",
+                "study-plans", "how-courses-organize",
+                "comparisons-where-courses-agree", "comparisons-two-registers",
+                "comparisons-complement-map",
+            }:
+                continue
+            note_like += 1
+    lib = (repo / "courses" / "README.md").read_text(encoding="utf-8")
+    m = re.search(r"all (\d+) companion notes", lib)
+    assert m, "library page no longer states the companion-note count"
+    stated = int(m.group(1))
+    assert stated == note_like, f"stated {stated} != disk {note_like}"
