@@ -26,12 +26,12 @@ verification discipline every reading assumes
 | 07 | Deception, scheming, evaluation awareness — model organisms, alignment faking, sandbagging; evidence vs extrapolation | 03 | skeptical evidence table | — |
 | 08 | AI control and monitoring — trusted/untrusted assumptions, audit budgets, deferral, adaptive red teams, collusion, safety–usefulness | 05 | control protocol with failure conditions | P08 |
 | 09 | Mechanistic interpretability foundations — residual streams, attention/MLP contributions, causal interventions, patching with controls | 02 | causal claim with controls | P06 |
-| 10 | Sparse features, circuits, interpretability evaluation — superposition, SAE reconstruction vs usefulness, faithfulness, completeness | 09 | SAE/circuit critique | — |
-| 11 | Behavioral steering and representation interventions — probes, steering, linear assumptions, confounds, side effects | 09 | held-out intervention evaluation | — |
+| 10 | Sparse features, circuits, interpretability evaluation — superposition, SAE reconstruction vs usefulness, faithfulness, completeness | 09 | SAE/circuit critique | P06 |
+| 11 | Behavioral steering and representation interventions — probes, steering, linear assumptions, confounds, side effects | 09 | held-out intervention evaluation | P06 |
 | 12 | Adversarial ML and robustness — evasion, poisoning, backdoors, extraction, membership inference; attacker knowledge; adaptive evaluation | 02 | threat-model comparison | — |
 | 13 | LLM application security — direct/indirect injection, trust boundaries, output handling, retrieval risks; why prompts-as-defense fails | 12 | injection-to-framework mapping | P07 |
 | 14 | Agent, tool, memory, MCP security — capability-based access, least privilege, delegation, authorization, isolation, dependency compromise | 13 | privilege & trust-boundary matrix | P07 |
-| 15 | Red teaming and adversarial evaluation — coverage, adaptive attacks, benign controls, scoring with denominators, over-refusal, responsible reporting | 02, 13 | attack/defense report | P07, P10 |
+| 15 | Red teaming and adversarial evaluation — coverage, adaptive attacks, benign controls, scoring with denominators, over-refusal, responsible reporting | 02, 13 | attack/defense report | P07 |
 | 16 | Privacy, provenance, supply chains — memorization, privacy accounting concepts, model artifacts, licenses, dependency integrity | 02 | provenance audit | — |
 | 17 | Distribution shift and deployment reliability — OOD, worst-group, drift, uncertainty under shift; covariate vs label vs concept change | 02 | shift-taxonomy analysis | P09 |
 | 18 | Reasoning faithfulness and monitorability — CoT faithfulness, hidden actions, monitor evasion; action/outcome evidence | 08 | faithfulness critique | — |
