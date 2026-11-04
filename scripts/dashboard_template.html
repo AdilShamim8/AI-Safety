@@ -110,7 +110,10 @@
   --paper-3:#e8e1d0;
   --ink:#211d16;
   --ink-2:#5b5446;
-  --ink-3:#8f8674;
+  /* s13: was #8f8674 — 2.8-3.3:1 against the paper tones,
+     under the 4.5:1 AA bar (15 nodes flagged by an axe audit);
+     #6b6350 clears 4.5:1 on paper, paper-2, AND paper-3. */
+  --ink-3:#6b6350;
   --rule:#d8d0bd;
   --rule-2:#b9af97;
   --accent:#93331d;          /* oxblood */
@@ -418,6 +421,10 @@ section:first-of-type{border-top:none;margin-top:0;padding-top:0}
   display:flex;align-items:baseline;gap:12px;padding-bottom:8px;
   border-bottom:2px solid var(--ink);margin-bottom:2px;
 }
+/* s13: era names are real headings now (the axe heading-order fix) —
+   a bare h3 would drag in UA defaults (margins, 1em serif) and wreck
+   the baseline row; these reset to the exact visual the div had. */
+h3.eh{margin:0;font-size:inherit;font-weight:inherit;line-height:inherit}
 .era .eh .et{font-family:var(--sans);font-weight:700;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase}
 .era .eh .ey{font-family:var(--mono);font-size:11px;color:var(--accent)}
 .era .eh .er{flex:1;border-bottom:1px dotted var(--rule-2);transform:translateY(-4px)}
@@ -431,9 +438,10 @@ section:first-of-type{border-top:none;margin-top:0;padding-top:0}
   content:"";position:absolute;left:-24px;top:20px;width:7px;height:7px;border-radius:50%;
   background:var(--paper);border:1.5px solid var(--accent);
 }
-.inc .ib h4{font-family:var(--serif);font-size:16.5px;font-weight:700;line-height:1.3}
-.inc .ib h4 a{color:var(--ink);border-bottom-color:transparent}
-.inc .ib h4 a:hover{color:var(--accent)}
+.inc .ib h4, .inc .ib h3{font-family:var(--serif);font-size:16.5px;font-weight:700;line-height:1.3}
+.inc .ib h3, .inc .ib h4{margin:0}
+.inc .ib h4 a, .inc .ib h3 a{color:var(--ink);border-bottom-color:transparent}
+.inc .ib h4 a:hover, .inc .ib h3 a:hover{color:var(--accent)}
 .inc .ib .il{font-family:var(--sans);font-size:12.5px;color:var(--ink-2);margin-top:4px;max-width:74ch;line-height:1.5}
 .inc .ib .il b{color:var(--ink)}
 .inc .ib .ic{font-family:var(--sans);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--warn);margin-top:5px}
@@ -471,7 +479,8 @@ section:first-of-type{border-top:none;margin-top:0;padding-top:0}
 /* ---------- glossary ---------- */
 .gl{columns:2;column-gap:44px;margin-top:6px}
 .gl .ge{break-inside:avoid;padding:12px 0 11px;border-bottom:1px solid var(--rule)}
-.gl .ge h4{font-family:var(--serif);font-size:16px;font-weight:700;display:inline;letter-spacing:-.005em}
+.gl .ge h4, .gl .ge h3{font-family:var(--serif);font-size:16px;font-weight:700;display:inline;letter-spacing:-.005em}
+.gl .ge h3, .gl .ge h4{margin:0}
 .gl .ge .ga{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-left:8px}
 .gl .ge .gd{font-family:var(--sans);font-size:12.8px;color:var(--ink-2);margin-top:4px;line-height:1.55}
 .gl .ge .gc{font-family:var(--sans);font-size:11.8px;color:var(--ink-3);margin-top:5px;line-height:1.5;font-style:italic}
@@ -536,7 +545,8 @@ section:first-of-type{border-top:none;margin-top:0;padding-top:0}
   font-family:var(--serif);font-size:26px;font-weight:700;color:var(--accent);
   line-height:1;padding-top:2px;
 }
-.step .sb h4{font-family:var(--serif);font-size:17px;font-weight:700}
+.step .sb h4, .step .sb h3{font-family:var(--serif);font-size:17px;font-weight:700}
+.step .sb h3, .step .sb h4{margin:0}
 .step .sb p{font-family:var(--sans);font-size:13px;color:var(--ink-2);margin-top:5px;max-width:70ch;line-height:1.6}
 .sched{margin-top:30px;border:1px solid var(--rule-2)}
 .sched .sc{display:grid;grid-template-columns:64px 220px minmax(0,1fr);border-bottom:1px solid var(--rule)}
@@ -694,7 +704,7 @@ details.fq .fa{padding:0 0 16px;font-family:var(--sans);font-size:13.5px;color:v
   .searchbar .count{margin-left:0;width:100%}
   .step{grid-template-columns:40px minmax(0,1fr)}
   .step::before{font-size:21px}
-  .step .sb h4{font-size:15.5px}
+  .step .sb h4, .step .sb h3{font-size:15.5px}
   .sched .sc{grid-template-columns:44px minmax(0,1fr)}
   .trackbar .lbl{display:none}
   .trackbar{height:22px}
@@ -1675,7 +1685,7 @@ function lbl(td, label){ td.setAttribute("data-label", label); return td; }
   var T = $("#incidentTimeline");
   D.incident_eras.forEach(function(era){
     var wrap = el("div","era");
-    var eh = el("div","eh");
+    var eh = el("h3","eh");
     eh.appendChild(el("span","et", era.era.split(" (")[0]));
     eh.appendChild(el("span","ey", era.era.match(/\(([^)]+)\)/) ? era.era.match(/\(([^)]+)\)/)[1] : ""));
     eh.appendChild(el("span","er"));
@@ -1871,8 +1881,8 @@ function lbl(td, label){ td.setAttribute("data-label", label); return td; }
       if(state.q && hay.indexOf(state.q) < 0) return;
       shown++;
       var e = el("div","ge");
-      var h4 = el("h4", null, g.term);
-      e.appendChild(h4);
+      var h3 = el("h3", null, g.term);
+      e.appendChild(h3);
       if(g.aliases && g.aliases !== "—") e.appendChild(el("span","ga", g.aliases));
       e.appendChild(el("div","gd", g.def));
       if(g.confusion && g.confusion !== "—"){
@@ -1985,9 +1995,9 @@ function lbl(td, label){ td.setAttribute("data-label", label); return td; }
   D.quickstart.forEach(function(q){
     var step = el("div","step");
     var sb = el("div","sb");
-    var h4 = el("h4");
-    h4.innerHTML = q.title;
-    sb.appendChild(h4);
+    var h3 = el("h3");
+    h3.innerHTML = q.title;
+    sb.appendChild(h3);
     var p = el("p");
     p.innerHTML = q.body;
     sb.appendChild(p);
