@@ -29,7 +29,7 @@ What this library did NOT do, stated as plainly as what it did:
 
 - **No DataCamp exercise was opened.** The fifth course (added
   2026-11-03) is interactive and account-walled: the unauthenticated
-  course URL redirects to sign-in (recorded as CLM-0212). The
+  course URL redirects to sign-in (recorded as CLM-0229). The
   companion notes rest on the public catalog page (SRC-CURR-014,
   page-inspected) and the owner-supplied synopsis of the lesson list
   and video scopes (SRC-CURR-015, metadata-only). No video was

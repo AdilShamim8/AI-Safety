@@ -47,7 +47,7 @@ def test_datacamp_register_entries_audit_clean() -> None:
     for sid in ("SRC-CURR-014", "SRC-CURR-015"):
         assert sid in source_ids, f"{sid} missing from the audited register"
     claim_ids = audit_missing.audit_claims_register(source_ids)
-    for cid in ("CLM-0207", "CLM-0208", "CLM-0209", "CLM-0210", "CLM-0211", "CLM-0212"):
+    for cid in ("CLM-0224", "CLM-0225", "CLM-0226", "CLM-0227", "CLM-0228", "CLM-0229"):
         assert cid in claim_ids, f"{cid} missing from the audited claims"
     assert not audit_missing.HARD, f"register audit went red: {audit_missing.HARD}"
     audit_missing.audit_cross_references(source_ids, claim_ids)
@@ -64,7 +64,7 @@ def test_campusx_register_entries_audit_clean() -> None:
     source_ids = audit_missing.audit_source_register()
     assert "SRC-CURR-016" in source_ids, "SRC-CURR-016 missing from the audited register"
     claim_ids = audit_missing.audit_claims_register(source_ids)
-    for cid in ("CLM-0213", "CLM-0214", "CLM-0215", "CLM-0216", "CLM-0217", "CLM-0218"):
+    for cid in ("CLM-0230", "CLM-0231", "CLM-0232", "CLM-0233", "CLM-0234", "CLM-0235"):
         assert cid in claim_ids, f"{cid} missing from the audited claims"
     assert not audit_missing.HARD, f"register audit went red: {audit_missing.HARD}"
     audit_missing.audit_cross_references(source_ids, claim_ids)

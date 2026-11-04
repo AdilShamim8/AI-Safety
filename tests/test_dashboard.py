@@ -21,7 +21,7 @@ def test_build_data_counts_match_repo() -> None:
     data = build_dashboard.build_data()
     assert len(data["sources"]) >= 264  # DataCamp (SRC-CURR-014/015)
     # + CampusX (SRC-CURR-016)
-    assert len(data["claims"]) >= 218  # grew with CLM-0207..0212 and CLM-0213..0218
+    assert len(data["claims"]) >= 218  # grew with CLM-0224..0212 and CLM-0213..0218
     assert len(data["datasets"]) >= 47  # grew with the lecture-library cards (DS-044..047)
     assert len(data["chapters"]) == 24
     assert len(data["projects"]) == 10
@@ -172,7 +172,7 @@ def test_datacamp_course_counts_reach_the_page() -> None:
     ids = {s["id"] for s in data["sources"]}
     assert {"SRC-CURR-014", "SRC-CURR-015"} <= ids
     clm = {c["id"] for c in data["claims"]}
-    assert {"CLM-0207", "CLM-0208", "CLM-0209", "CLM-0210", "CLM-0211", "CLM-0212"} <= clm
+    assert {"CLM-0224", "CLM-0225", "CLM-0226", "CLM-0227", "CLM-0228", "CLM-0229"} <= clm
     # the primer-pass widget states six courses, not five
     import inspect
 

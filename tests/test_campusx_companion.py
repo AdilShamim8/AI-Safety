@@ -79,14 +79,14 @@ def test_register_claims_pin_the_pinned_numbers() -> None:
 
     reg = yaml.safe_load((REPO_ROOT / "research" / "claims-register.yaml").read_bytes())
     clm = {c["id"]: c for c in reg["claims"]}
-    for cid in ("CLM-0213", "CLM-0214", "CLM-0215", "CLM-0216", "CLM-0217", "CLM-0218"):
+    for cid in ("CLM-0230", "CLM-0231", "CLM-0232", "CLM-0233", "CLM-0234", "CLM-0235"):
         assert cid in clm, f"{cid} missing from the claims register"
-    assert "330.47" in clm["CLM-0213"]["claim"]
-    assert "1999" in clm["CLM-0214"]["claim"]
-    assert "NovaBank" in clm["CLM-0215"]["claim"]
-    assert "NeMo Guardrails" in clm["CLM-0216"]["claim"]
-    assert "jailbreak gate" in clm["CLM-0217"]["claim"]
-    assert "write and delete" in clm["CLM-0218"]["claim"]
+    assert "330.47" in clm["CLM-0230"]["claim"]
+    assert "1999" in clm["CLM-0231"]["claim"]
+    assert "NovaBank" in clm["CLM-0232"]["claim"]
+    assert "NeMo Guardrails" in clm["CLM-0233"]["claim"]
+    assert "jailbreak gate" in clm["CLM-0234"]["claim"]
+    assert "write and delete" in clm["CLM-0235"]["claim"]
 
 
 def test_every_note_carries_a_worked_example() -> None:

@@ -1043,7 +1043,7 @@ changes and committed in the same unit.
 | S10-P04 — the chapter-3 content module (17 lessons: strategy, culture, the future set) | 001bcd1 (pushed) | scripts/datacamp_content3.py |
 | S10-P05 — the idempotent companion generator with self-checks | f34ff43 (pushed) | scripts/gen_datacamp_companion.py |
 | S10-P06 — the companion layer: course page + 44 notes + 5 analyses (50 files) | 1434f2d (pushed) | courses/datacamp-ai-security-risk/; XP corrected to the true 2750 |
-| S10-P07 — the register entries: SRC-CURR-014/015, claims CLM-0207..0212 | 34f4261 (pushed) | research/source-register.yaml + claims-register.yaml |
+| S10-P07 — the register entries: SRC-CURR-014/015, claims CLM-0207..0212 (renumbered CLM-0224..0229, S13-P07 collision fix) | 34f4261 (pushed) | research/source-register.yaml + claims-register.yaml |
 | S10-P08 — the twenty glossary terms (SIEM/SOAR/UEBA/TIP, underfitting, leakage, practices, strategy, synthetic data) | 5604296 (pushed) | GLOSSARY.md at 349 terms (verified 2026-11-04: 349 under the drift counter's definition at that commit — rows beginning bold) |
 | S10-P09 — watching companions: 25 rows across eleven chapter READMEs | 3946699 (pushed) | chapters/{01,02,08,09,12,16,17,21,22,23,24}/README.md |
 | S10-P10 — watching pointers: eleven solutions files | 7f30be4 (pushed) | chapters/*/solutions.md |
@@ -1213,7 +1213,7 @@ applied note by note — one coherent unit per commit.
 | S11-P02..P05 — the four CampusX content modules (2+4+6+2 lessons) | 99e66fa..800985a (pushed) | scripts/campusx_content*.py |
 | S11-P06 — the idempotent companion generator with self-checks | f665d4b (pushed) | scripts/gen_campusx_companion.py |
 | S11-P07 — the companion layer: course page + 14 notes + 5 analyses (20 files) | 153f176 (pushed) | courses/campusx-ai-security-guardrails/ the layer-count claim written then (119) was off by five — corrected 2026-11-04, session 12 |
-| S11-P08 — the register entry and six claims | e7b7cb1 (pushed) | SRC-CURR-016 + CLM-0213..0218 |
+| S11-P08 — the register entry and six claims | e7b7cb1 (pushed) | SRC-CURR-016 + CLM-0213..0218 (renumbered CLM-0230..0235, S13-P07 collision fix) |
 | S11-P09 — the fourteen glossary rows (the guardrails engineering family) | beb3dfd (pushed) | GLOSSARY.md at 363 terms (verified 2026-11-04 under the drift counter's definition, rows beginning bold — the ten suffix-parenthesized terms included) |
 | S11-P10 — watching rows and exercise pointers in 7 chapters + 2 project companions | 98dce18 (pushed) | Ch. 08/12/13/14/15/16/19 + P07/P08 |
 | S11-P11..P12 — the library resynced to six courses + the AWESOME entry | 7f814e3 + 7e27329 (pushed) | courses/README.md, study-plans, ledger, MAINTENANCE, FAQ, AWESOME |

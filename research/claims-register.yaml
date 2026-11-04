@@ -2777,7 +2777,7 @@ claims:
   assumptions: the arXiv API abstract record accurately reflects the paper's claims
   counterevidence: none observed this session
   date: '2026-10-25'
-- id: CLM-0207
+- id: CLM-0224
   claim: 'The DataCamp course "AI Security and Risk Management" is a beginner-level,
     no-prerequisites, 3-chapter course with 44 lessons totaling 2750 XP (700 in chapter
     1, 1000 in chapter 2, 1050 in chapter 3), published 2026-05-04, placed in the AI
@@ -2792,7 +2792,7 @@ claims:
     median completion of about 1 hour; both figures are carried as stated, and the
     per-lesson durations were not published for this course
   date: 2026-11-03
-- id: CLM-0208
+- id: CLM-0225
   claim: 'The course is instructed by Angeline Corvaglia (digital transformation
     specialist, founder of Data Girl and Friends) with collaborators Joe Franklin
     and Jordan Beecher, and its three chapters are "AI''s Security Landscape" (11
@@ -2808,7 +2808,7 @@ claims:
   counterevidence: chapter percentage displays are perishable platform values and
     are not recorded as repository claims about the course content
   date: 2026-11-03
-- id: CLM-0209
+- id: CLM-0226
   claim: 'The course teaches ten named gamified scenario exercises — Dinner at Riskland
     Junction, Security Catalyst Station, Ecosystem Nexus, Model Risk Abyss, Perimeter
     Peril Point, Fortified Code Forge, Assessment Framework Enclave, General Landora
@@ -2822,7 +2822,7 @@ claims:
   counterevidence: none observed this session; the catalog page's schema positions agree
     with the supplied order for all 44 lessons
   date: 2026-11-03
-- id: CLM-0210
+- id: CLM-0227
   claim: 'The video synopses the companion notes rely on state, among the course''s
     core positions: the five AI-specific risks (bias, hallucination, data poisoning,
     adversarial attacks, sensitive data exposure); the four security-operations tool
@@ -2843,7 +2843,7 @@ claims:
   counterevidence: the repository never streamed any video and cannot verify the
     synopses against the spoken content; the notes are honest about this strength
   date: 2026-11-03
-- id: CLM-0211
+- id: CLM-0228
   claim: 'The wrap-up video names the instructor''s recommended follow-ons
     — AI Ethics, Artificial Intelligence (AI) Strategy, Explainable Artificial
     Intelligence (XAI) Concepts, and Introduction to Data Security — and invites
@@ -2854,7 +2854,7 @@ claims:
   assumptions: the synopsis reflects the wrap-up video's announced recommendations
   counterevidence: none observed this session; no follow-on course page was opened
   date: 2026-11-03
-- id: CLM-0212
+- id: CLM-0229
   claim: 'The unauthenticated course URL https://app.datacamp.com/learn/courses/
     ai-security-and-risk-management redirects to the platform sign-in page (302),
     so the interactive lesson content is account-walled and unverifiable without
@@ -2866,7 +2866,7 @@ claims:
   counterevidence: none observed this session; the public catalog page remains reachable
     without an account and carries the full lesson structure
   date: 2026-11-03
-- id: CLM-0213
+- id: CLM-0230
   claim: 'The CampusX course "AI Security & Guardrails" (learnwith.campusx.in) lists
     a four-module outline marked TENTATIVE by the platform itself, with 14 lessons
     of which 13 carry published durations totaling 330.47 minutes and one (module
@@ -2879,7 +2879,7 @@ claims:
   counterevidence: none observed this session; both fetches returned the same curriculum
     items and durations
   date: 2026-11-03
-- id: CLM-0214
+- id: CLM-0231
   claim: 'The course is paid — priced at Rs. 1999 against an MRP of Rs. 2499 with
     GST-inclusive pricing, a 1095-day validity, and a sales count of 24 — taught
     in Hinglish, with the instructor credited on the page as CampusX.'
@@ -2892,7 +2892,7 @@ claims:
   counterevidence: country pricing is keyed to IN in the page data; other markets
     may differ and none were inspected
   date: 2026-11-03
-- id: CLM-0215
+- id: CLM-0232
   claim: 'The published description names the course''s method (a step-by-step threat
     modelling framework applied with Data Flow Diagrams, trust boundaries, and the
     capability lens) and both case studies: a NovaBank RAG application and a doctor-booking
@@ -2905,7 +2905,7 @@ claims:
   counterevidence: none observed this session; the outline being TENTATIVE is carried
     as the standing caveat on all description-derived claims
   date: 2026-11-03
-- id: CLM-0216
+- id: CLM-0233
   claim: 'The published description names the RAG case study''s five security layers
     — PII detection and masking; pre-retrieval metadata filtering (authentication
     and authorization at production level); input guardrails against jailbreaks;
@@ -2919,7 +2919,7 @@ claims:
     description states; tool usage was not observed behind the paywall
   counterevidence: none observed this session
   date: 2026-11-03
-- id: CLM-0217
+- id: CLM-0234
   claim: 'The published description names the agent case study''s four security
     layers — a jailbreak gate (a separate guard model reading every message with
     recent turns inside delimiters, blocking authority claims, other people''s data,
@@ -2935,7 +2935,7 @@ claims:
   counterevidence: none observed this session; the TENTATIVE outline is the standing
     caveat
   date: 2026-11-03
-- id: CLM-0218
+- id: CLM-0235
   claim: 'The description states the course''s central security claim — that write
     and delete capabilities make an agent more dangerous than a RAG: an attack no
     longer just changes an answer, it makes the agent take real actions, such as

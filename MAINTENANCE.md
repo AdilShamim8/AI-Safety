@@ -102,7 +102,7 @@ corroborating the register entry; SRC-CURR-015 (the course URL)
 resolved as the expected sign-in redirect (302) — recorded in the
 entry's limitations as the account-wall, not as a failure. The
 catalog-page fetch carried the chapter and lesson structure that
-CLM-0207..0212 pin.
+CLM-0207..0212 pin — those ids were renumbered to CLM-0224..0229 in S13-P07 after a collision audit found the course block duplicated paper claims; the record stands, the ids moved.
 
 ## CI
 
@@ -272,7 +272,7 @@ SRC-CURR-016's URL was verified before linking: the course page
 resolved LIVE to the platform's rendered page (title corroborating
 the register entry), and the preview URL resolved LIVE to the same
 outline in a second session. The curriculum data supplied the 14
-lessons with durations that CLM-0213..0218 pin; the platform's own
+lessons with durations that CLM-0213..0218 pin (renumbered CLM-0230..0235 in S13-P07, same collision fix); the platform's own
 TENTATIVE marking on the outline is carried in the register entry's
 limitations.
 
