@@ -1044,7 +1044,7 @@ changes and committed in the same unit.
 | S10-P05 — the idempotent companion generator with self-checks | f34ff43 (pushed) | scripts/gen_datacamp_companion.py |
 | S10-P06 — the companion layer: course page + 44 notes + 5 analyses (50 files) | 1434f2d (pushed) | courses/datacamp-ai-security-risk/; XP corrected to the true 2750 |
 | S10-P07 — the register entries: SRC-CURR-014/015, claims CLM-0207..0212 | 34f4261 (pushed) | research/source-register.yaml + claims-register.yaml |
-| S10-P08 — the twenty glossary terms (SIEM/SOAR/UEBA/TIP, underfitting, leakage, practices, strategy, synthetic data) | 5604296 (pushed) | GLOSSARY.md at 349 terms |
+| S10-P08 — the twenty glossary terms (SIEM/SOAR/UEBA/TIP, underfitting, leakage, practices, strategy, synthetic data) | 5604296 (pushed) | GLOSSARY.md at 349 terms (verified 2026-11-04: 349 under the drift counter's definition at that commit — rows beginning bold) |
 | S10-P09 — watching companions: 25 rows across eleven chapter READMEs | 3946699 (pushed) | chapters/{01,02,08,09,12,16,17,21,22,23,24}/README.md |
 | S10-P10 — watching pointers: eleven solutions files | 7f30be4 (pushed) | chapters/*/solutions.md |
 | S10-P11 — roadmap pairings (alignment + security-engineering routes) | 593579e (pushed) | roadmaps/alignment-research.md + ai-security-engineering.md |
@@ -1106,7 +1106,7 @@ glossary count hidden across a line wrap and a suite breakdown
 that took three resyncs as the test files themselves landed.
 
 Suite 641 to 656 (407 package + 175 from-scratch + 74
-repo-instrument); glossary 329 to 349; sources 261 to 263; claims
+repo-instrument); glossary 329 to 349 (verified 2026-11-04 under the drift counter's definition); sources 261 to 263; claims
 206 to 212; the dashboard regenerated at 656 tests. The full suite
 reruns green end to end; the repository closes at 663 commits.
 
@@ -1214,12 +1214,12 @@ applied note by note — one coherent unit per commit.
 | S11-P06 — the idempotent companion generator with self-checks | f665d4b (pushed) | scripts/gen_campusx_companion.py |
 | S11-P07 — the companion layer: course page + 14 notes + 5 analyses (20 files) | 153f176 (pushed) | courses/campusx-ai-security-guardrails/ |
 | S11-P08 — the register entry and six claims | e7b7cb1 (pushed) | SRC-CURR-016 + CLM-0213..0218 |
-| S11-P09 — the fourteen glossary rows (the guardrails engineering family) | beb3dfd (pushed) | GLOSSARY.md at 363 terms |
+| S11-P09 — the fourteen glossary rows (the guardrails engineering family) | beb3dfd (pushed) | GLOSSARY.md at 363 terms (verified 2026-11-04 under the drift counter's definition, rows beginning bold — the ten suffix-parenthesized terms included) |
 | S11-P10 — watching rows and exercise pointers in 7 chapters + 2 project companions | 98dce18 (pushed) | Ch. 08/12/13/14/15/16/19 + P07/P08 |
 | S11-P11..P12 — the library resynced to six courses + the AWESOME entry | 7f814e3 + 7e27329 (pushed) | courses/README.md, study-plans, ledger, MAINTENANCE, FAQ, AWESOME |
 | S11-P13 — the integrity contract extended (count, URL, coverage, unpublished-status) | 4720529 (pushed) | tests/test_courses_integrity.py + navigation |
 | S11-P14 — the campusx companion contract test file | 537bd57 (pushed) | tests/test_campusx_companion.py |
-| S11-P15..P16 — drift resync: sources 264, claims 218, glossary 363, suite 668 | f3ee992 + e49e230 (pushed) | README/FAQ/CITATION + floors |
+| S11-P15..P16 — drift resync: sources 264, claims 218, glossary 363 (re-verified 2026-11-04), suite 668 | f3ee992 + e49e230 (pushed) | README/FAQ/CITATION + floors |
 | S11-P17..P22 — audit, validator, awesome tests (the entry disclosure fixed in place) | b8ee3e0..969b41b (pushed) | four test files |
 | S11-P23..P25 — responsive, fs, dashboard tests; the primer widget at six courses | 155f9ce..d855cc1 (pushed) | three suites + build_dashboard.py + index.html |
 | S11-P26..P29 — the worked-example modules (3) and the applier | 3ca66b4..c1013e1 (pushed) | scripts/campusx_examples*.py + apply script |

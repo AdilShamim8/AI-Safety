@@ -91,7 +91,7 @@ Unreleased until a tagged release exists.
   the count instruments caught every stale surface on the way,
   including a suite breakdown that took three resyncs as the test
   files landed. Suite 641 to 658 (408 package + 175 from-scratch + 75
-  repo-instrument); glossary 329 to 349; sources 261 to 263; claims
+  repo-instrument); glossary 329 to 349 (re-verified 2026-11-04 under the drift counter's definition); sources 261 to 263; claims
   206 to 212.
 
 ### The stale tab that kept the sliced phone (2026-10-29)
