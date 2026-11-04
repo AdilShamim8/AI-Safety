@@ -1,6 +1,6 @@
 # AI Researcher From Scratch — an owner-directed research track
 
-> Status: **complete** — 7 / 7 module notes, 7 code modules, 174 tests
+> Status: **complete** — 7 / 7 module notes, 7 code modules, 176 tests
 > (2026-10-22); the truthful record remains
 > [`planning/STATUS.md`](../../planning/STATUS.md).
 >
