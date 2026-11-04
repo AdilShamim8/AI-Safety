@@ -284,7 +284,7 @@ The 14 practitioner walk-throughs were applied note by note through the idempote
 
 The fourteen chapter build blocks and the two project blocks were written directly into the chapter and project READMEs (the watching-companions rows carry the pairings; the build blocks carry the relationship in prose). No generated artifact is involved; the register basis is unchanged.
 
-### Session 13 (2026-11-04) — the bug-hunt session: 31 units, commits 851 through 875
+### Session 13 (2026-11-04) — the bug-hunt session: 32 units, commits 851 through 877
 
 The user's final-check report ("still bugs you did not fix") was taken
 as a re-diagnosis mandate, not a defense. Full re-audit across CI, the
@@ -318,10 +318,19 @@ P23 incidents, P24 comparisons, P25 ledger, P26 catalog, P27 the glossary column
 P30 banner. Suite 832→922; every
 count surface now recomputed from disk/collection on each CI run.
 
-P31 closed the session: CI had been red since P17 — the planning-
+P31 addressed the CI root cause: CI had been red since P17 — the planning-
 layer test verifies STATUS rows against git objects, but the workflow
 cloned shallow (fetch-depth 1), so every pre-P17 sha failed cat-file
 on the runner while passing locally on full history. The checkout now
 fetches depth 0; the STATUS rows for all 31 units were appended in the
 same commit, and this record's own numbers were corrected (it first
 shipped saying 903→925 from a build line never re-checked).
+
+P32 closed the session: P31's workflow edit shipped unparsable YAML —
+the checkout step's rationale carried ': ' inside a two-line name, so
+the run failed with zero jobs and no logs to debug. The fix moved the
+rationale to a comment and the file now round-trips a YAML parser
+locally before every push. With CI green on both workflows, the
+session's STATUS rows are pinned to real shas for all thirty-two
+units — every row verified by the planning test, no placeholder left
+in the table.
