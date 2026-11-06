@@ -1317,3 +1317,4 @@ before the CampusX
 | S14-P11 — market content 6: compensation notes (levels.fyi Q3 2025) | d4f1b58 (pushed) | tests/ + docs |
 | S14-P12 — market index: six pages, one discipline | 4489fd4 (pushed) | tests/ + docs |
 | S14-P13 — roles skeleton sweep: five families opened | cf63bdc (pushed) | tests/ + docs |
+| S14-P14 — roles content 1: the safety researcher | d522cb9 (pushed) | tests/ + docs |
