@@ -1323,3 +1323,4 @@ before the CampusX
 | S14-P17 — roles content 4: the evaluator | 65e2b25 (pushed) | tests/ + docs |
 | S14-P18 — roles content 5: the auditor | 8cb2b4f (pushed) | tests/ + docs |
 | S14-P19 — roles index: five families, one spine | a581fce (pushed) | tests/ + docs |
+| S14-P20 — questions skeleton sweep: eight pages opened | 73f35cb (pushed) | tests/ + docs |
