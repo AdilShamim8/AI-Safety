@@ -1314,3 +1314,4 @@ before the CampusX
 | S14-P08 — market content 3: workforce gap (ISC2 2024) | e8e14f7 (pushed) | tests/ + docs |
 | S14-P09 — market content 4: employment outlook (BLS) | b691a94 (pushed) | tests/ + docs |
 | S14-P10 — market content 5: developer AI usage (SO 2025) | cc62256 (pushed) | tests/ + docs |
+| S14-P11 — market content 6: compensation notes (levels.fyi Q3 2025) | d4f1b58 (pushed) | tests/ + docs |
