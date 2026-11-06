@@ -43,6 +43,6 @@ repository's own registered sources instead.
    advice.
 4. Practice the [take-homes](takehomes/README.md) — six formats, each
    mapped to projects you can already run.
-5. Finish with the system-design round (opens with the questions banks)
+5. Finish with the [system-design](questions/system-design.md) round
    — the hardest one, and the one this corpus trains best, because
    every design question reduces to evaluation and safety evidence.
