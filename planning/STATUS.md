@@ -1346,3 +1346,4 @@ before the CampusX
 | S14-P40 — selection content 2: safety | 7a3d171 (pushed) | tests/ + docs |
 | S14-P41 — selection content 3: interview | fbce695 (pushed) | tests/ + docs |
 | S14-P42 — selection content 4: beginner | 0fd4f08 (pushed) | tests/ + docs |
+| S14-P43 — deferred cross-layer links activated | d238998 (pushed) | tests/ + docs |

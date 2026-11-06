@@ -2950,3 +2950,135 @@ claims:
   counterevidence: none observed this session; the repository''s Ch. 14 makes the
     same argument from the control side
   date: 2026-11-03
+- id: CLM-0236
+  claim: 'The World Economic Forum''s Future of Jobs Report 2025 projects, for the
+    2025-2030 horizon, that 170 million new roles will be created, 92 million existing
+    jobs will be displaced, net job growth of 78 million, and job disruption equating
+    to 22% of jobs by 2030.'
+  source: SRC-REPORT-042
+  section_or_page: publication page (search-corroborated; direct fetch refused)
+  evidence_strength: figures verified via search-engine captures of the weforum.org
+    page corroborated across independent results and WEF public communications; the
+    170M/92M pair appears in WEF''s own communications
+  assumptions: the 2025 edition''s headline figures are stable across the page and its
+    chapter pages; no later revised edition was checked (the register records the 2025
+    edition only)
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0237
+  claim: 'Employers expect 39% of workers'' core skills to change by 2030 (Figure 3.1
+    of the Skills Outlook chapter), down from 44% in the 2023 edition.'
+  source: SRC-REPORT-043
+  section_or_page: skills-outlook chapter page (search-corroborated; direct fetch refused)
+  evidence_strength: the 39% figure and the 44%-in-2023 comparison verified via
+    search-engine captures of the weforum.org chapter page, with the figure labeled
+    Figure 3.1 on the page snippet
+  assumptions: the chapter numbering from the URL path (3-skills-outlook) is correct;
+    the 2023-edition comparison (44%) is stated on the same page
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0238
+  claim: 'According to ISC2''s 2024 Cybersecurity Workforce Study as reported by ISC2''s
+    own Insights article, 5.5 million people are active in cyber worldwide, the workforce
+    gap is 4.8 million, the gap increased 19% over 2023, and the active workforce was
+    roughly static year-on-year (+0.1%).'
+  source: SRC-REPORT-044
+  section_or_page: ISC2 Insights article, October 2024 (page-inspected)
+  evidence_strength: direct fetch of the article on 2026-11-06; all four figures read
+    from the fetched page
+  assumptions: the article faithfully reports the underlying study; the study PDF was
+    not separately fetched, so this claim is about the study as reported by ISC2
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0239
+  claim: 'The U.S. Bureau of Labor Statistics Occupational Outlook Handbook states the
+    median annual wage for information security analysts was 129,180 US dollars in May
+    2025, and projects employment to grow 21 percent from 2025 to 2035, much faster
+    than the average for all occupations.'
+  source: SRC-REPORT-045
+  section_or_page: OOH information-security-analysts page (search-corroborated; direct
+    fetch refused)
+  evidence_strength: figures verified via search-engine captures of the bls.gov page,
+    corroborated by a secondary snapshot carrying the same wage and growth figures
+  assumptions: the OOH page''s current revision carries May 2025 wage data and 2025-2035
+    projections; the page has no single revision date, so the register holds
+    publication_date null with each figure keeping its own as-of date
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0240
+  claim: 'The BLS OOH group page for computer and information technology occupations
+    states a group median annual wage of 109,470 US dollars (May 2025), against the
+    all-occupations median of 50,980.'
+  source: SRC-REPORT-052
+  section_or_page: OOH C&IT group page (search-corroborated; direct fetch refused)
+  evidence_strength: both figures verified via search-engine captures of the bls.gov
+    group page
+  assumptions: same revision caveat as the per-occupation page; wage data as-of May
+    2025
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0241
+  claim: 'In the 2025 Stack Overflow Developer Survey AI section, 84% of respondents
+    use or plan to use AI tools in their development process, up from 76% the year
+    before.'
+  source: SRC-REPORT-046
+  section_or_page: 2025 survey AI section (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; the 84% stated in the page narrative
+    and backed by chart data (16.2% said no-and-no-plans, so 83.8% rounds to 84%)
+  assumptions: the "up from 76%" comparison is stated on the page as the prior-year
+    figure
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0242
+  claim: 'The same survey states 51% of professional developers use AI tools daily;
+    the exact chart figure is 50.6% daily, with 17.4% weekly and 12.8% monthly or
+    less.'
+  source: SRC-REPORT-046
+  section_or_page: 2025 survey AI section (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; narrative and chart-level figures
+    both read from the page
+  assumptions: the narrative''s 51% is a rounding of the chart''s 50.6%, as the page
+    presents both
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0243
+  claim: 'Favorable sentiment toward AI tools decreased in 2025 to about 60% (22.9%
+    very favorable plus 36.8% favorable), down from 70%-plus in 2023 and 2024.'
+  source: SRC-REPORT-046
+  section_or_page: 2025 survey AI section (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; the page narrative states the decline
+    from 70%+ and the chart decomposition carries the sum
+  assumptions: 'the construct favorable sentiment is the survey''s own, as presented;
+    the professional-developers decomposition (61.2%) differs slightly from
+    all-respondents (59.7%), both read from the page' 
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0244
+  claim: 'levels.fyi''s Q3 2025 analysis states AI-focused software engineers in the
+    US average about 245,000 dollars a year, and that AI staff engineers at Intuit
+    earn close to 917,000 against about 515,000 for non-AI staff engineers at the same
+    company.'
+  source: SRC-REPORT-047
+  section_or_page: AI engineer compensation trends Q3 2025 (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; all three figures read from the page,
+    in its Q3 2025 frame
+  assumptions: self-reported user data tabulated by one vendor; treated as a dated
+    snapshot of a moving market, not a survey with known methodology margins — the
+    register entry says the same
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0245
+  claim: 'The same analysis reports the median salary trend for AI engineers as a
+    peak of about 295,000 in March 2024, dropping to about 228,500 in January 2025,
+    rebounding to about 277,000 in March, then settling around 260,000-269,000; and
+    senior-level snapshots of about 635,000 at Snap and about 513,000 at Cruise, with
+    entry level at LinkedIn about 288,050 versus 225,000 non-AI.'
+  source: SRC-REPORT-047
+  section_or_page: AI engineer compensation trends Q3 2025 (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; the trend and per-company figures
+    read from the page
+  assumptions: the trend series is the vendor''s own tabulation; the article attributes
+    the rebound partly to Meta and OpenAI driving high-compensation packages, which is
+    the vendor''s interpretation carried as such
+  counterevidence: null
+  date: 2026-11-06
