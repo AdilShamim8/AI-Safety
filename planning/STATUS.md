@@ -1315,3 +1315,4 @@ before the CampusX
 | S14-P09 — market content 4: employment outlook (BLS) | b691a94 (pushed) | tests/ + docs |
 | S14-P10 — market content 5: developer AI usage (SO 2025) | cc62256 (pushed) | tests/ + docs |
 | S14-P11 — market content 6: compensation notes (levels.fyi Q3 2025) | d4f1b58 (pushed) | tests/ + docs |
+| S14-P12 — market index: six pages, one discipline | 4489fd4 (pushed) | tests/ + docs |
