@@ -1330,3 +1330,4 @@ before the CampusX
 | S14-P24 — questions content 4: the behavioral bank | dcabc15 (pushed) | tests/ + docs |
 | S14-P25 — questions content 5: the governance bank | 50be3a1 (pushed) | tests/ + docs |
 | S14-P26 — questions content 6: the red-team bank | 40c2674 (pushed) | tests/ + docs |
+| S14-P27 — questions content 7: the honesty round | 986ad9f (pushed) | tests/ + docs |
