@@ -1312,3 +1312,4 @@ before the CampusX
 | S14-P06 — market content 1: the demand signal filled | a36cb2b (pushed) | tests/ + docs |
 | S14-P07 — market content 2: skills outlook (39% figure) | c7c409d (pushed) | tests/ + docs |
 | S14-P08 — market content 3: workforce gap (ISC2 2024) | e8e14f7 (pushed) | tests/ + docs |
+| S14-P09 — market content 4: employment outlook (BLS) | b691a94 (pushed) | tests/ + docs |
