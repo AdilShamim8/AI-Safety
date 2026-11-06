@@ -1309,3 +1309,4 @@ before the CampusX
 | S14-P03 — source batch 2: DeepMind FSF 3.0/3.1, OpenAI Preparedness v2, ISO 42001, field-guide repo, BLS group | c2911f5 (pushed) | tests/ + docs |
 | S14-P04 — interviews front door + four sub-layer skeletons | 443deca (pushed) | tests/ + docs |
 | S14-P05 — market skeleton sweep: six pages opened | 285f190 (pushed) | tests/ + docs |
+| S14-P06 — market content 1: the demand signal filled | a36cb2b (pushed) | tests/ + docs |
