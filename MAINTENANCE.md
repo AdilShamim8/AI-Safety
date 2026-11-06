@@ -334,3 +334,11 @@ locally before every push. With CI green on both workflows, the
 session's STATUS rows are pinned to real shas for all thirty-two
 units — every row verified by the planning test, no placeholder left
 in the table.
+### Session 14 (2026-11-06) — the interview-preparation layer: 115 units planned
+Opened on the user's finding: the corpus had no interview-preparation
+layer and no curated security/safety selections. This session adds an
+interviews/ layer grounded only in registered, real-world data (WEF,
+ISC2, BLS, Stack Overflow, levels.fyi, OWASP, NIST, EU AI Act, lab
+safety frameworks), a selections/ layer, a beginner-first README, and
+keeps every surface recomputed from disk. STATUS rows now land one
+commit after their unit with the real sha — no placeholder, ever.

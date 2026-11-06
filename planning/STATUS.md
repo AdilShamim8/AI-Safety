@@ -1302,3 +1302,5 @@ before the CampusX
 | S13-P30 — dashboard banner | fd0961d (pushed) | tests/ + docs |
 | S13-P31 — CI shallow-clone fix + session STATUS rows | 48d9b53 (pushed) | tests/ + docs |
 | S13-P32 — CI workflow YAML parse fix | 26e8b08 (pushed) | ci + tests/ |
+## Session 14 (2026-11-06) — the interview-preparation and selection layers
+| S13-P33 — session-close records pinned to real shas | b108f99 (pushed) | docs |
