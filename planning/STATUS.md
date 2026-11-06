@@ -1341,3 +1341,4 @@ before the CampusX
 | S14-P35 — takehome content 5: the governance format | 9d2eb1a (pushed) | tests/ + docs |
 | S14-P36 — takehome content 6: the mini-study | 8039cfb (pushed) | tests/ + docs |
 | S14-P37 — takehomes index: six formats, one habit | 25d73b4 (pushed) | tests/ + docs |
+| S14-P38 — selections layer opened: README + four stubs | 10b7b49 (pushed) | tests/ + docs |
