@@ -1338,3 +1338,4 @@ before the CampusX
 | S14-P32 — takehome content 2: the defense fix | a538d5f (pushed) | tests/ + docs |
 | S14-P32 — takehome content 2: the defense fix | 22a5c27 (pushed) | tests/ + docs |
 | S14-P34 — takehome content 4: the dossier | aef8971 (pushed) | tests/ + docs |
+| S14-P35 — takehome content 5: the governance format | 9d2eb1a (pushed) | tests/ + docs |
