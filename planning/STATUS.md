@@ -1342,3 +1342,4 @@ before the CampusX
 | S14-P36 — takehome content 6: the mini-study | 8039cfb (pushed) | tests/ + docs |
 | S14-P37 — takehomes index: six formats, one habit | 25d73b4 (pushed) | tests/ + docs |
 | S14-P38 — selections layer opened: README + four stubs | 10b7b49 (pushed) | tests/ + docs |
+| S14-P39 — selection content 1: security | b658364 (pushed) | tests/ + docs |
