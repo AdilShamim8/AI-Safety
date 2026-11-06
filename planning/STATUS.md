@@ -1321,3 +1321,4 @@ before the CampusX
 | S14-P15 — roles content 2: the security specialist | d128bd3 (pushed) | tests/ + docs |
 | S14-P16 — roles content 3: the safety engineer | 381ad51 (pushed) | tests/ + docs |
 | S14-P17 — roles content 4: the evaluator | 65e2b25 (pushed) | tests/ + docs |
+| S14-P18 — roles content 5: the auditor | 8cb2b4f (pushed) | tests/ + docs |
