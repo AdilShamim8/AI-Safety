@@ -1336,3 +1336,4 @@ before the CampusX
 | S14-P30 — takehomes skeleton sweep: six formats opened | 224bf9e (pushed) | tests/ + docs |
 | S14-P31 — takehome content 1: the harness build | c007447 (pushed) | tests/ + docs |
 | S14-P32 — takehome content 2: the defense fix | a538d5f (pushed) | tests/ + docs |
+| S14-P32 — takehome content 2: the defense fix | 22a5c27 (pushed) | tests/ + docs |
