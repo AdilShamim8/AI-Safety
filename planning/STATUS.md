@@ -1333,3 +1333,4 @@ before the CampusX
 | S14-P27 — questions content 7: the honesty round | 986ad9f (pushed) | tests/ + docs |
 | S14-P28 — questions content 8: the system-design bank | dcc77a4 (pushed) | tests/ + docs |
 | S14-P29 — questions index + front-door round link activated | f5786cf (pushed) | tests/ + docs |
+| S14-P30 — takehomes skeleton sweep: six formats opened | 224bf9e (pushed) | tests/ + docs |
