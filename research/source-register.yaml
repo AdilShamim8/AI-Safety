@@ -5587,3 +5587,100 @@ sources:
     moving market, not a survey with known methodology margins. All figures
     carry the Q3 2025 frame from the page.
   license: copyright levels.fyi; quoted figures only
+- id: SRC-REPORT-048
+  title: 'Strengthening our Frontier Safety Framework (FSF 3.0 / 3.1)'
+  authors_or_organization: Google DeepMind
+  url: https://deepmind.google/blog/strengthening-our-frontier-safety-framework/
+  source_type: blog
+  publication_date: 2025-09-22
+  version: FSF 3.0, page updated 2026-04-17 with FSF 3.1
+  accessed_on: 2026-11-06
+  access_level: page-inspected
+  evidence_class: expert technical analysis
+  peer_review_status: not peer reviewed (lab policy publication)
+  supports:
+  - interviews/questions layer (governance and framework questions)
+  - selections/safety-selection.md (framework landscape)
+  limitations: Page fetched in full on 2026-11-06; publication and update dates
+    read from the page itself. The framework's named constructs (Critical
+    Capability Levels, Tracked Capability Levels added in FSF 3.1, and the
+    domains they cover) are quoted from the page; the underlying evaluations
+    are not published with it.
+  license: copyright Google DeepMind; framework names quoted, no text reproduced
+- id: SRC-REPORT-049
+  title: 'Our updated Preparedness Framework (v2)'
+  authors_or_organization: OpenAI
+  url: https://openai.com/index/updating-our-preparedness-framework/
+  source_type: blog
+  publication_date: 2025-04-15
+  version: v2
+  accessed_on: 2026-11-06
+  access_level: page-inspected
+  evidence_class: expert technical analysis
+  peer_review_status: not peer reviewed (lab policy publication)
+  supports:
+  - interviews/questions layer (governance and framework questions)
+  - selections/safety-selection.md (framework landscape)
+  limitations: Page fetched in full on 2026-11-06. Tracked categories (biological
+    and chemical, cybersecurity, AI self-improvement), the two capability
+    thresholds (High, Critical) and the five risk-prioritization criteria are
+    quoted from the page; the linked PDF was not separately fetched.
+  license: copyright OpenAI; framework names quoted, no text reproduced
+- id: SRC-REPORT-050
+  title: 'ISO/IEC 42001:2023 — Artificial intelligence management system'
+  authors_or_organization: ISO/IEC
+  url: https://www.iso.org/standard/42001
+  source_type: web-report
+  publication_date: 2023-12-17
+  version: '2023'
+  accessed_on: 2026-11-06
+  access_level: metadata-only
+  evidence_class: expert technical analysis
+  peer_review_status: standardization document (consensus process, not academic peer review)
+  supports:
+  - selections/security-selection.md (management-system landscape)
+  - interviews/questions layer (governance questions)
+  limitations: Direct fetch refused (HTTP 403, 2026-11-06). Scope sentence
+    verified via search-engine snippets of the iso.org page; edition year from
+    the standard's title (ISO/IEC 42001:2023); exact publication day not
+    captured, the date given is the commonly listed publication date for the
+    2023 edition and is marked as an assumption in any claim citing it.
+  license: copyright ISO/IEC; standard not reproducible, referenced by name only
+- id: SRC-REPORT-051
+  title: 'AI Engineering Field Guide (interview research repository)'
+  authors_or_organization: Alexey Grigorev
+  url: https://github.com/alexeygrigorev/ai-engineering-field-guide
+  source_type: repository
+  publication_date: null
+  version: living repository (accessed 2026-11-06)
+  accessed_on: 2026-11-06
+  access_level: page-inspected
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (community research repository)
+  supports:
+  - interviews/roles layer (interview-loop anatomy)
+  - interviews/README.md (method acknowledgment)
+  limitations: Repository page fetched in full on 2026-11-06; its stated
+    basis (6,964 actual job descriptions, real interview experiences) is the
+    author's own claim on the page, carried here as inspiration provenance for
+    the interview-layer method, never as evidence for any market figure. No
+    publication date shown on the page; snapshot date is the access date.
+  license: repository license not captured at fetch time; structure referenced, no text reproduced
+- id: SRC-REPORT-052
+  title: 'Occupational Outlook Handbook — Computer and Information Technology Occupations (group page)'
+  authors_or_organization: U.S. Bureau of Labor Statistics
+  url: https://www.bls.gov/ooh/computer-and-information-technology/
+  source_type: web-report
+  publication_date: null
+  version: periodically revised OOH page (May 2025 wage data)
+  accessed_on: 2026-11-06
+  access_level: metadata-only
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (government statistical publication)
+  supports:
+  - interviews/market layer (US employment outlook)
+  limitations: Direct fetch refused (HTTP 403, 2026-11-06). The group median
+    wage (109,470 US dollars, May 2025) and the all-occupations median (50,980)
+    verified via search-engine snippets of the bls.gov page; the page carries
+    no single revision date, so publication_date is null.
+  license: US federal government work; public domain

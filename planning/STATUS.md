@@ -1305,3 +1305,4 @@ before the CampusX
 ## Session 14 (2026-11-06) — the interview-preparation and selection layers
 | S13-P33 — session-close records pinned to real shas | b108f99 (pushed) | docs |
 | S14-P01 — session-14 records opened | 061c3e3 (pushed) | tests/ + docs |
+| S14-P02 — source batch 1: WEF FOJ 2025 x2, ISC2 2024, BLS OOH, SO Survey 2025, levels.fyi | 97bc314 (pushed) | tests/ + docs |
