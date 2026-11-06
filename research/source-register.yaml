@@ -5468,3 +5468,122 @@ sources:
     instructor is credited on the page as CampusX; no individual byline appears,
     and none is invented here.
   license: standard Graphy platform terms of service
+- id: SRC-REPORT-042
+  title: 'The Future of Jobs Report 2025 (publication page)'
+  authors_or_organization: World Economic Forum
+  url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  source_type: report
+  publication_date: 2025-01-07
+  version: 2025 edition
+  accessed_on: 2026-11-06
+  access_level: metadata-only
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (WEF institutional publication)
+  supports:
+  - interviews/market layer (global job-outlook figures)
+  - roadmaps/careers-index.md (market-signal context)
+  limitations: Direct fetch refused (HTTP 403, 2026-11-06). Figures verified via
+    search-engine snippets of the weforum.org page and corroborated across at
+    least two independent index captures; headline figures (170 million jobs
+    created, 92 million displaced, 22% of jobs disrupted by 2030) also appear in
+    WEF's own public communications. Day-level publication date from the page
+    snippet (Jan 7, 2025).
+  license: copyright World Economic Forum; quoted figures only, no text reproduced
+- id: SRC-REPORT-043
+  title: 'Future of Jobs Report 2025 — Skills Outlook (chapter page)'
+  authors_or_organization: World Economic Forum
+  url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/3-skills-outlook
+  source_type: report
+  publication_date: 2025-01-07
+  version: 2025 edition, chapter 3
+  accessed_on: 2026-11-06
+  access_level: metadata-only
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (WEF institutional publication)
+  supports:
+  - interviews/market layer (skills-change figure)
+  - interviews/roles layer (skill-demand framing)
+  limitations: Direct fetch refused (HTTP 403, 2026-11-06). The 39% core-skills
+    figure and its 2023 comparison (44%) verified via search-engine snippets of
+    the page; the chapter number appears in the URL and the figure is labelled
+    Figure 3.1 on the page snippet.
+  license: copyright World Economic Forum; quoted figures only, no text reproduced
+- id: SRC-REPORT-044
+  title: 'The State of the Cybersecurity Workforce (ISC2 Insights, October 2024)'
+  authors_or_organization: ISC2
+  url: https://www.isc2.org/Insights/2024/10/Cybersecurity-Workforce-INSIGHTS-October-2024
+  source_type: report
+  publication_date: 2024-10-23
+  version: 2024 Workforce Study coverage
+  accessed_on: 2026-11-06
+  access_level: page-inspected
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (professional-body study coverage)
+  supports:
+  - interviews/market layer (cyber workforce gap figures)
+  - selections/security-selection.md (demand framing)
+  limitations: Figures are ISC2's 2024 study as reported in the organization's
+    own Insights article (5.5 million active professionals, 4.8 million gap,
+    gap up 19% over 2023, active workforce roughly static year-on-year at
+    +0.1%); underlying study PDF not separately fetched.
+  license: copyright ISC2; quoted figures only
+- id: SRC-REPORT-045
+  title: 'Occupational Outlook Handbook — Information Security Analysts'
+  authors_or_organization: U.S. Bureau of Labor Statistics
+  url: https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm
+  source_type: web-report
+  publication_date: null
+  version: periodically revised OOH page (May 2025 wage data, 2025-2035 projections)
+  accessed_on: 2026-11-06
+  access_level: metadata-only
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (government statistical publication)
+  supports:
+  - interviews/market layer (US employment outlook)
+  - roadmaps/careers-index.md (market-signal context)
+  limitations: Direct fetch refused (HTTP 403, 2026-11-06). Figures (median
+    annual wage 129,180 US dollars in May 2025; employment projected to grow 21
+    percent from 2025 to 2035) verified via search-engine snippets of the
+    bls.gov page and corroborated by a secondary snapshot; the page carries no
+    single revision date, so publication_date is null and each figure keeps its
+    own as-of date.
+  license: US federal government work; public domain
+- id: SRC-REPORT-046
+  title: '2025 Stack Overflow Developer Survey — AI section'
+  authors_or_organization: Stack Overflow
+  url: https://survey.stackoverflow.co/2025/ai
+  source_type: web-report
+  publication_date: null
+  version: '2025'
+  accessed_on: 2026-11-06
+  access_level: page-inspected
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (industry survey)
+  supports:
+  - interviews/market layer (developer AI-tool usage)
+  - interviews/questions layer (tooling fluency expectations)
+  limitations: Page fetched in full on 2026-11-06; exact publication date not
+    shown on the page (survey results for 2025). Chart-level figures read from
+    the page (84% using or planning to use; 50.6% of professional developers
+    daily, stated as 51% in the narrative; favorable sentiment about 60%, down
+    from 70%+ in 2023-2024).
+  license: copyright Stack Overflow; quoted figures only
+- id: SRC-REPORT-047
+  title: 'AI Engineer Compensation Trends Q3 2025'
+  authors_or_organization: levels.fyi
+  url: https://www.levels.fyi/blog/ai-engineer-compensation-trends-q3-2025.html
+  source_type: web-report
+  publication_date: 2025-07-17
+  version: Q3 2025 analysis
+  accessed_on: 2026-11-06
+  access_level: page-inspected
+  evidence_class: empirical
+  peer_review_status: not peer reviewed (compensation-data analysis)
+  supports:
+  - interviews/market layer (compensation notes)
+  - roadmaps/careers-index.md (market-signal context)
+  limitations: Page fetched in full on 2026-11-06. Figures are levels.fyi's
+    own tabulations (self-reported user data); treat as a dated snapshot of a
+    moving market, not a survey with known methodology margins. All figures
+    carry the Q3 2025 frame from the page.
+  license: copyright levels.fyi; quoted figures only

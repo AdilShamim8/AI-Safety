@@ -1304,3 +1304,4 @@ before the CampusX
 | S13-P32 — CI workflow YAML parse fix | 26e8b08 (pushed) | ci + tests/ |
 ## Session 14 (2026-11-06) — the interview-preparation and selection layers
 | S13-P33 — session-close records pinned to real shas | b108f99 (pushed) | docs |
+| S14-P01 — session-14 records opened | 061c3e3 (pushed) | tests/ + docs |

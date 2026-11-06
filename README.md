@@ -7,7 +7,7 @@ or subscription is required for the core path.
 
 **Status (honest, updated 2026-10-28):** the build is complete at its target
 scope and deepened — 24 of 24 chapters, 10 of 10 projects implemented
-(deterministic, offline, stdlib-first), 47 verified dataset cards, 264
+(deterministic, offline, stdlib-first), 47 verified dataset cards, 270
 registered sources, 218 registered claims, 74 paper notes + 12 comparisons
 + 14 incident reviews, and a 922-test suite green in CI. Every project marks
 its honest not-executed tiers where compute was out of scope. Live counters
@@ -101,7 +101,7 @@ arithmetic: [ROADMAP.md](ROADMAP.md).
 | `roadmaps/` | Route pages, study schedules, careers index with the progress ladder | **complete** |
 | `chapters/` | 24 chapter units (the course itself) | **complete** (24/24) — readings verified, solutions with rubrics |
 | `projects/` | 10 runnable research learning units | **implemented** (10/10) — deterministic, pinned numbers, honest tiers |
-| `research/` | Method, article map, source + claims registers, notes (74 paper + 12 comparison + 14 incident reviews) | **complete** — 264 sources / 218 claims, audit-clean |
+| `research/` | Method, article map, source + claims registers, notes (74 paper + 12 comparison + 14 incident reviews) | **complete** — 270 sources / 218 claims, audit-clean |
 | `research/ai-researcher-from-scratch/` | The from-scratch researcher track (stdlib-only modules) | **complete** (7/7) — 174 tests |
 | `datasets/` | 47 verified real-world dataset cards + machine-readable catalog | **complete** — queue empty |
 | `planning/` | Build plan, status, content matrix, ADRs | **exists** — the build's durable record |
