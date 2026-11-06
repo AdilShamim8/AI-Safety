@@ -3082,3 +3082,143 @@ claims:
     the vendor''s interpretation carried as such
   counterevidence: null
   date: 2026-11-06
+- id: CLM-0246
+  claim: 'Google DeepMind''s Frontier Safety Framework page (published 2025-09-22,
+    page marked updated 2026-04-17) announces FSF 3.0 and, in the added FSF 3.1
+    section, introduces Tracked Capability Levels alongside the existing Critical
+    Capability Levels.'
+  source: SRC-REPORT-048
+  section_or_page: Strengthening our Frontier Safety Framework (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; publication date, update date, and
+    both construct names read from the page itself
+  assumptions: the page''s own date labels are accurate; the underlying evaluations are
+    not published with the page, so this claim covers the framework text only
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0247
+  claim: 'The FSF 3.0 announcement names the covered risk domains including harmful
+    manipulation, misalignment risks (models obstructing operators'' ability to direct,
+    modify, or shut them down), machine-learning research and development CCLs, and
+    instrumental reasoning CCLs, and pairs CCL thresholds with safety case reviews
+    before launches, extended to large-scale internal deployments for advanced ML R&D
+    models.'
+  source: SRC-REPORT-048
+  section_or_page: Strengthening our Frontier Safety Framework (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; domain names and the safety-case
+    mechanism read from the page
+  assumptions: the domain list is exhaustive as presented on the page; paraphrase
+    preserves the page''s own terms
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0248
+  claim: 'OpenAI''s updated Preparedness Framework (published 2025-04-15) tracks three
+    risk categories (biological and chemical, cybersecurity, AI self-improvement),
+    defines High and Critical as its two capability thresholds, requires risks to be
+    plausible, measurable, severe, net new, and instantaneous-or-irremediable to
+    qualify as tracked, and renames the Preparedness Scorecard to a Capabilities
+    Report with a new dedicated Safeguards Report.'
+  source: SRC-REPORT-049
+  section_or_page: Our updated Preparedness Framework (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; all named constructs read from the
+    page; the linked PDF was not separately fetched
+  assumptions: the page accurately summarizes the v2 document; persuasion risks moved
+    outside the framework to the Model Spec, per the page
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0249
+  claim: 'ISO/IEC 42001:2023 specifies requirements for establishing, implementing,
+    maintaining, and continually improving an AI management system; it is an
+    organizational management-system standard, not a model-evaluation standard.'
+  source: SRC-REPORT-050
+  section_or_page: iso.org standard page (search-corroborated; direct fetch refused)
+  evidence_strength: the scope sentence verified via search-engine captures of the
+    iso.org page; the organizational-vs-model distinction is drawn from the scope
+    wording, and the register entry is marked metadata-only for this reason
+  assumptions: the 2023 edition''s scope as presented on the page; publication day not
+    captured — the date carried in the register is the commonly listed publication
+    date and is flagged as an assumption there
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0250
+  claim: 'The AI Engineering Field Guide states its insights derive from analyzed
+    real data — 6,964 actual job descriptions, real interview experiences, and real
+    stories from practitioners; this figure is the repository author''s own claim on
+    its page, carried in this corpus strictly as inspiration provenance for the
+    interviews layer''s method, never as evidence for any market figure.'
+  source: SRC-REPORT-051
+  section_or_page: repository page (page-inspected)
+  evidence_strength: direct fetch on 2026-11-06; the basis statement read from the
+    page''s own description
+  assumptions: none beyond the page''s self-description; the claim is labeled as the
+    author''s claim precisely because no independent verification was attempted
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0251
+  claim: 'Five of the eleven sources registered in session 14 (WEF publication page,
+    WEF skills chapter, BLS occupation page, BLS group page, ISO standard page)
+    refused automated fetches with HTTP 403 on 2026-11-06; their figures are carried
+    as search-corroborated metadata-only entries with the refusal recorded in each
+    register entry''s limitations.'
+  source: SRC-REPORT-042
+  section_or_page: session-14 fetch log (the register entries for SRC-REPORT-042/043/045/050/052)
+  evidence_strength: direct observation of the fetch attempts; the corroboration method
+    (independent search-engine captures of the same pages) is recorded per entry
+  assumptions: the 403 refusals are session- and region-dependent, as with the earlier
+    Medium paywall observation (CLM-0001); re-fetching may succeed
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0252
+  claim: 'The interviews layer''s structure — market, roles, question banks, take-homes,
+    system design — takes inspiration from the AI Engineering Field Guide''s interview
+    hub structure, as acknowledged on the layer''s front door with the source registered
+    (SRC-REPORT-051); every figure in the layer comes from the corpus''s own registered
+    sources instead.'
+  source: SRC-REPORT-051
+  section_or_page: interviews/README.md method acknowledgment
+  evidence_strength: structural comparison of the two repositories at fetch time; the
+    acknowledgment lives with the layer it describes
+  assumptions: the inspiration is structural (section taxonomy), not content-borrowing;
+    no text was reproduced from the field guide
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0253
+  claim: 'All eleven session-14 source registrations carry the 13-field schema with
+    access levels from the allowed vocabulary: six page-inspected (ISC2, SO survey,
+    levels.fyi, DeepMind FSF, OpenAI PF, field guide), five metadata-only (WEF x2,
+    BLS x2, ISO), each metadata-only entry recording the refusal or paywall reason in
+    its limitations.'
+  source: SRC-REPORT-044
+  section_or_page: research/source-register.yaml (session-14 entries SRC-REPORT-042..052)
+  evidence_strength: direct observation of the register as written; the audit gate
+    (scripts/audit_missing.py) validates the schema on every commit
+  assumptions: null
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0254
+  claim: 'The EU AI Act entered into force on 2024-08-01, its GPAI model obligations
+    applied from 2025-08-02, and it became generally applicable on 2026-08-02 with
+    some exceptions (prohibited AI practices and AI literacy obligations earlier),
+    per the timeline already registered (SRC-REPORT-012) and cited by the interviews
+    layer''s governance bank without re-registration.'
+  source: SRC-REPORT-012
+  section_or_page: artificialintelligenceact.eu implementation timeline (pre-existing
+    register entry)
+  evidence_strength: carried from the pre-existing registration; no new fetch attempted
+    in session 14; the governance bank cites the existing entry
+  assumptions: the timeline as registered at its access date; the AI Act''s
+    general-applicability date is the one the governance bank quotes (2026-08-02)
+  counterevidence: null
+  date: 2026-11-06
+- id: CLM-0255
+  claim: 'The OWASP Top 10 for LLM Applications list is registered (SRC-REPORT-004)
+    and cited by the interviews layer''s red-team bank for LLM01 prompt injection and
+    LLM05 improper output handling, with the bank''s answer distinguishing LLM05 as
+    insufficient validation of outputs by the consumer — per the OWASP page''s own
+    distinction — rather than a model error.'
+  source: SRC-REPORT-004
+  section_or_page: genai.owasp.org LLM top 10 (pre-existing register entry)
+  evidence_strength: carried from the pre-existing registration; the bank quotes the
+    two risks by their registered names with the page''s own definitional distinction
+  assumptions: the 2025 list as registered at its access date
+  counterevidence: null
+  date: 2026-11-06
