@@ -1306,3 +1306,4 @@ before the CampusX
 | S13-P33 — session-close records pinned to real shas | b108f99 (pushed) | docs |
 | S14-P01 — session-14 records opened | 061c3e3 (pushed) | tests/ + docs |
 | S14-P02 — source batch 1: WEF FOJ 2025 x2, ISC2 2024, BLS OOH, SO Survey 2025, levels.fyi | 97bc314 (pushed) | tests/ + docs |
+| S14-P03 — source batch 2: DeepMind FSF 3.0/3.1, OpenAI Preparedness v2, ISO 42001, field-guide repo, BLS group | c2911f5 (pushed) | tests/ + docs |
