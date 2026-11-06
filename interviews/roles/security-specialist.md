@@ -13,7 +13,7 @@ defense designs that name their own limits.
 over the chapters; the capstone fit is **P07 (injection defense) + the
 P10 dossier**. The corpus spine for this family: the OWASP LLM Top 10
 (SRC-REPORT-004), MITRE ATLAS, and NIST materials already registered —
-a curated security selection is planned for the selections layer and will link back here.
+the curated [security selection](../../selections/security-selection.md) groups them.
 
 ## The market that prices it
 

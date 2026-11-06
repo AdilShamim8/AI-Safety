@@ -16,7 +16,7 @@ already registered in this repository: ISO/IEC 42001:2023
 entries), the EU AI Act timeline (SRC-REPORT-012), and the lab
 governance frameworks — DeepMind's FSF 3.0/3.1 (SRC-REPORT-048) and
 OpenAI's Preparedness Framework v2 (SRC-REPORT-049), both registered
-this session. a selections layer is planned and will group them, linking back here.
+this session; the [selections layer](../../selections/README.md) groups them.
 
 ## The market that prices it
 

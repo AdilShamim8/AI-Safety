@@ -21,9 +21,9 @@ own Insights article (accessed 2026-11-06):
 Demand for the security function persistently outruns supply: the gap
 grew while the workforce barely moved. For preparation, that is the
 strongest single signal in this layer — the [security
-specialist](../roles/README.md) family exists against this backdrop
-(the curated security selection opens with the selections layer and
-links back here), and the corpus's own security chapters (the P07/P10
+specialist](../roles/README.md) family and the curated [security
+selection](../../selections/security-selection.md) exist against this
+backdrop, and the corpus's own security chapters (the P07/P10
 capstones, the OWASP/NIST/ATLAS-backed materials) are the
 trainable side of closing it.
 
