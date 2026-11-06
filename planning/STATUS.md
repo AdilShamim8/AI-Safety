@@ -1318,3 +1318,4 @@ before the CampusX
 | S14-P12 — market index: six pages, one discipline | 4489fd4 (pushed) | tests/ + docs |
 | S14-P13 — roles skeleton sweep: five families opened | cf63bdc (pushed) | tests/ + docs |
 | S14-P14 — roles content 1: the safety researcher | d522cb9 (pushed) | tests/ + docs |
+| S14-P15 — roles content 2: the security specialist | d128bd3 (pushed) | tests/ + docs |
