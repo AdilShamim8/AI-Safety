@@ -334,7 +334,7 @@ locally before every push. With CI green on both workflows, the
 session's STATUS rows are pinned to real shas for all thirty-two
 units — every row verified by the planning test, no placeholder left
 in the table.
-### Session 14 (2026-11-06) — the interview-preparation and selection layers: 46 units, commits 879 through 924
+### Session 14 (2026-11-06) — the interview-preparation and selection layers: 48 units including this correction, commits 879 through 926
 Opened on the user's finding: the corpus had no interview-preparation
 layer and no curated security/safety selections. This session adds an
 interviews/ layer grounded only in registered, real-world data (WEF,
