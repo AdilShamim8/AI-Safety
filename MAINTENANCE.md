@@ -334,7 +334,7 @@ locally before every push. With CI green on both workflows, the
 session's STATUS rows are pinned to real shas for all thirty-two
 units — every row verified by the planning test, no placeholder left
 in the table.
-### Session 14 (2026-11-06) — the interview-preparation layer: 115 units planned
+### Session 14 (2026-11-06) — the interview-preparation and selection layers: 46 units, commits 879 through 924
 Opened on the user's finding: the corpus had no interview-preparation
 layer and no curated security/safety selections. This session adds an
 interviews/ layer grounded only in registered, real-world data (WEF,
@@ -342,3 +342,27 @@ ISC2, BLS, Stack Overflow, levels.fyi, OWASP, NIST, EU AI Act, lab
 safety frameworks), a selections/ layer, a beginner-first README, and
 keeps every surface recomputed from disk. STATUS rows now land one
 commit after their unit with the real sha — no placeholder, ever.
+Closed with the user's final-verification pass. Delivered: the interviews
+layer complete (market, roles, question banks, take-homes — 24 content
+pages + 5 indexes, every figure from registered real-world sources with
+access levels stated), the selections layer complete (security, safety,
+interview, beginner + index), sources 264->275 and claims 218->238
+(CLM-0236..0255) with README/CITATION/FAQ surfaces synced and index.html
+rebuilt in the same commit as every register change.
+
+The check failures the user flagged were root-caused, not papered over:
+the cancelled pages deploy was a push race (a newer push landing mid-
+deploy), fixed by making the unit driver wait after every push until
+that commit's own CI and pages checks complete green; the final pass
+then caught the same hole in the driver's retry path (a superseded
+pages failure on eec1a04 slipped through) and closed it — a retry now
+waits like the normal path. The live site was verified to serve the
+current build (claims 238). One cut background run (P44/P45) was
+recovered through the driver's retry path with the recovery recorded
+in the commit message.
+
+Honest remaining map (future sessions, not gaps in what shipped):
+dashboard rendering for the two new layers, integrity tests for them,
+the beginner README rewrite, and selections cross-links from
+START_HERE. Recorded in download/session-14-delivery-record.md with
+entry points; nothing was padded to reach a number.
